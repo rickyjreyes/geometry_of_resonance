@@ -1,67 +1,58 @@
-# The Geometry of Resonance
-### Wave Confinement and the Emergence of Mass and Force  
+# The Geometry of Resonance  
+**Wave Confinement and the Emergence of Mass, Force, and Geometry**  
 **Author:** Richard J. Reyes  
 **Date:** April 22, 2025  
 
 ---
 
-## 📖 Overview
+## Overview  
+This project presents a unified physical framework in which mass, force, and spacetime curvature are not fundamental, but instead emerge from confined oscillatory wave dynamics. Starting from a geometry-free foundation, the model derives inertial mass and field interactions from nonlinear feedback and topological resonance.
 
-This project explores a bold new framework where **mass**, **gravity**, and **force** are not treated as fundamental, but instead as **emergent phenomena** arising from the **confinement of oscillatory energy**.
+By simulating how standing waves evolve under curvature confinement and entropy-regulated dynamics, we demonstrate that:
 
-By modeling how standing waveforms behave under **geometric and energetic boundaries**, we demonstrate that:
-- Mass-like **inertia**
-- Apparent **spacetime curvature**
-- Force-like **interactions**
-
-can be derived from **internal wave feedback** and **nonlinear field dynamics**.
+- Mass-like inertia arises from spatial coherence  
+- Spacetime curvature emerges as a wavefield metric  
+- Forces appear as gradients in constrained wave feedback  
 
 ---
 
-## 🧠 Core Contributions
-
-- 🔬 A **modified Lagrangian** formulation with **curvature-driven** and **entropy-regulating** terms
-- ⚙️ Simulations showing the formation of **localized energy concentrations** and **effective force fields**
-- 🧪 Proposed **experimental validation** using:
-  - Optical cavities
-  - Plasmonic lattices
-  - Ultracold atom traps
-
----
-
-## 🌀 Foundational Insight
-
-> Geometry is not a background stage — it's a dynamic outcome of vibrational coherence.
-
-This theory reframes physical reality as a **layered computation of confined wave interference**, described as:
-
-Mass ← emerges from Energy
-Energy ← emerges from Resonance
-Resonance ← emerges from Boundary
-Boundary ← emerges from Information
-
+## Core Contributions  
+- A modified covariant Lagrangian with curvature and entropy-regulating terms  
+- High-precision simulations demonstrating localized, stable energy structures and emergent force gradients  
+- Ensemble-averaged derivations of fundamental structural constants (ξ, σ, γ, β, θ)  
+- Proposed experimental validation via:
+  - Optical cavities  
+  - Ultracold atom lattices  
+  - Casimir force deviations  
+  - Gravitational wave tail distortions  
 
 ---
 
-## 🔑 Conceptual Summary
+## Foundational Insight  
+**"Geometry is not a backdrop — it is the outcome of sustained resonance."**
 
-- **Nonlinear distortion of standing waves** gives rise to geometry and mass
-- **Numerical simulations** confirm force gradients from wave confinement
-- **Testable predictions** make this model viable for near-future validation
+This theory reframes physical law as a computation of confined wave interference:
 
----
+Mass ← Emerges from Energy
+Energy ← Emerges from Resonance
+Resonance ← Emerges from Boundary
+Boundary ← Emerges from Information
 
-## 🧾 Keywords
-
-`Wave confinement` • `Emergent mass` • `Curvature feedback` • `Unified field theory` • `Entropy-stabilized fields`
-
----
-
-## 📂 Citation
-
-If referencing this work, please cite:
-
-> Reyes, R. J. (2025). *The Geometry of Resonance: Wave Confinement and the Emergence of Mass and Force*. Zenodo. https://doi.org/10.5281/zenodo.15266728
 
 ---
 
+## Summary of Evidence  
+- Covariant field equations consistent with U(1), SU(2), and SU(3) gauge structures  
+- Numerical simulations confirm coherence-induced confinement and gradient-driven forces  
+- Entropy-curvature coupling regulates localization and predicts structure lifetime  
+- Specific, testable predictions proposed for lab and astrophysical systems  
+
+---
+
+## Keywords  
+Wave confinement, emergent mass, nonlinear curvature, topological resonance, covariant field theory, entropy–coherence coupling, unified interactions  
+
+---
+
+## Citation  
+Reyes, R. J. (2025). *The Geometry of Resonance: Wave Confinement and the Emergence of Mass and Force*. [Zenodo](https://zenodo.org/records/15341535)
