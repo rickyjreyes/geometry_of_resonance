@@ -56,3 +56,8 @@ Wave confinement, emergent mass, nonlinear curvature, topological resonance, cov
 
 ## Citation  
 Reyes, R. J. (2025). *The Geometry of Resonance: Wave Confinement and the Emergence of Mass and Force*. [Zenodo](https://zenodo.org/records/15341535)
+
+
+[📘 Full Paper (Zenodo)](https://zenodo.org/record/15341535)  
+[📊 Constants Derivation (Zenodo)](https://zenodo.org/record/15341540)  
+[💻 GitHub Repository](https://github.com/rickyjreyes/geometry_of_resonance)
