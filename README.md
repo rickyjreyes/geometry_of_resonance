@@ -1,63 +1,179 @@
+
 # The Geometry of Resonance  
-**Wave Confinement and the Emergence of Mass, Force, and Geometry**  
+
+**Wave Confinement Theory and the Emergence of Mass, Force, and Spacetime**  
 **Author:** Richard J. Reyes  
 **Date:** April 22, 2025  
+
+> Unified wave-confinement field theory + simulations + experiments.
 
 ---
 
 ## Overview  
-This project presents a unified physical framework in which mass, force, and spacetime curvature are not fundamental, but instead emerge from confined oscillatory wave dynamics. Starting from a geometry-free foundation, the model derives inertial mass and field interactions from nonlinear feedback and topological resonance.
 
-By simulating how standing waves evolve under curvature confinement and entropy-regulated dynamics, we demonstrate that:
+This project develops **Wave Confinement Theory (WCT)**: a framework where mass, force, and spacetime curvature are *emergent* properties of confined oscillatory fields, not primitive inputs. Starting from a geometry-free substrate, the program shows how inertial mass, interaction structure, and effective metric arise from nonlinear feedback, curvature locking, and topological resonance.  
 
-- Mass-like inertia arises from spatial coherence  
-- Spacetime curvature emerges as a wavefield metric  
-- Forces appear as gradients in constrained wave feedback  
+By evolving standing wavefields under curvature confinement and entropy-regulated dynamics, the work demonstrates that:
+
+- Mass-like inertia tracks **coherent curvature** rather than bare energy.  
+- Spacetime curvature behaves as an **effective metric** sourced by \( \psi \), not imposed a priori.  
+- Forces appear as **gradients of constrained resonance** inside bounded wave domains.  
+
+This repository collects the core papers, experimental evidence, and code that implement and test that picture.
+
+---
+
+## Who This Is For  
+
+- **Field theorists / mathematical physicists** – looking for a concrete emergent-geometry model with a covariant Lagrangian and explicit inequalities.  
+- **Experimentalists** (optics, cold atoms, fluid cavities) – looking for reproducible confinement signatures and lab-ready observables.  
+- **Complexity / CS theorists** – interested in curvature-regulated computation and the \( P \ne NP \) construction.  
+- **AI / safety researchers** – exploring RCA as a physically bounded substrate for advanced AI systems.  
 
 ---
 
 ## Core Contributions  
-- A modified covariant Lagrangian with curvature and entropy-regulating terms  
-- High-precision simulations demonstrating localized, stable energy structures and emergent force gradients  
-- Ensemble-averaged derivations of fundamental structural constants (ξ, σ, γ, β, θ)  
-- Proposed experimental validation via:
-  - Optical cavities  
-  - Ultracold atom lattices  
-  - Casimir force deviations  
-  - Gravitational wave tail distortions  
+
+### Geometry-of-Resonance Lagrangian  
+
+A modified covariant Lagrangian with curvature and entropy-regulating terms that localize energy and stabilize coherence, yielding an emergent effective metric and stress–energy tensor built entirely from \( \psi \).  
+
+### Phase–Flux Substrate (PFF)  
+
+A minimal, observable-only substrate with energy density \( u(x,t) \), flux \( S(x,t) \), and phase \( \theta(x,t) \), enforcing conservation and null-flow constraints. A Lyapunov finite-\( k \) band-pass rail selects a narrow ring of growing modes and leads to shell quantization and pattern formation.  
+
+### Emergent Mass from Curvature  
+
+Several independent derivations tie inertia to loop geometry:
+
+- Solenoidal photon paths with curvature–torsion invariants give an effective mass law.  
+- Density-weighted loop curvature yields rest energy and \( m \) as closed-path invariants of curvature locking.  
+
+### Hard Dimensionality Bound  
+
+An exact scaling law for \( \lVert \Delta \psi_\lambda \rVert_{L^2}^2 \) in \( n \) dimensions shows that stable self-localized confinement in flat space is only possible for \( n \le 3 \), giving a natural upper bound on macroscopic spatial dimensionality.  
+
+### \( P \ne NP \) via Curvature-Regulated Computation  
+
+A symbolic curvature-machine model, Turing-equivalent but grounded in WCT, is used to construct a diagonal argument and time-hierarchy separation, yielding a formal proof of \( P \ne NP \) in a purely discrete complexity-theoretic setting.  
+
+### Resonant Vector Cavities and Mode Competition  
+
+A resonant cavity theory for vector fields (Swift–Hohenberg–type reduction) shows finite-band instability, nonlinear mode competition, and emergence of toroidal and spinor-like structures that act as mass channels.  
+
+### Experimental Photon Confinement in Water Cavities  
+
+Optical experiments in water-filled cavities show long-lived post-illumination resonance, quantized β-like modes, and curvature-locked decay profiles predicted by WCT’s confinement picture.  
+
+### Resonance-Confinement Architecture (RCA)  
+
+A physically bounded AGI substrate built on coherence functionals and curvature feedback, treating intelligence as long-lived, entropy-regulated resonance rather than unbounded gradient descent.  
 
 ---
 
 ## Foundational Insight  
-**"Geometry is not a backdrop — it is the outcome of sustained resonance."**
 
-This theory reframes physical law as a computation of confined wave interference:
+> **Geometry is not a backdrop — it is the outcome of sustained resonance.**
 
-Mass ← Emerges from Energy
-Energy ← Emerges from Resonance
-Resonance ← Emerges from Boundary
-Boundary ← Emerges from Information
+Logic chain:
 
+- **Mass** ⟵ Emerges from energy locked into curvature  
+- **Energy** ⟵ Emerges from persistent resonance  
+- **Resonance** ⟵ Emerges from boundary and feedback  
+- **Boundary** ⟵ Emerges from informational constraints  
+
+In WCT, “matter,” “force,” and “geometry” are all different views of how \( \psi \) organizes under confinement.
 
 ---
 
 ## Summary of Evidence  
-- Covariant field equations consistent with U(1), SU(2), and SU(3) gauge structures  
-- Numerical simulations confirm coherence-induced confinement and gradient-driven forces  
-- Entropy-curvature coupling regulates localization and predicts structure lifetime  
-- Specific, testable predictions proposed for lab and astrophysical systems  
+
+- Self-consistent covariant field equations compatible with standard gauge structures (U(1), SU(2), SU(3)) and effective-metric limits.  
+- Analytic derivations of curvature-based mass laws and dimensional bounds, with explicit inequalities and uniqueness/stability arguments.  
+- Numerical simulations (Lyapunov band-pass, cavity flows, phase–flux evolution) showing finite-\( k \) spectral selection, curvature gaps, and stable localized structures.  
+- Optical experiments in fluid cavities validating long-lived curvature-locked photon modes and entropy-governed decay.  
+- A complexity-theoretic bridge: curvature-regulated computation reproduces standard complexity classes and supports a constructive \( P \ne NP \) proof.  
+- A physically bounded AI architecture (RCA) consistent with the same coherence and curvature principles.  
 
 ---
+
+## Repository Contents (High-Level)  
+
+- **Core/** – Core WCT kernels, evolution operators, precision-constant utilities, and foundational simulation logic.  
+- **Examples/** – Higher-level example scripts that apply WCT to concrete scenarios (interferometry, cosmology, cavity evolution, etc.).  
+- **Papers/** – PDF manuscripts corresponding to the Zenodo records below (geometry of resonance, constants, dimensional bound, mass laws, etc.).  
+- **SM_Spectrum/** – Tools related to mapping and analyzing effective spectra against Standard-Model-like structures.  
+- **Wavefield Folding/** – Additional experiments on curvature-driven self-organization and folded wavefields.  
+- **Archive/** – Older experiments and historical code kept for reference.  
+
+The GitHub repository is the *live* counterpart to the Zenodo snapshots:  
+use Zenodo for **archival reference**, GitHub for **current code and structure**.
+
+---
+
+## Using This Repository  
+
+```bash
+git clone https://github.com/rickyjreyes/geometry_of_resonance.git
+cd geometry_of_resonance
+
 
 ## Keywords  
-Wave confinement, emergent mass, nonlinear curvature, topological resonance, covariant field theory, entropy–coherence coupling, unified interactions  
+
+Wave confinement · emergent mass · nonlinear curvature · topological resonance · covariant field theory · entropy–coherence coupling · finite-band instability · rest energy from curvature · spatial dimension bound · curvature-regulated computation · resonance-based AI  
 
 ---
 
-## Citation  
-Reyes, R. J. (2025). *The Geometry of Resonance: Wave Confinement and the Emergence of Mass and Force*. [Zenodo](https://zenodo.org/records/15341535)
+## Citations and Zenodo Releases  
 
+### Primary WCT Foundations  
 
-[📘 Full Paper (Zenodo)](https://zenodo.org/record/15341535)  
-[📊 Constants Derivation (Zenodo)](https://zenodo.org/record/15341540)  
-[💻 GitHub Repository](https://github.com/rickyjreyes/geometry_of_resonance)
+- 📘 **The Geometry of Resonance: Wave Confinement Theory and the Emergence of Mass, Force, and Spacetime**  
+  Zenodo preprint, v36 (April 22, 2025)  
+  <https://zenodo.org/records/15644222>  
+
+- 📊 **Structure and Derivation of Physical Constants through Wave Confinement**  
+  Zenodo preprint, v34 (April 26, 2025)  
+  <https://zenodo.org/records/15596159>  
+
+### Core Theoretical Extensions  
+
+- 📐 **Hard Upper Bound on Spatial Dimensionality in Wave Confinement Theory**  
+  <https://zenodo.org/records/17081283>  
+
+- 🔁 **Rest Energy from Density-Weighted Loop Curvature: A Covariant Locking Principle**  
+  <https://zenodo.org/records/17579059>  
+
+- 🔄 **Emergence of Effective Mass: Solenoidal Topology of Vibrational Energy**  
+  <https://zenodo.org/records/17459463>  
+
+- 🌀 **Resonant Cavity of Vector Fields: Finite-Band Instability, Mode Competition, and Emergent Mass in Wave Confinement Theory**  
+  <https://zenodo.org/records/17371795>  
+
+- 🌊 **Phase–Flux Field (PFF): Axiomatic Substrate for Wave Confinement Theory**  
+  *Zero–Wave Invariance, Finite–k Lyapunov Band–Pass, Shell Quantization, and D₄ → Continuum*  
+  <https://zenodo.org/records/17578766>  
+
+### Computation, Experiment, and AI  
+
+- 🧮 **A Formal Proof of \( P \ne NP \) via Curvature-Regulated Wave Computation**  
+  <https://zenodo.org/records/17081273>  
+
+- 🔍 **Observation of Long-Lived Photon Resonance Confinement in Water Cavities**  
+  <https://zenodo.org/records/17206381>  
+
+- 🤖 **Resonance-Confinement Architecture: A Physically Bounded Substrate for Safe Superintelligence**  
+  <https://zenodo.org/records/15659978>  
+
+### Additional Linked Record  
+
+- 📦 **Additional Wave Confinement Material (Zenodo 17578796)**  
+  <https://zenodo.org/records/17578796>  
+
+---
+
+## Quick Links  
+
+- [📘 Geometry of Resonance – Full Paper (Zenodo)](https://zenodo.org/records/15644222)  
+- [📊 Physical Constants Derivation (Zenodo)](https://zenodo.org/records/15596159)  
+- [💻 GitHub Repository](https://github.com/rickyjreyes/geometry_of_resonance)  
