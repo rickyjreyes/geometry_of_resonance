@@ -10,12 +10,12 @@ Practical guide to the WCT volume set:
 Start here:
 
 1. **The Geometry of Resonance**  
-   *Zenodo 15644222 – core overview and Lagrangian*  
+   *[Zenodo 15644222](https://zenodo.org/records/15644222) – core overview and Lagrangian*  
    - Role: main idea, curvature-feedback Lagrangian, how mass / force / geometry emerge.  
    - How to read: abstract → introduction → figures → conclusion.
 
 2. **Structure and Derivation of Physical Constants through Wave Confinement**  
-   *Zenodo 15596159 – how “constants” arise from structure*  
+   *[Zenodo 15596159](https://zenodo.org/records/15596159) – how “constants” arise from structure*  
    - Role: how ξ, σ, β, θ and related quantities are fixed by confinement rules.  
    - How to read: focus on conceptual sections; skip detailed fits on first pass.
 
@@ -26,12 +26,12 @@ Start here:
 Read in this order:
 
 1. **Phase–Flux Field (PFF)**  
-   *Zenodo 17578766*  
+   *[Zenodo 17578766](https://zenodo.org/records/17578766)*  
    - Role: defines the substrate \((u, S, \theta)\), conservation, and the finite-\(k\) Lyapunov band-pass.  
    - Look for: why random fields collapse to a narrow band before any “mass” is defined.
 
 2. **The Geometry of Resonance**  
-   *Zenodo 15644222*  
+   *[Zenodo 15644222](https://zenodo.org/records/15644222)*  
    - Role: introduces the curvature-regularized Lagrangian and effective metric.  
    - Look for: how the curvature operator, effective metric, and confinement functional fit together.
 
@@ -46,17 +46,17 @@ Recommended reading style:
 After PFF + GoR, read:
 
 3. **Rest Energy from Density-Weighted Loop Curvature**  
-   *Zenodo 17579059*  
+   *[Zenodo 17579059](https://zenodo.org/records/17579059)*  
    - Role: precise mass law \(m = (\hbar/c)\langle \sigma \rangle_w\) on a closed loop.  
    - Look for: the variational lock, uniqueness proof, and mislock error bounds.
 
 4. **Emergence of Effective Mass: Solenoidal Topology of Vibrational Energy**  
-   *Zenodo 17459463*  
+   *[Zenodo 17459463](https://zenodo.org/records/17459463)*  
    - Role: connects curved photon-like paths, torsion, and solenoidal topology to effective mass.  
    - Look for: how geometric invariants along the path map to inertial behavior.
 
 5. **Hard Upper Bound on Spatial Dimensionality in Wave Confinement Theory**  
-   *Zenodo 17081283*  
+   *[Zenodo 17081283](https://zenodo.org/records/17081283)*  
    - Role: shows why stable self-localized confinement prefers \(n \leq 3\).  
    - Look for: the key inequality and scaling that break down for \(n > 3\).
 
@@ -69,7 +69,7 @@ If you care primarily about **“is this a viable mass/geometry story?”**, the
 Once the mass/geometry picture is clear, move to dynamics:
 
 6. **Resonant Cavity of Vector Fields**  
-   *Zenodo 17371795*  
+   *[Zenodo 17371795](https://zenodo.org/records/17371795)*  
    - Role: Swift–Hohenberg-like reduction for vector fields, finite-band instability, mode competition.  
    - Look for: how discrete modes and toroidal/spinor-like structures appear from the band-pass.
 
@@ -79,7 +79,7 @@ Once the mass/geometry picture is clear, move to dynamics:
    - Look for: spectral collapse, ring formation, Lyapunov descent behavior.
 
 8. **Observation of Long-Lived Photon Resonance Confinement in Water Cavities**  
-   *Zenodo 17206381*  
+   *[Zenodo 17206381](https://zenodo.org/records/17206381)*  
    - Role: experimental evidence; how actual cavity data matches the confinement predictions.  
    - Look for: long-lived modes, FFT structures, and how they map back to the theory.
 
@@ -92,7 +92,7 @@ If you’re an **experimentalist**, a good path is: Overview → PFF → Water C
 For readers with a CS / complexity focus:
 
 9. **A Formal Proof of \(P \ne NP\) via Curvature-Regulated Wave Computation**  
-   *Zenodo 17081273*  
+   *[Zenodo 17081273](https://zenodo.org/records/17081273)*  
    - Role: constructs a curvature-machine model and a time-hierarchy-style separation.  
    - Suggested path:
      - Read intro + model definition.  
@@ -108,7 +108,7 @@ This paper is logically self-contained; it only needs high-level familiarity wit
 For AI / alignment readers:
 
 10. **Resonance-Confinement Architecture (RCA)**  
-    *Zenodo 15659978*  
+    *[Zenodo 15659978](https://zenodo.org/records/15659978)*  
     - Role: maps WCT principles into an AI substrate focused on coherence and bounded curvature rather than unbounded loss minimization.  
     - Reading tip: treat it as an architecture spec; you only need core WCT concepts (coherence, curvature, Lyapunov descent), not every field-theory derivation.
 
