@@ -121,6 +121,7 @@ cd geometry_of_resonance
 ## Keywords  
 
 Wave confinement · emergent mass · nonlinear curvature · topological resonance · covariant field theory · entropy–coherence coupling · finite-band instability · rest energy from curvature · spatial dimension bound · curvature-regulated computation · resonance-based AI  
+```
 
 ---
 
@@ -154,6 +155,9 @@ Wave confinement · emergent mass · nonlinear curvature · topological resonanc
   *Zero–Wave Invariance, Finite–k Lyapunov Band–Pass, Shell Quantization, and D₄ → Continuum*  
   <https://zenodo.org/records/17578766>  
 
+- 📦 **Self-Emergent Fourier Cymatics: Entropic Eigenmodes out of Chaos**  
+  <https://zenodo.org/records/17578796> 
+
 ### Computation, Experiment, and AI  
 
 - 🧮 **A Formal Proof of \( P \ne NP \) via Curvature-Regulated Wave Computation**  
@@ -164,11 +168,7 @@ Wave confinement · emergent mass · nonlinear curvature · topological resonanc
 
 - 🤖 **Resonance-Confinement Architecture: A Physically Bounded Substrate for Safe Superintelligence**  
   <https://zenodo.org/records/15659978>  
-
-### Additional Linked Record  
-
-- 📦 **Additional Wave Confinement Material (Zenodo 17578796)**  
-  <https://zenodo.org/records/17578796>  
+ 
 
 ---
 

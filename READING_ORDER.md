@@ -73,8 +73,8 @@ Once the mass/geometry picture is clear, move to dynamics:
    - Role: Swift–Hohenberg-like reduction for vector fields, finite-band instability, mode competition.  
    - Look for: how discrete modes and toroidal/spinor-like structures appear from the band-pass.
 
-7. **Self-Emergent Fourier Cymatics**  
-   *(PDF in `Papers/` in this repo)*  
+7. **Self-Emergent Fourier Cymatics: Entropic Eigenmodes out of Chaos**  
+   *[Zenodo 17578796](https://zenodo.org/records/17578796)*  
    - Role: numerical proof-of-concept for random → annulus → coherent ring via curvature + dissipation.  
    - Look for: spectral collapse, ring formation, Lyapunov descent behavior.
 
