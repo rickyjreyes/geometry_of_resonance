@@ -6,6 +6,7 @@
 **Date:** April 22, 2025  
 
 > Unified wave-confinement field theory + simulations + experiments.
+# Wave Confinement Theory (WCT)
 
 ---
 
@@ -16,7 +17,7 @@ This project develops **Wave Confinement Theory (WCT)**: a framework where mass,
 By evolving standing wavefields under curvature confinement and entropy-regulated dynamics, the work demonstrates that:
 
 - Mass-like inertia tracks **coherent curvature** rather than bare energy.  
-- Spacetime curvature behaves as an **effective metric** sourced by \( \psi \), not imposed a priori.  
+- Spacetime curvature behaves as an **effective metric** sourced by ψ, not imposed a priori.  
 - Forces appear as **gradients of constrained resonance** inside bounded wave domains.  
 
 This repository collects the core papers, experimental evidence, and code that implement and test that picture.
@@ -27,7 +28,7 @@ This repository collects the core papers, experimental evidence, and code that i
 
 - **Field theorists / mathematical physicists** – looking for a concrete emergent-geometry model with a covariant Lagrangian and explicit inequalities.  
 - **Experimentalists** (optics, cold atoms, fluid cavities) – looking for reproducible confinement signatures and lab-ready observables.  
-- **Complexity / CS theorists** – interested in curvature-regulated computation and the \( P \ne NP \) construction.  
+- **Complexity / CS theorists** – interested in curvature-regulated computation and the P ≠ NP construction.  
 - **AI / safety researchers** – exploring RCA as a physically bounded substrate for advanced AI systems.  
 
 ---
@@ -36,26 +37,26 @@ This repository collects the core papers, experimental evidence, and code that i
 
 ### Geometry-of-Resonance Lagrangian  
 
-A modified covariant Lagrangian with curvature and entropy-regulating terms that localize energy and stabilize coherence, yielding an emergent effective metric and stress–energy tensor built entirely from \( \psi \).  
+A modified covariant Lagrangian with curvature and entropy-regulating terms that localize energy and stabilize coherence, yielding an emergent effective metric and stress–energy tensor built entirely from ψ.  
 
 ### Phase–Flux Substrate (PFF)  
 
-A minimal, observable-only substrate with energy density \( u(x,t) \), flux \( S(x,t) \), and phase \( \theta(x,t) \), enforcing conservation and null-flow constraints. A Lyapunov finite-\( k \) band-pass rail selects a narrow ring of growing modes and leads to shell quantization and pattern formation.  
+A minimal, observable-only substrate with energy density u(x,t), flux S(x,t), and phase θ(x,t), enforcing conservation and null-flow constraints. A Lyapunov finite-k band-pass rail selects a narrow ring of growing modes and leads to shell quantization and pattern formation.  
 
 ### Emergent Mass from Curvature  
 
 Several independent derivations tie inertia to loop geometry:
 
 - Solenoidal photon paths with curvature–torsion invariants give an effective mass law.  
-- Density-weighted loop curvature yields rest energy and \( m \) as closed-path invariants of curvature locking.  
+- Density-weighted loop curvature yields rest energy and m as closed-path invariants of curvature locking.  
 
 ### Hard Dimensionality Bound  
 
-An exact scaling law for \( \lVert \Delta \psi_\lambda \rVert_{L^2}^2 \) in \( n \) dimensions shows that stable self-localized confinement in flat space is only possible for \( n \le 3 \), giving a natural upper bound on macroscopic spatial dimensionality.  
+An exact scaling law for ∥Δψ_λ∥_{L²}² in n dimensions shows that stable self-localized confinement in flat space is only possible for n ≤ 3, giving a natural upper bound on macroscopic spatial dimensionality.  
 
-### \( P \ne NP \) via Curvature-Regulated Computation  
+### P ≠ NP via Curvature-Regulated Computation  
 
-A symbolic curvature-machine model, Turing-equivalent but grounded in WCT, is used to construct a diagonal argument and time-hierarchy separation, yielding a formal proof of \( P \ne NP \) in a purely discrete complexity-theoretic setting.  
+A symbolic curvature-machine model, Turing-equivalent but grounded in WCT, is used to construct a diagonal argument and time-hierarchy separation, yielding a formal proof of P ≠ NP in a purely discrete complexity-theoretic setting.  
 
 ### Resonant Vector Cavities and Mode Competition  
 
@@ -82,7 +83,7 @@ Logic chain:
 - **Resonance** ⟵ Emerges from boundary and feedback  
 - **Boundary** ⟵ Emerges from informational constraints  
 
-In WCT, “matter,” “force,” and “geometry” are all different views of how \( \psi \) organizes under confinement.
+In WCT, “matter,” “force,” and “geometry” are all different views of how ψ organizes under confinement.
 
 ---
 
@@ -90,9 +91,9 @@ In WCT, “matter,” “force,” and “geometry” are all different views of
 
 - Self-consistent covariant field equations compatible with standard gauge structures (U(1), SU(2), SU(3)) and effective-metric limits.  
 - Analytic derivations of curvature-based mass laws and dimensional bounds, with explicit inequalities and uniqueness/stability arguments.  
-- Numerical simulations (Lyapunov band-pass, cavity flows, phase–flux evolution) showing finite-\( k \) spectral selection, curvature gaps, and stable localized structures.  
+- Numerical simulations (Lyapunov band-pass, cavity flows, phase–flux evolution) showing finite-k spectral selection, curvature gaps, and stable localized structures.  
 - Optical experiments in fluid cavities validating long-lived curvature-locked photon modes and entropy-governed decay.  
-- A complexity-theoretic bridge: curvature-regulated computation reproduces standard complexity classes and supports a constructive \( P \ne NP \) proof.  
+- A complexity-theoretic bridge: curvature-regulated computation reproduces standard complexity classes and supports a constructive P ≠ NP proof.  
 - A physically bounded AI architecture (RCA) consistent with the same coherence and curvature principles.  
 
 ---
@@ -116,12 +117,12 @@ use Zenodo for **archival reference**, GitHub for **current code and structure**
 ```bash
 git clone https://github.com/rickyjreyes/geometry_of_resonance.git
 cd geometry_of_resonance
+```
 
 
 ## Keywords  
 
 Wave confinement · emergent mass · nonlinear curvature · topological resonance · covariant field theory · entropy–coherence coupling · finite-band instability · rest energy from curvature · spatial dimension bound · curvature-regulated computation · resonance-based AI  
-```
 
 ---
 
@@ -160,7 +161,7 @@ Wave confinement · emergent mass · nonlinear curvature · topological resonanc
 
 ### Computation, Experiment, and AI  
 
-- 🧮 **A Formal Proof of \( P \ne NP \) via Curvature-Regulated Wave Computation**  
+- 🧮 **A Formal Proof of P ≠ NP via Curvature-Regulated Wave Computation**  
   <https://zenodo.org/records/17081273>  
 
 - 🔍 **Observation of Long-Lived Photon Resonance Confinement in Water Cavities**  

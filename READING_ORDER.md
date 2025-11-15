@@ -27,7 +27,7 @@ Read in this order:
 
 1. **Phase–Flux Field (PFF)**  
    *[Zenodo 17578766](https://zenodo.org/records/17578766)*  
-   - Role: defines the substrate \((u, S, \theta)\), conservation, and the finite-\(k\) Lyapunov band-pass.  
+   - Role: defines the substrate (u, S, θ), conservation, and the finite-k Lyapunov band-pass. 
    - Look for: why random fields collapse to a narrow band before any “mass” is defined.
 
 2. **The Geometry of Resonance**  
@@ -47,7 +47,7 @@ After PFF + GoR, read:
 
 3. **Rest Energy from Density-Weighted Loop Curvature**  
    *[Zenodo 17579059](https://zenodo.org/records/17579059)*  
-   - Role: precise mass law \(m = (\hbar/c)\langle \sigma \rangle_w\) on a closed loop.  
+   - Role: precise mass law m = (ℏ/𝑐)⟨σ⟩_w on a closed loop.
    - Look for: the variational lock, uniqueness proof, and mislock error bounds.
 
 4. **Emergence of Effective Mass: Solenoidal Topology of Vibrational Energy**  
@@ -57,8 +57,8 @@ After PFF + GoR, read:
 
 5. **Hard Upper Bound on Spatial Dimensionality in Wave Confinement Theory**  
    *[Zenodo 17081283](https://zenodo.org/records/17081283)*  
-   - Role: shows why stable self-localized confinement prefers \(n \leq 3\).  
-   - Look for: the key inequality and scaling that break down for \(n > 3\).
+   - Role: shows why stable self-localized confinement prefers n ≤ 3.
+   - Look for: the key inequality and scaling that break down for n > 3.
 
 If you care primarily about **“is this a viable mass/geometry story?”**, these three papers plus the foundations are the critical set.
 
@@ -91,7 +91,7 @@ If you’re an **experimentalist**, a good path is: Overview → PFF → Water C
 
 For readers with a CS / complexity focus:
 
-9. **A Formal Proof of \(P \ne NP\) via Curvature-Regulated Wave Computation**  
+9. **A Formal Proof of P ≠ NP via Curvature-Regulated Wave Computation**  
    *[Zenodo 17081273](https://zenodo.org/records/17081273)*  
    - Role: constructs a curvature-machine model and a time-hierarchy-style separation.  
    - Suggested path:
