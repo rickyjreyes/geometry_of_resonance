@@ -44,23 +44,16 @@ Together they define:
 ## Master Equation 1 — Curvature Locking Functional  
 *Generates: mass law, loop locking, ψ-electron constraints, Compton radius.*
 
-Local curvature σ(s) of a closed loop Γ determines the allowed global phase profile ϕ(s):
+Local curvature σ(s) of a closed loop Γ determines the allowed global phase profile φ(s):
 
-\[
-S_{\mathrm{lock}}[\phi]
-=
-\int_{\Gamma}
-w(s)\,\big( \partial_s \phi(s) - \sigma(s) \big)^2 \, ds,
-\qquad
-\sigma(s) = \kappa(s)^2 + \tau(s)^2 .
-\]
+S_lock[φ] = ∫_Γ w(s) ( ∂_s φ(s) − σ(s) )² ds,  where  σ(s) = κ(s)² + τ(s)²
 
-- Variation of \(S_{\mathrm{lock}}\) yields the **loop-locking EL equation**  
-  and, with the identification \(E_{\text{rest}}=\hbar c\, k_{\text{eff}}\),  
-  the **mass–curvature law** \(m = \frac{\hbar}{c}\langle\sigma\rangle_w\).  
+- Variation of S_lock yields the **loop-locking EL equation**  
+  and, with the identification E_rest = ℏc k_eff,  
+  the **mass–curvature law** m = (ℏ/c) ⟨σ⟩_w.  
 - In toroidal 3D geometries, analogous curvature-locking conditions  
   reduce to the **ψ-electron eigenproblem**, producing  
-  the **Compton-scale radius** \(R = 1/\sigma_\*\).
+  the **Compton-scale radius** R = 1/σ_★.
 
 **Downstream families:**  
 E1–E8, CLE1–CLE3, CLE4–CLE10, CL1–CL10.
@@ -72,30 +65,17 @@ E1–E8, CLE1–CLE3, CLE4–CLE10, CL1–CL10.
 
 Curvature feedback is encoded in a nonlinear operator Θ[ψ] and an associated energy functional:
 
-\[
-\Theta[\psi]
-=
--\,\frac{\nabla^2 \psi}{\,\psi + \varepsilon e^{-\alpha|\psi|^2}\,},
-\]
+Θ[ψ] = − ∇²ψ / ( ψ + ε e^{−α|ψ|²} )
 
-\[
-E_{\mathrm{WCT}}[\psi]
-=
-\int
-\left(
-|\nabla\psi|^2
-+
-|\Theta[\psi]|^2
-\right)\,dx.
-\]
+E_WCT[ψ] = ∫ ( |∇ψ|² + |Θ[ψ]|² ) dx
 
 - For gradient-flow-type evolutions  
-  \(\partial_t\psi \propto -\delta E_{\mathrm{WCT}}/\delta\psi^\*\),  
-  the functional \(E_{\mathrm{WCT}}\) acts as a **Lyapunov candidate**.  
-- Stationary points of \(E_{\mathrm{WCT}}\) yield **curvature-locked states**,  
+  ∂_t ψ ∝ −δE_WCT/δψ*,  
+  the functional E_WCT acts as a **Lyapunov candidate**.  
+- Stationary points of E_WCT yield **curvature-locked states**,  
   cavity modes, and the **feedback-collapsed ψ-electron** (CLE4–CLE10).  
 - Couplings to matter density in the extended formulation motivate  
-  an **effective metric** \(g^{\mathrm{eff}}_{\mu\nu}\).
+  an **effective metric** g_μν^eff.
 
 **Downstream families:**  
 E17–E23, CLE4–CLE10, CL5–CL6, cavity / stability relations.
@@ -105,19 +85,11 @@ E17–E23, CLE4–CLE10, CL5–CL6, cavity / stability relations.
 ## Master Equation 3 — Swift–Hohenberg Spectral Selector  
 *Generates: cymatics, band-limited growth, spectral pruning, vortex lattices, ghost-mode modeling.*
 
-Amplitude \(A(x,t)\) of a pattern-forming field obeys a band-selective evolution equation:
+Amplitude A(x,t) of a pattern-forming field obeys a band-selective evolution equation:
 
-\[
-\partial_t A
-=
-\mu A
--
-g |A|^2 A
-+
-b(\Delta + k_*^2)^2 A.
-\]
+∂_t A = μ A − g |A|² A + b(Δ + k_*²)² A
 
-- The \((\Delta + k_*^2)^2\) term suppresses modes away from \(|k| = k_*\),  
+- The (Δ + k_*²)² term suppresses modes away from |k| = k_*,  
   selecting a **dominant spectral shell**.  
 - Nonlinear saturation yields **self-organized patterns**,  
   **Fourier cymatics**, and **ring / lattice structures**.  
@@ -134,17 +106,10 @@ E12–E16, E57–E64, E73–E78.
 
 Sobolev embedding controls pointwise curvature in terms of H²-regularity:
 
-\[
-H^2(\Omega)
-\hookrightarrow
-L^\infty(\Omega)
-\quad\text{for bounded smooth } \Omega\subset\mathbb{R}^n
-\quad\Longrightarrow\quad
-n \le 3.
-\]
+H²(Ω) ↪ L^∞(Ω)  for bounded smooth Ω ⊂ ℝⁿ  ⟹  n ≤ 3
 
-- For d > 3, H² does **not** control L∞ → curvature-locked fields may unwind.  
-- For d ≤ 3, finite \(E_{\mathrm{WCT}}\) and curvature locking imply  
+- For d > 3, H² does **not** control L^∞ → curvature-locked fields may unwind.  
+- For d ≤ 3, finite E_WCT and curvature locking imply  
   **regular, confined ψ** fields.  
 - Combined with CL6 and CL10, this supports the conditional statement that  
   **stable ψ-electron solitons are only realized in ≤3 spatial dimensions**.
@@ -155,33 +120,17 @@ E24, E79–E82, CL6, CL10.
 ---
 
 ## Master Equation 5 — Curvature-Bounded Computation (WCC)  
-*Generates: model-relative PWCC = P, NPWCC = NP, α-drop, channel capacity.*
+*Generates: model-relative P_WCC = P, NP_WCC = NP, α-drop, channel capacity.*
 
 Discrete WCC evolution is a local update subject to a **global curvature budget**:
 
-\[
-\psi^{(t+1)}(x)
-=
-U\Big(
-\psi^{(t)}(x),
-\{\psi^{(t)}(y)\}_{y\in N(x)}
-\Big),
-\]
+ψ^{(t+1)}(x) = U( ψ^{(t)}(x), { ψ^{(t)}(y) }_{y∈N(x)} )
 
-\[
-\sum_y
-\big(
-|\nabla\psi^{(t)}(y)|^2
-+
-|\Theta[\psi^{(t)}(y)]|^2
-\big)\Delta V
-\le
-C_\Theta.
-\]
+∑_y ( |∇ψ^{(t)}(y)|² + |Θ[ψ^{(t)}(y)]|² ) ΔV ≤ C_Θ
 
-- The local rule \(U\) defines a **Wave-Constrained Computation (WCC)** machine.  
-- The curvature budget \(C_\Theta\) limits reachable configurations, yielding:  
-  - **PWCC = P**, **NPWCC = NP** (model-relative Turing equivalence, as constructed in  
+- The local rule U defines a **Wave-Constrained Computation (WCC)** machine.  
+- The curvature budget C_Θ limits reachable configurations, yielding:  
+  - **P_WCC = P**, **NP_WCC = NP** (model-relative Turing equivalence, as constructed in  
     the Discrete WCC paper),  
   - α-drop style **sub-exponential growth** of configuration counts,  
   - bounds on **channel capacity** and spectral exploration.
@@ -196,22 +145,12 @@ E28–E34, E35–E43, CL11.
 
 Every linear equation in the WCT corpus is contained in the unified linear operator:
 
-\[
-L_{\mathrm{WCT}}
-=
-c_1(\Delta + \sigma^2)
-+
-c_2(\Delta + k_*^2)^2
-+
-i c_3 m
-+
-c_4 R^{-(2+n/p)} .
-\]
+L_WCT = c₁(Δ + σ²) + c₂(Δ + k_*²)² + i c₃ m + c₄ R^{−(2+n/p)}
 
-- The \(c_1\) term recovers **Helmholtz curvature**.  
-- The \(c_2\) term recovers **spectral-shell selection**.  
-- The \(i c_3 m\) term encodes **topological winding**.  
-- The \(c_4 R^{-(2+n/p)}\) term encodes **dimensional curvature scaling**.
+- The c₁ term recovers **Helmholtz curvature**.  
+- The c₂ term recovers **spectral-shell selection**.  
+- The i c₃ m term encodes **topological winding**.  
+- The c₄ R^{−(2+n/p)} term encodes **dimensional curvature scaling**.
 
 **Downstream families:**  
 Linear parts of E1–E16, E49–E56, E57–E64, E79–E82.
@@ -223,13 +162,7 @@ Linear parts of E1–E16, E49–E56, E57–E64, E79–E82.
 
 Starting from the WCT action, Euler–Lagrange variation yields the unique nonlinear curvature operator:
 
-\[
-N_{\mathrm{curv}}[\psi]
-=
--
-\frac{\nabla^2 \psi}
-{\psi + \varepsilon e^{-\alpha|\psi|^2}}.
-\]
+N_curv[ψ] = − ∇²ψ / ( ψ + ε e^{−α|ψ|²} )
 
 - This operator generates all **curvature-feedback behavior** in the CLE-, CL-, and E-series.  
 - It is the nonlinear primitive underlying **curvature locking**, **collapse**, and **feedback-collapsed ψ-electron** solutions.
@@ -244,84 +177,61 @@ E17–E23, E49–E56, CLE1–CLE10, CL5–CL6.
 
 The unified wavefield evolution equation governing all WCT systems is:
 
-\[
-\partial_t\psi
-=
--\frac{\nabla^2\psi}{\psi + \varepsilon e^{-\alpha|\psi|^2}}
-+ g|\psi|^2\psi
-+ c_1(\Delta + \sigma^2)\psi
-+ c_2(\Delta + k_*^2)^2\psi
-+ i c_3 m\psi
-+ c_4 R^{-(2+n/p)}\psi
-+ \eta \psi \circ \xi(t).
-\]
+∂_t ψ = − ∇²ψ / ( ψ + ε e^{−α|ψ|²} ) + g|ψ|²ψ + c₁(Δ + σ²)ψ + c₂(Δ + k_*²)²ψ + i c₃ m ψ + c₄ R^{−(2+n/p)} ψ + η ψ ∘ ξ(t)
+
+---
+
 ## Master Equation 8 — Unified Curvature–Acoustic Cosmology (UCM)
 
 The **WCT cosmology module (CM1–CM20)** is generated by a single coupled evolution system:
 
 **UCM: Unified Curvature–Acoustic Cosmology**
 
-```text
+```
 UCM:
 {
-  ∂t ψ    = -Θ[ψ] · J[ψ]  + g |ψ|² ψ + η ψ ∘ ξ(t),
+  ∂_t ψ    = −Θ[ψ] · J[ψ] + g |ψ|² ψ + η ψ ∘ ξ(t),
 
-  Φ(k,t)  = -C_Φ Θ(k,t) / k²,
-  ∂t Φ    = -γ_h(k) Φ,
+  Φ(k,t)  = −C_Φ Θ(k,t) / k²,
+  ∂_t Φ    = −γ_h(k) Φ,
 
   δ̇_γ    = v_γ,
-  v̇_γ    = -c_s²(t) k² δ_γ - k² Φ - D_S k² δ_γ,
+  v̇_γ    = −c_s²(t) k² δ_γ − k² Φ − D_S k² δ_γ,
 
   δ̇_b    = v_b,
-  v̇_b    = -(c_s²(t)/R(t)) k² δ_γ - k² Φ,
+  v̇_b    = −(c_s²(t)/ℛ(t)) k² δ_γ − k² Φ,
 
-  δ_b     ← (1 - ε) δ_b + ε δ_γ
+  δ_b     ← (1 − ε) δ_b + ε δ_γ
 }
+```
 
 Where:
 
-ψ(x,t) — primordial WCT field
-
-Θ[ψ] — curvature operator: Θ[ψ] = -Δψ / (ψ + ε e^{-α|ψ|²})
-
-J[ψ] — nonlinear source (curvature feedback current)
-
-g |ψ|² ψ — self-interaction / NLS-like term
-
-η ψ ∘ ξ(t) — stochastic curvature forcing (Stratonovich)
-
-Φ(k,t) — curvature-generated gravitational potential
-
-γ_h(k) — horizon-entry decay rate
-
-δ_γ, v_γ — photon-like curvature compression mode and velocity
-
-δ_b, v_b — matter-like compression mode and velocity
-
-c_s(t) — curvature-derived sound speed
-
-R(t) — compression-to-radiation energy ratio
-
-D_S — Silk-like diffusion coefficient
-
-ε — tight-coupling drag fraction
+- **ψ(x,t)** — primordial WCT field
+- **Θ[ψ]** — curvature operator: Θ[ψ] = −Δψ / (ψ + ε e^{−α|ψ|²})
+- **J[ψ]** — nonlinear source (curvature feedback current)
+- **g |ψ|² ψ** — self-interaction / NLS-like term
+- **η ψ ∘ ξ(t)** — stochastic curvature forcing (Stratonovich)
+- **Φ(k,t)** — curvature-generated gravitational potential
+- **γ_h(k)** — horizon-entry decay rate
+- **δ_γ, v_γ** — photon-like curvature compression mode and velocity
+- **δ_b, v_b** — matter-like compression mode and velocity
+- **c_s(t)** — curvature-derived sound speed
+- **ℛ(t)** — compression-to-radiation energy ratio
+- **D_S** — Silk-like diffusion coefficient
+- **ε** — tight-coupling drag fraction
 
 All cosmology equations CM1–CM20 are projections or reductions of UCM:
 
-CM1: take the ψ-equation alone (g, η chosen per sector).
+- **CM1:** take the ψ-equation alone (g, η chosen per sector).
+- **CM2:** compute P_prim(k) from Θ[ψ] and its k-dependence.
+- **CM3:** identify Φ(k,t) = −C_Φ Θ(k,t)/k².
+- **CM4:** define γ_h(k) = |∂_t Θ / Θ| and evolve Φ.
+- **CM5–CM7:** project UCM onto (δ_γ, v_γ, δ_b, v_b) with c_s(t), ℛ(t), D_S.
+- **CM8–CM13:** derive initial conditions and peak metrics from the same system.
+- **CM14–CM20:** express interpretation, scaling, and expansion laws in terms of Θ, Φ, c_s, ℛ, E_curv, E_grad.
 
-CM2: compute P_prim(k) from Θ[ψ] and its k-dependence.
-
-CM3: identify Φ(k,t) = -C_Φ Θ(k,t)/k².
-
-CM4: define γ_h(k) = |∂t Θ / Θ| and evolve Φ.
-
-CM5–CM7: project UCM onto (δ_γ, v_γ, δ_b, v_b) with c_s(t), R(t), D_S.
-
-CM8–CM13: derive initial conditions and peak metrics from the same system.
-
-CM14–CM20: express interpretation, scaling, and expansion laws in terms of
-Θ, Φ, c_s, R, E_curv, E_grad.
+---
 
 ## 2. Master Equation → Equation Family Index
 
@@ -348,11 +258,7 @@ See:
 For JUNO and similar detectors, WCT ghost modes are modeled phenomenologically as a  
 log-energy modulation:
 
-\[
-\delta_g(E)
-=
-A_g \cos\big(k_\ell \ln(E/E_0) + \phi\big),
-\]
+δ_g(E) = A_g cos( k_ℓ ln(E/E₀) + φ )
 
 with detector smearing determining observable amplitude.  
 This is a **phenomenological Ansatz** informed by Master Equation 3 (spectral selection).
