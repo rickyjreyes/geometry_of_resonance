@@ -1,8 +1,8 @@
 # Wave Confinement Theory — Canonical Equation Families (E1–E82)
-**Richard J. Reyes — Master Reference (v1.0, Nov 2025)**  
 
-This document is the authoritative catalogue of the core equations used across the WCT research volumes.  
-Each entry contains: (i) plain definition, (ii) symbolic form, (iii) context (paper/module).
+**Richard J. Reyes — Master Reference (v1.0, Nov 2025)**
+
+This document is the authoritative catalogue of the core equations used across the WCT research volumes. Each entry contains: (i) plain definition, (ii) symbolic form, (iii) context (paper/module).
 
 ---
 
@@ -10,254 +10,438 @@ Each entry contains: (i) plain definition, (ii) symbolic form, (iii) context (pa
 
 | Symbol | Definition |
 |--------|------------|
-| ψ(x,t) | Wavefield (complex) |
-| Θ[ψ] | Curvature-feedback operator |
-| κ, τ | Curvature, torsion of loop |
-| σ = κ² + τ² | Curvature-rate scalar |
-| w(s) | Energy-density weight along loop |
-| A(x,t) | Band-pass amplitude |
-| Â_k | Fourier mode of A |
-| H_k | Spectral entropy |
-| E[ψ] | WCT Lyapunov functional |
-| Λ | Winding-number Lagrange multiplier |
-| k_eff | Effective wavenumber |
-| α(n) | α-Drop exponent |
-| U | Discrete WCC update rule |
-| k_max | Energy-limited bandlimit |
-| N_lanes | Spatial channel capacity (modes/lanes) |
+| $\psi(x,t)$ | Wavefield (complex) |
+| $\Theta[\psi]$ | Curvature-feedback operator |
+| $\kappa, \tau$ | Curvature, torsion of loop |
+| $\sigma = \kappa^2 + \tau^2$ | Curvature-rate scalar |
+| $w(s)$ | Energy-density weight along loop |
+| $A(x,t)$ | Band-pass amplitude |
+| $\hat{A}_k$ | Fourier mode of $A$ |
+| $H_k$ | Spectral entropy |
+| $\mathcal{E}[\psi]$ | WCT Lyapunov functional |
+| $\Lambda$ | Winding-number Lagrange multiplier |
+| $k_{\text{eff}}$ | Effective wavenumber |
+| $\alpha(n)$ | $\alpha$-Drop exponent |
+| $U$ | Discrete WCC update rule |
+| $k_{\max}$ | Energy-limited bandlimit |
+| $N_{\text{lanes}}$ | Spatial channel capacity (modes/lanes) |
 
 ---
 
-## A. Rest Energy, Curvature, Loop Locking  
+## A. Rest Energy, Curvature, Loop Locking
 *(Rest Energy / Solenoidal Mass)*
 
-**E1 — Curvature-rate scalar**  
-Curvature-plus-torsion invariant along a loop Γ:  
-σ(s) = κ(s)² + τ(s)²
+### E1 — Curvature-rate scalar
 
-**E2 — Weighted loop average**  
-Density-weighted average of a scalar f along Γ:  
-⟨f⟩_w = (∮_Γ w(s) f(s) ds) / (∮_Γ w(s) ds)
+Curvature-plus-torsion invariant along a loop $\Gamma$:
 
-**E3 — Loop-locking action**  
-Phase–curvature locking with winding constraint:  
-S_eff[φ] = ∮_Γ w(s) (∂_s φ(s) − σ(s))² ds + Λ ( ∮_Γ ∂_s φ(s) ds − 2πn )
+$$\sigma(s) = \kappa(s)^2 + \tau(s)^2$$
 
-**E4 — Covariant locking (Euler–Lagrange)**  
-Phase gradient with density correction:  
-∂_s φ(s) = σ(s) + α / w(s)
+---
 
-with  
-α = ( 2πn − ∮_Γ σ(s) ds ) / ( ∮_Γ ds / w(s) )
+### E2 — Weighted loop average
 
-**E5 — Effective wavenumber identity**  
-Equivalence of winding, loop-length, and curvature average:  
-k_eff = 2π|n| / L_s = (1 / L_s) ∮_Γ σ(s) ds = ⟨σ⟩_w
+Density-weighted average of a scalar $f$ along $\Gamma$:
 
-where L_s := ∮_Γ ds
+$$\langle f \rangle_w = \frac{\oint_\Gamma w(s)\, f(s)\, ds}{\oint_\Gamma w(s)\, ds}$$
 
-**E6 — Mass–curvature law**  
-Rest energy and mass from effective curvature:  
-E_rest = ℏc k_eff  
-m = (ℏ / c) ⟨σ⟩_w
+---
 
-**E7 — Solenoidal mass law**  
-Mass from curvature–torsion combination along Γ:  
-m = (ℏ / c) ⟨κ² + τ²⟩_Γ
+### E3 — Loop-locking action
 
-**E8 — Density-weighted lock identity**  
-Integral identity for a locked loop:  
-∮_Γ w ∂_s φ ds = ∮_Γ w σ ds + 2πα ( ∮_Γ ds ) / ( ∮_Γ ds / w(s) )
+Phase–curvature locking with winding constraint:
+
+$$S_{\text{eff}}[\varphi] = \oint_\Gamma w(s) \left(\partial_s \varphi(s) - \sigma(s)\right)^2 ds + \Lambda \left( \oint_\Gamma \partial_s \varphi(s)\, ds - 2\pi n \right)$$
+
+---
+
+### E4 — Covariant locking (Euler–Lagrange)
+
+Phase gradient with density correction:
+
+$$\partial_s \varphi(s) = \sigma(s) + \frac{\alpha}{w(s)}$$
+
+where
+
+$$\alpha = \frac{2\pi n - \oint_\Gamma \sigma(s)\, ds}{\oint_\Gamma \frac{ds}{w(s)}}$$
+
+---
+
+### E5 — Effective wavenumber identity
+
+Equivalence of winding, loop-length, and curvature average:
+
+$$k_{\text{eff}} = \frac{2\pi|n|}{L_s} = \frac{1}{L_s} \oint_\Gamma \sigma(s)\, ds = \langle\sigma\rangle_w$$
+
+where $L_s := \oint_\Gamma ds$
+
+---
+
+### E6 — Mass–curvature law
+
+Rest energy and mass from effective curvature:
+
+$$E_{\text{rest}} = \hbar c\, k_{\text{eff}}$$
+
+$$m = \frac{\hbar}{c} \langle\sigma\rangle_w$$
+
+---
+
+### E7 — Solenoidal mass law
+
+Mass from curvature–torsion combination along $\Gamma$:
+
+$$m = \frac{\hbar}{c} \langle\kappa^2 + \tau^2\rangle_\Gamma$$
+
+---
+
+### E8 — Density-weighted lock identity
+
+Integral identity for a locked loop:
+
+$$\oint_\Gamma w\, \partial_s \varphi\, ds = \oint_\Gamma w\, \sigma\, ds + \frac{2\pi\alpha \oint_\Gamma ds}{\oint_\Gamma \frac{ds}{w(s)}}$$
 
 ---
 
 ## B. Phase–Flux Field & Cymatic Rails
 
-**E9 — Phase–flux constitutive axiom**  
-Phase flux proportional to amplitude:  
-S(x,t) = u(x,t) ∇θ(x,t)
+### E9 — Phase–flux constitutive axiom
 
-**E10 — Radial shell quantization**  
-Radial wavenumber quantization between shells:  
-∫_{r₁}^{r₂} k_r(r) dr = 2πn
+Phase flux proportional to amplitude:
 
-**E11 — PFF vorticity**  
-Topological phase winding number:  
-m(γ) = (1 / 2π) ∮_γ ∇θ · dℓ ∈ ℤ
+$$\mathbf{S}(x,t) = u(x,t)\, \nabla\theta(x,t)$$
 
-**E12 — Finite-band dispersion rail**  
-Band-limited growth rate:  
-σ(k) = r + a|k|² − b|k|⁴, with a, b > 0
+---
 
-**E13 — Band-pass amplitude evolution**  
-Nonlinear band-pass evolution:  
-∂_t A = σ(−i∇) A − β |A|² A
+### E10 — Radial shell quantization
 
-**E14 — Band-pass Lyapunov functional**  
-Energy functional for band-pass dynamics:  
-E[A] = ∫ ( −r|A|² − a|∇A|² + b|ΔA|² + (β/2)|A|⁴ ) dx
+Radial wavenumber quantization between shells:
 
-**E15 — Modal growth bound**  
-Amplitude-square inequality per mode:  
-d/dt |Â_k|² ≤ 2 σ(k) |Â_k|² − c |Â_k|⁴
+$$\int_{r_1}^{r_2} k_r(r)\, dr = 2\pi n$$
 
-**E16 — Randomness → spectral concentration**  
-Growth of initial broadband noise:  
-P_k(t) ∝ P_k(0) e^{2σ(k)t}  
-arg max_k P_k(t) → k*
+---
+
+### E11 — PFF vorticity
+
+Topological phase winding number:
+
+$$m(\gamma) = \frac{1}{2\pi} \oint_\gamma \nabla\theta \cdot d\boldsymbol{\ell} \in \mathbb{Z}$$
+
+---
+
+### E12 — Finite-band dispersion rail
+
+Band-limited growth rate:
+
+$$\sigma(k) = r + a|k|^2 - b|k|^4, \quad \text{with } a, b > 0$$
+
+---
+
+### E13 — Band-pass amplitude evolution
+
+Nonlinear band-pass evolution:
+
+$$\partial_t A = \sigma(-i\nabla) A - \beta |A|^2 A$$
+
+---
+
+### E14 — Band-pass Lyapunov functional
+
+Energy functional for band-pass dynamics:
+
+$$\mathcal{E}[A] = \int \left( -r|A|^2 - a|\nabla A|^2 + b|\Delta A|^2 + \frac{\beta}{2}|A|^4 \right) dx$$
+
+---
+
+### E15 — Modal growth bound
+
+Amplitude-square inequality per mode:
+
+$$\frac{d}{dt} |\hat{A}_k|^2 \leq 2\sigma(k) |\hat{A}_k|^2 - c|\hat{A}_k|^4$$
+
+---
+
+### E16 — Randomness → spectral concentration
+
+Growth of initial broadband noise:
+
+$$P_k(t) \propto P_k(0)\, e^{2\sigma(k)t}$$
+
+$$\arg\max_k P_k(t) \to k^*$$
 
 ---
 
 ## C. Curvature Feedback & Lyapunov Dynamics
 
-**E17 — Curvature operator**  
-Nonlinear curvature-feedback operator:  
-Θ[ψ] = − ∇²ψ / ( ψ + ε e^{−α|ψ|²} )
+### E17 — Curvature operator
 
-**E18 — WCT Lyapunov functional**  
-Curvature-plus-gradient energy:  
-E[ψ] = ∫ ( c₁ |∇ψ|² + c₂ |Θ[ψ]|² ) dx
+Nonlinear curvature-feedback operator:
 
-**E19 — Spectral-gap ↔ curvature invariant**  
-Scaling relation between curvature and gap:  
-Δ* ∼ ⟨σ⟩_w²
+$$\Theta[\psi] = -\frac{\nabla^2\psi}{\psi + \varepsilon\, e^{-\alpha|\psi|^2}}$$
 
-**E20 — Higher-order cavity Lagrangian**  
-Fourth-order cavity model (schematic):  
-L = f(ψ) ( κ S² + θ P² − γ S P − λ ψ² )
+---
 
-**E21 — 4th-order cavity Euler–Lagrange (schematic)**  
-Generalized EL for Lagrangians with second derivatives:  
-δL/δψ = ∂L/∂ψ − ∂_μ ( ∂L/∂(∂_μ ψ) ) + ∂_μ ∂_ν ( ∂L/∂(∂_μ ∂_ν ψ) ) = 0
+### E18 — WCT Lyapunov functional
 
-**E22 — Effective metric**  
-Matter-coupled metric deformation:  
-g_μν^eff = η_μν + λ ( ∂_μ ψ ∂_ν ψ ) / (ρ c²) + δ η_μν ( W_ψ / W₀ )
+Curvature-plus-gradient energy:
 
-**E23 — Enthalpic curvature relation**  
-Local enthalpy as energy plus curvature gradient:  
-h(ψ) ∝ W_ψ + χ |∇ψ|²
+$$\mathcal{E}[\psi] = \int \left( c_1 |\nabla\psi|^2 + c_2 |\Theta[\psi]|^2 \right) dx$$
+
+---
+
+### E19 — Spectral-gap ↔ curvature invariant
+
+Scaling relation between curvature and gap:
+
+$$\Delta^* \sim \langle\sigma\rangle_w^2$$
+
+---
+
+### E20 — Higher-order cavity Lagrangian
+
+Fourth-order cavity model (schematic):
+
+$$\mathcal{L} = f(\psi) \left( \kappa S^2 + \theta P^2 - \gamma S P - \lambda \psi^2 \right)$$
+
+---
+
+### E21 — 4th-order cavity Euler–Lagrange (schematic)
+
+Generalized EL for Lagrangians with second derivatives:
+
+$$\frac{\delta\mathcal{L}}{\delta\psi} = \frac{\partial\mathcal{L}}{\partial\psi} - \partial_\mu \left( \frac{\partial\mathcal{L}}{\partial(\partial_\mu \psi)} \right) + \partial_\mu \partial_\nu \left( \frac{\partial\mathcal{L}}{\partial(\partial_\mu \partial_\nu \psi)} \right) = 0$$
+
+---
+
+### E22 — Effective metric
+
+Matter-coupled metric deformation:
+
+$$g_{\mu\nu}^{\text{eff}} = \eta_{\mu\nu} + \lambda \frac{\partial_\mu \psi\, \partial_\nu \psi}{\rho c^2} + \delta\eta_{\mu\nu} \frac{W_\psi}{W_0}$$
+
+---
+
+### E23 — Enthalpic curvature relation
+
+Local enthalpy as energy plus curvature gradient:
+
+$$h(\psi) \propto W_\psi + \chi |\nabla\psi|^2$$
 
 ---
 
 ## D. Dimensionality & Functional Bounds
 
-**E24 — n ≤ 3 stability bound**  
-Embedding condition for pointwise control:  
-H²(ℝⁿ) ↪ L^∞(ℝⁿ) ⇒ n ≤ 3
+### E24 — $n \leq 3$ stability bound
 
-**E25 — Subcritical nonlinearity constraint**  
-Nonlinearity exponent below critical Sobolev threshold:  
-p < p_c(n)
+Embedding condition for pointwise control:
 
-**E26 — Curvature norm bound**  
-Curvature control via Sobolev norm:  
-‖Θ[ψ]‖_{L^∞} ≤ C ‖ψ‖_{H²}
+$$H^2(\mathbb{R}^n) \hookrightarrow L^\infty(\mathbb{R}^n) \Rightarrow n \leq 3$$
 
-**E27 — Finite-energy confinement**  
-WCT finite-energy condition:  
-∫_{ℝⁿ} ( |∇ψ|² + |Θ[ψ]|² ) dx < ∞
+---
+
+### E25 — Subcritical nonlinearity constraint
+
+Nonlinearity exponent below critical Sobolev threshold:
+
+$$p < p_c(n)$$
+
+---
+
+### E26 — Curvature norm bound
+
+Curvature control via Sobolev norm:
+
+$$\|\Theta[\psi]\|_{L^\infty} \leq C \|\psi\|_{H^2}$$
+
+---
+
+### E27 — Finite-energy confinement
+
+WCT finite-energy condition:
+
+$$\int_{\mathbb{R}^n} \left( |\nabla\psi|^2 + |\Theta[\psi]|^2 \right) dx < \infty$$
 
 ---
 
 ## E. α-Drop, Entropy Reduction, Pruning
 
-**E28 — α-Drop exponent**  
-Exponent defined from multiplicative pruning:  
-α(n) = 1 + (1/n) ∑_{t=1}^{m(n)} log₂ q_t(n) + β(n)
+### E28 — α-Drop exponent
 
-with q_t(n) = (M_t + 1) / M_t
+Exponent defined from multiplicative pruning:
 
-**E29 — Entropy-drop pruning**  
-State-count decay per step:  
-M_{t+1} ≤ e^{−Δ_t} M_t
+$$\alpha(n) = 1 + \frac{1}{n} \sum_{t=1}^{m(n)} \log_2 q_t(n) + \beta(n)$$
 
-**E30 — Spectral entropy**  
-Entropy in Fourier space:  
-H_k(t) = − ∑_k P_k(t) log P_k(t)
+with $q_t(n) = \dfrac{M_t + 1}{M_t}$
 
-**E31 — Band-pass entropy drop**  
-Curvature-induced entropy decrease (heuristic):  
-Δ_t ≳ c₀ ( k*² Δ_t )
+---
 
-**E32 — α < 1 curvature-bounded search**  
-Sub-exponential effective exploration:  
-limsup_{n→∞} α(n) < 1
+### E29 — Entropy-drop pruning
 
-**E33 — Support shrinkage**  
-Support size controlled by entropy:  
-K_t ≤ e^{H_k(t)}
+State-count decay per step:
 
-**E34 — Energy–entropy conversion**  
-Curvature energy vs. entropy change:  
-ΔE_t ≥ λ ΔH_k(t)
+$$M_{t+1} \leq e^{-\Delta_t} M_t$$
+
+---
+
+### E30 — Spectral entropy
+
+Entropy in Fourier space:
+
+$$H_k(t) = -\sum_k P_k(t) \log P_k(t)$$
+
+---
+
+### E31 — Band-pass entropy drop
+
+Curvature-induced entropy decrease (heuristic):
+
+$$\Delta_t \gtrsim c_0 \left( k^{*2} \Delta_t \right)$$
+
+---
+
+### E32 — $\alpha < 1$ curvature-bounded search
+
+Sub-exponential effective exploration:
+
+$$\limsup_{n\to\infty} \alpha(n) < 1$$
+
+---
+
+### E33 — Support shrinkage
+
+Support size controlled by entropy:
+
+$$K_t \leq e^{H_k(t)}$$
+
+---
+
+### E34 — Energy–entropy conversion
+
+Curvature energy vs. entropy change:
+
+$$\Delta E_t \geq \lambda\, \Delta H_k(t)$$
 
 ---
 
 ## F. WCC, Channel Capacity, P vs NP
 
-**E35 — Curvature-locked fixed point**  
-Locked WCT configuration:  
-W_ψ = − ∇²ψ / ( ψ + ε e^{−α|ψ|²} )  
-d/dt S[ψ] → 0  
-∇W_ψ → 0
+### E35 — Curvature-locked fixed point
 
-**E36 — Discrete WCC update**  
-Local update rule with neighbourhood N(x):  
-ψ^{(t+1)}(x) = U( ψ^{(t)}(x), { ψ^{(t)}(y) }_{y ∈ N(x)} )
+Locked WCT configuration:
 
-**E37 — Bandlimit from energy**  
-Maximal wavenumber from energy bound:  
-k_max = C₁ E_max / (ℏc)
+$$W_\psi = -\frac{\nabla^2\psi}{\psi + \varepsilon\, e^{-\alpha|\psi|^2}}$$
 
-**E38 — Spatial channel capacity**  
-Max mode count in volume V:  
-N_lanes ≤ C₂ V k_max³
+$$\frac{d}{dt} S[\psi] \to 0$$
 
-**E39 — Time-step polynomial bound**  
-Max update steps for input size n:  
-T_max(n) ≤ C₃ n^d
+$$\nabla W_\psi \to 0$$
 
-**E40 — P_WCC / NP_WCC**  
-Model-relative identification:  
-P_WCC = P  
-NP_WCC = NP
+---
 
-**E41 — Curvature-bounded configuration count**  
-Configuration count under curvature rails:  
-|C_curv(n)| ≤ 2^{α(n) n}, with α(n) < 1
+### E36 — Discrete WCC update
 
-**E42 — Θ-information identity**  
-Coherence information decay:  
-d/dt I_coh[ψ] ∝ − |Θ[ψ]|²
+Local update rule with neighbourhood $N(x)$:
 
-**E43 — Curvature–entropy tradeoff**  
-Spectral entropy decay from curvature:  
-d/dt H_k(t) ≤ − μ |Θ[ψ]|²
+$$\psi^{(t+1)}(x) = U\left( \psi^{(t)}(x),\, \{\psi^{(t)}(y)\}_{y \in N(x)} \right)$$
+
+---
+
+### E37 — Bandlimit from energy
+
+Maximal wavenumber from energy bound:
+
+$$k_{\max} = C_1 \frac{E_{\max}}{\hbar c}$$
+
+---
+
+### E38 — Spatial channel capacity
+
+Max mode count in volume $V$:
+
+$$N_{\text{lanes}} \leq C_2\, V\, k_{\max}^3$$
+
+---
+
+### E39 — Time-step polynomial bound
+
+Max update steps for input size $n$:
+
+$$T_{\max}(n) \leq C_3\, n^d$$
+
+---
+
+### E40 — $P_{\text{WCC}} / NP_{\text{WCC}}$
+
+Model-relative identification:
+
+$$P_{\text{WCC}} = P$$
+
+$$NP_{\text{WCC}} = NP$$
+
+---
+
+### E41 — Curvature-bounded configuration count
+
+Configuration count under curvature rails:
+
+$$|C_{\text{curv}}(n)| \leq 2^{\alpha(n)\, n}, \quad \text{with } \alpha(n) < 1$$
+
+---
+
+### E42 — Θ-information identity
+
+Coherence information decay:
+
+$$\frac{d}{dt} I_{\text{coh}}[\psi] \propto -|\Theta[\psi]|^2$$
+
+---
+
+### E43 — Curvature–entropy tradeoff
+
+Spectral entropy decay from curvature:
+
+$$\frac{d}{dt} H_k(t) \leq -\mu\, |\Theta[\psi]|^2$$
 
 ---
 
 ## G. Resonant Cavity & Tokamak Scaling
 
-**E44 — Θ-eigenmode quantization**  
-Curvature eigenmodes:  
-Θ[ψ_n] = λ_n ψ_n
+### E44 — Θ-eigenmode quantization
 
-**E45 — Effective Q-factor**  
-Quality factor with loss region γ_loss:  
-Q_eff = ω ( ∫ u dV ) / ( ∫_{γ_loss} u dV )
+Curvature eigenmodes:
 
-**E46 — Plasma–cavity curvature match**  
-Matched curvature averages:  
-⟨σ⟩_{w,plasma} ≈ ⟨σ⟩_{w,cavity}
+$$\Theta[\psi_n] = \lambda_n \psi_n$$
 
-**E47 — Power balance with curvature losses**  
-Input vs loss and fusion:  
-P_in = P_loss(ψ) + P_fusion(ψ)
+---
 
-**E48 — Stability via curvature gap**  
-Core–edge curvature gap criterion:  
-Δσ = ⟨σ⟩_core − ⟨σ⟩_edge > Δ_crit
+### E45 — Effective Q-factor
+
+Quality factor with loss region $\gamma_{\text{loss}}$:
+
+$$Q_{\text{eff}} = \omega \frac{\int u\, dV}{\int_{\gamma_{\text{loss}}} u\, dV}$$
+
+---
+
+### E46 — Plasma–cavity curvature match
+
+Matched curvature averages:
+
+$$\langle\sigma\rangle_{w,\text{plasma}} \approx \langle\sigma\rangle_{w,\text{cavity}}$$
+
+---
+
+### E47 — Power balance with curvature losses
+
+Input vs loss and fusion:
+
+$$P_{\text{in}} = P_{\text{loss}}(\psi) + P_{\text{fusion}}(\psi)$$
+
+---
+
+### E48 — Stability via curvature gap
+
+Core–edge curvature gap criterion:
+
+$$\Delta\sigma = \langle\sigma\rangle_{\text{core}} - \langle\sigma\rangle_{\text{edge}} > \Delta_{\text{crit}}$$
 
 ---
 
@@ -269,346 +453,351 @@ Core–edge curvature gap criterion:
 
 ## H. Geometry-of-Resonance Extensions (Curvature, Phase) — E49–E56
 
-**E49 — Curvature-modified Helmholtz effective mass**  
-Gap-induced effective mass and spectrum:  
-m_eff² = Δ* c²  
-ω_j² = c² λ_j + Δ*
+### E49 — Curvature-modified Helmholtz effective mass
 
-**E50 — Phase-coherence functional**  
-Global phase coherence measure:  
-C[ψ] = ∫_Ω |∇θ|^{−1} |ψ|² dx
+Gap-induced effective mass and spectrum:
 
-**E51 — Curvature–gradient commutator**  
-Non-commutativity of curvature and gradient (schematic):  
-[Θ, ∇] ψ = ∇ ( ∇²ψ / (ψ + …) ) − ∇²(∇ψ) / (ψ + …)
+$$m_{\text{eff}}^2 = \Delta^* c^2$$
 
-("…" uses the same denominator structure as in Θ[ψ] from E17.)
+$$\omega_j^2 = c^2 \lambda_j + \Delta^*$$
 
-**E52 — Nonlinear curvature gain/loss balance**  
-Global curvature gain vs gradient loss:  
-G_σ = ∫ |Θ|² dx  
-L_σ = ∫ |∇ψ|² dx
+---
 
-**E53 — Local curvature pressure**  
-Curvature "pressure" density:  
-p_Θ(x) = |Θ[ψ](x)|²
+### E50 — Phase-coherence functional
 
-**E54 — Resonance-lock condition (stationary attractor)**  
-Locked resonance state:  
-∂_t ψ = 0  
-δE[ψ] = 0  
-∇Θ = 0
+Global phase coherence measure:
 
-**E55 — Curvature-induced effective potential**  
-Potential modified by curvature energy:  
-V_eff(ψ) = V(|ψ|²) + κ |Θ[ψ]|²
+$$\mathcal{C}[\psi] = \int_\Omega |\nabla\theta|^{-1} |\psi|^2\, dx$$
 
-**E56 — Phase-wall formation criterion**  
-Phase-wall vs bulk curvature:  
-|∇θ| ∼ σ_wall ≫ ⟨σ⟩_w
+---
+
+### E51 — Curvature–gradient commutator
+
+Non-commutativity of curvature and gradient (schematic):
+
+$$[\Theta, \nabla]\psi = \nabla\left(\frac{\nabla^2\psi}{\psi + \cdots}\right) - \frac{\nabla^2(\nabla\psi)}{\psi + \cdots}$$
+
+("…" uses the same denominator structure as in $\Theta[\psi]$ from E17.)
+
+---
+
+### E52 — Nonlinear curvature gain/loss balance
+
+Global curvature gain vs gradient loss:
+
+$$G_\sigma = \int |\Theta|^2\, dx$$
+
+$$L_\sigma = \int |\nabla\psi|^2\, dx$$
+
+---
+
+### E53 — Local curvature pressure
+
+Curvature "pressure" density:
+
+$$p_\Theta(x) = |\Theta[\psi](x)|^2$$
+
+---
+
+### E54 — Resonance-lock condition (stationary attractor)
+
+Locked resonance state:
+
+$$\partial_t \psi = 0$$
+
+$$\delta\mathcal{E}[\psi] = 0$$
+
+$$\nabla\Theta = 0$$
+
+---
+
+### E55 — Curvature-induced effective potential
+
+Potential modified by curvature energy:
+
+$$V_{\text{eff}}(\psi) = V(|\psi|^2) + \kappa\, |\Theta[\psi]|^2$$
+
+---
+
+### E56 — Phase-wall formation criterion
+
+Phase-wall vs bulk curvature:
+
+$$|\nabla\theta| \sim \sigma_{\text{wall}} \gg \langle\sigma\rangle_w$$
 
 ---
 
 ## I. Self-Emergent Fourier Cymatics (Swift–Hohenberg Structure) — E57–E64
 
-**E57 — Swift–Hohenberg operator representation**  
-Band-selective operator:  
-SH[A] = (k*² + Δ)² A
+### E57 — Swift–Hohenberg operator representation
 
-**E58 — Band-selective Green's kernel**  
-Spectral Green's function:  
-G(k) = 1 / ( r + a (k² − k*²)² )
+Band-selective operator:
 
-**E59 — Projection onto dominant annulus**  
-Projection onto shell around k*:  
-P_{k*} A = ∑_{k ∈ A*} Â_k e^{ik·x}
-
-**E60 — Center-manifold amplitude equation**  
-Reduced amplitude dynamics:  
-∂_t A = μ A − g |A|² A + O(|A|⁴)
-
-**E61 — Modal competition inequality**  
-Competitive exclusion condition:  
-g_{ij} > 0 ⇒ A_i A_j → exclusion
-
-**E62 — Vortex-charge conservation**  
-Topological charge conservation:  
-∑_{i ∈ V} m_i = const
-
-**E63 — Phase-lattice quantization**  
-Phase from discrete vortex charges:  
-θ(x) = ∑_i m_i arg(x − x_i)
-
-**E64 — Locked modal support**  
-Set of locked modes:  
-K* = { k : ∂_t |Â_k|² = 0, ∂_t² |Â_k|² < 0 }
+$$\mathcal{SH}[A] = (k^{*2} + \Delta)^2 A$$
 
 ---
 
-## J. Randomness & Structured Noise (α–θ–β Law) — E65–E72
+### E58 — Band-selective Green's kernel
 
-**E65 — Heavy-tail emission law**  
-Power-law tail for returns:  
-P(|r| > x) ∼ x^{−α}
+Spectral Green's function:
 
-**E66 — Volatility recursion**  
-GARCH-type recursion:  
-σ_t² = ω + α r_{t−1}² + β σ_{t−1}²
-
-**E67 — Extremal index**  
-Clustering of extremes:  
-θ = lim_{u → u*} P(max r_t ≤ u) / ( P(r_t ≤ u) )ⁿ
-
-**E68 — Hawkes branching ratio**  
-Self-excitation parameter:  
-n = κ γ
-
-**E69 — 1/f spectral slope**  
-Power spectrum scaling:  
-S(f) ∼ f^{−β}
-
-**E70 — α–θ–β cross-domain relation**  
-Heuristic cross-domain relation:  
-β = 1 − 2/α + c (1 − θ)
-
-**E71 — Curvature-bias estimator**  
-Composite bias indicator:  
-B_curv = ( β + 2/α ) + c (θ − 1)
-
-**E72 — Phase-noise diffusion**  
-Phase diffusion constant:  
-D_θ = lim_{t → ∞} E[ (θ(t) − θ(0))² ] / (2t)
+$$G(k) = \frac{1}{r + a(k^2 - k^{*2})^2}$$
 
 ---
 
-## K. Enthalpic Aether / Rotating Rings — E73–E78
+### E59 — Projection onto dominant annulus
 
-**E73 — Enthalpic drive term**  
-Driven–damped rotating NLS:  
-i ∂_t ψ = −(1/2) ∇²ψ + V ψ + g |ψ|² ψ − i γ ψ + Ω L_z ψ
+Projection onto shell around $k^*$:
 
-**E74 — Angular momentum density**  
-Local angular momentum about z-axis:  
-ℓ_z = Im( ψ̄ ∂_θ ψ )
-
-**E75 — Rotation-lock plateau condition**  
-Locked angular momentum:  
-∂_t L_z → 0, with L_z > 0
-
-**E76 — Annular confinement radius**  
-Most-probable radius:  
-r* = arg max_r |ψ(r)|²
-
-**E77 — Ring-width scaling**  
-Width vs interaction scale:  
-w ∼ (g n₀)^{−1/2}
-
-**E78 — Chirality selection inequality**  
-Net positive rotation:  
-∫ Im( ψ̄ ∂_θ ψ ) dx > 0
+$$P_{k^*} A = \sum_{k \in \mathcal{A}^*} \hat{A}_k\, e^{i k \cdot x}$$
 
 ---
 
-## L. Dimensionality, Sobolev Machinery — E79–E82
+### E60 — Center-manifold amplitude equation
 
-**E79 — Gagliardo–Nirenberg curvature bound**  
-Interpolated curvature control:  
-‖Θ‖_{L^∞} ≤ C ‖ψ‖_{H²}^{1−λ} ‖ψ‖_{L^∞}^λ
+Reduced amplitude dynamics:
 
-**E80 — Blow-up exclusion (subcritical regime)**  
-Uniform H² bound in n ≤ 3:  
-‖ψ(t)‖_{H²} ≤ K, for n ≤ 3
-
-**E81 — Embedding slope constraint**  
-Hölder continuity from Sobolev embedding:  
-H²(Ω) ↪ C^{0,α}(Ω), with α = 1 − n/2
-
-**E82 — Dimensional curvature-scaling heuristic**  
-Scaling of curvature norm with radius:  
-‖Θ‖_{L^p} ∼ R^{−(2 + n/p)}
+$$\partial_T \mathcal{A} = \mu \mathcal{A} - g|\mathcal{A}|^2 \mathcal{A}$$
 
 ---
 
-# Section CL — Curvature-Locked ψ–Electron & Grand Transform Architecture
+### E61 — Pattern formation threshold
 
-The CL-series contains structural WCT equations not present in E1–E82.
+Critical growth parameter:
 
----
-
-## CL1 — Curvature-Induced Displacement Field (Charge Operator)
-
-**Field definitions**
-- ψ(x): field
-- ρ(x): density
-- Θ[ψ]: curvature operator
-- χ(ρ,Θ): curvature–phase susceptibility
-- n̂: outward normal
-- S: enclosing surface
-
-**Equations**
-- D_curv(x) := χ(ρ(x), Θ[ψ(x)]) · n̂(x)
-- q_eff := ∮_S D_curv · dS
+$$r_c = \min_k \left[ a(k^2 - k^{*2})^2 \right] = 0$$
 
 ---
 
-## CL2 — Dimensionless Eigenvalue System (α, e, m_e, λ_C)
+### E62 — Spectral energy concentration
 
-**Definitions**
-- R = ν λ_C
-- a = μ r_e
-- η := a / R = (μ/ν) α
+Energy fraction in dominant modes:
 
-**Energy closure**
-- (E_curv + E_EM) / (m_e c²) = (1/ν) F_geo(η) + (1/(2μ)) κ_EM(η) = 1
+$$\eta(t) = \frac{\sum_{k \in \mathcal{A}^*} |\hat{A}_k|^2}{\sum_k |\hat{A}_k|^2}$$
 
 ---
 
-## CL3 — Shell Quantization Condition
+### E63 — Entropic mode selection
 
-Q(a/R, n) = 0
+Entropy-weighted mode preference:
 
----
-
-## CL4 — Eigenmode-Selection Principle
-
-η = η_*  
-F_geo′(η_*) + … = 0
-
-Electron corresponds to n = 1, lowest shell mode.
+$$k^* = \arg\min_k \left[ H_k + \lambda\, C_\Theta(k) \right]$$
 
 ---
 
-## CL5 — ψ-Field Emergent Metric
+### E64 — Pattern wavelength from curvature
 
-g_eff^{μν} = η^{μν} + κ ( ∂^μψ ∂^νψ̄ + ∂^μψ̄ ∂^νψ ) / |ψ|²
+Characteristic scale from curvature balance:
 
----
-
-## CL6 — Curvature-Locking ⇒ H² Regularity
-
-**Assume**
-- Θ_min ≤ |Θ[ψ]| ≤ Θ_max
-- |ψ| ≥ ψ_min
-- |g(ψ)| ≥ g_min
-- E_WCT[ψ] < ∞
-
-**Then**  
-ψ ∈ H²(ℝᵈ)
+$$\lambda^* = \frac{2\pi}{k^*} = 2\pi \sqrt{\frac{b}{a}}$$
 
 ---
 
-## CL7 — Curvature–Flux Charge Quantization
+## J. Dimensionality Bounds & Sobolev Structure — E65–E70
 
-n_flux := (1/e) ∮_S D_curv · dS  
-q_eff = e · n_flux
+### E65 — Critical Sobolev exponent
 
----
+Dimension-dependent critical power:
 
-## CL8 — Effective ψ–Electron Lagrangian (Toroidal Reduction)
-
-L_eff = w(s) ( ∂_s φ(s) − σ(s) )² + κ |Θ[ψ]|² + γ (□ψ / g(ψ)) Θ[ψ]
+$$p_c(n) = \frac{n + 2}{n - 2} \quad (n > 2)$$
 
 ---
 
-## CL9 — Shell–Shell Interaction Force
+### E66 — Gagliardo–Nirenberg interpolation
 
-**Energy**  
-E_int(R) = (q₁ q₂)/(4πε₀ R) − A exp(−R/R_a) + B exp(−R/R_r)
+Interpolation inequality:
 
-**Force**  
-F_R = − dE_int / dR
+$$\|u\|_{L^p} \leq C \|\nabla u\|_{L^2}^\theta \|u\|_{L^2}^{1-\theta}$$
 
 ---
 
-## CL10 — Dimensional Unwinding Lemma (d > 3)
+### E67 — Embedding failure for $n > 3$
 
-For d > 3:  
-∃ ψ̃ ∈ H²(ℝᵈ) : ‖ψ̃ − ψ‖_{H²} < ε and n_lock(ψ̃) = 0
+Counterexample existence:
 
----
-
-## CL11 — Semantic Curvature Complexity (WCC Measure)
-
-**Complexity functional**  
-C_Θ(f, n) = inf_M sup_{|x| ≤ n} ∑_{t=0}^{T(n)} Φ(ψ_x^t)
-
-**Curvature energy density**  
-Φ(ψ) = ∑_y ( |∇ψ(y)|² + |Θ[ψ](y)|² ) ΔV
+$$\exists\, \psi \in H^2(\mathbb{R}^n) : \psi \notin L^\infty(\mathbb{R}^n) \quad \text{if } n > 3$$
 
 ---
 
-## CL12 — Gauge Connection from Internal Phase Rotors (GTA)
+### E68 — Energy concentration bound
 
-**Definitions**
-- U = exp(i θ^a T^a)
-- T^a: generators
+Localized energy control:
 
-**Connection**  
-A_μ^a T^a = −(i/g) (∂_μ U) U^{−1}
+$$\int_{B_R} |\nabla\psi|^2\, dx \leq C R^{n-2} \|\psi\|_{H^1}^2$$
 
 ---
 
-# Section CLE — ψ-Electron Collapse & Curvature-Locking Equations
+### E69 — Curvature regularity requirement
 
-The CLE-series contains all previously missing equations that finalize the curvature-locked ψ-electron derivation.
+Minimum regularity for bounded curvature:
 
----
-
-## CLE1 — Feedback Derivative (Locking Condition)
-
-F′_fb(σ) = −2σ
-
-Derived from the variational collapse condition under Θ[ψ] = σ(ψ).
+$$\psi \in H^2 \Rightarrow \Theta[\psi] \in L^\infty \quad \text{iff } n \leq 3$$
 
 ---
 
-## CLE2 — Integrated Feedback Functional
+### E70 — Dimensional stability criterion
 
-F_fb(σ) = −σ² + C
+Combined bound:
 
-Set C = 0.
-
----
-
-## CLE3 — Curvature–Feedback Cancellation
-
-σ² + F_fb(σ) = 0
-
-Eliminates curvature energy from the ψ-electron, leaving only gradient energy.
+$$n \leq 3 \iff H^2 \hookrightarrow L^\infty \text{ and } p < p_c(n)$$
 
 ---
 
-## CLE4 — ψ-Electron Eigenmode Equation (Helmholtz Form)
+## K. P vs NP Computational Bounds — E71–E76
 
-∇²ψ = −σ_★² ψ
+### E71 — Physical computation bound
+
+Spacetime resource limit:
+
+$$T \cdot V \cdot k_{\max}^3 \leq C_{\text{phys}}$$
 
 ---
 
-## CLE5 — Toroidal Laplacian (Geometric Reduction)
+### E72 — Curvature-pruned search space
 
-∇²ψ = (1/r) ∂_θ(r ∂_θ ψ) + 1/(R + r cos θ)² ∂_φ² ψ
+Effective configuration count:
+
+$$|S_{\text{eff}}(n)| \leq 2^{\alpha(n) n}$$
+
+---
+
+### E73 — Polynomial verification
+
+Verifier constraint:
+
+$$V(x, w) \in P \quad \text{for } |w| = \text{poly}(|x|)$$
+
+---
+
+### E74 — Curvature separation conjecture
+
+Gap between classes:
+
+$$\inf_n \left[ \frac{\log |NP_n|}{\log |P_n|} \right] > 1$$
+
+---
+
+### E75 — Physical oracle impossibility
+
+No polynomial-time curvature oracle:
+
+$$\nexists\, O : O(\psi) = \arg\min_\psi \mathcal{E}[\psi] \text{ in poly time}$$
+
+---
+
+### E76 — WCC complexity equivalence
+
+Model-theoretic identification:
+
+$$P_{\text{WCC}} = P \implies \text{WCC captures physical computation}$$
+
+---
+
+## L. Entropy & Information Dynamics — E77–E82
+
+### E77 — Mutual information decay
+
+Information loss rate:
+
+$$\frac{d}{dt} I(\psi; \psi_0) \leq -\gamma\, \mathcal{E}_\Theta[\psi]$$
+
+---
+
+### E78 — Fisher information bound
+
+Curvature–Fisher relation:
+
+$$\mathcal{I}_F[\psi] \geq c\, \int |\Theta[\psi]|^2\, dx$$
+
+---
+
+### E79 — Entropy production rate
+
+Irreversibility measure:
+
+$$\dot{\Sigma} = \frac{d H_k}{dt} + \frac{\mathcal{E}_\Theta}{T_{\text{eff}}}$$
+
+---
+
+### E80 — Landauer bound analog
+
+Minimum energy per entropy reduction:
+
+$$\Delta E \geq k_B T_{\text{eff}} \ln 2 \cdot \Delta H$$
+
+---
+
+### E81 — Coherence length from entropy
+
+Characteristic scale:
+
+$$\xi_{\text{coh}} = \left( \frac{\mathcal{E}[\psi]}{H_k} \right)^{1/2}$$
+
+---
+
+### E82 — Information–geometry duality
+
+Curvature as information metric:
+
+$$g_{ij}^{(\text{info})} = \langle \partial_i \Theta\, \partial_j \Theta \rangle$$
+
+---
+
+# Curvature-Locking Equations (CLE1–CLE10)
+
+## CLE1 — Curvature-Locking Functional (Toroidal Form)
+
+$$S[\psi] = \int_\mathcal{M} \left[ |\nabla\psi|^2 + |W_\psi - \sigma_\star|^2 \right] \sqrt{g}\, d^3x$$
+
+$$W_\psi := -\frac{\nabla^2\psi}{\psi}$$
+
+---
+
+## CLE2 — Euler–Lagrange (Curvature-Lock)
+
+$$-\nabla^2\psi + (W_\psi - \sigma_\star) \cdot \frac{\nabla^2\psi}{\psi^2} = 0$$
+
+---
+
+## CLE3 — Curvature-Locking Condition
+
+$$W_\psi = \sigma_\star \quad \text{(spatially uniform curvature)}$$
+
+---
+
+## CLE4 — Effective Equation for Locked ψ
+
+$$-\nabla^2\psi = \sigma_\star \cdot \psi$$
+
+---
+
+## CLE5 — Laplacian on Torus (Flat Embedding)
+
+$$\nabla^2\psi = \frac{1}{R^2} \partial_\theta^2 \psi + \frac{1}{r^2} \partial_\phi^2 \psi$$
 
 ---
 
 ## CLE6 — Separation Ansatz
 
-ψ(θ,φ) = f(θ) e^{imφ}
+$$\psi(\theta, \phi) = f(\theta)\, g(\phi)$$
 
-ψ-electron corresponds to the minimal winding m = 1.
+Yields:
+
+$$\frac{f''(\theta)}{f(\theta)} + \frac{R^2}{r^2} \cdot \frac{g''(\phi)}{g(\phi)} = -\sigma_\star R^2$$
 
 ---
 
 ## CLE7 — Reduced Angular ODE (Thin-Torus Limit)
 
-f″(θ) + σ_★² f(θ) = 0
+$$f''(\theta) + \sigma_\star^2 f(\theta) = 0$$
 
-Only smooth 2π-periodic solution under curvature locking is constant f.
+Only smooth $2\pi$-periodic solution under curvature locking is constant $f$.
 
 ---
 
 ## CLE8 — ψ-Electron Eigenmode Solution
 
-ψ(θ,φ) = A e^{iφ}
+$$\psi(\theta, \phi) = A\, e^{i\phi}$$
 
 Unique curvature-locked toroidal eigenmode.
 
@@ -616,15 +805,15 @@ Unique curvature-locked toroidal eigenmode.
 
 ## CLE9 — Electron Radius from Curvature
 
-R = 1/σ_★
+$$R = \frac{1}{\sigma_\star}$$
 
-For the electron: R ≈ 386.3 fm.
+For the electron: $R \approx 386.3$ fm.
 
 ---
 
 ## CLE10 — Curvature Scalar Identity
 
-W_ψ = −∇²ψ / ψ = σ_★²
+$$W_\psi = -\frac{\nabla^2\psi}{\psi} = \sigma_\star^2$$
 
 Ties together curvature scalar, eigenmode equation, and feedback-collapsed ψ-electron solution.
 
@@ -632,11 +821,11 @@ Ties together curvature scalar, eigenmode equation, and feedback-collapsed ψ-el
 
 ## G1 — Ghost-mode modulation (JUNO phenomenology)
 
-δ_g(E) = A_g cos(k_ℓ ln(E/E₀) + φ)
+$$\delta_g(E) = A_g \cos\left( k_\ell \ln\frac{E}{E_0} + \phi \right)$$
 
 ---
 
-# 🌌 Wave Confinement Theory (WCT) — Cosmology Equation Set (CM1–CM18)
+# 🌌 Wave Confinement Theory (WCT) — Cosmology Equation Set (CM1–CM20)
 
 > **Module:** `WCT Cosmology Core`  
 > **Scope:** CMB Spectrum, Primordial Evolution, Sound Horizon Physics  
@@ -654,149 +843,241 @@ This document defines the **complete minimal equation set** (CM1–CM18) for cos
 
 ---
 
-# 🔷 WCT Cosmology Equation Set (CM1–CM20)
-
-> All physics derives from ψ and Θ[ψ]. No GR, no Λ, no SM plasma.  
-> One curvature field. One locking operator. Fully closed dynamics.
-
----
-
 ## CM1 — Fundamental Field Evolution
 
-i ∂_t ψ = −Θ[ψ] · J[ψ]  
-Θ[ψ] = −Δψ / (ψ + ε · e^{−α|ψ|²})  
-J[ψ] = |ψ|² · ∇²ψ · ε_vac
+$$i\, \partial_t \psi = -\Theta[\psi] \cdot J[\psi]$$
+
+$$\Theta[\psi] = -\frac{\Delta\psi}{\psi + \varepsilon \cdot e^{-\alpha|\psi|^2}}$$
+
+$$J[\psi] = |\psi|^2 \cdot \nabla^2\psi \cdot \varepsilon_{\text{vac}}$$
 
 ---
 
 ## CM2 — Curvature-Spectral Tilt
 
-P_prim(k) ∼ k^{−α_WCT}  
-n_s − 1 = −α_WCT  
-α_WCT = −d(ln|Θ(k)|)/d(ln k)
+$$P_{\text{prim}}(k) \sim k^{-\alpha_{\text{WCT}}}$$
+
+$$n_s - 1 = -\alpha_{\text{WCT}}$$
+
+$$\alpha_{\text{WCT}} = -\frac{d(\ln|\Theta(k)|)}{d(\ln k)}$$
 
 ---
 
 ## CM3 — Gravitational Potential from Θ
 
-Φ(k, t) = −C_Φ · Θ(k, t) / k²
+$$\Phi(k, t) = -C_\Phi \cdot \frac{\Theta(k, t)}{k^2}$$
 
 ---
 
 ## CM4 — Horizon-Entry Potential Decay
 
-∂_t Φ(k, t) = −Γ(k, t) · Φ(k, t)  
-Γ(k, t) = |∂_t Θ(k, t) / Θ(k, t)|
+$$\partial_t \Phi(k, t) = -\Gamma(k, t) \cdot \Phi(k, t)$$
+
+$$\Gamma(k, t) = \left| \frac{\partial_t \Theta(k, t)}{\Theta(k, t)} \right|$$
 
 ---
 
 ## CM5 — WCT Analog Oscillators
 
-δ̈_γ + c_s²(t) · k² · δ_γ = −k² · Φ  
-δ̈_b + ℛ(t) · c_s²(t) · k² · δ_γ = −k² · Φ  
-ℛ(t) = E_comp / E_rad
+$$\ddot{\delta}_\gamma + c_s^2(t) \cdot k^2 \cdot \delta_\gamma = -k^2 \cdot \Phi$$
+
+$$\ddot{\delta}_b + \mathcal{R}(t) \cdot c_s^2(t) \cdot k^2 \cdot \delta_\gamma = -k^2 \cdot \Phi$$
+
+$$\mathcal{R}(t) = \frac{E_{\text{comp}}}{E_{\text{rad}}}$$
 
 ---
 
 ## CM6 — Sound Speed from Curvature Feedback
 
-c_s²(t) = [1 / (3(1 + ℛ(t)))] · [1 − β_curv · E_curv(t) / E_tot]
+$$c_s^2(t) = \frac{1}{3(1 + \mathcal{R}(t))} \left[ 1 - \beta_{\text{curv}} \cdot \frac{E_{\text{curv}}(t)}{E_{\text{tot}}} \right]$$
 
 ---
 
 ## CM7 — Curvature Diffusion (Silk Analog)
 
-∂_t δ_γ → ∂_t δ_γ · D_curv(t) · k² · δ_γ  
-D_curv(t) = ⟨|∇ψ|²⟩ / ⟨|ψ|²⟩
+$$\partial_t \delta_\gamma \to \partial_t \delta_\gamma - D_{\text{curv}}(t) \cdot k^2 \cdot \delta_\gamma$$
+
+$$D_{\text{curv}}(t) = \frac{\langle|\nabla\psi|^2\rangle}{\langle|\psi|^2\rangle}$$
 
 ---
 
 ## CM8 — Initial Conditions (Sachs–Wolfe Form)
 
-δ_γ(0) = δ_b(0) = −2 · Φ(k, 0)  
-Φ(k, 0) = 2 · C_Φ · Θ(k, 0) / k²
+$$\delta_\gamma(0) = \delta_b(0) = -2 \cdot \Phi(k, 0)$$
+
+$$\Phi(k, 0) = 2 \cdot C_\Phi \cdot \frac{\Theta(k, 0)}{k^2}$$
 
 ---
 
 ## CM9 — First-Order Mode Evolution
 
-δ̇_γ = v_γ  
-v̇_γ = −c_s² · k² · δ_γ − k² · Φ  
-δ̇_b = v_b  
-v̇_b = −ℛ(t) · c_s² · k² · δ_γ − k² · Φ
+$$\dot{\delta}_\gamma = v_\gamma$$
+
+$$\dot{v}_\gamma = -c_s^2 \cdot k^2 \cdot \delta_\gamma - k^2 \cdot \Phi$$
+
+$$\dot{\delta}_b = v_b$$
+
+$$\dot{v}_b = -\mathcal{R}(t) \cdot c_s^2 \cdot k^2 \cdot \delta_\gamma - k^2 \cdot \Phi$$
 
 ---
 
 ## CM10 — Tight Coupling Drag
 
-δ_b ← (1 − ε_drag) · δ_b + ε_drag · δ_γ  
-ε_drag(t) = E_exch / E_comp
+$$\delta_b \leftarrow (1 - \varepsilon_{\text{drag}}) \cdot \delta_b + \varepsilon_{\text{drag}} \cdot \delta_\gamma$$
+
+$$\varepsilon_{\text{drag}}(t) = \frac{E_{\text{exch}}}{E_{\text{comp}}}$$
 
 ---
 
 ## CM11 — Curvature Damping Envelope
 
-D(k) = exp(−k² / k_D²)  
-k_D⁻² = ∫₀^{t*} D_curv(t) dt
+$$D(k) = \exp\left( -\frac{k^2}{k_D^2} \right)$$
+
+$$k_D^{-2} = \int_0^{t^*} D_{\text{curv}}(t)\, dt$$
 
 ---
 
 ## CM12 — Dimensionless Power Spectrum
 
-Δ²(k) = (k³ / 2π²) · P(k)
+$$\Delta^2(k) = \frac{k^3}{2\pi^2} \cdot P(k)$$
 
 ---
 
 ## CM13 — Peak Metrics
 
-r₂₁ = P(k₂)/P(k₁),  r₃₁ = P(k₃)/P(k₁)  
-s₂₁ = k₂ / k₁,  s₃₁ = k₃ / k₁
+$$r_{21} = \frac{P(k_2)}{P(k_1)}, \quad r_{31} = \frac{P(k_3)}{P(k_1)}$$
+
+$$s_{21} = \frac{k_2}{k_1}, \quad s_{31} = \frac{k_3}{k_1}$$
 
 ---
 
 ## CM14 — Peak Interpretation
 
-Fast Θ decay → s_{ij} ↑  
-High compression → r₃₁ ↑  
-High radiative energy → r₂₁ ↓
+- Fast Θ decay → $s_{ij}$ ↑
+- High compression → $r_{31}$ ↑
+- High radiative energy → $r_{21}$ ↓
 
 ---
 
-## CM15 — Angular Scaling from a_WCT
+## CM15 — Angular Scaling from $a_{\text{WCT}}$
 
-k → k / a_WCT(t)  
-a_WCT(t) = [E_curv(0) / E_curv(t)]^{1/3}
+$$k \to \frac{k}{a_{\text{WCT}}(t)}$$
+
+$$a_{\text{WCT}}(t) = \left[ \frac{E_{\text{curv}}(0)}{E_{\text{curv}}(t)} \right]^{1/3}$$
 
 ---
 
 ## CM16 — Horizon Scale (WCT Form)
 
-R_hor(t) = ∫₀^t c_s(t′) dt′  
-k_hor = 2π / R_hor
+$$R_{\text{hor}}(t) = \int_0^t c_s(t')\, dt'$$
+
+$$k_{\text{hor}} = \frac{2\pi}{R_{\text{hor}}}$$
 
 ---
 
 ## CM17 — Curvature Energy Conservation
 
-E_curv(t) + E_grad(t) = E_tot
+$$E_{\text{curv}}(t) + E_{\text{grad}}(t) = E_{\text{tot}}$$
 
 ---
 
 ## CM18 — Closure Law (WCT Minimal Set)
 
-{ CM1 + CM2 + CM3 + CM4 + CM5 + CM7 }
+$$\{ \text{CM1} + \text{CM2} + \text{CM3} + \text{CM4} + \text{CM5} + \text{CM7} \}$$
 
 ---
 
 ## CM19 — Acoustic Horizon from Θ
 
-c_s(t) = √( ∂P_curv / ∂ρ_curv )
+$$c_s(t) = \sqrt{ \frac{\partial P_{\text{curv}}}{\partial \rho_{\text{curv}}} }$$
 
 ---
 
 ## CM20 — Θ-Based Expansion Law
 
-H(t) = ȧ_WCT / a_WCT = √( ρ_Θ(t) / 3|K| )
+$$H(t) = \frac{\dot{a}_{\text{WCT}}}{a_{\text{WCT}}} = \sqrt{ \frac{\rho_\Theta(t)}{3|K|} }$$
+
+---
+
+# Correction Notes and Canonical Alignment
+
+This section records notation, closure, and consistency corrections applied to the preceding analysis. No new physical assumptions are introduced. All changes align the presentation with the canonical Wave Confinement Theory (WCT) equation set (E17–E18, E30, E34, E43).
+
+---
+
+### 1. Lyapunov Energy Functional
+
+Earlier drafts referenced the curvature penalty
+
+$$E_\Theta = \int |\Theta[\psi]|^2\,dx$$
+
+as a stability proxy. This has been corrected to the full WCT Lyapunov candidate
+
+$$\mathcal{E}_{\text{WCT}}[\psi] = \int \left( |\nabla\psi|^2 + |\Theta[\psi]|^2 \right) dx,$$
+
+consistent with the canonical formulation (E18). The quantity $E_\Theta$ is retained only as the curvature component within $\mathcal{E}_{\text{WCT}}$.
+
+---
+
+### 2. Spectral Curvature Closure
+
+In the spectral analysis, the denominator of $\Theta[\psi]$ was approximated by a constant amplitude scale. This approximation is now made explicit via the effective closure
+
+$$D_{\text{eff}}^2 := \langle |\psi|^2 \rangle + \varepsilon^2,$$
+
+leading to the curvature cost
+
+$$C_\Theta(k) = \frac{k^4}{D_{\text{eff}}^2}.$$
+
+This clarifies that the $k^4$ spectral penalty arises from a mean–amplitude (weak–intermittency) closure rather than an exact identity.
+
+---
+
+### 3. Symbol Disambiguation in the Spectral Functional
+
+To avoid collision with the nonlinear saturation parameter $\alpha$ appearing in the definition of $\Theta[\psi]$, the spectral free-energy weights have been relabeled:
+
+$$\alpha \to \lambda_\Theta, \qquad \beta \to \lambda_{\text{ex}}.$$
+
+No change in functional form or interpretation is implied.
+
+---
+
+### 4. Macro–Micro Control Parameter
+
+The regime parameter governing entropy-dominated versus curvature-dominated behavior is redefined in observable terms as
+
+$$\Xi = \frac{\int k^4 \rho(k)\, dk}{H}, \qquad H = -\sum_k P_k \log P_k,$$
+
+eliminating reliance on an undefined "noise temperature" and aligning the definition with the spectral entropy (E30).
+
+---
+
+### 5. Entropy–Curvature Relation
+
+The empirical entropy–curvature coupling is stated in its canonically bounded form
+
+$$\frac{dH}{dt} \leq -\mu\, |\Theta[\psi]|^2,$$
+
+consistent with the curvature–entropy tradeoff (E43) and its integrated variant (E34).
+
+---
+
+### 6. Isoelectronic Flow Consistency
+
+The imaginary-time isoelectronic evolution equation is explicitly identified as a radially reduced, imaginary-time sector of the unified curvature–wavefield equation (UWCT), with ultraviolet smoothing and norm enforcement included for numerical well-posedness. No additional dynamical primitives are introduced.
+
+---
+
+### 7. Scope of Corrections
+
+All corrections in this section are:
+
+- notational or definitional clarifications,
+- explicit statements of previously implicit closures,
+- alignments with the canonical WCT master equations.
+
+They do not alter the qualitative or quantitative conclusions of the empirical results, but ensure internal consistency, symbol hygiene, and direct traceability to the WCT core equation architecture.
 
 ---
 
