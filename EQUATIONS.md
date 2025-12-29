@@ -4,16 +4,18 @@
 
 This document is the authoritative catalogue of the core equations used across the WCT research volumes. Each entry contains: (i) plain definition, (ii) symbolic form, (iii) context (paper/module).
 
+
 ---
 
-## 0. Symbol Table
+## 0. Symbol Table (REPLACE EXISTING)
 
 | Symbol | Definition |
 |--------|------------|
 | $\psi(x,t)$ | Wavefield (complex) |
 | $\Theta[\psi]$ | Curvature-feedback operator |
 | $\kappa, \tau$ | Curvature, torsion of loop |
-| $\sigma = \kappa^2 + \tau^2$ | Curvature-rate scalar |
+| $\sigma_{\text{dens}}(s) = \kappa(s)^2 + \tau(s)^2$ | Curvature-rate density along $\Gamma$ (units $L^{-2}$) |
+| $\sigma(s) = \sqrt{\kappa(s)^2 + \tau(s)^2}$ | Curvature spectral rate (inverse-length scale, units $L^{-1}$) |
 | $w(s)$ | Energy-density weight along loop |
 | $A(x,t)$ | Band-pass amplitude |
 | $\hat{A}_k$ | Fourier mode of $A$ |
@@ -29,13 +31,22 @@ This document is the authoritative catalogue of the core equations used across t
 ---
 
 ## A. Rest Energy, Curvature, Loop Locking
+
 *(Rest Energy / Solenoidal Mass)*
 
-### E1 — Curvature-rate scalar
+### E1a — Curvature-rate density
 
-Curvature-plus-torsion invariant along a loop $\Gamma$:
+Curvature-plus-torsion density along a loop $\Gamma$:
 
-$$\sigma(s) = \kappa(s)^2 + \tau(s)^2$$
+$$\sigma_{\text{dens}}(s) = \kappa(s)^2 + \tau(s)^2$$
+
+---
+
+### E1b — Curvature spectral rate (inverse-length)
+
+Inverse-length curvature scale used for locking / effective wavenumber:
+
+$$\sigma(s) = \sqrt{\kappa(s)^2 + \tau(s)^2}$$
 
 ---
 
@@ -489,13 +500,16 @@ $$G_\sigma = \int |\Theta|^2\, dx$$
 
 $$L_\sigma = \int |\nabla\psi|^2\, dx$$
 
----
 
-### E53 — Local curvature pressure
+### E53 — Local curvature pressure-like density
 
-Curvature "pressure" density:
+Curvature penalty density (tied to the Lyapunov weight from E18):
 
-$$p_\Theta(x) = |\Theta[\psi](x)|^2$$
+$$p_\Theta(x) := c_2\, |\Theta[\psi](x)|^2$$
+
+where $c_2$ is the curvature weight in the Lyapunov functional:
+
+$$\mathcal{E}[\psi] = \int \left( c_1 |\nabla\psi|^2 + c_2 |\Theta[\psi]|^2 \right) dx$$
 
 ---
 
@@ -547,11 +561,16 @@ $$G(k) = \frac{1}{r + a(k^2 - k^{*2})^2}$$
 
 ### E59 — Projection onto dominant annulus
 
-Projection onto shell around $k^*$:
+Let the dominant annulus be (discrete FFT spectrum):
 
-$$P_{k^*} A = \sum_{k \in \mathcal{A}^*} \hat{A}_k\, e^{i k \cdot x}$$
+$$\mathcal{A}^* := \left\{ k \in \mathbb{Z}^d : \big| |k| - k^* \big| \leq \Delta k \right\}$$
+
+Then the band-projection of $A$ is:
+
+$$(P_{k^*} A)(x) := \sum_{k \in \mathcal{A}^*} \hat{A}_k\, e^{i k \cdot x}$$
 
 ---
+
 
 ### E60 — Center-manifold amplitude equation
 
