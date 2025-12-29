@@ -48,7 +48,7 @@ $$S_{\text{lock}}[\varphi] = \int_\Gamma w(s) \left( \partial_s \varphi(s) - \si
 
 where
 
-$$\sigma(s) = \kappa(s)^2 + \tau(s)^2$$
+$$\sigma(s) = \sqrt{\kappa(s)^2 + \tau(s)^2}$$
 
 - Variation of $S_{\text{lock}}$ yields the **loop-locking Euler–Lagrange equation** and, with the identification $E_{\text{rest}} = \hbar c\, k_{\text{eff}}$, the **mass–curvature law**:
 
