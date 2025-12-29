@@ -96,13 +96,14 @@ $$E_{\text{rest}} = \hbar c\, k_{\text{eff}}$$
 
 $$m = \frac{\hbar}{c} \langle\sigma\rangle_w$$
 
+
 ---
 
 ### E7 — Solenoidal mass law
 
 Mass from curvature–torsion combination along $\Gamma$:
 
-$$m = \frac{\hbar}{c} \langle\kappa^2 + \tau^2\rangle_\Gamma$$
+$$m = \frac{\hbar}{c} \left\langle \sqrt{\kappa^2 + \tau^2} \right\rangle_\Gamma$$
 
 ---
 
@@ -563,11 +564,15 @@ $$G(k) = \frac{1}{r + a(k^2 - k^{*2})^2}$$
 
 Let the dominant annulus be (discrete FFT spectrum):
 
-$$\mathcal{A}^* := \left\{ k \in \mathbb{Z}^d : \big| |k| - k^* \big| \leq \Delta k \right\}$$
+$$
+\mathcal{A}^* := \left\{ k \in \mathbb{Z}^d : \big| |k| - k^* \big| \leq \Delta k \right\}
+$$
 
 Then the band-projection of $A$ is:
 
-$$(P_{k^*} A)(x) := \sum_{k \in \mathcal{A}^*} \hat{A}_k\, e^{i k \cdot x}$$
+$$
+(P_{k^*} A)(x) := \sum_{k \in \mathcal{A}^*} \hat{A}_k\, e^{i k \cdot x}
+$$
 
 ---
 
