@@ -565,14 +565,18 @@ $$G(k) = \frac{1}{r + a(k^2 - k^{*2})^2}$$
 Let the dominant annulus be (discrete FFT spectrum):
 
 $$
-\mathcal{A}^* := \left\{ k \in \mathbb{Z}^d : \big| |k| - k^* \big| \leq \Delta k \right\}
+\mathcal{A}^{*}
+:= \{\, k \in Z^{d} \;:\; |\,|k| - k^{*}\,| \le \Delta k \,\}
 $$
+
 
 Then the band-projection of $A$ is:
 
 $$
-(P_{k^*} A)(x) := \sum_{k \in \mathcal{A}^*} \hat{A}_k\, e^{i k \cdot x}
+(P_{k^{*}} A)(x)
+:= \sum_{k \in \mathcal{A}^{*}} \hat{A}_{k}\, e^{i\,k\cdot x}
 $$
+
 
 ---
 
