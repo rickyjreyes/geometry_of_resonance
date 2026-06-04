@@ -275,11 +275,11 @@ Record: <https://zenodo.org/records/17783074>
 DOI: [10.5281/zenodo.20142976](https://doi.org/10.5281/zenodo.20142976)  
 Record: <https://zenodo.org/records/20142976>
 
-[22] R. J. Reyes, **“WaveLock: A Curvature-Locked One-Way Function Based on Nonlinear PDE Evolution,”** Dec. 01, 2026, Zenodo.  
+[22] R. J. Reyes, **“WaveLock: A Curvature-Locked One-Way Function Based on Nonlinear PDE Evolution,”** Dec. 01, 2025, Zenodo.  
 DOI: [10.5281/zenodo.19122146](https://doi.org/10.5281/zenodo.19122146)  
 Record: <https://zenodo.org/records/19122146>  
 
-> Note: the listed WaveLock date is Dec. 01, 2026. Verify this date before public release if the repository is being published before that date.
+
 
 ### Experiment, protocol, and physical systems
 
@@ -338,7 +338,7 @@ Record: <https://zenodo.org/records/20435463>
 19. R. J. Reyes, “Log-Spectral Structure and Koide-Like Winding Geometry in Open-Data B⁰ → K*⁰ μ⁺μ⁻ Candidate Spectra,” May 09, 2026, Zenodo. doi: 10.5281/zenodo.20164333.
 20. R. J. Reyes, “Recursive AI Drift: A 2025 Prediction Timeline External Validation Audit and Technical Note,” May 2026, Zenodo. doi: 10.5281/zenodo.20142976.
 21. R. J. Reyes, “Bin-Stable Log-Periodic Structure in Public NIST Atomic Line List,” May 28, 2026, Zenodo. doi: 10.5281/zenodo.20435463.
-22. R. J. Reyes, “WaveLock: A Curvature-Locked One-Way Function Based on Nonlinear PDE Evolution,” Dec. 01, 2026, Zenodo. doi: 10.5281/zenodo.19122146.
+22. R. J. Reyes, “WaveLock: A Curvature-Locked One-Way Function Based on Nonlinear PDE Evolution,” Dec. 01, 2025, Zenodo. doi: 10.5281/zenodo.19122146.
 
 ---
 

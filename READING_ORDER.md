@@ -208,12 +208,11 @@ For readers with a CS / complexity focus:
     - Suggested path: read after the two WCC papers, not before.
 
 20. **WaveLock: A Curvature-Locked One-Way Function Based on Nonlinear PDE Evolution**  
-    *Dec. 01, 2026 — Zenodo 19122146*  
+    *Dec. 01, 2025 — Zenodo 19122146*  
     DOI: [10.5281/zenodo.19122146](https://doi.org/10.5281/zenodo.19122146)  
     - Claim type: empirical cryptographic research artifact.  
     - Role: explores one-way behavior from nonlinear PDE contraction and curvature-locked evolution.  
     - Look for: construction, adversarial test suite, avalanche behavior, explicit non-claim of formal security.  
-    - Note: verify publication date before final release if this map is published before Dec. 2026.
 
 This section is logically downstream of WCT but can be read independently after Geometry + PFF.
 
@@ -344,7 +343,7 @@ Read this only after the core WCT concepts are clear, because it is an applied e
 
 [21] R. J. Reyes, “Bin-Stable Log-Periodic Structure in Public NIST Atomic Line List,” May 28, 2026, Zenodo. doi: [10.5281/zenodo.20435463](https://doi.org/10.5281/zenodo.20435463).
 
-[22] R. J. Reyes, “WaveLock: A Curvature-Locked One-Way Function Based on Nonlinear PDE Evolution,” Dec. 01, 2026, Zenodo. doi: [10.5281/zenodo.19122146](https://doi.org/10.5281/zenodo.19122146).
+[22] R. J. Reyes, “WaveLock: A Curvature-Locked One-Way Function Based on Nonlinear PDE Evolution,” Dec. 01, 2025, Zenodo. doi: [10.5281/zenodo.19122146](https://doi.org/10.5281/zenodo.19122146).
 
 ---
 
