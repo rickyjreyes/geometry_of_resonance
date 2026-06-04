@@ -1,180 +1,355 @@
-
-# The Geometry of Resonance  
+# The Geometry of Resonance
 
 **Wave Confinement Theory and the Emergence of Mass, Force, and Spacetime**  
 **Author:** Richard J. Reyes  
-**Date:** April 22, 2025  
+**Initial release:** April 22, 2025  
+**Repository:** <https://github.com/rickyjreyes/geometry_of_resonance>
 
-> Unified wave-confinement field theory + simulations + experiments.
-# Wave Confinement Theory (WCT)
-
----
-
-## Overview  
-
-This project develops **Wave Confinement Theory (WCT)**: a framework where mass, force, and spacetime curvature are *emergent* properties of confined oscillatory fields, not primitive inputs. Starting from a geometry-free substrate, the program shows how inertial mass, interaction structure, and effective metric arise from nonlinear feedback, curvature locking, and topological resonance.  
-
-By evolving standing wavefields under curvature confinement and entropy-regulated dynamics, the work demonstrates that:
-
-- Mass-like inertia tracks **coherent curvature** rather than bare energy.  
-- Spacetime curvature behaves as an **effective metric** sourced by ψ, not imposed a priori.  
-- Forces appear as **gradients of constrained resonance** inside bounded wave domains.  
-
-This repository collects the core papers, experimental evidence, and code that implement and test that picture.
+> Unified wave-confinement field theory, simulations, experiments, spectral tests, computation, and applied resonance-control architecture.
 
 ---
 
-## Who This Is For  
+## Wave Confinement Theory (WCT)
 
-- **Field theorists / mathematical physicists** – looking for a concrete emergent-geometry model with a covariant Lagrangian and explicit inequalities.  
-- **Experimentalists** (optics, cold atoms, fluid cavities) – looking for reproducible confinement signatures and lab-ready observables.  
-- **Complexity / CS theorists** – interested in curvature-regulated computation and the P ≠ NP construction.  
-- **AI / safety researchers** – exploring RCA as a physically bounded substrate for advanced AI systems.  
+Wave Confinement Theory (WCT) is a geometric field framework in which mass, force, charge-like structure, computation, and effective spacetime geometry are modeled as emergent consequences of confined oscillatory fields.
 
----
-
-## Core Contributions  
-
-### Geometry-of-Resonance Lagrangian  
-
-A modified covariant Lagrangian with curvature and entropy-regulating terms that localize energy and stabilize coherence, yielding an emergent effective metric and stress–energy tensor built entirely from ψ.  
-
-### Phase–Flux Substrate (PFF)  
-
-A minimal, observable-only substrate with energy density u(x,t), flux S(x,t), and phase θ(x,t), enforcing conservation and null-flow constraints. A Lyapunov finite-k band-pass rail selects a narrow ring of growing modes and leads to shell quantization and pattern formation.  
-
-### Emergent Mass from Curvature  
-
-Several independent derivations tie inertia to loop geometry:
-
-- Solenoidal photon paths with curvature–torsion invariants give an effective mass law.  
-- Density-weighted loop curvature yields rest energy and m as closed-path invariants of curvature locking.  
-
-### Hard Dimensionality Bound  
-
-An exact scaling law for ∥Δψ_λ∥_{L²}² in n dimensions shows that stable self-localized confinement in flat space is only possible for n ≤ 3, giving a natural upper bound on macroscopic spatial dimensionality.  
-
-### P ≠ NP via Curvature-Regulated Computation  
-
-A symbolic curvature-machine model, Turing-equivalent but grounded in WCT, is used to construct a diagonal argument and time-hierarchy separation, yielding a formal proof of P ≠ NP in a purely discrete complexity-theoretic setting.  
-
-### Resonant Vector Cavities and Mode Competition  
-
-A resonant cavity theory for vector fields (Swift–Hohenberg–type reduction) shows finite-band instability, nonlinear mode competition, and emergence of toroidal and spinor-like structures that act as mass channels.  
-
-### Experimental Photon Confinement in Water Cavities  
-
-Optical experiments in water-filled cavities show long-lived post-illumination resonance, quantized β-like modes, and curvature-locked decay profiles predicted by WCT’s confinement picture.  
-
-### Resonance-Confinement Architecture (RCA)  
-
-A physically bounded AGI substrate built on coherence functionals and curvature feedback, treating intelligence as long-lived, entropy-regulated resonance rather than unbounded gradient descent.  
-
----
-
-## Foundational Insight  
-
-> **Geometry is not a backdrop — it is the outcome of sustained resonance.**
+The central claim is not that geometry is a passive background. The WCT program treats geometry as an output of sustained resonance, curvature feedback, entropy regulation, and topological locking.
 
 Logic chain:
 
-- **Mass** ⟵ Emerges from energy locked into curvature  
-- **Energy** ⟵ Emerges from persistent resonance  
-- **Resonance** ⟵ Emerges from boundary and feedback  
-- **Boundary** ⟵ Emerges from informational constraints  
-
-In WCT, “matter,” “force,” and “geometry” are all different views of how ψ organizes under confinement.
-
----
-
-## Summary of Evidence  
-
-- Self-consistent covariant field equations compatible with standard gauge structures (U(1), SU(2), SU(3)) and effective-metric limits.  
-- Analytic derivations of curvature-based mass laws and dimensional bounds, with explicit inequalities and uniqueness/stability arguments.  
-- Numerical simulations (Lyapunov band-pass, cavity flows, phase–flux evolution) showing finite-k spectral selection, curvature gaps, and stable localized structures.  
-- Optical experiments in fluid cavities validating long-lived curvature-locked photon modes and entropy-governed decay.  
-- A complexity-theoretic bridge: curvature-regulated computation reproduces standard complexity classes and supports a constructive P ≠ NP proof.  
-- A physically bounded AI architecture (RCA) consistent with the same coherence and curvature principles.  
+```text
+informational constraints
+        ↓
+boundary / confinement
+        ↓
+resonance
+        ↓
+curvature-locked energy
+        ↓
+mass, force, spectra, and effective geometry
+```
 
 ---
 
-## Repository Contents (High-Level)  
+## Core WCT Objects
 
-- **Core/** – Core WCT kernels, evolution operators, precision-constant utilities, and foundational simulation logic.  
-- **Examples/** – Higher-level example scripts that apply WCT to concrete scenarios (interferometry, cosmology, cavity evolution, etc.).  
-- **Papers/** – PDF manuscripts corresponding to the Zenodo records below (geometry of resonance, constants, dimensional bound, mass laws, etc.).  
-- **SM_Spectrum/** – Tools related to mapping and analyzing effective spectra against Standard-Model-like structures.  
-- **Wavefield Folding/** – Additional experiments on curvature-driven self-organization and folded wavefields.  
-- **Archive/** – Older experiments and historical code kept for reference.  
+The following objects recur across the WCT volume set.
 
-The GitHub repository is the *live* counterpart to the Zenodo snapshots:  
-use Zenodo for **archival reference**, GitHub for **current code and structure**.
+### Curvature-feedback operator
+
+```math
+\Theta[\psi]
+= -\frac{\nabla^2\psi}{\psi + \varepsilon e^{-\alpha |\psi|^2}}
+```
+
+This operator regularizes curvature at nodes of the field and supplies the main nonlinear feedback rail.
+
+### Curvature / torsion scalar
+
+```math
+\sigma(s)=\sqrt{\kappa(s)^2+\tau(s)^2}
+```
+
+Here \(\kappa\) is curvature, \(\tau\) is torsion, and \(s\) is arclength along a closed curve \(\Gamma\).
+
+### Density-weighted curvature average
+
+```math
+\langle f\rangle_w
+= \frac{\oint_\Gamma w(s)f(s)\,ds}{\oint_\Gamma w(s)\,ds}
+```
+
+Here \(w(s)\) is the linear energy-density weight along the loop.
+
+### Rest-energy / curvature lock
+
+```math
+E_{\mathrm{rest}} = mc^2 = \hbar c\,k_{\mathrm{eff}},
+\qquad
+m=\frac{\hbar}{c}\langle \sigma\rangle_w
+```
+
+This is the mass-law spine used by the loop-curvature, solenoidal-mass, electron, and lepton-spectrum papers.
+
+### Finite-band spectral rail
+
+```math
+\sigma(k)=r+a|k|^2-b|k|^4,
+\qquad a,b>0
+```
+
+This selects a finite spectral shell instead of allowing unrestricted IR or UV growth.
 
 ---
 
-## Using This Repository  
+## Who This Repository Is For
+
+- **Mathematical physicists** — curvature operators, Lyapunov functionals, dimensional bounds, loop-locking variational principles.
+- **Field theorists** — emergent gauge-like phase structure, effective metrics, curvature-derived mass laws, phenomenological collider tests.
+- **Experimentalists** — optical cavity confinement, photodiode resonance protocols, spectral/log-periodic tests, tokamak control analogs.
+- **Computer scientists** — curvature-bounded computation, model-relative complexity, WaveLock nonlinear-PDE one-way functions.
+- **AI researchers** — resonance-confinement architecture, coherence regulation, recursive drift audits.
+
+---
+
+## Main Contributions
+
+### 1. Geometry-of-Resonance framework
+
+A covariant wavefield framework in which mass, force, and effective metric structure arise from nonlinear confinement of \(\psi\), rather than being primitive assumptions.
+
+### 2. Phase–Flux Field substrate
+
+A pre-WCT layer defined only by observable energy density \(u(x,t)\), flux \(S(x,t)\), and phase \(\theta(x,t)\), with conservation, causal flow, finite-k band-pass selection, shell quantization, and D4-to-continuum construction.
+
+### 3. Emergent mass from curvature locking
+
+Multiple papers derive or refine the identity that rest energy is determined by effective loop wavenumber / curvature:
+
+```math
+m=\frac{\hbar}{c}\left\langle\sqrt{\kappa^2+\tau^2}\right\rangle_w
+```
+
+### 4. Hard spatial-dimensionality bound
+
+WCT gives a stability bound \(n\leq 3\) using Sobolev control, Lyapunov scaling, entropy localization, topology, arbitrary-data evolution, and curvature-feedback divergence.
+
+### 5. Pattern formation and spectral contraction
+
+Random or broadband fields evolve toward finite-band spectral support, rings, shells, and eigenmode-like structures under Lyapunov descent and Swift–Hohenberg-type dynamics.
+
+### 6. Experimental photon resonance confinement
+
+Water-cavity and photodiode experiments are used to test long-lived resonance states, harmonic mode persistence, and perturbation-induced lock/re-lock behavior.
+
+### 7. Open-data phenomenology
+
+WCT is tested against log-periodic structures in JUNO-style neutrino spectra, LHCb \(B^0\to K^{*0}\mu^+\mu^-\) anomaly data, public NIST atomic line lists, and candidate-spectrum sidebands.
+
+### 8. Computation, cryptography, and AI extensions
+
+The same curvature-locking logic is extended to curvature-bounded computation, model-relative P/NP arguments, WaveLock nonlinear-PDE commitments, and RCA coherence-bounded AI architecture.
+
+---
+
+## Repository Contents
+
+- **Core/** — WCT kernels, curvature operators, evolution logic, constants, precision utilities.
+- **Examples/** — Interferometry, cavity evolution, spectral diagnostics, cosmology-style tests.
+- **Papers/** — PDF manuscripts corresponding to the Zenodo records below.
+- **SM_Spectrum/** — Spectrum-mapping and particle-mass analysis tools.
+- **Wavefield Folding/** — Experiments on folding, curvature concentration, and self-organization.
+- **Archive/** — Historical code and earlier experiments retained for auditability.
+
+Zenodo should be used for archival citation. GitHub should be used for current code and repository structure.
+
+---
+
+## Quick Start
 
 ```bash
 git clone https://github.com/rickyjreyes/geometry_of_resonance.git
 cd geometry_of_resonance
 ```
 
+---
 
-## Keywords  
+## Recommended Reading Order
 
-Wave confinement · emergent mass · nonlinear curvature · topological resonance · covariant field theory · entropy–coherence coupling · finite-band instability · rest energy from curvature · spatial dimension bound · curvature-regulated computation · resonance-based AI  
+### Minimal 30–60 minute path
+
+1. **The Geometry of Resonance** — core overview and Lagrangian.  
+2. **Phase–Flux Field** — observable substrate and finite-k selection.  
+3. **Rest Energy from Density-Weighted Loop Curvature** — clean mass-locking principle.  
+4. **Hard Upper Bound on Spatial Dimensionality** — why stable WCT confinement is bounded by three spatial dimensions.  
+5. **Observation of Long-Lived Photon Resonance Confinement in Water Cavities** — experimental anchor.
+
+### Mathematical backbone
+
+1. **Phase–Flux Field**  
+2. **The Geometry of Resonance**  
+3. **Rest Energy from Density-Weighted Loop Curvature**  
+4. **Emergence of Effective Mass**  
+5. **Hard Upper Bound on Spatial Dimensionality**  
+6. **Self-Emergent Fourier Cymatics**  
+7. **Logarithmic Curvature Flow**  
+8. **Koide Mass Relation**
+
+### Empirical / falsification path
+
+1. **Observation of Long-Lived Photon Resonance Confinement in Water Cavities**  
+2. **Prediction & Protocol Ledger**  
+3. **JUNO Energy Resolution and Detectability of WCT Ghost-Mode Neutrinos**  
+4. **C9(q²) / LHCb angular anomaly paper**  
+5. **Open-data B⁰ → K*⁰ μ⁺μ⁻ candidate spectra**  
+6. **Bin-Stable Log-Periodic Structure in Public NIST Atomic Line List**
+
+### Computation / AI / applied path
+
+1. **Discrete Wave-Constrained Computation and Classical Complexity**  
+2. **P vs NP in Curvature-Bounded Wave Computation**  
+3. **The Classical P vs NP Problem Is Mathematically and Physically Ill-Posed**  
+4. **WaveLock**  
+5. **Resonance-Confinement Architecture**  
+6. **Recursive AI Drift**
 
 ---
 
-## Citations and Zenodo Releases  
+## Claim-Status Key
 
-### Primary WCT Foundations  
+Use this key when reading the corpus:
 
-- 📘 **The Geometry of Resonance: Wave Confinement Theory and the Emergence of Mass, Force, and Spacetime**  
-  Zenodo preprint, v36 (April 22, 2025)  
-  <https://zenodo.org/records/15644222>  
-
-- 📊 **Structure and Derivation of Physical Constants through Wave Confinement**  
-  Zenodo preprint, v34 (April 26, 2025)  
-  <https://zenodo.org/records/15596159>  
-
-### Core Theoretical Extensions  
-
-- 📐 **Hard Upper Bound on Spatial Dimensionality in Wave Confinement Theory**  
-  <https://zenodo.org/records/17081283>  
-
-- 🔁 **Rest Energy from Density-Weighted Loop Curvature: A Covariant Locking Principle**  
-  <https://zenodo.org/records/17579059>  
-
-- 🔄 **Emergence of Effective Mass: Solenoidal Topology of Vibrational Energy**  
-  <https://zenodo.org/records/17459463>  
-
-- 🌀 **Resonant Cavity of Vector Fields: Finite-Band Instability, Mode Competition, and Emergent Mass in Wave Confinement Theory**  
-  <https://zenodo.org/records/17371795>  
-
-- 🌊 **Phase–Flux Field (PFF): Axiomatic Substrate for Wave Confinement Theory**  
-  *Zero–Wave Invariance, Finite–k Lyapunov Band–Pass, Shell Quantization, and D₄ → Continuum*  
-  <https://zenodo.org/records/17578766>  
-
-- 📦 **Self-Emergent Fourier Cymatics: Entropic Eigenmodes out of Chaos**  
-  <https://zenodo.org/records/17578796> 
-
-### Computation, Experiment, and AI  
-
-- 🧮 **A Formal Proof of P ≠ NP via Curvature-Regulated Wave Computation**  
-  <https://zenodo.org/records/17081273>  
-
-- 🔍 **Observation of Long-Lived Photon Resonance Confinement in Water Cavities**  
-  <https://zenodo.org/records/17206381>  
-
-- 🤖 **Resonance-Confinement Architecture: A Physically Bounded Substrate for Safe Superintelligence**  
-  <https://zenodo.org/records/15659978>  
- 
+| Status | Meaning |
+|---|---|
+| **Core theory** | Defines the WCT operator, field ontology, or master equations. |
+| **Derivation** | Produces a symbolic or variational result from prior WCT definitions. |
+| **Mathematical closure** | Addresses well-posedness, stability, uniqueness, or dimensional bounds. |
+| **Simulation** | Numerically tests WCT dynamics or spectral behavior. |
+| **Experiment / protocol** | Physical test, lab protocol, or reproducible measurement path. |
+| **Phenomenology** | Applies WCT to public physics datasets or known anomalies. |
+| **Architecture / application** | Applies WCT principles to computation, AI, cryptography, or control. |
 
 ---
 
-## Quick Links  
+## Citations and Zenodo Releases
 
-- [📘 Geometry of Resonance – Full Paper (Zenodo)](https://zenodo.org/records/15644222)  
-- [📊 Physical Constants Derivation (Zenodo)](https://zenodo.org/records/15596159)  
-- [💻 GitHub Repository](https://github.com/rickyjreyes/geometry_of_resonance)  
+### Primary WCT foundations
+
+[1] R. J. Reyes, **“The Geometry of Resonance: Wave Confinement Theory and the Emergence of Mass, Force, and Spacetime,”** Apr. 22, 2025, Zenodo.  
+DOI: [10.5281/zenodo.15644222](https://doi.org/10.5281/zenodo.15644222)  
+Record: <https://zenodo.org/records/15644222>
+
+[2] R. J. Reyes, **“Structure and Derivation of Physical Constants through Wave Confinement,”** Apr. 26, 2025, Zenodo.  
+DOI: [10.5281/zenodo.15596159](https://doi.org/10.5281/zenodo.15596159)  
+Record: <https://zenodo.org/records/15596159>
+
+[7] R. J. Reyes, **“Phase-Flux Field (PFF): Axiomatic Substrate for Wave Confinement Theory Zero-Wave Invariance, Finite-k Lyapunov Band-Pass, Shell Quantization, and D4 to Continuum,”** Sep. 08, 2025, Zenodo.  
+DOI: [10.5281/zenodo.17578766](https://doi.org/10.5281/zenodo.17578766)  
+Record: <https://zenodo.org/records/17578766>
+
+### Mass, geometry, dimensionality, and spectral dynamics
+
+[6] R. J. Reyes, **“Hard Upper Bound on Spatial Dimensionality in Wave Confinement Theory,”** Aug. 13, 2025, Zenodo.  
+DOI: [10.5281/zenodo.17081283](https://doi.org/10.5281/zenodo.17081283)  
+Record: <https://zenodo.org/records/17081283>
+
+[8] R. J. Reyes, **“Self-Emergent Fourier Cymatics: Entropic Eigenmodes out of Chaos,”** Sep. 16, 2025, Zenodo.  
+DOI: [10.5281/zenodo.17732648](https://doi.org/10.5281/zenodo.17732648)  
+Record: <https://zenodo.org/records/17732648>
+
+[9] R. J. Reyes, **“Emergence of Effective Mass: Solenoidal Topology of Vibrational Energy,”** Oct. 27, 2025, Zenodo.  
+DOI: [10.5281/zenodo.17459463](https://doi.org/10.5281/zenodo.17459463)  
+Record: <https://zenodo.org/records/17459463>
+
+[10] R. J. Reyes, **“Rest Energy from Density-Weighted Loop Curvature: A Covariant Locking Principle,”** Nov. 11, 2025, Zenodo.  
+DOI: [10.5281/zenodo.20533537](https://doi.org/10.5281/zenodo.20533537)  
+Record: <https://zenodo.org/records/20533537>
+
+[14] R. J. Reyes, **“Wave Confinement Theory Predicts the Koide Mass Relation: A Curvature–Harmonic Origin of Fermion Mass Triplets,”** Dec. 10, 2025, Zenodo.  
+DOI: [10.5281/zenodo.17887562](https://doi.org/10.5281/zenodo.17887562)  
+Record: <https://zenodo.org/records/17887562>
+
+[16] R. J. Reyes, **“Logarithmic Curvature Flow, Filament Localization, and the Geometric Origin of the Lepton Mass Spectrum,”** Mar. 10, 2026, Zenodo.  
+DOI: [10.5281/zenodo.18936949](https://doi.org/10.5281/zenodo.18936949)  
+Record: <https://zenodo.org/records/18936949>
+
+### Computation, complexity, AI, and cryptography
+
+[3] R. J. Reyes, **“P vs NP in Curvature-Bounded Wave Computation: A Model-Relative P_WCC ≠ NP_WCC Separation,”** May 07, 2025, Zenodo.  
+DOI: [10.5281/zenodo.17743607](https://doi.org/10.5281/zenodo.17743607)  
+Record: <https://zenodo.org/records/17743607>
+
+[5] R. J. Reyes, **“Resonance-Confinement Architecture: A Physically Bounded Substrate for Safe Superintelligence,”** Jun. 11, 2025, Zenodo.  
+DOI: [10.5281/zenodo.17732661](https://doi.org/10.5281/zenodo.17732661)  
+Record: <https://zenodo.org/records/17732661>
+
+[12] R. J. Reyes, **“Discrete Wave-Constrained Computation and Classical Complexity: Turing Equivalence for 𝐏 and 𝐍𝐏,”** Nov. 26, 2025, Zenodo.  
+DOI: [10.5281/zenodo.17732642](https://doi.org/10.5281/zenodo.17732642)  
+Record: <https://zenodo.org/records/17732642>
+
+[13] R. J. Reyes, **“The Classical P vs NP Problem is Mathematically and Physically Ill-Posed,”** Dec. 01, 2025, Zenodo.  
+DOI: [10.5281/zenodo.17783074](https://doi.org/10.5281/zenodo.17783074)  
+Record: <https://zenodo.org/records/17783074>
+
+[20] R. J. Reyes, **“Recursive AI Drift: A 2025 Prediction Timeline External Validation Audit and Technical Note,”** May 2026, Zenodo.  
+DOI: [10.5281/zenodo.20142976](https://doi.org/10.5281/zenodo.20142976)  
+Record: <https://zenodo.org/records/20142976>
+
+[22] R. J. Reyes, **“WaveLock: A Curvature-Locked One-Way Function Based on Nonlinear PDE Evolution,”** Dec. 01, 2026, Zenodo.  
+DOI: [10.5281/zenodo.19122146](https://doi.org/10.5281/zenodo.19122146)  
+Record: <https://zenodo.org/records/19122146>  
+
+> Note: the listed WaveLock date is Dec. 01, 2026. Verify this date before public release if the repository is being published before that date.
+
+### Experiment, protocol, and physical systems
+
+[4] R. J. Reyes, **“Observation of Long-Lived Photon Resonance Confinement in Water Cavities,”** May 17, 2025, Zenodo.  
+DOI: [10.5281/zenodo.17206381](https://doi.org/10.5281/zenodo.17206381)  
+Record: <https://zenodo.org/records/17206381>
+
+[11] R. J. Reyes, **“JUNO Energy Resolution and Detectability of WCT Ghost-Mode Neutrinos,”** Nov. 20, 2025, Zenodo.  
+DOI: [10.5281/zenodo.17715872](https://doi.org/10.5281/zenodo.17715872)  
+Record: <https://zenodo.org/records/17715872>
+
+[15] R. J. Reyes, **“Prediction & Protocol Ledger: Long-Lived Harmonic State Induction in Photodiodes,”** Dec. 2025, Zenodo.  
+DOI: [10.5281/zenodo.17957713](https://doi.org/10.5281/zenodo.17957713)  
+Record: <https://zenodo.org/records/17957713>
+
+[17] R. J. Reyes, **“Nuclear Fusion Tokamak with Self Sustaining Resonance,”** Apr. 14, 2026, Zenodo.  
+DOI: [10.5281/zenodo.19578185](https://doi.org/10.5281/zenodo.19578185)  
+Record: <https://zenodo.org/records/19578185>
+
+### Collider, atomic-line, and open-data phenomenology
+
+[18] R. J. Reyes, **“A Curvature-Induced Log-Periodic Deformation of C9(q²): Wave Confinement Theory and the LHCb B⁰ → K*⁰ μ⁺μ⁻ Anomaly,”** Apr. 23, 2026, Zenodo.  
+DOI: [10.5281/zenodo.19705254](https://doi.org/10.5281/zenodo.19705254)  
+Record: <https://zenodo.org/records/19705254>
+
+[19] R. J. Reyes, **“Log-Spectral Structure and Koide-Like Winding Geometry in Open-Data B⁰ → K*⁰ μ⁺μ⁻ Candidate Spectra,”** May 09, 2026, Zenodo.  
+DOI: [10.5281/zenodo.20164333](https://doi.org/10.5281/zenodo.20164333)  
+Record: <https://zenodo.org/records/20164333>
+
+[21] R. J. Reyes, **“Bin-Stable Log-Periodic Structure in Public NIST Atomic Line List,”** May 28, 2026, Zenodo.  
+DOI: [10.5281/zenodo.20435463](https://doi.org/10.5281/zenodo.20435463)  
+Record: <https://zenodo.org/records/20435463>
+
+---
+
+## Full Reference List
+
+1. R. J. Reyes, “The Geometry of Resonance: Wave Confinement Theory and the Emergence of Mass, Force, and Spacetime,” Apr. 22, 2025, Zenodo. doi: 10.5281/zenodo.15644222.
+2. R. J. Reyes, “Structure and Derivation of Physical Constants through Wave Confinement,” Apr. 26, 2025, Zenodo. doi: 10.5281/zenodo.15596159.
+3. R. J. Reyes, “P vs NP in Curvature-Bounded Wave Computation: A Model-Relative P_WCC ≠ NP_WCC Separation,” May 07, 2025, Zenodo. doi: 10.5281/zenodo.17743607.
+4. R. J. Reyes, “Observation of Long-Lived Photon Resonance Confinement in Water Cavities,” May 17, 2025, Zenodo. doi: 10.5281/zenodo.17206381.
+5. R. J. Reyes, “Resonance-Confinement Architecture: A Physically Bounded Substrate for Safe Superintelligence,” Jun. 11, 2025, Zenodo. doi: 10.5281/zenodo.17732661.
+6. R. J. Reyes, “Hard Upper Bound on Spatial Dimensionality in Wave Confinement Theory,” Aug. 13, 2025, Zenodo. doi: 10.5281/zenodo.17081283.
+7. R. J. Reyes, “Phase-Flux Field (PFF): Axiomatic Substrate for Wave Confinement Theory Zero-Wave Invariance, Finite-k Lyapunov Band-Pass, Shell Quantization, and D4 to Continuum,” Sep. 08, 2025, Zenodo. doi: 10.5281/zenodo.17578766.
+8. R. J. Reyes, “Self-Emergent Fourier Cymatics: Entropic Eigenmodes out of Chaos,” Sep. 16, 2025, Zenodo. doi: 10.5281/zenodo.17732648.
+9. R. J. Reyes, “Emergence of Effective Mass: Solenoidal Topology of Vibrational Energy,” Oct. 27, 2025, Zenodo. doi: 10.5281/zenodo.17459463.
+10. R. J. Reyes, “Rest Energy from Density-Weighted Loop Curvature: A Covariant Locking Principle,” Nov. 11, 2025, Zenodo. doi: 10.5281/zenodo.20533537.
+11. R. J. Reyes, “JUNO Energy Resolution and Detectability of WCT Ghost-Mode Neutrinos,” Nov. 20, 2025, Zenodo. doi: 10.5281/zenodo.17715872.
+12. R. J. Reyes, “Discrete Wave-Constrained Computation and Classical Complexity: Turing Equivalence for 𝐏 and 𝐍𝐏,” Nov. 26, 2025, Zenodo. doi: 10.5281/zenodo.17732642.
+13. R. J. Reyes, “The Classical P vs NP Problem is Mathematically and Physically Ill-Posed,” Dec. 01, 2025, Zenodo. doi: 10.5281/zenodo.17783074.
+14. R. J. Reyes, “Wave Confinement Theory Predicts the Koide Mass Relation: A Curvature–Harmonic Origin of Fermion Mass Triplets,” Dec. 10, 2025, Zenodo. doi: 10.5281/zenodo.17887562.
+15. R. J. Reyes, “Prediction & Protocol Ledger: Long-Lived Harmonic State Induction in Photodiodes,” Dec. 2025, Zenodo. doi: 10.5281/zenodo.17957713.
+16. R. J. Reyes, “Logarithmic Curvature Flow, Filament Localization, and the Geometric Origin of the Lepton Mass Spectrum,” Mar. 10, 2026, Zenodo. doi: 10.5281/zenodo.18936949.
+17. R. J. Reyes, “Nuclear Fusion Tokamak with Self Sustaining Resonance,” Apr. 14, 2026, Zenodo. doi: 10.5281/zenodo.19578185.
+18. R. J. Reyes, “A Curvature-Induced Log-Periodic Deformation of C9(q²): Wave Confinement Theory and the LHCb B⁰ → K*⁰ μ⁺μ⁻ Anomaly,” Apr. 23, 2026, Zenodo. doi: 10.5281/zenodo.19705254.
+19. R. J. Reyes, “Log-Spectral Structure and Koide-Like Winding Geometry in Open-Data B⁰ → K*⁰ μ⁺μ⁻ Candidate Spectra,” May 09, 2026, Zenodo. doi: 10.5281/zenodo.20164333.
+20. R. J. Reyes, “Recursive AI Drift: A 2025 Prediction Timeline External Validation Audit and Technical Note,” May 2026, Zenodo. doi: 10.5281/zenodo.20142976.
+21. R. J. Reyes, “Bin-Stable Log-Periodic Structure in Public NIST Atomic Line List,” May 28, 2026, Zenodo. doi: 10.5281/zenodo.20435463.
+22. R. J. Reyes, “WaveLock: A Curvature-Locked One-Way Function Based on Nonlinear PDE Evolution,” Dec. 01, 2026, Zenodo. doi: 10.5281/zenodo.19122146.
+
+---
+
+## Keywords
+
+Wave confinement · emergent mass · nonlinear curvature · curvature locking · phase–flux field · topological resonance · covariant field theory · entropy–coherence coupling · finite-band instability · rest energy from curvature · spatial dimensionality bound · Koide relation · log-periodic spectra · curvature-regulated computation · WaveLock · resonance-based AI
+
+---
+
+## Quick Links
+
+- [Geometry of Resonance — Full Paper](https://zenodo.org/records/15644222)
+- [Physical Constants through Wave Confinement](https://zenodo.org/records/15596159)
+- [GitHub Repository](https://github.com/rickyjreyes/geometry_of_resonance)
