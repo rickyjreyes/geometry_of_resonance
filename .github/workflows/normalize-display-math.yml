@@ -1,0 +1,52 @@
+name: Normalize display math
+
+on:
+  push:
+    paths:
+      - .github/workflows/normalize-display-math.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  normalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Replace display delimiters
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          files = [
+              Path("WCT_FULL_EQUATION_LIST_CORRECTED.md"),
+              Path("WCT_MASTER_EQUATIONS_UPDATED.md"),
+          ]
+
+          for path in files:
+              text = path.read_text(encoding="utf-8")
+              updated = text.replace(r"\[", "$$").replace(r"\]", "$$")
+              path.write_text(updated, encoding="utf-8")
+
+              if r"\[" in updated or r"\]" in updated:
+                  raise SystemExit(f"Unconverted display delimiter remains in {path}")
+
+              delimiter_count = updated.count("$$")
+              if delimiter_count % 2 != 0:
+                  raise SystemExit(f"Unbalanced $$ delimiters in {path}: {delimiter_count}")
+
+              print(f"{path}: {delimiter_count // 2} display equations normalized")
+          PY
+
+      - name: Commit normalized Markdown
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/normalize-display-math.yml
+          git add WCT_FULL_EQUATION_LIST_CORRECTED.md WCT_MASTER_EQUATIONS_UPDATED.md
+          git commit -m "Render display equations with double-dollar delimiters"
+          git push
