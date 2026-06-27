@@ -17,9 +17,9 @@ This document is an architectural index. It does not by itself prove the physica
 
 Thus,
 
-\[
+$$
 9+83+10+20+5+9+6=142.
-\]
+$$
 
 ## Audit semantics
 
@@ -33,7 +33,7 @@ Thus,
 
 Current corpus totals are
 
-\[
+$$
 51\ \mathrm{PASS}
 +
 32\ \mathrm{CONDITIONAL}
@@ -43,7 +43,7 @@ Current corpus totals are
 36\ \mathrm{OPEN}
 =
 142,
-\]
+$$
 
 with no contradiction remaining in the current encoded specification.
 
@@ -67,37 +67,37 @@ Let:
 
 Define
 
-\[
+$$
 \sigma(s)=\sqrt{\kappa(s)^2+\tau(s)^2}.
-\]
+$$
 
 The locking functional is
 
-\[
+$$
 S_{\mathrm{lock}}[\varphi]
 =
 \oint_\Gamma
 w(s)\left(\partial_s\varphi(s)-\sigma(s)\right)^2\,ds.
-\]
+$$
 
 With the winding constraint
 
-\[
+$$
 \oint_\Gamma \partial_s\varphi\,ds=2\pi n,
 \qquad n\in\mathbb Z,
-\]
+$$
 
 the stationary phase profile is
 
-\[
+$$
 \partial_s\varphi(s)
 =
 \sigma(s)+\frac{\alpha_{\mathrm{lock}}}{w(s)},
-\]
+$$
 
 where
 
-\[
+$$
 \alpha_{\mathrm{lock}}
 =
 \frac{
@@ -105,11 +105,11 @@ where
 }{
 \oint_\Gamma w(s)^{-1}\,ds
 }.
-\]
+$$
 
 The weighted curvature average is
 
-\[
+$$
 \langle \sigma\rangle_w
 =
 \frac{
@@ -117,13 +117,13 @@ The weighted curvature average is
 }{
 \oint_\Gamma w(s)\,ds
 }.
-\]
+$$
 
 The mass identification
 
-\[
+$$
 m=\frac{\hbar}{c}\langle\sigma\rangle_w
-\]
+$$
 
 is conditional on the physical phase-curvature locking hypothesis.
 
@@ -144,7 +144,7 @@ Let:
 
 Define the modulus-squared regularized reciprocal
 
-\[
+$$
 R_\varepsilon(\psi)
 =
 \frac{
@@ -152,35 +152,35 @@ R_\varepsilon(\psi)
 }{
 |\psi|^2+\varepsilon^2e^{-2\alpha|\psi|^2}
 }.
-\]
+$$
 
 Its denominator satisfies
 
-\[
+$$
 |\psi|^2+\varepsilon^2e^{-2\alpha|\psi|^2}>0
 \qquad
 (\varepsilon>0).
-\]
+$$
 
 Define the nonsingular curvature operator
 
-\[
+$$
 \Theta_\varepsilon[\psi]
 =
 -(\Delta\psi)\,R_\varepsilon(\psi).
-\]
+$$
 
 For nonzero \(\psi\),
 
-\[
+$$
 R_\varepsilon(\psi)\longrightarrow\frac{1}{\psi}
 \qquad
 \text{as }\varepsilon\to0^+.
-\]
+$$
 
 Define the WCT energy candidate
 
-\[
+$$
 \mathcal E_{\mathrm{WCT}}[\psi]
 =
 \int_\Omega
@@ -189,19 +189,19 @@ Define the WCT energy candidate
 +
 |\Theta_\varepsilon[\psi]|^2
 \right)\,dx.
-\]
+$$
 
 For an actual gradient flow
 
-\[
+$$
 \partial_t\psi
 =
 -\frac{\delta \mathcal E_{\mathrm{WCT}}}{\delta\overline{\psi}},
-\]
+$$
 
 one obtains formally
 
-\[
+$$
 \frac{d\mathcal E_{\mathrm{WCT}}}{dt}
 =
 -
@@ -210,7 +210,7 @@ one obtains formally
 {\delta\overline{\psi}}
 \right\|^2
 \le0.
-\]
+$$
 
 This descent identity depends on the exact dynamical and functional-analytic setup; therefore the global Lyapunov interpretation is conditional.
 
@@ -232,7 +232,7 @@ Let:
 
 The corrected Swift–Hohenberg form is
 
-\[
+$$
 \partial_tA
 =
 \mu A
@@ -240,50 +240,50 @@ The corrected Swift–Hohenberg form is
 g|A|^2A
 -
 b(\Delta+k_\star^2)^2A.
-\]
+$$
 
 For a Fourier mode \(A_k e^{ik\cdot x}\),
 
-\[
+$$
 (\Delta+k_\star^2)^2
 \mapsto
 (k_\star^2-|k|^2)^2,
-\]
+$$
 
 so the linear growth rate is
 
-\[
+$$
 \lambda(k)
 =
 \mu
 -
 b(|k|^2-k_\star^2)^2.
-\]
+$$
 
 Hence modes away from \(|k|=k_\star\) are damped.
 
 The equivalent quartic rail
 
-\[
+$$
 \sigma(k)=r+a|k|^2-b|k|^4,
 \qquad a,b>0,
-\]
+$$
 
 has stationary maximum
 
-\[
+$$
 k_\star=\sqrt{\frac{a}{2b}},
-\]
+$$
 
 and therefore
 
-\[
+$$
 \lambda_\star
 =
 \frac{2\pi}{k_\star}
 =
 2\pi\sqrt{\frac{2b}{a}}.
-\]
+$$
 
 **Primary descendants:** `E12`–`E16`, `E57`–`E64`.
 
@@ -301,21 +301,21 @@ Let:
 
 For a bounded smooth domain \(\Omega\subset\mathbb R^n\),
 
-\[
+$$
 H^2(\Omega)\hookrightarrow L^\infty(\Omega)
-\]
+$$
 
 whenever
 
-\[
+$$
 2>\frac n2.
-\]
+$$
 
 For integer \(n\), this gives
 
-\[
+$$
 n\le3.
-\]
+$$
 
 This proves an embedding threshold. It does not by itself prove that every WCT equilibrium is stable for \(n\le3\), nor that every equilibrium is unstable for \(n\ge4\).
 
@@ -325,39 +325,39 @@ Two distinct curvature estimates must be separated.
 
 If
 
-\[
+$$
 \psi\in H^2(\Omega)
-\]
+$$
 
 and
 
-\[
+$$
 |D_\varepsilon(\psi)|\ge\delta>0,
-\]
+$$
 
 then
 
-\[
+$$
 \|\Theta_\varepsilon[\psi]\|_{L^2}
 \le
 \delta^{-1}\|\Delta\psi\|_{L^2}.
-\]
+$$
 
 ### \(L^\infty\) curvature estimate
 
 To control \(\Theta_\varepsilon[\psi]\) pointwise, sufficient higher regularity is
 
-\[
+$$
 \psi\in H^s(\Omega),
 \qquad
 s>\frac n2+2.
-\]
+$$
 
 Under the corresponding denominator bound,
 
-\[
+$$
 \Theta_\varepsilon[\psi]\in L^\infty(\Omega).
-\]
+$$
 
 **Primary descendants:** `E24`–`E27`, `E65`–`E70`.
 
@@ -375,18 +375,18 @@ Let:
 
 The WCC update is
 
-\[
+$$
 \psi^{(t+1)}(x)
 =
 U\!\left(
 \psi^{(t)}(x),
 \{\psi^{(t)}(y)\}_{y\in N(x)}
 \right).
-\]
+$$
 
 A finite curvature-resource condition may be written
 
-\[
+$$
 \sum_y
 \left(
 |\nabla\psi^{(t)}(y)|^2
@@ -394,29 +394,29 @@ A finite curvature-resource condition may be written
 |\Theta_\varepsilon[\psi^{(t)}(y)]|^2
 \right)\Delta V
 \le C_\Theta.
-\]
+$$
 
 This defines a resource-bounded computational model.
 
 The identifications
 
-\[
+$$
 P_{\mathrm{WCC}}=P,
 \qquad
 NP_{\mathrm{WCC}}=NP
-\]
+$$
 
 remain conditional on an explicit encoding, simulation theorem, and polynomial-overhead equivalence between the WCC machine and a standard Turing model.
 
 The corrected pruning exponent uses retained fractions
 
-\[
+$$
 \rho_t(n)\in(0,1]
-\]
+$$
 
 rather than factors greater than one:
 
-\[
+$$
 \alpha(n)
 =
 1+
@@ -425,24 +425,24 @@ rather than factors greater than one:
 \log_2\rho_t(n)
 +
 \beta(n).
-\]
+$$
 
 To obtain
 
-\[
+$$
 \alpha(n)<1,
-\]
+$$
 
 one must impose
 
-\[
+$$
 \beta(n)
 <
 -
 \frac1n
 \sum_{t=1}^{m(n)}
 \log_2\rho_t(n).
-\]
+$$
 
 Configuration-count consequences remain conditional.
 
@@ -467,7 +467,7 @@ Let:
 
 Define
 
-\[
+$$
 \mathcal L_{\mathrm{WCT}}
 =
 c_1(\Delta+\sigma^2)
@@ -477,13 +477,13 @@ c_2(\Delta+k_\star^2)^2
 ic_3m
 +
 c_4R^{-(2+n/p)}.
-\]
+$$
 
 The negative fourth-order sign is required so that
 
-\[
+$$
 -c_2(|k|^2-k_\star^2)^2
-\]
+$$
 
 damps off-shell modes.
 
@@ -497,7 +497,7 @@ This operator is a unifying linear ansatz. It is not a proof that every linear e
 
 Define
 
-\[
+$$
 \mathcal N_{\mathrm{curv}}[\psi]
 =
 -(\Delta\psi)
@@ -506,7 +506,7 @@ Define
 }{
 |\psi|^2+\varepsilon^2e^{-2\alpha|\psi|^2}
 }.
-\]
+$$
 
 The operator is nonsingular for \(\varepsilon>0\).
 
@@ -527,7 +527,7 @@ Let:
 
 The unified evolution ansatz is
 
-\[
+$$
 \begin{aligned}
 \partial_t\psi
 ={}&
@@ -545,13 +545,13 @@ c_4R^{-(2+n/p)}\psi
 +
 \eta\psi\circ\xi(t),
 \end{aligned}
-\]
+$$
 
 with
 
-\[
+$$
 c_2>0.
-\]
+$$
 
 This equation combines nonlinear curvature feedback, cubic saturation, Helmholtz structure, finite-band damping, winding, dimensional scaling, and stochastic forcing.
 
@@ -574,40 +574,40 @@ The cosmology sector couples:
 
 A representative open system is
 
-\[
+$$
 \Phi(k,t)
 =
 -C_\Phi\frac{\Theta_\varepsilon(k,t)}{k^2},
-\]
+$$
 
-\[
+$$
 \partial_t\Phi(k,t)
 =
 -\Gamma(k,t)\Phi(k,t),
-\]
+$$
 
-\[
+$$
 \dot\delta_\gamma=v_\gamma,
-\]
+$$
 
-\[
+$$
 \dot v_\gamma
 =
 -c_s^2(t)k^2\delta_\gamma
 -k^2\Phi
 -D_{\mathrm{curv}}(t)k^2\delta_\gamma,
-\]
+$$
 
-\[
+$$
 \dot\delta_b=v_b,
-\]
+$$
 
-\[
+$$
 \dot v_b
 =
 -\mathcal R(t)c_s^2(t)k^2\delta_\gamma
 -k^2\Phi.
-\]
+$$
 
 Here:
 
@@ -658,20 +658,20 @@ Let:
 
 Define
 
-\[
+$$
 \delta_g(E)
 =
 A_g
 \cos\!\left(
 k_\ell\ln\frac{E}{E_0}+\phi
 \right).
-\]
+$$
 
 Then
 
-\[
+$$
 |\delta_g(E)|\le |A_g|.
-\]
+$$
 
 Detector smearing and statistical detectability are separate empirical questions.
 
@@ -679,51 +679,51 @@ Detector smearing and statistical detectability are separate empirical questions
 
 For \(\psi>0\), define
 
-\[
+$$
 u=\ln\psi.
-\]
+$$
 
 Then
 
-\[
+$$
 \nabla\psi=e^u\nabla u,
-\]
+$$
 
-\[
+$$
 \Delta\psi
 =
 e^u\left(
 \Delta u+|\nabla u|^2
 \right),
-\]
+$$
 
 and therefore
 
-\[
+$$
 \frac{\Delta\psi}{\psi}
 =
 \Delta u+|\nabla u|^2.
-\]
+$$
 
 The viscous Hamilton–Jacobi equation
 
-\[
+$$
 \partial_tu
 =
 \Delta u+|\nabla u|^2
-\]
+$$
 
 is equivalent under \(\psi=e^u\) to
 
-\[
+$$
 \partial_t\psi=\Delta\psi.
-\]
+$$
 
 The filament relation
 
-\[
+$$
 |\nabla u|\sim\kappa
-\]
+$$
 
 remains conditional.
 
@@ -769,7 +769,7 @@ A SymPy `PASS` is not a Lean proof. The label `PROVED` should be reserved for de
 
 The corrected hierarchy is
 
-\[
+$$
 \text{master object}
 \longrightarrow
 \text{equation family}
@@ -779,19 +779,19 @@ The corrected hierarchy is
 \text{Lean declaration where available}
 \longrightarrow
 \text{simulation or experiment where required}.
-\]
+$$
 
 The current specification is internally audit-clean. It is not analytically or empirically complete.
 
 The remaining frontier is
 
-\[
+$$
 32\ \mathrm{CONDITIONAL}
 +
 36\ \mathrm{OPEN}
 =
 68
-\]
+$$
 
 claims requiring additional mathematical assumptions, PDE analysis, formal proof, numerical calibration, or experiment.
 

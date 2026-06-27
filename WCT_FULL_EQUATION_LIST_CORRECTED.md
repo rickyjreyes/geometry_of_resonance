@@ -30,7 +30,7 @@ A SymPy `PASS` is **not** a Lean proof or empirical validation. `PROVED` should 
 
 ## Current totals
 
-\[
+$$
 51\ {\rm PASS}
 +
 32\ {\rm CONDITIONAL}
@@ -40,7 +40,7 @@ A SymPy `PASS` is **not** a Lean proof or empirical validation. `PROVED` should 
 36\ {\rm OPEN}
 =
 142.
-\]
+$$
 
 ## Principal corrections from v1.0
 
@@ -89,24 +89,24 @@ A SymPy `PASS` is **not** a Lean proof or empirical validation. `PROVED` should 
 **Status:** ⚠️ `CONDITIONAL`
 
 Let
-\[
+$$
 \sigma(s):=\sqrt{\kappa(s)^2+\tau(s)^2},
 \qquad
 \langle f\rangle_w:=
 \frac{\oint_\Gamma w f\,ds}{\oint_\Gamma w\,ds},
 \quad
 \oint_\Gamma w\,ds>0.
-\]
+$$
 Define
-\[
+$$
 S_{\rm lock}[\varphi]
 =
 \oint_\Gamma w(s)\bigl(\partial_s\varphi-\sigma\bigr)^2\,ds.
-\]
+$$
 Under phase-curvature locking and the stated winding assumptions,
-\[
+$$
 m=\frac{\hbar}{c}\langle\sigma\rangle_w.
-\]
+$$
 
 
 ## M2 — Nonsingular curvature operator and Lyapunov candidate
@@ -114,47 +114,47 @@ m=\frac{\hbar}{c}\langle\sigma\rangle_w.
 **Status:** ✅ `PASS`
 
 For \(\varepsilon>0\), define
-\[
+$$
 R_\varepsilon(\psi)
 :=
 \frac{\overline{\psi}}
 {|\psi|^2+\varepsilon^2e^{-2\alpha|\psi|^2}},
-\]
-\[
+$$
+$$
 \Theta_\varepsilon[\psi]
 :=
 -(\Delta\psi)R_\varepsilon(\psi).
-\]
+$$
 The denominator is strictly positive for every complex \(\psi\). For \(\psi\neq0\),
-\[
+$$
 R_\varepsilon(\psi)\longrightarrow \frac1\psi
 \qquad(\varepsilon\to0).
-\]
+$$
 A Lyapunov candidate is
-\[
+$$
 \mathcal E_{\rm WCT}[\psi]
 =
 \int_\Omega
 \left(
 |\nabla\psi|^2+|\Theta_\varepsilon[\psi]|^2
 \right)\,dx.
-\]
+$$
 
 
 ## M3 — Finite-band spectral selector
 
 **Status:** ✅ `PASS`
 
-\[
+$$
 \partial_tA
 =
 \mu A-g|A|^2A-b(\Delta+k_\star^2)^2A,
 \qquad b>0.
-\]
+$$
 Its Fourier growth symbol contains
-\[
+$$
 -b\bigl(|k|^2-k_\star^2\bigr)^2,
-\]
+$$
 so sufficiently off-shell ultraviolet modes are damped.
 
 
@@ -163,15 +163,15 @@ so sufficiently off-shell ultraviolet modes are damped.
 **Status:** ✅ `PASS`
 
 For a standard Sobolev domain,
-\[
+$$
 H^2(\Omega)\hookrightarrow L^\infty(\Omega)
 \quad\text{when}\quad
 2>\frac n2.
-\]
+$$
 For integer spatial dimension,
-\[
+$$
 n\le3.
-\]
+$$
 This is an embedding threshold, not by itself a complete nonlinear-stability theorem.
 
 
@@ -179,14 +179,14 @@ This is an embedding threshold, not by itself a complete nonlinear-stability the
 
 **Status:** ⚠️ `CONDITIONAL`
 
-\[
+$$
 \psi^{(t+1)}(x)
 =
 U\!\left(
 \psi^{(t)}(x),
 \{\psi^{(t)}(y):y\in N(x)\}
 \right).
-\]
+$$
 Complexity claims require a specified encoding, precision model, update cost, and finite curvature-resource bound.
 
 
@@ -194,7 +194,7 @@ Complexity claims require a specified encoding, precision model, update cost, an
 
 **Status:** ◻️ `DEFINITION`
 
-\[
+$$
 \mathcal L_{\rm WCT}
 =
 c_1(\Delta+\sigma^2)
@@ -202,20 +202,20 @@ c_1(\Delta+\sigma^2)
 +i\,c_3m
 +c_4R^{-(2+n/p)},
 \qquad c_2>0.
-\]
+$$
 
 
 ## M6B — Nonlinear curvature operator
 
 **Status:** ○ `OPEN`
 
-\[
+$$
 \mathcal N_{\rm curv}[\psi]
 =
 -(\Delta\psi)
 \frac{\overline{\psi}}
 {|\psi|^2+\varepsilon^2e^{-2\alpha|\psi|^2}}.
-\]
+$$
 The operator is well-defined for \(\varepsilon>0\); uniqueness of this nonlinear closure remains open.
 
 
@@ -223,7 +223,7 @@ The operator is well-defined for \(\varepsilon>0\); uniqueness of this nonlinear
 
 **Status:** ✅ `PASS`
 
-\[
+$$
 \partial_t\psi
 =
 \mathcal N_{\rm curv}[\psi]
@@ -234,7 +234,7 @@ The operator is well-defined for \(\varepsilon>0\); uniqueness of this nonlinear
 +c_4R^{-(2+n/p)}\psi
 +\eta\psi\circ\xi(t),
 \qquad c_2>0.
-\]
+$$
 The explicit negative fourth-order term supplies finite-band ultraviolet damping. Other dynamical claims require separate analysis.
 
 
@@ -243,16 +243,16 @@ The explicit negative fourth-order term supplies finite-band ultraviolet damping
 **Status:** ○ `OPEN`
 
 Representative closure relations are
-\[
+$$
 \Phi(k,t)=-C_\Phi\frac{\Theta(k,t)}{k^2},
-\]
-\[
+$$
+$$
 \delta_g(E)
 =
 A_g\cos\!\left(
 k_\ell\ln\frac{E}{E_0}+\phi
 \right).
-\]
+$$
 The full cosmology sector remains open pending derivation, parameter closure, and calibrated data tests.
 
 
@@ -263,20 +263,20 @@ The full cosmology sector remains open pending derivation, parameter closure, an
 
 **Status:** ✅ `PASS`
 
-\[
+$$
 \sigma_{\rm dens}(s)=\kappa(s)^2+\tau(s)^2,
 \qquad [\sigma_{\rm dens}]=L^{-2}.
-\]
+$$
 
 
 ## E1B — Curvature spectral rate
 
 **Status:** ✅ `PASS`
 
-\[
+$$
 \sigma(s)=\sqrt{\kappa(s)^2+\tau(s)^2},
 \qquad [\sigma]=L^{-1}.
-\]
+$$
 
 
 ## E2 — Weighted loop average
@@ -284,19 +284,19 @@ The full cosmology sector remains open pending derivation, parameter closure, an
 **Status:** ✅ `PASS`
 
 For \(w(s)\ge0\) and \(\oint_\Gamma w\,ds>0\),
-\[
+$$
 \langle f\rangle_w
 =
 \frac{\oint_\Gamma w(s)f(s)\,ds}
 {\oint_\Gamma w(s)\,ds}.
-\]
+$$
 
 
 ## E3 — Loop-locking action
 
 **Status:** ✅ `PASS`
 
-\[
+$$
 S_{\rm eff}[\varphi]
 =
 \oint_\Gamma
@@ -307,7 +307,7 @@ w(\partial_s\varphi-\sigma)^2\,ds
 \oint_\Gamma\partial_s\varphi\,ds-2\pi n
 \right),
 \qquad n\in\mathbb Z.
-\]
+$$
 For \(w\ge0\), the mismatch term is nonnegative.
 
 
@@ -316,13 +316,13 @@ For \(w\ge0\), the mismatch term is nonnegative.
 **Status:** ✅ `PASS`
 
 Stationarity gives
-\[
+$$
 \partial_s\varphi
 =
 \sigma+\frac{\alpha_{\rm lock}}{w},
-\]
+$$
 where
-\[
+$$
 \alpha_{\rm lock}
 =
 \frac{
@@ -330,7 +330,7 @@ where
 }{
 \oint_\Gamma ds/w
 },
-\]
+$$
 assuming \(w>0\) and \(\oint_\Gamma ds/w<\infty\).
 
 
@@ -339,17 +339,17 @@ assuming \(w>0\) and \(\oint_\Gamma ds/w<\infty\).
 **Status:** ⚠️ `CONDITIONAL`
 
 Define
-\[
+$$
 L_s:=\oint_\Gamma ds,
 \qquad
 k_{\rm wind}:=\frac{2\pi|n|}{L_s},
 \qquad
 k_\sigma:=\frac1{L_s}\oint_\Gamma\sigma\,ds.
-\]
+$$
 Then
-\[
+$$
 k_{\rm wind}=k_\sigma=\langle\sigma\rangle_w
-\]
+$$
 only under compatible orientation, exact integrated locking, and a weight condition such as uniform \(w\). Without those assumptions the three quantities are distinct.
 
 
@@ -357,29 +357,29 @@ only under compatible orientation, exact integrated locking, and a weight condit
 
 **Status:** ✅ `PASS`
 
-\[
+$$
 E_{\rm rest}=\hbar c\,k_{\rm eff},
 \qquad
 m=\frac{\hbar}{c}k_{\rm eff}.
-\]
+$$
 When E5 applies,
-\[
+$$
 m=\frac{\hbar}{c}\langle\sigma\rangle_w.
-\]
+$$
 
 
 ## E7 — Solenoidal mass law
 
 **Status:** ✅ `PASS`
 
-\[
+$$
 m
 =
 \frac{\hbar}{c}
 \left\langle
 \sqrt{\kappa^2+\tau^2}
 \right\rangle_\Gamma.
-\]
+$$
 The averaging measure must be specified; the dimensional relation is valid.
 
 
@@ -388,7 +388,7 @@ The averaging measure must be specified; the dimensional relation is valid.
 **Status:** ✅ `PASS`
 
 Substituting E4 gives
-\[
+$$
 \boxed{
 \oint_\Gamma w\,\partial_s\varphi\,ds
 =
@@ -396,7 +396,7 @@ Substituting E4 gives
 +
 \alpha_{\rm lock}L_s
 }.
-\]
+$$
 The earlier extra factor
 \(
 2\pi\oint ds/\oint ds/w
@@ -411,13 +411,13 @@ was incorrect.
 
 **Status:** ◻️ `DEFINITION`
 
-\[
+$$
 \mathbf S(x,t)=u(x,t)\nabla\theta(x,t).
-\]
+$$
 A conservation equation, when imposed, is
-\[
+$$
 \partial_tu+\nabla\cdot\mathbf S=0.
-\]
+$$
 The constitutive relation itself is a definition.
 
 
@@ -425,10 +425,10 @@ The constitutive relation itself is a definition.
 
 **Status:** ✅ `PASS`
 
-\[
+$$
 \int_{r_1}^{r_2}k_r(r)\,dr=2\pi n,
 \qquad n\in\mathbb Z.
-\]
+$$
 Both sides are dimensionless.
 
 
@@ -436,13 +436,13 @@ Both sides are dimensionless.
 
 **Status:** ✅ `PASS`
 
-\[
+$$
 m(\gamma)
 =
 \frac1{2\pi}
 \oint_\gamma\nabla\theta\cdot d\boldsymbol\ell
 \in\mathbb Z,
-\]
+$$
 provided \(\psi\neq0\) on the loop and the phase is continuous modulo \(2\pi\).
 
 
@@ -451,24 +451,24 @@ provided \(\psi\neq0\) on the loop and the phase is continuous modulo \(2\pi\).
 **Status:** ✅ `PASS`
 
 To avoid conflict with curvature \(\sigma\), write the growth rate as
-\[
+$$
 \lambda_{\rm grow}(k)
 =
 r+a|k|^2-b|k|^4,
 \qquad a,b>0.
-\]
+$$
 Its nonzero stationary maximum is
-\[
+$$
 k_\star=\sqrt{\frac{a}{2b}}.
-\]
+$$
 Equivalently,
-\[
+$$
 \lambda_{\rm grow}(k)
 =
 \mu-b(|k|^2-k_\star^2)^2,
 \qquad
 \mu=r+\frac{a^2}{4b}.
-\]
+$$
 
 
 ## E13 — Band-pass amplitude evolution
@@ -476,17 +476,17 @@ Equivalently,
 **Status:** ⚠️ `CONDITIONAL`
 
 A form consistent with E12 is
-\[
+$$
 \partial_tA
 =
 (r-a\Delta-b\Delta^2)A-\beta|A|^2A,
-\]
+$$
 or equivalently
-\[
+$$
 \partial_tA
 =
 \mu A-b(\Delta+k_\star^2)^2A-\beta|A|^2A.
-\]
+$$
 Boundary conditions and the sign of \(\beta\) must be declared.
 
 
@@ -495,7 +495,7 @@ Boundary conditions and the sign of \(\beta\) must be declared.
 **Status:** ⚠️ `CONDITIONAL`
 
 For the centered Swift-Hohenberg form,
-\[
+$$
 \mathcal E[A]
 =
 \int_\Omega
@@ -504,7 +504,7 @@ For the centered Swift-Hohenberg form,
 +b|(\Delta+k_\star^2)A|^2
 +\frac{\beta}{2}|A|^4
 \right]dx.
-\]
+$$
 Gradient-flow descent requires compatible boundary conditions and normalization conventions.
 
 
@@ -512,13 +512,13 @@ Gradient-flow descent requires compatible boundary conditions and normalization 
 
 **Status:** ⚠️ `CONDITIONAL`
 
-\[
+$$
 \frac{d}{dt}|\widehat A_k|^2
 \le
 2\lambda_{\rm grow}(k)|\widehat A_k|^2
 -c|\widehat A_k|^4,
 \qquad c>0.
-\]
+$$
 The quartic modal estimate requires a model-specific nonlinear projection bound.
 
 
@@ -527,13 +527,13 @@ The quartic modal estimate requires a model-specific nonlinear projection bound.
 **Status:** ✅ `PASS`
 
 For the linearized dynamics,
-\[
+$$
 P_k(t)=P_k(0)e^{2\lambda_{\rm grow}(k)t}.
-\]
+$$
 If the maximizing shell is isolated and initially populated,
-\[
+$$
 \operatorname*{arg\,max}_kP_k(t)\to k_\star.
-\]
+$$
 
 
 # C. Curvature feedback and Lyapunov dynamics
@@ -543,19 +543,19 @@ If the maximizing shell is isolated and initially populated,
 
 **Status:** ✅ `PASS`
 
-\[
+$$
 R_\varepsilon(\psi)
 =
 \frac{\overline\psi}
 {|\psi|^2+\varepsilon^2e^{-2\alpha|\psi|^2}},
-\]
-\[
+$$
+$$
 \boxed{
 \Theta_\varepsilon[\psi]
 =
 -(\Delta\psi)R_\varepsilon(\psi)
 }.
-\]
+$$
 For \(\varepsilon>0\), the denominator is strictly positive for all complex \(\psi\). This replaces
 \(
 -\Delta\psi/(\psi+\varepsilon e^{-\alpha|\psi|^2})
@@ -567,7 +567,7 @@ whose denominator can vanish.
 
 **Status:** ⚠️ `CONDITIONAL`
 
-\[
+$$
 \mathcal E[\psi]
 =
 \int_\Omega
@@ -575,7 +575,7 @@ whose denominator can vanish.
 c_1|\nabla\psi|^2
 +c_2|\Theta_\varepsilon[\psi]|^2
 \right)dx.
-\]
+$$
 It is nonnegative when \(c_1,c_2\ge0\). Lyapunov descent still requires a specified evolution equation satisfying \(d\mathcal E/dt\le0\).
 
 
@@ -584,14 +584,14 @@ It is nonnegative when \(c_1,c_2\ge0\). Lyapunov descent still requires a specif
 **Status:** ⚠️ `CONDITIONAL`
 
 Separate the spatial and frequency gaps:
-\[
+$$
 \Delta_k^\star\sim\langle\sigma\rangle_w^2,
 \qquad [\Delta_k^\star]=L^{-2},
-\]
-\[
+$$
+$$
 \Delta_\omega^\star:=c^2\Delta_k^\star,
 \qquad [\Delta_\omega^\star]=T^{-2}.
-\]
+$$
 The proportionality constant and spectral derivation remain model-dependent.
 
 
@@ -600,19 +600,19 @@ The proportionality constant and spectral derivation remain model-dependent.
 **Status:** ✅ `PASS`
 
 Let
-\[
+$$
 S:=\frac{\Box\psi}{g(\psi)},
 \qquad
 P:=\frac{\Delta\psi}{g(\psi)}.
-\]
+$$
 The quadratic sector is
-\[
+$$
 Q(S,P)=\kappa S^2+\theta P^2-\gamma SP.
-\]
+$$
 It is positive semidefinite when
-\[
+$$
 \kappa\ge0,\qquad \theta\ge0,\qquad \gamma^2\le4\kappa\theta.
-\]
+$$
 Potential and prefactor terms require separate sign assumptions.
 
 
@@ -621,7 +621,7 @@ Potential and prefactor terms require separate sign assumptions.
 **Status:** ✅ `PASS`
 
 For \(\mathcal L(\psi,\partial\psi,\partial^2\psi)\),
-\[
+$$
 \frac{\delta\mathcal L}{\delta\psi}
 =
 \frac{\partial\mathcal L}{\partial\psi}
@@ -631,14 +631,14 @@ For \(\mathcal L(\psi,\partial\psi,\partial^2\psi)\),
 \frac{\partial\mathcal L}
 {\partial(\partial_\mu\partial_\nu\psi)}
 =0.
-\]
+$$
 
 
 ## E22 — Effective metric ansatz
 
 **Status:** ⚠️ `CONDITIONAL`
 
-\[
+$$
 g_{\mu\nu}^{\rm eff}
 =
 \eta_{\mu\nu}
@@ -646,7 +646,7 @@ g_{\mu\nu}^{\rm eff}
 \frac{\partial_\mu\overline\psi\,\partial_\nu\psi}
 {\rho c^2}
 +\delta_g\,\eta_{\mu\nu}\frac{W_\psi}{W_0}.
-\]
+$$
 The coefficients must carry the units needed to make both corrections dimensionless, and signature/nondegeneracy must be checked.
 
 
@@ -654,13 +654,13 @@ The coefficients must carry the units needed to make both corrections dimensionl
 
 **Status:** ⚠️ `CONDITIONAL`
 
-\[
+$$
 h(\psi)
 =
 C_h\left(
 W_\psi+\chi|\nabla\psi|^2
 \right).
-\]
+$$
 The constants must reconcile dimensions and the relation requires a constitutive derivation.
 
 
@@ -671,15 +671,15 @@ The constants must reconcile dimensions and the relation requires a constitutive
 
 **Status:** ✅ `PASS`
 
-\[
+$$
 H^2(\Omega)\hookrightarrow L^\infty(\Omega)
 \quad\Longrightarrow\quad
 2>\frac n2.
-\]
+$$
 For integer \(n\),
-\[
+$$
 n\le3.
-\]
+$$
 
 
 ## E25 — Critical Sobolev exponent
@@ -687,11 +687,11 @@ n\le3.
 **Status:** ◻️ `DEFINITION`
 
 For \(n>2\),
-\[
+$$
 p_c(n)=\frac{n+2}{n-2},
 \qquad
 p<p_c(n)
-\]
+$$
 is the stated subcriticality condition.
 
 
@@ -700,18 +700,18 @@ is the stated subcriticality condition.
 **Status:** ✅ `PASS`
 
 If \(\psi\in H^2(\Omega)\) and
-\[
+$$
 |R_\varepsilon(\psi(x))|\le\delta^{-1}
 \quad\text{a.e.},
-\]
+$$
 then
-\[
+$$
 \boxed{
 \|\Theta_\varepsilon[\psi]\|_{L^2}
 \le
 \delta^{-1}\|\Delta\psi\|_{L^2}
 }.
-\]
+$$
 An \(L^\infty\) curvature bound does not follow from \(H^2\) in arbitrary dimension; see E69.
 
 
@@ -719,7 +719,7 @@ An \(L^\infty\) curvature bound does not follow from \(H^2\) in arbitrary dimens
 
 **Status:** ◻️ `DEFINITION`
 
-\[
+$$
 \int_{\mathbb R^n}
 \left(
 |\nabla\psi|^2
@@ -727,7 +727,7 @@ An \(L^\infty\) curvature bound does not follow from \(H^2\) in arbitrary dimens
 |\Theta_\varepsilon[\psi]|^2
 \right)dx
 <\infty.
-\]
+$$
 
 
 # E. Alpha-drop, entropy reduction, and pruning
@@ -738,18 +738,18 @@ An \(L^\infty\) curvature bound does not follow from \(H^2\) in arbitrary dimens
 **Status:** ✅ `PASS`
 
 Let \(\rho_t(n)\in(0,1]\) be retained fractions. Define
-\[
+$$
 \alpha(n)
 =
 1+\frac1n\sum_{t=1}^{m(n)}\log_2\rho_t(n)
 +\beta(n).
-\]
+$$
 Then \(\alpha(n)<1\) requires
-\[
+$$
 \beta(n)
 <
 -\frac1n\sum_t\log_2\rho_t(n).
-\]
+$$
 This replaces \(q_t=(M_t+1)/M_t>1\), which could not produce \(\alpha<1\) with \(\beta\ge0\).
 
 
@@ -757,16 +757,16 @@ This replaces \(q_t=(M_t+1)/M_t>1\), which could not produce \(\alpha<1\) with \
 
 **Status:** ✅ `PASS`
 
-\[
+$$
 M_{t+1}\le e^{-\Delta_t}M_t,
 \qquad \Delta_t\ge0.
-\]
+$$
 Iteration gives
-\[
+$$
 M_T
 \le
 M_0\exp\!\left(-\sum_{t=0}^{T-1}\Delta_t\right).
-\]
+$$
 
 
 ## E30 — Spectral entropy
@@ -774,13 +774,13 @@ M_0\exp\!\left(-\sum_{t=0}^{T-1}\Delta_t\right).
 **Status:** ✅ `PASS`
 
 For \(P_k\ge0\) and \(\sum_kP_k=1\),
-\[
+$$
 H_k=-\sum_kP_k\ln P_k.
-\]
+$$
 For support size \(K\),
-\[
+$$
 0\le H_k\le\ln K.
-\]
+$$
 
 
 ## E31 — Conditional entropy-production bound
@@ -788,14 +788,14 @@ For support size \(K\),
 **Status:** ⚠️ `CONDITIONAL`
 
 Define the entropy drop
-\[
+$$
 \Delta H_t:=H_k(t)-H_k(t+1).
-\]
+$$
 A noncircular model-specific bound has the form
-\[
+$$
 \Delta H_t\ge c_0\mathcal D_t,
 \qquad \mathcal D_t\ge0.
-\]
+$$
 The dissipation functional \(\mathcal D_t\) must be derived from the dynamics; the earlier self-referential expression was removed.
 
 
@@ -803,9 +803,9 @@ The dissipation functional \(\mathcal D_t\) must be derived from the dynamics; t
 
 **Status:** ⚠️ `CONDITIONAL`
 
-\[
+$$
 \limsup_{n\to\infty}\alpha(n)<1.
-\]
+$$
 This follows only if the retained-fraction and \(\beta(n)\) bounds in E28 hold uniformly with sufficient margin.
 
 
@@ -814,15 +814,15 @@ This follows only if the retained-fraction and \(\beta(n)\) bounds in E28 hold u
 **Status:** ✅ `PASS`
 
 For a distribution supported on \(K_t\) modes,
-\[
+$$
 H_k(t)\le\ln K_t,
-\]
+$$
 hence
-\[
+$$
 \boxed{
 e^{H_k(t)}\le K_t
 }.
-\]
+$$
 The previous inequality \(K_t\le e^{H_k(t)}\) was reversed.
 
 
@@ -831,14 +831,14 @@ The previous inequality \(K_t\le e^{H_k(t)}\) was reversed.
 **Status:** ○ `OPEN`
 
 For entropy reduction
-\[
+$$
 \Delta H_k:=H_{\rm before}-H_{\rm after}\ge0,
-\]
+$$
 the proposed cost relation is
-\[
+$$
 \Delta E_{\rm cost}\ge\lambda\,\Delta H_k,
 \qquad \lambda>0.
-\]
+$$
 A derivation of \(\lambda\) remains open.
 
 
@@ -850,38 +850,38 @@ A derivation of \(\lambda\) remains open.
 **Status:** ◻️ `DEFINITION`
 
 A stationary locked configuration satisfies
-\[
+$$
 \partial_t\psi=0,
 \qquad
 \nabla\Theta_\varepsilon[\psi]=0,
 \qquad
 \frac{d}{dt}S[\psi]=0.
-\]
+$$
 
 
 ## E36 — Discrete WCC update
 
 **Status:** ◻️ `DEFINITION`
 
-\[
+$$
 \psi^{(t+1)}(x)
 =
 U\!\left(
 \psi^{(t)}(x),
 \{\psi^{(t)}(y)\}_{y\in N(x)}
 \right).
-\]
+$$
 
 
 ## E37 — Bandlimit from energy
 
 **Status:** ✅ `PASS`
 
-\[
+$$
 k_{\max}
 =
 C_1\frac{E_{\max}}{\hbar c},
-\]
+$$
 with dimensionless \(C_1\).
 
 
@@ -890,11 +890,11 @@ with dimensionless \(C_1\).
 **Status:** ✅ `PASS`
 
 In three spatial dimensions,
-\[
+$$
 N_{\rm lanes}
 \le
 C_2Vk_{\max}^3,
-\]
+$$
 with dimensionless \(C_2\).
 
 
@@ -902,9 +902,9 @@ with dimensionless \(C_2\).
 
 **Status:** ◻️ `DEFINITION`
 
-\[
+$$
 T_{\max}(n)\le C_3n^d.
-\]
+$$
 This defines the assumed computational resource class.
 
 
@@ -912,11 +912,11 @@ This defines the assumed computational resource class.
 
 **Status:** ⚠️ `CONDITIONAL`
 
-\[
+$$
 P_{\rm WCC}\cong P,
 \qquad
 NP_{\rm WCC}\cong NP.
-\]
+$$
 The identification requires an explicit encoding and polynomial simulation in both directions.
 
 
@@ -924,12 +924,12 @@ The identification requires an explicit encoding and polynomial simulation in bo
 
 **Status:** ⚠️ `CONDITIONAL`
 
-\[
+$$
 |C_{\rm curv}(n)|
 \le
 2^{\alpha(n)n},
 \qquad \alpha(n)<1.
-\]
+$$
 E28 alone does not prove this counting bound; an injective coding or combinatorial argument is required.
 
 
@@ -937,12 +937,12 @@ E28 alone does not prove this counting bound; an injective coding or combinatori
 
 **Status:** ○ `OPEN`
 
-\[
+$$
 \frac{d}{dt}I_{\rm coh}[\psi]
 =
 -\lambda_I
 \int_\Omega|\Theta_\varepsilon[\psi]|^2dx.
-\]
+$$
 The information functional and coupling \(\lambda_I\) require derivation.
 
 
@@ -950,13 +950,13 @@ The information functional and coupling \(\lambda_I\) require derivation.
 
 **Status:** ○ `OPEN`
 
-\[
+$$
 \frac{dH_k}{dt}
 \le
 -\mu
 \int_\Omega|\Theta_\varepsilon[\psi]|^2dx,
 \qquad \mu>0.
-\]
+$$
 This remains an analytic/empirical claim.
 
 
@@ -967,11 +967,11 @@ This remains an analytic/empirical claim.
 
 **Status:** ◻️ `DEFINITION`
 
-\[
+$$
 \Theta_\varepsilon[\psi_n]
 =
 \lambda_n\psi_n.
-\]
+$$
 Because \(\Theta_\varepsilon\) is nonlinear, the spectral problem and normalization must be specified carefully.
 
 
@@ -979,17 +979,17 @@ Because \(\Theta_\varepsilon\) is nonlinear, the spectral problem and normalizat
 
 **Status:** ✅ `PASS`
 
-\[
+$$
 \boxed{
 Q_{\rm eff}
 =
 \omega\frac{U}{P_{\rm loss}}
 }
-\]
+$$
 where
-\[
+$$
 U=\int_\Omega u\,dV
-\]
+$$
 is stored energy and \(P_{\rm loss}\) is loss power. An integral of energy density over a loss region is not a power unless a loss rate is included.
 
 
@@ -997,11 +997,11 @@ is stored energy and \(P_{\rm loss}\) is loss power. An integral of energy densi
 
 **Status:** ○ `OPEN`
 
-\[
+$$
 \langle\sigma\rangle_{w,\rm plasma}
 \approx
 \langle\sigma\rangle_{w,\rm cavity}.
-\]
+$$
 A measurable matching tolerance and transfer mechanism remain open.
 
 
@@ -1009,7 +1009,7 @@ A measurable matching tolerance and transfer mechanism remain open.
 
 **Status:** ✅ `PASS`
 
-\[
+$$
 \boxed{
 \frac{dW}{dt}
 =
@@ -1021,13 +1021,13 @@ P_{\rm loss}
 -
 P_{\rm out}
 }.
-\]
+$$
 At stationarity,
-\[
+$$
 P_{\rm in}+P_{\rm fusion}
 =
 P_{\rm loss}+P_{\rm out}.
-\]
+$$
 Fusion is a source, not a loss term.
 
 
@@ -1035,7 +1035,7 @@ Fusion is a source, not a loss term.
 
 **Status:** ⚠️ `CONDITIONAL`
 
-\[
+$$
 \Delta\sigma
 =
 \langle\sigma\rangle_{\rm core}
@@ -1043,7 +1043,7 @@ Fusion is a source, not a loss term.
 \langle\sigma\rangle_{\rm edge}
 >
 \Delta_{\rm crit}.
-\]
+$$
 The threshold and direction of the inequality must be calibrated to a specified stability observable.
 
 
@@ -1052,34 +1052,34 @@ The threshold and direction of the inequality must be calibrated to a specified 
 **Status:** ✅ `PASS`
 
 If
-\[
+$$
 \omega_j^2=c^2\lambda_j+\Delta_\omega^\star,
 \qquad [\Delta_\omega^\star]=T^{-2},
-\]
+$$
 then comparison with
-\[
+$$
 \omega^2=c^2k^2+\frac{m_{\rm eff}^2c^4}{\hbar^2}
-\]
+$$
 gives
-\[
+$$
 \boxed{
 m_{\rm eff}^2
 =
 \frac{\hbar^2}{c^4}\Delta_\omega^\star
 }.
-\]
+$$
 
 
 ## E50 — Phase-coherence functional
 
 **Status:** ⚠️ `CONDITIONAL`
 
-\[
+$$
 \mathcal C[\psi]
 =
 \int_\Omega
 \frac{|\psi|^2}{|\nabla\theta|}\,dx.
-\]
+$$
 The definition requires a regularization or lower bound
 \(
 |\nabla\theta|\ge\delta>0
@@ -1092,17 +1092,17 @@ on the integration region.
 **Status:** ✅ `PASS`
 
 For a smooth scalar denominator \(D\neq0\), define
-\[
+$$
 \Theta_D[\psi]:=-\frac{\Delta\psi}{D}.
-\]
+$$
 Then, where \(\nabla\Delta=\Delta\nabla\),
-\[
+$$
 [\nabla,\Theta_D]\psi
 :=
 \nabla(\Theta_D[\psi])-\Theta_D[\nabla\psi]
 =
 \frac{\Delta\psi}{D^2}\nabla D.
-\]
+$$
 This is the exact commutator generated by the spatially varying denominator.
 
 
@@ -1110,22 +1110,22 @@ This is the exact commutator generated by the spatially varying denominator.
 
 **Status:** ◻️ `DEFINITION`
 
-\[
+$$
 G_\sigma:=\int_\Omega|\Theta_\varepsilon[\psi]|^2dx,
 \qquad
 L_\sigma:=\int_\Omega|\nabla\psi|^2dx.
-\]
+$$
 
 
 ## E53 — Curvature pressure density
 
 **Status:** ✅ `PASS`
 
-\[
+$$
 p_\Theta(x)
 :=
 c_2|\Theta_\varepsilon[\psi](x)|^2.
-\]
+$$
 It is the local curvature contribution to E18.
 
 
@@ -1133,13 +1133,13 @@ It is the local curvature contribution to E18.
 
 **Status:** ⚠️ `CONDITIONAL`
 
-\[
+$$
 \partial_t\psi=0,
 \qquad
 \delta\mathcal E[\psi]=0,
 \qquad
 \nabla\Theta_\varepsilon[\psi]=0.
-\]
+$$
 Simultaneous satisfaction requires existence and regularity results.
 
 
@@ -1147,26 +1147,26 @@ Simultaneous satisfaction requires existence and regularity results.
 
 **Status:** ◻️ `DEFINITION`
 
-\[
+$$
 V_{\rm eff}(\psi)
 =
 V(|\psi|^2)
 +
 \kappa|\Theta_\varepsilon[\psi]|^2.
-\]
+$$
 
 
 ## E56 — Phase-wall criterion
 
 **Status:** ⚠️ `CONDITIONAL`
 
-\[
+$$
 |\nabla\theta|_{\rm wall}
 \sim
 \sigma_{\rm wall}
 \gg
 \langle\sigma\rangle_w.
-\]
+$$
 The comparison scale and wall-detection threshold must be defined.
 
 
@@ -1177,15 +1177,15 @@ The comparison scale and wall-detection threshold must be defined.
 
 **Status:** ✅ `PASS`
 
-\[
+$$
 \mathcal{SH}[A]
 =
 (\Delta+k_\star^2)^2A.
-\]
+$$
 Its Fourier symbol is
-\[
+$$
 (|k|^2-k_\star^2)^2.
-\]
+$$
 
 
 ## E58 — Band-selective Green kernel
@@ -1193,15 +1193,15 @@ Its Fourier symbol is
 **Status:** ⚠️ `CONDITIONAL`
 
 For
-\[
+$$
 \mathcal L=r+a(\Delta+k_\star^2)^2,
-\]
+$$
 the Fourier Green kernel is
-\[
+$$
 G(k)
 =
 \frac1{r+a(|k|^2-k_\star^2)^2}.
-\]
+$$
 It is defined only away from zeros of the denominator.
 
 
@@ -1209,35 +1209,35 @@ It is defined only away from zeros of the denominator.
 
 **Status:** ✅ `PASS`
 
-\[
+$$
 \mathcal A^\star
 :=
 \left\{
 k\in\mathbb Z^d:
 \bigl||k|-k_\star\bigr|\le\Delta k
 \right\},
-\]
-\[
+$$
+$$
 (P_{k_\star}A)(x)
 =
 \sum_{k\in\mathcal A^\star}
 \widehat A_ke^{ik\cdot x}.
-\]
+$$
 With a fixed annulus,
-\[
+$$
 P_{k_\star}^2=P_{k_\star}.
-\]
+$$
 
 
 ## E60 — Center-manifold amplitude equation
 
 **Status:** ◻️ `DEFINITION`
 
-\[
+$$
 \partial_T\mathcal A
 =
 \mu\mathcal A-g|\mathcal A|^2\mathcal A.
-\]
+$$
 
 
 ## E61 — Pattern-formation threshold
@@ -1245,14 +1245,14 @@ P_{k_\star}^2=P_{k_\star}.
 **Status:** ✅ `PASS`
 
 In the continuum,
-\[
+$$
 r_c
 =
 \min_k
 a(|k|^2-k_\star^2)^2
 =
 0.
-\]
+$$
 For a discrete domain, equality requires an admissible mode on the selected shell.
 
 
@@ -1261,7 +1261,7 @@ For a discrete domain, equality requires an admissible mode on the selected shel
 **Status:** ✅ `PASS`
 
 For nonzero total spectral energy,
-\[
+$$
 \eta(t)
 =
 \frac{
@@ -1271,21 +1271,21 @@ For nonzero total spectral energy,
 },
 \qquad
 0\le\eta(t)\le1.
-\]
+$$
 
 
 ## E63 — Entropic mode selection
 
 **Status:** ◻️ `DEFINITION`
 
-\[
+$$
 k_\star
 =
 \operatorname*{arg\,min}_k
 \left[
 H_k+\lambda_\Theta C_\Theta(k)
 \right].
-\]
+$$
 
 
 ## E64 — Corrected selected wavelength
@@ -1293,11 +1293,11 @@ H_k+\lambda_\Theta C_\Theta(k)
 **Status:** ✅ `PASS`
 
 From E12,
-\[
+$$
 k_\star=\sqrt{\frac{a}{2b}}.
-\]
+$$
 Therefore
-\[
+$$
 \boxed{
 \lambda_\star
 =
@@ -1305,7 +1305,7 @@ Therefore
 =
 2\pi\sqrt{\frac{2b}{a}}
 }.
-\]
+$$
 
 
 # I. Sobolev structure and dimensional bounds
@@ -1316,22 +1316,22 @@ Therefore
 **Status:** ✅ `PASS`
 
 For \(n>2\),
-\[
+$$
 p_c(n)=\frac{n+2}{n-2}.
-\]
+$$
 
 
 ## E66 — Gagliardo-Nirenberg interpolation
 
 **Status:** ⚠️ `CONDITIONAL`
 
-\[
+$$
 \|u\|_{L^p}
 \le
 C
 \|\nabla u\|_{L^2}^{\theta}
 \|u\|_{L^2}^{1-\theta}.
-\]
+$$
 The allowed \(p,\theta,n\), domain, and boundary assumptions must be specified.
 
 
@@ -1347,11 +1347,11 @@ For \(n>3\), the embedding \(H^2\hookrightarrow L^\infty\) fails in general; equ
 **Status:** ⚠️ `CONDITIONAL`
 
 A model-dependent localized estimate is
-\[
+$$
 \int_{B_R}|\nabla\psi|^2dx
 \le
 CR^{n-2}\|\psi\|_{H^1}^2.
-\]
+$$
 Its exponent and constant require a precise scaling regime and domain hypotheses.
 
 
@@ -1360,15 +1360,15 @@ Its exponent and constant require a precise scaling regime and domain hypotheses
 **Status:** ✅ `PASS`
 
 If
-\[
+$$
 \psi\in H^s(\Omega),
 \qquad
 s>\frac n2+2,
-\]
+$$
 and the regularized reciprocal is uniformly bounded, then Sobolev embedding gives
-\[
+$$
 \Theta_\varepsilon[\psi]\in L^\infty(\Omega).
-\]
+$$
 This replaces the false general claim \(H^2\Rightarrow\Theta\in L^\infty\).
 
 
@@ -1377,13 +1377,13 @@ This replaces the false general claim \(H^2\Rightarrow\Theta\in L^\infty\).
 **Status:** ⚠️ `CONDITIONAL`
 
 Use the one-way criterion
-\[
+$$
 n\le3,
 \qquad
 H^2\hookrightarrow L^\infty,
 \qquad
 p<p_c(n)
-\]
+$$
 as separate hypotheses for the proposed stability analysis. They are not a proven biconditional characterization of all stable WCT solutions.
 
 
@@ -1394,11 +1394,11 @@ as separate hypotheses for the proposed stability analysis. They are not a prove
 
 **Status:** ⚠️ `CONDITIONAL`
 
-\[
+$$
 TVk_{\max}^3
 \le
 C_{\rm phys}.
-\]
+$$
 The constant must have units of time, and the interpretation depends on the update rate, precision, and physical encoding.
 
 
@@ -1406,11 +1406,11 @@ The constant must have units of time, and the interpretation depends on the upda
 
 **Status:** ⚠️ `CONDITIONAL`
 
-\[
+$$
 |S_{\rm eff}(n)|
 \le
 2^{\alpha(n)n}.
-\]
+$$
 A counting theorem linking the physical pruning process to discrete configurations is required.
 
 
@@ -1418,22 +1418,22 @@ A counting theorem linking the physical pruning process to discrete configuratio
 
 **Status:** ◻️ `DEFINITION`
 
-\[
+$$
 V(x,w)\in P,
 \qquad
 |w|=\operatorname{poly}(|x|).
-\]
+$$
 
 
 ## E74 — Curvature separation conjecture
 
 **Status:** ○ `OPEN`
 
-\[
+$$
 \inf_n
 \frac{\log|NP_n|}{\log|P_n|}
 >1.
-\]
+$$
 The finite-size families \(P_n,NP_n\) must first be defined.
 
 
@@ -1441,12 +1441,12 @@ The finite-size families \(P_n,NP_n\) must first be defined.
 
 **Status:** ○ `OPEN`
 
-\[
+$$
 \nexists\,
 O:
 O(\psi)=\operatorname*{arg\,min}_\psi\mathcal E[\psi]
 \quad\text{in polynomial time}.
-\]
+$$
 This is a complexity claim requiring a formal computational model and reduction.
 
 
@@ -1454,11 +1454,11 @@ This is a complexity claim requiring a formal computational model and reduction.
 
 **Status:** ⚠️ `CONDITIONAL`
 
-\[
+$$
 P_{\rm WCC}=P
 \quad\Longrightarrow\quad
 \text{WCC polynomially simulates the declared physical-computation model}.
-\]
+$$
 The implication requires explicit translations and cost bounds.
 
 
@@ -1469,11 +1469,11 @@ The implication requires explicit translations and cost bounds.
 
 **Status:** ○ `OPEN`
 
-\[
+$$
 \frac{d}{dt}I(\psi_t;\psi_0)
 \le
 -\gamma\mathcal E_\Theta[\psi_t].
-\]
+$$
 The probability law, channel, and regularity assumptions remain open.
 
 
@@ -1481,11 +1481,11 @@ The probability law, channel, and regularity assumptions remain open.
 
 **Status:** ○ `OPEN`
 
-\[
+$$
 \mathcal I_F[\psi]
 \ge
 c\int_\Omega|\Theta_\varepsilon[\psi]|^2dx.
-\]
+$$
 A common probability density and geometric derivation are required.
 
 
@@ -1493,13 +1493,13 @@ A common probability density and geometric derivation are required.
 
 **Status:** ◻️ `DEFINITION`
 
-\[
+$$
 \dot\Sigma
 =
 \frac{dH_k}{dt}
 +
 \frac{\mathcal E_\Theta}{T_{\rm eff}}.
-\]
+$$
 The sign convention and units must be fixed when used physically.
 
 
@@ -1508,12 +1508,12 @@ The sign convention and units must be fixed when used physically.
 **Status:** ⚠️ `CONDITIONAL`
 
 If \(\Delta H_{\rm bits}\) is measured in bits,
-\[
+$$
 \Delta E
 \ge
 k_BT_{\rm eff}\ln2\,
 \Delta H_{\rm bits}.
-\]
+$$
 For entropy in nats, omit the factor \(\ln2\).
 
 
@@ -1522,7 +1522,7 @@ For entropy in nats, omit the factor \(\ln2\).
 **Status:** ✅ `PASS`
 
 With normalized spectral weights \(p_k\),
-\[
+$$
 \boxed{
 \xi_{\rm coh}
 =
@@ -1530,9 +1530,9 @@ With normalized spectral weights \(p_k\),
 \sum_kp_k|k|^2
 \right)^{-1/2}
 }.
-\]
+$$
 Equivalently, when the integrals exist,
-\[
+$$
 \boxed{
 \xi_{\rm coh}
 =
@@ -1541,7 +1541,7 @@ Equivalently, when the integrals exist,
 {\int_\Omega|\nabla\psi|^2dx}
 }
 }.
-\]
+$$
 This replaces \(\sqrt{\mathcal E/H_k}\), which did not generally have units of length.
 
 
@@ -1549,14 +1549,14 @@ This replaces \(\sqrt{\mathcal E/H_k}\), which did not generally have units of l
 
 **Status:** ◻️ `DEFINITION`
 
-\[
+$$
 g_{ij}^{({\rm info})}
 =
 \left\langle
 \partial_i\Theta_\varepsilon\,
 \partial_j\Theta_\varepsilon
 \right\rangle.
-\]
+$$
 Positive definiteness and coordinate invariance require additional conditions.
 
 
@@ -1568,7 +1568,7 @@ Positive definiteness and coordinate invariance require additional conditions.
 **Status:** ◻️ `DEFINITION`
 
 Use the inverse-length convention \([\sigma_\star]=L^{-1}\):
-\[
+$$
 S[\psi]
 =
 \int_\mathcal M
@@ -1579,7 +1579,7 @@ S[\psi]
 \right]\sqrt g\,d^3x,
 \qquad
 W_\psi:=-\frac{\Delta\psi}{\psi}.
-\]
+$$
 
 
 ## CLE2 — Corrected curvature-lock Euler-Lagrange equation
@@ -1587,18 +1587,18 @@ W_\psi:=-\frac{\Delta\psi}{\psi}.
 **Status:** ✅ `PASS`
 
 For the real one-dimensional reduction
-\[
+$$
 q:=-\frac{\psi_{xx}}{\psi}-\sigma_\star^2,
-\]
+$$
 the generalized Euler-Lagrange equation is
-\[
+$$
 \boxed{
 q\frac{\psi_{xx}}{\psi^2}
 -\psi_{xx}
 -\frac{d^2}{dx^2}\left(\frac q\psi\right)
 =0
 }.
-\]
+$$
 The last fourth-order term was missing from the earlier expression.
 
 
@@ -1606,9 +1606,9 @@ The last fourth-order term was missing from the earlier expression.
 
 **Status:** ◻️ `DEFINITION`
 
-\[
+$$
 W_\psi=\sigma_\star^2.
-\]
+$$
 Both sides have units \(L^{-2}\).
 
 
@@ -1616,11 +1616,11 @@ Both sides have units \(L^{-2}\).
 
 **Status:** ✅ `PASS`
 
-\[
+$$
 -\Delta\psi
 =
 \sigma_\star^2\psi.
-\]
+$$
 
 
 ## CLE5 — Thin/product-torus Laplacian
@@ -1628,13 +1628,13 @@ Both sides have units \(L^{-2}\).
 **Status:** ⚠️ `CONDITIONAL`
 
 Under a flat product or thin-torus approximation,
-\[
+$$
 \Delta\psi
 \approx
 \frac1{R^2}\partial_\theta^2\psi
 +
 \frac1{r^2}\partial_\phi^2\psi.
-\]
+$$
 The exact embedded-torus Laplace-Beltrami operator contains metric-dependent terms.
 
 
@@ -1643,17 +1643,17 @@ The exact embedded-torus Laplace-Beltrami operator contains metric-dependent ter
 **Status:** ✅ `PASS`
 
 For
-\[
+$$
 \psi(\theta,\phi)=f(\theta)g(\phi),
-\]
+$$
 CLE4 and CLE5 give
-\[
+$$
 \frac{f''}{f}
 +
 \frac{R^2}{r^2}\frac{g''}{g}
 =
 -\sigma_\star^2R^2.
-\]
+$$
 
 
 ## CLE7 — Periodic angular mode family
@@ -1661,17 +1661,17 @@ CLE4 and CLE5 give
 **Status:** ✅ `PASS`
 
 The periodic reduced equation
-\[
+$$
 f''+m^2f=0
-\]
+$$
 has the full family
-\[
+$$
 \boxed{
 f(\theta)=A\cos(m\theta)+B\sin(m\theta),
 \qquad
 m\in\mathbb Z_{\ge0}
 }.
-\]
+$$
 The constant solution is only the \(m=0\) member, not the unique periodic solution.
 
 
@@ -1679,9 +1679,9 @@ The constant solution is only the \(m=0\) member, not the unique periodic soluti
 
 **Status:** ⚠️ `CONDITIONAL`
 
-\[
+$$
 \psi(\theta,\phi)=Ae^{i\phi}
-\]
+$$
 is one admissible winding-one mode. Uniqueness requires additional lowest-mode, chirality, normalization, phase, and boundary-selection principles.
 
 
@@ -1689,20 +1689,20 @@ is one admissible winding-one mode. Uniqueness requires additional lowest-mode, 
 
 **Status:** ✅ `PASS`
 
-\[
+$$
 R=\frac1{\sigma_\star}.
-\]
+$$
 For \(\sigma_\star=m_ec/\hbar\),
-\[
+$$
 R=\frac{\hbar}{m_ec}\approx386.16\ {\rm fm}.
-\]
+$$
 
 
 ## CLE10 — Curvature scalar chain
 
 **Status:** ✅ `PASS`
 
-\[
+$$
 \boxed{
 W_\psi
 =
@@ -1712,7 +1712,7 @@ W_\psi
 },
 \qquad
 R=\sigma_\star^{-1}.
-\]
+$$
 
 
 # Logarithmic and ghost equations
@@ -1723,17 +1723,17 @@ R=\sigma_\star^{-1}.
 **Status:** ✅ `PASS`
 
 For \(E>0\) and \(E_0>0\),
-\[
+$$
 \delta_g(E)
 =
 A_g\cos\!\left(
 k_\ell\ln\frac E{E_0}+\phi
 \right),
-\]
+$$
 with
-\[
+$$
 |\delta_g(E)|\le|A_g|.
-\]
+$$
 
 
 ## EX — Logarithmic field representation
@@ -1741,24 +1741,24 @@ with
 **Status:** ✅ `PASS`
 
 For a positive real field \(\psi>0\), let
-\[
+$$
 u=\ln\psi,
 \qquad
 \psi=e^u.
-\]
+$$
 Then
-\[
+$$
 \nabla\psi=e^u\nabla u,
-\]
-\[
+$$
+$$
 \Delta\psi=e^u(\Delta u+|\nabla u|^2),
-\]
+$$
 and
-\[
+$$
 \frac{\Delta\psi}{\psi}
 =
 \Delta u+|\nabla u|^2.
-\]
+$$
 
 
 ## EY — Log-curvature evolution
@@ -1766,11 +1766,11 @@ and
 **Status:** ✅ `PASS`
 
 If
-\[
+$$
 \partial_tu
 =
 \Delta u+|\nabla u|^2,
-\]
+$$
 then the logarithmic dynamics are equivalent to the diffusion equation in EZ, provided \(\psi=e^u>0\).
 
 
@@ -1779,11 +1779,11 @@ then the logarithmic dynamics are equivalent to the diffusion equation in EZ, pr
 **Status:** ✅ `PASS`
 
 With
-\[
+$$
 \psi=e^u,
-\]
+$$
 EY gives
-\[
+$$
 \partial_t\psi
 =
 e^u\partial_tu
@@ -1791,22 +1791,22 @@ e^u\partial_tu
 e^u(\Delta u+|\nabla u|^2)
 =
 \Delta\psi.
-\]
+$$
 Thus
-\[
+$$
 \boxed{\partial_t\psi=\Delta\psi}.
-\]
+$$
 
 
 ## FA — Filament-localization condition
 
 **Status:** ⚠️ `CONDITIONAL`
 
-\[
+$$
 |\nabla u|
 \sim
 \kappa_{\rm core}.
-\]
+$$
 A norm, tolerance, scale, and dynamical derivation are required.
 
 
@@ -1817,16 +1817,16 @@ A norm, tolerance, scale, and dynamical derivation are required.
 
 **Status:** ○ `OPEN`
 
-\[
+$$
 i\partial_t\psi
 =
 -\Theta_\varepsilon[\psi]\,J[\psi],
-\]
-\[
+$$
+$$
 J[\psi]
 =
 |\psi|^2\Delta\psi\,\varepsilon_{\rm vac}.
-\]
+$$
 Coefficient dimensions and derivation remain open.
 
 
@@ -1834,46 +1834,46 @@ Coefficient dimensions and derivation remain open.
 
 **Status:** ○ `OPEN`
 
-\[
+$$
 P_{\rm prim}(k)\propto k^{-\alpha_{\rm WCT}},
-\]
-\[
+$$
+$$
 n_s-1=-\alpha_{\rm WCT},
-\]
-\[
+$$
+$$
 \alpha_{\rm WCT}
 =
 -\frac{d\ln|\Theta(k)|}{d\ln k}.
-\]
+$$
 
 
 ## CM3 — Potential from curvature
 
 **Status:** ○ `OPEN`
 
-\[
+$$
 \Phi(k,t)
 =
 -C_\Phi\frac{\Theta(k,t)}{k^2}.
-\]
+$$
 
 
 ## CM4 — Horizon-entry potential decay
 
 **Status:** ○ `OPEN`
 
-\[
+$$
 \partial_t\Phi
 =
 -\Gamma\Phi,
-\]
-\[
+$$
+$$
 \Gamma(k,t)
 =
 \left|
 \frac{\partial_t\Theta(k,t)}{\Theta(k,t)}
 \right|,
-\]
+$$
 on the domain \(\Theta\neq0\).
 
 
@@ -1881,30 +1881,30 @@ on the domain \(\Theta\neq0\).
 
 **Status:** ○ `OPEN`
 
-\[
+$$
 \ddot\delta_\gamma
 +c_s^2k^2\delta_\gamma
 =
 -k^2\Phi,
-\]
-\[
+$$
+$$
 \ddot\delta_b
 +\mathcal R\,c_s^2k^2\delta_\gamma
 =
 -k^2\Phi,
-\]
-\[
+$$
+$$
 \mathcal R
 =
 \frac{E_{\rm comp}}{E_{\rm rad}}.
-\]
+$$
 
 
 ## CM6 — Sound speed from curvature feedback
 
 **Status:** ○ `OPEN`
 
-\[
+$$
 c_s^2(t)
 =
 \frac1{3(1+\mathcal R(t))}
@@ -1912,7 +1912,7 @@ c_s^2(t)
 1-\beta_{\rm curv}
 \frac{E_{\rm curv}(t)}{E_{\rm tot}}
 \right].
-\]
+$$
 Positivity requires the bracketed factor to be nonnegative.
 
 
@@ -1921,19 +1921,19 @@ Positivity requires the bracketed factor to be nonnegative.
 **Status:** ○ `OPEN`
 
 A phenomenological damping replacement is
-\[
+$$
 \dot\delta_\gamma
 =
 v_\gamma
 -
 D_{\rm curv}(t)k^2\delta_\gamma,
-\]
-\[
+$$
+$$
 D_{\rm curv}(t)
 =
 \frac{\langle|\nabla\psi|^2\rangle}
 {\langle|\psi|^2\rangle}.
-\]
+$$
 
 
 ## CM8 — Initial conditions
@@ -1941,14 +1941,14 @@ D_{\rm curv}(t)
 **Status:** ○ `OPEN`
 
 Use CM3 consistently:
-\[
+$$
 \delta_\gamma(0)=\delta_b(0)=-2\Phi(k,0),
-\]
-\[
+$$
+$$
 \Phi(k,0)
 =
 -C_\Phi\frac{\Theta(k,0)}{k^2}.
-\]
+$$
 The earlier extra factor and opposite sign were removed.
 
 
@@ -1956,52 +1956,52 @@ The earlier extra factor and opposite sign were removed.
 
 **Status:** ○ `OPEN`
 
-\[
+$$
 \dot\delta_\gamma=v_\gamma,
 \qquad
 \dot v_\gamma=-c_s^2k^2\delta_\gamma-k^2\Phi,
-\]
-\[
+$$
+$$
 \dot\delta_b=v_b,
 \qquad
 \dot v_b=-\mathcal R c_s^2k^2\delta_\gamma-k^2\Phi.
-\]
+$$
 
 
 ## CM10 — Tight-coupling drag
 
 **Status:** ○ `OPEN`
 
-\[
+$$
 \delta_b
 \leftarrow
 (1-\varepsilon_{\rm drag})\delta_b
 +
 \varepsilon_{\rm drag}\delta_\gamma,
-\]
-\[
+$$
+$$
 \varepsilon_{\rm drag}
 =
 \frac{E_{\rm exch}}{E_{\rm comp}},
 \qquad
 0\le\varepsilon_{\rm drag}\le1.
-\]
+$$
 
 
 ## CM11 — Curvature damping envelope
 
 **Status:** ○ `OPEN`
 
-\[
+$$
 D(k)
 =
 \exp\!\left(-\frac{k^2}{k_D^2}\right),
-\]
-\[
+$$
+$$
 k_D^{-2}
 =
 \int_0^{t_\star}D_{\rm curv}(t)\,dt.
-\]
+$$
 Dimensional consistency requires the time-dependent diffusion coefficient to carry units \(L^2/T\).
 
 
@@ -2009,18 +2009,18 @@ Dimensional consistency requires the time-dependent diffusion coefficient to car
 
 **Status:** ○ `OPEN`
 
-\[
+$$
 \Delta^2(k)
 =
 \frac{k^3}{2\pi^2}P(k).
-\]
+$$
 
 
 ## CM13 — Peak metrics
 
 **Status:** ○ `OPEN`
 
-\[
+$$
 r_{21}
 =
 \frac{P(k_2)}{P(k_1)},
@@ -2028,8 +2028,8 @@ r_{21}
 r_{31}
 =
 \frac{P(k_3)}{P(k_1)},
-\]
-\[
+$$
+$$
 s_{21}
 =
 \frac{k_2}{k_1},
@@ -2037,7 +2037,7 @@ s_{21}
 s_{31}
 =
 \frac{k_3}{k_1}.
-\]
+$$
 
 
 ## CM14 — Peak-response interpretation
@@ -2045,63 +2045,63 @@ s_{31}
 **Status:** ○ `OPEN`
 
 Proposed qualitative relations:
-\[
+$$
 \text{faster }\Theta\text{ decay}\Rightarrow s_{ij}\uparrow,
-\]
-\[
+$$
+$$
 \text{larger compression}\Rightarrow r_{31}\uparrow,
-\]
-\[
+$$
+$$
 \text{larger radiative fraction}\Rightarrow r_{21}\downarrow.
-\]
+$$
 
 
 ## CM15 — WCT angular scaling
 
 **Status:** ○ `OPEN`
 
-\[
+$$
 k_{\rm phys}
 =
 \frac{k}{a_{\rm WCT}(t)},
-\]
-\[
+$$
+$$
 a_{\rm WCT}(t)
 =
 \left[
 \frac{E_{\rm curv}(0)}
 {E_{\rm curv}(t)}
 \right]^{1/3}.
-\]
+$$
 
 
 ## CM16 — Acoustic horizon
 
 **Status:** ○ `OPEN`
 
-\[
+$$
 R_{\rm hor}(t)
 =
 \int_0^tc_s(t')\,dt',
-\]
-\[
+$$
+$$
 k_{\rm hor}
 =
 \frac{2\pi}{R_{\rm hor}}.
-\]
+$$
 
 
 ## CM17 — Curvature-energy closure
 
 **Status:** ○ `OPEN`
 
-\[
+$$
 E_{\rm curv}(t)
 +
 E_{\rm grad}(t)
 =
 E_{\rm tot},
-\]
+$$
 for a closed sector with no external source or loss.
 
 
@@ -2109,12 +2109,12 @@ for a closed sector with no external source or loss.
 
 **Status:** ○ `OPEN`
 
-\[
+$$
 \mathfrak C_{\rm min}
 =
 \{\mathrm{CM1},\mathrm{CM2},\mathrm{CM3},
 \mathrm{CM4},\mathrm{CM5},\mathrm{CM7}\}.
-\]
+$$
 This is a bookkeeping closure, not a derivation of cosmology.
 
 
@@ -2122,12 +2122,12 @@ This is a bookkeeping closure, not a derivation of cosmology.
 
 **Status:** ○ `OPEN`
 
-\[
+$$
 c_s^2
 =
 \frac{\partial P_{\rm curv}}
 {\partial\rho_{\rm curv}},
-\]
+$$
 where the derivative must be taken along a specified thermodynamic or dynamical path.
 
 
@@ -2135,7 +2135,7 @@ where the derivative must be taken along a specified thermodynamic or dynamical 
 
 **Status:** ○ `OPEN`
 
-\[
+$$
 H(t)
 =
 \frac{\dot a_{\rm WCT}}{a_{\rm WCT}}
@@ -2143,7 +2143,7 @@ H(t)
 \sqrt{
 \frac{\rho_\Theta(t)}{3|K|}
 }.
-\]
+$$
 The constant \(K\) must carry the units needed for \(H^2\), and the equation requires independent derivation.
 
 
@@ -2154,7 +2154,7 @@ The constant \(K\) must carry the units needed for \(H^2\), and the equation req
 
 **Status:** ◻️ `DEFINITION`
 
-\[
+$$
 \gamma(s)
 =
 \sum_{k=1}^{K}
@@ -2163,7 +2163,7 @@ a_k\cos(ks)+b_k\sin(ks)
 \right],
 \qquad
 s\in[0,2\pi).
-\]
+$$
 This is the chosen configuration representation; emergence of the basis is a separate empirical claim.
 
 
@@ -2171,7 +2171,7 @@ This is the chosen configuration representation; emergence of the basis is a sep
 
 **Status:** ◻️ `DEFINITION`
 
-\[
+$$
 \mathcal E_{\rm loop}[\gamma]
 =
 \int_\gamma\kappa^2ds
@@ -2180,20 +2180,20 @@ This is the chosen configuration representation; emergence of the basis is a sep
 \sum_kk^p(|a_k|^2+|b_k|^2)
 +
 V_{\rm SA}[\gamma].
-\]
+$$
 
 
 ## TOP3 — Irreversible gradient flow
 
 **Status:** ⚠️ `CONDITIONAL`
 
-\[
+$$
 \partial_t\gamma
 =
 -\frac{\delta\mathcal E_{\rm loop}}{\delta\gamma}.
-\]
+$$
 For a differentiable gradient flow,
-\[
+$$
 \frac{d\mathcal E_{\rm loop}}{dt}
 =
 -
@@ -2201,7 +2201,7 @@ For a differentiable gradient flow,
 \frac{\delta\mathcal E_{\rm loop}}{\delta\gamma}
 \right\|^2
 \le0.
-\]
+$$
 Well-posedness and treatment of self-avoidance require assumptions.
 
 
@@ -2210,13 +2210,13 @@ Well-posedness and treatment of self-avoidance require assumptions.
 **Status:** ○ `OPEN`
 
 A proposed physical invariant \(I[\gamma]\) satisfies
-\[
+$$
 I[\gamma_t]\to I_\infty
-\]
+$$
 while
-\[
+$$
 \frac{d\mathcal E}{dt}<0
-\]
+$$
 along nonsingular descent. The equivalence between this persistence and physical topology remains open.
 
 
@@ -2224,11 +2224,11 @@ along nonsingular descent. The equivalence between this persistence and physical
 
 **Status:** ◻️ `DEFINITION`
 
-\[
+$$
 \operatorname{codim}_{\rm WCT}(\gamma)
 :=
 \text{minimum number of singular events required to reach the unknot}.
-\]
+$$
 This is not manifold codimension.
 
 
@@ -2237,11 +2237,11 @@ This is not manifold codimension.
 **Status:** ○ `OPEN`
 
 Define
-\[
+$$
 \epsilon_\kappa
 =
 \frac1L\int_\gamma\kappa^2ds.
-\]
+$$
 The claim that distinct knot types occupy disjoint asymptotic \(\epsilon_\kappa\) bands requires broader numerical and experimental validation.
 
 
@@ -2250,11 +2250,11 @@ The claim that distinct knot types occupy disjoint asymptotic \(\epsilon_\kappa\
 **Status:** ⚠️ `CONDITIONAL`
 
 Within a fixed topological and normalization class,
-\[
+$$
 m_{\rm WCT}
 \propto
 \epsilon_\kappa.
-\]
+$$
 The proportionality constant and absolute scale require calibration.
 
 
@@ -2263,11 +2263,11 @@ The proportionality constant and absolute scale require calibration.
 **Status:** ○ `OPEN`
 
 For
-\[
+$$
 H_\tau[\gamma]
 =
 \int_\gamma\tau\,ds,
-\]
+$$
 the proposed non-invariance statement is that smooth admissible deformations can change \(H_\tau\) continuously. A general theorem for the declared flow class remains open.
 
 
@@ -2275,11 +2275,11 @@ the proposed non-invariance statement is that smooth admissible deformations can
 
 **Status:** ○ `OPEN`
 
-\[
+$$
 \text{knotted protein states}
 \longleftrightarrow
 \text{stable WCT loop excitations}
-\]
+$$
 is a proposed analogy restricted to irreversible curvature flow with self-avoidance and spectral suppression. It is not an established physical equivalence.
 
 
@@ -2290,7 +2290,7 @@ is a proposed analogy restricted to irreversible curvature flow with self-avoida
 
 **Status:** ◻️ `DEFINITION`
 
-\[
+$$
 \mathcal E_{\rm WCT}[\psi]
 =
 \int
@@ -2299,7 +2299,7 @@ is a proposed analogy restricted to irreversible curvature flow with self-avoida
 +
 |\Theta_\varepsilon[\psi]|^2
 \right)dx.
-\]
+$$
 The curvature term alone is only one component.
 
 
@@ -2308,16 +2308,16 @@ The curvature term alone is only one component.
 **Status:** ⚠️ `CONDITIONAL`
 
 Under a weak-intermittency mean-amplitude approximation,
-\[
+$$
 D_{\rm eff}^2
 :=
 \langle|\psi|^2\rangle+\varepsilon^2,
-\]
-\[
+$$
+$$
 C_\Theta(k)
 \approx
 \frac{k^4}{D_{\rm eff}^2}.
-\]
+$$
 This is an approximation, not an exact identity.
 
 
@@ -2326,13 +2326,13 @@ This is an approximation, not an exact identity.
 **Status:** ◻️ `DEFINITION`
 
 Use
-\[
+$$
 \lambda_\Theta
-\]
+$$
 for curvature cost and
-\[
+$$
 \lambda_{\rm ex}
-\]
+$$
 for auxiliary/exploration weight, avoiding collision with the regularizer parameter \(\alpha\).
 
 
@@ -2340,13 +2340,13 @@ for auxiliary/exploration weight, avoiding collision with the regularizer parame
 
 **Status:** ◻️ `DEFINITION`
 
-\[
+$$
 \Xi
 =
 \frac{\int k^4\rho(k)\,dk}{H},
 \qquad
 H=-\sum_kP_k\ln P_k,
-\]
+$$
 on the domain \(H>0\).
 
 
@@ -2354,12 +2354,12 @@ on the domain \(H>0\).
 
 **Status:** ○ `OPEN`
 
-\[
+$$
 \frac{dH}{dt}
 \le
 -\mu
 \int|\Theta_\varepsilon[\psi]|^2dx.
-\]
+$$
 This remains the same open claim as E43 unless derived for a specified evolution.
 
 
