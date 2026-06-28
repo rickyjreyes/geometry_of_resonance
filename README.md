@@ -38,11 +38,18 @@ The following objects recur across the WCT volume set.
 ### Curvature-feedback operator
 
 ```math
-\Theta[\psi]
-= -\frac{\nabla^2\psi}{\psi + \varepsilon e^{-\alpha |\psi|^2}}
+R_\varepsilon(\psi)
+=
+\frac{\overline{\psi}}
+{|\psi|^2+\varepsilon^2e^{-2\alpha|\psi|^2}}
 ```
 
-This operator regularizes curvature at nodes of the field and supplies the main nonlinear feedback rail.
+```math
+\Theta_\varepsilon[\psi]
+=-(\Delta\psi)R_\varepsilon(\psi)
+```
+
+For `\varepsilon>0`, the modulus-squared denominator is strictly positive. For nonzero `\psi`, the regularized reciprocal approaches `1/\psi` as `\varepsilon\to0`. This removes the historical scalar denominator zero, but it does not establish global PDE existence, uniqueness, regularity, or stability.
 
 ### Curvature / torsion scalar
 
@@ -110,9 +117,9 @@ Multiple papers derive or refine the identity that rest energy is determined by 
 m=\frac{\hbar}{c}\left\langle\sqrt{\kappa^2+\tau^2}\right\rangle_w
 ```
 
-### 4. Hard spatial-dimensionality bound
+### 4. Conditional spatial-dimensionality criterion
 
-WCT gives a stability bound \(n\leq 3\) using Sobolev control, Lyapunov scaling, entropy localization, topology, arbitrary-data evolution, and curvature-feedback divergence.
+The verified mathematical result is the standard \(H^2\to L^\infty\) Sobolev threshold for integer spatial dimension \(n\leq3\) under the stated domain assumptions. The broader WCT confinement conclusion remains conditional on the \(H^2\)-based stability route being necessary for the admissible confinement mechanism.
 
 ### 5. Pattern formation and spectral contraction
 
@@ -161,7 +168,7 @@ cd geometry_of_resonance
 1. **The Geometry of Resonance** — core overview and Lagrangian.  
 2. **Phase–Flux Field** — observable substrate and finite-k selection.  
 3. **Rest Energy from Density-Weighted Loop Curvature** — clean mass-locking principle.  
-4. **Hard Upper Bound on Spatial Dimensionality** — why stable WCT confinement is bounded by three spatial dimensions.  
+4. **Hard Upper Bound on Spatial Dimensionality** — conditional WCT interpretation built on the verified \(H^2\to L^\infty\) threshold.  
 5. **Observation of Long-Lived Photon Resonance Confinement in Water Cavities** — experimental anchor.
 
 ### Mathematical backbone
