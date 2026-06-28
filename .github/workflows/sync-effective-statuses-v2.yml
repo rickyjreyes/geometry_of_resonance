@@ -1,0 +1,35 @@
+name: Sync effective WCT statuses
+on:
+  push:
+    branches: [main]
+    paths: ["WCT_FULL_EQUATION_LIST_CORRECTED.md", "scripts/sync_effective_statuses_v2.py", ".github/workflows/sync-effective-statuses-v2.yml"]
+  pull_request:
+    paths: ["WCT_FULL_EQUATION_LIST_CORRECTED.md", "scripts/sync_effective_statuses_v2.py", ".github/workflows/sync-effective-statuses-v2.yml"]
+  workflow_dispatch:
+permissions:
+  contents: write
+env:
+  WCT_SYMPY_REF: ${{ github.event_name == 'pull_request' && 'compiled-registry-v2' || 'main' }}
+jobs:
+  synchronize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: python -m pip install PyYAML
+      - run: python scripts/sync_effective_statuses_v2.py
+      - if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: effective-canonical-registry-preview
+          path: WCT_FULL_EQUATION_LIST_CORRECTED.md
+      - if: github.event_name == 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "4189826+github-actions[bot]@users.noreply.github.com"
+          git add WCT_FULL_EQUATION_LIST_CORRECTED.md
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Synchronize canonical effective statuses"
+          git push
