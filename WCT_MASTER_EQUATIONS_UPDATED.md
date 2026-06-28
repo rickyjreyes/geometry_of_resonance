@@ -31,9 +31,9 @@ $$9+83+10+20+5+9+6=142.$$
 
 Current corpus totals are
 
-$$51\ \mathrm{PASS} + 32\ \mathrm{CONDITIONAL} + 23\ \mathrm{DEFINITION} + 36\ \mathrm{OPEN} = 142,$$
+$$59\ \mathrm{PASS} + 27\ \mathrm{CONDITIONAL} + 26\ \mathrm{DEFINITION} + 30\ \mathrm{OPEN} + 0\ \mathrm{FAIL} = 142,$$
 
-with no contradiction remaining in the current encoded specification.
+with no contradiction remaining in the current encoded specification. The historical baseline assignments come from `wct-sympy/equations/full_registry.yaml`; effective promotions and reclassifications come from `wct-sympy/equations/derived_overrides.yaml`; and the current public result is compiled in `compiled-registry.json`. A SymPy `PASS` is not automatically a Lean proof or empirical validation.
 
 ---
 
@@ -487,7 +487,9 @@ These objects record:
 |---|---|
 | `MASTER_EQUATIONS.md` | Master architecture and scope |
 | `EQUATIONS.md` | Canonical equation-family index |
-| `equations/full_registry.yaml` | Stable IDs, checkers, and expected statuses |
+| `equations/full_registry.yaml` | Stable IDs, checkers, and historical baseline statuses |
+| `equations/derived_overrides.yaml` | Effective derivation and reclassification overrides |
+| `compiled-registry.json` | Current effective source of truth |
 | `wct_sympy/full_checks_*.py` | Executable SymPy audits |
 | `interoperability/lean_map.yaml` | Links to existing Lean declarations |
 | `rickyjreyes/wct-lean` | Kernel-checked definitions and theorems |
@@ -506,9 +508,9 @@ The current specification is internally audit-clean. It is not analytically or e
 
 The remaining frontier is
 
-$$32\ \mathrm{CONDITIONAL} + 36\ \mathrm{OPEN} = 68$$
+$$27\ \mathrm{CONDITIONAL} + 30\ \mathrm{OPEN} = 57$$
 
-claims requiring additional mathematical assumptions, PDE analysis, formal proof, numerical calibration, or experiment.
+objects requiring additional mathematical assumptions, PDE analysis, formal proof, numerical calibration, or experiment. The 26 `DEFINITION` objects remain definitions or ansätze rather than theorem obligations.
 
 ---
 
