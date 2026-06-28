@@ -22,4 +22,4 @@ make reproduce
 make verify
 ```
 
-The expected SHA-256 values in `EXPECTED_HASHES.json` cover the numerical field, radial spectrum table, regenerated figure, and summary record. Any dependency, code, parameter, or renderer drift changes at least one hash and fails CI.
+The expected SHA-256 values cover the radial spectrum table, regenerated figure, rounded summary, and the numerical field encoded as explicit little-endian signed integers at a scale of `1e10`. The quantized field encoding removes `.npy` header drift and sub-ULP FFT differences across supported Python versions while preserving the declared numerical precision. Any material dependency, code, parameter, or renderer drift changes at least one hash and fails CI.
