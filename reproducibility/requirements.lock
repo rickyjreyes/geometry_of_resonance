@@ -1,0 +1,3 @@
+# Exact environment for the deterministic WCT finite-band reference run.
+numpy==2.3.5
+matplotlib==3.10.8
