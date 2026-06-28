@@ -6,6 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 
+# This script is intentionally idempotent after the first successful repair.
 def replace_required(text: str, old: str, new: str, label: str) -> str:
     if old not in text:
         raise RuntimeError(f"Expected {label} text was not found")
