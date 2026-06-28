@@ -27,6 +27,7 @@ A = 1.00
 B = 0.25
 TIME = 4.0
 BINS = 48
+FIELD_SCALE = 10_000_000_000
 
 
 def sha256(path: Path) -> str:
@@ -35,6 +36,10 @@ def sha256(path: Path) -> str:
         for block in iter(lambda: handle.read(1024 * 1024), b""):
             digest.update(block)
     return digest.hexdigest()
+
+
+def stable_float(value: float, digits: int = 10) -> float:
+    return float(f"{value:.{digits}f}")
 
 
 def radial_spectrum(power: np.ndarray, kmag: np.ndarray, bins: int) -> tuple[np.ndarray, np.ndarray]:
@@ -79,8 +84,12 @@ def run(output_dir: Path) -> dict[str, object]:
         for center, value in zip(centers, radial_power, strict=True):
             writer.writerow([f"{center:.12e}", f"{value:.12e}"])
 
-    npy_path = output_dir / "finite_band_field.npy"
-    np.save(npy_path, field_t, allow_pickle=False)
+    # Store the field as explicit little-endian signed integers at 1e-10 scale.
+    # This removes Python/NumPy .npy header and sub-ULP FFT drift from the hash.
+    field_quantized = np.rint(field_t * FIELD_SCALE).astype("<i8")
+    field_path = output_dir / "finite_band_field_i10.bin"
+    field_path.write_bytes(field_quantized.tobytes(order="C"))
+    field_stable = field_quantized.astype(np.float64) / FIELD_SCALE
 
     fig_path = output_dir / "finite_band_spectrum.png"
     fig, ax = plt.subplots(figsize=(7.2, 4.4), dpi=120)
@@ -96,23 +105,29 @@ def run(output_dir: Path) -> dict[str, object]:
 
     summary_path = output_dir / "finite_band_summary.json"
     summary = {
-        "schema_version": "1.0.0",
+        "schema_version": "1.1.0",
         "scientific_boundary": "Deterministic linear spectral-rail reference; not nonlinear or empirical validation.",
         "seed": SEED,
         "grid": GRID,
         "box_length": BOX_LENGTH,
         "parameters": {"r": R, "a": A, "b": B, "time": TIME},
-        "analytic_k_star": analytic_k,
-        "observed_peak_bin_center": observed_k,
-        "radial_bin_width": bin_width,
+        "field_encoding": {
+            "file": field_path.name,
+            "dtype": "little-endian-int64",
+            "scale": FIELD_SCALE,
+            "shape": [GRID, GRID],
+        },
+        "analytic_k_star": stable_float(analytic_k, 12),
+        "observed_peak_bin_center": stable_float(observed_k, 12),
+        "radial_bin_width": stable_float(bin_width, 12),
         "peak_within_one_bin": abs(observed_k - analytic_k) <= bin_width,
-        "field_l2": float(np.linalg.norm(field_t)),
-        "field_mean": float(field_t.mean()),
-        "field_std": float(field_t.std()),
+        "field_l2": stable_float(float(np.linalg.norm(field_stable))),
+        "field_mean": stable_float(float(field_stable.mean())),
+        "field_std": stable_float(float(field_stable.std())),
     }
     summary_path.write_text(json.dumps(summary, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 
-    outputs = [csv_path, npy_path, fig_path, summary_path]
+    outputs = [csv_path, field_path, fig_path, summary_path]
     return {path.name: sha256(path) for path in outputs}
 
 
