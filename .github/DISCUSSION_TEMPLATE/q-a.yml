@@ -1,0 +1,71 @@
+title: "[Question] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ask a focused question about a WCT definition, equation, derivation, simulation, result, or repository workflow. Identify the exact claim or artifact so the discussion remains auditable.
+  - type: dropdown
+    id: layer
+    attributes:
+      label: Research layer
+      options:
+        - Definition or assumption
+        - Mathematical derivation
+        - Numerical method or simulation
+        - Empirical interpretation
+        - Physical claim
+        - Documentation or repository workflow
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: reference
+    attributes:
+      label: Exact reference
+      description: File, section, equation, claim identifier, figure, test, commit, or artifact path.
+      placeholder: docs/... section 3, Eq. 12, commit abc1234
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: State one precise question and identify the step that is unclear, disputed, or failing.
+    validations:
+      required: true
+  - type: textarea
+    id: attempted
+    attributes:
+      label: What you tried
+      description: Include algebra, assumptions, commands, code, or references already checked.
+    validations:
+      required: false
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Relevant evidence or output
+      description: Paste a minimal reproducible example, error, residual, table row, or link to an auditable artifact.
+    validations:
+      required: false
+  - type: dropdown
+    id: status
+    attributes:
+      label: Current status of the claim being discussed
+      options:
+        - Proved or formally checked
+        - Symbolically checked
+        - Numerically supported
+        - Empirically tested
+        - Failed or falsified
+        - Incomplete
+        - Speculative
+        - Unsure
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Scope check
+      options:
+        - label: I have separated mathematical validity, numerical reproduction, empirical evidence, and physical interpretation.
+          required: true
