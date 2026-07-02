@@ -1,0 +1,65 @@
+title: "[Research Proposal] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Propose a concrete, testable extension or correction. Strong proposals identify dependencies, implementation steps, failure conditions, and the evidence needed to change a claim's status.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Foundational equations
+        - Variational or PDE analysis
+        - Stability or existence
+        - Numerical confinement
+        - Effective mass or force law
+        - Relativity, gravity, or gauge coupling
+        - Empirical test
+        - Formal verification
+        - Reproducibility or machine-readable research
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem being addressed
+      description: Identify the exact gap, unresolved claim, counterexample, or missing bridge.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed method
+      description: State the equations, assumptions, algorithm, dataset, proof strategy, or experiment.
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies and affected claims
+      description: List upstream assumptions and downstream claims, equations, tests, papers, or repositories that would be affected.
+    validations:
+      required: true
+  - type: textarea
+    id: falsification
+    attributes:
+      label: Decisive failure conditions
+      description: What result would reject the proposal or weaken the associated WCT claim?
+    validations:
+      required: true
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: Auditable deliverables
+      description: Specify proofs, tests, datasets, manifests, numerical convergence studies, or machine-readable artifacts to produce.
+    validations:
+      required: true
+  - type: textarea
+    id: comparison
+    attributes:
+      label: Comparison standard
+      description: Identify the conventional theory, baseline model, alternate derivation, or benchmark that must be matched or outperformed.
+    validations:
+      required: false
