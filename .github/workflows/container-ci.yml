@@ -1,0 +1,34 @@
+name: Reproducibility container CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "reproducibility/**"
+      - "Makefile"
+      - ".dockerignore"
+      - ".github/workflows/container-ci.yml"
+  pull_request:
+    paths:
+      - "reproducibility/**"
+      - "Makefile"
+      - ".dockerignore"
+      - ".github/workflows/container-ci.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: container-ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  container-reproduction:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build frozen reproducibility image
+        run: docker build --file reproducibility/Dockerfile --tag wct-repro-ci .
+      - name: Regenerate and verify deterministic artifacts
+        run: docker run --rm wct-repro-ci
