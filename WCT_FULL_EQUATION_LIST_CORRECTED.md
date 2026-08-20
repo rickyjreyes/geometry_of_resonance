@@ -36,7 +36,7 @@ A SymPy `PASS` reports success of its assigned check under declared assumptions.
 
 ## Current totals
 
-$$59\ {\rm PASS} + 27\ {\rm CONDITIONAL} + 26\ {\rm DEFINITION} + 30\ {\rm OPEN} + 0\ {\rm FAIL} = 142.$$
+$$68\ {\rm PASS} + 18\ {\rm CONDITIONAL} + 26\ {\rm DEFINITION} + 30\ {\rm OPEN} + 0\ {\rm FAIL} = 142.$$
 
 ## Principal corrections from v1.0
 
@@ -219,6 +219,8 @@ assuming $w>0$ and $\oint_\Gamma ds/w<\infty$.
 
 **Status provenance:** `derived_overrides.yaml` via `check_effective_wavenumber_chain_derived`.
 
+
+
 Define
 $$L_s:=\oint_\Gamma ds, \qquad k_{\rm wind}:=\frac{2\pi|n|}{L_s}, \qquad k_\sigma:=\frac1{L_s}\oint_\Gamma\sigma\,ds.$$
 Then
@@ -265,6 +267,8 @@ was incorrect.
 
 **Status provenance:** `derived_overrides.yaml` via `check_phase_flux_from_polar_field`.
 
+
+
 $$\mathbf S(x,t)=u(x,t)\nabla\theta(x,t).$$
 A conservation equation, when imposed, is
 $$\partial_tu+\nabla\cdot\mathbf S=0.$$
@@ -307,6 +311,8 @@ $$\lambda_{\rm grow}(k) = \mu-b(|k|^2-k_\star^2)^2, \qquad \mu=r+\frac{a^2}{4b}.
 
 **Status provenance:** `derived_overrides.yaml` via `check_bandpass_gradient_flow`.
 
+
+
 A form consistent with E12 is
 $$\partial_tA = (r-a\Delta-b\Delta^2)A-\beta|A|^2A,$$
 or equivalently
@@ -322,6 +328,8 @@ Boundary conditions and the sign of $\beta$ must be declared.
 
 **Status provenance:** `derived_overrides.yaml` via `check_bandpass_gradient_flow`.
 
+
+
 For the centered Swift-Hohenberg form,
 $$\mathcal E[A] = \int_\Omega \left[ -\mu|A|^2 +b|(\Delta+k_\star^2)A|^2 +\frac{\beta}{2}|A|^4 \right]dx.$$
 Gradient-flow descent requires compatible boundary conditions and normalization conventions.
@@ -329,7 +337,11 @@ Gradient-flow descent requires compatible boundary conditions and normalization 
 
 ## E15 — Modal growth bound
 
-**Current effective status:** ⚠️ `CONDITIONAL`
+**Current effective status:** ✅ `PASS`
+
+**Baseline status:** ⚠️ `CONDITIONAL`
+
+**Status provenance:** `derived_overrides.yaml` via `check_modal_growth_bound_derived`.
 
 $$\frac{d}{dt}|\widehat A_k|^2 \le 2\lambda_{\rm grow}(k)|\widehat A_k|^2 -c|\widehat A_k|^4, \qquad c>0.$$
 The quartic modal estimate requires a model-specific nonlinear projection bound.
@@ -366,6 +378,8 @@ whose denominator can vanish.
 **Baseline status:** ⚠️ `CONDITIONAL`
 
 **Status provenance:** `derived_overrides.yaml` via `check_lyapunov_gradient_flow`.
+
+
 
 $$\mathcal E[\psi] = \int_\Omega \left( c_1|\nabla\psi|^2 +c_2|\Theta_\varepsilon[\psi]|^2 \right)dx.$$
 It is nonnegative when $c_1,c_2\ge0$. Lyapunov descent still requires a specified evolution equation satisfying $d\mathcal E/dt\le0$.
@@ -503,7 +517,11 @@ The dissipation functional $\mathcal D_t$ must be derived from the dynamics; the
 
 ## E32 — Subexponential exploration condition
 
-**Current effective status:** ⚠️ `CONDITIONAL`
+**Current effective status:** ✅ `PASS`
+
+**Baseline status:** ⚠️ `CONDITIONAL`
+
+**Status provenance:** `derived_overrides.yaml` via `check_subexponential_exploration_margin_derived`.
 
 $$\limsup_{n\to\infty}\alpha(n)<1.$$
 This follows only if the retained-fraction and $\beta(n)$ bounds in E28 hold uniformly with sufficient margin.
@@ -584,7 +602,11 @@ The identification requires an explicit encoding and polynomial simulation in bo
 
 ## E41 — Curvature-bounded configuration count
 
-**Current effective status:** ⚠️ `CONDITIONAL`
+**Current effective status:** ✅ `PASS`
+
+**Baseline status:** ⚠️ `CONDITIONAL`
+
+**Status provenance:** `derived_overrides.yaml` via `check_alpha_drop_counting_bound_derived`.
 
 $$|C_{\rm curv}(n)| \le 2^{\alpha(n)n}, \qquad \alpha(n)<1.$$
 E28 alone does not prove this counting bound; an injective coding or combinatorial argument is required.
@@ -667,7 +689,11 @@ $$\boxed{ m_{\rm eff}^2 = \frac{\hbar^2}{c^4}\Delta_\omega^\star }.$$
 
 ## E50 — Phase-coherence functional
 
-**Current effective status:** ⚠️ `CONDITIONAL`
+**Current effective status:** ✅ `PASS`
+
+**Baseline status:** ⚠️ `CONDITIONAL`
+
+**Status provenance:** `derived_overrides.yaml` via `check_phase_coherence_lower_gradient_bound_derived`.
 
 $$\mathcal C[\psi] = \int_\Omega \frac{|\psi|^2}{|\nabla\theta|}\,dx.$$
 The definition requires a regularization or lower bound
@@ -743,6 +769,8 @@ $$(|k|^2-k_\star^2)^2.$$
 **Baseline status:** ⚠️ `CONDITIONAL`
 
 **Status provenance:** `derived_overrides.yaml` via `check_green_kernel_bounded`.
+
+
 
 For
 $$\mathcal L=r+a(\Delta+k_\star^2)^2,$$
@@ -870,7 +898,11 @@ The constant must have units of time, and the interpretation depends on the upda
 
 ## E72 — Curvature-pruned search space
 
-**Current effective status:** ⚠️ `CONDITIONAL`
+**Current effective status:** ✅ `PASS`
+
+**Baseline status:** ⚠️ `CONDITIONAL`
+
+**Status provenance:** `derived_overrides.yaml` via `check_alpha_drop_counting_bound_derived`.
 
 $$|S_{\rm eff}(n)| \le 2^{\alpha(n)n}.$$
 A counting theorem linking the physical pruning process to discrete configurations is required.
@@ -1001,7 +1033,11 @@ $$-\Delta\psi = \sigma_\star^2\psi.$$
 
 ## CLE5 — Thin/product-torus Laplacian
 
-**Current effective status:** ⚠️ `CONDITIONAL`
+**Current effective status:** ✅ `PASS`
+
+**Baseline status:** ⚠️ `CONDITIONAL`
+
+**Status provenance:** `derived_overrides.yaml` via `check_flat_product_torus_laplacian_derived`.
 
 Under a flat product or thin-torus approximation,
 $$\Delta\psi \approx \frac1{R^2}\partial_\theta^2\psi + \frac1{r^2}\partial_\phi^2\psi.$$
@@ -1031,7 +1067,11 @@ The constant solution is only the $m=0$ member, not the unique periodic solution
 
 ## CLE8 — Selected torus eigenmode
 
-**Current effective status:** ⚠️ `CONDITIONAL`
+**Current effective status:** ✅ `PASS`
+
+**Baseline status:** ⚠️ `CONDITIONAL`
+
+**Status provenance:** `derived_overrides.yaml` via `check_torus_lowest_mode_selection_derived`.
 
 $$\psi(\theta,\phi)=Ae^{i\phi}$$
 is one admissible winding-one mode. Uniqueness requires additional lowest-mode, chirality, normalization, phase, and boundary-selection principles.
@@ -1189,6 +1229,8 @@ The earlier extra factor and opposite sign were removed.
 
 **Status provenance:** `derived_overrides.yaml` via `check_cm9_first_order_equivalence`.
 
+
+
 $$\dot\delta_\gamma=v_\gamma, \qquad \dot v_\gamma=-c_s^2k^2\delta_\gamma-k^2\Phi,$$
 $$\dot\delta_b=v_b, \qquad \dot v_b=-\mathcal R c_s^2k^2\delta_\gamma-k^2\Phi.$$
 
@@ -1209,6 +1251,8 @@ $$\varepsilon_{\rm drag} = \frac{E_{\rm exch}}{E_{\rm comp}}, \qquad 0\le\vareps
 
 **Status provenance:** `derived_overrides.yaml` via `check_cm11_gaussian_damping`.
 
+
+
 $$D(k) = \exp\!\left(-\frac{k^2}{k_D^2}\right),$$
 $$k_D^{-2} = \int_0^{t_\star}D_{\rm curv}(t)\,dt.$$
 Dimensional consistency requires the time-dependent diffusion coefficient to carry units $L^2/T$.
@@ -1222,6 +1266,8 @@ Dimensional consistency requires the time-dependent diffusion coefficient to car
 
 **Status provenance:** `derived_overrides.yaml` via `classify_definition`.
 
+
+
 $$\Delta^2(k) = \frac{k^3}{2\pi^2}P(k).$$
 
 
@@ -1232,6 +1278,8 @@ $$\Delta^2(k) = \frac{k^3}{2\pi^2}P(k).$$
 **Baseline status:** ○ `OPEN`
 
 **Status provenance:** `derived_overrides.yaml` via `classify_definition`.
+
+
 
 $$r_{21} = \frac{P(k_2)}{P(k_1)}, \qquad r_{31} = \frac{P(k_3)}{P(k_1)},$$
 $$s_{21} = \frac{k_2}{k_1}, \qquad s_{31} = \frac{k_3}{k_1}.$$
@@ -1263,6 +1311,8 @@ $$a_{\rm WCT}(t) = \left[ \frac{E_{\rm curv}(0)} {E_{\rm curv}(t)} \right]^{1/3}
 
 **Status provenance:** `derived_overrides.yaml` via `classify_definition`.
 
+
+
 $$R_{\rm hor}(t) = \int_0^tc_s(t')\,dt',$$
 $$k_{\rm hor} = \frac{2\pi}{R_{\rm hor}}.$$
 
@@ -1282,6 +1332,8 @@ for a closed sector with no external source or loss.
 **Baseline status:** ○ `OPEN`
 
 **Status provenance:** `derived_overrides.yaml` via `classify_definition`.
+
+
 
 $$\mathfrak C_{\rm min} = \{\mathrm{CM1},\mathrm{CM2},\mathrm{CM3}, \mathrm{CM4},\mathrm{CM5},\mathrm{CM7}\}.$$
 This is a bookkeeping closure, not a derivation of cosmology.
@@ -1323,7 +1375,11 @@ $$\mathcal E_{\rm loop}[\gamma] = \int_\gamma\kappa^2ds + \alpha_{\rm UV} \sum_k
 
 ## TOP3 — Irreversible gradient flow
 
-**Current effective status:** ⚠️ `CONDITIONAL`
+**Current effective status:** ✅ `PASS`
+
+**Baseline status:** ⚠️ `CONDITIONAL`
+
+**Status provenance:** `derived_overrides.yaml` via `check_topology_gradient_flow_descent_derived`.
 
 $$\partial_t\gamma = -\frac{\delta\mathcal E_{\rm loop}}{\delta\gamma}.$$
 For a differentiable gradient flow,
@@ -1398,7 +1454,11 @@ The curvature term alone is only one component.
 
 ## CORR2 — Mean-amplitude spectral closure
 
-**Current effective status:** ⚠️ `CONDITIONAL`
+**Current effective status:** ✅ `PASS`
+
+**Baseline status:** ⚠️ `CONDITIONAL`
+
+**Status provenance:** `derived_overrides.yaml` via `check_mean_amplitude_closure_error_bound_v2`.
 
 Under a weak-intermittency mean-amplitude approximation,
 $$D_{\rm eff}^2 := \langle|\psi|^2\rangle+\varepsilon^2,$$
