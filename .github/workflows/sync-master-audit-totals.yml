@@ -1,3 +1,4 @@
+# One-shot synchronization for stale public audit totals.
 name: Sync canonical audit totals
 
 on:
@@ -20,34 +21,19 @@ jobs:
         run: |
           python - <<'PY'
           from pathlib import Path
-          candidates = [
-              Path('WCT_MASTER_EQUATIONS_UPDATED.md'),
-              Path('README.md'),
-              Path('READING_ORDER.md'),
-              Path('EQUATIONS.md'),
-              Path('MASTER_EQUATIONS.md'),
-          ]
+          candidates = [Path('WCT_MASTER_EQUATIONS_UPDATED.md'),Path('README.md'),Path('READING_ORDER.md'),Path('EQUATIONS.md'),Path('MASTER_EQUATIONS.md')]
           replacements = [
-              (r'59\ \mathrm{PASS} + 27\ \mathrm{CONDITIONAL} + 26\ \mathrm{DEFINITION} + 30\ \mathrm{OPEN} + 0\ \mathrm{FAIL}',
-               r'68\ \mathrm{PASS} + 18\ \mathrm{CONDITIONAL} + 26\ \mathrm{DEFINITION} + 30\ \mathrm{OPEN} + 0\ \mathrm{FAIL}'),
-              ('59 PASS + 27 CONDITIONAL + 26 DEFINITION + 30 OPEN + 0 FAIL',
-               '68 PASS + 18 CONDITIONAL + 26 DEFINITION + 30 OPEN + 0 FAIL'),
-              ('59 PASS', '68 PASS'),
-              ('27 CONDITIONAL', '18 CONDITIONAL'),
-          ]
+              (r'59\ \mathrm{PASS} + 27\ \mathrm{CONDITIONAL} + 26\ \mathrm{DEFINITION} + 30\ \mathrm{OPEN} + 0\ \mathrm{FAIL}',r'68\ \mathrm{PASS} + 18\ \mathrm{CONDITIONAL} + 26\ \mathrm{DEFINITION} + 30\ \mathrm{OPEN} + 0\ \mathrm{FAIL}'),
+              ('59 PASS + 27 CONDITIONAL + 26 DEFINITION + 30 OPEN + 0 FAIL','68 PASS + 18 CONDITIONAL + 26 DEFINITION + 30 OPEN + 0 FAIL'),
+              ('59 PASS','68 PASS'),('27 CONDITIONAL','18 CONDITIONAL')]
           changed=[]
           for p in candidates:
-              if not p.exists():
-                  continue
-              text=p.read_text(encoding='utf-8')
-              new=text
-              for old,repl in replacements:
-                  new=new.replace(old,repl)
+              if not p.exists(): continue
+              text=p.read_text(encoding='utf-8'); new=text
+              for old,repl in replacements: new=new.replace(old,repl)
               if new != text:
-                  p.write_text(new,encoding='utf-8')
-                  changed.append(str(p))
-          if not changed:
-              raise SystemExit('No stale canonical totals found')
+                  p.write_text(new,encoding='utf-8'); changed.append(str(p))
+          if not changed: raise SystemExit('No stale canonical totals found')
           print('updated:', ', '.join(changed))
           PY
       - name: Commit synchronized totals
