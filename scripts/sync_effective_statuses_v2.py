@@ -18,9 +18,9 @@ STATUS_RE = re.compile(r"^\*\*(?:Status|Current effective status):\*\*\s+.*$", r
 BASELINE_RE = re.compile(r"^\*\*Baseline status:\*\*\s+.*(?:\n|$)", re.M)
 PROVENANCE_RE = re.compile(r"^\*\*Status provenance:\*\*.*(?:\n|$)", re.M)
 MARK = {"PASS": "✅ `PASS`", "CONDITIONAL": "⚠️ `CONDITIONAL`", "DEFINITION": "◻️ `DEFINITION`", "OPEN": "○ `OPEN`", "FAIL": "❌ `FAIL`"}
-EXPECTED = {"PASS": 59, "CONDITIONAL": 27, "DEFINITION": 26, "OPEN": 30, "FAIL": 0}
-OLD_TOTALS = r"$$51\ {\rm PASS} + 32\ {\rm CONDITIONAL} + 23\ {\rm DEFINITION} + 36\ {\rm OPEN} = 142.$$"
-NEW_TOTALS = r"$$59\ {\rm PASS} + 27\ {\rm CONDITIONAL} + 26\ {\rm DEFINITION} + 30\ {\rm OPEN} + 0\ {\rm FAIL} = 142.$$"
+EXPECTED = {"PASS": 68, "CONDITIONAL": 18, "DEFINITION": 26, "OPEN": 30, "FAIL": 0}
+OLD_TOTALS = r"$$59\ {\rm PASS} + 27\ {\rm CONDITIONAL} + 26\ {\rm DEFINITION} + 30\ {\rm OPEN} + 0\ {\rm FAIL} = 142.$$"
+NEW_TOTALS = r"$$68\ {\rm PASS} + 18\ {\rm CONDITIONAL} + 26\ {\rm DEFINITION} + 30\ {\rm OPEN} + 0\ {\rm FAIL} = 142.$$"
 
 
 def rows(name: str) -> list[list[str]]:
@@ -96,7 +96,7 @@ A SymPy `PASS` reports success of its assigned check under declared assumptions.
 
     if NEW_TOTALS not in output:
         raise RuntimeError("Effective totals missing after generation")
-    for object_id in ("E5", "CM9", "CM11", "CM12", "CM13", "CM16", "CM18", "E70"):
+    for object_id in ("E5", "E15", "E32", "E41", "E50", "CLE5", "CLE8", "TOP3", "CORR2"):
         heading = re.search(rf"^##\s+{object_id}\s+[—-].*$", output, re.M)
         if not heading:
             raise RuntimeError(f"Missing {object_id}")
