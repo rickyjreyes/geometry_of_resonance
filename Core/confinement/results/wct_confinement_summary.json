@@ -1,0 +1,59 @@
+{
+  "model": {
+    "dimension": 3,
+    "mass": 1.0,
+    "epsilon": 0.5,
+    "alpha": 1.0,
+    "delta": 0.1,
+    "functional": "E = \u222b[|\u2207\u03c6|\u00b2 + (\u03b4+F(\u03c6\u00b2))|\u0394\u03c6|\u00b2 - (g/2)\u03c6\u2074] d\u00b3x",
+    "F": "F(u)=u/(u+epsilon^2*exp(-2*alpha*u))^2"
+  },
+  "critical_coupling": {
+    "numerical_gc": 105.098413,
+    "method": "direct minimization of 2 P[phi] / Q[phi] at fixed L2 mass",
+    "independent_zero_crossing": 105.0984
+  },
+  "g120_stationary_state": {
+    "energy": -0.1120185581,
+    "rms_radius": 1.893,
+    "mass": 1.0,
+    "kinetic": 0.6337932155,
+    "delta_biharmonic": 0.0703319227,
+    "corrected_curvature_term": 0.2476692257,
+    "focusing_attraction": -1.063812922,
+    "projected_constrained_gradient_relative": 9.6e-07,
+    "pohozaev_relative_at_N160_R25": 0.000219
+  },
+  "domain_test_g105_2": {
+    "R_values": [
+      20,
+      30,
+      40
+    ],
+    "energy": "approximately -0.000620 for all three domains",
+    "rms_radius": "approximately 2.19217 for all three domains"
+  },
+  "uv_control": {
+    "delta_0": "narrow normalized probes drive energy downward without bound numerically as width shrinks",
+    "delta_0_1": "same probes turn sharply positive as width shrinks",
+    "interpretation": "positive H2 rail arrests UV collapse"
+  },
+  "scientific_scope": "This is a nondimensional numerical variational test. It supports existence of a localized negative-energy stationary candidate for the augmented functional at the tested parameters. It is not an empirical validation or a proof of continuum existence.",
+  "radial_second_variation": {
+    "sector": "real radial fixed-mass perturbations",
+    "grid_N": [
+      80,
+      100,
+      120,
+      140
+    ],
+    "smallest_tangent_eigenvalues": [
+      1.787051177315824,
+      1.781796369695729,
+      1.7790844404466215,
+      1.7775010434369882
+    ],
+    "conclusion": "All tested tangent Hessian spectra are strictly positive; the g=120 candidate is a strict local constrained minimum in the discretized radial sector.",
+    "limitation": "This does not test nonspherical angular modes, complex phase perturbations, or the full time-dependent WCT evolution."
+  }
+}

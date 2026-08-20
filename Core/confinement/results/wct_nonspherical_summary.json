@@ -1,0 +1,38 @@
+{
+  "background": {
+    "g": 120.0,
+    "mass": 1.0,
+    "epsilon": 0.5,
+    "alpha": 1.0,
+    "delta": 0.1,
+    "energy_radial_reference": -0.1120185581,
+    "rms_radius": 1.893
+  },
+  "linear_nonspherical_stability": {
+    "tested_l": [1, 20],
+    "l1_interpretation": "The tiny negative l=1 eigenvalue shrinks toward zero under radial-grid refinement and its eigenvector converges to dphi/dr with overlap > 0.99999 on fine grids. This is consistent with the translational Goldstone mode, not a shape instability.",
+    "l2_through_l20": "All tested shape sectors have strictly positive smallest constrained Hessian eigenvalues.",
+    "representative_N160": {
+      "l2": 2.0233374624,
+      "l3": 2.0741064110,
+      "l4": 2.1331768656,
+      "l10": 2.6659711221,
+      "l20": 4.3046791041
+    }
+  },
+  "nonlinear_axisymmetric_tests": {
+    "method": "Fixed-mass optimization in a normalized m=0 spherical-harmonic expansion through l=6 with Gauss-Legendre angular quadrature.",
+    "production_settings": {
+      "N": 80,
+      "R": 25.0,
+      "lmax": 6,
+      "nang": 48,
+      "max_iter": 900
+    },
+    "strongest_initial_quadrupole_mass_fraction": 0.8,
+    "max_final_nonspherical_mass_fraction": 0.0016031220647186354,
+    "outcome": "All tested large l=2, l=3, mixed l=2+l=4, and random even-mode deformations substantially relaxed toward the spherical branch. The strongest 80% l=2 start finished with about 1.6e-3 nonspherical mass at the default production stopping criteria; easier deformations relaxed to 1e-5 to 1e-4 scale.",
+    "translation_note": "Asymmetric l=1 perturbations are expected to contain the neutral translation direction in the continuum."
+  },
+  "scope": "This is a nondimensional local/axisymmetric numerical stability test. It does not establish full 3D continuum orbital stability or stability to complex phase perturbations."
+}
