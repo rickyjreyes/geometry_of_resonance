@@ -31,7 +31,7 @@ $$9+83+10+20+5+9+6=142.$$
 
 Current corpus totals are
 
-$$59\ \mathrm{PASS} + 27\ \mathrm{CONDITIONAL} + 26\ \mathrm{DEFINITION} + 30\ \mathrm{OPEN} + 0\ \mathrm{FAIL} = 142,$$
+$$68\ \mathrm{PASS} + 18\ \mathrm{CONDITIONAL} + 26\ \mathrm{DEFINITION} + 30\ \mathrm{OPEN} + 0\ \mathrm{FAIL} = 142,$$
 
 with no contradiction remaining in the current encoded specification. The historical baseline assignments come from `wct-sympy/equations/full_registry.yaml`; effective promotions and reclassifications come from `wct-sympy/equations/derived_overrides.yaml`; and the current public result is compiled in `compiled-registry.json`. A SymPy `PASS` is not automatically a Lean proof or empirical validation.
 
