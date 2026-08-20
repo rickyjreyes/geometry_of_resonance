@@ -9,7 +9,7 @@ on:
 permissions:
   contents: write
 env:
-  WCT_SYMPY_REF: ${{ github.event_name == 'pull_request' && 'compiled-registry-v2' || 'main' }}
+  WCT_SYMPY_REF: main
 jobs:
   synchronize:
     runs-on: ubuntu-latest
