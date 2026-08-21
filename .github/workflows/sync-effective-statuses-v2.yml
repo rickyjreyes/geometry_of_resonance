@@ -8,6 +8,8 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+# Upstream sync checkpoint (2026-08-20): wct-sympy merge 386309ebf60ab15a7b248841a4886ff3c8258458.
+# The paper-level closure/DSI additions do not change the canonical 68 PASS / 18 CONDITIONAL / 26 DEFINITION / 30 OPEN / 0 FAIL partition.
 env:
   WCT_SYMPY_REF: main
 jobs:
