@@ -1,0 +1,150 @@
+{
+  "schema": "WCT_PHYSICAL_DOMAIN_ASSUMPTIONS_V1",
+  "assumptions": [
+    {
+      "id": "A01",
+      "status": "EXPLICIT_MODEL_INPUT",
+      "statement": "M0–M5 are distinct declared models; no unproved equivalence is assumed.",
+      "sources": [
+        "S004",
+        "S007",
+        "S011",
+        "S012",
+        "P02",
+        "P04"
+      ]
+    },
+    {
+      "id": "A02",
+      "status": "MATHEMATICAL_HYPOTHESIS",
+      "statement": "epsilon>0, alpha>0 for the stated regularizations; fields finite.",
+      "sources": [
+        "S003",
+        "S004",
+        "P04"
+      ]
+    },
+    {
+      "id": "A03",
+      "status": "MATHEMATICAL_HYPOTHESIS",
+      "statement": "Bulk variation assumes flat fixed coefficients and cancellation of every boundary term; variable coefficients require formal adjoints.",
+      "sources": [
+        "S004"
+      ]
+    },
+    {
+      "id": "A04",
+      "status": "MATHEMATICAL_HYPOTHESIS",
+      "statement": "Field phase is taken on a smooth nonzero chart; winding on a closed nonzero contour.",
+      "sources": [
+        "P04"
+      ]
+    },
+    {
+      "id": "A05",
+      "status": "EXPLICIT_MODEL_INPUT",
+      "statement": "M4 has beta,gamma>0, specified k_star and periodic/decaying boundary conditions; physical calibration is separate.",
+      "sources": [
+        "S011",
+        "S044"
+      ]
+    },
+    {
+      "id": "A06",
+      "status": "MATHEMATICAL_HYPOTHESIS",
+      "statement": "D3 uses unrestricted free space, fixed nonzero L2 mass, positive gradient and stated curvature energies without an added binding sector.",
+      "sources": [
+        "P04",
+        "S003",
+        "S037"
+      ]
+    },
+    {
+      "id": "A07",
+      "status": "GIVEN_BOUNDARY_DATA",
+      "statement": "Fixed-loop locking supplies Gamma,w>0,m,framing/holonomy and longitudinal sector n.",
+      "sources": [
+        "P04",
+        "P08"
+      ]
+    },
+    {
+      "id": "A08",
+      "status": "UNPROVED_ADDITIONAL_PREMISE_NOT_ADOPTED",
+      "statement": "Nearest-integer physical selection would require full n-dependent energy to equal S_lock plus an n-independent term and globally accessible sector minima.",
+      "sources": [
+        "P04",
+        "P08"
+      ]
+    },
+    {
+      "id": "A09",
+      "status": "UNPROVED_ADDITIONAL_PREMISE_NOT_ADOPTED",
+      "statement": "Physical transitions require preparation, boundary injection or a derived amplitude/phase-slip mechanism.",
+      "sources": [
+        "P04",
+        "S011"
+      ]
+    },
+    {
+      "id": "A10",
+      "status": "MISSING_PHYSICAL_DEFINITION",
+      "statement": "A physical boundary/interface extractor and map into the measured x must define W independently of residual peaks.",
+      "sources": [
+        "P03",
+        "P05"
+      ]
+    },
+    {
+      "id": "A11",
+      "status": "MISSING_PHYSICAL_DEFINITION",
+      "statement": "Observable O, source/population, response R, background, coordinate and estimator must be specified.",
+      "sources": [
+        "P05"
+      ]
+    },
+    {
+      "id": "A12",
+      "status": "CONDITIONAL_ESTIMATOR_HYPOTHESIS",
+      "statement": "Exact affine observable phase, correctly specified nuisance model and identifiable response/support imply equality of fitted and mean frequency.",
+      "sources": [
+        "P03",
+        "P05"
+      ]
+    },
+    {
+      "id": "A13",
+      "status": "COUNTEREXAMPLE_DEFINITION",
+      "statement": "O2 uses uniform continuous least squares on [0,1], free amplitude and phase, zero known background and the stated smooth phase perturbation; no empirical input.",
+      "sources": []
+    },
+    {
+      "id": "A14",
+      "status": "CONDITIONAL_COORDINATE_HYPOTHESIS",
+      "statement": "Positive dimensionless x/x0; p!=0; signed orientation handled explicitly and same-winding width transfer treated as a premise.",
+      "sources": [
+        "P03",
+        "P05"
+      ]
+    },
+    {
+      "id": "A15",
+      "status": "CONDITIONAL_GEOMETRIC_HYPOTHESIS",
+      "statement": "Koide balance is imposed for the norm identities; physical mass/eigenmode identification and thin-shell reduction are separate.",
+      "sources": [
+        "P05",
+        "P06"
+      ]
+    },
+    {
+      "id": "A16",
+      "status": "CONDITIONAL_COMPATIBILITY_HYPOTHESIS",
+      "statement": "PFF obstruction applies only if u=|A|^2, isolated continuity and the complex gradient rail use the same physical time.",
+      "sources": [
+        "P02"
+      ]
+    }
+  ],
+  "arbitrary_closure_axioms_adopted": [],
+  "empirical_frequency_inputs": []
+}

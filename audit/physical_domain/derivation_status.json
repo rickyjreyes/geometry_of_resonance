@@ -1,0 +1,37 @@
+{
+  "schema": "WCT_PHYSICAL_DOMAIN_DERIVATION_STATUS_V1",
+  "decision": "WCT_ACTIVE_DOMAIN_UNDERDETERMINED",
+  "scope": "Underdetermination of the explicitly specified reviewed models and active-domain/observable premises; no universal nonexistence theorem for all future WCT completions.",
+  "physical_active_domain": "PHYSICAL_ACTIVE_DOMAIN_NOT_DERIVED",
+  "physical_domain_family": "CONTINUOUS_OR_BOUNDARY_INPUT_DEPENDENT_IN_EXPLICIT_WITNESSES",
+  "winding_selection": "NOT_IDENTIFIABLE",
+  "fixed_geometry_fixed_sector_phase_minimizer": "CONDITIONAL_ON_BOUNDARY_DATA",
+  "conditional_sector_rule": {
+    "formula": "argmin_{n in Z} |n-(J+m*Phi_Omega)/(2*pi)|",
+    "branch_count": "1 except 2 at a half-integer",
+    "physical_rule_derived": false,
+    "assumptions": [
+      "A07",
+      "A08",
+      "A09"
+    ]
+  },
+  "spectral_mapping": "SPECTRAL_MEASUREMENT_MAP_NOT_DERIVED",
+  "geometric_physical_dilation": "NOT_DERIVED",
+  "combined_prediction_derived": false,
+  "source_inventory_completed": true,
+  "requested_audit_completed": true,
+  "scientific_closure_completed": false,
+  "research_scores_changed": false,
+  "rigorous_witnesses": [
+    "D1",
+    "D2",
+    "D3",
+    "D4",
+    "W2",
+    "O1",
+    "O2",
+    "C1"
+  ],
+  "unresolved_scientific_issues_closed": []
+}

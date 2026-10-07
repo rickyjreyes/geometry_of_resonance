@@ -1,0 +1,232 @@
+{
+  "schema": "WCT_PHYSICAL_DOMAIN_DEPENDENCY_GRAPH_V1",
+  "allowed_edge_statuses": [
+    "PROVED",
+    "NUMERICALLY_SUPPORTED",
+    "CONDITIONAL",
+    "CONJECTURAL",
+    "NOT_DERIVED"
+  ],
+  "nodes": [
+    {
+      "id": "dynamics",
+      "label": "Declared WCT dynamics"
+    },
+    {
+      "id": "solution",
+      "label": "Required physical solution branch"
+    },
+    {
+      "id": "periodic_roots",
+      "label": "Preserved periodic stationary roots"
+    },
+    {
+      "id": "phase",
+      "label": "Field phase dynamics"
+    },
+    {
+      "id": "domain",
+      "label": "Physical log-observable domain"
+    },
+    {
+      "id": "winding",
+      "label": "Physically selected winding"
+    },
+    {
+      "id": "contour",
+      "label": "Closed nonzero contour"
+    },
+    {
+      "id": "degree",
+      "label": "Integer topological degree"
+    },
+    {
+      "id": "spectrum",
+      "label": "Measured observable spectrum"
+    },
+    {
+      "id": "geometry",
+      "label": "Exact 2–3–6 geometry"
+    }
+  ],
+  "edges": [
+    {
+      "id": "E01",
+      "source": "dynamics",
+      "target": "solution",
+      "status": "CONDITIONAL",
+      "scope": "A complete model and admissible initial/boundary problem are required; M4 regularity does not establish the desired localized branch.",
+      "assumptions": [
+        "A01",
+        "A03",
+        "A05"
+      ],
+      "sources": [
+        "S004",
+        "S011",
+        "S044"
+      ]
+    },
+    {
+      "id": "E02",
+      "source": "dynamics",
+      "target": "periodic_roots",
+      "status": "NUMERICALLY_SUPPORTED",
+      "scope": "Accurate roots of the supplied finite periodic M4 problem in preserved reports.",
+      "assumptions": [
+        "A05"
+      ],
+      "sources": [
+        "S044",
+        "S047"
+      ]
+    },
+    {
+      "id": "E03",
+      "source": "periodic_roots",
+      "target": "solution",
+      "status": "NOT_DERIVED",
+      "scope": "No transfer from imposed-box stationary roots to uniquely selected stable physical localization.",
+      "assumptions": [
+        "A05",
+        "A10"
+      ],
+      "sources": [
+        "S044",
+        "S046",
+        "S048"
+      ]
+    },
+    {
+      "id": "E04",
+      "source": "solution",
+      "target": "phase",
+      "status": "CONDITIONAL",
+      "scope": "Exact polar decomposition/evolution for a smooth nonzero solution of the specified complex PDE; does not make curvature a phase.",
+      "assumptions": [
+        "A04",
+        "A05"
+      ],
+      "sources": [
+        "P04",
+        "S011"
+      ]
+    },
+    {
+      "id": "E05",
+      "source": "phase",
+      "target": "domain",
+      "status": "NOT_DERIVED",
+      "scope": "Continuous-radius degeneracy and absent physical extractor/map into x.",
+      "assumptions": [
+        "A07",
+        "A10"
+      ],
+      "sources": [
+        "P03",
+        "P04",
+        "P05",
+        "P08"
+      ]
+    },
+    {
+      "id": "E06",
+      "source": "domain",
+      "target": "winding",
+      "status": "NOT_DERIVED",
+      "scope": "Boundary matching, full sector energy and preparation/phase-slip law are not derived.",
+      "assumptions": [
+        "A07",
+        "A08",
+        "A09"
+      ],
+      "sources": [
+        "P04",
+        "P08"
+      ]
+    },
+    {
+      "id": "E07",
+      "source": "contour",
+      "target": "degree",
+      "status": "PROVED",
+      "scope": "Degree of psi/|psi| on a closed nonzero contour is integer and homotopy invariant.",
+      "assumptions": [
+        "A04"
+      ],
+      "sources": [
+        "P04"
+      ]
+    },
+    {
+      "id": "E08",
+      "source": "degree",
+      "target": "winding",
+      "status": "CONDITIONAL",
+      "scope": "Topological degree determines n only when the actual contour/state/preparation is independently given; topology does not select it.",
+      "assumptions": [
+        "A04",
+        "A07",
+        "A09"
+      ],
+      "sources": [
+        "P04"
+      ]
+    },
+    {
+      "id": "E09",
+      "source": "phase",
+      "target": "spectrum",
+      "status": "NOT_DERIVED",
+      "scope": "Physical source/measurement/coordinate map is absent; O1 and O2 block identification by notation.",
+      "assumptions": [
+        "A10",
+        "A11",
+        "A12",
+        "A13"
+      ],
+      "sources": [
+        "P05"
+      ]
+    },
+    {
+      "id": "E10",
+      "source": "winding",
+      "target": "spectrum",
+      "status": "NOT_DERIVED",
+      "scope": "An integer closure does not specify observable response or fitted frequency.",
+      "assumptions": [
+        "A11",
+        "A12",
+        "A13"
+      ],
+      "sources": [
+        "P03",
+        "P05"
+      ]
+    },
+    {
+      "id": "E11",
+      "source": "geometry",
+      "target": "spectrum",
+      "status": "CONJECTURAL",
+      "scope": "Physical dilation correspondence is open; exact gains alone are insufficient.",
+      "assumptions": [
+        "A15"
+      ],
+      "sources": [
+        "P05",
+        "P06"
+      ]
+    }
+  ],
+  "required_chain": [
+    "dynamics",
+    "solution",
+    "phase",
+    "domain",
+    "winding",
+    "spectrum"
+  ],
+  "complete": false
+}

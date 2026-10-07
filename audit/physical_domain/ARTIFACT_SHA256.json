@@ -1,0 +1,153 @@
+{
+  "schema": "WCT_PHYSICAL_DOMAIN_ARTIFACT_MANIFEST_V1",
+  "manifest_self_excluded": true,
+  "artifacts": [
+    {
+      "path": "audit/physical_domain/BASELINE_BLOBS.json",
+      "bytes": 22160,
+      "sha256": "d43c628055fe116c5faa13d4d80d42d3eaf14c6157cd8343b9f344f797173671",
+      "git_blob_sha1": "62fb504bfad4d5d6a16afca710378db92546623f",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/REPRODUCE.md",
+      "bytes": 3268,
+      "sha256": "eca8a77bfea2ef8ac7c897c46ff3b6a8dd7b643c8b5bec153cd77e4d4524f7d4",
+      "git_blob_sha1": "8d3d07e83737588c04f4995fa0f56a6f5cbf70e6",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/RUN_PROVENANCE.json",
+      "bytes": 1714,
+      "sha256": "1f4d0ad3103ab65562a814b8cacb7b5c554e780163b38d4e195b9037b18d392c",
+      "git_blob_sha1": "36e762d0250a4512610db2325a9211d27787f2ad",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/SOURCE_LEDGER.json",
+      "bytes": 45649,
+      "sha256": "ff161cc066a29b4907ba90adab9fa86a686d0ceaa8c3571926cbe1bb18d663ee",
+      "git_blob_sha1": "55d2580452420dca663a9de479416396adba8e64",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/VALIDATION.json",
+      "bytes": 985,
+      "sha256": "df75f772aa4159cfcba0350a8e7e1c3be38333c226c2962f23f545c1823d1829",
+      "git_blob_sha1": "4a7742eac4bffb1f26c49c974fb87ac491dbe2d2",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/assumptions.json",
+      "bytes": 4534,
+      "sha256": "468024da8b4ea951c43e99e958acf7ca21c2127b1d698f37912422996e6d0832",
+      "git_blob_sha1": "8398bb4e9199f925b24e7e8d06979b1d1210982b",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/decision.json",
+      "bytes": 2323,
+      "sha256": "9ad49c50fa729f37002f1c27e4cf94e77e0a512ba51425b884631a7f749f058a",
+      "git_blob_sha1": "3942fb7710ddca7f7fef7a990729ccdb516903f6",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/dependency_graph.json",
+      "bytes": 5099,
+      "sha256": "75def5858519d7cd23c4127177b2ea70b84dcfe4b495765cb4a652e937fe2ac0",
+      "git_blob_sha1": "0c3de711750c83581c40d6e21f38da180f680d06",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/derivation_status.json",
+      "bytes": 1281,
+      "sha256": "685d49930908974e9754bf573dcab068baca9ec1786dc019c51038f45fb55205",
+      "git_blob_sha1": "e0042dd54f398f859107e0613d97f78503d233aa",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/prediction.json",
+      "bytes": 1265,
+      "sha256": "a34614f3e89c99550687d02bc8fe1ddde7ee34e1afe91f522d12c4640b2823b3",
+      "git_blob_sha1": "af273627f5aa5a597668111c8a8d8ab160210caf",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/prior_vs_new.json",
+      "bytes": 5391,
+      "sha256": "4dbd44cf5754479ee64355e2d59135dfd4ee42bf1574dd87df1d87085af25d45",
+      "git_blob_sha1": "4a240fb91f43bdab2998d008b620b3fc4ad85438",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/requirements.txt",
+      "bytes": 28,
+      "sha256": "47fd19021144e071cc43b6e265aafada0056abe89724ad95bd6e3a8e37995b94",
+      "git_blob_sha1": "de9542d36e40090c2dad83e84c503496a711bec7",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/symbolic_results.json",
+      "bytes": 6854,
+      "sha256": "4182ae9c527a57efe4b5acc9d6b926d343a2d4387c86e3d25b64388bfeec06ab",
+      "git_blob_sha1": "db24453626ce55596fc32dd82acf3e6cdbc04a0b",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/validate_records.py",
+      "bytes": 7598,
+      "sha256": "af0a206c0db613a6db4f9c3d7404692358ee57c94cbae8ccdae700a4890d5d9e",
+      "git_blob_sha1": "23001d9e1969e848bc8a345c0c350e6bdc5605a9",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/verify_symbolic.py",
+      "bytes": 9682,
+      "sha256": "7ea712271eae0d8b50ec66db81ef8e84a29a3e351435c4ce443716bd439b3d9e",
+      "git_blob_sha1": "59e73916dade2e8db4ca28b2a9a580b568e6c599",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/DYNAMICS_AND_SOURCE_INVENTORY.md",
+      "bytes": 14763,
+      "sha256": "1fd43c04f4a4e8b26644fe33e3255f0bbc541d2f5083cd822f65add8a764a8e5",
+      "git_blob_sha1": "2e6e771acba4189b93cd5c6f31bcd25eca78359e",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/FOUNDATIONAL_CLOSURE_VERDICT.md",
+      "bytes": 12486,
+      "sha256": "da6e7ff77c183181487cde10c99263140872e76a23bd889fdda0256ee686f324",
+      "git_blob_sha1": "60faebace04a7b0ac4c0905cf3468d48e9b02bb3",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/GEOMETRIC_SCALE_OPERATOR_AUDIT.md",
+      "bytes": 6451,
+      "sha256": "70d5907d1654f4562261f39de1432738d7e53e30d227ec5b99257d38ac17f03a",
+      "git_blob_sha1": "7ef73af76c833bbb10c0687365a3b952f4490310",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/PHYSICAL_ACTIVE_DOMAIN_DERIVATION.md",
+      "bytes": 9276,
+      "sha256": "76f747ebda5bbea4c1c898297afc6f981f86c0c8671a2612b22655db9dbd1dbe",
+      "git_blob_sha1": "be557efc4a83ba5a1240194a4026c9702d2804b5",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/SPECTRAL_OBSERVABLE_MAPPING.md",
+      "bytes": 8118,
+      "sha256": "fa7ff14524ac6eb3acbe422c917e6cccf23916ea930a22cd9e1e822a74e830b0",
+      "git_blob_sha1": "6428d5f6ee0e923f7dbb88af92cdbc1f071480e7",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/WINDING_SELECTION_ANALYSIS.md",
+      "bytes": 7133,
+      "sha256": "7fe97143e6681485c8b7441836d588df5f56a525eaa56e4e2a8133c0b86301fd",
+      "git_blob_sha1": "62410a2536d54032acf1db70f5b6720dee73cd61",
+      "mode": "100644"
+    }
+  ]
+}

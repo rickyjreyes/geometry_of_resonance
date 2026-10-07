@@ -1,0 +1,1136 @@
+{
+  "schema": "WCT_PHYSICAL_DOMAIN_SOURCE_LEDGER_V1",
+  "audit_date_utc": "2026-10-07",
+  "repository_pins": {
+    "wave_confinement": {
+      "sha": "5237376dcfe5ac38f920a708240c4e49f21ae6ca",
+      "tree": "1f58bd7a7980a60daca5df6d51d8cf67fa30d213",
+      "date": "2025-05-15T23:34:53Z"
+    },
+    "geometry_of_resonance": {
+      "sha": "a0048ef751a8876a9494f6de24b952ebc1db7213",
+      "tree": "e76c0254c3ab7defa015c8ac1f7d957ca42790ee",
+      "date": "2026-08-21T04:31:42Z"
+    },
+    "wct-pde": {
+      "sha": "ecc2a446cc8fbf2f104bc49aa0a9fdf5a9739876",
+      "tree": "675dbeadc655211de1163b47afc2aad7eafeb14a",
+      "date": "2026-09-20T02:13:01Z"
+    },
+    "wct-fem": {
+      "sha": "e6e3216ae3262d9105f3aeab607e9940056dd007",
+      "tree": "a2ce9ceeaaa098316fcaf5b831035501053e5e2f",
+      "date": "2026-09-20T02:13:18Z"
+    },
+    "wct-julia": {
+      "sha": "6bf0695935029805a3263f08edc2790615660bc5",
+      "tree": "43a213c9f906dc86927ec22f82ee32c0e8678812",
+      "date": "2026-07-14T06:36:13Z"
+    },
+    "wct-sympy": {
+      "sha": "9656863097da396fa2c8d0b8ea190afeabdd05d8",
+      "tree": "d376ad4a9eca75dda4c58f672280d8a4de34a478",
+      "date": "2026-09-20T02:02:05Z"
+    },
+    "wct-lean": {
+      "sha": "dea05da8a6e40361e79ee685a7939a4c6f9a8696",
+      "tree": "f79ba4deb865f3cf67aafd48986a9f16a1667ffb",
+      "date": "2026-09-20T02:01:03Z"
+    },
+    "periodic": {
+      "sha": "a26e33666d9792171123927b892dc25b9b7e085a",
+      "tree": "2f18aeafeeec94a3399cbd082ee8034d2214297c",
+      "date": "2026-09-18T22:06:05Z"
+    },
+    "eigen": {
+      "sha": "d679c5c48c8608f5a56b573f898d65cceb3753c2",
+      "tree": "82edd0924f2e28560cf901d96922d42eece37ae8",
+      "date": "2026-09-11T20:46:49Z"
+    },
+    "mass": {
+      "sha": "41d1adb6741403257a3019d4aa899a4918f19d43",
+      "tree": "9cc469db1d183bcf873bb04e0a222a5a2d5dd759",
+      "date": "2026-09-18T21:57:55Z"
+    },
+    "wct-pde-projection-free-closure-current": {
+      "sha": "d5335dc0fab77e14b66feb7e1a943c2c31eeaa19"
+    }
+  },
+  "repository_sources": [
+    {
+      "id": "S001",
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "path": "README.md",
+      "revision": "a0048ef751a8876a9494f6de24b952ebc1db7213",
+      "git_blob_sha1": "6da7ae722d44c9eb5ba692f2e713688095b438c0",
+      "sha256": "78fdd7fee484a1ef61509246fccec815b59b9b43153f7517820453cd643d6945",
+      "bytes": 18763,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/geometry_of_resonance/blob/a0048ef751a8876a9494f6de24b952ebc1db7213/README.md"
+    },
+    {
+      "id": "S002",
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "path": "SCOPE.md",
+      "revision": "a0048ef751a8876a9494f6de24b952ebc1db7213",
+      "git_blob_sha1": "ba3aa6eb3f2fe9c2509b2a0470dad8422095909a",
+      "sha256": "917f4ce82922d5e400bfc1d98a5271df34dde0237136810eb101c041b4be050a",
+      "bytes": 11640,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/geometry_of_resonance/blob/a0048ef751a8876a9494f6de24b952ebc1db7213/SCOPE.md"
+    },
+    {
+      "id": "S003",
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "path": "DERIVATION_CLOSURE.md",
+      "revision": "a0048ef751a8876a9494f6de24b952ebc1db7213",
+      "git_blob_sha1": "a7b6f35ce3f4e5306ca5d265210e8177c7dddbc5",
+      "sha256": "1b29d21bbfc0a1b802b4b3dad17ea4588dffe4f5e09cad563f8ca403a64f49fa",
+      "bytes": 15535,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/geometry_of_resonance/blob/a0048ef751a8876a9494f6de24b952ebc1db7213/DERIVATION_CLOSURE.md"
+    },
+    {
+      "id": "S004",
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "path": "WCT_CORRECTED_VARIATIONAL_CLOSURE_DRAFT.md",
+      "revision": "a0048ef751a8876a9494f6de24b952ebc1db7213",
+      "git_blob_sha1": "353e07ff7896cba3a83186b97e890f2bc03530f2",
+      "sha256": "41769e8b7077ec9677a869ad0d230ba19b5ccb0834eb87a81fcedf6b30433024",
+      "bytes": 8074,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/geometry_of_resonance/blob/a0048ef751a8876a9494f6de24b952ebc1db7213/WCT_CORRECTED_VARIATIONAL_CLOSURE_DRAFT.md"
+    },
+    {
+      "id": "S005",
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "path": "WCT_MASTER_EQUATIONS_UPDATED.md",
+      "revision": "a0048ef751a8876a9494f6de24b952ebc1db7213",
+      "git_blob_sha1": "bc99671713f2d93459d9e483c4b25fddce7f4d5e",
+      "sha256": "5d385a5077aaad29543d0570d0d62457a157e96428ad72efa433a6c79b467195",
+      "bytes": 15971,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/geometry_of_resonance/blob/a0048ef751a8876a9494f6de24b952ebc1db7213/WCT_MASTER_EQUATIONS_UPDATED.md"
+    },
+    {
+      "id": "S006",
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "path": "WCT_FULL_EQUATION_LIST_CORRECTED.md",
+      "revision": "a0048ef751a8876a9494f6de24b952ebc1db7213",
+      "git_blob_sha1": "e5f3191549f8a6fca05a512c9aef38c2be329719",
+      "sha256": "c252ea6b396f4cd9ccd1f952593f0be9a3f99aa06b98b2e2906291c54c9ae063",
+      "bytes": 46511,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/geometry_of_resonance/blob/a0048ef751a8876a9494f6de24b952ebc1db7213/WCT_FULL_EQUATION_LIST_CORRECTED.md"
+    },
+    {
+      "id": "S007",
+      "repository": "rickyjreyes/wct-pde",
+      "path": "docs/EQUATION_MAP.md",
+      "revision": "ecc2a446cc8fbf2f104bc49aa0a9fdf5a9739876",
+      "git_blob_sha1": "feec92f74240ba40c18a2a2047e27f3d9b443986",
+      "sha256": "6663939b18ee71d8e51a120d2d777275975e255b2261cccd2c760a5f65ad31ee",
+      "bytes": 1471,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-pde/blob/ecc2a446cc8fbf2f104bc49aa0a9fdf5a9739876/docs/EQUATION_MAP.md"
+    },
+    {
+      "id": "S008",
+      "repository": "rickyjreyes/wct-pde",
+      "path": "docs/SCIENTIFIC_BOUNDARY.md",
+      "revision": "ecc2a446cc8fbf2f104bc49aa0a9fdf5a9739876",
+      "git_blob_sha1": "fdc17297cce5e58f5fd48088762e948279b271d1",
+      "sha256": "203a65039185a7f14d614a04ce9d42d2198a8ebde7755db4667487d98f6e25d6",
+      "bytes": 5132,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-pde/blob/ecc2a446cc8fbf2f104bc49aa0a9fdf5a9739876/docs/SCIENTIFIC_BOUNDARY.md"
+    },
+    {
+      "id": "S009",
+      "repository": "rickyjreyes/wct-pde",
+      "path": "docs/PROJECTION_FREE_CONFINEMENT.md",
+      "revision": "ecc2a446cc8fbf2f104bc49aa0a9fdf5a9739876",
+      "git_blob_sha1": "23d99f6b1e5e0d714b2d792062f57c5a0c12d04f",
+      "sha256": "de767c554adb070903059d44f6d7e7d03f8247f4893ac5866ae6423e8cfd2617",
+      "bytes": 4008,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-pde/blob/ecc2a446cc8fbf2f104bc49aa0a9fdf5a9739876/docs/PROJECTION_FREE_CONFINEMENT.md"
+    },
+    {
+      "id": "S010",
+      "repository": "rickyjreyes/wct-pde",
+      "path": "docs/TOPOLOGY_SPECTRAL_LOCK.md",
+      "revision": "ecc2a446cc8fbf2f104bc49aa0a9fdf5a9739876",
+      "git_blob_sha1": "a3e658ace649018683761b6bb0ce9eeb4e36f0a5",
+      "sha256": "47acb45c4f7825bac11abde63700c6a8de29c7a63f4fb3ffc0a774d426a265fb",
+      "bytes": 5754,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-pde/blob/ecc2a446cc8fbf2f104bc49aa0a9fdf5a9739876/docs/TOPOLOGY_SPECTRAL_LOCK.md"
+    },
+    {
+      "id": "S011",
+      "repository": "rickyjreyes/wct-pde",
+      "path": "src/wct_pde/projection_free.py",
+      "revision": "ecc2a446cc8fbf2f104bc49aa0a9fdf5a9739876",
+      "git_blob_sha1": "7af71d28ac1d22f91e61dd10b53436bb1d2ea0f3",
+      "sha256": "24a172c650b4e2d722855f3c3e0ed0b66ae8117ae81b70ab5dc3af3ae486ddc1",
+      "bytes": 22978,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-pde/blob/ecc2a446cc8fbf2f104bc49aa0a9fdf5a9739876/src/wct_pde/projection_free.py"
+    },
+    {
+      "id": "S012",
+      "repository": "rickyjreyes/wct-pde",
+      "path": "src/wct_pde/reference.py",
+      "revision": "ecc2a446cc8fbf2f104bc49aa0a9fdf5a9739876",
+      "git_blob_sha1": "2a0d716e9a33b92d3d42094f8e23cea243035cd4",
+      "sha256": "66730b725d2e29cab278a1bab06727d159b09e4437ca46ab4dd6e5baf1f51c7d",
+      "bytes": 8632,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-pde/blob/ecc2a446cc8fbf2f104bc49aa0a9fdf5a9739876/src/wct_pde/reference.py"
+    },
+    {
+      "id": "S013",
+      "repository": "rickyjreyes/wct-lean",
+      "path": "README.md",
+      "revision": "dea05da8a6e40361e79ee685a7939a4c6f9a8696",
+      "git_blob_sha1": "e24795d4d5f9d5d8be55edf9c582a21d77c44e2a",
+      "sha256": "3b80828e716038a486866027bd20b751ba60ad3b1c1347c6b9e48aad971a793b",
+      "bytes": 9197,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-lean/blob/dea05da8a6e40361e79ee685a7939a4c6f9a8696/README.md"
+    },
+    {
+      "id": "S014",
+      "repository": "rickyjreyes/wct-lean",
+      "path": "WCTLean/Contracts/Analytic.lean",
+      "revision": "dea05da8a6e40361e79ee685a7939a4c6f9a8696",
+      "git_blob_sha1": "f17151bd256611fcccbe30ad2d68f069b34992c6",
+      "sha256": "10106fc68745b521f2c4b8f2e1773ac476ec18a64872c3d20d113c64634a4153",
+      "bytes": 2518,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-lean/blob/dea05da8a6e40361e79ee685a7939a4c6f9a8696/WCTLean/Contracts/Analytic.lean"
+    },
+    {
+      "id": "S015",
+      "repository": "rickyjreyes/wct-lean",
+      "path": "WCTLean/Models/CurvatureOperator.lean",
+      "revision": "dea05da8a6e40361e79ee685a7939a4c6f9a8696",
+      "git_blob_sha1": "21eec91baf935cb1aadbe5c3f8da35e7c27bbc8e",
+      "sha256": "44ce3cba2981862dcca07034dab20e94efc9ae065fe34790ca15c4b12e4c59d1",
+      "bytes": 1547,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-lean/blob/dea05da8a6e40361e79ee685a7939a4c6f9a8696/WCTLean/Models/CurvatureOperator.lean"
+    },
+    {
+      "id": "S016",
+      "repository": "rickyjreyes/wct-lean",
+      "path": "WCTLean/Models/ComplexCurvature.lean",
+      "revision": "dea05da8a6e40361e79ee685a7939a4c6f9a8696",
+      "git_blob_sha1": "42572778a7d3ba3eca6b718b55b8d3ef4c41d3c3",
+      "sha256": "78ba3a08b346323e4314ce4d6476f392f83447837ad240b1821298a5a6d34a2d",
+      "bytes": 3775,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-lean/blob/dea05da8a6e40361e79ee685a7939a4c6f9a8696/WCTLean/Models/ComplexCurvature.lean"
+    },
+    {
+      "id": "S017",
+      "repository": "rickyjreyes/wct-lean",
+      "path": "WCTLean/Models/LogFlow.lean",
+      "revision": "dea05da8a6e40361e79ee685a7939a4c6f9a8696",
+      "git_blob_sha1": "6d963468dce9a6b5e092882bdd98cd1832112ce6",
+      "sha256": "a6ba437cb577a6c0df562da4d3f6de97bb30ddacb6b6560b450f3a8e61319078",
+      "bytes": 2856,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-lean/blob/dea05da8a6e40361e79ee685a7939a4c6f9a8696/WCTLean/Models/LogFlow.lean"
+    },
+    {
+      "id": "S018",
+      "repository": "rickyjreyes/wct-lean",
+      "path": "WCTLean/Models/Locking.lean",
+      "revision": "dea05da8a6e40361e79ee685a7939a4c6f9a8696",
+      "git_blob_sha1": "1708f80592ef934d8736864294c23e42bdf83bd6",
+      "sha256": "5f948612be9657d000dcb15cb05a1c23b63208efccb3a2fe3c08cda74a76c2c5",
+      "bytes": 3308,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-lean/blob/dea05da8a6e40361e79ee685a7939a4c6f9a8696/WCTLean/Models/Locking.lean"
+    },
+    {
+      "id": "S019",
+      "repository": "rickyjreyes/wct-lean",
+      "path": "WCTLean/Models/ClosureFormalization.lean",
+      "revision": "dea05da8a6e40361e79ee685a7939a4c6f9a8696",
+      "git_blob_sha1": "a3bf53437391f84d8ff07e059c76e172cdd42cbd",
+      "sha256": "87a82d19533a255a0f947fad8df09b076007d1673b3eaf58fd6516cca7b751ba",
+      "bytes": 6050,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-lean/blob/dea05da8a6e40361e79ee685a7939a4c6f9a8696/WCTLean/Models/ClosureFormalization.lean"
+    },
+    {
+      "id": "S020",
+      "repository": "rickyjreyes/wct-fem",
+      "path": "docs/SCIENTIFIC_BOUNDARY.md",
+      "revision": "e6e3216ae3262d9105f3aeab607e9940056dd007",
+      "git_blob_sha1": "cc31226def95ce84b66ed6fae12d68475b24a147",
+      "sha256": "7382feb9c6d35f548a57bccbd8f22dc0f717a388bbc414d395a7536ea2f551bf",
+      "bytes": 2787,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-fem/blob/e6e3216ae3262d9105f3aeab607e9940056dd007/docs/SCIENTIFIC_BOUNDARY.md"
+    },
+    {
+      "id": "S021",
+      "repository": "rickyjreyes/wct-fem",
+      "path": "docs/PROJECTION_FREE_NONLINEAR_FEM.md",
+      "revision": "e6e3216ae3262d9105f3aeab607e9940056dd007",
+      "git_blob_sha1": "3875fd1624e6dbc8210ce3ea85c911d35847fb45",
+      "sha256": "4cbc1c3f733663bec82ac80d07d5c98d6e725080362fc54f259937ff9addd67d",
+      "bytes": 3996,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-fem/blob/e6e3216ae3262d9105f3aeab607e9940056dd007/docs/PROJECTION_FREE_NONLINEAR_FEM.md"
+    },
+    {
+      "id": "S022",
+      "repository": "rickyjreyes/wct-sympy",
+      "path": "equations/assumptions.yaml",
+      "revision": "9656863097da396fa2c8d0b8ea190afeabdd05d8",
+      "git_blob_sha1": "08f6fbb2202aab12cde57580cd9eee720966712b",
+      "sha256": "472ae3dcfd2b5d6bcecf354df4f2e12b2c84a8357b245e60218bcd54818d99e3",
+      "bytes": 1778,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-sympy/blob/9656863097da396fa2c8d0b8ea190afeabdd05d8/equations/assumptions.yaml"
+    },
+    {
+      "id": "S023",
+      "repository": "rickyjreyes/wct-sympy",
+      "path": "wct_sympy/paper_closure_checks.py",
+      "revision": "9656863097da396fa2c8d0b8ea190afeabdd05d8",
+      "git_blob_sha1": "03224a47a0f57192a382f1b50ed4655335a8f446",
+      "sha256": "b9728789ecac6e4601076e09239c59312151f00eeb020a78d9b78d2c9682fdbe",
+      "bytes": 5501,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-sympy/blob/9656863097da396fa2c8d0b8ea190afeabdd05d8/wct_sympy/paper_closure_checks.py"
+    },
+    {
+      "id": "S024",
+      "repository": "rickyjreyes/wave_confinement",
+      "path": "Photon/The_Geometry_Of_Resonance.tex",
+      "revision": "5237376dcfe5ac38f920a708240c4e49f21ae6ca",
+      "git_blob_sha1": "b588b1c74c2cfd99b8c8297dde13a1caaef0cc64",
+      "sha256": "072e2d0f2d8d6f4d6b70b88663e8fc87c1c3ef0c9682aaaff26eae92f960adde",
+      "bytes": 324372,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wave_confinement/blob/5237376dcfe5ac38f920a708240c4e49f21ae6ca/Photon/The_Geometry_Of_Resonance.tex"
+    },
+    {
+      "id": "S025",
+      "repository": "rickyjreyes/wct-sympy",
+      "path": "README.md",
+      "revision": "9656863097da396fa2c8d0b8ea190afeabdd05d8",
+      "git_blob_sha1": "802c0c85057ad02e2c83e264d75c1e5e426b6493",
+      "sha256": "625f338d25cb70c7bcb3390f7d3c1f0e723289f93d9f2e015d04ba64cd0cd8aa",
+      "bytes": 7390,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-sympy/blob/9656863097da396fa2c8d0b8ea190afeabdd05d8/README.md"
+    },
+    {
+      "id": "S026",
+      "repository": "rickyjreyes/wct-sympy",
+      "path": "equations/verification_metadata.yaml",
+      "revision": "9656863097da396fa2c8d0b8ea190afeabdd05d8",
+      "git_blob_sha1": "100f54773e29c6b7ae8dcfc5926bae2500580c16",
+      "sha256": "6e9e9ae67f38d92481740681e6a9762a9cc3acb01961821d62dce239eb3c610f",
+      "bytes": 10551,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-sympy/blob/9656863097da396fa2c8d0b8ea190afeabdd05d8/equations/verification_metadata.yaml"
+    },
+    {
+      "id": "S027",
+      "repository": "rickyjreyes/wct-sympy",
+      "path": "equations/derived_overrides.yaml",
+      "revision": "9656863097da396fa2c8d0b8ea190afeabdd05d8",
+      "git_blob_sha1": "39ba87cc5c3f1f9998d51b166cd16ab1f10fd973",
+      "sha256": "332082d5803bcbb676655cc9a46c054fdf4e76e704ce26201577e742816239e3",
+      "bytes": 1468,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-sympy/blob/9656863097da396fa2c8d0b8ea190afeabdd05d8/equations/derived_overrides.yaml"
+    },
+    {
+      "id": "S028",
+      "repository": "rickyjreyes/wct-lean",
+      "path": "WCTLean/Models/PhaseFlux.lean",
+      "revision": "dea05da8a6e40361e79ee685a7939a4c6f9a8696",
+      "git_blob_sha1": "36c221caaf9b6ab063c94b33796bc392707fc35c",
+      "sha256": "dcd8fa6ee27080fb8f1b17620c5b8f2e8bfbe55bd7fcc82291fef7eff475423b",
+      "bytes": 1608,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-lean/blob/dea05da8a6e40361e79ee685a7939a4c6f9a8696/WCTLean/Models/PhaseFlux.lean"
+    },
+    {
+      "id": "S029",
+      "repository": "rickyjreyes/wct-lean",
+      "path": "WCTLean/Models/BandPass.lean",
+      "revision": "dea05da8a6e40361e79ee685a7939a4c6f9a8696",
+      "git_blob_sha1": "6b65f6829d316cf153d719251f5e98f76123e7e7",
+      "sha256": "bb6dd662912ab5aafc10e1b622dfc397f28aef9d0dbd75fad36be980b128034d",
+      "bytes": 3486,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-lean/blob/dea05da8a6e40361e79ee685a7939a4c6f9a8696/WCTLean/Models/BandPass.lean"
+    },
+    {
+      "id": "S030",
+      "repository": "rickyjreyes/wct-lean",
+      "path": "WCTLean/Energy.lean",
+      "revision": "dea05da8a6e40361e79ee685a7939a4c6f9a8696",
+      "git_blob_sha1": "cda13c6c33f0187719de5612c794952bb9e9734c",
+      "sha256": "b3192bd16db865353da68f7bcc49d5e08592010f62b0c98daf4aade7152ca243",
+      "bytes": 1209,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-lean/blob/dea05da8a6e40361e79ee685a7939a4c6f9a8696/WCTLean/Energy.lean"
+    },
+    {
+      "id": "S031",
+      "repository": "rickyjreyes/wct-fem",
+      "path": "README.md",
+      "revision": "e6e3216ae3262d9105f3aeab607e9940056dd007",
+      "git_blob_sha1": "b03f4d9e40e03aa37fd5381adcd04c5290f05451",
+      "sha256": "75f88b720d8de274ef3a4f40347dc29dd26faad79edff32b4422906cd92726dd",
+      "bytes": 7473,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-fem/blob/e6e3216ae3262d9105f3aeab607e9940056dd007/README.md"
+    },
+    {
+      "id": "S032",
+      "repository": "rickyjreyes/wct-fem",
+      "path": "docs/WCT_PDE_REPRODUCTION.md",
+      "revision": "e6e3216ae3262d9105f3aeab607e9940056dd007",
+      "git_blob_sha1": "3fe0809fd07d8d4eba80b9130bfbd7d3d191c1d2",
+      "sha256": "8774a5c2d6ae704e1a45b97b2e4853367214a10744746ec8314f9ed1f1f508b1",
+      "bytes": 3613,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-fem/blob/e6e3216ae3262d9105f3aeab607e9940056dd007/docs/WCT_PDE_REPRODUCTION.md"
+    },
+    {
+      "id": "S033",
+      "repository": "rickyjreyes/wct-fem",
+      "path": "src/wct_fem/projection_free/core.py",
+      "revision": "e6e3216ae3262d9105f3aeab607e9940056dd007",
+      "git_blob_sha1": "407b43f8e35f904879b13549faea1976377f6436",
+      "sha256": "ffd435b4df2bd29744e90c9686d283255eb5bb5c6a5a26e77d3dbf00582e145d",
+      "bytes": 12462,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-fem/blob/e6e3216ae3262d9105f3aeab607e9940056dd007/src/wct_fem/projection_free/core.py"
+    },
+    {
+      "id": "S034",
+      "repository": "rickyjreyes/wct-julia",
+      "path": "README.md",
+      "revision": "6bf0695935029805a3263f08edc2790615660bc5",
+      "git_blob_sha1": "f2f1b9c0aa1e3ddd7b70eb3d08381cf1ffc6205a",
+      "sha256": "1e7d357ed60985da5ef6aa7ba6f75a0662c36c2e11e38a3a76ed02eab4a1ce18",
+      "bytes": 6314,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-julia/blob/6bf0695935029805a3263f08edc2790615660bc5/README.md"
+    },
+    {
+      "id": "S035",
+      "repository": "rickyjreyes/wct-julia",
+      "path": "src/sciml_models.jl",
+      "revision": "6bf0695935029805a3263f08edc2790615660bc5",
+      "git_blob_sha1": "faed8fb063715b2810803ec09f00085345a8858d",
+      "sha256": "84aba5a3532dfae97f2f8d56fda2cc38310334d193960a02587d7ca2bed0b49f",
+      "bytes": 14321,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-julia/blob/6bf0695935029805a3263f08edc2790615660bc5/src/sciml_models.jl"
+    },
+    {
+      "id": "S036",
+      "repository": "rickyjreyes/wct-julia",
+      "path": "results/math_physics_analysis/REPORT.md",
+      "revision": "6bf0695935029805a3263f08edc2790615660bc5",
+      "git_blob_sha1": "6f0a219c80aa14e43d11507ba7d2fab9dc0bd19e",
+      "sha256": "df1f02b1af8433daad28a9cee00620ca7deab4eb1cfd75cc9fea7ee7a9e94040",
+      "bytes": 4002,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-julia/blob/6bf0695935029805a3263f08edc2790615660bc5/results/math_physics_analysis/REPORT.md"
+    },
+    {
+      "id": "S037",
+      "repository": "rickyjreyes/periodic",
+      "path": "WCT_NATIVE_SHELL_DERIVATION.md",
+      "revision": "a26e33666d9792171123927b892dc25b9b7e085a",
+      "git_blob_sha1": "473b697e3c4e91a53f0582928d5a60a801171d38",
+      "sha256": "faf630c274702e02a160855332d6738da803972a6b8a82cc16fcb7eacc1b52a6",
+      "bytes": 12837,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/periodic/blob/a26e33666d9792171123927b892dc25b9b7e085a/WCT_NATIVE_SHELL_DERIVATION.md"
+    },
+    {
+      "id": "S038",
+      "repository": "rickyjreyes/periodic",
+      "path": "WCT_SOURCE_COUPLED.md",
+      "revision": "a26e33666d9792171123927b892dc25b9b7e085a",
+      "git_blob_sha1": "4c95279f01d5989c488c7e5f1d0a05b96207bf01",
+      "sha256": "89cf7532bc05e8e68cb61e3749ffc00586025c4d65e92420391b1d9df5c8c6cb",
+      "bytes": 7055,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/periodic/blob/a26e33666d9792171123927b892dc25b9b7e085a/WCT_SOURCE_COUPLED.md"
+    },
+    {
+      "id": "S039",
+      "repository": "rickyjreyes/eigen",
+      "path": "EIGEN_VALIDATION_PROTOCOL.md",
+      "revision": "d679c5c48c8608f5a56b573f898d65cceb3753c2",
+      "git_blob_sha1": "3720d11b6347b439d85cb5ce6eb050340602e0b9",
+      "sha256": "c3a987562a2819fc0382bf74dc6844716d072ff85cf1efd8f6a34e1d139fae00",
+      "bytes": 2326,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/eigen/blob/d679c5c48c8608f5a56b573f898d65cceb3753c2/EIGEN_VALIDATION_PROTOCOL.md"
+    },
+    {
+      "id": "S040",
+      "repository": "rickyjreyes/eigen",
+      "path": "wct_eigen_validation.py",
+      "revision": "d679c5c48c8608f5a56b573f898d65cceb3753c2",
+      "git_blob_sha1": "8be8090cba6e4c278c0d747da8a6379ab51d16ad",
+      "sha256": "2ed4abd76870a9ee5c31b89137dec419dbbfea547e423b65e86fbdc16801df1b",
+      "bytes": 4724,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/eigen/blob/d679c5c48c8608f5a56b573f898d65cceb3753c2/wct_eigen_validation.py"
+    },
+    {
+      "id": "S041",
+      "repository": "rickyjreyes/mass",
+      "path": "MASS_VALIDATION_PROTOCOL.md",
+      "revision": "41d1adb6741403257a3019d4aa899a4918f19d43",
+      "git_blob_sha1": "e2646efca769674dce5009793ffb5d4667fefc3f",
+      "sha256": "3524f16b9816f4cfb1db7161822044ba1495f97be9291ef35f0e9321cddfd505",
+      "bytes": 4788,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/mass/blob/41d1adb6741403257a3019d4aa899a4918f19d43/MASS_VALIDATION_PROTOCOL.md"
+    },
+    {
+      "id": "S042",
+      "repository": "rickyjreyes/mass",
+      "path": "wct_mass_validation.py",
+      "revision": "41d1adb6741403257a3019d4aa899a4918f19d43",
+      "git_blob_sha1": "5ce4855b23617548cfabb4046f14d3439804cad8",
+      "sha256": "327dd23898a6b3b5ba666066fad11105ca7fce20f82a95917cbcba4b923d3617",
+      "bytes": 11389,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/mass/blob/41d1adb6741403257a3019d4aa899a4918f19d43/wct_mass_validation.py"
+    },
+    {
+      "id": "S043",
+      "repository": "rickyjreyes/wct-pde",
+      "path": "README.md",
+      "revision": "d5335dc0fab77e14b66feb7e1a943c2c31eeaa19",
+      "git_blob_sha1": "ebcadf60f401c9a7e7f539d3c948ba428e373c5b",
+      "sha256": "a569ed6ae2a979507e5245aede877eab5434cffeb4e312de8eba2f9b271c68d7",
+      "bytes": 11483,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-pde/blob/d5335dc0fab77e14b66feb7e1a943c2c31eeaa19/README.md"
+    },
+    {
+      "id": "S044",
+      "repository": "rickyjreyes/wct-pde",
+      "path": "docs/PROJECTION_FREE_CLOSURE_AUDIT.md",
+      "revision": "d5335dc0fab77e14b66feb7e1a943c2c31eeaa19",
+      "git_blob_sha1": "a13930fb028f5d1ce756181be169f45bf1a0651e",
+      "sha256": "b142f192e94f250ae91a63d547982e87e8e5aaf11c1224dc7c66b9332f00b17d",
+      "bytes": 33579,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-pde/blob/d5335dc0fab77e14b66feb7e1a943c2c31eeaa19/docs/PROJECTION_FREE_CLOSURE_AUDIT.md"
+    },
+    {
+      "id": "S045",
+      "repository": "rickyjreyes/wct-pde",
+      "path": "docs/evidence/d4_temporal_refinement_pending/closure_report.md",
+      "revision": "d5335dc0fab77e14b66feb7e1a943c2c31eeaa19",
+      "git_blob_sha1": "b3732ba573abd6e9890709d4488c208fd655fd34",
+      "sha256": "79e86d54140da1c9c1293de36a63802f95fd70144de92bc3c50d1a4ab1459ff7",
+      "bytes": 2360,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-pde/blob/d5335dc0fab77e14b66feb7e1a943c2c31eeaa19/docs/evidence/d4_temporal_refinement_pending/closure_report.md"
+    },
+    {
+      "id": "S046",
+      "repository": "rickyjreyes/wct-pde",
+      "path": "docs/evidence/d4_temporal_refinement_pending/closure_report.json",
+      "revision": "d5335dc0fab77e14b66feb7e1a943c2c31eeaa19",
+      "git_blob_sha1": "91ca1062a5efd528b69b058a6de909501cd06d8c",
+      "sha256": "946c5098ffc2272065224c1451da81e6b7921ae6e7ecb93f9a765243b7272008",
+      "bytes": 15229,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-pde/blob/d5335dc0fab77e14b66feb7e1a943c2c31eeaa19/docs/evidence/d4_temporal_refinement_pending/closure_report.json"
+    },
+    {
+      "id": "S047",
+      "repository": "rickyjreyes/wct-pde",
+      "path": "docs/evidence/projection_free_closure_audit/verification.json",
+      "revision": "d5335dc0fab77e14b66feb7e1a943c2c31eeaa19",
+      "git_blob_sha1": "b6893a962abd1c2199dd95b27b55af799a0183ef",
+      "sha256": "398b4ecb17af40e91f9eeb11155f4050b1b714f96b7add263fa6bfe0262026a1",
+      "bytes": 30398,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-pde/blob/d5335dc0fab77e14b66feb7e1a943c2c31eeaa19/docs/evidence/projection_free_closure_audit/verification.json"
+    },
+    {
+      "id": "S048",
+      "repository": "rickyjreyes/wct-pde",
+      "path": "docs/TOPOLOGY_SPECTRAL_LOCK_CONVERGENCE_V2.md",
+      "revision": "d5335dc0fab77e14b66feb7e1a943c2c31eeaa19",
+      "git_blob_sha1": "92b89beb24a064d0a306f1319e1c4f316144f08f",
+      "sha256": "708f3b58df5c86b9682967b25bc1cdd80208e586cb69c2af43e4c8256854df83",
+      "bytes": 3198,
+      "coverage": "FULL_FILE",
+      "exact_git_blob_verified": true,
+      "url": "https://github.com/rickyjreyes/wct-pde/blob/d5335dc0fab77e14b66feb7e1a943c2c31eeaa19/docs/TOPOLOGY_SPECTRAL_LOCK_CONVERGENCE_V2.md"
+    }
+  ],
+  "paper_sources": [
+    {
+      "id": "P01",
+      "library_file_id": "libfile_d34ff4c361848191bd63009f5350cae3",
+      "backing_file_id": "file_00000000d76081fda39e8d488828b892",
+      "name": "The_Geometry_Of_Resonance.pdf",
+      "revision_description": "March 22, 2026 internal date; selected governing-equation and curvature sections",
+      "version_id": null,
+      "created_at": "2026-09-14T22:10:04.113273Z",
+      "modified_at": "2026-09-14T22:10:04.113273Z",
+      "size_bytes_reported": 13838196,
+      "total_extracted_lines": 12303,
+      "unique_lines_read": 1579,
+      "full_extracted_text_read": false,
+      "read_windows": [
+        {
+          "start_line": 1,
+          "end_line": 1000,
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          "sha256_of_content_array": "e9719777af5fb88a8254b9af2db0bed8c26ad50cf2a2b59e1fa773eb1fa0416a",
+          "hash_encoding": "UTF-8 JSON of returned content array; ensure_ascii=False, separators=(comma,colon)",
+          "content_blocks": 52,
+          "warnings": []
+        },
+        {
+          "start_line": 960,
+          "end_line": 1339,
+          "pages": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34
+          ],
+          "sha256_of_content_array": "3ee868183f0ca6873c4de8fca49c5c199b2bcdac0eaba82b9072bfa6a2d2088e",
+          "hash_encoding": "UTF-8 JSON of returned content array; ensure_ascii=False, separators=(comma,colon)",
+          "content_blocks": 17,
+          "warnings": []
+        },
+        {
+          "start_line": 2380,
+          "end_line": 2619,
+          "pages": [
+            60,
+            61,
+            62,
+            63,
+            64,
+            65
+          ],
+          "sha256_of_content_array": "171be77c22fde183db53fa517527c2838fa777747ea337f8be092dfe074b9780",
+          "hash_encoding": "UTF-8 JSON of returned content array; ensure_ascii=False, separators=(comma,colon)",
+          "content_blocks": 10,
+          "warnings": []
+        }
+      ],
+      "original_binary_hash": null,
+      "limitation": "Hash identifies returned extracted text, not original PDF/TeX bytes; no invented immutable version ID."
+    },
+    {
+      "id": "P02",
+      "library_file_id": "libfile_a6e73284002c8191ab876366f7ffd2e7",
+      "backing_file_id": "file_00000000f42081fdabe7f0e524731cdf",
+      "name": "Phase Flux(20260914-221052).pdf",
+      "revision_description": "November 29, 2025 internal revision; original September 8, 2025",
+      "version_id": null,
+      "created_at": "2026-09-14T22:10:54.989199Z",
+      "modified_at": "2026-09-14T22:10:54.989199Z",
+      "size_bytes_reported": 5863572,
+      "total_extracted_lines": 1914,
+      "unique_lines_read": 1914,
+      "full_extracted_text_read": true,
+      "read_windows": [
+        {
+          "start_line": 1,
+          "end_line": 1000,
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "sha256_of_content_array": "30602013258214c261f8c09c5518d97355262d6f245de89222dff74b0da69806",
+          "hash_encoding": "UTF-8 JSON of returned content array; ensure_ascii=False, separators=(comma,colon)",
+          "content_blocks": 34,
+          "warnings": []
+        },
+        {
+          "start_line": 1001,
+          "end_line": 1914,
+          "pages": [
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28
+          ],
+          "sha256_of_content_array": "8cd3b15f19f92abcc78c749ae8699124b3645a05bb41042697aca4b2da99b7c6",
+          "hash_encoding": "UTF-8 JSON of returned content array; ensure_ascii=False, separators=(comma,colon)",
+          "content_blocks": 23,
+          "warnings": []
+        }
+      ],
+      "original_binary_hash": null,
+      "limitation": "Hash identifies returned extracted text, not original PDF/TeX bytes; no invented immutable version ID."
+    },
+    {
+      "id": "P03",
+      "library_file_id": "libfile_b0c2bea21de88191bbd6a5e0179c25ed",
+      "backing_file_id": "file_00000000365081fba19ef7f100ab220c",
+      "name": "bijection_UPDATED.tex",
+      "revision_description": "August 20, 2026 revised TeX",
+      "version_id": null,
+      "created_at": "2026-08-20T10:57:44.764926Z",
+      "modified_at": "2026-08-20T10:57:44.764926Z",
+      "size_bytes_reported": 22689,
+      "total_extracted_lines": 643,
+      "unique_lines_read": 643,
+      "full_extracted_text_read": true,
+      "read_windows": [
+        {
+          "start_line": 1,
+          "end_line": 643,
+          "pages": [],
+          "sha256_of_content_array": "d5c50198255a3f9f48eaded71c21c85c1d34156e975015def4440f83caf3570d",
+          "hash_encoding": "UTF-8 JSON of returned content array; ensure_ascii=False, separators=(comma,colon)",
+          "content_blocks": 1,
+          "warnings": []
+        }
+      ],
+      "original_binary_hash": null,
+      "limitation": "Hash identifies returned extracted text, not original PDF/TeX bytes; no invented immutable version ID."
+    },
+    {
+      "id": "P04",
+      "library_file_id": "libfile_4add67086e88819193e445cf3f93dc0b",
+      "backing_file_id": "file_000000005a7081fdb0c27cec0dc62d06",
+      "name": "Filament_Reduction_and_Phase_Quantization_Revised_2026-09-10.tex",
+      "revision_description": "September 10, 2026 revised TeX",
+      "version_id": null,
+      "created_at": "2026-09-10T23:53:36.535587Z",
+      "modified_at": "2026-09-10T23:53:36.535587Z",
+      "size_bytes_reported": 34674,
+      "total_extracted_lines": 715,
+      "unique_lines_read": 715,
+      "full_extracted_text_read": true,
+      "read_windows": [
+        {
+          "start_line": 1,
+          "end_line": 715,
+          "pages": [],
+          "sha256_of_content_array": "adb9649afe205303373109e12fbfad6f61d5025378af0936a3dbc6df21becf3c",
+          "hash_encoding": "UTF-8 JSON of returned content array; ensure_ascii=False, separators=(comma,colon)",
+          "content_blocks": 1,
+          "warnings": [
+            "Full-text fetch was unavailable; parsed the backing file directly instead."
+          ]
+        }
+      ],
+      "original_binary_hash": null,
+      "limitation": "Hash identifies returned extracted text, not original PDF/TeX bytes; no invented immutable version ID."
+    },
+    {
+      "id": "P05",
+      "library_file_id": "libfile_7081ef2d175c8191a48967bca82d5674",
+      "backing_file_id": "file_00000000f6c881fbb47912e4f634938f",
+      "name": "koide_236_A2_SU3_braid_phase_window_covariance_upgrade.tex",
+      "revision_description": "October 6, 2026 revised TeX",
+      "version_id": null,
+      "created_at": "2026-10-06T18:23:53.053062Z",
+      "modified_at": "2026-10-06T18:23:53.053062Z",
+      "size_bytes_reported": 46801,
+      "total_extracted_lines": 926,
+      "unique_lines_read": 926,
+      "full_extracted_text_read": true,
+      "read_windows": [
+        {
+          "start_line": 1,
+          "end_line": 926,
+          "pages": [],
+          "sha256_of_content_array": "5b2efb0f54e3515bb1915e55b73e390f3b1bd3870f5e147f8844c85ba45fd11b",
+          "hash_encoding": "UTF-8 JSON of returned content array; ensure_ascii=False, separators=(comma,colon)",
+          "content_blocks": 1,
+          "warnings": []
+        }
+      ],
+      "original_binary_hash": null,
+      "limitation": "Hash identifies returned extracted text, not original PDF/TeX bytes; no invented immutable version ID."
+    },
+    {
+      "id": "P06",
+      "library_file_id": "libfile_22717fdec42c8191b0a62fbe4650f613",
+      "backing_file_id": "file_0000000049ec81fdb56dad985697aa0f",
+      "name": "WCT_Koide_With_Thin_Shell_Curvature_Derivation_Original_2025-12-10_Revised_2026-09-10(3).pdf",
+      "revision_description": "September 10, 2026 revised thin-shell PDF; original December 10, 2025",
+      "version_id": null,
+      "created_at": "2026-09-14T23:14:23.078764Z",
+      "modified_at": "2026-09-14T23:14:23.078764Z",
+      "size_bytes_reported": 404366,
+      "total_extracted_lines": 1410,
+      "unique_lines_read": 1410,
+      "full_extracted_text_read": true,
+      "read_windows": [
+        {
+          "start_line": 1,
+          "end_line": 1000,
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "sha256_of_content_array": "115808e8c38e95404b308f222a3a404aa2403ce241771b0a4e44549edec0e8bf",
+          "hash_encoding": "UTF-8 JSON of returned content array; ensure_ascii=False, separators=(comma,colon)",
+          "content_blocks": 30,
+          "warnings": []
+        },
+        {
+          "start_line": 1001,
+          "end_line": 1410,
+          "pages": [
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "sha256_of_content_array": "9c6fb7cbe4c9cb661b5fbfc6f71e3b4fb9a4b567bfa6f8afae0002809c379ef3",
+          "hash_encoding": "UTF-8 JSON of returned content array; ensure_ascii=False, separators=(comma,colon)",
+          "content_blocks": 17,
+          "warnings": []
+        }
+      ],
+      "original_binary_hash": null,
+      "limitation": "Hash identifies returned extracted text, not original PDF/TeX bytes; no invented immutable version ID."
+    },
+    {
+      "id": "P07",
+      "library_file_id": "libfile_31843fb8290c8191a9387a3b4f97a8ef",
+      "backing_file_id": "file_0000000015b481fb9b8c0d0674836865",
+      "name": "Emergence of Effective Mass Solenoidal Topology of Vibrational Energy(20260815-064411).pdf",
+      "revision_description": "October 27, 2025 internal date",
+      "version_id": null,
+      "created_at": "2026-08-15T06:44:14.579873Z",
+      "modified_at": "2026-08-15T06:44:14.579873Z",
+      "size_bytes_reported": 14417592,
+      "total_extracted_lines": 1927,
+      "unique_lines_read": 1927,
+      "full_extracted_text_read": true,
+      "read_windows": [
+        {
+          "start_line": 1,
+          "end_line": 1000,
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "sha256_of_content_array": "091f70fdee87fc35c7f629fad04ce3b4b1faf10f7fc30fa0b9a37a04de4f1a52",
+          "hash_encoding": "UTF-8 JSON of returned content array; ensure_ascii=False, separators=(comma,colon)",
+          "content_blocks": 50,
+          "warnings": []
+        },
+        {
+          "start_line": 1001,
+          "end_line": 1927,
+          "pages": [
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "sha256_of_content_array": "388754f3c7b8f7f1fa46c703f0847292956ab127907baa5de46b9fcf98bc540c",
+          "hash_encoding": "UTF-8 JSON of returned content array; ensure_ascii=False, separators=(comma,colon)",
+          "content_blocks": 37,
+          "warnings": []
+        }
+      ],
+      "original_binary_hash": null,
+      "limitation": "Hash identifies returned extracted text, not original PDF/TeX bytes; no invented immutable version ID."
+    },
+    {
+      "id": "P08",
+      "library_file_id": "libfile_9bb10dc73aa48191977f9491972eb1f7",
+      "backing_file_id": "file_00000000820081fd84cc452c6b352d36",
+      "name": "Rest Energy from Density(20260914-221931).pdf",
+      "revision_description": "June 3, 2026 internal revision; original November 11, 2025",
+      "version_id": null,
+      "created_at": "2026-09-14T22:19:34.415099Z",
+      "modified_at": "2026-09-14T22:19:34.415099Z",
+      "size_bytes_reported": 612824,
+      "total_extracted_lines": 3036,
+      "unique_lines_read": 3036,
+      "full_extracted_text_read": true,
+      "read_windows": [
+        {
+          "start_line": 1,
+          "end_line": 1000,
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "sha256_of_content_array": "7c7f277c793b1f040f2430be6a187c33d2160389a779e512250cba94fae67a6b",
+          "hash_encoding": "UTF-8 JSON of returned content array; ensure_ascii=False, separators=(comma,colon)",
+          "content_blocks": 18,
+          "warnings": []
+        },
+        {
+          "start_line": 1001,
+          "end_line": 2000,
+          "pages": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "sha256_of_content_array": "df191c2a270c28741a7f1cd2432e275cf0ade21f17f3c49e382fabdd8f8a92e9",
+          "hash_encoding": "UTF-8 JSON of returned content array; ensure_ascii=False, separators=(comma,colon)",
+          "content_blocks": 21,
+          "warnings": []
+        },
+        {
+          "start_line": 2001,
+          "end_line": 3000,
+          "pages": [
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27
+          ],
+          "sha256_of_content_array": "8fd652cea8c697d85173b5267be62fc0896a28c6cace2c96e5fed93f1e0ae86e",
+          "hash_encoding": "UTF-8 JSON of returned content array; ensure_ascii=False, separators=(comma,colon)",
+          "content_blocks": 17,
+          "warnings": []
+        },
+        {
+          "start_line": 3001,
+          "end_line": 3036,
+          "pages": [
+            27,
+            28
+          ],
+          "sha256_of_content_array": "c7b52b21e03a9dbe9ee92ed28ea7a2aa6055f1ed0ff4198e2c7c8d38ce76be5e",
+          "hash_encoding": "UTF-8 JSON of returned content array; ensure_ascii=False, separators=(comma,colon)",
+          "content_blocks": 3,
+          "warnings": []
+        }
+      ],
+      "original_binary_hash": null,
+      "limitation": "Hash identifies returned extracted text, not original PDF/TeX bytes; no invented immutable version ID."
+    }
+  ],
+  "counts": {
+    "repository_files": 48,
+    "manuscripts": 8,
+    "full_manuscript_extractions": 7,
+    "partial_manuscript_extractions": 1
+  },
+  "precedence": [
+    "Corrected real action S004 for formal variation, with its stated draft scope.",
+    "September 10 filament revision P04 for corrected phase/holonomy and regularity statements.",
+    "October 6 Koide revision P05 for geometric and active-domain proposal status.",
+    "Actual code/evidence at each pinned commit for model-specific numerical claims; do not merge models.",
+    "Upload time does not establish manuscript revision time."
+  ],
+  "empirical_scope": {
+    "frequency_data_used": false,
+    "current_audit_empirical_repository_reads": [],
+    "context": "Frozen ATLAS decision supplied by user and completed prior audit; no new empirical search was needed.",
+    "atlas_frozen_commit": "af6da1f5cfdc0a6a685c79309db342dd2338aae9"
+  },
+  "limitations": [
+    "Not an exhaustive read of the 313-page Geometry manuscript or every research asset.",
+    "D4 current branch contains a pending refinement record; absent original arrays and later local calculations were not reconstructed.",
+    "No original PDE solver, FEM run, Julia suite, or Lean build was executed in this audit.",
+    "Source papers contain historical numerical comparisons; none was used to select a law, branch, coordinate or prediction."
+  ]
+}

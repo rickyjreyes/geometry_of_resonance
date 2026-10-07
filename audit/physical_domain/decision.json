@@ -1,0 +1,42 @@
+{
+  "schema": "WCT_PHYSICAL_DOMAIN_DECISION_V1",
+  "decision": "WCT_ACTIVE_DOMAIN_UNDERDETERMINED",
+  "basis": [
+    "Explicit continuous-domain degeneracies in stated variational/PDE problems.",
+    "Closure quantizes admissible increments but supplies no independent sector-selection dynamics.",
+    "Measurement functional is missing and fitted frequency need not equal mean phase gradient.",
+    "Exact geometric gains do not determine a physical dilation operator."
+  ],
+  "stopping_rule_met": true,
+  "alternative_matching_search_stopped": true,
+  "arbitrary_closure_axioms_adopted": [],
+  "empirical_frequency_inputs": [],
+  "new_PDE_simulations": 0,
+  "new_collider_analyses": 0,
+  "ATLAS_final_holdout_accessed": false,
+  "atlas_preservation": {
+    "repository": "rickyjreyes/wct-atlas",
+    "frozen_commit": "af6da1f5cfdc0a6a685c79309db342dd2338aae9",
+    "decision": "NO_GO_FOR_NEW_ATLAS_RUN",
+    "classification": "ACTIVE_DOMAIN_PROTOCOL_NOT_IDENTIFIABLE",
+    "V6_1_state": "V6_FAILED_HIERARCHICAL_ROUTE_CLOSED",
+    "qualifying_k": [],
+    "repo_written": false,
+    "history_reinterpreted": false
+  },
+  "research_completion_scores_changed": false,
+  "unresolved_issues_closed": [],
+  "next_tasks": [
+    {
+      "task": "Derive complete quadratic action and dispersion about an independently specified nonzero background of corrected complex-safe action S004.",
+      "scope": "Include physical clock/units and every amplitude, phase and higher-time-derivative mode; test a controlled admissible finite-band branch without importing a rail or fitting peaks.",
+      "scientific_value": "Resolve the earliest action-to-dynamics dependency before localization or spectral prediction.",
+      "estimated_effort": "2–5 focused research days; planning estimate contingent on independent background specification.",
+      "success": "Complete mode analysis with justified branch, units and independent input provenance, or a rigorous obstruction for the declared class.",
+      "failure_to_close": "Required arbitrary background/couplings, unexplained clock conversion or uncontrolled removal of modes; preserve underdetermination.",
+      "justified_compute": "Symbolic differentiation and small matrix checks only.",
+      "large_PDE_run_justified": false,
+      "collider_run_justified": false
+    }
+  ]
+}
