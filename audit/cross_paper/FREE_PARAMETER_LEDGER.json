@@ -1,0 +1,259 @@
+{
+  "schema": "WCT_FREE_PARAMETER_LEDGER_V1",
+  "parameters": [
+    {
+      "id": "background",
+      "symbol": "u0=A0^2",
+      "units": "A^2",
+      "source": "S004; Q3",
+      "role": "Sets F and amplitude mass; preparation/vacuum",
+      "independently_fixed_in_corpus": false,
+      "value": null,
+      "restriction": "u0>0; Vprime(u0)=0 in the static family",
+      "empirically_fitted": false
+    },
+    {
+      "id": "potential",
+      "symbol": "V(u)",
+      "units": "A^2 L^-2",
+      "source": "S004 §2",
+      "role": "Vsecond fixes mass; higher derivatives alter saturation and binding",
+      "independently_fixed_in_corpus": false,
+      "value": null,
+      "restriction": "Vprime(u0)=0, -2u0 Vsecond>0 for demonstrated branch; Vthird/Vfourth not fixed",
+      "empirically_fitted": false
+    },
+    {
+      "id": "epsilon",
+      "symbol": "epsilon",
+      "units": "A",
+      "source": "S004 §1",
+      "role": "Regularizer entering F",
+      "independently_fixed_in_corpus": false,
+      "value": null,
+      "restriction": "epsilon>0",
+      "empirically_fitted": false
+    },
+    {
+      "id": "alpha",
+      "symbol": "alpha",
+      "units": "A^-2",
+      "source": "S004 §1",
+      "role": "Density feedback in F",
+      "independently_fixed_in_corpus": false,
+      "value": null,
+      "restriction": "Finite; any additional positivity convention declared with source model",
+      "empirically_fitted": false
+    },
+    {
+      "id": "kappa",
+      "symbol": "kappa",
+      "units": "A^2 L^2",
+      "source": "S004 §2",
+      "role": "K=F kappa; higher-time pole scale",
+      "independently_fixed_in_corpus": false,
+      "value": null,
+      "restriction": "kappa>0",
+      "empirically_fitted": false
+    },
+    {
+      "id": "theta",
+      "symbol": "theta",
+      "units": "A^2 L^2",
+      "source": "S004 §2",
+      "role": "T=F theta; spatial fourth derivatives",
+      "independently_fixed_in_corpus": false,
+      "value": null,
+      "restriction": "theta>0",
+      "empirically_fitted": false
+    },
+    {
+      "id": "gamma",
+      "symbol": "gamma",
+      "units": "A^2 L^2",
+      "source": "S004 §2",
+      "role": "G=F gamma; frequency-dependent cross term",
+      "independently_fixed_in_corpus": false,
+      "value": null,
+      "restriction": "gamma^2<4 kappa theta; positive G sufficient regime in F1",
+      "empirically_fitted": false
+    },
+    {
+      "id": "foliation",
+      "symbol": "n_mu",
+      "units": "dimensionless unit vector",
+      "source": "S004 §1",
+      "role": "Preferred spatial/time split",
+      "independently_fixed_in_corpus": false,
+      "value": null,
+      "restriction": "Fixed flat inertial foliation in verified reduction",
+      "empirically_fitted": false
+    },
+    {
+      "id": "time_scale",
+      "symbol": "c0",
+      "units": "L/T",
+      "source": "Q1 conventions",
+      "role": "Restores physical time; identification with physical propagation calibration",
+      "independently_fixed_in_corpus": false,
+      "value": null,
+      "restriction": "c0>0; no numerical value fitted",
+      "empirically_fitted": false
+    },
+    {
+      "id": "carrier",
+      "symbol": "Omega,K_background",
+      "units": "L^-1",
+      "source": "Q3",
+      "role": "Rotating/moving background family",
+      "independently_fixed_in_corpus": false,
+      "value": null,
+      "restriction": "Set zero only in the demonstrated static branch, retained in general Hessian",
+      "empirically_fitted": false
+    },
+    {
+      "id": "cutoff",
+      "symbol": "EFT spectral window",
+      "units": "L^-1",
+      "source": "E4; P19 §5",
+      "role": "Restricts low branch below ghost/collision",
+      "independently_fixed_in_corpus": false,
+      "value": null,
+      "restriction": "A physical EFT interpretation is an independent premise; window must satisfy discriminant margin",
+      "empirically_fitted": false
+    },
+    {
+      "id": "damping",
+      "symbol": "eta; Gamma=c0^2/eta",
+      "units": "T^-1; L^2/T",
+      "source": "P1, PFF phenomenological rail",
+      "role": "Enables physical overdamped PFF reduction",
+      "independently_fixed_in_corpus": false,
+      "value": null,
+      "restriction": "c0 M << eta << c0 M/sqrt(delta) in demonstrated hierarchy",
+      "empirically_fitted": false
+    },
+    {
+      "id": "pff_nonlinearity",
+      "symbol": "beta_PFF",
+      "units": "field^-2 T^-1",
+      "source": "P02 §4",
+      "role": "Nonlinear saturation",
+      "independently_fixed_in_corpus": false,
+      "value": null,
+      "restriction": "Positive in declared PFF rail; not calculated from quadratic S004",
+      "empirically_fitted": false
+    },
+    {
+      "id": "closure_coefficients",
+      "symbol": "a4,a2,beta,kappa_r,delta_r",
+      "units": "EL/A^2; E/(A^2 L); E/(A^4 L^3); EL; A",
+      "source": "P09 Eq8",
+      "role": "Existing closure functional, not S004 coefficient identities",
+      "independently_fixed_in_corpus": false,
+      "value": null,
+      "restriction": "All positive; nonlinear S004 match not established",
+      "empirically_fitted": false
+    },
+    {
+      "id": "mass_constraint",
+      "symbol": "M_N=||psi||_2^2",
+      "units": "A^2 L^3",
+      "source": "P09 Eq9",
+      "role": "Supplied constraint; not automatically S004 U(1) charge",
+      "independently_fixed_in_corpus": false,
+      "value": null,
+      "restriction": "Unspecified by the inspected S004 matching sources",
+      "empirically_fitted": false
+    },
+    {
+      "id": "entropy",
+      "symbol": "tau and energy sign",
+      "units": "E",
+      "source": "P01 §§28,40.3",
+      "role": "Optional logarithmic radius balance",
+      "independently_fixed_in_corpus": false,
+      "value": null,
+      "restriction": "Positive penalty selects radius in displayed ansatz; negative sign spreads",
+      "empirically_fitted": false
+    },
+    {
+      "id": "shape",
+      "symbol": "reference profile f and scale",
+      "units": "field and L",
+      "source": "L2-L3",
+      "role": "Orbit radius depends on shape before global minimization",
+      "independently_fixed_in_corpus": false,
+      "value": null,
+      "restriction": "Unspecified by the inspected S004 matching sources",
+      "empirically_fitted": false
+    },
+    {
+      "id": "radial_background",
+      "symbol": "a(r), spectral domain and BC",
+      "units": "A; L",
+      "source": "R2-R4",
+      "role": "Determines actual Hessian potential and spectrum",
+      "independently_fixed_in_corpus": false,
+      "value": null,
+      "restriction": "Unspecified by the inspected S004 matching sources",
+      "empirically_fitted": false
+    },
+    {
+      "id": "loop_geometry",
+      "symbol": "Gamma,L_s,sigma,w",
+      "units": "L; L^-1; weight dependent",
+      "source": "P22 §§1-3",
+      "role": "Inputs to locking and rest-energy map",
+      "independently_fixed_in_corpus": false,
+      "value": null,
+      "restriction": "Unspecified by the inspected S004 matching sources",
+      "empirically_fitted": false
+    },
+    {
+      "id": "sector_preparation",
+      "symbol": "n and defect/drive history",
+      "units": "integer; process",
+      "source": "P02 §§3,6; W1-W2",
+      "role": "Allowed winding vs selected winding",
+      "independently_fixed_in_corpus": false,
+      "value": null,
+      "restriction": "Not tuned or fixed to a measured frequency",
+      "empirically_fitted": false
+    },
+    {
+      "id": "observable",
+      "symbol": "J,X,R_response,B,estimator",
+      "units": "Protocol dependent; specified in O1-O2",
+      "source": "O1-O2; P22 §1",
+      "role": "Physical preparation, detector and nuisance response",
+      "independently_fixed_in_corpus": false,
+      "value": null,
+      "restriction": "Unspecified by the inspected S004 matching sources",
+      "empirically_fitted": false
+    },
+    {
+      "id": "embeddings",
+      "symbol": "I_in,I_out,D_phys",
+      "units": "Operator dependent",
+      "source": "P05/P06; O2 discussion",
+      "role": "Required physical interpretation of T^dagger T=6",
+      "independently_fixed_in_corpus": false,
+      "value": null,
+      "restriction": "Unspecified by the inspected S004 matching sources",
+      "empirically_fitted": false
+    }
+  ],
+  "derived_combinations": [
+    "F(u0)",
+    "m^2=-2u0 Vsecond",
+    "K=F kappa",
+    "G=F gamma",
+    "T=F theta",
+    "C0,C2,C4 in E1",
+    "q_min in F2"
+  ],
+  "independent_numeric_prediction": false,
+  "fit_inputs": [],
+  "unit_convention": "A=field amplitude, L=length, T=time, E=energy; delta EFT and delta_r closure regularizer are distinct"
+}

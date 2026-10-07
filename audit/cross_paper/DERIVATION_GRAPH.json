@@ -1,0 +1,1479 @@
+{
+  "schema": "WCT_CROSS_PAPER_DERIVATION_GRAPH_V1",
+  "decision": "FINITE_SCALE_DERIVED_BUT_CLOSURE_INCOMPLETE",
+  "baseline_commit": "a84a4f0745d8e440961797ab8da809ae8598a836",
+  "branch": "agent/wct-cross-paper-derivation",
+  "nodes": [
+    {
+      "id": "Coulomb_phase_tail"
+    },
+    {
+      "id": "Geometry_EFT_amplitude"
+    },
+    {
+      "id": "PFF_band_and_saturation"
+    },
+    {
+      "id": "PFF_coefficients"
+    },
+    {
+      "id": "PFF_field"
+    },
+    {
+      "id": "PFF_second_order_operator"
+    },
+    {
+      "id": "S004"
+    },
+    {
+      "id": "SH_CGL_envelope"
+    },
+    {
+      "id": "active_log_window"
+    },
+    {
+      "id": "all_static_poles"
+    },
+    {
+      "id": "closure_functional"
+    },
+    {
+      "id": "closure_weak_PFF_symbol"
+    },
+    {
+      "id": "conditional_radial_quantization"
+    },
+    {
+      "id": "confined_log_eigenmode"
+    },
+    {
+      "id": "corrected_radial_Hessian"
+    },
+    {
+      "id": "damped_EFT"
+    },
+    {
+      "id": "discrete_shell_spectrum"
+    },
+    {
+      "id": "entropy_orbit_radius"
+    },
+    {
+      "id": "entropy_penalty"
+    },
+    {
+      "id": "estimator_frequency"
+    },
+    {
+      "id": "explicit_orbit_radius"
+    },
+    {
+      "id": "finite_wavenumber"
+    },
+    {
+      "id": "fixed_shape_radius"
+    },
+    {
+      "id": "free_space_bound_minimizer"
+    },
+    {
+      "id": "general_Hessian"
+    },
+    {
+      "id": "geometric_T"
+    },
+    {
+      "id": "ghost_free_fundamental_theory"
+    },
+    {
+      "id": "given_loop_geometry"
+    },
+    {
+      "id": "linear_homogeneous_localized_eigenstate"
+    },
+    {
+      "id": "linear_response"
+    },
+    {
+      "id": "locking_energy_minimum"
+    },
+    {
+      "id": "log_phase_frequency"
+    },
+    {
+      "id": "nonlinear_vertices"
+    },
+    {
+      "id": "phase_slip_permission"
+    },
+    {
+      "id": "physical_dilation"
+    },
+    {
+      "id": "physical_domain"
+    },
+    {
+      "id": "plane_wave_matrix"
+    },
+    {
+      "id": "prepared_amplitude_branch"
+    },
+    {
+      "id": "scale_winding_DSI"
+    },
+    {
+      "id": "selected_winding"
+    },
+    {
+      "id": "single_embedding_equation"
+    },
+    {
+      "id": "singular_value_sqrt6"
+    },
+    {
+      "id": "spatial_phase"
+    },
+    {
+      "id": "static_sector_energy"
+    },
+    {
+      "id": "topological_charge_coefficient"
+    },
+    {
+      "id": "typed_intertwiner"
+    },
+    {
+      "id": "vanishing_threshold"
+    }
+  ],
+  "edges": [
+    {
+      "id": "B01",
+      "from_node": "S004",
+      "to_node": "general_Hessian",
+      "status": "DERIVED_BY_CROSS_PAPER_COMPOSITION",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "S004 §§1-4; Q1"
+      ],
+      "source_papers": [
+        "S004"
+      ],
+      "assumptions": [
+        "On-shell background, smooth weight and perturbation jets, fixed flat foliation"
+      ],
+      "units": "[psi]=A; [L]=A^2/L^2",
+      "field_definitions": "eta; u1=2Re(psi0bar eta); u2=|eta|^2",
+      "transformation_or_reduction": "Taylor-expand F H and V including all derivative terms",
+      "asymptotic_parameter": "Perturbation amplitude",
+      "error_or_order": "Quadratic coefficient exact; O(amplitude^3) remainder",
+      "free_parameters": [
+        "potential",
+        "background",
+        "epsilon",
+        "alpha",
+        "kappa",
+        "theta",
+        "gamma",
+        "foliation"
+      ],
+      "physical_interpretation": "Complete amplitude/phase quadratic action",
+      "falsifier": "Direct jet differentiation disagrees with Q1",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": true,
+      "report": "QUADRATIC_ACTION_AND_DISPERSION.md"
+    },
+    {
+      "id": "B02",
+      "from_node": "general_Hessian",
+      "to_node": "plane_wave_matrix",
+      "status": "DERIVED_BY_CROSS_PAPER_COMPOSITION",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "S004 §4; Q3-Q5"
+      ],
+      "source_papers": [
+        "S004"
+      ],
+      "assumptions": [
+        "Homogeneous plane carrier; background condition Q3"
+      ],
+      "units": "[omega,k,Omega,Kbg]=L^-1",
+      "field_definitions": "xi=(r,v), v=A0 phase; matrices Q,P,J",
+      "transformation_or_reduction": "Co-rotate, Fourier transform, retain off-diagonal terms and determinant",
+      "asymptotic_parameter": "None",
+      "error_or_order": "Exact within declared assumptions; no asymptotic error",
+      "free_parameters": [
+        "carrier",
+        "potential",
+        "background",
+        "kappa",
+        "theta",
+        "gamma"
+      ],
+      "physical_interpretation": "All homogeneous fluctuation branches",
+      "falsifier": "Four matrix entries or det fail independent real-jet expansion",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": true,
+      "report": "QUADRATIC_ACTION_AND_DISPERSION.md"
+    },
+    {
+      "id": "B03",
+      "from_node": "plane_wave_matrix",
+      "to_node": "all_static_poles",
+      "status": "DERIVED_BY_CROSS_PAPER_COMPOSITION",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "S004; Q6-Q7"
+      ],
+      "source_papers": [
+        "S004"
+      ],
+      "assumptions": [
+        "Static carrier; Vprime=0; K>0"
+      ],
+      "units": "[z,q,m^2]=L^-2; [K,G,T]=L^2",
+      "field_definitions": "D=y-m^2-Ky^2+Gqy-Tq^2",
+      "transformation_or_reduction": "Solve quadratic in y and evaluate pole residues",
+      "asymptotic_parameter": "None",
+      "error_or_order": "Exact within declared assumptions; no asymptotic error",
+      "free_parameters": [
+        "background",
+        "potential",
+        "kappa",
+        "theta",
+        "gamma"
+      ],
+      "physical_interpretation": "Positive-residue lower and negative-residue upper modes in both sectors",
+      "falsifier": "Pole substitution or residues disagree",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": true,
+      "report": "QUADRATIC_ACTION_AND_DISPERSION.md"
+    },
+    {
+      "id": "B04",
+      "from_node": "all_static_poles",
+      "to_node": "Geometry_EFT_amplitude",
+      "status": "CONTROLLED_EFFECTIVE_REDUCTION",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "S004; Q7",
+        "P01 Appendix Y.1 Eq504",
+        "E1-E4"
+      ],
+      "source_papers": [
+        "P01",
+        "S004"
+      ],
+      "assumptions": [
+        "Positive discriminant margin; spectral support below ghost; C2<0"
+      ],
+      "units": "[C0]=L^-2,[C2]=1,[C4]=L^2; [cEFT]=L^2/T",
+      "field_definitions": "xi=sqrt(2)r=Z^-1/2 chi; Z=K(zplus-z)",
+      "transformation_or_reduction": "Analytic branch normalization and spatial Taylor expansion; E3 coefficient map",
+      "asymptotic_parameter": "delta<<1; q=delta M^2 Q",
+      "error_or_order": "O(q^3) explicit E4 bound; O(delta^2 M^2) on bounded Q",
+      "free_parameters": [
+        "background",
+        "potential",
+        "epsilon",
+        "alpha",
+        "kappa",
+        "theta",
+        "gamma",
+        "cutoff",
+        "time_scale"
+      ],
+      "physical_interpretation": "One real EFT amplitude component; no full-complex degeneracy claim",
+      "falsifier": "Direct action normalization or coefficients fail; window reaches collision",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": true,
+      "report": "CORRECTED_ACTION_TO_EFT_KERNEL.md"
+    },
+    {
+      "id": "B05",
+      "from_node": "all_static_poles",
+      "to_node": "finite_wavenumber",
+      "status": "PARAMETER_DEPENDENT",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "Q7; E1; F1-F2"
+      ],
+      "source_papers": [
+        "S004"
+      ],
+      "assumptions": [
+        "0<4Km^2<1; G C0>s; G^2<4KT"
+      ],
+      "units": "[q_min]=L^-2",
+      "field_definitions": "q=|k|^2; amplitude lower pole",
+      "transformation_or_reduction": "Strict convexity and exact positive stationary root",
+      "asymptotic_parameter": "None",
+      "error_or_order": "Exact within declared assumptions; no asymptotic error",
+      "free_parameters": [
+        "background",
+        "potential",
+        "epsilon",
+        "alpha",
+        "kappa",
+        "theta",
+        "gamma"
+      ],
+      "physical_interpretation": "Genuine parameter-dependent minimum, not a fitted scale",
+      "falsifier": "F1 fails or proposed stationary root violates the original unsquared equation",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": true,
+      "report": "FINITE_SCALE_SELECTION.md"
+    },
+    {
+      "id": "B06",
+      "from_node": "S004",
+      "to_node": "ghost_free_fundamental_theory",
+      "status": "OBSTRUCTED",
+      "gap_classification": "NEW_PHYSICS_REQUIRED",
+      "source_equations": [
+        "Q6-Q7",
+        "P19 §5 Eqs14-16"
+      ],
+      "source_papers": [
+        "P19"
+      ],
+      "assumptions": [
+        "Literal nondegenerate higher-time action at nonzero background"
+      ],
+      "units": "Pole residue sign dimensionless",
+      "field_definitions": "Both low and high poles",
+      "transformation_or_reduction": "Retain upper negative-residue pole; nondegenerate time Hessian",
+      "asymptotic_parameter": "None",
+      "error_or_order": "Exact within declared assumptions; no asymptotic error",
+      "free_parameters": [
+        "kappa",
+        "background",
+        "cutoff"
+      ],
+      "physical_interpretation": "Full fundamental health not established; a low-energy interpretation is separate",
+      "falsifier": "A constraint/degeneracy eliminating the extra mode is actually supplied",
+      "prior_or_new": "EXISTING_HEALTH_ISSUE_WITH_NEW_S004_POLE_CALCULATION",
+      "resolved_in_stated_scope": false,
+      "report": "QUADRATIC_ACTION_AND_DISPERSION.md"
+    },
+    {
+      "id": "B07",
+      "from_node": "Geometry_EFT_amplitude",
+      "to_node": "damped_EFT",
+      "status": "CONDITIONAL",
+      "gap_classification": "NEW_PHYSICS_REQUIRED",
+      "source_equations": [
+        "P1",
+        "P02 §4"
+      ],
+      "source_papers": [
+        "P02"
+      ],
+      "assumptions": [
+        "Physical damping/preparation specified independently in canonical sector"
+      ],
+      "units": "[eta]=T^-1",
+      "field_definitions": "chi_tt+eta chi_t+c0^2 Ksp chi=0",
+      "transformation_or_reduction": "Adopt the physical damping premise already phenomenologically used by gradient rails",
+      "asymptotic_parameter": "None",
+      "error_or_order": "Exact within declared assumptions; no asymptotic error",
+      "free_parameters": [
+        "damping",
+        "observable",
+        "cutoff"
+      ],
+      "physical_interpretation": "Defines the additional premise needed for real-time relaxation",
+      "falsifier": "No bath/coarse-graining supports the prescribed friction",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": false,
+      "report": "CORRECTED_ACTION_TO_PFF_REDUCTION.md"
+    },
+    {
+      "id": "B08",
+      "from_node": "damped_EFT",
+      "to_node": "PFF_coefficients",
+      "status": "CONTROLLED_EFFECTIVE_REDUCTION",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "P1-P2",
+        "P02 Eqs8-10"
+      ],
+      "source_papers": [
+        "P02"
+      ],
+      "assumptions": [
+        "Overdamped slow preparation; t>>eta^-1; low-energy cutoff"
+      ],
+      "units": "[r]=T^-1,[a]=L^2/T,[b]=L^4/T",
+      "field_definitions": "Gamma=c0^2/eta; r=-Gamma C0,a=-Gamma C2,b=Gamma C4",
+      "transformation_or_reduction": "Expand both damped exponents and select the prepared slow sector",
+      "asymptotic_parameter": "c0^2 |Ksp|/eta^2<<1",
+      "error_or_order": "O(c0^4 Ksp^2/eta^3) in exponent plus EFT error",
+      "free_parameters": [
+        "damping",
+        "background",
+        "potential",
+        "kappa",
+        "theta",
+        "gamma"
+      ],
+      "physical_interpretation": "Same finite-band center; stable witness remains decaying",
+      "falsifier": "Eigenvalue expansion fails or sigma_max is wrongly asserted positive",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": true,
+      "report": "CORRECTED_ACTION_TO_PFF_REDUCTION.md"
+    },
+    {
+      "id": "B09",
+      "from_node": "PFF_coefficients",
+      "to_node": "PFF_band_and_saturation",
+      "status": "DERIVED_IN_EXISTING_PAPER",
+      "gap_classification": "ALREADY_IN_CORPUS",
+      "source_equations": [
+        "P02 §§4-5 Eqs8-10"
+      ],
+      "source_papers": [
+        "P02"
+      ],
+      "assumptions": [
+        "Declared gradient rail; b,beta>0; onset requires mu>0"
+      ],
+      "units": "k_star L^-1; sigma T^-1",
+      "field_definitions": "A complex PFF envelope",
+      "transformation_or_reduction": "Complete square sigma=mu-b(q-qstar)^2; variational descent",
+      "asymptotic_parameter": "None",
+      "error_or_order": "Exact within declared assumptions; no asymptotic error",
+      "free_parameters": [
+        "pff_nonlinearity",
+        "damping"
+      ],
+      "physical_interpretation": "Analytic finite-band onset and saturation within PFF",
+      "falsifier": "Chosen r yields no positive growth or derivative is not gradient flow",
+      "prior_or_new": "EXISTING_PAPER",
+      "resolved_in_stated_scope": true,
+      "report": "CORRECTED_ACTION_TO_PFF_REDUCTION.md"
+    },
+    {
+      "id": "B10",
+      "from_node": "PFF_band_and_saturation",
+      "to_node": "SH_CGL_envelope",
+      "status": "PERTURBATIVE",
+      "gap_classification": "ALREADY_IN_CORPUS",
+      "source_equations": [
+        "P02 §7 and Appendix R",
+        "P12 §§1.4,2.1-2.5",
+        "P13 surrogate section"
+      ],
+      "source_papers": [
+        "P02",
+        "P12",
+        "P13"
+      ],
+      "assumptions": [
+        "One-dimensional single complex carrier and weak detuning; real field changes cubic factor"
+      ],
+      "units": "X=eps^1/2 x, T=eps t",
+      "field_definitions": "A=eps^1/2 B exp(i kstar x)",
+      "transformation_or_reduction": "Multiscale expansion gives 4b kstar^2 B_XX and cubic saturation",
+      "asymptotic_parameter": "eps<<1",
+      "error_or_order": "Leading normal form; relative O(sqrt(eps)) formal correction, no PDE theorem",
+      "free_parameters": [
+        "pff_nonlinearity"
+      ],
+      "physical_interpretation": "Recovers existing envelope route with scaling scope explicit",
+      "falsifier": "Transverse critical modes or omitted harmonics contribute at same order",
+      "prior_or_new": "EXISTING_ROUTE_WITH_NEW_SCOPED_COEFFICIENT_CHECK",
+      "resolved_in_stated_scope": true,
+      "report": "CORRECTED_ACTION_TO_PFF_REDUCTION.md"
+    },
+    {
+      "id": "B11",
+      "from_node": "finite_wavenumber",
+      "to_node": "linear_homogeneous_localized_eigenstate",
+      "status": "OBSTRUCTED",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "Q7; E2",
+        "L localization Fourier-support argument"
+      ],
+      "source_papers": [
+        "S004"
+      ],
+      "assumptions": [
+        "Whole-space constant coefficients; isolated spectral level; L2 state"
+      ],
+      "units": "Spatial eigenvalue L^-2",
+      "field_definitions": "Fourier support on polynomial level set",
+      "transformation_or_reduction": "A measure-zero level surface supports no nonzero L2 Fourier function",
+      "asymptotic_parameter": "None",
+      "error_or_order": "Exact within declared assumptions; no asymptotic error",
+      "free_parameters": [],
+      "physical_interpretation": "Linear carrier selection alone does not localize",
+      "falsifier": "An inhomogeneity, nonlinearity, or different spectral class is introduced",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": false,
+      "report": "LOCALIZATION_AND_DOMAIN_SELECTION.md"
+    },
+    {
+      "id": "B12",
+      "from_node": "closure_functional",
+      "to_node": "fixed_shape_radius",
+      "status": "DERIVED_IN_EXISTING_PAPER",
+      "gap_classification": "ALREADY_IN_CORPUS",
+      "source_equations": [
+        "P09 Eq8 and Eqs15-22; Corollary6.4"
+      ],
+      "source_papers": [
+        "P09"
+      ],
+      "assumptions": [
+        "All closure coefficients positive; fixed nonzero H2 shape and L2 mass; R3"
+      ],
+      "units": "R dimensionless dilation; energy E",
+      "field_definitions": "psi_R=R^-3/2 psi(x/R)",
+      "transformation_or_reduction": "Exact dilation formula; collapse to +infinity and spreading to 0 from below",
+      "asymptotic_parameter": "None",
+      "error_or_order": "Exact within declared assumptions; no asymptotic error",
+      "free_parameters": [
+        "closure_coefficients",
+        "mass_constraint",
+        "shape"
+      ],
+      "physical_interpretation": "Existing rigorous finite orbit scale",
+      "falsifier": "Either limiting sign or fixed-shape continuity fails",
+      "prior_or_new": "EXISTING_PAPER",
+      "resolved_in_stated_scope": true,
+      "report": "LOCALIZATION_AND_DOMAIN_SELECTION.md"
+    },
+    {
+      "id": "B13",
+      "from_node": "fixed_shape_radius",
+      "to_node": "explicit_orbit_radius",
+      "status": "PERTURBATIVE",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "P09 Eq19",
+        "L2-L3"
+      ],
+      "source_papers": [
+        "P09"
+      ],
+      "assumptions": [
+        "Bounded fixed shape; small density in quotient at derived root"
+      ],
+      "units": "R dimensionless; A,B,C energies",
+      "field_definitions": "A=(a4+kappa_r/delta_r^2)H,B=a2G,C=beta Q/2",
+      "transformation_or_reduction": "Minimize A/R^4-B/R^2+C/R^3 exactly at retained order",
+      "asymptotic_parameter": "||psi||inf^2/(delta_r^2 R^3)<<1",
+      "error_or_order": "Energy remainder <=kappa_r delta_r^-4 ||psi||inf^2 H R^-7; nondegenerate derivative correction",
+      "free_parameters": [
+        "closure_coefficients",
+        "mass_constraint",
+        "shape"
+      ],
+      "physical_interpretation": "New explicit radius and positive orbit Hessian",
+      "falsifier": "Density parameter not small or second derivative is nonpositive",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": true,
+      "report": "LOCALIZATION_AND_DOMAIN_SELECTION.md"
+    },
+    {
+      "id": "B14",
+      "from_node": "S004",
+      "to_node": "closure_functional",
+      "status": "NOT_DERIVED",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "S004 §2",
+        "P09 Eq8",
+        "E5"
+      ],
+      "source_papers": [
+        "P09",
+        "S004"
+      ],
+      "assumptions": [
+        "A common nonlinear reduction and inherited constraint would be required"
+      ],
+      "units": "Weights F and (u+delta_r^2)^-1 both A^-2 but different limits",
+      "field_definitions": "S004 low amplitude sector versus full complex closure field",
+      "transformation_or_reduction": "Quadratic matching is available; nonlinear vertices, charge constraint and functional are not matched",
+      "asymptotic_parameter": "None",
+      "error_or_order": "Exact within declared assumptions; no asymptotic error",
+      "free_parameters": [
+        "potential",
+        "closure_coefficients",
+        "mass_constraint",
+        "background"
+      ],
+      "physical_interpretation": "Existing confinement functional is a candidate nonlinear completion, not literal static S004",
+      "falsifier": "A controlled nonlinear matching derives all terms and the constraint",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": false,
+      "report": "LOCALIZATION_AND_DOMAIN_SELECTION.md"
+    },
+    {
+      "id": "B15",
+      "from_node": "closure_functional",
+      "to_node": "free_space_bound_minimizer",
+      "status": "NOT_DERIVED",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "P09 §11 Eqs35-37",
+        "L4",
+        "P14 §§11-12"
+      ],
+      "source_papers": [
+        "P09",
+        "P14"
+      ],
+      "assumptions": [
+        "Need exclusion of vanishing and dichotomy for general minimizing sequences"
+      ],
+      "units": "Energy threshold E",
+      "field_definitions": "e(M_N)=inf F at fixed mass",
+      "transformation_or_reduction": "Compare against delocalized-carrier threshold and establish compactness/strict binding",
+      "asymptotic_parameter": "None",
+      "error_or_order": "Exact within declared assumptions; no asymptotic error",
+      "free_parameters": [
+        "closure_coefficients",
+        "mass_constraint"
+      ],
+      "physical_interpretation": "Mathematical binding problem remains even within selected closure model",
+      "falsifier": "A minimizing sequence splits or vanishes, or a valid binding/compactness proof closes it",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": false,
+      "report": "LOCALIZATION_AND_DOMAIN_SELECTION.md"
+    },
+    {
+      "id": "B16",
+      "from_node": "entropy_penalty",
+      "to_node": "entropy_orbit_radius",
+      "status": "CONDITIONAL",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "P01 §28 pp87-88; §40.3 p129",
+        "L entropy calculation"
+      ],
+      "source_papers": [
+        "P01"
+      ],
+      "assumptions": [
+        "Choose positive entropy penalty at fixed mass; controlled fixed shape"
+      ],
+      "units": "S dimensionless; tau E; R dimensionless",
+      "field_definitions": "p=|psi|^2/N; S0=-int p log(p/pref)",
+      "transformation_or_reduction": "Dilation gives S0+d log R; minimize positive inverse powers plus tau d log R",
+      "asymptotic_parameter": "sup(u/epsilon^2+|alpha|u)<<1 for S004 curvature scaling",
+      "error_or_order": "Exact dilation entropy; curvature power approximation controlled by small amplitude",
+      "free_parameters": [
+        "entropy",
+        "shape",
+        "mass_constraint",
+        "potential"
+      ],
+      "physical_interpretation": "Existing entropy ingredient can select a conditional radius",
+      "falsifier": "Physical energy uses opposite sign, or approximation fails",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": true,
+      "report": "LOCALIZATION_AND_DOMAIN_SELECTION.md"
+    },
+    {
+      "id": "B17",
+      "from_node": "S004",
+      "to_node": "entropy_penalty",
+      "status": "CONDITIONAL",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "S004 unspecified V",
+        "P01 §§28,40.3"
+      ],
+      "source_papers": [
+        "P01",
+        "S004"
+      ],
+      "assumptions": [
+        "Declare energy sign, normalization and fixed-mass or nonlocal entropy functional"
+      ],
+      "units": "[tau]=E; normalized density uses reference scale",
+      "field_definitions": "V logarithmic choice or separate normalized entropy",
+      "transformation_or_reduction": "Specify an existing candidate physical term; it is not forced by general V",
+      "asymptotic_parameter": "None",
+      "error_or_order": "Exact within declared assumptions; no asymptotic error",
+      "free_parameters": [
+        "potential",
+        "entropy",
+        "mass_constraint"
+      ],
+      "physical_interpretation": "No claim that entropy mechanism is absent; its adoption remains a physical choice",
+      "falsifier": "Different legitimate V or entropy sign changes the balance",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": false,
+      "report": "LOCALIZATION_AND_DOMAIN_SELECTION.md"
+    },
+    {
+      "id": "B18",
+      "from_node": "S004",
+      "to_node": "corrected_radial_Hessian",
+      "status": "DERIVED_BY_CROSS_PAPER_COMPOSITION",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "S004 §§2-4",
+        "P10 §§3-7 Hessian-general",
+        "R1-R4"
+      ],
+      "source_papers": [
+        "P10",
+        "S004"
+      ],
+      "assumptions": [
+        "Static real on-shell radial background; boundary terms vanish only under declared BC"
+      ],
+      "units": "[a4]=L^2,[R]=1,[W]=L^-2",
+      "field_definitions": "a(r),u=a^2,b=Delta a; perturbations r,v",
+      "transformation_or_reduction": "Expand actual S004 weight and integrate B1 r Delta r including Delta B1/2",
+      "asymptotic_parameter": "None",
+      "error_or_order": "Exact within declared assumptions; no asymptotic error",
+      "free_parameters": [
+        "radial_background",
+        "potential",
+        "kappa",
+        "theta",
+        "gamma"
+      ],
+      "physical_interpretation": "Actual fourth-order radial operator; background still to be solved",
+      "falsifier": "Direct variation misses/mis-signs coefficient or potential derivative",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": true,
+      "report": "RADIAL_OPERATOR_AND_SHELL_SPECTRUM.md"
+    },
+    {
+      "id": "B19",
+      "from_node": "corrected_radial_Hessian",
+      "to_node": "PFF_second_order_operator",
+      "status": "CONDITIONAL",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "P02 §§2.3,6 Eq13",
+        "R5"
+      ],
+      "source_papers": [
+        "P02"
+      ],
+      "assumptions": [
+        "Constant a4 and exact R,W matching identities, or another controlled factorization"
+      ],
+      "units": "[VTheta]=L^-2",
+      "field_definitions": "OTheta=-Delta+VTheta",
+      "transformation_or_reduction": "Expand square: R=2a4 VTheta,W=a4(VTheta^2-Delta VTheta)+gap",
+      "asymptotic_parameter": "None",
+      "error_or_order": "Exact within declared assumptions; no asymptotic error",
+      "free_parameters": [
+        "radial_background"
+      ],
+      "physical_interpretation": "A checkable factorization criterion, not a guessed curvature potential",
+      "falsifier": "Either coefficient identity fails",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": false,
+      "report": "RADIAL_OPERATOR_AND_SHELL_SPECTRUM.md"
+    },
+    {
+      "id": "B20",
+      "from_node": "corrected_radial_Hessian",
+      "to_node": "discrete_shell_spectrum",
+      "status": "NOT_DERIVED",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "R4",
+        "P09 §11",
+        "P02 §6"
+      ],
+      "source_papers": [
+        "P02",
+        "P09"
+      ],
+      "assumptions": [
+        "Self-consistent bound background and self-adjoint physical domain needed"
+      ],
+      "units": "[Lambda]=L^-2 for second-order; Hessian units declared",
+      "field_definitions": "Radial eigenspaces",
+      "transformation_or_reduction": "Free space is continuous; a derived well may have bound states; a supplied disk imports R",
+      "asymptotic_parameter": "None",
+      "error_or_order": "Exact within declared assumptions; no asymptotic error",
+      "free_parameters": [
+        "radial_background",
+        "shape"
+      ],
+      "physical_interpretation": "No intrinsic cavity/shell spectrum yet selected",
+      "falsifier": "Claimed level moves with arbitrary external boundary",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": false,
+      "report": "RADIAL_OPERATOR_AND_SHELL_SPECTRUM.md"
+    },
+    {
+      "id": "B21",
+      "from_node": "PFF_second_order_operator",
+      "to_node": "conditional_radial_quantization",
+      "status": "CONDITIONAL",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "P02 Eq13",
+        "R6-R7"
+      ],
+      "source_papers": [
+        "P02"
+      ],
+      "assumptions": [
+        "Two simple turning points and WKB matching; declared self-adjoint domain"
+      ],
+      "units": "integral k_r dr dimensionless",
+      "field_definitions": "f=w/sqrt(r); effective centrifugal term (m_ang^2-1/4)/r^2",
+      "transformation_or_reduction": "Liouville transform and radial oscillation action",
+      "asymptotic_parameter": "|k_r prime|/k_r^2 away from turning points",
+      "error_or_order": "Liouville exact; WKB asymptotic with endpoint-dependent phase correction",
+      "free_parameters": [
+        "radial_background"
+      ],
+      "physical_interpretation": "Correct conditional shell relation; not raw Lambda on RHS of phase winding",
+      "falsifier": "Turning-point assumptions fail or units/action integer are conflated",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": true,
+      "report": "RADIAL_OPERATOR_AND_SHELL_SPECTRUM.md"
+    },
+    {
+      "id": "B22",
+      "from_node": "discrete_shell_spectrum",
+      "to_node": "physical_domain",
+      "status": "NOT_DERIVED",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "R4-R7",
+        "D2"
+      ],
+      "source_papers": [
+        "S004"
+      ],
+      "assumptions": [
+        "Need selected state and operational edge definition"
+      ],
+      "units": "Endpoints carry same physical units",
+      "field_definitions": "x_minus,x_plus from X[psi]",
+      "transformation_or_reduction": "A spectrum labels states but does not alone fix chosen domain edges",
+      "asymptotic_parameter": "None",
+      "error_or_order": "Exact within declared assumptions; no asymptotic error",
+      "free_parameters": [
+        "radial_background",
+        "observable",
+        "sector_preparation"
+      ],
+      "physical_interpretation": "Domain selection remains distinct from allowed eigenvalues",
+      "falsifier": "Domain is fixed by arbitrary threshold or numerical box",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": false,
+      "report": "ACTIVE_LOG_DOMAIN_MAP.md"
+    },
+    {
+      "id": "B23",
+      "from_node": "S004",
+      "to_node": "static_sector_energy",
+      "status": "DERIVED_BY_CROSS_PAPER_COMPOSITION",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "S004 §2",
+        "W1"
+      ],
+      "source_papers": [
+        "S004"
+      ],
+      "assumptions": [
+        "Static cylindrical ansatz; regular core; finite or renormalized energy domain"
+      ],
+      "units": "Energy per longitudinal length",
+      "field_definitions": "psi=f_n(r) exp(i n phi)",
+      "transformation_or_reduction": "Insert exact polar Laplacian into all S004 static terms",
+      "asymptotic_parameter": "None",
+      "error_or_order": "Exact within declared assumptions; no asymptotic error",
+      "free_parameters": [
+        "potential",
+        "radial_background",
+        "sector_preparation",
+        "kappa",
+        "theta",
+        "gamma"
+      ],
+      "physical_interpretation": "Full known static sector functional, not solved profiles or general time Hamiltonian",
+      "falsifier": "An actual S004 term is omitted or extra-model energies silently added",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": true,
+      "report": "SECTOR_ENERGY_AND_WINDING.md"
+    },
+    {
+      "id": "B24",
+      "from_node": "given_loop_geometry",
+      "to_node": "locking_energy_minimum",
+      "status": "DERIVED_IN_EXISTING_PAPER",
+      "gap_classification": "ALREADY_IN_CORPUS",
+      "source_equations": [
+        "P22 §3 Eq3.1; P08",
+        "W2"
+      ],
+      "source_papers": [
+        "P08",
+        "P22"
+      ],
+      "assumptions": [
+        "Positive weight, fixed loop and fixed winding"
+      ],
+      "units": "phase mismatch dimensionless; Iw units reciprocal weight times L",
+      "field_definitions": "sigma=sqrt(curvature^2+torsion^2), phi prime",
+      "transformation_or_reduction": "Weighted constrained minimization yields squared mismatch/Iw",
+      "asymptotic_parameter": "None",
+      "error_or_order": "Exact within declared assumptions; no asymptotic error",
+      "free_parameters": [
+        "loop_geometry",
+        "sector_preparation"
+      ],
+      "physical_interpretation": "Nearest integer minimizes one fixed-geometry component",
+      "falsifier": "Geometry/weight depend on n or other energy terms change ordering",
+      "prior_or_new": "EXISTING_PAPER",
+      "resolved_in_stated_scope": true,
+      "report": "SECTOR_ENERGY_AND_WINDING.md"
+    },
+    {
+      "id": "B25",
+      "from_node": "static_sector_energy",
+      "to_node": "selected_winding",
+      "status": "NOT_DERIVED",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "W1-W2",
+        "P14 §11"
+      ],
+      "source_papers": [
+        "P14"
+      ],
+      "assumptions": [
+        "Physical branch, complete constraint and preparation needed"
+      ],
+      "units": "n integer",
+      "field_definitions": "n_star=argmin inf E_n where admissible",
+      "transformation_or_reduction": "No solved full sector energies; fixed-loop nearest integer is insufficient",
+      "asymptotic_parameter": "None",
+      "error_or_order": "Exact within declared assumptions; no asymptotic error",
+      "free_parameters": [
+        "sector_preparation",
+        "loop_geometry",
+        "potential",
+        "radial_background"
+      ],
+      "physical_interpretation": "Allowed topology differs from actual selected sector",
+      "falsifier": "A competing sector/zero-charge vacuum or barrier invalidates proposed selection",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": false,
+      "report": "SECTOR_ENERGY_AND_WINDING.md"
+    },
+    {
+      "id": "B26",
+      "from_node": "PFF_field",
+      "to_node": "phase_slip_permission",
+      "status": "DERIVED_IN_EXISTING_PAPER",
+      "gap_classification": "ALREADY_IN_CORPUS",
+      "source_equations": [
+        "P02 §§3,6",
+        "P14 §8"
+      ],
+      "source_papers": [
+        "P02",
+        "P14"
+      ],
+      "assumptions": [
+        "Complex field nonzero on loop except during slip"
+      ],
+      "units": "n dimensionless integer",
+      "field_definitions": "Local amplitude zero crossing",
+      "transformation_or_reduction": "Continuous nonzero evolution preserves winding; zeros allow change",
+      "asymptotic_parameter": "None",
+      "error_or_order": "Exact within declared assumptions; no asymptotic error",
+      "free_parameters": [
+        "sector_preparation"
+      ],
+      "physical_interpretation": "Mechanism exists; no rates/barriers selected",
+      "falsifier": "A claimed winding change occurs without a zero or changed domain",
+      "prior_or_new": "EXISTING_PAPER",
+      "resolved_in_stated_scope": true,
+      "report": "SECTOR_ENERGY_AND_WINDING.md"
+    },
+    {
+      "id": "B27",
+      "from_node": "physical_domain",
+      "to_node": "active_log_window",
+      "status": "NOT_DERIVED",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "P03 premises",
+        "D1-D2"
+      ],
+      "source_papers": [
+        "P03"
+      ],
+      "assumptions": [
+        "Independent positive measurable X and endpoints"
+      ],
+      "units": "Delta ell dimensionless",
+      "field_definitions": "Delta ell=log(xplus/xminus)",
+      "transformation_or_reduction": "Test candidate mass, curvature, frequency and radius maps",
+      "asymptotic_parameter": "None",
+      "error_or_order": "Exact within declared assumptions; no asymptotic error",
+      "free_parameters": [
+        "observable",
+        "radial_background",
+        "loop_geometry"
+      ],
+      "physical_interpretation": "No physical endpoints inferred from a cutoff or carrier minimum",
+      "falsifier": "Endpoint definition changes with threshold/box or depends on fitted frequency",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": false,
+      "report": "ACTIVE_LOG_DOMAIN_MAP.md"
+    },
+    {
+      "id": "B28",
+      "from_node": "confined_log_eigenmode",
+      "to_node": "scale_winding_DSI",
+      "status": "DERIVED_IN_EXISTING_PAPER",
+      "gap_classification": "ALREADY_IN_CORPUS",
+      "source_equations": [
+        "P03 scale-winding theorem",
+        "D1"
+      ],
+      "source_papers": [
+        "P03"
+      ],
+      "assumptions": [
+        "Independently generated stable log mode, fixed domain, nonzero n and orientation"
+      ],
+      "units": "nu,Delta ell dimensionless",
+      "field_definitions": "nu Delta ell=2pi n; lambda=exp(Delta ell/n)",
+      "transformation_or_reduction": "Apply existing recurrence theorem once premises hold",
+      "asymptotic_parameter": "None",
+      "error_or_order": "Exact within declared assumptions; no asymptotic error",
+      "free_parameters": [
+        "sector_preparation",
+        "observable"
+      ],
+      "physical_interpretation": "Conditional downstream theorem already established",
+      "falsifier": "No log eigenmode or measurement-domain matching exists",
+      "prior_or_new": "EXISTING_PAPER",
+      "resolved_in_stated_scope": true,
+      "report": "ACTIVE_LOG_DOMAIN_MAP.md"
+    },
+    {
+      "id": "B29",
+      "from_node": "spatial_phase",
+      "to_node": "log_phase_frequency",
+      "status": "CONDITIONAL",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "D2",
+        "P03"
+      ],
+      "source_papers": [
+        "P03"
+      ],
+      "assumptions": [
+        "Positive differentiable monotone X(s) on branch"
+      ],
+      "units": "spatial k L^-1; nu dimensionless",
+      "field_definitions": "nu=(d phase/ds)/(d log X/ds)",
+      "transformation_or_reduction": "Chain rule; constant carrier becomes exponential phase for log radius",
+      "asymptotic_parameter": "None",
+      "error_or_order": "Exact within declared assumptions; no asymptotic error",
+      "free_parameters": [
+        "observable",
+        "radial_background"
+      ],
+      "physical_interpretation": "Explicit necessary coordinate bridge",
+      "falsifier": "Nu varies over interval or X is not single-valued",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": true,
+      "report": "ACTIVE_LOG_DOMAIN_MAP.md"
+    },
+    {
+      "id": "B30",
+      "from_node": "prepared_amplitude_branch",
+      "to_node": "linear_response",
+      "status": "CONDITIONAL",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "Q6-Q7",
+        "O1",
+        "P02 intensity definition"
+      ],
+      "source_papers": [
+        "P02"
+      ],
+      "assumptions": [
+        "Weak calibrated source, declared retarded state/cutoff and smooth detector response"
+      ],
+      "units": "D L^-2; chi_uJ has units from J=D r",
+      "field_definitions": "delta u=2A0 r, D r=J",
+      "transformation_or_reduction": "Invert derived kernel; retain residues in physical field",
+      "asymptotic_parameter": "Source amplitude",
+      "error_or_order": "Linear response O(r), omitted intensity O(r^2)",
+      "free_parameters": [
+        "observable",
+        "background",
+        "cutoff",
+        "damping"
+      ],
+      "physical_interpretation": "Concrete conditional dispersion-response prediction",
+      "falsifier": "Detector null, different harmonic coupling or invalid preparation",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": true,
+      "report": "OBSERVABLE_FORWARD_MAP.md"
+    },
+    {
+      "id": "B31",
+      "from_node": "scale_winding_DSI",
+      "to_node": "estimator_frequency",
+      "status": "CONDITIONAL",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "P03",
+        "O2"
+      ],
+      "source_papers": [
+        "P03"
+      ],
+      "assumptions": [
+        "Nonzero fundamental, declared response and coordinate map, fixed nuisance/window/estimator"
+      ],
+      "units": "nu dimensionless",
+      "field_definitions": "y=B+int R O[psi]",
+      "transformation_or_reduction": "Compute harmonic content and detector transfer before frequency fitting",
+      "asymptotic_parameter": "None",
+      "error_or_order": "Exact within declared assumptions; no asymptotic error",
+      "free_parameters": [
+        "observable"
+      ],
+      "physical_interpretation": "Internal recurrence need not equal fitted cosine frequency",
+      "falsifier": "Response removes fundamental, nonlinear O doubles it, or coordinate warp changes it",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": false,
+      "report": "OBSERVABLE_FORWARD_MAP.md"
+    },
+    {
+      "id": "B32",
+      "from_node": "geometric_T",
+      "to_node": "singular_value_sqrt6",
+      "status": "DERIVED_IN_EXISTING_PAPER",
+      "gap_classification": "ALREADY_IN_CORPUS",
+      "source_equations": [
+        "P05 geometric map; P06",
+        "Prior geometric audit"
+      ],
+      "source_papers": [
+        "P05",
+        "P06"
+      ],
+      "assumptions": [
+        "Exact Euclidean maps and stated inner products"
+      ],
+      "units": "Dimensionless",
+      "field_definitions": "T:R->R3; Tdagger T=6",
+      "transformation_or_reduction": "Compute exact Gram map",
+      "asymptotic_parameter": "None",
+      "error_or_order": "Exact within declared assumptions; no asymptotic error",
+      "free_parameters": [],
+      "physical_interpretation": "Preserved mathematical 2-3-6 fact",
+      "falsifier": "Gram calculation fails under stated definition",
+      "prior_or_new": "EXISTING_PAPER",
+      "resolved_in_stated_scope": true,
+      "report": "OBSERVABLE_FORWARD_MAP.md"
+    },
+    {
+      "id": "B33",
+      "from_node": "geometric_T",
+      "to_node": "physical_dilation",
+      "status": "NOT_DERIVED",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "P05/P06",
+        "O2 operator discussion"
+      ],
+      "source_papers": [
+        "P05",
+        "P06"
+      ],
+      "assumptions": [
+        "Need physical invariant state space and typed embeddings"
+      ],
+      "units": "Dimensionless dilation factor; operator units must match",
+      "field_definitions": "D I_in=I_out T",
+      "transformation_or_reduction": "Test translation/radial operators; none supplies required embeddings or dilation",
+      "asymptotic_parameter": "None",
+      "error_or_order": "Exact within declared assumptions; no asymptotic error",
+      "free_parameters": [
+        "embeddings",
+        "radial_background"
+      ],
+      "physical_interpretation": "No physical 6 or sqrt6 scale selected",
+      "falsifier": "An independently derived intertwiner and state action establishes it",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": false,
+      "report": "OBSERVABLE_FORWARD_MAP.md"
+    },
+    {
+      "id": "B34",
+      "from_node": "single_embedding_equation",
+      "to_node": "typed_intertwiner",
+      "status": "OBSTRUCTED",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "User candidate D I=I T",
+        "P05 T:R->R3"
+      ],
+      "source_papers": [
+        "P05"
+      ],
+      "assumptions": [
+        "One I cannot have two incompatible domains"
+      ],
+      "units": "Operator domain typing",
+      "field_definitions": "Separate I_in and I_out needed",
+      "transformation_or_reduction": "Check domains and codomains before spectral interpretation",
+      "asymptotic_parameter": "None",
+      "error_or_order": "Exact within declared assumptions; no asymptotic error",
+      "free_parameters": [
+        "embeddings"
+      ],
+      "physical_interpretation": "Corrects the proposed equation without ruling out a properly typed completion",
+      "falsifier": "A common endomorphism/return map is explicitly derived",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": false,
+      "report": "OBSERVABLE_FORWARD_MAP.md"
+    },
+    {
+      "id": "B35",
+      "from_node": "S004",
+      "to_node": "nonlinear_vertices",
+      "status": "DERIVED_BY_CROSS_PAPER_COMPOSITION",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "S004 §2",
+        "E5"
+      ],
+      "source_papers": [
+        "S004"
+      ],
+      "assumptions": [
+        "Static homogeneous background; sufficient derivatives of V,F"
+      ],
+      "units": "Lagrangian A^2 L^-2",
+      "field_definitions": "u1=2A0 r,u2=r^2+v^2,H2 quadratic jets",
+      "transformation_or_reduction": "Expand cubic and quartic potential/derivative vertices",
+      "asymptotic_parameter": "Perturbation amplitude",
+      "error_or_order": "Exact cubic/quartic coefficients; O(amplitude^5)",
+      "free_parameters": [
+        "potential",
+        "background",
+        "epsilon",
+        "alpha",
+        "kappa",
+        "theta",
+        "gamma"
+      ],
+      "physical_interpretation": "Nonlinear saturation remains independent of quadratic pole data",
+      "falsifier": "Direct expansion fails or Vthird/Vfourth are silently fixed",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": true,
+      "report": "CORRECTED_ACTION_TO_EFT_KERNEL.md"
+    },
+    {
+      "id": "B36",
+      "from_node": "closure_functional",
+      "to_node": "closure_weak_PFF_symbol",
+      "status": "DERIVED_BY_CROSS_PAPER_COMPOSITION",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "P09 Eqs8,24,29",
+        "L weak-field correction"
+      ],
+      "source_papers": [
+        "P09"
+      ],
+      "assumptions": [
+        "Weak amplitude compared with delta_r; declared projected real-gradient flow"
+      ],
+      "units": "q L^-2; coefficients in L1 units",
+      "field_definitions": "qden=|psi|^2+delta_r^2; multiplier lambda[psi]",
+      "transformation_or_reduction": "Retain quadratic kappa_r/delta_r^2 contribution; a=2a2,b=2(a4+kappa_r/delta_r^2)",
+      "asymptotic_parameter": "|psi|^2/delta_r^2<<1",
+      "error_or_order": "Leading quadratic flow; derivative nonlinearities at cubic order",
+      "free_parameters": [
+        "closure_coefficients",
+        "mass_constraint"
+      ],
+      "physical_interpretation": "Refines first-two-term center; multiplier is constrained, not free pumping",
+      "falsifier": "Quotient contribution is omitted or lambda treated as unconstrained constant",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": true,
+      "report": "LOCALIZATION_AND_DOMAIN_SELECTION.md"
+    },
+    {
+      "id": "B37",
+      "from_node": "closure_functional",
+      "to_node": "vanishing_threshold",
+      "status": "DERIVED_BY_CROSS_PAPER_COMPOSITION",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "P09 Eq8",
+        "L4"
+      ],
+      "source_papers": [
+        "P09"
+      ],
+      "assumptions": [
+        "Fixed mass, broad modulated Schwartz packets, R to infinity"
+      ],
+      "units": "Threshold energy E",
+      "field_definitions": "psi_R=R^-3/2 f(x/R) exp(i k0.x)",
+      "transformation_or_reduction": "Take packet limit and minimize full dilute quadratic symbol",
+      "asymptotic_parameter": "R^-1 -> 0",
+      "error_or_order": "Exact limiting threshold for this sequence, not proof of global infimum",
+      "free_parameters": [
+        "closure_coefficients",
+        "mass_constraint"
+      ],
+      "physical_interpretation": "Negative energy alone does not establish binding",
+      "falsifier": "Computed packet limit differs or a comparison ignores kappa_r term",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": true,
+      "report": "LOCALIZATION_AND_DOMAIN_SELECTION.md"
+    },
+    {
+      "id": "B38",
+      "from_node": "Coulomb_phase_tail",
+      "to_node": "topological_charge_coefficient",
+      "status": "OBSTRUCTED",
+      "gap_classification": "CROSS_PAPER_REDUCTION_REQUIRED",
+      "source_equations": [
+        "P20 §§5-7 Eqs35,44-46"
+      ],
+      "source_papers": [
+        "P20"
+      ],
+      "assumptions": [
+        "Spherical theta=C/r outside core"
+      ],
+      "units": "Circulation dimensionless; flux has length units for dimensionless theta",
+      "field_definitions": "C arbitrary; theta single valued on punctured 3D exterior",
+      "transformation_or_reduction": "Closed-path circulation is zero while spherical flux is nonzero",
+      "asymptotic_parameter": "None",
+      "error_or_order": "Exact within declared assumptions; no asymptotic error",
+      "free_parameters": [
+        "loop_geometry"
+      ],
+      "physical_interpretation": "Flux and winding cannot be equated to derive C=n/2",
+      "falsifier": "An independent gauge/topological relation supplies the missing equality",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "resolved_in_stated_scope": false,
+      "report": "SECTOR_ENERGY_AND_WINDING.md"
+    }
+  ],
+  "routes": [
+    {
+      "id": "A",
+      "name": "PFF bridge",
+      "edges": [
+        "B01",
+        "B02",
+        "B03",
+        "B04",
+        "B07",
+        "B08",
+        "B09",
+        "B20",
+        "B25",
+        "B27",
+        "B28",
+        "B31"
+      ],
+      "result": "Conditional coefficient match; damping/pumping and nonlinear/domain closure not inherited"
+    },
+    {
+      "id": "B",
+      "name": "EFT bridge",
+      "edges": [
+        "B01",
+        "B02",
+        "B03",
+        "B04",
+        "B05",
+        "B11",
+        "B14",
+        "B15",
+        "B30"
+      ],
+      "result": "Controlled single-amplitude finite-k reduction completed; global localized branch incomplete"
+    },
+    {
+      "id": "C",
+      "name": "Radial spectral bridge",
+      "edges": [
+        "B18",
+        "B19",
+        "B20",
+        "B21",
+        "B22",
+        "B27",
+        "B28"
+      ],
+      "result": "Exact corrected fourth-order radial Hessian derived; factorization/potential/background spectrum conditional"
+    },
+    {
+      "id": "D",
+      "name": "Entropy-curvature and variational closure",
+      "edges": [
+        "B12",
+        "B13",
+        "B14",
+        "B15",
+        "B16",
+        "B17",
+        "B25",
+        "B27"
+      ],
+      "result": "Existing finite shape-orbit scale recovered; explicit approximate root derived; binding and matching incomplete"
+    },
+    {
+      "id": "E",
+      "name": "Geometric dilation bridge",
+      "edges": [
+        "B32",
+        "B34",
+        "B33",
+        "B28",
+        "B31"
+      ],
+      "result": "Exact geometric singular value retained; physical intertwiner absent"
+    }
+  ],
+  "arrow_status_vocabulary": [
+    "DERIVED_IN_EXISTING_PAPER",
+    "DERIVED_BY_CROSS_PAPER_COMPOSITION",
+    "CONTROLLED_EFFECTIVE_REDUCTION",
+    "PERTURBATIVE",
+    "CONDITIONAL",
+    "PARAMETER_DEPENDENT",
+    "NUMERICALLY_REQUIRED",
+    "NOT_DERIVED",
+    "OBSTRUCTED"
+  ],
+  "gap_vocabulary": [
+    "ALREADY_IN_CORPUS",
+    "CROSS_PAPER_REDUCTION_REQUIRED",
+    "NEW_PHYSICS_REQUIRED"
+  ],
+  "scope": "Finite scale is a controlled parameter-dependent positive-residue amplitude dispersion minimum; not an unstable pattern or complete physical prediction"
+}

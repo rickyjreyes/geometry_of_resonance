@@ -1,0 +1,87 @@
+{
+  "schema": "WCT_CANDIDATE_PREDICTIONS_V1",
+  "decision": "FINITE_SCALE_DERIVED_BUT_CLOSURE_INCOMPLETE",
+  "candidates": [
+    {
+      "id": "CP01",
+      "kind": "PARAMETER_DEPENDENT_CONDITIONAL_DISPERSION",
+      "quantity": "k_min=sqrt(q_min), omega_min=c0 sqrt(z_minus(q_min))",
+      "formula": "F2 and Q7",
+      "status": "PARAMETER_DEPENDENT",
+      "conditions": [
+        "All S004 parameters and background fixed independently",
+        "F1 and cutoff conditions",
+        "Calibrated drive/detector O1"
+      ],
+      "units": "L^-1; T^-1",
+      "free_parameters": [
+        "background",
+        "potential",
+        "epsilon",
+        "alpha",
+        "kappa",
+        "theta",
+        "gamma",
+        "time_scale",
+        "cutoff",
+        "observable"
+      ],
+      "numeric_value": null,
+      "falsifier": "Measured calibrated low-sector response fails Q7 within expansion/calibration bounds",
+      "empirical_inputs": []
+    },
+    {
+      "id": "CP02",
+      "kind": "CONDITIONAL_RELAXATION",
+      "quantity": "r=-Gamma C0, a=-Gamma C2, b=Gamma C4",
+      "formula": "P2",
+      "status": "CONDITIONAL",
+      "conditions": [
+        "Independent canonical damping and overdamped preparation"
+      ],
+      "units": "T^-1; L^2/T; L^4/T",
+      "free_parameters": [
+        "damping",
+        "background",
+        "potential",
+        "kappa",
+        "theta",
+        "gamma"
+      ],
+      "numeric_value": null,
+      "falsifier": "Slow exponent fails P2 in declared hierarchy",
+      "empirical_inputs": []
+    },
+    {
+      "id": "CP03",
+      "kind": "CONDITIONAL_FIXED_SHAPE_RADIUS",
+      "quantity": "R_orb",
+      "formula": "L3",
+      "status": "PERTURBATIVE",
+      "conditions": [
+        "L1 adopted with fixed mass and shape",
+        "Small quotient-density parameter at root"
+      ],
+      "units": "Dimensionless dilation relative to declared shape",
+      "free_parameters": [
+        "closure_coefficients",
+        "mass_constraint",
+        "shape"
+      ],
+      "numeric_value": null,
+      "falsifier": "Direct orbit energy lacks the predicted local minimum within remainder bound",
+      "empirical_inputs": []
+    }
+  ],
+  "parameter_free_numeric_predictions": [],
+  "selected_winding": null,
+  "active_log_domain": null,
+  "observable_log_frequency": null,
+  "DSI_lambda": null,
+  "physical_236_scale": null,
+  "algebraic_witness_role": "Existence example only; not an empirical prediction",
+  "holdout_opened": false,
+  "collider_searches": 0,
+  "expensive_PDE_runs": 0,
+  "empirical_frequency_inputs": []
+}
