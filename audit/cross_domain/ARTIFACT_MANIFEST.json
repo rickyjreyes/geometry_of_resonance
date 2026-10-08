@@ -1,0 +1,218 @@
+{
+  "schema": "WCT_CROSS_DOMAIN_ARTIFACTS_V1",
+  "audit_started_date_utc": "2026-10-07",
+  "audit_completed_date_utc": "2026-10-08",
+  "excludes": "ARTIFACT_MANIFEST.json itself; generated Python bytecode",
+  "files": [
+    {
+      "path": "audit/cross_domain/BASELINE_MANIFEST.json",
+      "bytes": 26316,
+      "sha256": "10568596552c6ec10f11de689e88a474418c96324a70ab8e27d5c0213e8995a5",
+      "git_blob_sha1": "eb22dde55a8a21b49e7920b9482d9700d8386ecc",
+      "baseline_path": false
+    },
+    {
+      "path": "audit/cross_domain/CHRONOLOGY.json",
+      "bytes": 6775,
+      "sha256": "295ae778ad1ac877c49265271362bbaff4d3feea12d83d81080771403547dc1a",
+      "git_blob_sha1": "043f4e8ce207155d21e5ba2dbba9d04b87fb3d57",
+      "baseline_path": false
+    },
+    {
+      "path": "audit/cross_domain/DECISION_CROSS_DOMAIN.json",
+      "bytes": 1360,
+      "sha256": "ca6b0aed320ffc4e7b7d694ccb57fbf37295691a6cb61c3cf6ca0d8805c69ae3",
+      "git_blob_sha1": "6146f228b3d2b2082814cc042cab7443ad42b865",
+      "baseline_path": false
+    },
+    {
+      "path": "audit/cross_domain/README.md",
+      "bytes": 605,
+      "sha256": "8e458037ec88789f838cec9a196b29cfbfefb68a24826291d159a8f01f146e31",
+      "git_blob_sha1": "96cf7a60b422c98f4c1f74e08ea8d9d3c7446ee3",
+      "baseline_path": false
+    },
+    {
+      "path": "audit/cross_domain/SOURCE_LEDGER.json",
+      "bytes": 40383,
+      "sha256": "2db1b6761001f1346a2edfab4ba47c3d6c5ea2970678de8cd9ec1ec9e7b142f2",
+      "git_blob_sha1": "ae64ba3c9fe6f28bdfc06fdd8785d7d26dec0e35",
+      "baseline_path": false
+    },
+    {
+      "path": "audit/cross_domain/candidate_unified_mechanisms.json",
+      "bytes": 10816,
+      "sha256": "252f3a91a3d187d9fa603a66c2f3ae94d0d694503c4613fee2bbc7a02eb25d3b",
+      "git_blob_sha1": "9dbc1f6915644a354d71efea1698c9ce1b12eb75",
+      "baseline_path": false
+    },
+    {
+      "path": "audit/cross_domain/cross_domain_targets.json",
+      "bytes": 50327,
+      "sha256": "b3b9385dd55b3286cb2011874dadf0d570c006b6c3ebc66e4f0fdb9f44a7e418",
+      "git_blob_sha1": "d9166d705d15d07281f289cf1f35abaa436fece6",
+      "baseline_path": false
+    },
+    {
+      "path": "audit/cross_domain/cross_validation_results.json",
+      "bytes": 280257,
+      "sha256": "ab2db5d67a35ba1ed99be76905c2bb088f1a2440c28fb85720ec924d08e31e11",
+      "git_blob_sha1": "48287100e40625922d063d3d0df64731712e8933",
+      "baseline_path": false
+    },
+    {
+      "path": "audit/cross_domain/degrees_of_freedom.json",
+      "bytes": 4662,
+      "sha256": "4bf847bdfeca32fc4ad71da597446aca0ea10007eb4291db5ff647cdcc4e0dab",
+      "git_blob_sha1": "bf17de27a7841d7cee4782e52a23cefca1316c92",
+      "baseline_path": false
+    },
+    {
+      "path": "audit/cross_domain/derived_quantities.json",
+      "bytes": 14225,
+      "sha256": "a8b919840ee98d2cb248b0c00c56addc8839148008ad84c2e40188b6c9e95730",
+      "git_blob_sha1": "22815cf9edf3c52d6f654228dce13d85f6bee4f3",
+      "baseline_path": false
+    },
+    {
+      "path": "audit/cross_domain/execution_environment.json",
+      "bytes": 186,
+      "sha256": "ba9114b6f3e1894c8d87bb5a77255247f587fa7894f596d9a54b35b4618b89af",
+      "git_blob_sha1": "5679baf59d0d3199f62d77b76b43568f265eaec7",
+      "baseline_path": false
+    },
+    {
+      "path": "audit/cross_domain/null_diagnostics.json",
+      "bytes": 123056,
+      "sha256": "50bca147fee545a6cc23fd987e8c3d28c554d349dba0da5e8ef93c1a7d625dcd",
+      "git_blob_sha1": "308c80666f72545cb6e4317dea9a7107a6e7f91e",
+      "baseline_path": false
+    },
+    {
+      "path": "audit/cross_domain/requirements.txt",
+      "bytes": 27,
+      "sha256": "6101034016419219134f25d41dcb8dc57a629f64d138e53b7c71eaae90a4b08a",
+      "git_blob_sha1": "8ef173a970aa6f6b62e477813202dae978b1f8c4",
+      "baseline_path": false
+    },
+    {
+      "path": "audit/cross_domain/run_audit.py",
+      "bytes": 14620,
+      "sha256": "765edb50755ca7eb25cd8781ad104943ec6870462350459f164ddc4bc52fd924",
+      "git_blob_sha1": "a6eb83017496808169232386fa9d9671719a8b57",
+      "baseline_path": false
+    },
+    {
+      "path": "audit/cross_domain/verification.json",
+      "bytes": 62657,
+      "sha256": "df353a90644af7ff229a286711da38068538f074fd244456b1b5ed362e9ab821",
+      "git_blob_sha1": "f7389886222f42d8bea2a476da367349485fecc5",
+      "baseline_path": false
+    },
+    {
+      "path": "audit/cross_domain/verify_audit.py",
+      "bytes": 8072,
+      "sha256": "340ea6ae1edc59dc5ae689fc97294bdad382fa9ddcea25f269c5c76a85f9998c",
+      "git_blob_sha1": "0eb53b2ca7e244fdf57e3b8340224662fc70c48a",
+      "baseline_path": false
+    },
+    {
+      "path": "docs/cross_domain/ANALYSIS_PROTOCOL.md",
+      "bytes": 4856,
+      "sha256": "970fb27db893d56d0f2e1e2bb02f05330f04bb7181d2548caee497359a22a4ce",
+      "git_blob_sha1": "b091f0372407c4d9c3b59e3dfe44bd834deb5373",
+      "baseline_path": true
+    },
+    {
+      "path": "docs/cross_domain/CROSS_DOMAIN_SINGLE_MECHANISM_AUDIT.md",
+      "bytes": 12255,
+      "sha256": "e7fd0e2939e6cb9726f4cf4e8f48223f5a90dc71ad5cdbcb4c8d698a259e4fda",
+      "git_blob_sha1": "10f53a1a3da411c30c8efc7954e4af8cf06e6042",
+      "baseline_path": false
+    },
+    {
+      "path": "docs/cross_domain/CROSS_DOMAIN_TARGET_LEDGER.md",
+      "bytes": 770,
+      "sha256": "9878f85cfbce1ae10be3061a48a553a6d6679b9702e1ccc8cfa1b5d4912c7b20",
+      "git_blob_sha1": "8277c4efb14625dc96b91a53a158565b1f522d33",
+      "baseline_path": false
+    },
+    {
+      "path": "docs/cross_domain/DECISION_CROSS_DOMAIN.md",
+      "bytes": 2900,
+      "sha256": "36f7de40c4e9c133d09b47dca9973f3c7153ff974c071d238e414f9d98567904",
+      "git_blob_sha1": "d0cab7684bcbfb5d3c3baa9e08896ba73d7c6cc5",
+      "baseline_path": false
+    },
+    {
+      "path": "docs/cross_domain/EMPIRICAL_TARGET_LEDGER.md",
+      "bytes": 11617,
+      "sha256": "0eaec9b114e48d534c96b9c401952b5523775f60b861bfffbf158973c93fb6c6",
+      "git_blob_sha1": "851a860560544bc19b8bdae7982dabe7de21a6cb",
+      "baseline_path": false
+    },
+    {
+      "path": "docs/cross_domain/EXECUTION_SCOPE.md",
+      "bytes": 3129,
+      "sha256": "159001e4b9d87d1471e239be16aa16b56105a0f02c851b412c905af4a9ced495",
+      "git_blob_sha1": "a6fa6e54fc6d9281446a2eadad278244e3e4f195",
+      "baseline_path": false
+    },
+    {
+      "path": "docs/cross_domain/FAILURE_MODES.md",
+      "bytes": 4552,
+      "sha256": "8db7dd83f876eec23f986bbe6e6554b31b62a31ac5daa4610c5132e14380d139",
+      "git_blob_sha1": "5708cc1e6eb8810816f6016673b5c7494fe5e1b7",
+      "baseline_path": false
+    },
+    {
+      "path": "docs/cross_domain/LEAVE_ONE_DOMAIN_OUT.md",
+      "bytes": 8854,
+      "sha256": "3ebdc0aa9f179c68a9ad25c7b658eed68026146b9f7427b4cfbad31a6a1cbac7",
+      "git_blob_sha1": "128ff913e73db0e7d76242d4d6198419c717ae60",
+      "baseline_path": false
+    },
+    {
+      "path": "docs/cross_domain/NULL_MODEL_AND_TRIALS_AUDIT.md",
+      "bytes": 5357,
+      "sha256": "5e5d6dc96a7a6c555861418e30c4320554dcd5d5d7c24278dede4c71111911a2",
+      "git_blob_sha1": "548dbdf010f53bb513e574e5bec34097c5ceb20b",
+      "baseline_path": false
+    },
+    {
+      "path": "docs/cross_domain/REPRODUCE.md",
+      "bytes": 4208,
+      "sha256": "5c60116061b756017bc13f00ef0e75a6c1d73c5b825e86dca005498f97cfbd7b",
+      "git_blob_sha1": "1d4eedc6505e8be15afbefbd72f89fed8b45bc12",
+      "baseline_path": false
+    },
+    {
+      "path": "docs/cross_domain/SECTOR_ASSIGNMENT_AUDIT.md",
+      "bytes": 4182,
+      "sha256": "ad273bcdf313e51203a87b3b2da2de5c3f734a1c4f852f26f83f46206ce8febc",
+      "git_blob_sha1": "8de21eaa2b6cc983a639237b9541b6d0b9155acf",
+      "baseline_path": false
+    },
+    {
+      "path": "docs/cross_domain/SOURCE_PROVENANCE.md",
+      "bytes": 18910,
+      "sha256": "d7743276e46b66ba8b85f5eb63780e09b828d50e04d86b871c2a1fe85268c537",
+      "git_blob_sha1": "9e01450aa673c65efb4d77b9b61feacc4bd302c1",
+      "baseline_path": false
+    },
+    {
+      "path": "docs/cross_domain/THEORY_TRANSFORMATION_LEDGER.md",
+      "bytes": 9069,
+      "sha256": "e37299f8122948e9ba496a935d3b89a5ab5190e9767b44dbfc3863881601422b",
+      "git_blob_sha1": "71708e1f2e3f15b69d7f673cd74d1bf65abaa8e8",
+      "baseline_path": false
+    },
+    {
+      "path": "docs/cross_domain/UNIVERSAL_INVARIANT_SEARCH.md",
+      "bytes": 6024,
+      "sha256": "dd8aade07056e5a43c716f286039549b74491324c2539285dd9672f80c63e5d7",
+      "git_blob_sha1": "22cfbb93796219434dbe227ac118612303ba99e8",
+      "baseline_path": false
+    }
+  ]
+}

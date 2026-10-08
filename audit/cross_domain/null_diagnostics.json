@@ -1,0 +1,4347 @@
+{
+  "schema": "WCT_COINCIDENCE_DIAGNOSTIC_V1",
+  "seed": 20261007,
+  "generator": "numpy PCG64",
+  "draws_per_support": 10000,
+  "target_ids": [
+    "GWTC_V1",
+    "CMS",
+    "NIST_FE160",
+    "LHCB_K1"
+  ],
+  "primary_anchor_panel_status": "INELIGIBLE_TYPE_MISMATCH",
+  "status": "NEGATIVE_CONTROL_ONLY_NOT_SCIENTIFIC_P_VALUE",
+  "score": "RMS of log ratios to fitted shared scale after selected integer and coordinate maps",
+  "normalization_note": "Changing physical units shifts log phase; a shared frequency multiplier cancels in the fitted log residual. Independently fitted domain multipliers would fit every quartet exactly and are not fitted here.",
+  "unmodeled_historical_selection": "Experiment, pipeline, peak/mode and source choices; support is arbitrary, not a physical data-generating null. No aggregate significance claimed.",
+  "results": [
+    {
+      "support": [
+        1,
+        100
+      ],
+      "rows": [
+        {
+          "family": "native:M1:identity:d1",
+          "integer_cap": 1,
+          "exponent_menu": [
+            1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 1,
+          "unique_offset_tuples_upper_bound": 1,
+          "observed_rms_log_residual": 0.6017122085839256,
+          "fitted_shared_scale": 11.261607717702432,
+          "negative_control_selected_labels": [
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 1134,
+          "draws": 10000,
+          "add_one_fraction": 0.11348865113488651,
+          "null_score_quantiles": {
+            "q01": 0.2579721401312491,
+            "q05": 0.43468942327777316,
+            "q50": 1.100600459492191,
+            "q95": 1.6593596213746344
+          }
+        },
+        {
+          "family": "native:M1:identity:d-1",
+          "integer_cap": 1,
+          "exponent_menu": [
+            1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 1,
+          "unique_offset_tuples_upper_bound": 1,
+          "observed_rms_log_residual": 0.6017122085839256,
+          "fitted_shared_scale": 11.261607717702432,
+          "negative_control_selected_labels": [
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 1134,
+          "draws": 10000,
+          "add_one_fraction": 0.11348865113488651,
+          "null_score_quantiles": {
+            "q01": 0.2579721401312491,
+            "q05": 0.43468942327777316,
+            "q50": 1.100600459492191,
+            "q95": 1.6593596213746344
+          }
+        },
+        {
+          "family": "native:M1:powers:d1",
+          "integer_cap": 1,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 81,
+          "unique_offset_tuples_upper_bound": 81,
+          "observed_rms_log_residual": 0.11516097908789805,
+          "fitted_shared_scale": 15.926318368500299,
+          "negative_control_selected_labels": [
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 494,
+          "draws": 10000,
+          "add_one_fraction": 0.0494950504949505,
+          "null_score_quantiles": {
+            "q01": 0.06658746303670122,
+            "q05": 0.11567424818140556,
+            "q50": 0.5373342851163241,
+            "q95": 1.0537742783262627
+          }
+        },
+        {
+          "family": "native:M1:powers:d-1",
+          "integer_cap": 1,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 81,
+          "unique_offset_tuples_upper_bound": 81,
+          "observed_rms_log_residual": 0.11516097908789805,
+          "fitted_shared_scale": 15.926318368500299,
+          "negative_control_selected_labels": [
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 494,
+          "draws": 10000,
+          "add_one_fraction": 0.0494950504949505,
+          "null_score_quantiles": {
+            "q01": 0.06658746303670122,
+            "q05": 0.11567424818140556,
+            "q50": 0.5373342851163241,
+            "q95": 1.0537742783262627
+          }
+        },
+        {
+          "family": "native:M1:powers_reciprocal:d1",
+          "integer_cap": 1,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 256,
+          "unique_offset_tuples_upper_bound": 81,
+          "observed_rms_log_residual": 0.11516097908789805,
+          "fitted_shared_scale": 15.926318368500299,
+          "negative_control_selected_labels": [
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 494,
+          "draws": 10000,
+          "add_one_fraction": 0.0494950504949505,
+          "null_score_quantiles": {
+            "q01": 0.06658746303670122,
+            "q05": 0.11567424818140556,
+            "q50": 0.5373342851163241,
+            "q95": 1.0537742783262627
+          }
+        },
+        {
+          "family": "native:M1:powers_reciprocal:d-1",
+          "integer_cap": 1,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 256,
+          "unique_offset_tuples_upper_bound": 81,
+          "observed_rms_log_residual": 0.11516097908789805,
+          "fitted_shared_scale": 15.926318368500299,
+          "negative_control_selected_labels": [
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 494,
+          "draws": 10000,
+          "add_one_fraction": 0.0494950504949505,
+          "null_score_quantiles": {
+            "q01": 0.06658746303670122,
+            "q05": 0.11567424818140556,
+            "q50": 0.5373342851163241,
+            "q95": 1.0537742783262627
+          }
+        },
+        {
+          "family": "native:M6:identity:d1",
+          "integer_cap": 6,
+          "exponent_menu": [
+            1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 1296,
+          "unique_offset_tuples_upper_bound": 1296,
+          "observed_rms_log_residual": 0.11516097908789798,
+          "fitted_shared_scale": 7.963159184250152,
+          "negative_control_selected_labels": [
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 4,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 2151,
+          "draws": 10000,
+          "add_one_fraction": 0.2151784821517848,
+          "null_score_quantiles": {
+            "q01": 0.02618130115981641,
+            "q05": 0.04510658382130425,
+            "q50": 0.38086605500973525,
+            "q95": 0.8854157482174635
+          }
+        },
+        {
+          "family": "native:M6:identity:d-1",
+          "integer_cap": 6,
+          "exponent_menu": [
+            1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 1296,
+          "unique_offset_tuples_upper_bound": 1296,
+          "observed_rms_log_residual": 0.043077118018220555,
+          "fitted_shared_scale": 29.642218522666813,
+          "negative_control_selected_labels": [
+            {
+              "n": 3,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 4,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 4,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 451,
+          "draws": 10000,
+          "add_one_fraction": 0.0451954804519548,
+          "null_score_quantiles": {
+            "q01": 0.025797942955109295,
+            "q05": 0.04474313438172252,
+            "q50": 0.37987612473953714,
+            "q95": 0.8854713335355959
+          }
+        },
+        {
+          "family": "native:M6:powers:d1",
+          "integer_cap": 6,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 104976,
+          "unique_offset_tuples_upper_bound": 20736,
+          "observed_rms_log_residual": 0.04140405525735215,
+          "fitted_shared_scale": 3.765545489830577,
+          "negative_control_selected_labels": [
+            {
+              "n": 5,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 4,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 2,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 2983,
+          "draws": 10000,
+          "add_one_fraction": 0.2983701629837016,
+          "null_score_quantiles": {
+            "q01": 0.012238917826743084,
+            "q05": 0.02150872980681772,
+            "q50": 0.05471986515190329,
+            "q95": 0.34760249793541553
+          }
+        },
+        {
+          "family": "native:M6:powers:d-1",
+          "integer_cap": 6,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 104976,
+          "unique_offset_tuples_upper_bound": 20736,
+          "observed_rms_log_residual": 0.040201430113207565,
+          "fitted_shared_scale": 78.8230445727228,
+          "negative_control_selected_labels": [
+            {
+              "n": 4,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 6,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 2758,
+          "draws": 10000,
+          "add_one_fraction": 0.27587241275872415,
+          "null_score_quantiles": {
+            "q01": 0.012452132038120815,
+            "q05": 0.022164501289061965,
+            "q50": 0.055095692788786274,
+            "q95": 0.34852886410678574
+          }
+        },
+        {
+          "family": "native:M6:powers_reciprocal:d1",
+          "integer_cap": 6,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 331776,
+          "unique_offset_tuples_upper_bound": 20736,
+          "observed_rms_log_residual": 0.04140405525735215,
+          "fitted_shared_scale": 3.765545489830577,
+          "negative_control_selected_labels": [
+            {
+              "n": 5,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 4,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 2,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 2983,
+          "draws": 10000,
+          "add_one_fraction": 0.2983701629837016,
+          "null_score_quantiles": {
+            "q01": 0.012238917826743084,
+            "q05": 0.02150872980681772,
+            "q50": 0.05471986515190329,
+            "q95": 0.34760249793541553
+          }
+        },
+        {
+          "family": "native:M6:powers_reciprocal:d-1",
+          "integer_cap": 6,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 331776,
+          "unique_offset_tuples_upper_bound": 20736,
+          "observed_rms_log_residual": 0.040201430113207565,
+          "fitted_shared_scale": 78.8230445727228,
+          "negative_control_selected_labels": [
+            {
+              "n": 4,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 6,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 2758,
+          "draws": 10000,
+          "add_one_fraction": 0.27587241275872415,
+          "null_score_quantiles": {
+            "q01": 0.012452132038120815,
+            "q05": 0.022164501289061965,
+            "q50": 0.055095692788786274,
+            "q95": 0.34852886410678574
+          }
+        },
+        {
+          "family": "native:M12:identity:d1",
+          "integer_cap": 12,
+          "exponent_menu": [
+            1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 20736,
+          "unique_offset_tuples_upper_bound": 20736,
+          "observed_rms_log_residual": 0.043077118018220624,
+          "fitted_shared_scale": 2.4701848768889003,
+          "negative_control_selected_labels": [
+            {
+              "n": 4,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 3,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 12,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 3,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 2403,
+          "draws": 10000,
+          "add_one_fraction": 0.24037596240375964,
+          "null_score_quantiles": {
+            "q01": 0.010354100665397747,
+            "q05": 0.01818739106389745,
+            "q50": 0.13977941068102434,
+            "q95": 0.6091858089351018
+          }
+        },
+        {
+          "family": "native:M12:identity:d-1",
+          "integer_cap": 12,
+          "exponent_menu": [
+            1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 20736,
+          "unique_offset_tuples_upper_bound": 20736,
+          "observed_rms_log_residual": 0.03605668965301236,
+          "fitted_shared_scale": 63.454953217085354,
+          "negative_control_selected_labels": [
+            {
+              "n": 7,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 9,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 2,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 8,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 1970,
+          "draws": 10000,
+          "add_one_fraction": 0.19708029197080293,
+          "null_score_quantiles": {
+            "q01": 0.009901468549264993,
+            "q05": 0.018413518605687858,
+            "q50": 0.14039290292477355,
+            "q95": 0.6078736732145555
+          }
+        },
+        {
+          "family": "native:M12:powers:d1",
+          "integer_cap": 12,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 1679616,
+          "unique_offset_tuples_upper_bound": 331776,
+          "observed_rms_log_residual": 0.014317976977512862,
+          "fitted_shared_scale": 1.3960052178822642,
+          "negative_control_selected_labels": [
+            {
+              "n": 7,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 11,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 11,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 1983,
+          "draws": 10000,
+          "add_one_fraction": 0.19838016198380162,
+          "null_score_quantiles": {
+            "q01": 0.005056316812324926,
+            "q05": 0.008601621851081018,
+            "q50": 0.022513470648242398,
+            "q95": 0.11953364364134782
+          }
+        },
+        {
+          "family": "native:M12:powers:d-1",
+          "integer_cap": 12,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 1679616,
+          "unique_offset_tuples_upper_bound": 331776,
+          "observed_rms_log_residual": 0.010394287276398762,
+          "fitted_shared_scale": 154.25386732022747,
+          "negative_control_selected_labels": [
+            {
+              "n": 8,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 11,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 10,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 837,
+          "draws": 10000,
+          "add_one_fraction": 0.0837916208379162,
+          "null_score_quantiles": {
+            "q01": 0.005014818096417464,
+            "q05": 0.008682000224046986,
+            "q50": 0.02247479733085661,
+            "q95": 0.12034344714880744
+          }
+        },
+        {
+          "family": "native:M12:powers_reciprocal:d1",
+          "integer_cap": 12,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 5308416,
+          "unique_offset_tuples_upper_bound": 331776,
+          "observed_rms_log_residual": 0.014317976977512862,
+          "fitted_shared_scale": 1.3960052178822642,
+          "negative_control_selected_labels": [
+            {
+              "n": 7,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 11,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 11,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 1983,
+          "draws": 10000,
+          "add_one_fraction": 0.19838016198380162,
+          "null_score_quantiles": {
+            "q01": 0.005056316812324926,
+            "q05": 0.008601621851081018,
+            "q50": 0.022513470648242398,
+            "q95": 0.11953364364134782
+          }
+        },
+        {
+          "family": "native:M12:powers_reciprocal:d-1",
+          "integer_cap": 12,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 5308416,
+          "unique_offset_tuples_upper_bound": 331776,
+          "observed_rms_log_residual": 0.010394287276398762,
+          "fitted_shared_scale": 154.25386732022747,
+          "negative_control_selected_labels": [
+            {
+              "n": 8,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 11,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 10,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 837,
+          "draws": 10000,
+          "add_one_fraction": 0.0837916208379162,
+          "null_score_quantiles": {
+            "q01": 0.005014818096417464,
+            "q05": 0.008682000224046986,
+            "q50": 0.02247479733085661,
+            "q95": 0.12034344714880744
+          }
+        },
+        {
+          "family": "native:M24:identity:d1",
+          "integer_cap": 24,
+          "exponent_menu": [
+            1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 331776,
+          "unique_offset_tuples_upper_bound": 331776,
+          "observed_rms_log_residual": 0.029070791531177736,
+          "fitted_shared_scale": 2.4212460875640387,
+          "negative_control_selected_labels": [
+            {
+              "n": 4,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 3,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 13,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 3,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 4239,
+          "draws": 10000,
+          "add_one_fraction": 0.42395760423957607,
+          "null_score_quantiles": {
+            "q01": 0.004318433699430304,
+            "q05": 0.007306755528484867,
+            "q50": 0.03920206290498773,
+            "q95": 0.3471518740622969
+          }
+        },
+        {
+          "family": "native:M24:identity:d-1",
+          "integer_cap": 24,
+          "exponent_menu": [
+            1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 331776,
+          "unique_offset_tuples_upper_bound": 331776,
+          "observed_rms_log_residual": 0.010394287276398762,
+          "fitted_shared_scale": 154.25386732022747,
+          "negative_control_selected_labels": [
+            {
+              "n": 16,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 22,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 20,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 1199,
+          "draws": 10000,
+          "add_one_fraction": 0.11998800119988001,
+          "null_score_quantiles": {
+            "q01": 0.003969708951330958,
+            "q05": 0.007202808576985459,
+            "q50": 0.03969869929405159,
+            "q95": 0.346836567972251
+          }
+        },
+        {
+          "family": "native:M24:powers:d1",
+          "integer_cap": 24,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 26873856,
+          "unique_offset_tuples_upper_bound": 5308416,
+          "observed_rms_log_residual": 0.009996201745556049,
+          "fitted_shared_scale": 0.8328459481277668,
+          "negative_control_selected_labels": [
+            {
+              "n": 23,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 17,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 19,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 9,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 5460,
+          "draws": 10000,
+          "add_one_fraction": 0.5460453954604539,
+          "null_score_quantiles": {
+            "q01": 0.001977015023857492,
+            "q05": 0.003452887107664591,
+            "q50": 0.009364112205815324,
+            "q95": 0.043691218884494495
+          }
+        },
+        {
+          "family": "native:M24:powers:d-1",
+          "integer_cap": 24,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 26873856,
+          "unique_offset_tuples_upper_bound": 5308416,
+          "observed_rms_log_residual": 0.010394287276398762,
+          "fitted_shared_scale": 308.50773464045494,
+          "negative_control_selected_labels": [
+            {
+              "n": 16,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 22,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 20,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 5665,
+          "draws": 10000,
+          "add_one_fraction": 0.5665433456654334,
+          "null_score_quantiles": {
+            "q01": 0.0019908481141658056,
+            "q05": 0.0034050778450005923,
+            "q50": 0.009423206717760134,
+            "q95": 0.045284092357583
+          }
+        },
+        {
+          "family": "native:M24:powers_reciprocal:d1",
+          "integer_cap": 24,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 84934656,
+          "unique_offset_tuples_upper_bound": 5308416,
+          "observed_rms_log_residual": 0.009996201745556049,
+          "fitted_shared_scale": 0.8328459481277668,
+          "negative_control_selected_labels": [
+            {
+              "n": 23,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 17,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 19,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 9,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 5460,
+          "draws": 10000,
+          "add_one_fraction": 0.5460453954604539,
+          "null_score_quantiles": {
+            "q01": 0.001977015023857492,
+            "q05": 0.003452887107664591,
+            "q50": 0.009364112205815324,
+            "q95": 0.043691218884494495
+          }
+        },
+        {
+          "family": "native:M24:powers_reciprocal:d-1",
+          "integer_cap": 24,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 84934656,
+          "unique_offset_tuples_upper_bound": 5308416,
+          "observed_rms_log_residual": 0.010394287276398762,
+          "fitted_shared_scale": 308.50773464045494,
+          "negative_control_selected_labels": [
+            {
+              "n": 16,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 22,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 20,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 5665,
+          "draws": 10000,
+          "add_one_fraction": 0.5665433456654334,
+          "null_score_quantiles": {
+            "q01": 0.0019908481141658056,
+            "q05": 0.0034050778450005923,
+            "q50": 0.009423206717760134,
+            "q95": 0.045284092357583
+          }
+        },
+        {
+          "family": "mass_energy:M1:identity:d1",
+          "integer_cap": 1,
+          "exponent_menu": [
+            1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 1,
+          "unique_offset_tuples_upper_bound": 1,
+          "observed_rms_log_residual": 0.5624343252277796,
+          "fitted_shared_scale": 13.392384024261288,
+          "negative_control_selected_labels": [
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 907,
+          "draws": 10000,
+          "add_one_fraction": 0.0907909209079092,
+          "null_score_quantiles": {
+            "q01": 0.25376948159756113,
+            "q05": 0.4455842240971655,
+            "q50": 1.1255092415595773,
+            "q95": 1.7524217186012934
+          }
+        },
+        {
+          "family": "mass_energy:M1:identity:d-1",
+          "integer_cap": 1,
+          "exponent_menu": [
+            1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 1,
+          "unique_offset_tuples_upper_bound": 1,
+          "observed_rms_log_residual": 0.5624343252277796,
+          "fitted_shared_scale": 13.392384024261288,
+          "negative_control_selected_labels": [
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 907,
+          "draws": 10000,
+          "add_one_fraction": 0.0907909209079092,
+          "null_score_quantiles": {
+            "q01": 0.25376948159756113,
+            "q05": 0.4455842240971655,
+            "q50": 1.1255092415595773,
+            "q95": 1.7524217186012934
+          }
+        },
+        {
+          "family": "mass_energy:M1:powers:d1",
+          "integer_cap": 1,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 81,
+          "unique_offset_tuples_upper_bound": 81,
+          "observed_rms_log_residual": 0.11516097908789805,
+          "fitted_shared_scale": 15.926318368500299,
+          "negative_control_selected_labels": [
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 473,
+          "draws": 10000,
+          "add_one_fraction": 0.04739526047395261,
+          "null_score_quantiles": {
+            "q01": 0.06682490988065304,
+            "q05": 0.1173900380108618,
+            "q50": 0.5616441953199995,
+            "q95": 1.1520038215323787
+          }
+        },
+        {
+          "family": "mass_energy:M1:powers:d-1",
+          "integer_cap": 1,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 81,
+          "unique_offset_tuples_upper_bound": 81,
+          "observed_rms_log_residual": 0.11516097908789805,
+          "fitted_shared_scale": 15.926318368500299,
+          "negative_control_selected_labels": [
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 473,
+          "draws": 10000,
+          "add_one_fraction": 0.04739526047395261,
+          "null_score_quantiles": {
+            "q01": 0.06682490988065304,
+            "q05": 0.1173900380108618,
+            "q50": 0.5616441953199995,
+            "q95": 1.1520038215323787
+          }
+        },
+        {
+          "family": "mass_energy:M1:powers_reciprocal:d1",
+          "integer_cap": 1,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 256,
+          "unique_offset_tuples_upper_bound": 81,
+          "observed_rms_log_residual": 0.11516097908789805,
+          "fitted_shared_scale": 15.926318368500299,
+          "negative_control_selected_labels": [
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 473,
+          "draws": 10000,
+          "add_one_fraction": 0.04739526047395261,
+          "null_score_quantiles": {
+            "q01": 0.06682490988065304,
+            "q05": 0.1173900380108618,
+            "q50": 0.5616441953199995,
+            "q95": 1.1520038215323787
+          }
+        },
+        {
+          "family": "mass_energy:M1:powers_reciprocal:d-1",
+          "integer_cap": 1,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 256,
+          "unique_offset_tuples_upper_bound": 81,
+          "observed_rms_log_residual": 0.11516097908789805,
+          "fitted_shared_scale": 15.926318368500299,
+          "negative_control_selected_labels": [
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 473,
+          "draws": 10000,
+          "add_one_fraction": 0.04739526047395261,
+          "null_score_quantiles": {
+            "q01": 0.06682490988065304,
+            "q05": 0.1173900380108618,
+            "q50": 0.5616441953199995,
+            "q95": 1.1520038215323787
+          }
+        },
+        {
+          "family": "mass_energy:M6:identity:d1",
+          "integer_cap": 6,
+          "exponent_menu": [
+            1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 1296,
+          "unique_offset_tuples_upper_bound": 1296,
+          "observed_rms_log_residual": 0.11516097908789798,
+          "fitted_shared_scale": 7.963159184250152,
+          "negative_control_selected_labels": [
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 4,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 2,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 2026,
+          "draws": 10000,
+          "add_one_fraction": 0.20267973202679732,
+          "null_score_quantiles": {
+            "q01": 0.02618130115981641,
+            "q05": 0.04504736925682166,
+            "q50": 0.4038855973033115,
+            "q95": 0.9845317751816477
+          }
+        },
+        {
+          "family": "mass_energy:M6:identity:d-1",
+          "integer_cap": 6,
+          "exponent_menu": [
+            1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 1296,
+          "unique_offset_tuples_upper_bound": 1296,
+          "observed_rms_log_residual": 0.043077118018220624,
+          "fitted_shared_scale": 29.642218522666813,
+          "negative_control_selected_labels": [
+            {
+              "n": 3,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 4,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 2,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 414,
+          "draws": 10000,
+          "add_one_fraction": 0.041495850414958506,
+          "null_score_quantiles": {
+            "q01": 0.025911633781305423,
+            "q05": 0.045913672090603055,
+            "q50": 0.40452954955543463,
+            "q95": 0.9842930819959803
+          }
+        },
+        {
+          "family": "mass_energy:M6:powers:d1",
+          "integer_cap": 6,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 104976,
+          "unique_offset_tuples_upper_bound": 20736,
+          "observed_rms_log_residual": 0.04140405525735216,
+          "fitted_shared_scale": 3.765545489830578,
+          "negative_control_selected_labels": [
+            {
+              "n": 5,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 4,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 2,
+              "exponent": 2,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 2815,
+          "draws": 10000,
+          "add_one_fraction": 0.28157184281571845,
+          "null_score_quantiles": {
+            "q01": 0.012217922870341858,
+            "q05": 0.02167956777605645,
+            "q50": 0.057916967873405,
+            "q95": 0.4506364042599984
+          }
+        },
+        {
+          "family": "mass_energy:M6:powers:d-1",
+          "integer_cap": 6,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 104976,
+          "unique_offset_tuples_upper_bound": 20736,
+          "observed_rms_log_residual": 0.040201430113207565,
+          "fitted_shared_scale": 78.8230445727228,
+          "negative_control_selected_labels": [
+            {
+              "n": 4,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 6,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 2641,
+          "draws": 10000,
+          "add_one_fraction": 0.26417358264173585,
+          "null_score_quantiles": {
+            "q01": 0.012448086257874877,
+            "q05": 0.022273098652142533,
+            "q50": 0.057680875741507695,
+            "q95": 0.4500197072642213
+          }
+        },
+        {
+          "family": "mass_energy:M6:powers_reciprocal:d1",
+          "integer_cap": 6,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 331776,
+          "unique_offset_tuples_upper_bound": 20736,
+          "observed_rms_log_residual": 0.04140405525735216,
+          "fitted_shared_scale": 3.765545489830578,
+          "negative_control_selected_labels": [
+            {
+              "n": 5,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 4,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 2,
+              "exponent": 2,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 2815,
+          "draws": 10000,
+          "add_one_fraction": 0.28157184281571845,
+          "null_score_quantiles": {
+            "q01": 0.012217922870341858,
+            "q05": 0.02167956777605645,
+            "q50": 0.057916967873405,
+            "q95": 0.4506364042599984
+          }
+        },
+        {
+          "family": "mass_energy:M6:powers_reciprocal:d-1",
+          "integer_cap": 6,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 331776,
+          "unique_offset_tuples_upper_bound": 20736,
+          "observed_rms_log_residual": 0.040201430113207565,
+          "fitted_shared_scale": 78.8230445727228,
+          "negative_control_selected_labels": [
+            {
+              "n": 4,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 6,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 2641,
+          "draws": 10000,
+          "add_one_fraction": 0.26417358264173585,
+          "null_score_quantiles": {
+            "q01": 0.012448086257874877,
+            "q05": 0.022273098652142533,
+            "q50": 0.057680875741507695,
+            "q95": 0.4500197072642213
+          }
+        },
+        {
+          "family": "mass_energy:M12:identity:d1",
+          "integer_cap": 12,
+          "exponent_menu": [
+            1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 20736,
+          "unique_offset_tuples_upper_bound": 20736,
+          "observed_rms_log_residual": 0.04307711801822066,
+          "fitted_shared_scale": 2.4701848768889003,
+          "negative_control_selected_labels": [
+            {
+              "n": 4,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 3,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 12,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 6,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 2282,
+          "draws": 10000,
+          "add_one_fraction": 0.22827717228277172,
+          "null_score_quantiles": {
+            "q01": 0.010394749205775638,
+            "q05": 0.018149472824481323,
+            "q50": 0.15898375173925927,
+            "q95": 0.710993827364301
+          }
+        },
+        {
+          "family": "mass_energy:M12:identity:d-1",
+          "integer_cap": 12,
+          "exponent_menu": [
+            1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 20736,
+          "unique_offset_tuples_upper_bound": 20736,
+          "observed_rms_log_residual": 0.03605668965301236,
+          "fitted_shared_scale": 63.454953217085354,
+          "negative_control_selected_labels": [
+            {
+              "n": 7,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 9,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 2,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 4,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 1791,
+          "draws": 10000,
+          "add_one_fraction": 0.17918208179182082,
+          "null_score_quantiles": {
+            "q01": 0.010697415761377437,
+            "q05": 0.01913707941931848,
+            "q50": 0.1579721543096277,
+            "q95": 0.7118365000382186
+          }
+        },
+        {
+          "family": "mass_energy:M12:powers:d1",
+          "integer_cap": 12,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 1679616,
+          "unique_offset_tuples_upper_bound": 331776,
+          "observed_rms_log_residual": 0.014317976977512862,
+          "fitted_shared_scale": 1.3960052178822642,
+          "negative_control_selected_labels": [
+            {
+              "n": 7,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 11,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 11,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 1891,
+          "draws": 10000,
+          "add_one_fraction": 0.18918108189181082,
+          "null_score_quantiles": {
+            "q01": 0.005179495024485356,
+            "q05": 0.008689035034913145,
+            "q50": 0.023297225514276647,
+            "q95": 0.2028478209124357
+          }
+        },
+        {
+          "family": "mass_energy:M12:powers:d-1",
+          "integer_cap": 12,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 1679616,
+          "unique_offset_tuples_upper_bound": 331776,
+          "observed_rms_log_residual": 0.010394287276398762,
+          "fitted_shared_scale": 154.25386732022747,
+          "negative_control_selected_labels": [
+            {
+              "n": 8,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 11,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 778,
+          "draws": 10000,
+          "add_one_fraction": 0.07789221077892211,
+          "null_score_quantiles": {
+            "q01": 0.005148884970517628,
+            "q05": 0.008962210375922382,
+            "q50": 0.023574844460874704,
+            "q95": 0.20311615605376304
+          }
+        },
+        {
+          "family": "mass_energy:M12:powers_reciprocal:d1",
+          "integer_cap": 12,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 5308416,
+          "unique_offset_tuples_upper_bound": 331776,
+          "observed_rms_log_residual": 0.014317976977512862,
+          "fitted_shared_scale": 1.3960052178822642,
+          "negative_control_selected_labels": [
+            {
+              "n": 7,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 11,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 11,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 1891,
+          "draws": 10000,
+          "add_one_fraction": 0.18918108189181082,
+          "null_score_quantiles": {
+            "q01": 0.005179495024485356,
+            "q05": 0.008689035034913145,
+            "q50": 0.023297225514276647,
+            "q95": 0.2028478209124357
+          }
+        },
+        {
+          "family": "mass_energy:M12:powers_reciprocal:d-1",
+          "integer_cap": 12,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 5308416,
+          "unique_offset_tuples_upper_bound": 331776,
+          "observed_rms_log_residual": 0.010394287276398762,
+          "fitted_shared_scale": 154.25386732022747,
+          "negative_control_selected_labels": [
+            {
+              "n": 8,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 11,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 778,
+          "draws": 10000,
+          "add_one_fraction": 0.07789221077892211,
+          "null_score_quantiles": {
+            "q01": 0.005148884970517628,
+            "q05": 0.008962210375922382,
+            "q50": 0.023574844460874704,
+            "q95": 0.20311615605376304
+          }
+        },
+        {
+          "family": "mass_energy:M24:identity:d1",
+          "integer_cap": 24,
+          "exponent_menu": [
+            1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 331776,
+          "unique_offset_tuples_upper_bound": 331776,
+          "observed_rms_log_residual": 0.011629396253542437,
+          "fitted_shared_scale": 1.3805773778687662,
+          "negative_control_selected_labels": [
+            {
+              "n": 7,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 23,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 11,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 1397,
+          "draws": 10000,
+          "add_one_fraction": 0.13978602139786023,
+          "null_score_quantiles": {
+            "q01": 0.004349728838984946,
+            "q05": 0.0074163458493455,
+            "q50": 0.04382485120180645,
+            "q95": 0.44941448922055804
+          }
+        },
+        {
+          "family": "mass_energy:M24:identity:d-1",
+          "integer_cap": 24,
+          "exponent_menu": [
+            1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 331776,
+          "unique_offset_tuples_upper_bound": 331776,
+          "observed_rms_log_residual": 0.010394287276398762,
+          "fitted_shared_scale": 154.25386732022747,
+          "negative_control_selected_labels": [
+            {
+              "n": 16,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 22,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 10,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 1092,
+          "draws": 10000,
+          "add_one_fraction": 0.10928907109289071,
+          "null_score_quantiles": {
+            "q01": 0.004249891664093754,
+            "q05": 0.007673916063917894,
+            "q50": 0.04341743698558102,
+            "q95": 0.4497994589322812
+          }
+        },
+        {
+          "family": "mass_energy:M24:powers:d1",
+          "integer_cap": 24,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 26873856,
+          "unique_offset_tuples_upper_bound": 5308416,
+          "observed_rms_log_residual": 0.009996201745556219,
+          "fitted_shared_scale": 0.8328459481277669,
+          "negative_control_selected_labels": [
+            {
+              "n": 23,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 17,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 19,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 9,
+              "exponent": 2,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 5181,
+          "draws": 10000,
+          "add_one_fraction": 0.5181481851814819,
+          "null_score_quantiles": {
+            "q01": 0.0019983295856502888,
+            "q05": 0.003586059988689304,
+            "q50": 0.009730861584893608,
+            "q95": 0.05764448561823799
+          }
+        },
+        {
+          "family": "mass_energy:M24:powers:d-1",
+          "integer_cap": 24,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 26873856,
+          "unique_offset_tuples_upper_bound": 5308416,
+          "observed_rms_log_residual": 0.010394287276398762,
+          "fitted_shared_scale": 308.50773464045494,
+          "negative_control_selected_labels": [
+            {
+              "n": 16,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 22,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 10,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 5434,
+          "draws": 10000,
+          "add_one_fraction": 0.5434456554344566,
+          "null_score_quantiles": {
+            "q01": 0.0020218191514217304,
+            "q05": 0.0034285116939066253,
+            "q50": 0.009740680896882289,
+            "q95": 0.059403091770763104
+          }
+        },
+        {
+          "family": "mass_energy:M24:powers_reciprocal:d1",
+          "integer_cap": 24,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 84934656,
+          "unique_offset_tuples_upper_bound": 5308416,
+          "observed_rms_log_residual": 0.009996201745556219,
+          "fitted_shared_scale": 0.8328459481277669,
+          "negative_control_selected_labels": [
+            {
+              "n": 23,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 17,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 19,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 9,
+              "exponent": 2,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 5181,
+          "draws": 10000,
+          "add_one_fraction": 0.5181481851814819,
+          "null_score_quantiles": {
+            "q01": 0.0019983295856502888,
+            "q05": 0.003586059988689304,
+            "q50": 0.009730861584893608,
+            "q95": 0.05764448561823799
+          }
+        },
+        {
+          "family": "mass_energy:M24:powers_reciprocal:d-1",
+          "integer_cap": 24,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 84934656,
+          "unique_offset_tuples_upper_bound": 5308416,
+          "observed_rms_log_residual": 0.010394287276398762,
+          "fitted_shared_scale": 308.50773464045494,
+          "negative_control_selected_labels": [
+            {
+              "n": 16,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 22,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 10,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 5434,
+          "draws": 10000,
+          "add_one_fraction": 0.5434456554344566,
+          "null_score_quantiles": {
+            "q01": 0.0020218191514217304,
+            "q05": 0.0034285116939066253,
+            "q50": 0.009740680896882289,
+            "q95": 0.059403091770763104
+          }
+        }
+      ],
+      "omnibus": {
+        "selection": "min over both normalization panels, every cap/menu, and harmonic/subharmonic direction",
+        "observed_score": 0.009996201745556049,
+        "selected_family": "native:M24:powers:d1",
+        "null_count": 7319,
+        "draws": 10000,
+        "add_one_fraction": 0.7319268073192681,
+        "monte_carlo_standard_error": 0.004429699651217901,
+        "nominal_model_labels_upper_bound": 478349768,
+        "independent_trials_count": null,
+        "independent_trials_reason": "Nested caps, reciprocal duplicates, common-scale degeneracy and correlated choices; Monte Carlo repeats the whole selection instead."
+      }
+    },
+    {
+      "support": [
+        5,
+        50
+      ],
+      "rows": [
+        {
+          "family": "native:M1:identity:d1",
+          "integer_cap": 1,
+          "exponent_menu": [
+            1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 1,
+          "unique_offset_tuples_upper_bound": 1,
+          "observed_rms_log_residual": 0.6017122085839256,
+          "fitted_shared_scale": 11.261607717702432,
+          "negative_control_selected_labels": [
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 5911,
+          "draws": 10000,
+          "add_one_fraction": 0.5911408859114089,
+          "null_score_quantiles": {
+            "q01": 0.1270051992869359,
+            "q05": 0.2258615182621312,
+            "q50": 0.556102453711875,
+            "q95": 0.8350545070690267
+          }
+        },
+        {
+          "family": "native:M1:identity:d-1",
+          "integer_cap": 1,
+          "exponent_menu": [
+            1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 1,
+          "unique_offset_tuples_upper_bound": 1,
+          "observed_rms_log_residual": 0.6017122085839256,
+          "fitted_shared_scale": 11.261607717702432,
+          "negative_control_selected_labels": [
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 5911,
+          "draws": 10000,
+          "add_one_fraction": 0.5911408859114089,
+          "null_score_quantiles": {
+            "q01": 0.1270051992869359,
+            "q05": 0.2258615182621312,
+            "q50": 0.556102453711875,
+            "q95": 0.8350545070690267
+          }
+        },
+        {
+          "family": "native:M1:powers:d1",
+          "integer_cap": 1,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 81,
+          "unique_offset_tuples_upper_bound": 81,
+          "observed_rms_log_residual": 0.11516097908789805,
+          "fitted_shared_scale": 15.926318368500299,
+          "negative_control_selected_labels": [
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 2400,
+          "draws": 10000,
+          "add_one_fraction": 0.2400759924007599,
+          "null_score_quantiles": {
+            "q01": 0.03881894658739063,
+            "q05": 0.06776028637385599,
+            "q50": 0.1482532548342946,
+            "q95": 0.2756995427005299
+          }
+        },
+        {
+          "family": "native:M1:powers:d-1",
+          "integer_cap": 1,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 81,
+          "unique_offset_tuples_upper_bound": 81,
+          "observed_rms_log_residual": 0.11516097908789805,
+          "fitted_shared_scale": 15.926318368500299,
+          "negative_control_selected_labels": [
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 2400,
+          "draws": 10000,
+          "add_one_fraction": 0.2400759924007599,
+          "null_score_quantiles": {
+            "q01": 0.03881894658739063,
+            "q05": 0.06776028637385599,
+            "q50": 0.1482532548342946,
+            "q95": 0.2756995427005299
+          }
+        },
+        {
+          "family": "native:M1:powers_reciprocal:d1",
+          "integer_cap": 1,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 256,
+          "unique_offset_tuples_upper_bound": 81,
+          "observed_rms_log_residual": 0.11516097908789805,
+          "fitted_shared_scale": 15.926318368500299,
+          "negative_control_selected_labels": [
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 2400,
+          "draws": 10000,
+          "add_one_fraction": 0.2400759924007599,
+          "null_score_quantiles": {
+            "q01": 0.03881894658739063,
+            "q05": 0.06776028637385599,
+            "q50": 0.1482532548342946,
+            "q95": 0.2756995427005299
+          }
+        },
+        {
+          "family": "native:M1:powers_reciprocal:d-1",
+          "integer_cap": 1,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 256,
+          "unique_offset_tuples_upper_bound": 81,
+          "observed_rms_log_residual": 0.11516097908789805,
+          "fitted_shared_scale": 15.926318368500299,
+          "negative_control_selected_labels": [
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 2400,
+          "draws": 10000,
+          "add_one_fraction": 0.2400759924007599,
+          "null_score_quantiles": {
+            "q01": 0.03881894658739063,
+            "q05": 0.06776028637385599,
+            "q50": 0.1482532548342946,
+            "q95": 0.2756995427005299
+          }
+        },
+        {
+          "family": "native:M6:identity:d1",
+          "integer_cap": 6,
+          "exponent_menu": [
+            1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 1296,
+          "unique_offset_tuples_upper_bound": 1296,
+          "observed_rms_log_residual": 0.11516097908789798,
+          "fitted_shared_scale": 7.963159184250152,
+          "negative_control_selected_labels": [
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 4,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 8544,
+          "draws": 10000,
+          "add_one_fraction": 0.8544145585441456,
+          "null_score_quantiles": {
+            "q01": 0.015124417015850057,
+            "q05": 0.025255479888616934,
+            "q50": 0.06442654368244354,
+            "q95": 0.14316882623909455
+          }
+        },
+        {
+          "family": "native:M6:identity:d-1",
+          "integer_cap": 6,
+          "exponent_menu": [
+            1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 1296,
+          "unique_offset_tuples_upper_bound": 1296,
+          "observed_rms_log_residual": 0.043077118018220555,
+          "fitted_shared_scale": 29.642218522666813,
+          "negative_control_selected_labels": [
+            {
+              "n": 3,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 4,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 4,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 2230,
+          "draws": 10000,
+          "add_one_fraction": 0.22307769223077692,
+          "null_score_quantiles": {
+            "q01": 0.01515158203704243,
+            "q05": 0.025329843506618717,
+            "q50": 0.06360490469268837,
+            "q95": 0.1438543408211569
+          }
+        },
+        {
+          "family": "native:M6:powers:d1",
+          "integer_cap": 6,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 104976,
+          "unique_offset_tuples_upper_bound": 20736,
+          "observed_rms_log_residual": 0.04140405525735215,
+          "fitted_shared_scale": 3.765545489830577,
+          "negative_control_selected_labels": [
+            {
+              "n": 5,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 4,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 2,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 6936,
+          "draws": 10000,
+          "add_one_fraction": 0.6936306369363063,
+          "null_score_quantiles": {
+            "q01": 0.009351683374752081,
+            "q05": 0.015643371442780198,
+            "q50": 0.035920872822339314,
+            "q95": 0.05191585209228737
+          }
+        },
+        {
+          "family": "native:M6:powers:d-1",
+          "integer_cap": 6,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 104976,
+          "unique_offset_tuples_upper_bound": 20736,
+          "observed_rms_log_residual": 0.040201430113207565,
+          "fitted_shared_scale": 78.8230445727228,
+          "negative_control_selected_labels": [
+            {
+              "n": 4,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 6,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 6505,
+          "draws": 10000,
+          "add_one_fraction": 0.6505349465053495,
+          "null_score_quantiles": {
+            "q01": 0.009228766258059273,
+            "q05": 0.015326240787193806,
+            "q50": 0.03598814551770213,
+            "q95": 0.052089847713859896
+          }
+        },
+        {
+          "family": "native:M6:powers_reciprocal:d1",
+          "integer_cap": 6,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 331776,
+          "unique_offset_tuples_upper_bound": 20736,
+          "observed_rms_log_residual": 0.04140405525735215,
+          "fitted_shared_scale": 3.765545489830577,
+          "negative_control_selected_labels": [
+            {
+              "n": 5,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 4,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 2,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 6936,
+          "draws": 10000,
+          "add_one_fraction": 0.6936306369363063,
+          "null_score_quantiles": {
+            "q01": 0.009351683374752081,
+            "q05": 0.015643371442780198,
+            "q50": 0.035920872822339314,
+            "q95": 0.05191585209228737
+          }
+        },
+        {
+          "family": "native:M6:powers_reciprocal:d-1",
+          "integer_cap": 6,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 331776,
+          "unique_offset_tuples_upper_bound": 20736,
+          "observed_rms_log_residual": 0.040201430113207565,
+          "fitted_shared_scale": 78.8230445727228,
+          "negative_control_selected_labels": [
+            {
+              "n": 4,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 6,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 6505,
+          "draws": 10000,
+          "add_one_fraction": 0.6505349465053495,
+          "null_score_quantiles": {
+            "q01": 0.009228766258059273,
+            "q05": 0.015326240787193806,
+            "q50": 0.03598814551770213,
+            "q95": 0.052089847713859896
+          }
+        },
+        {
+          "family": "native:M12:identity:d1",
+          "integer_cap": 12,
+          "exponent_menu": [
+            1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 20736,
+          "unique_offset_tuples_upper_bound": 20736,
+          "observed_rms_log_residual": 0.043077118018220624,
+          "fitted_shared_scale": 2.4701848768889003,
+          "negative_control_selected_labels": [
+            {
+              "n": 4,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 3,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 12,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 3,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 7572,
+          "draws": 10000,
+          "add_one_fraction": 0.7572242775722428,
+          "null_score_quantiles": {
+            "q01": 0.006731544703856294,
+            "q05": 0.010874024493508905,
+            "q50": 0.028035579055119525,
+            "q95": 0.07576898683787037
+          }
+        },
+        {
+          "family": "native:M12:identity:d-1",
+          "integer_cap": 12,
+          "exponent_menu": [
+            1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 20736,
+          "unique_offset_tuples_upper_bound": 20736,
+          "observed_rms_log_residual": 0.03605668965301236,
+          "fitted_shared_scale": 63.454953217085354,
+          "negative_control_selected_labels": [
+            {
+              "n": 7,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 9,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 2,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 8,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 6679,
+          "draws": 10000,
+          "add_one_fraction": 0.6679332066793321,
+          "null_score_quantiles": {
+            "q01": 0.006447020090921074,
+            "q05": 0.011014208329575264,
+            "q50": 0.02791123679153111,
+            "q95": 0.07579330322736647
+          }
+        },
+        {
+          "family": "native:M12:powers:d1",
+          "integer_cap": 12,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 1679616,
+          "unique_offset_tuples_upper_bound": 331776,
+          "observed_rms_log_residual": 0.014317976977512862,
+          "fitted_shared_scale": 1.3960052178822642,
+          "negative_control_selected_labels": [
+            {
+              "n": 7,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 11,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 11,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 4654,
+          "draws": 10000,
+          "add_one_fraction": 0.4654534546545345,
+          "null_score_quantiles": {
+            "q01": 0.003507006692825044,
+            "q05": 0.006301532690784798,
+            "q50": 0.014798693149359202,
+            "q95": 0.02259776478571953
+          }
+        },
+        {
+          "family": "native:M12:powers:d-1",
+          "integer_cap": 12,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 1679616,
+          "unique_offset_tuples_upper_bound": 331776,
+          "observed_rms_log_residual": 0.010394287276398762,
+          "fitted_shared_scale": 154.25386732022747,
+          "negative_control_selected_labels": [
+            {
+              "n": 8,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 11,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 10,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 2128,
+          "draws": 10000,
+          "add_one_fraction": 0.21287871212878712,
+          "null_score_quantiles": {
+            "q01": 0.0036510470229388753,
+            "q05": 0.006274569105812388,
+            "q50": 0.014756125998363047,
+            "q95": 0.022499411578904654
+          }
+        },
+        {
+          "family": "native:M12:powers_reciprocal:d1",
+          "integer_cap": 12,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 5308416,
+          "unique_offset_tuples_upper_bound": 331776,
+          "observed_rms_log_residual": 0.014317976977512862,
+          "fitted_shared_scale": 1.3960052178822642,
+          "negative_control_selected_labels": [
+            {
+              "n": 7,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 11,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 11,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 4654,
+          "draws": 10000,
+          "add_one_fraction": 0.4654534546545345,
+          "null_score_quantiles": {
+            "q01": 0.003507006692825044,
+            "q05": 0.006301532690784798,
+            "q50": 0.014798693149359202,
+            "q95": 0.02259776478571953
+          }
+        },
+        {
+          "family": "native:M12:powers_reciprocal:d-1",
+          "integer_cap": 12,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 5308416,
+          "unique_offset_tuples_upper_bound": 331776,
+          "observed_rms_log_residual": 0.010394287276398762,
+          "fitted_shared_scale": 154.25386732022747,
+          "negative_control_selected_labels": [
+            {
+              "n": 8,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 11,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 10,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 2128,
+          "draws": 10000,
+          "add_one_fraction": 0.21287871212878712,
+          "null_score_quantiles": {
+            "q01": 0.0036510470229388753,
+            "q05": 0.006274569105812388,
+            "q50": 0.014756125998363047,
+            "q95": 0.022499411578904654
+          }
+        },
+        {
+          "family": "native:M24:identity:d1",
+          "integer_cap": 24,
+          "exponent_menu": [
+            1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 331776,
+          "unique_offset_tuples_upper_bound": 331776,
+          "observed_rms_log_residual": 0.029070791531177736,
+          "fitted_shared_scale": 2.4212460875640387,
+          "negative_control_selected_labels": [
+            {
+              "n": 4,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 3,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 13,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 3,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 9276,
+          "draws": 10000,
+          "add_one_fraction": 0.9276072392760724,
+          "null_score_quantiles": {
+            "q01": 0.0025353926700191114,
+            "q05": 0.004399849845634228,
+            "q50": 0.011659255723901068,
+            "q95": 0.03290914839626743
+          }
+        },
+        {
+          "family": "native:M24:identity:d-1",
+          "integer_cap": 24,
+          "exponent_menu": [
+            1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 331776,
+          "unique_offset_tuples_upper_bound": 331776,
+          "observed_rms_log_residual": 0.010394287276398762,
+          "fitted_shared_scale": 154.25386732022747,
+          "negative_control_selected_labels": [
+            {
+              "n": 16,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 22,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 20,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 4169,
+          "draws": 10000,
+          "add_one_fraction": 0.416958304169583,
+          "null_score_quantiles": {
+            "q01": 0.002493709126049254,
+            "q05": 0.004533018518684475,
+            "q50": 0.011559162098172437,
+            "q95": 0.03298698769255256
+          }
+        },
+        {
+          "family": "native:M24:powers:d1",
+          "integer_cap": 24,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 26873856,
+          "unique_offset_tuples_upper_bound": 5308416,
+          "observed_rms_log_residual": 0.009996201745556049,
+          "fitted_shared_scale": 0.8328459481277668,
+          "negative_control_selected_labels": [
+            {
+              "n": 23,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 17,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 19,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 9,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 9637,
+          "draws": 10000,
+          "add_one_fraction": 0.9637036296370363,
+          "null_score_quantiles": {
+            "q01": 0.0014070559562920394,
+            "q05": 0.0024347153800752864,
+            "q50": 0.005862598467135691,
+            "q95": 0.009700824341743117
+          }
+        },
+        {
+          "family": "native:M24:powers:d-1",
+          "integer_cap": 24,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 26873856,
+          "unique_offset_tuples_upper_bound": 5308416,
+          "observed_rms_log_residual": 0.010394287276398762,
+          "fitted_shared_scale": 308.50773464045494,
+          "negative_control_selected_labels": [
+            {
+              "n": 16,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 22,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 20,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 9763,
+          "draws": 10000,
+          "add_one_fraction": 0.9763023697630236,
+          "null_score_quantiles": {
+            "q01": 0.0013980571578952015,
+            "q05": 0.0023836898149675913,
+            "q50": 0.005852537364025653,
+            "q95": 0.009696501340767251
+          }
+        },
+        {
+          "family": "native:M24:powers_reciprocal:d1",
+          "integer_cap": 24,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 84934656,
+          "unique_offset_tuples_upper_bound": 5308416,
+          "observed_rms_log_residual": 0.009996201745556049,
+          "fitted_shared_scale": 0.8328459481277668,
+          "negative_control_selected_labels": [
+            {
+              "n": 23,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 17,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 19,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 9,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 9637,
+          "draws": 10000,
+          "add_one_fraction": 0.9637036296370363,
+          "null_score_quantiles": {
+            "q01": 0.0014070559562920394,
+            "q05": 0.0024347153800752864,
+            "q50": 0.005862598467135691,
+            "q95": 0.009700824341743117
+          }
+        },
+        {
+          "family": "native:M24:powers_reciprocal:d-1",
+          "integer_cap": 24,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 84934656,
+          "unique_offset_tuples_upper_bound": 5308416,
+          "observed_rms_log_residual": 0.010394287276398762,
+          "fitted_shared_scale": 308.50773464045494,
+          "negative_control_selected_labels": [
+            {
+              "n": 16,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 22,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 20,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 9763,
+          "draws": 10000,
+          "add_one_fraction": 0.9763023697630236,
+          "null_score_quantiles": {
+            "q01": 0.0013980571578952015,
+            "q05": 0.0023836898149675913,
+            "q50": 0.005852537364025653,
+            "q95": 0.009696501340767251
+          }
+        },
+        {
+          "family": "mass_energy:M1:identity:d1",
+          "integer_cap": 1,
+          "exponent_menu": [
+            1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 1,
+          "unique_offset_tuples_upper_bound": 1,
+          "observed_rms_log_residual": 0.5624343252277796,
+          "fitted_shared_scale": 13.392384024261288,
+          "negative_control_selected_labels": [
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 4317,
+          "draws": 10000,
+          "add_one_fraction": 0.43175682431756823,
+          "null_score_quantiles": {
+            "q01": 0.13753825751110618,
+            "q05": 0.2486171362014397,
+            "q50": 0.6055639852532624,
+            "q95": 0.9939125322842912
+          }
+        },
+        {
+          "family": "mass_energy:M1:identity:d-1",
+          "integer_cap": 1,
+          "exponent_menu": [
+            1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 1,
+          "unique_offset_tuples_upper_bound": 1,
+          "observed_rms_log_residual": 0.5624343252277796,
+          "fitted_shared_scale": 13.392384024261288,
+          "negative_control_selected_labels": [
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 4317,
+          "draws": 10000,
+          "add_one_fraction": 0.43175682431756823,
+          "null_score_quantiles": {
+            "q01": 0.13753825751110618,
+            "q05": 0.2486171362014397,
+            "q50": 0.6055639852532624,
+            "q95": 0.9939125322842912
+          }
+        },
+        {
+          "family": "mass_energy:M1:powers:d1",
+          "integer_cap": 1,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 81,
+          "unique_offset_tuples_upper_bound": 81,
+          "observed_rms_log_residual": 0.11516097908789805,
+          "fitted_shared_scale": 15.926318368500299,
+          "negative_control_selected_labels": [
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 1944,
+          "draws": 10000,
+          "add_one_fraction": 0.1944805519448055,
+          "null_score_quantiles": {
+            "q01": 0.04109423161173772,
+            "q05": 0.07172792645285893,
+            "q50": 0.1599543092593974,
+            "q95": 0.44054623376204916
+          }
+        },
+        {
+          "family": "mass_energy:M1:powers:d-1",
+          "integer_cap": 1,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 81,
+          "unique_offset_tuples_upper_bound": 81,
+          "observed_rms_log_residual": 0.11516097908789805,
+          "fitted_shared_scale": 15.926318368500299,
+          "negative_control_selected_labels": [
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 1944,
+          "draws": 10000,
+          "add_one_fraction": 0.1944805519448055,
+          "null_score_quantiles": {
+            "q01": 0.04109423161173772,
+            "q05": 0.07172792645285893,
+            "q50": 0.1599543092593974,
+            "q95": 0.44054623376204916
+          }
+        },
+        {
+          "family": "mass_energy:M1:powers_reciprocal:d1",
+          "integer_cap": 1,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 256,
+          "unique_offset_tuples_upper_bound": 81,
+          "observed_rms_log_residual": 0.11516097908789805,
+          "fitted_shared_scale": 15.926318368500299,
+          "negative_control_selected_labels": [
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 1944,
+          "draws": 10000,
+          "add_one_fraction": 0.1944805519448055,
+          "null_score_quantiles": {
+            "q01": 0.04109423161173772,
+            "q05": 0.07172792645285893,
+            "q50": 0.1599543092593974,
+            "q95": 0.44054623376204916
+          }
+        },
+        {
+          "family": "mass_energy:M1:powers_reciprocal:d-1",
+          "integer_cap": 1,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 256,
+          "unique_offset_tuples_upper_bound": 81,
+          "observed_rms_log_residual": 0.11516097908789805,
+          "fitted_shared_scale": 15.926318368500299,
+          "negative_control_selected_labels": [
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 1944,
+          "draws": 10000,
+          "add_one_fraction": 0.1944805519448055,
+          "null_score_quantiles": {
+            "q01": 0.04109423161173772,
+            "q05": 0.07172792645285893,
+            "q50": 0.1599543092593974,
+            "q95": 0.44054623376204916
+          }
+        },
+        {
+          "family": "mass_energy:M6:identity:d1",
+          "integer_cap": 6,
+          "exponent_menu": [
+            1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 1296,
+          "unique_offset_tuples_upper_bound": 1296,
+          "observed_rms_log_residual": 0.11516097908789798,
+          "fitted_shared_scale": 7.963159184250152,
+          "negative_control_selected_labels": [
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 4,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 2,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 7172,
+          "draws": 10000,
+          "add_one_fraction": 0.7172282771722828,
+          "null_score_quantiles": {
+            "q01": 0.01576017994814744,
+            "q05": 0.027688725665863972,
+            "q50": 0.07444069689860153,
+            "q95": 0.28920906765388144
+          }
+        },
+        {
+          "family": "mass_energy:M6:identity:d-1",
+          "integer_cap": 6,
+          "exponent_menu": [
+            1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 1296,
+          "unique_offset_tuples_upper_bound": 1296,
+          "observed_rms_log_residual": 0.043077118018220624,
+          "fitted_shared_scale": 29.642218522666813,
+          "negative_control_selected_labels": [
+            {
+              "n": 3,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 4,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 2,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 1707,
+          "draws": 10000,
+          "add_one_fraction": 0.17078292170782922,
+          "null_score_quantiles": {
+            "q01": 0.01665904587972909,
+            "q05": 0.028049779090311047,
+            "q50": 0.07503138881044982,
+            "q95": 0.2902144121293856
+          }
+        },
+        {
+          "family": "mass_energy:M6:powers:d1",
+          "integer_cap": 6,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 104976,
+          "unique_offset_tuples_upper_bound": 20736,
+          "observed_rms_log_residual": 0.04140405525735216,
+          "fitted_shared_scale": 3.765545489830578,
+          "negative_control_selected_labels": [
+            {
+              "n": 5,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 4,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 2,
+              "exponent": 2,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 6286,
+          "draws": 10000,
+          "add_one_fraction": 0.6286371362863714,
+          "null_score_quantiles": {
+            "q01": 0.009799190426756805,
+            "q05": 0.016292481537949616,
+            "q50": 0.0375140101798679,
+            "q95": 0.06060882501553414
+          }
+        },
+        {
+          "family": "mass_energy:M6:powers:d-1",
+          "integer_cap": 6,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 104976,
+          "unique_offset_tuples_upper_bound": 20736,
+          "observed_rms_log_residual": 0.040201430113207565,
+          "fitted_shared_scale": 78.8230445727228,
+          "negative_control_selected_labels": [
+            {
+              "n": 4,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 6,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 6037,
+          "draws": 10000,
+          "add_one_fraction": 0.6037396260373963,
+          "null_score_quantiles": {
+            "q01": 0.009468506689257174,
+            "q05": 0.015849071629698903,
+            "q50": 0.03701286861903877,
+            "q95": 0.0566001108647486
+          }
+        },
+        {
+          "family": "mass_energy:M6:powers_reciprocal:d1",
+          "integer_cap": 6,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 331776,
+          "unique_offset_tuples_upper_bound": 20736,
+          "observed_rms_log_residual": 0.04140405525735216,
+          "fitted_shared_scale": 3.765545489830578,
+          "negative_control_selected_labels": [
+            {
+              "n": 5,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 1,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 4,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 2,
+              "exponent": 2,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 6286,
+          "draws": 10000,
+          "add_one_fraction": 0.6286371362863714,
+          "null_score_quantiles": {
+            "q01": 0.009799190426756805,
+            "q05": 0.016292481537949616,
+            "q50": 0.0375140101798679,
+            "q95": 0.06060882501553414
+          }
+        },
+        {
+          "family": "mass_energy:M6:powers_reciprocal:d-1",
+          "integer_cap": 6,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 331776,
+          "unique_offset_tuples_upper_bound": 20736,
+          "observed_rms_log_residual": 0.040201430113207565,
+          "fitted_shared_scale": 78.8230445727228,
+          "negative_control_selected_labels": [
+            {
+              "n": 4,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 6,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 6037,
+          "draws": 10000,
+          "add_one_fraction": 0.6037396260373963,
+          "null_score_quantiles": {
+            "q01": 0.009468506689257174,
+            "q05": 0.015849071629698903,
+            "q50": 0.03701286861903877,
+            "q95": 0.0566001108647486
+          }
+        },
+        {
+          "family": "mass_energy:M12:identity:d1",
+          "integer_cap": 12,
+          "exponent_menu": [
+            1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 20736,
+          "unique_offset_tuples_upper_bound": 20736,
+          "observed_rms_log_residual": 0.04307711801822066,
+          "fitted_shared_scale": 2.4701848768889003,
+          "negative_control_selected_labels": [
+            {
+              "n": 4,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 3,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 12,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 6,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 6771,
+          "draws": 10000,
+          "add_one_fraction": 0.6771322867713229,
+          "null_score_quantiles": {
+            "q01": 0.0069960832925809666,
+            "q05": 0.011578472691284146,
+            "q50": 0.03140172988402477,
+            "q95": 0.1068597561721069
+          }
+        },
+        {
+          "family": "mass_energy:M12:identity:d-1",
+          "integer_cap": 12,
+          "exponent_menu": [
+            1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 20736,
+          "unique_offset_tuples_upper_bound": 20736,
+          "observed_rms_log_residual": 0.03605668965301236,
+          "fitted_shared_scale": 63.454953217085354,
+          "negative_control_selected_labels": [
+            {
+              "n": 7,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 9,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 2,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 4,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 5934,
+          "draws": 10000,
+          "add_one_fraction": 0.5934406559344065,
+          "null_score_quantiles": {
+            "q01": 0.006760980158834797,
+            "q05": 0.011694635925463501,
+            "q50": 0.030902535107070035,
+            "q95": 0.09822065437519839
+          }
+        },
+        {
+          "family": "mass_energy:M12:powers:d1",
+          "integer_cap": 12,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 1679616,
+          "unique_offset_tuples_upper_bound": 331776,
+          "observed_rms_log_residual": 0.014317976977512862,
+          "fitted_shared_scale": 1.3960052178822642,
+          "negative_control_selected_labels": [
+            {
+              "n": 7,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 11,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 11,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 4226,
+          "draws": 10000,
+          "add_one_fraction": 0.4226577342265773,
+          "null_score_quantiles": {
+            "q01": 0.0036034353916018463,
+            "q05": 0.006561527176635263,
+            "q50": 0.015516406925195785,
+            "q95": 0.026032533422514888
+          }
+        },
+        {
+          "family": "mass_energy:M12:powers:d-1",
+          "integer_cap": 12,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 1679616,
+          "unique_offset_tuples_upper_bound": 331776,
+          "observed_rms_log_residual": 0.010394287276398762,
+          "fitted_shared_scale": 154.25386732022747,
+          "negative_control_selected_labels": [
+            {
+              "n": 8,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 11,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 1922,
+          "draws": 10000,
+          "add_one_fraction": 0.1922807719228077,
+          "null_score_quantiles": {
+            "q01": 0.0038079000604743733,
+            "q05": 0.00651604208135901,
+            "q50": 0.015273436590520575,
+            "q95": 0.02398552012346269
+          }
+        },
+        {
+          "family": "mass_energy:M12:powers_reciprocal:d1",
+          "integer_cap": 12,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 5308416,
+          "unique_offset_tuples_upper_bound": 331776,
+          "observed_rms_log_residual": 0.014317976977512862,
+          "fitted_shared_scale": 1.3960052178822642,
+          "negative_control_selected_labels": [
+            {
+              "n": 7,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 11,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 11,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 4226,
+          "draws": 10000,
+          "add_one_fraction": 0.4226577342265773,
+          "null_score_quantiles": {
+            "q01": 0.0036034353916018463,
+            "q05": 0.006561527176635263,
+            "q50": 0.015516406925195785,
+            "q95": 0.026032533422514888
+          }
+        },
+        {
+          "family": "mass_energy:M12:powers_reciprocal:d-1",
+          "integer_cap": 12,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 5308416,
+          "unique_offset_tuples_upper_bound": 331776,
+          "observed_rms_log_residual": 0.010394287276398762,
+          "fitted_shared_scale": 154.25386732022747,
+          "negative_control_selected_labels": [
+            {
+              "n": 8,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 11,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 1922,
+          "draws": 10000,
+          "add_one_fraction": 0.1922807719228077,
+          "null_score_quantiles": {
+            "q01": 0.0038079000604743733,
+            "q05": 0.00651604208135901,
+            "q50": 0.015273436590520575,
+            "q95": 0.02398552012346269
+          }
+        },
+        {
+          "family": "mass_energy:M24:identity:d1",
+          "integer_cap": 24,
+          "exponent_menu": [
+            1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 331776,
+          "unique_offset_tuples_upper_bound": 331776,
+          "observed_rms_log_residual": 0.011629396253542437,
+          "fitted_shared_scale": 1.3805773778687662,
+          "negative_control_selected_labels": [
+            {
+              "n": 7,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 23,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 11,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 4203,
+          "draws": 10000,
+          "add_one_fraction": 0.4203579642035796,
+          "null_score_quantiles": {
+            "q01": 0.002689106763914079,
+            "q05": 0.004703388116878548,
+            "q50": 0.013088293070334192,
+            "q95": 0.049339126708655395
+          }
+        },
+        {
+          "family": "mass_energy:M24:identity:d-1",
+          "integer_cap": 24,
+          "exponent_menu": [
+            1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 331776,
+          "unique_offset_tuples_upper_bound": 331776,
+          "observed_rms_log_residual": 0.010394287276398762,
+          "fitted_shared_scale": 154.25386732022747,
+          "negative_control_selected_labels": [
+            {
+              "n": 16,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 22,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 1,
+              "orientation": 1
+            },
+            {
+              "n": 10,
+              "exponent": 1,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 3579,
+          "draws": 10000,
+          "add_one_fraction": 0.35796420357964204,
+          "null_score_quantiles": {
+            "q01": 0.0025843029316223376,
+            "q05": 0.0047886460637524605,
+            "q50": 0.012794345131659758,
+            "q95": 0.03986897334373555
+          }
+        },
+        {
+          "family": "mass_energy:M24:powers:d1",
+          "integer_cap": 24,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 26873856,
+          "unique_offset_tuples_upper_bound": 5308416,
+          "observed_rms_log_residual": 0.009996201745556219,
+          "fitted_shared_scale": 0.8328459481277669,
+          "negative_control_selected_labels": [
+            {
+              "n": 23,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 17,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 19,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 9,
+              "exponent": 2,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 9141,
+          "draws": 10000,
+          "add_one_fraction": 0.9141085891410858,
+          "null_score_quantiles": {
+            "q01": 0.0014755253433028034,
+            "q05": 0.0025366930080579636,
+            "q50": 0.006145213241723443,
+            "q95": 0.011006179621290298
+          }
+        },
+        {
+          "family": "mass_energy:M24:powers:d-1",
+          "integer_cap": 24,
+          "exponent_menu": [
+            0.5,
+            1,
+            2
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 26873856,
+          "unique_offset_tuples_upper_bound": 5308416,
+          "observed_rms_log_residual": 0.010394287276398762,
+          "fitted_shared_scale": 308.50773464045494,
+          "negative_control_selected_labels": [
+            {
+              "n": 16,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 22,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 10,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 9547,
+          "draws": 10000,
+          "add_one_fraction": 0.9547045295470453,
+          "null_score_quantiles": {
+            "q01": 0.001456078144860123,
+            "q05": 0.0024870763466812045,
+            "q50": 0.0060848456232603385,
+            "q95": 0.010270971463703446
+          }
+        },
+        {
+          "family": "mass_energy:M24:powers_reciprocal:d1",
+          "integer_cap": 24,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": 1,
+          "nominal_label_tuples": 84934656,
+          "unique_offset_tuples_upper_bound": 5308416,
+          "observed_rms_log_residual": 0.009996201745556219,
+          "fitted_shared_scale": 0.8328459481277669,
+          "negative_control_selected_labels": [
+            {
+              "n": 23,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 17,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 19,
+              "exponent": 2,
+              "orientation": 1
+            },
+            {
+              "n": 9,
+              "exponent": 2,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 9141,
+          "draws": 10000,
+          "add_one_fraction": 0.9141085891410858,
+          "null_score_quantiles": {
+            "q01": 0.0014755253433028034,
+            "q05": 0.0025366930080579636,
+            "q50": 0.006145213241723443,
+            "q95": 0.011006179621290298
+          }
+        },
+        {
+          "family": "mass_energy:M24:powers_reciprocal:d-1",
+          "integer_cap": 24,
+          "exponent_menu": [
+            0.5,
+            1,
+            2,
+            -1
+          ],
+          "direction": -1,
+          "nominal_label_tuples": 84934656,
+          "unique_offset_tuples_upper_bound": 5308416,
+          "observed_rms_log_residual": 0.010394287276398762,
+          "fitted_shared_scale": 308.50773464045494,
+          "negative_control_selected_labels": [
+            {
+              "n": 16,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 22,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 5,
+              "exponent": 0.5,
+              "orientation": 1
+            },
+            {
+              "n": 10,
+              "exponent": 0.5,
+              "orientation": 1
+            }
+          ],
+          "count_null_at_least_as_close": 9547,
+          "draws": 10000,
+          "add_one_fraction": 0.9547045295470453,
+          "null_score_quantiles": {
+            "q01": 0.001456078144860123,
+            "q05": 0.0024870763466812045,
+            "q50": 0.0060848456232603385,
+            "q95": 0.010270971463703446
+          }
+        }
+      ],
+      "omnibus": {
+        "selection": "min over both normalization panels, every cap/menu, and harmonic/subharmonic direction",
+        "observed_score": 0.009996201745556049,
+        "selected_family": "native:M24:powers:d1",
+        "null_count": 9918,
+        "draws": 10000,
+        "add_one_fraction": 0.9918008199180082,
+        "monte_carlo_standard_error": 0.0009018181634897351,
+        "nominal_model_labels_upper_bound": 478349768,
+        "independent_trials_count": null,
+        "independent_trials_reason": "Nested caps, reciprocal duplicates, common-scale degeneracy and correlated choices; Monte Carlo repeats the whole selection instead."
+      }
+    }
+  ]
+}

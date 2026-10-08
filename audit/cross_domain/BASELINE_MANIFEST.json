@@ -1,0 +1,842 @@
+{
+  "commit": "b75989b60eeb9874aae1f4d2562cf35447e3862f",
+  "tree": "d88ced9bc473cff5adac7bbe512df7fe158703d6",
+  "blobs": [
+    {
+      "path": ".dockerignore",
+      "sha": "9435301ed6b6f2b375f58c45c42abd51ec75dc4b",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/DISCUSSION_TEMPLATE/ideas.yml",
+      "sha": "39cdb8dbbbd9a14d69e67bd93c449c2c6ff6d5e2",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/DISCUSSION_TEMPLATE/q-a.yml",
+      "sha": "7c0fa364a4aecfd23c36c53b03beb0598789b83a",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/DISCUSSION_TEMPLATE/show-and-tell.yml",
+      "sha": "897906520ed4eb7cb9d29309acab36c5bf0e059e",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/workflows/container-ci.yml",
+      "sha": "7068801ecc62ee1db28e5ee51979791900a9a453",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/workflows/derivation-closure.yml",
+      "sha": "24bb0acfdfc56812abb3551f99d23f025732c47e",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/workflows/reproducibility.yml",
+      "sha": "46286fa4edff12be86ca7381f420109dc6db12d6",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/workflows/sync-effective-statuses-v2.yml",
+      "sha": "d20190170d456f7548498a79ae94c80875bd2de0",
+      "mode": "100644"
+    },
+    {
+      "path": "Archive/birefringence.py",
+      "sha": "a23211642ab11a680436c84b0db4d80408c0cb62",
+      "mode": "100644"
+    },
+    {
+      "path": "Archive/blackhole_merger.py",
+      "sha": "090bc31565c5498eb2ccf92ab494e65bc5e0de5b",
+      "mode": "100644"
+    },
+    {
+      "path": "Archive/blackhole_merger_tail.py",
+      "sha": "4cb031f5e0baeb3fcd23ece6a40193d43ec0f19f",
+      "mode": "100644"
+    },
+    {
+      "path": "Archive/casimir.py",
+      "sha": "ea51bbdddb0d8c0a16d81438b899c34602524c74",
+      "mode": "100644"
+    },
+    {
+      "path": "Archive/cmb.py",
+      "sha": "ee1c6d14213b18d2fefe7ef315ca1a27c34e12a7",
+      "mode": "100644"
+    },
+    {
+      "path": "Archive/coherence_growth.py",
+      "sha": "248a1a7355a5ff2d227aaf074d532f1d977ea660",
+      "mode": "100644"
+    },
+    {
+      "path": "Archive/cold_atom.py",
+      "sha": "050f61a9917801bcb71d6e8b239d2584db78c13a",
+      "mode": "100644"
+    },
+    {
+      "path": "Archive/cold_atom_feedback.py",
+      "sha": "e89c376a313dc780e3e46cc509ad5dacef1bd720",
+      "mode": "100644"
+    },
+    {
+      "path": "Archive/eigen_modified_lagrangian.py",
+      "sha": "a9ae1372fd96d83968fac3cae8af088e1d842246",
+      "mode": "100644"
+    },
+    {
+      "path": "Archive/eigenvalue_loop2.py",
+      "sha": "66d0f0d6ca9c83fdd006f99c29b3b1cde22d41d9",
+      "mode": "100644"
+    },
+    {
+      "path": "Archive/ensemble_anlysis.py",
+      "sha": "7cf57465388bfcc33409ada6d41293ce3d1c75b8",
+      "mode": "100644"
+    },
+    {
+      "path": "Archive/entropy.py",
+      "sha": "a47313ebebf578516f78d8e52d75d8c574914c21",
+      "mode": "100644"
+    },
+    {
+      "path": "Archive/entropy_enduced_decay.py",
+      "sha": "6ab0103f32cc7e411788a4b3af5a748b1be871d5",
+      "mode": "100644"
+    },
+    {
+      "path": "Archive/entropy_enduced_decay_2.py",
+      "sha": "c9079936065b95c58e2b87cb8aa249f5677485a4",
+      "mode": "100644"
+    },
+    {
+      "path": "Archive/entropy_proof.py",
+      "sha": "49367524fc35d2f7e05ea967cdf6a306563313d7",
+      "mode": "100644"
+    },
+    {
+      "path": "Archive/full_blackhole_merger.py",
+      "sha": "f57e2adc104eb2cccb73a4a95c5eb6fd2f9f9700",
+      "mode": "100644"
+    },
+    {
+      "path": "Archive/full_eigen_modified_lagrangian.py",
+      "sha": "490a78c9f0d394c369e8fa7ff1b9c462546bd094",
+      "mode": "100644"
+    },
+    {
+      "path": "Archive/michelson.py",
+      "sha": "2c94596e174647050905742aa2b1db448da908b7",
+      "mode": "100644"
+    },
+    {
+      "path": "Archive/michelson_psd.py",
+      "sha": "d694d31a41b8109a0bcc09f16a831e2cee0e6650",
+      "mode": "100644"
+    },
+    {
+      "path": "Archive/precision_constants_64.py",
+      "sha": "bff1279481c080927f0e821dd5c33ff02d021929",
+      "mode": "100644"
+    },
+    {
+      "path": "Archive/spacetime_emergence.py",
+      "sha": "e5451fc7d3589b652cfd6af2bb8ddf5800fb25c4",
+      "mode": "100644"
+    },
+    {
+      "path": "Archive/spacetime_emergence3d.py",
+      "sha": "228a3f60bf11cc001f89e39191a67ffb4c57d8cc",
+      "mode": "100644"
+    },
+    {
+      "path": "Archive/sweep.py",
+      "sha": "f27ceba4662c07c06726af736d0ef4024c384021",
+      "mode": "100644"
+    },
+    {
+      "path": "Archive/wct_gpu_diagonal_enhanced.py",
+      "sha": "682934fc91b939f3fc94dfbe73580ba9e693e519",
+      "mode": "100644"
+    },
+    {
+      "path": "Core/entropy_enduced_decay_lagrangian.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644"
+    },
+    {
+      "path": "Core/mass_propagation_final_refined.py",
+      "sha": "0ad4b1fc235e211ec74dce05af859ecafa81eb00",
+      "mode": "100644"
+    },
+    {
+      "path": "Core/spacetime_emergence.py",
+      "sha": "e5451fc7d3589b652cfd6af2bb8ddf5800fb25c4",
+      "mode": "100644"
+    },
+    {
+      "path": "Core/spacetime_emergence3d.py",
+      "sha": "228a3f60bf11cc001f89e39191a67ffb4c57d8cc",
+      "mode": "100644"
+    },
+    {
+      "path": "Core/spacetime_full_alembertian.py",
+      "sha": "1e9670b6b646fb2c9bfb23176469f6cc136801cd",
+      "mode": "100644"
+    },
+    {
+      "path": "Core/spacetime_full_alembertian_3d.py",
+      "sha": "bb83eb04a8e93ce6664662b26a3872c42c0bf936",
+      "mode": "100644"
+    },
+    {
+      "path": "Core/wave_confinement_full_mass_analysis.py",
+      "sha": "401855cd598123e5532ad44b11401ed8dfff81e7",
+      "mode": "100644"
+    },
+    {
+      "path": "Core/wct_full_lagrangian.py",
+      "sha": "50913aca4427bb03531d0057e002ca1371d103ba",
+      "mode": "100644"
+    },
+    {
+      "path": "Core/wct_simulation_scaled.py",
+      "sha": "7ec394a8434aaa206461fe560cf7daee99e425f1",
+      "mode": "100644"
+    },
+    {
+      "path": "Core/wct_spacetime_3d.py",
+      "sha": "772dcf680360096cf195dbb19fcaa86544c88cfb",
+      "mode": "100644"
+    },
+    {
+      "path": "DERIVATION_CLOSURE.md",
+      "sha": "a7b6f35ce3f4e5306ca5d265210e8177c7dddbc5",
+      "mode": "100644"
+    },
+    {
+      "path": "DISCUSSIONS.md",
+      "sha": "09d4a5e98b5c95cd9dd253283b507a28506380e2",
+      "mode": "100644"
+    },
+    {
+      "path": "EQUATIONS.md",
+      "sha": "4626f4db0851dde22304427496a78698125b5018",
+      "mode": "100644"
+    },
+    {
+      "path": "Examples/hydrogen_full_resonance.py",
+      "sha": "885583cff6b646d33e6e9ad830bc96f2923ffc1e",
+      "mode": "100644"
+    },
+    {
+      "path": "Examples/mass_emergence.py",
+      "sha": "753cf76ed89de18d731a1046a40b1a4dfb1a6404",
+      "mode": "100644"
+    },
+    {
+      "path": "Examples/mass_propagation_covariant_enhanced.py",
+      "sha": "821557eb2838ed129899f4e89e2eb967d17a5d4b",
+      "mode": "100644"
+    },
+    {
+      "path": "Examples/maxwell_mass.py",
+      "sha": "5a037241259d00436c8cdf214b3dfd443194d928",
+      "mode": "100644"
+    },
+    {
+      "path": "Examples/maxwell_mass_3d.py",
+      "sha": "aba122d02d9db9fbc4487333fcc7a33336920dd9",
+      "mode": "100644"
+    },
+    {
+      "path": "Examples/stable_mass_longrun_simulation.py",
+      "sha": "a907ef6cc5f830613dc54a7ff6c4feadd46743be",
+      "mode": "100644"
+    },
+    {
+      "path": "Examples/vacuum.py",
+      "sha": "cbbc1d94f455c395caf6a1f3ff81d86cf7b994f1",
+      "mode": "100644"
+    },
+    {
+      "path": "MASTER_EQUATIONS.md",
+      "sha": "72e5d92904030aff1a081addb5c08f4a59dee09c",
+      "mode": "100644"
+    },
+    {
+      "path": "Makefile",
+      "sha": "f03d474ec6cb2707d617e617c73a76057d7a086e",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/Reyes - 2025 - Discrete Wave-Constrained Computation and Classical Complexity Turing Equivalence for  and .pdf",
+      "sha": "2207aef3a4f3acd883a89585f28f323a6c69110f",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/Reyes - 2025 - Emergence of Effective Mass Solenoidal Topology of Vibrational Energy.pdf",
+      "sha": "26680b496dbe21217330307b4d07ace8b369bd02",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/Reyes - 2025 - Hard Upper Bound on Spatial Dimensionality in Wave Confinement Theory.pdf",
+      "sha": "0b69bb617cd28564ca918b77c7f4990d74dd8dd0",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/Reyes - 2025 - JUNO Energy Resolution and Detectability of WCT Ghost-Mode Neutrinos.pdf",
+      "sha": "aa4bcccf4ba096c1c3a20669eda373a9547577b1",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/Reyes - 2025 - Observation of Long-Lived Photon Resonance Confinement in Water Cavities.pdf",
+      "sha": "125596b2f96b60aaeb558e0a5f6da7c976cde60b",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/Reyes - 2025 - P vs NP in Curvature-Bounded Wave Computation A Model-Relative P_WCC ≠ NP_WCC Separation.pdf",
+      "sha": "9656fb146ba8674c7682c9219e89252eadbc61f8",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/Reyes - 2025 - Phase-Flux Field (PFF) Axiomatic Substrate for Wave Confinement Theory Zero-Wave Invariance, Finite.pdf",
+      "sha": "7d1cc7f0f811a04c36129f68bae8482f9f9179c0",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/Reyes - 2025 - Prediction & Protocol Ledger Long-Lived Harmonic State Induction in Photodiodes.pdf",
+      "sha": "12443722a7aabbbe7c006293115091691b56d3aa",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/Reyes - 2025 - Resonance-Confinement Architecture A Physically Bounded Substrate for Safe Superintelligence.pdf",
+      "sha": "c26576ed1aac96476802305e5b715f9c46a5dff6",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/Reyes - 2025 - Rest Energy from Density-Weighted Loop Curvature A Covariant Locking Principle.pdf",
+      "sha": "1c054465d2549634871523525b6c0443abad8d28",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/Reyes - 2025 - Self-Emergent Fourier Cymatics Entropic Eigenmodes out of Chaos.pdf",
+      "sha": "9ff5011574bf41a70e3d9661b287ea1b0b44e4b4",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/Reyes - 2025 - Structure and Derivation of Physical Constants through Wave Confinement.pdf",
+      "sha": "1ab49be7ed752204f9cdcc1a325b4f92ddea3364",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/Reyes - 2025 - The Classical P vs NP Problem is Mathematically and Physically Ill-Posed.pdf",
+      "sha": "e69ac7a1e08f99108fbf617f97047d8ac2eb5382",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/Reyes - 2025 - The Geometry of Resonance Wave Confinement Theory and the Emergence of Mass, Force, and Spacetime.pdf",
+      "sha": "09fe6a7a4f9f0ebb69ff799afb1cdaaf8b293143",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/Reyes - 2025 - Wave Confinement Theory Predicts the Koide Mass Relation A Curvature–Harmonic Origin of Fermion Mas.pdf",
+      "sha": "94f7381752f83e17895a74387adaab4fcfba20ec",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/Reyes - 2025 - WaveLock A Curvature-Locked One-Way Function Based on Nonlinear PDE Evolution.pdf",
+      "sha": "565acca672adc941676315dc352ddbf8a23301ef",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/Reyes - 2026 - A Curvature-Induced Log-Periodic Deformation of C9(q 2) Wave Confinement Theory and the LHCb B 0 →.pdf",
+      "sha": "e1436d23d6b3e4a22d7e8d217ee4db788745c9e6",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/Reyes - 2026 - Bin-Stable Log-Periodic Structure in Public NIST Atomic Line List.pdf",
+      "sha": "28e74381840ffe87cfc7d33d3c9aa6d68cf542c1",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/Reyes - 2026 - Log-Spectral Structure and Koide-Like Winding Geometry in Open-Data B⁰ → K⁰ μ⁺μ⁻ Candidate Spectra.pdf",
+      "sha": "9d633ce0d3f40c75178499b0de113351f18d99a9",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/Reyes - 2026 - Logarithmic Curvature Flow, Filament Localization, and the Geometric Origin of the Lepton Mass Spect.pdf",
+      "sha": "eece7d92e8608166dc1e9c387fc339338a5f369c",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/Reyes - 2026 - Nuclear Fusion Tokamak with Self Sustaining Resonance.pdf",
+      "sha": "74b7bca7ada94c7574cd6c603cc0d7818ac2b773",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/Reyes - 2026 - Recursive AI Drift A 2025 Prediction Timeline External Validation Audit and Technical Note.pdf",
+      "sha": "d5d202bf3e3189fca9e0b2c207c1e594091e4231",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/archive/Emergence of Effective Mass Solenoidal Topology of Vibrational Energy.pdf",
+      "sha": "57b2612d946f2813f76ccab869247105e5e3d746",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/archive/Phase Flux.pdf",
+      "sha": "7d1cc7f0f811a04c36129f68bae8482f9f9179c0",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/archive/Resonant Cavity of Vector Fields.pdf",
+      "sha": "dee855cb8d26897d789c9667dae283e63b24f724",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/archive/Rest Energy from Density.pdf",
+      "sha": "7900e07985d38152e682bac8250784d6c8844e6a",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/archive/Self-Emergent Fourier Cymatics Entropic Eigenmodes out of Chaos.pdf",
+      "sha": "623bc0b9ae4ee541cd1483d62b9fb23ab154a3d3",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/archive/Structure and Derivation of Physical Constants through Wave Confinement.pdf",
+      "sha": "58815a65b4b773a4654c048fa33463ff209e922a",
+      "mode": "100644"
+    },
+    {
+      "path": "Papers/archive/The_Geometry_Of_Resonance.pdf",
+      "sha": "b32da39d252801e982f14dc6113481acfd499965",
+      "mode": "100644"
+    },
+    {
+      "path": "READING_ORDER.md",
+      "sha": "0c6c07f93607b6da9e93bab4bbcf3eed6f69b488",
+      "mode": "100644"
+    },
+    {
+      "path": "README.md",
+      "sha": "6da7ae722d44c9eb5ba692f2e713688095b438c0",
+      "mode": "100644"
+    },
+    {
+      "path": "SCOPE.md",
+      "sha": "ba3aa6eb3f2fe9c2509b2a0470dad8422095909a",
+      "mode": "100644"
+    },
+    {
+      "path": "SM_Spectrum/SM_final.py",
+      "sha": "dc3f0232d45824f4f71ca88770970a2a6364ae4f",
+      "mode": "100644"
+    },
+    {
+      "path": "SM_Spectrum/_map.py",
+      "sha": "df277e8f9ec246dacc465331925ec06d9ead6f3b",
+      "mode": "100644"
+    },
+    {
+      "path": "SM_Spectrum/_terms_perfection_v18.py",
+      "sha": "d98cfe243c5a90c332c80ca88618b2343e0698f4",
+      "mode": "100644"
+    },
+    {
+      "path": "SM_Spectrum/calculate_masses.py",
+      "sha": "9010a472aa80a52264064c95f6ee7e17e9b66df6",
+      "mode": "100644"
+    },
+    {
+      "path": "SM_Spectrum/resonance_map.py",
+      "sha": "eee4e076b4ace50e0832537930f44c85fde0a0b1",
+      "mode": "100644"
+    },
+    {
+      "path": "SOURCE_OF_TRUTH_COMPILER_SPEC.md",
+      "sha": "669e481533d4aaa56ae44398c6554e06a9c50108",
+      "mode": "100644"
+    },
+    {
+      "path": "WCT_CORRECTED_VARIATIONAL_CLOSURE_DRAFT.md",
+      "sha": "353e07ff7896cba3a83186b97e890f2bc03530f2",
+      "mode": "100644"
+    },
+    {
+      "path": "WCT_FULL_EQUATION_LIST_CORRECTED.md",
+      "sha": "e5f3191549f8a6fca05a512c9aef38c2be329719",
+      "mode": "100644"
+    },
+    {
+      "path": "WCT_MASTER_EQUATIONS_UPDATED.md",
+      "sha": "bc99671713f2d93459d9e483c4b25fddce7f4d5e",
+      "mode": "100644"
+    },
+    {
+      "path": "WELCOME_DISCUSSION.md",
+      "sha": "a55d45977189a5f552435c520f1d13423bf1f9f6",
+      "mode": "100644"
+    },
+    {
+      "path": "Wavefield_Folding/analyze_logs.py",
+      "sha": "f5a1cb21c240a1011a1fa2a419561709f10c9fc5",
+      "mode": "100644"
+    },
+    {
+      "path": "Wavefield_Folding/cone_helmholtz_spectrum.csv",
+      "sha": "8edba44650a4c1fb25f319c75c88f9bd6c4ec387",
+      "mode": "100644"
+    },
+    {
+      "path": "Wavefield_Folding/cone_helmholtz_spectrum.png",
+      "sha": "e8a1717f4ddaca9d6b5356dc6c4f7003ddc9cca3",
+      "mode": "100644"
+    },
+    {
+      "path": "Wavefield_Folding/entropy.py",
+      "sha": "a47313ebebf578516f78d8e52d75d8c574914c21",
+      "mode": "100644"
+    },
+    {
+      "path": "Wavefield_Folding/gravity_emerging.py",
+      "sha": "505d2d084c65d9b890886b348ea8253502262d94",
+      "mode": "100644"
+    },
+    {
+      "path": "Wavefield_Folding/mass_propagation_covariant_enhanced.py",
+      "sha": "821557eb2838ed129899f4e89e2eb967d17a5d4b",
+      "mode": "100644"
+    },
+    {
+      "path": "Wavefield_Folding/mass_propagation_final_refined.py",
+      "sha": "0ad4b1fc235e211ec74dce05af859ecafa81eb00",
+      "mode": "100644"
+    },
+    {
+      "path": "Wavefield_Folding/mass_propagation_multi_mass_tuned.py",
+      "sha": "943020c0c2224160374be7a0f631869ea456a66f",
+      "mode": "100644"
+    },
+    {
+      "path": "Wavefield_Folding/mass_propagation_stabilized_final.py",
+      "sha": "dc0c539e3351574b7d08a51c72b9846608b34bf9",
+      "mode": "100644"
+    },
+    {
+      "path": "Wavefield_Folding/mass_propagation_tracking.py",
+      "sha": "51c24f2a2b029f3aeb0331123f815da9f6ee61f6",
+      "mode": "100644"
+    },
+    {
+      "path": "Wavefield_Folding/mass_stable_none.py",
+      "sha": "32d294276b9ff25b362bba405b5592a06908f6e9",
+      "mode": "100644"
+    },
+    {
+      "path": "Wavefield_Folding/schine_simulation_wct.png",
+      "sha": "7f49e02a7977e60003138b0a597e917a9f00f5eb",
+      "mode": "100644"
+    },
+    {
+      "path": "Wavefield_Folding/schine_wct_data.csv",
+      "sha": "60e7fe4e12103a6269c6802b165a6f7158c7dd3d",
+      "mode": "100644"
+    },
+    {
+      "path": "Wavefield_Folding/stable_mass_longrun_simulation.py",
+      "sha": "a907ef6cc5f830613dc54a7ff6c4feadd46743be",
+      "mode": "100644"
+    },
+    {
+      "path": "Wavefield_Folding/topological_cone.py",
+      "sha": "14d72b05a127366c4de4c9666e29034be23c6d0b",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/cross_paper/BASELINE_MANIFEST.json",
+      "sha": "bdd3f16347beae1e3740781e952abf9f625a8e4f",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/cross_paper/DERIVATION_GRAPH.json",
+      "sha": "a89dd2a54bc14d595034766b5c44b4c0ff1a96bb",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/cross_paper/FREE_PARAMETER_LEDGER.json",
+      "sha": "ffa7697badc98923438c47b5005c33df6b7c175d",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/cross_paper/SOURCE_LEDGER.json",
+      "sha": "db628a3b354f3b2e65ce541452f7dd19eee8c54c",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/cross_paper/candidate_predictions.json",
+      "sha": "f9bf861975aeb1f861f4df39fa25bcb013d19d5d",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/cross_paper/prior_vs_new_derivation.json",
+      "sha": "38a844906b56da1299b4ace15afeead46046bcfa",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/cross_paper/record_verification.json",
+      "sha": "e373ce2f839b55333c34a43383c240115e8e9951",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/cross_paper/requirements.txt",
+      "sha": "de9542d36e40090c2dad83e84c503496a711bec7",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/cross_paper/symbolic_verification.json",
+      "sha": "97bdad93c6930abed2f58860e983edb96f938140",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/cross_paper/validate_records.py",
+      "sha": "54b7e4691a422a7d191c9bfc4b9ef20e476274ad",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/cross_paper/verify_derivations.py",
+      "sha": "b15506c5b780a05c006b36a805a6186099ede7c5",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/ARTIFACT_SHA256.json",
+      "sha": "baba210bc460bab0c645ca524b0418ab6665e34a",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/BASELINE_BLOBS.json",
+      "sha": "62fb504bfad4d5d6a16afca710378db92546623f",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/REPRODUCE.md",
+      "sha": "8d3d07e83737588c04f4995fa0f56a6f5cbf70e6",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/RUN_PROVENANCE.json",
+      "sha": "36e762d0250a4512610db2325a9211d27787f2ad",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/SOURCE_LEDGER.json",
+      "sha": "55d2580452420dca663a9de479416396adba8e64",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/VALIDATION.json",
+      "sha": "4a7742eac4bffb1f26c49c974fb87ac491dbe2d2",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/assumptions.json",
+      "sha": "8398bb4e9199f925b24e7e8d06979b1d1210982b",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/decision.json",
+      "sha": "3942fb7710ddca7f7fef7a990729ccdb516903f6",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/dependency_graph.json",
+      "sha": "0c3de711750c83581c40d6e21f38da180f680d06",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/derivation_status.json",
+      "sha": "e0042dd54f398f859107e0613d97f78503d233aa",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/prediction.json",
+      "sha": "af273627f5aa5a597668111c8a8d8ab160210caf",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/prior_vs_new.json",
+      "sha": "4a240fb91f43bdab2998d008b620b3fc4ad85438",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/requirements.txt",
+      "sha": "de9542d36e40090c2dad83e84c503496a711bec7",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/symbolic_results.json",
+      "sha": "db24453626ce55596fc32dd82acf3e6cdbc04a0b",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/validate_records.py",
+      "sha": "23001d9e1969e848bc8a345c0c350e6bdc5605a9",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/physical_domain/verify_symbolic.py",
+      "sha": "59e73916dade2e8db4ca28b2a9a580b568e6c599",
+      "mode": "100644"
+    },
+    {
+      "path": "derivations/__init__.py",
+      "sha": "aeea2ef4ded2cf6b455062576198b34ff8e26886",
+      "mode": "100644"
+    },
+    {
+      "path": "derivations/gr_constants_closure.py",
+      "sha": "9e582a94019b04ecff85a6436b774f09010af0da",
+      "mode": "100644"
+    },
+    {
+      "path": "derivations/requirements.lock",
+      "sha": "1ca5fd06160543f8bd736f1b51db6f42372c66f4",
+      "mode": "100644"
+    },
+    {
+      "path": "derivations/test_gr_constants_closure.py",
+      "sha": "95a279d3168b38ee6e7e7b1ac552878ce281ed29",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/DYNAMICS_AND_SOURCE_INVENTORY.md",
+      "sha": "2e6e771acba4189b93cd5c6f31bcd25eca78359e",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/FOUNDATIONAL_CLOSURE_VERDICT.md",
+      "sha": "60faebace04a7b0ac4c0905cf3468d48e9b02bb3",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/GEOMETRIC_SCALE_OPERATOR_AUDIT.md",
+      "sha": "7ef73af76c833bbb10c0687365a3b952f4490310",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/PHYSICAL_ACTIVE_DOMAIN_DERIVATION.md",
+      "sha": "be557efc4a83ba5a1240194a4026c9702d2804b5",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/SPECTRAL_OBSERVABLE_MAPPING.md",
+      "sha": "6428d5f6ee0e923f7dbb88af92cdbc1f071480e7",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/WINDING_SELECTION_ANALYSIS.md",
+      "sha": "62410a2536d54032acf1db70f5b6720dee73cd61",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/cross_domain/ANALYSIS_PROTOCOL.md",
+      "sha": "b091f0372407c4d9c3b59e3dfe44bd834deb5373",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/cross_paper/ACTIVE_LOG_DOMAIN_MAP.md",
+      "sha": "c9255c0d342de45804201b561686c3b1a2488ba3",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/cross_paper/CORRECTED_ACTION_TO_EFT_KERNEL.md",
+      "sha": "3d93313e6a232d4490fd5f5ce4a1daa9ef4e0f28",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/cross_paper/CORRECTED_ACTION_TO_PFF_REDUCTION.md",
+      "sha": "406c66f38c744e9a086ee82ff607431588256172",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/cross_paper/CROSS_PAPER_DERIVATION_LEDGER.md",
+      "sha": "409ce7956061511796c5bcd338b2727500b56a9b",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/cross_paper/DECISION.md",
+      "sha": "37ff848373c918374e7bfef1dcebec933529ac17",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/cross_paper/FINITE_SCALE_SELECTION.md",
+      "sha": "e320bf63d02c0be2a64bddefa66c010b04cb1511",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/cross_paper/LOCALIZATION_AND_DOMAIN_SELECTION.md",
+      "sha": "b70df8f37acaac6420b9c2734699ad8b9f2c52a0",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/cross_paper/OBSERVABLE_FORWARD_MAP.md",
+      "sha": "560d1d71bcc174f6f3c6651a75c0310dd1821e16",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/cross_paper/QUADRATIC_ACTION_AND_DISPERSION.md",
+      "sha": "b3badd037d7d81f1934d3d5848b180553eea6967",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/cross_paper/RADIAL_OPERATOR_AND_SHELL_SPECTRUM.md",
+      "sha": "6d158594ff4e2bd9c5bcb97e452cd4009420447a",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/cross_paper/SECTOR_ENERGY_AND_WINDING.md",
+      "sha": "afb3ca73a3df6b270bd102ee3c97e8653a8ca00f",
+      "mode": "100644"
+    },
+    {
+      "path": "reproducibility/Dockerfile",
+      "sha": "367a6b44640f2c0942d2af17688d38a3e9bd32a8",
+      "mode": "100644"
+    },
+    {
+      "path": "reproducibility/EXPECTED_HASHES.json",
+      "sha": "08d609dcf3941cf3d6dee47966b1442b487e8711",
+      "mode": "100644"
+    },
+    {
+      "path": "reproducibility/README.md",
+      "sha": "d61d5d5e7f4fb287bb7212053c2d4e7174d94630",
+      "mode": "100644"
+    },
+    {
+      "path": "reproducibility/finite_band_reference.py",
+      "sha": "f79a0775db6c7a4db6644ec6360211be73709f25",
+      "mode": "100644"
+    },
+    {
+      "path": "reproducibility/requirements.lock",
+      "sha": "d8cc6f4544eb5d09c1fa9734d2fbd545b641d9b3",
+      "mode": "100644"
+    },
+    {
+      "path": "reproducibility/verify_hashes.py",
+      "sha": "7eca8bd534b511e9d56b8d1ef7d2e9e9fef8b4c5",
+      "mode": "100644"
+    },
+    {
+      "path": "scripts/sync_effective_statuses_v2.py",
+      "sha": "f77855797e287b3e63d4c31a688726a8a2c68136",
+      "mode": "100644"
+    }
+  ],
+  "preservation_rule": "All 167 existing blobs must be byte-identical; new audit paths only."
+}
