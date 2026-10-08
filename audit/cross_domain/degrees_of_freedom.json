@@ -1,0 +1,140 @@
+{
+  "schema": "WCT_PARAMETER_COUNTS_V1",
+  "convention": "Distinguish nominal parameters, independently measured inputs, fitted choices, and identifiable output rank. Unspecified counts remain null.",
+  "models": [
+    {
+      "id": "U0",
+      "N_shared": 1,
+      "N_dataset": 0,
+      "N_discrete_fitted": 0,
+      "effective_continuous_output_rank": 1,
+      "constraints_if_four_typed_targets": 4
+    },
+    {
+      "id": "U1",
+      "N_shared": 1,
+      "N_dataset": 0,
+      "N_discrete_fitted": 0,
+      "fixed_coordinate_maps": 4,
+      "effective_continuous_output_rank": 1,
+      "constraints_if_four_typed_targets": 4
+    },
+    {
+      "id": "U2",
+      "N_shared": 1,
+      "N_dataset": 0,
+      "N_discrete_required_as_independent_inputs": 4,
+      "N_discrete_fitted": 0,
+      "independent_assignments_available": 0,
+      "primary_integer_range": [],
+      "effective_flexibility": "one continuous only if all four labels are independently supplied; otherwise not identified"
+    },
+    {
+      "id": "U2_DOMAIN",
+      "N_shared": 0,
+      "N_dataset_if_widths_independently_measured": 0,
+      "N_dataset_if_widths_fitted": 4,
+      "N_discrete_required_as_independent_inputs": 4,
+      "N_discrete_fitted": 0,
+      "effective_flexibility": "free widths alone saturate four frequencies; fitted widths are forbidden"
+    },
+    {
+      "id": "U3",
+      "N_shared": null,
+      "N_shared_nominal_expression": "5 + p_V",
+      "named_shared_couplings": 5,
+      "potential_parameter_count": null,
+      "N_dataset_fitted_in_this_audit": 0,
+      "N_dataset_unresolved": null,
+      "N_discrete_required": 4,
+      "N_discrete_fitted": 0,
+      "effective_flexibility": "Not finite/identifiable until V, background, physical domain and response map are specified; unknown is not zero. If four conversion lengths are fitted, output rank is already 4.",
+      "effective_homogeneous_branch_alternative": {
+        "nominal_parameters": [
+          "K",
+          "G",
+          "T",
+          "m_squared"
+        ],
+        "number": 4,
+        "note": "Only one combination kstar is visible to a common-scale model. Distinct backgrounds alter K=F(u)kappa,G=F(u)gamma,T=F(u)theta and m_squared; effective coefficients are not automatically universal."
+      }
+    },
+    {
+      "id": "U4",
+      "N_shared": null,
+      "N_dataset": null,
+      "N_discrete_required": 4,
+      "N_discrete_fitted": 0,
+      "effective_flexibility": "Unspecified until the physical problem is closed; no finite fitted model currently exists"
+    },
+    {
+      "id": "G236",
+      "N_shared": 0,
+      "N_dataset_continuous": 0,
+      "retrospective_scale_assignments_in_published_table": 3,
+      "missing_GWTC_assignment": true,
+      "available_geometric_scale_menu_size": 7,
+      "nominal_four_domain_scale_assignments": 2401,
+      "effective_flexibility": "Counts omit additional type/coordinate/mode choices; zero fitted continuous parameters does not make post-data discrete assignments predictive"
+    },
+    {
+      "id": "CMS_LHCB_LOCKED",
+      "N_shared_from_CMS": 2,
+      "N_shared_refitted_on_LHCb": 0,
+      "N_dataset_in_LHCb": 2,
+      "N_dataset_names": [
+        "normalization C",
+        "nonnegative amplitude A"
+      ],
+      "N_discrete_fitted": 0,
+      "effective_flexibility": "Frozen frequency/phase/sign; amplitudes intentionally not equated across residual normalizations; four-domain rank not applicable"
+    },
+    {
+      "id": "NC_HARMONIC",
+      "N_shared": 1,
+      "N_dataset_continuous": 0,
+      "N_discrete_domain_integer_choices": 4,
+      "N_discrete_domain_exponent_choices": 4,
+      "global_direction_choices": 2,
+      "global_normalization_panels": 2,
+      "integer_caps": [
+        6,
+        12,
+        24
+      ],
+      "baseline_no_search_cap": 1,
+      "exponent_menus": [
+        [
+          1
+        ],
+        [
+          0.5,
+          1,
+          2
+        ],
+        [
+          0.5,
+          1,
+          2,
+          -1
+        ]
+      ],
+      "nominal_assignment_formula_per_family": "(M * J)^4",
+      "nominal_assignment_count_M12_J3_one_direction": 1679616,
+      "effective_flexibility": "Selection-aware Monte Carlo repeats all nested cap/menu/direction/panel choices; labels have no held-out physical meaning"
+    },
+    {
+      "id": "NC_MULTIPLIERS",
+      "N_shared": 1,
+      "N_dataset": 4,
+      "N_discrete_fitted": 0,
+      "nominal_continuous_parameters": 5,
+      "scale_gauge_redundancies": 1,
+      "effective_continuous_output_rank": 4,
+      "residual_degrees_of_freedom": 0,
+      "fit_performed": false,
+      "analytic_null_fraction_with_perfect_fit": "1"
+    }
+  ]
+}

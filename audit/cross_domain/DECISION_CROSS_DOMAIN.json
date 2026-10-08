@@ -1,0 +1,25 @@
+{
+  "verdict": "NUMERICAL_CONVERGENCE_ONLY",
+  "basis": [
+    "No physical map takes one S004 branch into the four primary typed targets.",
+    "The LHCb a anchor is a triplet regression slope, not a DSI period.",
+    "Independent sector/domain inputs are unavailable.",
+    "U0/U1 reference-frequency stress tests have substantial held-out residuals.",
+    "Selection-aware negative controls manufacture comparable alignment frequently.",
+    "Existing locked CMS-to-LHCb phase/sign transfer failed; free-phase followup is post-unblinding and boundary-limited."
+  ],
+  "not_concluded": [
+    "All WCT mechanisms are falsified",
+    "Multiple underlying mechanisms are logically required",
+    "The empirical within-domain features are absent"
+  ],
+  "next_derivation_exactly_one": "Derive the S004-to-observable scale-winding map for a fully specified stable localized branch, fixing the physical endpoints, observable coordinate and integer sector from independent inputs before using any of the four empirical target values.",
+  "protected_state": {
+    "empirical_repositories_modified": false,
+    "empirical_peak_searches_run": 0,
+    "ATLAS_holdout_opened": false
+  },
+  "protocol_commit": "b75989b60eeb9874aae1f4d2562cf35447e3862f",
+  "parent_theory_verdict": "FINITE_SCALE_DERIVED_BUT_CLOSURE_INCOMPLETE",
+  "audit_completed_date_utc": "2026-10-08"
+}

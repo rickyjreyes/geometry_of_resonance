@@ -1,0 +1,158 @@
+{
+  "history": {
+    "CMS_freeze_history": {
+      "key": "CMS_freeze_history",
+      "repo": "wct-cms",
+      "path": "docs/CMS_CANDIDATE_FREEZE_2026-08-28.md",
+      "commits": [
+        {
+          "sha": "afa87907eb0e811ce10cd0a6d344896b18be95a8",
+          "author_date": "2026-08-28T18:10:38Z",
+          "committer_date": "2026-08-28T18:10:38Z",
+          "message": "Freeze CMS exploratory candidate for independent replication"
+        }
+      ]
+    },
+    "CMS_G2_freeze_history": {
+      "key": "CMS_G2_freeze_history",
+      "repo": "wct-cms",
+      "path": "docs/CMS_RUN2016G_FILE2_PHASE_LOCK_FREEZE_2026-08-31.md",
+      "commits": [
+        {
+          "sha": "3e7a9f17ab19d8249b295213330c250cd124f9f0",
+          "author_date": "2026-08-31T17:53:47Z",
+          "committer_date": "2026-08-31T17:53:47Z",
+          "message": "Freeze Run2016G file-2 phase-locked holdout"
+        },
+        {
+          "sha": "685553bc5227a29ef734c0b6c5e603e3a44233b1",
+          "author_date": "2026-08-31T17:52:57Z",
+          "committer_date": "2026-08-31T17:52:57Z",
+          "message": "Freeze Run2016G file-2 phase-locked holdout"
+        }
+      ]
+    },
+    "CMS_G2_result_history": {
+      "key": "CMS_G2_result_history",
+      "repo": "wct-cms",
+      "path": "docs/CMS_RUN2016G_FILE2_PHASE_LOCK_RESULT_2026-08-31.json",
+      "commits": [
+        {
+          "sha": "97e113525052c62f7e3baa47186a67ab3b5a5507",
+          "author_date": "2026-08-31T18:15:53Z",
+          "committer_date": "2026-08-31T18:15:53Z",
+          "message": "Record Run2016G file-2 phase-locked holdout result"
+        }
+      ]
+    },
+    "NIST_result_history": {
+      "key": "NIST_result_history",
+      "repo": "NIST",
+      "path": "outputs/fe_ion2_160/nist_summary.json",
+      "commits": [
+        {
+          "sha": "37f36df28eeedc1aa870b5fd6201d687f779115b",
+          "author_date": "2026-05-25T07:13:46Z",
+          "committer_date": "2026-05-25T07:13:46Z",
+          "message": "canonical NIST Fe II log-cosine repo layout (preserves all legacy outputs)\n\n- data/, scripts/, outputs/, tables/, tests/ canonical layout\n- scripts/nist_wct_log_spectral_scan_FIXED.py: prefer DataFrame.map over\n  applymap (silences pandas 2.1+ FutureWarning), behavior unchanged\n- scripts/run_feii_bin_stability.py: drives bins 120/160/200 for Fe II,\n  reuses existing canonical outputs unless --force, writes\n  tables/nist_master_results.csv\n- scripts/make_verdict.py: PASS/FAIL gate over the master CSV, writes\n  tables/nist_verdict.csv and updates the marker-delimited block in\n  RESULTS.md\n- scripts/nist_batch_run_neighbors.py: defaults retargeted to data/ and\n  outputs/batch_neighbors/\n- canonical outputs/fe_ion2_{120,160,200}/ populated from the existing\n  5000-null CuPy runs (sourced from outputs_fe_ion2_*_cupy_full/, which\n  remain untouched at repo root for provenance)\n- tests/test_nist_scanner.py: scanner --help, NIST cell cleaning,\n  wn(cm-1) detection, ion filter, master CSV schema, verdict requires\n  all three bins, k-stability tolerance, preservation guard (no\n  shutil.rmtree or rm -rf in scripts)\n- README.md rewritten around the log-spectral claim; no NIST-endorsement\n  language\n- RESULTS.md rewritten as concise machine-auditable summary; raw run log\n  preserved as RESULTS_legacy_log.md\n- requirements.txt added; .gitignore for __pycache__/.pytest_cache\n\nAll 20 historical outputs_* directories and the four root-level legacy\nscripts/CSVs are preserved untouched. Fe II verdict: PASS."
+        }
+      ]
+    },
+    "LHC_scale_history": {
+      "key": "LHC_scale_history",
+      "repo": "LHC",
+      "path": "lhcb_wct_analysis_kit/outputs_wct_cross_region_scaling/cross_region_scaling_summary.json",
+      "commits": [
+        {
+          "sha": "5b99ccf7217abcda77d3b903454a6d8d98abd834",
+          "author_date": "2026-05-11T19:01:41Z",
+          "committer_date": "2026-05-11T19:01:41Z",
+          "message": "Getting Ready for public release."
+        }
+      ]
+    },
+    "LHC_veto_history": {
+      "key": "LHC_veto_history",
+      "repo": "LHC",
+      "path": "lhcb_wct_analysis_kit/outputs_wct_veto_covariance/veto_covariance_summary.json",
+      "commits": [
+        {
+          "sha": "5b99ccf7217abcda77d3b903454a6d8d98abd834",
+          "author_date": "2026-05-11T19:01:41Z",
+          "committer_date": "2026-05-11T19:01:41Z",
+          "message": "Getting Ready for public release."
+        }
+      ]
+    },
+    "GWTC_freeze_history": {
+      "key": "GWTC_freeze_history",
+      "repo": "GWTC",
+      "path": "tables/gwtc_frozen_mode.json",
+      "commits": [
+        {
+          "sha": "ade40430920c6cf1b2a3dcdc004de33d8b46e915",
+          "author_date": "2026-08-26T21:19:39Z",
+          "committer_date": "2026-08-26T21:19:39Z",
+          "message": "Preserve frozen GWTC training model artifact"
+        }
+      ]
+    },
+    "GWTC_result_history": {
+      "key": "GWTC_result_history",
+      "repo": "GWTC",
+      "path": "tables/gwtc_frozen_holdout_result.csv",
+      "commits": [
+        {
+          "sha": "b69842ebb08636ebd7472537e994076ed334594a",
+          "author_date": "2026-08-26T21:19:01Z",
+          "committer_date": "2026-08-26T21:19:01Z",
+          "message": "Record strict frozen GWTC-5 holdout PASS"
+        }
+      ]
+    },
+    "GWTC/tables/gwtc_frozen_mode.json": {
+      "repo": "GWTC",
+      "path": "tables/gwtc_frozen_mode.json",
+      "commits": [
+        {
+          "sha": "ade40430920c6cf1b2a3dcdc004de33d8b46e915",
+          "date": "2026-08-26T21:19:39Z",
+          "parents": [
+            "b69842ebb08636ebd7472537e994076ed334594a"
+          ]
+        }
+      ]
+    },
+    "GWTC/tables/gwtc_frozen_holdout_result.csv": {
+      "repo": "GWTC",
+      "path": "tables/gwtc_frozen_holdout_result.csv",
+      "commits": [
+        {
+          "sha": "b69842ebb08636ebd7472537e994076ed334594a",
+          "date": "2026-08-26T21:19:01Z",
+          "parents": [
+            "91d6c13d441dcc9e0fb9041c5781074dbb84cd34"
+          ]
+        }
+      ]
+    },
+    "LHC/lhcb_wct_analysis_kit/outputs_logcos_poisson_twomode_kde_polar/two_mode_summary.json": {
+      "repo": "LHC",
+      "path": "lhcb_wct_analysis_kit/outputs_logcos_poisson_twomode_kde_polar/two_mode_summary.json",
+      "commits": [
+        {
+          "sha": "5b99ccf7217abcda77d3b903454a6d8d98abd834",
+          "date": "2026-05-11T19:01:41Z",
+          "parents": [
+            "cd39696a0da78675285c9bd369376776ea44ab82"
+          ]
+        }
+      ]
+    }
+  },
+  "theory_revision_P05": "2026-10-06",
+  "new_S004_reduction_commit": "caba0a5d034b1a347e60ffcd36dd7302f2c3e10d",
+  "new_S004_reduction_date": "2026-10-07",
+  "protocol_commit": "b75989b60eeb9874aae1f4d2562cf35447e3862f",
+  "all_cross_domain_predictions_retrospective": true
+}
