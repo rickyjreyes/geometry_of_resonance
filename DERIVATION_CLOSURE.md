@@ -621,6 +621,14 @@ WCT must supply a local \(U(1)\) gauge sector, its kinetic normalization, and th
 6. **Stability:** prove the physical sector avoids unacceptable higher-derivative instabilities, or construct a degenerate or auxiliary-field completion.
 7. **Prospective prediction:** freeze parameters and predict a held-out dimensionless observable before measurement.
 
+## 12A. Post-publication evidence boundaries (living repository update, 2026-10-14)
+
+The separated-operator identity in §8 must **not** be interpreted as deriving the stored SM v18 particle-index assignments. The [v18 spectral audit](docs/SM_V18_SPECTRAL_BRIDGE_AUDIT.md) retains the status `EMPIRICAL_FIT_ONLY` until the geometric eigenproblem, boundary conditions, units and fixed-index independent validation exist (#12/#27). The [prospective freeze gate](docs/PROSPECTIVE_PREDICTION_GATE.md) is unexecuted (#17).
+
+For #11–#18, distinguish proof within a specified covariant action from physical derivation of that action and its scales. The later [quadratic expansion Q1–Q7](docs/cross_paper/QUADRATIC_ACTION_AND_DISPERSION.md) finds extra higher-time poles with opposite residues at nonzero homogeneous background. The [finite-scale result F1–F2](docs/cross_paper/FINITE_SCALE_SELECTION.md) is an exact **parameter-dependent oscillatory frequency minimum** on a restricted positive-residue amplitude branch, not a proof of ghost freedom or canonical unstable finite-k pattern formation (#16/#18).
+
+The projection-free [D4 canonical evidence map](docs/D4_CANONICAL_EVIDENCE_MAP.md) concerns a **separate** periodic Hamiltonian PDE on a two-dimensional square torus. Its numerical archive PASS and conditional continuum applications cannot discharge this document's tensor emergence, physical scale, Lorentzian stability or prospective-prediction obligations. Historical source date and conclusions above are retained.
+
 ## 13. Conclusion
 
 WCT supports a mathematically controlled effective-mass derivation and a controlled GR low-energy limit after correcting the phase regularization and supplying a genuine tensor gravitational sector. A single complex scalar alone does not generate arbitrary spacetime geometry.
