@@ -1,0 +1,130 @@
+{
+  "schema": "wct-d4-handoff-v1",
+  "as_of": "2026-10-14",
+  "geometry_issue": 29,
+  "model": {
+    "rail": "independent experimental Hamiltonian",
+    "equation": "i u_t=(Delta+1)^2 u-beta |u|^2 u+gamma |u|^4 u",
+    "dimension": 2,
+    "symmetry": "D4 dihedral square; NOT four spatial dimensions",
+    "domain": "R^2/(42 Z)^2",
+    "beta": "4.0928844146232946",
+    "gamma": "4.0928844146232946",
+    "mass": "2.54469689485712",
+    "grids": [
+      112,
+      140,
+      168
+    ],
+    "frequency_approx": "-0.360518510946102"
+  },
+  "archive": {
+    "url": "https://github.com/rickyjreyes/wct-pde/releases/tag/d4-pade-numerical-closure-v1",
+    "sha256": "db9cfbbbb4a4b9d696bf4d0af6c2eb125e8795acfb8505491628eb0238f47b64",
+    "member_count": 200,
+    "inventory_payloads": 199,
+    "tag_object": "c7c6fa9f4f81419bf2a73ea561913d185b778cb1",
+    "peeled_commit": "d5335dc0fab77e14b66feb7e1a943c2c31eeaa19"
+  },
+  "report": {
+    "commit": "26296d5c40857c37adca6a1aae47930b3598c4ff",
+    "path": "docs/D4_COMPREHENSIVE_CLOSURE_REPORT.md",
+    "url": "https://github.com/rickyjreyes/wct-pde/blob/26296d5c40857c37adca6a1aae47930b3598c4ff/docs/D4_COMPREHENSIVE_CLOSURE_REPORT.md"
+  },
+  "claims": [
+    {
+      "id": "production_provenance",
+      "source_issue": "wct-pde#19",
+      "status": "PASS",
+      "scope": "recovered raw evidence provenance; closed"
+    },
+    {
+      "id": "durable_release",
+      "source_issue": "wct-pde#20",
+      "status": "PASS",
+      "scope": "archive integrity; closed"
+    },
+    {
+      "id": "historical_aggregate",
+      "source_issue": "wct-pde#19",
+      "status": "FAIL",
+      "scope": "preserved original eleven-gate aggregate; not overwritten by new scoped PASS"
+    },
+    {
+      "id": "pade_finite_protocol",
+      "source_issue": "wct-pde#20",
+      "status": "PASS",
+      "scope": "N140 t100 temporal/spatial/start protocol only",
+      "value": "1.3690254532021537"
+    },
+    {
+      "id": "optimized_integrator_equivalence",
+      "source_issue": "wct-pde#21",
+      "status": "OPEN",
+      "scope": "recovered-direction cross-response is not independently optimized operator-norm equivalence"
+    },
+    {
+      "id": "refined_envelope",
+      "source_issue": "wct-pde#22",
+      "status": "OPEN",
+      "scope": "t5 base sampled gain 1.5136573217842118; accuracy/envelope incomplete"
+    },
+    {
+      "id": "leading_gain_certificate",
+      "source_issue": "wct-pde#23",
+      "status": "OPEN",
+      "scope": "sharp exhaustive production singular gain unproved"
+    },
+    {
+      "id": "continuum_application",
+      "source_issue": "wct-pde#24",
+      "status": "CONDITIONAL",
+      "scope": "candidate 128-bit Arb contraction with application review outstanding"
+    },
+    {
+      "id": "all_time_orbital_application",
+      "source_issue": "wct-pde#25",
+      "status": "CONDITIONAL",
+      "scope": "candidate full constrained H2 result; exact root and independent review outstanding"
+    },
+    {
+      "id": "independent_d4_fem",
+      "source_issue": "wct-fem#8",
+      "status": "PENDING",
+      "scope": "same-state D4-specific independent numerical replication not yet accepted"
+    },
+    {
+      "id": "formal_d4_application",
+      "source_issue": "wct-lean#21",
+      "status": "PENDING",
+      "scope": "no discharge of computed-root hypotheses from conditional formal theorem"
+    },
+    {
+      "id": "canonical_action_equivalence",
+      "source_issue": "geometry_of_resonance#18",
+      "status": "NOT_ESTABLISHED",
+      "scope": "experimental rail not derived from covariant curvature action"
+    },
+    {
+      "id": "lorentzian_ghost_freedom",
+      "source_issue": "geometry_of_resonance#16",
+      "status": "NOT_ESTABLISHED",
+      "scope": "D4 finite-time Hamiltonian rail is not ghost-free completion"
+    }
+  ],
+  "papers": [
+    {
+      "doi": "10.5281/zenodo.15644222",
+      "kind": "original archived Geometry of Resonance",
+      "relation": "SCOPED_EXAMPLE_ONLY",
+      "revision": "living crosswalk, not revised original"
+    },
+    {
+      "doi": "10.5281/zenodo.17578766",
+      "kind": "original archived PFF",
+      "relation": "DISTINCT_D4_MEANING_AND_OPERATOR",
+      "revision": "living crosswalk, not revised original"
+    }
+  ],
+  "promotion_rule": "No status inference across claims; immutable proof/data source, exact hypothesis and own acceptance criterion required; preserve null and negative results."
+}
