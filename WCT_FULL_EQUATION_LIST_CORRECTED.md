@@ -225,6 +225,8 @@ assuming $w>0$ and $\oint_\Gamma ds/w<\infty$.
 
 
 
+
+
 Define
 $$L_s:=\oint_\Gamma ds, \qquad k_{\rm wind}:=\frac{2\pi|n|}{L_s}, \qquad k_\sigma:=\frac1{L_s}\oint_\Gamma\sigma\,ds.$$
 Then
@@ -270,6 +272,8 @@ was incorrect.
 **Baseline status:** ◻️ `DEFINITION`
 
 **Status provenance:** `derived_overrides.yaml` via `check_phase_flux_from_polar_field`.
+
+
 
 
 
@@ -321,6 +325,8 @@ $$\lambda_{\rm grow}(k) = \mu-b(|k|^2-k_\star^2)^2, \qquad \mu=r+\frac{a^2}{4b}.
 
 
 
+
+
 A form consistent with E12 is
 $$\partial_tA = (r-a\Delta-b\Delta^2)A-\beta|A|^2A,$$
 or equivalently
@@ -340,6 +346,8 @@ Boundary conditions and the sign of $\beta$ must be declared.
 
 
 
+
+
 For the centered Swift-Hohenberg form,
 $$\mathcal E[A] = \int_\Omega \left[ -\mu|A|^2 +b|(\Delta+k_\star^2)A|^2 +\frac{\beta}{2}|A|^4 \right]dx.$$
 Gradient-flow descent requires compatible boundary conditions and normalization conventions.
@@ -352,6 +360,8 @@ Gradient-flow descent requires compatible boundary conditions and normalization 
 **Baseline status:** ⚠️ `CONDITIONAL`
 
 **Status provenance:** `derived_overrides.yaml` via `check_modal_growth_bound_derived`.
+
+
 
 
 
@@ -390,6 +400,8 @@ whose denominator can vanish.
 **Baseline status:** ⚠️ `CONDITIONAL`
 
 **Status provenance:** `derived_overrides.yaml` via `check_lyapunov_gradient_flow`.
+
+
 
 
 
@@ -539,6 +551,8 @@ The dissipation functional $\mathcal D_t$ must be derived from the dynamics; the
 
 
 
+
+
 $$\limsup_{n\to\infty}\alpha(n)<1.$$
 This follows only if the retained-fraction and $\beta(n)$ bounds in E28 hold uniformly with sufficient margin.
 
@@ -623,6 +637,8 @@ The identification requires an explicit encoding and polynomial simulation in bo
 **Baseline status:** ⚠️ `CONDITIONAL`
 
 **Status provenance:** `derived_overrides.yaml` via `check_alpha_drop_counting_bound_derived`.
+
+
 
 
 
@@ -715,6 +731,8 @@ $$\boxed{ m_{\rm eff}^2 = \frac{\hbar^2}{c^4}\Delta_\omega^\star }.$$
 
 
 
+
+
 $$\mathcal C[\psi] = \int_\Omega \frac{|\psi|^2}{|\nabla\theta|}\,dx.$$
 The definition requires a regularization or lower bound
 $$|\nabla\theta|\ge\delta>0$$
@@ -789,6 +807,8 @@ $$(|k|^2-k_\star^2)^2.$$
 **Baseline status:** ⚠️ `CONDITIONAL`
 
 **Status provenance:** `derived_overrides.yaml` via `check_green_kernel_bounded`.
+
+
 
 
 
@@ -925,6 +945,8 @@ The constant must have units of time, and the interpretation depends on the upda
 **Baseline status:** ⚠️ `CONDITIONAL`
 
 **Status provenance:** `derived_overrides.yaml` via `check_alpha_drop_counting_bound_derived`.
+
+
 
 
 
@@ -1065,6 +1087,8 @@ $$-\Delta\psi = \sigma_\star^2\psi.$$
 
 
 
+
+
 Under a flat product or thin-torus approximation,
 $$\Delta\psi \approx \frac1{R^2}\partial_\theta^2\psi + \frac1{r^2}\partial_\phi^2\psi.$$
 The exact embedded-torus Laplace-Beltrami operator contains metric-dependent terms.
@@ -1098,6 +1122,8 @@ The constant solution is only the $m=0$ member, not the unique periodic solution
 **Baseline status:** ⚠️ `CONDITIONAL`
 
 **Status provenance:** `derived_overrides.yaml` via `check_torus_lowest_mode_selection_derived`.
+
+
 
 
 
@@ -1261,6 +1287,8 @@ The earlier extra factor and opposite sign were removed.
 
 
 
+
+
 $$\dot\delta_\gamma=v_\gamma, \qquad \dot v_\gamma=-c_s^2k^2\delta_\gamma-k^2\Phi,$$
 $$\dot\delta_b=v_b, \qquad \dot v_b=-\mathcal R c_s^2k^2\delta_\gamma-k^2\Phi.$$
 
@@ -1285,6 +1313,8 @@ $$\varepsilon_{\rm drag} = \frac{E_{\rm exch}}{E_{\rm comp}}, \qquad 0\le\vareps
 
 
 
+
+
 $$D(k) = \exp\!\left(-\frac{k^2}{k_D^2}\right),$$
 $$k_D^{-2} = \int_0^{t_\star}D_{\rm curv}(t)\,dt.$$
 Dimensional consistency requires the time-dependent diffusion coefficient to carry units $L^2/T$.
@@ -1302,6 +1332,8 @@ Dimensional consistency requires the time-dependent diffusion coefficient to car
 
 
 
+
+
 $$\Delta^2(k) = \frac{k^3}{2\pi^2}P(k).$$
 
 
@@ -1312,6 +1344,8 @@ $$\Delta^2(k) = \frac{k^3}{2\pi^2}P(k).$$
 **Baseline status:** ○ `OPEN`
 
 **Status provenance:** `derived_overrides.yaml` via `classify_definition`.
+
+
 
 
 
@@ -1351,6 +1385,8 @@ $$a_{\rm WCT}(t) = \left[ \frac{E_{\rm curv}(0)} {E_{\rm curv}(t)} \right]^{1/3}
 
 
 
+
+
 $$R_{\rm hor}(t) = \int_0^tc_s(t')\,dt',$$
 $$k_{\rm hor} = \frac{2\pi}{R_{\rm hor}}.$$
 
@@ -1370,6 +1406,8 @@ for a closed sector with no external source or loss.
 **Baseline status:** ○ `OPEN`
 
 **Status provenance:** `derived_overrides.yaml` via `classify_definition`.
+
+
 
 
 
@@ -1420,6 +1458,8 @@ $$\mathcal E_{\rm loop}[\gamma] = \int_\gamma\kappa^2ds + \alpha_{\rm UV} \sum_k
 **Baseline status:** ⚠️ `CONDITIONAL`
 
 **Status provenance:** `derived_overrides.yaml` via `check_topology_gradient_flow_descent_derived`.
+
+
 
 
 
@@ -1501,6 +1541,8 @@ The curvature term alone is only one component.
 **Baseline status:** ⚠️ `CONDITIONAL`
 
 **Status provenance:** `derived_overrides.yaml` via `check_mean_amplitude_closure_error_bound_v2`.
+
+
 
 
 
