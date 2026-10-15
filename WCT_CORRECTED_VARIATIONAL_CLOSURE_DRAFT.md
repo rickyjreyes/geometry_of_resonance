@@ -349,3 +349,9 @@ retain all terms quadratic in \(\eta\), and derive the exact Fourier-space dispe
 \]
 
 It is the next direct bridge between the finished Lagrangian and the claimed WCT finite-band mechanism.
+
+## 10. Subsequent quadratic calculation and corrected live status (2026-10-14)
+
+Section 9's **recommended calculation has since been performed** within the same corrected S004 action: [complete background Hessian Q1–Q7](docs/cross_paper/QUADRATIC_ACTION_AND_DISPERSION.md) includes full amplitude/phase mixing, time and space derivatives, and pole residues; [finite-scale F1–F2](docs/cross_paper/FINITE_SCALE_SELECTION.md) gives a parameter-dependent finite **oscillatory frequency minimum** on the lower static amplitude branch. These additions do not rewrite the earlier chronological draft.
+
+In particular, under the allowed nonzero homogeneous static background, the untruncated fourth-time-order theory has an extra negative-residue pole for each real nondegenerate amplitude/phase pair. A finite minimum is **not** an unstable growth band; no ghost-free completion or independently selected wavelength has been supplied. The zero-vacuum result in §6 remains valid. A phenomenological Swift–Hohenberg/PFF rail and the experimental [two-dimensional D4-symmetric Hamiltonian PDE](docs/D4_CANONICAL_EVIDENCE_MAP.md) are separate models until a reduction theorem supplies an explicit field, clock, coefficient and domain map. Track [#16](https://github.com/rickyjreyes/geometry_of_resonance/issues/16) and [#18](https://github.com/rickyjreyes/geometry_of_resonance/issues/18) separately; both remain open.
