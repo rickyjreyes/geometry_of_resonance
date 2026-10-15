@@ -20,3 +20,7 @@
 ## Publication provenance and revision discipline
 
 The dated originals [Geometry DOI](https://doi.org/10.5281/zenodo.15644222) and [PFF DOI](https://doi.org/10.5281/zenodo.17578766) are historical records. This document and the D4 crosswalk are a newer *living* interpretive evidence layer; they must not backdate a proof or claim that the original papers contained results obtained in October 2026. Each future change must identify exact theorem hypotheses, independent numerical protocol and source revision, including failures.
+
+## Subsequent executable stage-2 results
+
+See [FOUNDATIONAL_STAGE2_2026-10-14.md](FOUNDATIONAL_STAGE2_2026-10-14.md) and its independent tests. In particular, #12 now has an exact theorem for an expressly **chosen periodic-circle operator with bounded scalar potential**, not the unspecified general WCT geometry; #16 has an explicit canonical unbounded-energy witness, not a healthy completion; and #27 has an all-31 **in-sample** sensitivity diagnostic. Original completion gates remain outstanding; closed #29 concerns only its scoped documentation handoff.
