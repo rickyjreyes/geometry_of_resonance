@@ -1,5 +1,7 @@
 # Wave Confinement Theory — Corrected Full Equation Registry
 
+> **Post-revision D4 evidence addendum (2026-10-14):** [D4 canonical evidence crosswalk](docs/D4_CANONICAL_EVIDENCE_MAP.md) and [machine claim-status record](audit/d4_handoff/claims.json) are separate, provenance-scoped experimental records. They do **not** add a 143rd registered equation, rewrite this revision's original 142 baseline statuses, or automatically promote any SymPy/Lean/physical claim. The D4 experiment is dihedral square symmetry on a 2D periodic torus, not four spatial dimensions or PFF four-node D4.
+
 **Richard J. Reyes — Canonical audit-aligned reference**
 
 **Revision:** 2.0  
