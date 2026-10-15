@@ -1,0 +1,78 @@
+name: Foundational stage-2 scoped audits
+
+on:
+  pull_request:
+    paths:
+      - "derivations/foundational_stage2.py"
+      - "derivations/spectral_circle_numeric.py"
+      - "derivations/ostrogradsky_witness.py"
+      - "derivations/test_*"
+      - "SM_Spectrum/audit_v18_identifiability.py"
+      - "audit/prospective/**"
+      - "docs/FOUNDATIONAL_STAGE2_2026-10-14.md"
+      - ".github/workflows/foundational-stage2.yml"
+  push:
+    branches: [main]
+    paths:
+      - "derivations/**"
+      - "SM_Spectrum/audit_v18_identifiability.py"
+      - "audit/prospective/**"
+      - "docs/FOUNDATIONAL_STAGE2_2026-10-14.md"
+      - ".github/workflows/foundational-stage2.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  derivation-obstruction-tests:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install versioned mathematical and numerical dependencies
+        run: python -m pip install numpy==2.3.5 scipy==1.16.2 sympy==1.14.0
+      - name: Execute scoped symbolic and numerical tests
+        run: |
+          python -m unittest -v derivations.test_gr_constants_closure derivations.test_foundational_stage2 derivations.test_spectral_circle_numeric derivations.test_ostrogradsky_witness
+          python derivations/foundational_stage2.py > foundational_stage2.json
+          python derivations/spectral_circle_numeric.py > spectral_circle_numeric.json
+          python derivations/ostrogradsky_witness.py > ostrogradsky_witness.json
+      - name: Fail closed on prospective experiment template
+        run: |
+          python audit/prospective/freeze_gate.py --self-test
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from audit.prospective.freeze_gate import check
+          d=json.loads(Path("audit/prospective/template.json").read_text())
+          assert check(d)["status"]=="BLOCKED"
+          assert check(d)["no_holdout_executed_by_checker"] is True
+          print("NO PROSPECTIVE OBSERVATION CLAIM: PASS")
+          PY
+      - name: Full in-sample historical v18 coefficient sensitivity
+        run: |
+          python SM_Spectrum/audit_v18_identifiability.py --output v18_identifiability.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path("v18_identifiability.json").read_text())
+          assert d["classification"]=="EMPIRICAL_FIT_ONLY"
+          assert d["no_holdout"] and d["no_new_fit"] and d["no_particle_reassignment"]
+          assert d["sensitivity"]["raw_shape"]==[11,31]
+          assert d["sensitivity"]["structural_nullity_lower_bound"]>=20
+          assert d["cone_csv"]["eigenfunction_overlaps_or_mode_identity_supplied"] is False
+          print("v18 LOCAL IDENTIFIABILITY OBSTRUCTION: PASS")
+          PY
+      - name: Publish scope-labeled audit artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: foundational-stage2-scoped-audits
+          path: |
+            foundational_stage2.json
+            spectral_circle_numeric.json
+            ostrogradsky_witness.json
+            v18_identifiability.json
+          if-no-files-found: error

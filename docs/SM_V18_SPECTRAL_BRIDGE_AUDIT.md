@@ -31,3 +31,7 @@ The formal separated-field relation in [DERIVATION_CLOSURE.md](../DERIVATION_CLO
 4. Perform full active-coefficient rank/SVD and condition analysis, sensitivity under branch switches and alternative baseline models of comparable flexibility; then freeze train/test split, indices, hyperparameters and decision threshold before a truly held-out evaluation.
 
 **Decision:** This is an identified obstruction, not negative proof against all possible WCT eigenmode interpretations. The small in-sample fit error cannot be described as independent physical prediction. Keep #27 open until an auditable independent spectral mapping or an explicitly accepted obstruction is reviewed.
+
+## Subsequent all-coefficient audit (stage 2)
+
+[`audit_v18_identifiability.py`](../SM_Spectrum/audit_v18_identifiability.py) independently re-evaluates unchanged-v18 predictions, computes a local 11×31 finite-difference Jacobian over all 29 stored and two live variables (one-sided at the live upper bound), reports a scaling-declared SVD, and records the **structural** rank upper bound 11/nullity lower bound 20 for the 11 nonzero targets. No stored coefficient is retrained or mode relabeled; this is not a held-out comparison or proof of global non-identifiability. See [the stage-2 theorem/obstruction report](FOUNDATIONAL_STAGE2_2026-10-14.md). Classification remains `EMPIRICAL_FIT_ONLY`.

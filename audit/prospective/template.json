@@ -1,0 +1,37 @@
+{
+  "schema": "wct.prospective.v1",
+  "status": "BLOCKED_NO_THEORY_DERIVED_OBSERVABLE",
+  "theory": {
+    "equation_ref": null,
+    "derivation_ref": null,
+    "observable": null,
+    "dimensionless_target": null,
+    "predeclared_uncertainty": null,
+    "detector_forward_map_ref": null
+  },
+  "protocol": {
+    "source_manifest_sha256": null,
+    "analysis_commit_sha": null,
+    "train_ids": [],
+    "calibration_ids": [],
+    "holdout_ids": [],
+    "transforms_ref": null,
+    "exclusions_ref": null,
+    "null_model_ref": null,
+    "background_alternatives_ref": null,
+    "multiplicity_ref": null,
+    "statistic_ref": null,
+    "decision_thresholds_ref": null,
+    "injection_ref": null,
+    "calibration_ref": null,
+    "deviation_policy_ref": null
+  },
+  "attestation": {
+    "holdout_uninspected": false,
+    "independent_review_ref": null
+  },
+  "execution": {
+    "unblinded": false,
+    "result": null
+  }
+}

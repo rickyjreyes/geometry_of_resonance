@@ -19,3 +19,7 @@ Freeze all fields below in a separately committed machine-readable specification
 If null/background alternatives predict held-out control data better than the preferred signal-producing background, the significance claim must be downgraded or invalidated under the frozen rule; do not choose significance-enhancing nuisance models retrospectively. If a frozen protocol is invalid, document the reason and create a **new** experiment; retain the original failed or invalidated record. A calibration or in-sample detector residual is not automatically a fundamental WCT prediction. The separate GWTC/CMS historical freezes, if cited, retain their original scopes and background limitations.
 
 After passing the freeze gate, calibration and injection gate, execute the held-out computation **once** and publish effects, uncertainty, null comparison, failures and deviations. No claim of execution is made by this document.
+
+## Executable metadata gate (stage 2)
+
+The [prospective freeze template](../audit/prospective/template.json) and [fail-closed validator](../audit/prospective/freeze_gate.py) now operationalize a *metadata readiness check*. The template is intentionally BLOCKED. Even a fully populated template can only yield `METADATA_READY_FOR_EXTERNAL_VERIFICATION_NOT_FROZEN`; it cannot independently prove theory derivation, absence of prior target exposure, immutable archival freeze or an executed holdout. No observations are inspected by the validator. See [stage-2 report](FOUNDATIONAL_STAGE2_2026-10-14.md).

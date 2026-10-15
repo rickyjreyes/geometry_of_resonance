@@ -636,3 +636,7 @@ WCT supports a mathematically controlled effective-mass derivation and a control
 The strongest defensible conclusion is:
 
 > Confined WCT eigenmodes generate effective masses through their spectral eigenvalues, and a covariant WCT scalar-tensor completion reduces to Einstein gravity at low energy. Absolute dimensionful constants require an independently selected physical scale, while full emergent gravity requires a tensor collective mode beyond the historical one-scalar metric ansatz.
+
+## Stage-2 scoped proofs and obstruction tests (2026-10-14)
+
+The later [nine-issue Stage-2 technical note](docs/FOUNDATIONAL_STAGE2_2026-10-14.md) adds a specified-operator min–max spectrum theorem, local gauge-covariance identities, an explicit fourth-time-order Ostrogradsky Hamiltonian witness, a 31-coefficient in-sample v18 sensitivity audit, and a fail-closed prospective metadata gate. These do **not** prove the general WCT geometry spectrum, emergent GR, absolute scales, ghost freedom, or an executed prospective prediction. The original status distinctions and historical chronology above remain unchanged.
