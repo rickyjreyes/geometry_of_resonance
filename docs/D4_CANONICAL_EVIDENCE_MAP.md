@@ -4,14 +4,14 @@
 
 ## Frozen identity and mathematical model
 
-The designation **D4 is dihedral square symmetry in two spatial dimensions, not four spatial dimensions**. The independent experimental Hamiltonian rail on the periodic square (\mathbb R^2/(42\mathbb Z)^2) is
+The designation **D4 is dihedral square symmetry in two spatial dimensions, not four spatial dimensions**. The independent experimental Hamiltonian rail on the periodic square \(\mathbb R^2/(42\mathbb Z)^2\) is
 
 ```math
 i u_t=(\Delta+1)^2u-\beta|u|^2u+\gamma|u|^4u,\qquad
 \beta=\gamma=4.0928844146232946.
 ```
 
-The target mass is (2.54469689485712); the recorded frequency is approximately (-0.360518510946102). Frozen grid states: (N=112,140,168). The finite-grid quotient target is (G_N(t)=\|P\exp(t A_N)P\|_{2\to2}), where (P) removes only phase and two translations and the input space still contains nonsymmetric and mass-normal perturbations. Padé and split endpoint maps approximate this target; neither is itself the exact exponential or a continuous-time maximum. Consult the source report for exact source/state/vector/configuration hashes; do not reconstruct them from rounded values here.
+The target mass is \(2.54469689485712\); the recorded frequency is approximately \(-0.360518510946102\). Frozen grid states: \(N=112,140,168\). The finite-grid quotient target is \(G_N(t)=\|P\exp(t A_N)P\|_{2\to2}\), where \(P\) removes only phase and two translations and the input space still contains nonsymmetric and mass-normal perturbations. Padé and split endpoint maps approximate this target; neither is itself the exact exponential or a continuous-time maximum. Consult the source report for exact source/state/vector/configuration hashes; do not reconstruct them from rounded values here.
 
 - **Immutable release:** [d4-pade-numerical-closure-v1](https://github.com/rickyjreyes/wct-pde/releases/tag/d4-pade-numerical-closure-v1), 200 members / 199 inventoried payloads. Archive SHA256: `db9cfbbbb4a4b9d696bf4d0af6c2eb125e8795acfb8505491628eb0238f47b64`. Tag object `c7c6fa9f4f81419bf2a73ea561913d185b778cb1`, peeled commit `d5335dc0fab77e14b66feb7e1a943c2c31eeaa19`.
 - **Scoped campaign report (immutable revision):** [wct-pde D4 comprehensive closure report @ 26296d5](https://github.com/rickyjreyes/wct-pde/blob/26296d5c40857c37adca6a1aae47930b3598c4ff/docs/D4_COMPREHENSIVE_CLOSURE_REPORT.md); associated [PR #26](https://github.com/rickyjreyes/wct-pde/pull/26), still open at handoff. [Windows production audit run 38441784132](https://github.com/rickyjreyes/wct-pde/actions/runs/38441784132), fresh [continuum CI run 38512669787](https://github.com/rickyjreyes/wct-pde/actions/runs/38512669787). The production audit checked recovered bytes/provenance without propagation.
@@ -22,7 +22,7 @@ The target mass is (2.54469689485712); the recorded frequency is approximately (
 | Claim | Classification as of handoff | Exactly what is, and is not, established |
 |---|---|---|
 | #19 production provenance / #20 release | **PASS / both closed** | Recovered source, state, solver, optimizer and reference arrays; verified release/checksums. Not a new propagation or physical theorem. |
-| Padé convergence at (N=140,t=100) | **PASS, finite numerical protocol** | (G=1.3690254532021537) under frozen temporal/spatial/start checks; not an exact leading operator norm or all-time bound. |
+| Padé convergence at \(N=140,t=100\) | **PASS, finite numerical protocol** | (G=1.3690254532021537) under frozen temporal/spatial/start checks; not an exact leading operator norm or all-time bound. |
 | Historical aggregate | **FAIL, preserved** | Original eleven-gate aggregate FAIL remains in the record with disaggregated causes; later recovery does not retroactively pass it. |
 | #21 split/Padé optimized equivalence | **OPEN** | Eight recovered-direction trajectories satisfy fine comparison on *those directions*. Historical split gain (2.3902336510107576) at dt=.00625 drops to (1.0000039150347957) at dt=.0015625, versus Padé (0.9999996472181292). Independently optimized refined norms remain unverified. |
 | #22 refined envelope | **OPEN** | First t=5 sample (G=1.5136573217842118), residual (1.816591138012199\times10^{-11}); separate accuracy, other sample times, peak and local refinements incomplete. |
