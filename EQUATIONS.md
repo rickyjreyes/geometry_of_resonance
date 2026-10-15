@@ -1,5 +1,7 @@
 # Wave Confinement Theory — Canonical Equation Families (E1–E82)
 
+> **Later living-status notice (2026-10-14):** This historical v1 equation catalogue must be interpreted with the [corrected 142-object registry](WCT_FULL_EQUATION_LIST_CORRECTED.md) and [scoped D4 evidence map](docs/D4_CANONICAL_EVIDENCE_MAP.md). The experimental 2D dihedral-D4 periodic Hamiltonian PDE is a separate evidence rail, not a derivation of the covariant curvature action, PFF four-node D4, a general stability theorem or an automatic status override.
+
 **Richard J. Reyes — Master Reference (v1.0, Nov 2025)**
 
 This document is the authoritative catalogue of the core equations used across the WCT research volumes. Each entry contains: (i) plain definition, (ii) symbolic form, (iii) context (paper/module).
