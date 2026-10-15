@@ -1,5 +1,7 @@
 # Wave Confinement Theory — Audited Master Equation Architecture
 
+> **Later evidence cross-reference (2026-10-14):** The [D4 handoff](docs/D4_CANONICAL_EVIDENCE_MAP.md) and its [claim-status JSON](audit/d4_handoff/claims.json) classify a separate projection-free periodic Hamiltonian experiment. Its archive PASS, finite-protocol numerical PASS, conditional continuum applications and pending FEM/Lean work must not be merged into this 142-object effective-status count. [Foundational issue ledger](docs/FOUNDATIONAL_ISSUES_IMPLEMENTATION_2026-10-14.md) preserves outstanding #11–#18/#27 mathematical obligations.
+
 **Richard J. Reyes**  
 **Canonical master reference aligned with the 142-object WCT equation registry**
 
