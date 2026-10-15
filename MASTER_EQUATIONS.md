@@ -1,5 +1,7 @@
 # Wave Confinement Theory (WCT)
 
+> **Later living-status notice (2026-10-14):** This is a historical structural architecture, not a claim that all listed effective dynamics are already derived from one healthy Lorentzian action. Read the [corrected registry](WCT_FULL_EQUATION_LIST_CORRECTED.md), [#16/#18 derivation ledger](docs/FOUNDATIONAL_ISSUES_IMPLEMENTATION_2026-10-14.md) and [D4 scoped evidence map](docs/D4_CANONICAL_EVIDENCE_MAP.md). Do not identify the independent periodic D4 Hamiltonian rail with the Swift–Hohenberg/PFF or higher-derivative covariant rails.
+
 Wave Confinement Theory (WCT) is a geometric field framework in which:
 
 - mass, charge, and forces arise from **curvature-locked wavefields**,
