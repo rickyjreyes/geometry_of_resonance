@@ -147,8 +147,11 @@ def finite_minimum(K: float, G: float, T: float, m2: float) -> dict:
     qmin=(G-a0*math.sqrt((G*G+B*s*s)/(a0*a0+B)))/B
     qcollision=(G+math.sqrt(G*G+B*s*s))/B
     pole=static_poles(qmin,K,G,T,m2)
+    # Preserve the branch report's more precise stage-2 classification.
+    pole_without_status={k:v for k,v in pole.items() if k!="status"}
     return dict(status="LOWER_OSCILLATORY_MINIMUM_NOT_UNSTABLE_BAND",
-                q_min=qmin,k_min=math.sqrt(qmin),q_collision=qcollision,**pole)
+                q_min=qmin,k_min=math.sqrt(qmin),q_collision=qcollision,
+                **pole_without_status)
 
 
 def higher_time_branch_audit() -> Result:
