@@ -1,0 +1,58 @@
+{
+  "schema": "wct-foundational-execution-v1",
+  "date": "2026-10-20",
+  "python": "3.12.14",
+  "dependencies": {
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "numpy": "2.3.5",
+    "scipy": "1.16.2"
+  },
+  "executions": [
+    {
+      "command": "python derivations/foundational_closure.py --output <new>/foundational-final-verification.json",
+      "exit_code": 0,
+      "result": "31 symbolic/dimensional checks; eight companion-vs-pole checks; B=0 limiting control; four bounded Taylor comparisons PASS"
+    },
+    {
+      "command": "python -m unittest -v derivations.test_gr_constants_closure derivations.test_foundational_stage2 derivations.test_spectral_circle_numeric derivations.test_ostrogradsky_witness derivations.test_foundational_closure",
+      "exit_code": 0,
+      "result": "13 tests PASS, including independent quadrature of the locked-curve counterexample"
+    },
+    {
+      "command": "python <temporary unchanged copy of audit/cross_paper/verify_derivations.py>",
+      "exit_code": 0,
+      "result": "35 symbolic checks PASS; historical output unchanged"
+    },
+    {
+      "command": "python tools/closure_d4_basin_rational_replay.py --output <new>/d4_basin_replay.json",
+      "repository": "wct-pde",
+      "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "exit_code": 0,
+      "result": "PASS; 5 gates; exact Fraction/isqrt/Machin arithmetic; all input pins match"
+    },
+    {
+      "command": "python research/2026-10-19/baseline_verify.py",
+      "repository": "eigen",
+      "revision": "957cd8f382ba72f3764941c372222d7ebb58ed7e",
+      "exit_code": 0,
+      "result": "Read-only frozen baseline verification PASS; no search rerun"
+    }
+  ],
+  "development_attempts": [
+    {
+      "command": "initial foundational_closure.py run",
+      "exit_code": 1,
+      "cause": "SymPy multiplication by Python bool in Hessian delta; changed to int(i==j)",
+      "scientific_result": "No mathematical check failure; no receipt written by failed attempt"
+    }
+  ],
+  "scope": {
+    "PDE_propagations": 0,
+    "new_stationary_searches": 0,
+    "new_fits": 0,
+    "interval_root_coercivity_recomputed": false,
+    "independence": "Separate symbolic reconstruction and companion-matrix check; no external review or proof-assistant certification",
+    "hosted_CI": "Separate live PR record; not inferred from local PASS"
+  }
+}

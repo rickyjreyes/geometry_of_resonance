@@ -89,7 +89,7 @@ H=p_1Q_2-\frac{p_2^2}{2K}-\frac{Q_2^2}{2}+\frac{m^2Q_1^2}{2}.
 \]
 The linear \(p_1Q_2\) term is unbounded in both directions at any \(Q_2\ne0\). This is a nondegenerate sector no-go diagnostic, not a complete Hamiltonian proof for every constrained/covariant field configuration. An admissible physical completion must change the dynamics or prove an actual degeneracy/constraint/UV prescription, and subsequently test localized stability.
 
-For \(0<4Km^2<1\), \(B=4KT-G^2>0\), \(s=\sqrt{1-4Km^2}\), if \(G>s\), [F1–F2](cross_paper/FINITE_SCALE_SELECTION.md) derives a unique interior minimum of the *lower real amplitude oscillatory-frequency branch*:
+For \(0<4Km^2<1\), \(B=4KT-G^2>0\), \(s=\sqrt{1-4Km^2}\), if \(G C_0>s\), where \(C_0=(1-s)/(2K)\), [F1–F2](cross_paper/FINITE_SCALE_SELECTION.md) derives a unique interior minimum of the *lower real amplitude oscillatory-frequency branch*:
 \[
 q_{\min}=\frac{G-(2K+G)\sqrt{(G^2+Bs^2)/((2K+G)^2+B)}}{B}>0.
 \]
@@ -122,3 +122,7 @@ The checked repository tree at \`dced5cf017564c116942fc42c6b000494af328bb\` cont
 | #27 | All-31 local sensitivity, structural nullity, CSV header and missing-asset inventory | Independent operator/index/MeV mapping or approved explicit obstruction close-out |
 
 **No original acceptance criteria or historical frozen claims have been silently checked off.** A passing self-test measures implementation consistency, not scientific completion.
+
+## Subsequent foundational audit (2026-10-20)
+
+The [current workstream](foundational/FOUNDATIONAL_DECISION.md) adds a complete regular-sector constraint count and a high-frequency Sobolev Cauchy obstruction, preserves the newer D4 basin theorem, and separates the physical mass bridge. The finite-minimum condition above has been corrected from `G>s` to the canonical dimensionally consistent `G*C0>s` (equivalently `C2<0`); the rational witness is unchanged. Original manuscripts and frozen evidence are not amended.

@@ -3,6 +3,8 @@
 **Status:** derivation draft; exact for the corrected real complex-field action defined below.  
 **Purpose:** replace schematic variational symbols by the complete fourth-order Euler–Lagrange equation and expose the remaining modeling choice required for finite-\(k\) selection.
 
+**Live scope correction (2026-10-20):** In §4 the final spatial operator is the formal adjoint \(\Delta_h^\dagger f=\nabla_\nu\nabla_\mu(h^{\mu\nu}f)\). Replacing it by \(\Delta_h\) requires extra self-adjointness conditions, satisfied by the fixed flat inertial specialization. The [foundational audit](docs/foundational/GHOST_AND_CONSTRAINT_ANALYSIS.md) independently reconstructs that specialization, counts its unconstrained extra modes and proves high-frequency Sobolev ill-posedness around its specified nonzero homogeneous backgrounds. The full untruncated action is not a healthy nonlinear EFT merely because a restricted quadratic branch can be isolated.
+
 ## 1. Fields, geometry, and regularization
 
 Let \(\psi:M\to\mathbb C\) and treat \(\psi\) and \(\bar\psi\) as independent variables in the variational calculation. Define

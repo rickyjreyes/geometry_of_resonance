@@ -1,0 +1,153 @@
+{
+  "as_of": "2026-10-20",
+  "pull_requests": [
+    {
+      "repository": "rickyjreyes/eigen",
+      "number": 15,
+      "state": "closed",
+      "merged": true,
+      "head": "6df0951d27972d17b9b29811e6a571210de75cfa",
+      "base": "main",
+      "merge_commit": "49a8b52ac433e2c641481f062bf47dbfca2656dc",
+      "url": "https://github.com/rickyjreyes/eigen/pull/15"
+    },
+    {
+      "repository": "rickyjreyes/eigen",
+      "number": 16,
+      "state": "closed",
+      "merged": true,
+      "head": "6e645152766fc654aa8696b48bd5290792dbdc5f",
+      "base": "main",
+      "merge_commit": "957cd8f382ba72f3764941c372222d7ebb58ed7e",
+      "url": "https://github.com/rickyjreyes/eigen/pull/16"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "number": 26,
+      "state": "open",
+      "merged": false,
+      "head": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "base": "agent/projection-free-closure-current",
+      "merge_commit": "2c554aa0636f05076f5da0b75f479fec3cfdae26",
+      "url": "https://github.com/rickyjreyes/wct-pde/pull/26"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "number": 28,
+      "state": "closed",
+      "merged": true,
+      "head": "1bda6eac963bf58be3ff2e48da92716be4e3298c",
+      "base": "agent/d4-comprehensive-closure",
+      "merge_commit": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "url": "https://github.com/rickyjreyes/wct-pde/pull/28"
+    },
+    {
+      "repository": "rickyjreyes/wct-lean",
+      "number": 29,
+      "state": "open",
+      "merged": false,
+      "head": "b1b614643b05a0cac2743dabfc08a3a2573482ba",
+      "base": "main",
+      "merge_commit": "9813252488cc9e99d23132ca4f3e773f54edbb3c",
+      "url": "https://github.com/rickyjreyes/wct-lean/pull/29"
+    },
+    {
+      "repository": "rickyjreyes/wct-lean",
+      "number": 30,
+      "state": "open",
+      "merged": false,
+      "head": "030ee02cfc8441b68352e2e7ae75e1aef70a3b0e",
+      "base": "main",
+      "merge_commit": "51795116e7be811816f6185182164c31d2705deb",
+      "url": "https://github.com/rickyjreyes/wct-lean/pull/30"
+    },
+    {
+      "repository": "rickyjreyes/wct-lean",
+      "number": 31,
+      "state": "open",
+      "merged": false,
+      "head": "ea94fe56d18813dbd1dce45189e13db6c2ef6e98",
+      "base": "agent/curvature-closure-foundations-oct14",
+      "merge_commit": "21c6495c93fd48be0455b7c3d88971ce81247281",
+      "url": "https://github.com/rickyjreyes/wct-lean/pull/31"
+    },
+    {
+      "repository": "rickyjreyes/dimension",
+      "number": 9,
+      "state": "open",
+      "merged": false,
+      "head": "57f73abdced315ef66dc6cc91deb1ff63a9131b0",
+      "base": "main",
+      "merge_commit": "4e868fa9f6bc4d81f257c8f091155d8d4d45cbb9",
+      "url": "https://github.com/rickyjreyes/dimension/pull/9"
+    }
+  ],
+  "wct_pde_comments": [
+    {
+      "issue": 24,
+      "url": "https://github.com/rickyjreyes/wct-pde/issues/24",
+      "last_evidence": [
+        {
+          "id": 6197919547,
+          "url": "https://github.com/rickyjreyes/wct-pde/issues/24#issuecomment-6197919547",
+          "body": "**PASS — scoped continuum existence certificate independently validated.** Evidence commit: e9a2b589243cfc8fa1492b67a02949c9ba660e93.\n\nOriginal acceptance criteria are satisfied individually:\n1. [The independent audit](https://github.com/rickyjreyes/wct-pde/blob/e9a2b589243cfc8fa1492b67a02949c9ba660e93/docs/D4_INDEPENDENT_EXISTENCE_AUDIT.md) and [checkable theorem](https://github.com/rickyjreyes/wct-pde/blob/e9a2b589243cfc8fa1492b67a02949c9ba660e93/docs/D4_INDEPENDENT_CLOSURE_APPENDIX.tex) specify the exact binary coefficients/mass, length-42 two-dimensional torus, stationary equation, real-D4 Fourier Wiener space and frequency border.\n2. The proof inventory and independent derivation distinguish this cubic–quintic periodic PDE from the separate manuscript's model. No whole-space theorem is transferred.\n3. A second implementation independently reconstructs nonaliasing residuals, orbit weights, the bordered inverse, all low/high interactions, infinite tails and outward contraction inequalities. At radius 1e-8: self-map <=9.0380483633e-9 and contraction <=0.903787855655, with strictly positive outward margins. Production checks pass at 128,160,192 bits; manufactured/corrupted cases test rejection.\n4. An independent outward exponential DFT links the saved array to the exact candidate within 4.438284e-16. The theorem supplies a nearby smooth continuum root and uniqueness only within the stated real-D4 joint ball, not a mass-interval branch or global uniqueness.\n\n[Receipts, exact sources and provenance](https://github.com/rickyjreyes/wct-pde/blob/e9a2b589243cfc8fa1492b67a02949c9ba660e93/docs/evidence/d4_independent_closure/README.md). Independence means a second implementation and separate derivation within this workflow; the verifiers share FLINT/Arb and the mathematical strategy. This is neither external peer review nor proof-assistant verification. The previous CONDITIONAL checkpoint remains preserved as history. Closing the original scoped obligation, without claiming comprehensive numerical closure.\n\nFresh [GitHub CI 38775402440](https://github.com/rickyjreyes/wct-pde/actions/runs/38775402440) passes 41 focused tests, evidence verification, the independent root recomputation, 128/192-bit root sensitivity and the 192-bit eight-sector coercivity replay. CI reproduction supplements the analytic proof audit."
+        }
+      ]
+    },
+    {
+      "issue": 25,
+      "url": "https://github.com/rickyjreyes/wct-pde/issues/25",
+      "last_evidence": [
+        {
+          "id": 6197920364,
+          "url": "https://github.com/rickyjreyes/wct-pde/issues/25#issuecomment-6197920364",
+          "body": "**PASS — local all-time nonlinear orbital H2 stability for the validated periodic root.** Evidence commit: e9a2b589243cfc8fa1492b67a02949c9ba660e93; prerequisite #24 is discharged.\n\nOriginal acceptance criteria are satisfied individually:\n1. [The independent stability audit](https://github.com/rickyjreyes/wct-pde/blob/e9a2b589243cfc8fa1492b67a02949c9ba660e93/docs/D4_INDEPENDENT_STABILITY_AUDIT.md) separates finite-grid transient gains from the continuum local orbital theorem.\n2. A second implementation explicitly checks all eight real/imaginary reflection sectors, exact-root potential/projector transfer and the entire infinite complement through Schur bounds. Independent 160/192-bit runs pass. The augmented H2 lower bound exceeds 0.0008267789943812908. The smooth exact PDE yields the phase/translation kernels; validated nonzero generators and rank counts establish the exact kernels and Morse index.\n3. The conserved mass-penalized energy treats arbitrary small mass-changing and symmetry-breaking complex perturbations, with the physical/mean normalization stated explicitly.\n4. Polynomial nonlinear remainders, modulation, energy trapping and global H2 well-posedness/continuation are proved in [the appendix](https://github.com/rickyjreyes/wct-pde/blob/e9a2b589243cfc8fa1492b67a02949c9ba660e93/docs/D4_INDEPENDENT_CLOSURE_APPENDIX.tex). The positive quintic term and mass/energy conservation control H2. The energy estimate on the exact symmetry slice is quantitative; its radius is not mislabeled as an arbitrary-data orbital basin.\n5. For every epsilon>0 there is delta>0 such that initial H2 orbit distance below delta remains below epsilon for all real time. The theorem concerns the nearby validated continuum root on this frozen two-dimensional torus.\n\nAn explicit numerical delta, whole-space confinement, large-data stability and L2-only stability remain **OPEN**, and are not claims of this closure. #21–#23 remain independent OPEN obligations. [Evidence](https://github.com/rickyjreyes/wct-pde/blob/e9a2b589243cfc8fa1492b67a02949c9ba660e93/docs/evidence/d4_independent_closure/README.md) includes exact dependencies, adversarial tests and precision replays. Verification is a second implementation within this workflow, sharing Arb, not external peer review or formal proof checking. Closing the qualitative scoped theorem only.\n\nFresh [GitHub CI 38775402440](https://github.com/rickyjreyes/wct-pde/actions/runs/38775402440) passes 41 focused tests, evidence verification, the independent root recomputation, 128/192-bit root sensitivity and the 192-bit eight-sector coercivity replay. CI reproduction supplements the analytic proof audit."
+        }
+      ]
+    },
+    {
+      "issue": 27,
+      "url": "https://github.com/rickyjreyes/wct-pde/issues/27",
+      "last_evidence": [
+        {
+          "id": 6220881846,
+          "url": "https://github.com/rickyjreyes/wct-pde/issues/27#issuecomment-6220881846",
+          "body": "**PASS_CLOSED — explicit arbitrary-data orbital basin certified.** Reviewable implementation: [PR #28](https://github.com/rickyjreyes/wct-pde/pull/28), commit `1bda6eac963bf58be3ff2e48da92716be4e3298c`, stacked on PR #26 at `e9a2b589243cfc8fa1492b67a02949c9ba660e93`; neither PR is assumed merged.\n\n`docs/D4_QUANTITATIVE_ORBITAL_BASIN.md` pins the same exact continuum root and certificate hashes, the length-42 two-dimensional torus, physical versus mean H² normalization, phase/translation orbit, and conserved augmented energy. The quantitative modulation bound uses Gram minimum >0.00068 and slice/orbit factor <53. The outward energy upper constant is <27, combined with the existing exact-slice lower coefficient 0.00082085097379 and rho=1e-8 in a first-exit argument in both time directions.\n\nIn the documented physical H² norm, **delta*=4.2e-12 and epsilon*=4.2e-9** give the requested implication for arbitrary complex, mass-changing, non-D4 initial perturbations. This is not a substitution of the slice radius for an orbital basin. The statement retains the accepted root/coercivity/global-continuation premises; it is not external peer review or proof-assistant certification.\n\nVerification: 13 adversarial tests, 192-bit Arb replay, and an independent rational/Fraction replay of all new constants passed in [CI run 38845029018](https://github.com/rickyjreyes/wct-pde/actions/runs/38845029018). Exact commands and source/input/output SHA-256 receipts are in `docs/evidence/d4_quantitative_basin/{arb192_verified.json,rational.json,receipt.json}`. Bad Gram conditioning, corrupt source pins, bad energy/slice bounds, and mass/symmetry-breaking fixtures are covered.\n\nAll #27 criteria are satisfied in the published evidence; closing this quantitative follow-up. Issues #24/#25 remain closed for their original scope; #21–#23 are unaffected. The implementation PR remains unmerged for review."
+        }
+      ]
+    },
+    {
+      "issue": 21,
+      "url": "https://github.com/rickyjreyes/wct-pde/issues/21",
+      "last_evidence": [
+        {
+          "id": 6197898385,
+          "url": "https://github.com/rickyjreyes/wct-pde/issues/21#issuecomment-6197898385",
+          "body": "**OPEN — independent integrator audit and interrupted optimization follow-up.** Published in e9a2b589243cfc8fa1492b67a02949c9ba660e93.\n\nFour deterministic full-matrix tests independently check generators, adjoints, endpoint quotient, Yoshida composition, Padé rational action and checkpoint equivalence. Measured small-fixture refinement and stiffness diagnostics are in [the audit](https://github.com/rickyjreyes/wct-pde/blob/e9a2b589243cfc8fa1492b67a02949c9ba660e93/docs/D4_INTEGRATOR_INDEPENDENT_AUDIT.md). No implementation defect was identified. These fixtures and historical same-vector agreement do not certify independently optimized production gains.\n\nThe [predeclared fine-split experiment](https://github.com/rickyjreyes/wct-pde/blob/e9a2b589243cfc8fa1492b67a02949c9ba660e93/docs/D4_OPTIMIZED_SPLIT_PROTOCOL.md) began at dt=.003125 with the historical optimizer, unchanged quotient and gates. Execution was interrupted before a final optimizer result; no new gain is accepted. Exact source snapshots, partial records and checkpoint hashes are preserved in [the evidence collection](https://github.com/rickyjreyes/wct-pde/blob/e9a2b589243cfc8fa1492b67a02949c9ba660e93/docs/evidence/d4_independent_closure/README.md). Further execution requires a separately declared budget and source-compatible restoration. The original 1e-3 optimized comparison remains unresolved."
+        }
+      ]
+    },
+    {
+      "issue": 22,
+      "url": "https://github.com/rickyjreyes/wct-pde/issues/22",
+      "last_evidence": [
+        {
+          "id": 6197898680,
+          "url": "https://github.com/rickyjreyes/wct-pde/issues/22#issuecomment-6197898680",
+          "body": "**OPEN — verified continuation/resume, no newly completed sample.** Published in e9a2b589243cfc8fa1492b67a02949c9ba660e93.\n\nThe [continuation protocol](https://github.com/rickyjreyes/wct-pde/blob/e9a2b589243cfc8fa1492b67a02949c9ba660e93/docs/D4_ENVELOPE_CONTINUATION_PROTOCOL.md) retains frozen times 5,10,20,40,60,80,100, original local refinement and separate accuracy extensions. The t10 launcher pins the accepted t5 parent and archived numerical source. A separately budgeted [resume](https://github.com/rickyjreyes/wct-pde/blob/e9a2b589243cfc8fa1492b67a02949c9ba660e93/docs/D4_ENVELOPE_T10_RESUME_PROTOCOL.md) replayed a cached normal action bitwise before continuing. Both attempts were interrupted without an accepted t10 result. Nine new continuation guards pass; partial records, executed sources and 24 raw checkpoints across the numerical work are preserved.\n\nAccepted base data remain t5=1.5136573217842118 and historical t100=1.3690254532021537. Five base times, local refinement, timestep/spatial extensions and complete-chain audit remain outstanding. No largest refined sampled gain or continuous-time supremum is claimed. The earlier 38–98 hour estimate is illustrative; observed resumed action times were roughly 150–210 seconds and require a fresh budget before further propagation."
+        }
+      ]
+    },
+    {
+      "issue": 23,
+      "url": "https://github.com/rickyjreyes/wct-pde/issues/23",
+      "last_evidence": [
+        {
+          "id": 6197899095,
+          "url": "https://github.com/rickyjreyes/wct-pde/issues/23#issuecomment-6197899095",
+          "body": "**OPEN — exact block enclosure procedure validated on fixtures, production complement still missing.** Published in e9a2b589243cfc8fa1492b67a02949c9ba660e93.\n\n[The follow-up](https://github.com/rickyjreyes/wct-pde/blob/e9a2b589243cfc8fa1492b67a02949c9ba660e93/docs/D4_GAIN_CERTIFICATION_FOLLOWUP.md) and exact-rational checker supply outward square roots, a 2x2 block comparison and upper-target PSD checks. Eleven deterministic tests include a hidden larger direction despite a perfect Ritz residual, repeated leading values, nonnormal maps, tiny rational perturbations and global-map uncertainty. Synthetic fixtures are labeled explicitly.\n\nA useful absolute width <=.001 was predeclared as an additional target, without relaxing any original gate. Production requires validated trial actions/coupling, a bound on the entire complementary space, and propagation, adjoint, projection, inverse, FFT and rounding errors. The production enclosure remains [0,1.6494305049768293e22]; gain near 1.369 is not exhaustively certified. No new production propagation was performed for this issue."
+        }
+      ]
+    }
+  ]
+}

@@ -2,6 +2,8 @@
 
 **Status:** documentation crosswalk for [#29](https://github.com/rickyjreyes/geometry_of_resonance/issues/29). This is an additive revision of the living repository, not an amendment to the original dated Zenodo releases. Machine-readable source of truth for this handoff: [audit/d4_handoff/claims.json](../audit/d4_handoff/claims.json). A PASS in one row cannot promote any other row.
 
+**Subsequent verified status (2026-10-20):** The table below and its JSON retain the **October 14 historical snapshot**. Current #24 continuum existence and #25 local all-time orbital H² stability are **PASS / closed**, on evidence `e9a2b589243cfc8fa1492b67a02949c9ba660e93`. The later #27 explicit basin is also **PASS / closed**: physical H² initial distance <4.2e-12 implies all-time orbital distance <4.2e-9 for the same exact length-42 2D torus root. PR #28 merged into the still-open PR #26 branch, now `051b6eca10c46b8e038993d60cabb20715194a20`; this evidence is not default-main content. The [current claim matrix](../audit/foundational/claim_matrix.json) and [hypotheses/replay](foundational/LOCALIZED_STATE_EXISTENCE.md) supersede only those historical statuses. #21–23 remain OPEN, the original aggregate FAIL is preserved, and no parent-action or whole-space claim is promoted.
+
 ## Frozen identity and mathematical model
 
 The designation **D4 is dihedral square symmetry in two spatial dimensions, not four spatial dimensions**. The independent experimental Hamiltonian rail on the periodic square \(\mathbb R^2/(42\mathbb Z)^2\) is
