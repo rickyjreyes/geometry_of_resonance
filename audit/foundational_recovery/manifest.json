@@ -1,0 +1,119 @@
+{
+  "schema": "wct-recovery-artifacts-v1",
+  "base": "0385386e3daff64b44e5c5062f8d578ea68d146d",
+  "self_excluded": true,
+  "files": [
+    {
+      "path": ".github/workflows/foundational-recovery.yml",
+      "sha256": "75aea29976f959621c19892e3ef51269109a52a9bff171bbf49bd4a744557c50"
+    },
+    {
+      "path": "audit/foundational_recovery/all-derivation-regressions.log",
+      "sha256": "257027289a547a605cc24aeda3cf7642cefd931435bca1e9bf15a97ff74a45ac"
+    },
+    {
+      "path": "audit/foundational_recovery/claim_matrix.json",
+      "sha256": "55b4520b5c3e593b067d513f2c746944846ca0e8f7524782c643fc86f931b4eb"
+    },
+    {
+      "path": "audit/foundational_recovery/cross-paper-replay.log",
+      "sha256": "d41f1065e470d9df56fc1ac343f39d56a9826d9916f3f46fde22b23abdaf3bec"
+    },
+    {
+      "path": "audit/foundational_recovery/cross_paper_verification.json",
+      "sha256": "d41f1065e470d9df56fc1ac343f39d56a9826d9916f3f46fde22b23abdaf3bec"
+    },
+    {
+      "path": "audit/foundational_recovery/d4-rational-replay.log",
+      "sha256": "ca7ec462f54bca6947dc6ed665e7f389e626113b211b4bdfec8646c5f1a98527"
+    },
+    {
+      "path": "audit/foundational_recovery/d4_basin_replay.json",
+      "sha256": "e48d4ff956ab8366d4bd24109025de849a7612db9716ebd0ccd090b794718eb9"
+    },
+    {
+      "path": "audit/foundational_recovery/execution.json",
+      "sha256": "0dec52f0df31a0f7ecca02e41921b9c5777e3bc23f4075c94e9cb0d118b6c9bb"
+    },
+    {
+      "path": "audit/foundational_recovery/historical-d4-scope.log",
+      "sha256": "01c6507233454073ec1515805938b8a701558afbf5fc8483d6ce77cf1857702f"
+    },
+    {
+      "path": "audit/foundational_recovery/independent-reconstruction.log",
+      "sha256": "f6b1890e51e862e1d298f29b6e5e46353392cacc769c5e0c3c5260f0c9493fe3"
+    },
+    {
+      "path": "audit/foundational_recovery/pr33-integrity.log",
+      "sha256": "6a146309353a90be677230496710b8102b7867df39d3c5d5bd226f7fe5f647dd"
+    },
+    {
+      "path": "audit/foundational_recovery/pr33-reconstruction.log",
+      "sha256": "03e81457e4884d11952963290dfbca8a3203df5d1f7011ee6dfdbf411d7b1558"
+    },
+    {
+      "path": "audit/foundational_recovery/pr33_verification.json",
+      "sha256": "0417f9f53a4f30b941df4f72478a6780018332716f96099b5aa830304d2ad75a"
+    },
+    {
+      "path": "audit/foundational_recovery/prospective-gate-self-test.log",
+      "sha256": "e397f3d9b29290b35c954ec5b02d73b8051f862b2e80ea6b88c8c9205b926065"
+    },
+    {
+      "path": "audit/foundational_recovery/prospective-regressions.log",
+      "sha256": "65b53d99e2759078c340e00cb3a51753800aba9a19d65fe0d7903bdc69ac02e4"
+    },
+    {
+      "path": "audit/foundational_recovery/repository_snapshot.json",
+      "sha256": "ab40c1a80851494e77eb4e541f14e6a2aa3460b08ae1ff6e39e6ba1bcb84071f"
+    },
+    {
+      "path": "audit/foundational_recovery/source_ledger.json",
+      "sha256": "deab7a1124eb189567dad60e3c15f007f769fd0dca279008d70882e5559ce3bf"
+    },
+    {
+      "path": "audit/foundational_recovery/supporting_sources.json",
+      "sha256": "805e77a5dfede93e770b4de230142a649126423ad09ffc1cd5da0e9dcb384058"
+    },
+    {
+      "path": "audit/foundational_recovery/validate_records.py",
+      "sha256": "e81cf928d139b4a2327df0bcc3cfeb7ad6ee67dc68574d9e1ced8ab8c8bc3d63"
+    },
+    {
+      "path": "audit/foundational_recovery/verification.json",
+      "sha256": "a835c6448dfc597aaf218921bae390cee69f8152e54a96021778ccb47f6d0220"
+    },
+    {
+      "path": "derivations/foundational_recovery.py",
+      "sha256": "90729f264d66e7be8d6e79230587eb32f25ce0d476f4505c67d4e103ef819155"
+    },
+    {
+      "path": "derivations/test_foundational_recovery.py",
+      "sha256": "6533cecb5ffdce4c841309bc4ffcc9e99d0ce05abe4dc6ee9de2d2b1ad17503b"
+    },
+    {
+      "path": "docs/foundational_recovery/FOUNDATIONAL_RECOVERY_DECISION.md",
+      "sha256": "13a184a076f44fcbf7e7aab1fd2e21eb96a4f1fca98893fc3e758fd69da1e970"
+    },
+    {
+      "path": "docs/foundational_recovery/HEALTHY_COMPLETION_FEASIBILITY.md",
+      "sha256": "a9d0221dc95e064f2f259256fcf5db0b263e74c3b016123773bbb3b2c10af298"
+    },
+    {
+      "path": "docs/foundational_recovery/INDEPENDENT_HAMILTONIAN_STATUS.md",
+      "sha256": "ce34181c55261c64e1debbf4477dd3f140533b086e91a799fe49c7742e619626"
+    },
+    {
+      "path": "docs/foundational_recovery/INDEPENDENT_PR33_REVIEW.md",
+      "sha256": "332a2a3069c4d61440010d6b23fab6efbab21838269be6b922386af92f5e21e0"
+    },
+    {
+      "path": "docs/foundational_recovery/NONLINEAR_MODEL_BRIDGE.md",
+      "sha256": "b78324cee9def4a627d2b4294d06a7a298021d154f8bb014cf212b747fcb1c21"
+    },
+    {
+      "path": "docs/foundational_recovery/REVISED_FOUNDATIONAL_ROADMAP.md",
+      "sha256": "90e2095e05d6c18b31be7715082ba7be7f2dbc4a27af06aacfa54e2992849494"
+    }
+  ]
+}

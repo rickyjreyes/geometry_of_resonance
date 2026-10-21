@@ -1,0 +1,230 @@
+{
+  "schema": "wct-recovery-sources-v1",
+  "base": "0385386e3daff64b44e5c5062f8d578ea68d146d",
+  "files": [
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "revision": "0385386e3daff64b44e5c5062f8d578ea68d146d",
+      "path": "DERIVATION_CLOSURE.md",
+      "git_blob_sha1": "1e20aa6282730b741ba016d2b8c3b8919f30e954",
+      "sha256": "f00d73cfc6a38589892ca20932ee3c6327f0210e6b39d37bc821d1e410fbaffa"
+    },
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "revision": "0385386e3daff64b44e5c5062f8d578ea68d146d",
+      "path": "WCT_CORRECTED_VARIATIONAL_CLOSURE_DRAFT.md",
+      "git_blob_sha1": "0b6d6c4673da312e1bacb0cb1da5428309655815",
+      "sha256": "bc5fea5af1d42a65162df4d1f715c9a7634c70c3230d2623cfdadb69892b637f"
+    },
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "revision": "0385386e3daff64b44e5c5062f8d578ea68d146d",
+      "path": "WCT_FULL_EQUATION_LIST_CORRECTED.md",
+      "git_blob_sha1": "4e6d113d52422c9bef03f6a5dfc5e16d4a032d5d",
+      "sha256": "d30de68ec4b7a4896399a64c05e6b2a517bbabc18b366eba6f5c2d0183f4231e"
+    },
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "revision": "0385386e3daff64b44e5c5062f8d578ea68d146d",
+      "path": "audit/foundational/source_ledger.json",
+      "git_blob_sha1": "867dc7e8ecb37507b05f8db84a7e4daa2263c135",
+      "sha256": "325d2145a8726073b351c94cba1f05192fd8e5870f014fc88ae1e09072fe35fa"
+    },
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "revision": "0385386e3daff64b44e5c5062f8d578ea68d146d",
+      "path": "audit/foundational/manifest.json",
+      "git_blob_sha1": "41fcf4e5db97346cf75d3a50186561e830ef5e24",
+      "sha256": "b34d0abe57d8b4a912797e559185064563d9edee02c986e1d0deee6ababc0da0"
+    },
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "revision": "0385386e3daff64b44e5c5062f8d578ea68d146d",
+      "path": "docs/foundational/GHOST_AND_CONSTRAINT_ANALYSIS.md",
+      "git_blob_sha1": "eb9fc351818a9592177648815951e7ff709913a8",
+      "sha256": "9e0265685e5f6502f972c6dc818831fe9335cd5695357c35e20ad5d30b7ebe9d"
+    },
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "revision": "0385386e3daff64b44e5c5062f8d578ea68d146d",
+      "path": "docs/foundational/LOCALIZED_STATE_EXISTENCE.md",
+      "git_blob_sha1": "8d316fefb4ab79c299b00eec32c78782faf25e9b",
+      "sha256": "c31e3cd0e4f1e83cd630faf8f546d533e2fadc2e1a3261bfe93e32aa7be30347"
+    },
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "revision": "0385386e3daff64b44e5c5062f8d578ea68d146d",
+      "path": "docs/foundational/GEOMETRIC_MASS_CLOSURE.md",
+      "git_blob_sha1": "236d9fa3e3ec9c5d2738db6b8500a53effca3401",
+      "sha256": "e1126493ad7b817b0cc202fa92320b724c26df088d8748c9c4939351e19e2834"
+    },
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "revision": "0385386e3daff64b44e5c5062f8d578ea68d146d",
+      "path": "docs/foundational/FOUNDATIONAL_DECISION.md",
+      "git_blob_sha1": "1b433c8c6269942fe30269f9708294bad44df4bf",
+      "sha256": "86f959ede5f27354109a0fca6dd0c0e24b38f745372dcca443e83c3d45fb4412"
+    },
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "revision": "0385386e3daff64b44e5c5062f8d578ea68d146d",
+      "path": "docs/foundational/FOUNDATIONAL_ACTION_AUDIT.md",
+      "git_blob_sha1": "0522b8b38836b6011b33dbc7090be0d1bd14599c",
+      "sha256": "685aa36737be106047e30b066f0b9b44abd2714de7295ac5997e7b3601a9487c"
+    },
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "revision": "0385386e3daff64b44e5c5062f8d578ea68d146d",
+      "path": "docs/foundational/CROSS_MODEL_DERIVATION.md",
+      "git_blob_sha1": "7173689ac3ffda899d0105f09338a7d39be20bfc",
+      "sha256": "0b91ff3d38f206f9da9f3f610d6d08190682d040c844b869ecdad3d499beb5e4"
+    },
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "revision": "0385386e3daff64b44e5c5062f8d578ea68d146d",
+      "path": "docs/cross_paper/CORRECTED_ACTION_TO_EFT_KERNEL.md",
+      "git_blob_sha1": "3d93313e6a232d4490fd5f5ce4a1daa9ef4e0f28",
+      "sha256": "33c522bf86d4703ceff70dfc361b484f8d272702bf3a16cfa05c58aba88207a3"
+    },
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "revision": "0385386e3daff64b44e5c5062f8d578ea68d146d",
+      "path": "docs/cross_paper/QUADRATIC_ACTION_AND_DISPERSION.md",
+      "git_blob_sha1": "b3badd037d7d81f1934d3d5848b180553eea6967",
+      "sha256": "eef0a396c26cd5d5f3b8ff8a43b70a003fc7fb12ce166fa57f1dd5fef39734ff"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "path": "docs/D4_INDEPENDENT_EXISTENCE_AUDIT.md",
+      "git_blob_sha1": "99e6988597d11dd7421ed7a7884c3e1b1a91782c",
+      "sha256": "f4468da8d7284945987dd87516ee640016882f89831cd66f650e9d7973ccab27"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "path": "docs/D4_INDEPENDENT_STABILITY_AUDIT.md",
+      "git_blob_sha1": "6d3d55cc0c234f8ff776614118a16b0cf0ed8672",
+      "sha256": "f973a7e02e4c53ae033ac17035429d5a3704fb1f7e3699b6da346c6114d2776d"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "path": "docs/D4_INDEPENDENT_CLOSURE_APPENDIX.tex",
+      "git_blob_sha1": "ee40dcb9a9d9a6946193c2f596d42a185f1864d1",
+      "sha256": "f4eed2020ecfc274784f7a11c721ba7b0eae631d73a9ef2d344aa5d8d117d5b3"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "path": "docs/D4_QUANTITATIVE_ORBITAL_BASIN.md",
+      "git_blob_sha1": "6b4b0b5c23e3780a301ad571d89fab0f75c87ae5",
+      "sha256": "e2a4b372b7aca009dae877be0ccf61edb9bb9bbcdd6aa7d918a58c5fa2c0f49b"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "path": "tools/closure_d4_basin_rational_replay.py",
+      "git_blob_sha1": "aa737ae2148bed6b041762eb7e2b298d70eca8e7",
+      "sha256": "7e3c715064ea6e04ce8c82741f9ba8fe01c18083f955ab685cda9213ee31a6f3"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "path": "src/wct_pde/projection_free.py",
+      "git_blob_sha1": "7af71d28ac1d22f91e61dd10b53436bb1d2ea0f3",
+      "sha256": "24a172c650b4e2d722855f3c3e0ed0b66ae8117ae81b70ab5dc3af3ae486ddc1"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "path": "docs/evidence/d4_independent_closure/d4_independent_existence_v2/certificate.json",
+      "git_blob_sha1": "1a73b0a431f11a8d45855d22c74111046d5c770b",
+      "sha256": "f8426d1975a84a686ec1215e1001f23e37a47d8fdd058eda8ddb3df36a72f27a"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "path": "docs/evidence/d4_independent_closure/d4_independent_coercivity_final192/certificate.json",
+      "git_blob_sha1": "97e506dac4e12261db9e7f0ba9f860dcd8839a01",
+      "sha256": "cdd8122229b8adac0c1ee5826dc2f4f0bbdbc385dd95e0e19bfc76370171a6ad"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "path": "docs/evidence/d4_quantitative_basin/receipt.json",
+      "git_blob_sha1": "a5eb0c7d072c41f04ab3b053ae96ae0cf9807b42",
+      "sha256": "5b3e15aa40913c7df448819235e96a46d409c7ee1d34e077c2a825c4474b7090"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "path": "docs/evidence/d4_quantitative_basin/rational.json",
+      "git_blob_sha1": "7627d61f23cf860e2614f46c2cf3c58e69f15f2f",
+      "sha256": "e48d4ff956ab8366d4bd24109025de849a7612db9716ebd0ccd090b794718eb9"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "path": "docs/evidence/d4_production_recovery/existence/fourier_candidate.npz",
+      "git_blob_sha1": "ceecc2f954491dca05ca20a1dee2fba9e8e0614c",
+      "sha256": "9fcf8e3275db6dd646f6fa6fd0ee5f937819bca281bd5adffb93abc9b100bb6d"
+    },
+    {
+      "repository": "rickyjreyes/eigen",
+      "revision": "957cd8f382ba72f3764941c372222d7ebb58ed7e",
+      "path": "docs/phase_ii/COVARIANT_DILATION_THEOREM.md",
+      "git_blob_sha1": "2c673dd6ff409a5365135173fe46f92eff470f5b",
+      "sha256": "59ac8efe9403823a55bd70e8d5893f29f82470b6530d52a18cb2c899fccb39bb"
+    },
+    {
+      "repository": "rickyjreyes/eigen",
+      "revision": "957cd8f382ba72f3764941c372222d7ebb58ed7e",
+      "path": "docs/phase_ii/EIGEN_PHASE_II_DECISION.md",
+      "git_blob_sha1": "7ce89461cf4662acdecbb2f964e123bde74bd92c",
+      "sha256": "fd2abc6ff7ebf45f791d009e8781b6157710989f1d509ce54a5e8e13cbdef41c"
+    },
+    {
+      "repository": "rickyjreyes/dimension",
+      "revision": "f61d924f859d79e7ff733c3e30ba8baf4b5ceb81",
+      "path": "docs/MATH_AND_CLAIMS.md",
+      "git_blob_sha1": "ffb0605fd1033db0db1df1657c22fc829c800498",
+      "sha256": "2346136b6771a63a24bb13fbbdb0878edb39ec7e9299f2559d4202ae2f9cd930"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "revision": "ecc2a446cc8fbf2f104bc49aa0a9fdf5a9739876",
+      "path": "src/wct_pde/projection_free.py",
+      "git_blob_sha1": "7af71d28ac1d22f91e61dd10b53436bb1d2ea0f3",
+      "sha256": "24a172c650b4e2d722855f3c3e0ed0b66ae8117ae81b70ab5dc3af3ae486ddc1"
+    }
+  ],
+  "inherited_ledger": "audit/foundational/source_ledger.json",
+  "external_primary_literature": [
+    {
+      "url": "https://arxiv.org/abs/1506.02210v2",
+      "role": "Ostrogradsky canonical background; specific R1/R2 proof reconstructed here"
+    },
+    {
+      "url": "https://arxiv.org/abs/1510.06930v2",
+      "role": "Degenerate scalar-tensor mechanism; not a WCT completion"
+    },
+    {
+      "url": "https://arxiv.org/html/1512.06820v1",
+      "role": "Read ADM/constraint treatment; A1 complex auxiliary congruence proved independently"
+    },
+    {
+      "url": "https://arxiv.org/html/1710.09775v2",
+      "role": "Mixed-dispersion and stability methods; pure-power nonlinearity differs"
+    },
+    {
+      "url": "https://arxiv.org/html/2010.01448v3",
+      "role": "Competing-dispersion variational context; thresholds not transferred"
+    },
+    {
+      "url": "https://numdam.org/item/AIHPC_1984__1_2_109_0/",
+      "role": "Concentration-compactness principle; B4 states actual missing splitting hypothesis"
+    }
+  ],
+  "no_external_numerical_constants_imported": true
+}
