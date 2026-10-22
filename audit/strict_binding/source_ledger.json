@@ -1,0 +1,368 @@
+{
+  "schema": "wct-strict-binding-sources-v1",
+  "as_of_local": "2026-10-22 America/Los_Angeles",
+  "repository": "rickyjreyes/geometry_of_resonance",
+  "frozen_base": "dff2463e4dae6c1ee4fe0c4ebc6125bf90c9f49e",
+  "stack": [
+    {
+      "pr": 33,
+      "head": "0385386e3daff64b44e5c5062f8d578ea68d146d",
+      "branch": "agent/foundational-closure-2026-10-20"
+    },
+    {
+      "pr": 34,
+      "head": "dff2463e4dae6c1ee4fe0c4ebc6125bf90c9f49e",
+      "branch": "agent/foundational-recovery-2026-10-20"
+    }
+  ],
+  "local_inherited_files": [
+    {
+      "path": ".github/workflows/foundational-closure.yml",
+      "sha256": "4b91faf99996b0651eb4947309e49f46cec208605340d5e0b7fd8998cf32ea04",
+      "git_blob_sha1": "c8a1fbbaff74dafd27393875ae473d8aedec5c2d"
+    },
+    {
+      "path": ".github/workflows/foundational-recovery.yml",
+      "sha256": "75aea29976f959621c19892e3ef51269109a52a9bff171bbf49bd4a744557c50",
+      "git_blob_sha1": "87dee4c3af7225fc3ee5a9ef24524de267aae34a"
+    },
+    {
+      "path": "DERIVATION_CLOSURE.md",
+      "sha256": "f00d73cfc6a38589892ca20932ee3c6327f0210e6b39d37bc821d1e410fbaffa",
+      "git_blob_sha1": "1e20aa6282730b741ba016d2b8c3b8919f30e954"
+    },
+    {
+      "path": "README.md",
+      "sha256": "ee115767d8a57c539b3aca9d911e92150946fa128904ccb8808a63ab553163ed",
+      "git_blob_sha1": "4bceb3c1ba38acd0878d1b04ca4dbd79b3af3277"
+    },
+    {
+      "path": "WCT_CORRECTED_VARIATIONAL_CLOSURE_DRAFT.md",
+      "sha256": "bc5fea5af1d42a65162df4d1f715c9a7634c70c3230d2623cfdadb69892b637f",
+      "git_blob_sha1": "0b6d6c4673da312e1bacb0cb1da5428309655815"
+    },
+    {
+      "path": "audit/foundational/claim_matrix.json",
+      "sha256": "53ce340a0c683d950c52da0a401d1abc59180ad83ce4e7a667b0ef5f6c99f950",
+      "git_blob_sha1": "4a4c2022e044f9d8b13cd4b6087df8a0b57d4c00"
+    },
+    {
+      "path": "audit/foundational/cross_paper_verification.json",
+      "sha256": "d41f1065e470d9df56fc1ac343f39d56a9826d9916f3f46fde22b23abdaf3bec",
+      "git_blob_sha1": "97bdad93c6930abed2f58860e983edb96f938140"
+    },
+    {
+      "path": "audit/foundational/d4_basin_replay.json",
+      "sha256": "e48d4ff956ab8366d4bd24109025de849a7612db9716ebd0ccd090b794718eb9",
+      "git_blob_sha1": "7627d61f23cf860e2614f46c2cf3c58e69f15f2f"
+    },
+    {
+      "path": "audit/foundational/eigen_baseline_verification.json",
+      "sha256": "26e4535f4a8a8c49f865db6602a4c51fb272d89cbbc1f604d58f00b83e7d6c29",
+      "git_blob_sha1": "ba326a8b187e4b9746d2abb6ba3ae8880b676dce"
+    },
+    {
+      "path": "audit/foundational/execution.json",
+      "sha256": "5c6c8ec552c63107429768aac4533829f196c28ed6a6a4e0c0058f085e9bdc4a",
+      "git_blob_sha1": "13fe6a70d8f5babf7b77191744ac4690dd365779"
+    },
+    {
+      "path": "audit/foundational/manifest.json",
+      "sha256": "b34d0abe57d8b4a912797e559185064563d9edee02c986e1d0deee6ababc0da0",
+      "git_blob_sha1": "41fcf4e5db97346cf75d3a50186561e830ef5e24"
+    },
+    {
+      "path": "audit/foundational/pr_and_issue_evidence.json",
+      "sha256": "68f667f945fc9af91573e7d211bac421700d58688c72ae206c0ce39cd4dff8ae",
+      "git_blob_sha1": "f6998e19b3f94d072a62017064d3a90f03757a8f"
+    },
+    {
+      "path": "audit/foundational/repository_snapshot.json",
+      "sha256": "77591a1ca2d5f2058d17659f5786d513cb66f424c7a072afc2da816cc1d74794",
+      "git_blob_sha1": "94556c964a6052308a8c3045216fff9723f58a34"
+    },
+    {
+      "path": "audit/foundational/source_ledger.json",
+      "sha256": "325d2145a8726073b351c94cba1f05192fd8e5870f014fc88ae1e09072fe35fa",
+      "git_blob_sha1": "867dc7e8ecb37507b05f8db84a7e4daa2263c135"
+    },
+    {
+      "path": "audit/foundational/supporting_sources.json",
+      "sha256": "04d82795c8768e7882662941662bd995b84ce4b909e011df6ef2c6430c7876aa",
+      "git_blob_sha1": "56cb84a6c809246e04c6b6b63138fea73c578770"
+    },
+    {
+      "path": "audit/foundational/tests.log",
+      "sha256": "c3d0ba38e8f0522cc98a06bbed703fb02bf239f1dd71b7cd403bb8ca5814b27c",
+      "git_blob_sha1": "934233f95ee11382727e92dd722d0c8a75cbd895"
+    },
+    {
+      "path": "audit/foundational/validate_records.py",
+      "sha256": "b633a9112c4851900710e3d8277ed6a5814f658c7358e46698164c8664661906",
+      "git_blob_sha1": "bb0241bb78d78260f89376f163eb6b7513e6ea77"
+    },
+    {
+      "path": "audit/foundational/verification.json",
+      "sha256": "0417f9f53a4f30b941df4f72478a6780018332716f96099b5aa830304d2ad75a",
+      "git_blob_sha1": "a0c8eb492c2ee609411b94a44343ddd8bd349bd3"
+    },
+    {
+      "path": "audit/foundational_recovery/all-derivation-regressions.log",
+      "sha256": "257027289a547a605cc24aeda3cf7642cefd931435bca1e9bf15a97ff74a45ac",
+      "git_blob_sha1": "fbcf0205afdffb43ee8a3c0cd2c327be346ca2e5"
+    },
+    {
+      "path": "audit/foundational_recovery/claim_matrix.json",
+      "sha256": "55b4520b5c3e593b067d513f2c746944846ca0e8f7524782c643fc86f931b4eb",
+      "git_blob_sha1": "daff9ac15917a6d45ed89d62c335a189dc1dd7d0"
+    },
+    {
+      "path": "audit/foundational_recovery/cross-paper-replay.log",
+      "sha256": "d41f1065e470d9df56fc1ac343f39d56a9826d9916f3f46fde22b23abdaf3bec",
+      "git_blob_sha1": "97bdad93c6930abed2f58860e983edb96f938140"
+    },
+    {
+      "path": "audit/foundational_recovery/cross_paper_verification.json",
+      "sha256": "d41f1065e470d9df56fc1ac343f39d56a9826d9916f3f46fde22b23abdaf3bec",
+      "git_blob_sha1": "97bdad93c6930abed2f58860e983edb96f938140"
+    },
+    {
+      "path": "audit/foundational_recovery/d4-rational-replay.log",
+      "sha256": "ca7ec462f54bca6947dc6ed665e7f389e626113b211b4bdfec8646c5f1a98527",
+      "git_blob_sha1": "65862079080352d8c9eb53651c91d484681580e5"
+    },
+    {
+      "path": "audit/foundational_recovery/d4_basin_replay.json",
+      "sha256": "e48d4ff956ab8366d4bd24109025de849a7612db9716ebd0ccd090b794718eb9",
+      "git_blob_sha1": "7627d61f23cf860e2614f46c2cf3c58e69f15f2f"
+    },
+    {
+      "path": "audit/foundational_recovery/execution.json",
+      "sha256": "0dec52f0df31a0f7ecca02e41921b9c5777e3bc23f4075c94e9cb0d118b6c9bb",
+      "git_blob_sha1": "aa23bbf4fb3d314c269a48178a57081a7b581f2b"
+    },
+    {
+      "path": "audit/foundational_recovery/historical-d4-scope.log",
+      "sha256": "01c6507233454073ec1515805938b8a701558afbf5fc8483d6ce77cf1857702f",
+      "git_blob_sha1": "8f1750e0a4e70e10e84a53b40320590ad35a3d78"
+    },
+    {
+      "path": "audit/foundational_recovery/independent-reconstruction.log",
+      "sha256": "f6b1890e51e862e1d298f29b6e5e46353392cacc769c5e0c3c5260f0c9493fe3",
+      "git_blob_sha1": "da7c7eb013cb0ed47d3b64c9681a84c5f8614ed3"
+    },
+    {
+      "path": "audit/foundational_recovery/manifest.json",
+      "sha256": "f73c08db1f3541d9278283b4b8b501b330eea22ae7fb42e74aae516dffcf6794",
+      "git_blob_sha1": "ed6545a2b798de8a663d784d9350980738f67dd9"
+    },
+    {
+      "path": "audit/foundational_recovery/pr33-integrity.log",
+      "sha256": "6a146309353a90be677230496710b8102b7867df39d3c5d5bd226f7fe5f647dd",
+      "git_blob_sha1": "26b4558d4f7aa206f7d4efd2d807ed0dcb3e59c8"
+    },
+    {
+      "path": "audit/foundational_recovery/pr33-reconstruction.log",
+      "sha256": "03e81457e4884d11952963290dfbca8a3203df5d1f7011ee6dfdbf411d7b1558",
+      "git_blob_sha1": "2de766aff5ca390ae93bcca42ba24c241beed503"
+    },
+    {
+      "path": "audit/foundational_recovery/pr33_verification.json",
+      "sha256": "0417f9f53a4f30b941df4f72478a6780018332716f96099b5aa830304d2ad75a",
+      "git_blob_sha1": "a0c8eb492c2ee609411b94a44343ddd8bd349bd3"
+    },
+    {
+      "path": "audit/foundational_recovery/prospective-gate-self-test.log",
+      "sha256": "e397f3d9b29290b35c954ec5b02d73b8051f862b2e80ea6b88c8c9205b926065",
+      "git_blob_sha1": "01dba1ff81e2623e1317214a41a80f88c66f2946"
+    },
+    {
+      "path": "audit/foundational_recovery/prospective-regressions.log",
+      "sha256": "65b53d99e2759078c340e00cb3a51753800aba9a19d65fe0d7903bdc69ac02e4",
+      "git_blob_sha1": "3fe9f5035257559ee197842191e42e100feab7a8"
+    },
+    {
+      "path": "audit/foundational_recovery/repository_snapshot.json",
+      "sha256": "ab40c1a80851494e77eb4e541f14e6a2aa3460b08ae1ff6e39e6ba1bcb84071f",
+      "git_blob_sha1": "b90f5112eec5ee4dc02a6a31af13bb501fa19fc1"
+    },
+    {
+      "path": "audit/foundational_recovery/source_ledger.json",
+      "sha256": "deab7a1124eb189567dad60e3c15f007f769fd0dca279008d70882e5559ce3bf",
+      "git_blob_sha1": "1116e7d50ea713efd6dc7529aed40e6a27893c81"
+    },
+    {
+      "path": "audit/foundational_recovery/supporting_sources.json",
+      "sha256": "805e77a5dfede93e770b4de230142a649126423ad09ffc1cd5da0e9dcb384058",
+      "git_blob_sha1": "dc38acfd4e9aa304f3cbc4ac7a278c037e8b92f4"
+    },
+    {
+      "path": "audit/foundational_recovery/validate_records.py",
+      "sha256": "e81cf928d139b4a2327df0bcc3cfeb7ad6ee67dc68574d9e1ced8ab8c8bc3d63",
+      "git_blob_sha1": "06df91ad9318a776e0a2527db386647bec742dc4"
+    },
+    {
+      "path": "audit/foundational_recovery/verification.json",
+      "sha256": "a835c6448dfc597aaf218921bae390cee69f8152e54a96021778ccb47f6d0220",
+      "git_blob_sha1": "7d20f1c969b5259bd889bedc624c4b91a8e29ada"
+    },
+    {
+      "path": "derivations/foundational_closure.py",
+      "sha256": "f9560e02454676e248622855e1b6e774634295ec5efa8cf895044a06c71ce8a8",
+      "git_blob_sha1": "f309577ac758e0ac344aca95da1a09db690d02a9"
+    },
+    {
+      "path": "derivations/foundational_recovery.py",
+      "sha256": "90729f264d66e7be8d6e79230587eb32f25ce0d476f4505c67d4e103ef819155",
+      "git_blob_sha1": "6f176e9e330004368b4e74165fd1fb31ca2e60d3"
+    },
+    {
+      "path": "derivations/test_foundational_closure.py",
+      "sha256": "b7396eaafbdda31995253f5c9e0787763557dcc7cb4dd718b25b4ae2041ee4f5",
+      "git_blob_sha1": "c0f88efef6c7d7e60547d60da32ff017a177d129"
+    },
+    {
+      "path": "derivations/test_foundational_recovery.py",
+      "sha256": "6533cecb5ffdce4c841309bc4ffcc9e99d0ce05abe4dc6ee9de2d2b1ad17503b",
+      "git_blob_sha1": "a805c98ed9bd64049474c984e3c3382977070ffb"
+    },
+    {
+      "path": "docs/D4_CANONICAL_EVIDENCE_MAP.md",
+      "sha256": "6932bc4aeb81344cb15ae950779444349fd9182cdec594bee5ffe7fa26a442af",
+      "git_blob_sha1": "17131d0a4074b7310c343eab4cd4119abef11e80"
+    },
+    {
+      "path": "docs/FOUNDATIONAL_STAGE2_2026-10-14.md",
+      "sha256": "647558e71715b3a132d99c7e8a1475b68a0fd595d7fa3cbc6d6bf85930a78552",
+      "git_blob_sha1": "5e536c6d9a24ee7ecea1610ddc1067f6cba7875c"
+    },
+    {
+      "path": "docs/foundational/CROSS_MODEL_DERIVATION.md",
+      "sha256": "0b91ff3d38f206f9da9f3f610d6d08190682d040c844b869ecdad3d499beb5e4",
+      "git_blob_sha1": "7173689ac3ffda899d0105f09338a7d39be20bfc"
+    },
+    {
+      "path": "docs/foundational/FOUNDATIONAL_ACTION_AUDIT.md",
+      "sha256": "685aa36737be106047e30b066f0b9b44abd2714de7295ac5997e7b3601a9487c",
+      "git_blob_sha1": "0522b8b38836b6011b33dbc7090be0d1bd14599c"
+    },
+    {
+      "path": "docs/foundational/FOUNDATIONAL_DECISION.md",
+      "sha256": "86f959ede5f27354109a0fca6dd0c0e24b38f745372dcca443e83c3d45fb4412",
+      "git_blob_sha1": "1b433c8c6269942fe30269f9708294bad44df4bf"
+    },
+    {
+      "path": "docs/foundational/GEOMETRIC_MASS_CLOSURE.md",
+      "sha256": "e1126493ad7b817b0cc202fa92320b724c26df088d8748c9c4939351e19e2834",
+      "git_blob_sha1": "236d9fa3e3ec9c5d2738db6b8500a53effca3401"
+    },
+    {
+      "path": "docs/foundational/GHOST_AND_CONSTRAINT_ANALYSIS.md",
+      "sha256": "9e0265685e5f6502f972c6dc818831fe9335cd5695357c35e20ad5d30b7ebe9d",
+      "git_blob_sha1": "eb9fc351818a9592177648815951e7ff709913a8"
+    },
+    {
+      "path": "docs/foundational/LOCALIZED_STATE_EXISTENCE.md",
+      "sha256": "c31e3cd0e4f1e83cd630faf8f546d533e2fadc2e1a3261bfe93e32aa7be30347",
+      "git_blob_sha1": "8d316fefb4ab79c299b00eec32c78782faf25e9b"
+    },
+    {
+      "path": "docs/foundational_recovery/FOUNDATIONAL_RECOVERY_DECISION.md",
+      "sha256": "13a184a076f44fcbf7e7aab1fd2e21eb96a4f1fca98893fc3e758fd69da1e970",
+      "git_blob_sha1": "b211c6b344e3a2d7e19746332512ade12e0f1909"
+    },
+    {
+      "path": "docs/foundational_recovery/HEALTHY_COMPLETION_FEASIBILITY.md",
+      "sha256": "a9d0221dc95e064f2f259256fcf5db0b263e74c3b016123773bbb3b2c10af298",
+      "git_blob_sha1": "12c4e2212d9bf572806c74b9d77c873ba40bd7a2"
+    },
+    {
+      "path": "docs/foundational_recovery/INDEPENDENT_HAMILTONIAN_STATUS.md",
+      "sha256": "ce34181c55261c64e1debbf4477dd3f140533b086e91a799fe49c7742e619626",
+      "git_blob_sha1": "dd92143acd47da3748eb4cbe94e31944b596ace1"
+    },
+    {
+      "path": "docs/foundational_recovery/INDEPENDENT_PR33_REVIEW.md",
+      "sha256": "332a2a3069c4d61440010d6b23fab6efbab21838269be6b922386af92f5e21e0",
+      "git_blob_sha1": "08fb1709ee1a7e7cd4f8d282a94da054de1f2346"
+    },
+    {
+      "path": "docs/foundational_recovery/NONLINEAR_MODEL_BRIDGE.md",
+      "sha256": "b78324cee9def4a627d2b4294d06a7a298021d154f8bb014cf212b747fcb1c21",
+      "git_blob_sha1": "a904400b05c16019f1f52cf164f52388f134b377"
+    },
+    {
+      "path": "docs/foundational_recovery/REVISED_FOUNDATIONAL_ROADMAP.md",
+      "sha256": "90e2095e05d6c18b31be7715082ba7be7f2dbc4a27af06aacfa54e2992849494",
+      "git_blob_sha1": "db8dd13af728df4c17d8465dcd62ffea4c95a5ac"
+    }
+  ],
+  "d4_replay_inputs": [
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "path": "src/wct_pde/projection_free.py",
+      "git_blob_sha1": "7af71d28ac1d22f91e61dd10b53436bb1d2ea0f3",
+      "sha256": "24a172c650b4e2d722855f3c3e0ed0b66ae8117ae81b70ab5dc3af3ae486ddc1"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "path": "tools/closure_d4_basin_rational_replay.py",
+      "git_blob_sha1": "aa737ae2148bed6b041762eb7e2b298d70eca8e7",
+      "sha256": "7e3c715064ea6e04ce8c82741f9ba8fe01c18083f955ab685cda9213ee31a6f3"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "path": "docs/evidence/d4_independent_closure/d4_independent_existence_v2/certificate.json",
+      "git_blob_sha1": "1a73b0a431f11a8d45855d22c74111046d5c770b",
+      "sha256": "f8426d1975a84a686ec1215e1001f23e37a47d8fdd058eda8ddb3df36a72f27a"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "path": "docs/evidence/d4_independent_closure/d4_independent_coercivity_final192/certificate.json",
+      "git_blob_sha1": "97e506dac4e12261db9e7f0ba9f860dcd8839a01",
+      "sha256": "cdd8122229b8adac0c1ee5826dc2f4f0bbdbc385dd95e0e19bfc76370171a6ad"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "path": "docs/evidence/d4_production_recovery/existence/fourier_candidate.npz",
+      "git_blob_sha1": "ceecc2f954491dca05ca20a1dee2fba9e8e0614c",
+      "sha256": "9fcf8e3275db6dd646f6fa6fd0ee5f937819bca281bd5adffb93abc9b100bb6d"
+    }
+  ],
+  "external_primary_literature": [
+    {
+      "url": "https://numdam.org/item/AIHPC_1984__1_2_109_0/",
+      "authors": "P.-L. Lions",
+      "year": 1984,
+      "role": "Concentration-compactness method; actual splitting argument supplied in C1."
+    },
+    {
+      "url": "https://doi.org/10.1007/BF01403504",
+      "authors": "T. Cazenave and P.-L. Lions",
+      "year": 1982,
+      "role": "Minimizing-set stability method, directly proved in C4. Bibliography verified through Lions and Luo-Zhang; no unexamined theorem imported."
+    },
+    {
+      "url": "https://www.aimspress.com/aimspress-data/era/2022/8/PDF/era-30-08-146.pdf",
+      "authors": "H. Luo and Z. Zhang",
+      "year": 2022,
+      "doi": "10.3934/era.2022146",
+      "role": "Read F1-F6, Theorem 1.7, Lemma 3.4 and compactness argument. Actual primitive fails F6 and f fails dimension-two F4; no theorem transferred."
+    },
+    {
+      "url": "https://doi.org/10.1090/S0002-9939-1983-0699419-3",
+      "authors": "H. Brezis and E. Lieb",
+      "year": 1983,
+      "role": "Separate L4/L6 decoupling; standard lemma with boundedness and almost-everywhere convergence checked."
+    }
+  ],
+  "new_theorem_origin": "Direct operator-specific Fourier estimate and uniform amplitude gap derived in Phase IV; no priority claim.",
+  "normalization": "M is the squared L2 integral over R2; D4 mean mass is not substituted.",
+  "no_equation_change": true,
+  "original_D4_interval_campaign_rerun": false
+}

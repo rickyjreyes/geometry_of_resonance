@@ -1,0 +1,134 @@
+{
+  "schema": "wct-binding-claims-v1",
+  "primary": "STRICT_BINDING_RESTRICTED",
+  "all_positive_masses": "OPEN",
+  "D4_all_splits": "OPEN",
+  "D4_whole_space_existence": "OPEN",
+  "D4_whole_space_orbital_stability": "OPEN",
+  "restricted_existence": "PROVED",
+  "restricted_orbital_stability": "PROVED",
+  "claims": [
+    {
+      "id": "F1",
+      "classification": "VERIFIED",
+      "scope": "Unchanged full complex H2(R2) Hamiltonian, exact dyadic coefficients and squared integral norm",
+      "proof": "docs/strict_binding/SUBADDITIVITY_PROOF_OR_COUNTEREXAMPLE.md",
+      "new": false
+    },
+    {
+      "id": "F2",
+      "classification": "PROVED",
+      "scope": "Coercivity, continuity, negative infima and weak subadditivity at every positive mass",
+      "proof": "docs/strict_binding/SUBADDITIVITY_PROOF_OR_COUNTEREXAMPLE.md",
+      "new": true
+    },
+    {
+      "id": "F3",
+      "classification": "PROVED",
+      "scope": "Fourier L-infinity estimate with constant 3/(16 k^2)",
+      "proof": "docs/strict_binding/SUBADDITIVITY_PROOF_OR_COUNTEREXAMPLE.md",
+      "new": true
+    },
+    {
+      "id": "S1",
+      "classification": "PROVED",
+      "scope": "I(b)/b<I(a)/a for 0<a<b and a+b<=2m_star",
+      "proof": "docs/strict_binding/SUBADDITIVITY_PROOF_OR_COUNTEREXAMPLE.md",
+      "new": true
+    },
+    {
+      "id": "S2",
+      "classification": "PROVED",
+      "scope": "Strict binding when m+max(mu,m-mu)<=2m_star; all splits for 0<m<=m_star",
+      "proof": "docs/strict_binding/SUBADDITIVITY_PROOF_OR_COUNTEREXAMPLE.md",
+      "new": true
+    },
+    {
+      "id": "D4_CENTRAL_SPLITS",
+      "classification": "PROVED",
+      "scope": "Exact closed interval [2m_D4-2m_star,2m_star-m_D4]; no all-splits promotion",
+      "proof": "docs/strict_binding/SUBADDITIVITY_PROOF_OR_COUNTEREXAMPLE.md",
+      "new": true
+    },
+    {
+      "id": "C1",
+      "classification": "PROVED",
+      "scope": "All minimizing sequences precompact modulo translations and minimizers exist for 0<m<=m_star",
+      "proof": "docs/strict_binding/WHOLE_SPACE_COMPACTNESS.md",
+      "new": true
+    },
+    {
+      "id": "C2",
+      "classification": "PROVED",
+      "scope": "Equality at a fixed split implies a dichotomizing minimizing sequence; equality premise not asserted",
+      "proof": "docs/strict_binding/WHOLE_SPACE_COMPACTNESS.md",
+      "new": true
+    },
+    {
+      "id": "C3",
+      "classification": "PROVED",
+      "scope": "Smooth localized minimizers with negative real multiplier for 0<m<=m_star",
+      "proof": "docs/strict_binding/WHOLE_SPACE_COMPACTNESS.md",
+      "new": true
+    },
+    {
+      "id": "C4",
+      "classification": "PROVED",
+      "scope": "Orbital H2 stability of the full minimizing set, including small mass-changing data, for 0<m<=m_star",
+      "proof": "docs/strict_binding/WHOLE_SPACE_COMPACTNESS.md",
+      "new": true
+    },
+    {
+      "id": "A1",
+      "classification": "PROVED",
+      "scope": "Strict bound -Cm<I(m) and small/large mass limits, without inferring finite equality",
+      "proof": "docs/strict_binding/ADVERSARIAL_SPLITTING_TESTS.md",
+      "new": true
+    },
+    {
+      "id": "A2",
+      "classification": "PROVED",
+      "scope": "Negative-energy counterexamples to two scaling shortcuts, not to strict binding",
+      "proof": "docs/strict_binding/ADVERSARIAL_SPLITTING_TESTS.md",
+      "new": true
+    },
+    {
+      "id": "A3",
+      "classification": "PROVED",
+      "scope": "Degenerate controls beta=0, gamma=0, k=0 outside the frozen coefficients",
+      "proof": "docs/strict_binding/ADVERSARIAL_SPLITTING_TESTS.md",
+      "new": true
+    },
+    {
+      "id": "NUMERICAL_TRIALS",
+      "classification": "NUMERICALLY_SUPPORTED",
+      "scope": "Gaussian trial comparisons only; no lower bound on constrained infima",
+      "proof": "docs/strict_binding/ADVERSARIAL_SPLITTING_TESTS.md",
+      "new": true
+    },
+    {
+      "id": "UNIVERSAL_BINDING",
+      "classification": "OPEN",
+      "scope": "All positive masses; uncovered splits unresolved",
+      "proof": "docs/strict_binding/SUBADDITIVITY_PROOF_OR_COUNTEREXAMPLE.md",
+      "new": true
+    },
+    {
+      "id": "D4_WHOLE_SPACE",
+      "classification": "OPEN",
+      "scope": "Existence and orbital stability at m_D4 unproved; periodic certificate not transferred",
+      "proof": "docs/strict_binding/WHOLE_SPACE_COMPACTNESS.md",
+      "new": true
+    },
+    {
+      "id": "D4_PERIODIC",
+      "classification": "COMPUTER_ASSISTED_PROOF",
+      "scope": "Inherited fixed-torus theorem; only rational verifier freshly replayed",
+      "proof": "docs/strict_binding/WHOLE_SPACE_COMPACTNESS.md",
+      "new": false
+    }
+  ],
+  "external_peer_review": false,
+  "formal_proof_assistant_certificate": false,
+  "physical_mass_bridge": "OBSTRUCTED"
+}

@@ -1,0 +1,94 @@
+{
+  "schema": "wct-strict-binding-identities-v1",
+  "status": "PASS",
+  "primary_classification": "STRICT_BINDING_RESTRICTED",
+  "parameters": {
+    "beta_hex": "0x1.05f1d178c75ebp+2",
+    "gamma_hex": "0x1.05f1d178c75ebp+2",
+    "k": "1",
+    "D4_mass_hex": "0x1.45b8a0bad2714p+1"
+  },
+  "exact_constants": {
+    "C": "13824534543425985/18014398509481984",
+    "J": "3/16",
+    "K_infinity": "95516799158723907/288230376151711744",
+    "m_star": "72057594037927936/31838933052907969"
+  },
+  "decimal_displays": {
+    "C": 0.7674158277418677,
+    "J": 0.1875,
+    "K_infinity": 0.3313904677016002,
+    "m_star": 2.2631912293727647
+  },
+  "D4_mass_exact": "1432536998431173/562949953421312",
+  "D4_mass_decimal": 2.54469689485712,
+  "D4_certified_split_interval_exact": [
+    "5045630381560504514864047145605/8961862939559406112131109617664",
+    "35519188825742836333030455426427/17923725879118812224262219235328"
+  ],
+  "D4_certified_split_interval_decimal": [
+    0.5630113309687108,
+    1.9816855638884092
+  ],
+  "D4_all_splits_proved": false,
+  "all_positive_masses_proved": false,
+  "symbolic_checks": {
+    "density_square_completion": {
+      "passed": true,
+      "residual": "0"
+    },
+    "amplitude_energy_per_mass_difference": {
+      "passed": true,
+      "residual": "0"
+    },
+    "amplitude_derivative": {
+      "passed": true,
+      "residual": "0"
+    },
+    "mass_preserving_virial": {
+      "passed": true,
+      "residual": "0"
+    },
+    "density_preserving_dilation_difference": {
+      "passed": true,
+      "residual": "0"
+    },
+    "density_dilation_derivative": {
+      "passed": true,
+      "residual": "0"
+    },
+    "threshold_definition": {
+      "passed": true,
+      "residual": "0"
+    },
+    "threshold_two_mass_boundary": {
+      "passed": true,
+      "residual": "0"
+    },
+    "resolvent_constant": {
+      "passed": true,
+      "residual": "0"
+    },
+    "resolvent_antiderivative": {
+      "passed": true,
+      "residual": "0"
+    },
+    "gaussian_carrier_kinetic": {
+      "passed": true,
+      "residual": "0"
+    },
+    "negative_trial_optimal_scale": {
+      "passed": true,
+      "residual": "0"
+    },
+    "quadrature_phase_overlap": {
+      "passed": true,
+      "residual": "0"
+    },
+    "chemical_potential_identity": {
+      "passed": true,
+      "residual": "0"
+    }
+  },
+  "proof_location": "docs/strict_binding/SUBADDITIVITY_PROOF_OR_COUNTEREXAMPLE.md"
+}
