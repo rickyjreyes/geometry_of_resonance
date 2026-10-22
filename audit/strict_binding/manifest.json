@@ -5,11 +5,11 @@
   "files": [
     {
       "path": ".github/workflows/strict-binding.yml",
-      "sha256": "2c3cd68b25af8cfd4a456c929b1dfce3305a79c17854c9eaa5931e6ae6826263"
+      "sha256": "9130ff8c6b16b11fe38838c719bd50442ddfc29e8fb06f8cf88fe3d9400f224a"
     },
     {
       "path": "audit/strict_binding/README.md",
-      "sha256": "a8cebe646871dc42bbcb2c90a0d8654a66f26482dd1f5e9d98216da2724af95a"
+      "sha256": "8a2b70f0531642a76ef31d6cbe66949c87435b7f87c3468a83da3710f6c17a49"
     },
     {
       "path": "audit/strict_binding/adversarial-diagnostics.log",
@@ -17,7 +17,11 @@
     },
     {
       "path": "audit/strict_binding/all-derivation-regressions.log",
-      "sha256": "65d340d5811f2fc3db683bd58d5a99b8c6efa9ecd9a03b001ac10d75d34edd4c"
+      "sha256": "5e8f10cb3a6f0c2499ce1afff939aeb721361ca0251e452a38ebd44033ae23a1"
+    },
+    {
+      "path": "audit/strict_binding/ci_attempt.json",
+      "sha256": "428116e9fca33e2a2edb4bbaf34bcee1b09ee8e77070f6a645e485b3eae193d2"
     },
     {
       "path": "audit/strict_binding/claim_matrix.json",
@@ -101,7 +105,7 @@
     },
     {
       "path": "audit/strict_binding/execution.json",
-      "sha256": "5ca7935f9a311974f01fd358143724c3f4ec70965d32e31e1d5ed897291e3cc9"
+      "sha256": "0c510292abacffb124b0e23b05c687de5e5cc052a33a0b8124da60c0b4a2fafc"
     },
     {
       "path": "audit/strict_binding/historical-d4-scope.log",
@@ -117,7 +121,7 @@
     },
     {
       "path": "audit/strict_binding/pr33-reconstruction.log",
-      "sha256": "ba39f199ef9aacfc93f8c20fc4da2b53a635d33576af8857bb366587dd77e336"
+      "sha256": "a4ba3f3f7da7952fd792884c0d0a90f5b1ffed93c0dd48b8dc8b7de422a9cf46"
     },
     {
       "path": "audit/strict_binding/pr33_verification.json",
@@ -141,7 +145,7 @@
     },
     {
       "path": "audit/strict_binding/prepare_d4_replay.py",
-      "sha256": "b9cd0ee279a7e6f111ce327b4bd70a5f4567d2d1038759fc6f2d8348c2f75b48"
+      "sha256": "388e09fe25400f10420bc7a508323caed9b11c503091509820a81c092133bcb4"
     },
     {
       "path": "audit/strict_binding/prospective-gate-self-test.log",
@@ -149,11 +153,11 @@
     },
     {
       "path": "audit/strict_binding/prospective-regressions.log",
-      "sha256": "a0c00249f1bd6b5501e0162f61195499cbd5600040ce95204f61c0b34fc2f5b0"
+      "sha256": "fa5ba48df10657204c75759d822dad596603725beea8a73b032d7230fd01f1a0"
     },
     {
       "path": "audit/strict_binding/reproduce.py",
-      "sha256": "e05be2b358ef32c1e11a07dea405f11fc23f6b6eaeee8ade42f80ff7f823854b"
+      "sha256": "d9e14807768c44282c0db9468637650fcdd3f114fea641578212604cebcc87fb"
     },
     {
       "path": "audit/strict_binding/run_diagnostics.py",
@@ -161,11 +165,11 @@
     },
     {
       "path": "audit/strict_binding/source_ledger.json",
-      "sha256": "a8fa23606bac401004f152e080689c2ca2b0d358babdf3008e31d93832c21efb"
+      "sha256": "1df14eb3015b7361e745ddee3b47662c815a06a2df148d788cfc9eb419016c82"
     },
     {
       "path": "audit/strict_binding/validate_records.py",
-      "sha256": "2c98c607104a7efd8415b8e76bfe1fc92b7226d2d4f2489bf502b249ffc9b271"
+      "sha256": "8ecf3325e20c1bbcb9e216755db60d97673ff1d65ebc12399d0b3f54ad63c954"
     },
     {
       "path": "audit/strict_binding/verification.json",
@@ -185,7 +189,7 @@
     },
     {
       "path": "docs/strict_binding/STRICT_BINDING_DECISION.md",
-      "sha256": "265442f78ba230790ecebfe53b115cb6418c51f1dfec067d02538fe78864f5a2"
+      "sha256": "bdc56f933bebb4759f342b172d93d2c6153323f6cb835b0a3dd48537a5ed513b"
     },
     {
       "path": "docs/strict_binding/SUBADDITIVITY_PROOF_OR_COUNTEREXAMPLE.md",

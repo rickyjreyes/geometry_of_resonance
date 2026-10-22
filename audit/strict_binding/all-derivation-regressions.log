@@ -36,6 +36,6 @@ test_two_profiles_independent_quadrature (test_strict_binding.BindingChecks.test
 test_uncovered_does_not_mean_refuted (test_strict_binding.BindingChecks.test_uncovered_does_not_mean_refuted) ... ok
 
 ----------------------------------------------------------------------
-Ran 36 tests in 0.898s
+Ran 36 tests in 0.698s
 
 OK

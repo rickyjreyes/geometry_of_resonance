@@ -94,6 +94,14 @@ The execution manifest records fresh inherited regression runs and the D4
 exact-rational replay. Hosted outcomes are reported on the new draft PR at
 its actual published head, not inferred from local checks.
 
+The D4 source repository is private. Full local reproduction requires the
+five authorized, hash-pinned inputs and executes all five rational gates.
+Public CI reruns the public mathematical checks and validates that recorded
+full-local evidence; it does not execute the private-source D4 replay.
+The first hosted download failure and the corrected scope are preserved in
+the reproducibility record. A public-CI receipt cannot replace the canonical
+full-local execution manifest.
+
 The D4 rational replay uses the pinned candidate, root and eight-sector
 coercivity receipts at wct-pde `051b6eca10c46b8e038993d60cabb20715194a20`.
 Its original interval root/coercivity campaigns are inherited evidence and

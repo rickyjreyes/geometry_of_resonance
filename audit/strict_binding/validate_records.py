@@ -40,6 +40,12 @@ def main():
     assert all(not x["certifies_infimum_comparison"] for x in diag["D4_trial_split_comparisons"])
     exe=json.loads((HERE/"execution.json").read_text())
     assert exe["all_commands_passed"] and len(exe["commands"])==13
+    assert exe["verification_mode"]=="full-local"
+    assert exe["scope"]["D4_private_inputs_hash_checked"]
+    assert exe["scope"]["D4_rational_replay_executed"]
+    assert not exe["scope"]["recorded_D4_evidence_validated"]
+    for name,digest in exe["implementation_sha256"].items():
+        assert hashlib.sha256((HERE/name).read_bytes()).hexdigest()==digest,name
     for row in exe["commands"]:
         assert row["returncode"]==0
         assert hashlib.sha256((HERE/row["log"]).read_bytes()).hexdigest()==row["log_sha256"]
@@ -48,6 +54,7 @@ def main():
     assert not exe["scope"]["original_D4_interval_campaign_rerun"]
     assert not exe["scope"]["physical_spectrum"]
     print(f"PASS: {len(manifest['files'])} Phase IV hashes, {len(source['local_inherited_files'])} inherited pins, {len(rows)} scoped claims, 13 execution groups")
+    print("Recorded full-local D4 replay evidence validated; this integrity check does not execute the private-source replay.")
 
 
 if __name__=="__main__":main()

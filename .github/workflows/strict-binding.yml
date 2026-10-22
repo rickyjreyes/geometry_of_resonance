@@ -21,7 +21,7 @@ permissions:
   contents: read
 
 jobs:
-  binding-proofs-and-replay:
+  binding-proofs-and-recorded-d4-evidence:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
@@ -35,8 +35,8 @@ jobs:
           python audit/foundational/validate_records.py
           python audit/foundational_recovery/validate_records.py
           python audit/strict_binding/validate_records.py
-      - name: Reproduce binding checks, inherited regressions, and pinned D4 rational gates
-        run: python audit/strict_binding/reproduce.py --output-dir /tmp/strict-binding-ci
+      - name: Reproduce public checks and validate recorded private-source D4 replay evidence
+        run: python audit/strict_binding/reproduce.py --public-ci --output-dir /tmp/strict-binding-ci
       - name: Upload actual receipts
         if: always()
         uses: actions/upload-artifact@v4

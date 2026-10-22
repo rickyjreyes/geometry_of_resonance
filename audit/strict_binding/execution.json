@@ -2,6 +2,12 @@
   "schema": "wct-binding-execution-v1",
   "date_local": "2026-10-22 America/Los_Angeles",
   "frozen_base": "dff2463e4dae6c1ee4fe0c4ebc6125bf90c9f49e",
+  "verification_mode": "full-local",
+  "implementation_sha256": {
+    "reproduce.py": "d9e14807768c44282c0db9468637650fcdd3f114fea641578212604cebcc87fb",
+    "prepare_d4_replay.py": "388e09fe25400f10420bc7a508323caed9b11c503091509820a81c092133bcb4",
+    "source_ledger.json": "1df14eb3015b7361e745ddee3b47662c815a06a2df148d788cfc9eb419016c82"
+  },
   "python": "3.12.14",
   "dependencies": {
     "sympy": "1.14.0",
@@ -16,11 +22,11 @@
         "/workspace/scratch/ecaf33bad7ac/.venv/bin/python",
         "derivations/strict_binding.py",
         "--output",
-        "/workspace/scratch/ecaf33bad7ac/phase4_run_complete/verification.json"
+        "/workspace/scratch/ecaf33bad7ac/phase4_full_after_ci_fix/verification.json"
       ],
-      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_binding",
-      "started_at_utc": "2026-10-22T10:46:24.329255+00:00",
-      "seconds": 0.768,
+      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_phase4_complete",
+      "started_at_utc": "2026-10-22T16:26:18.915072+00:00",
+      "seconds": 0.644,
       "returncode": 0,
       "log": "independent-binding-identities.log",
       "log_sha256": "ae71b4b756e0d55283bc9111caedb99447e31ff385d16a348c4b3b9457925920"
@@ -31,11 +37,11 @@
         "/workspace/scratch/ecaf33bad7ac/.venv/bin/python",
         "audit/strict_binding/run_diagnostics.py",
         "--output",
-        "/workspace/scratch/ecaf33bad7ac/phase4_run_complete/diagnostics.json"
+        "/workspace/scratch/ecaf33bad7ac/phase4_full_after_ci_fix/diagnostics.json"
       ],
-      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_binding",
-      "started_at_utc": "2026-10-22T10:46:25.097507+00:00",
-      "seconds": 1.006,
+      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_phase4_complete",
+      "started_at_utc": "2026-10-22T16:26:19.558946+00:00",
+      "seconds": 1.016,
       "returncode": 0,
       "log": "adversarial-diagnostics.log",
       "log_sha256": "f0add20f3a188c6ca9add2cef21ade350c1c6b6a2b5ac58c36f09b9ce421ec79"
@@ -53,12 +59,12 @@
         "-p",
         "test_*.py"
       ],
-      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_binding",
-      "started_at_utc": "2026-10-22T10:46:26.103818+00:00",
-      "seconds": 1.687,
+      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_phase4_complete",
+      "started_at_utc": "2026-10-22T16:26:20.575440+00:00",
+      "seconds": 1.386,
       "returncode": 0,
       "log": "all-derivation-regressions.log",
-      "log_sha256": "65d340d5811f2fc3db683bd58d5a99b8c6efa9ecd9a03b001ac10d75d34edd4c"
+      "log_sha256": "5e8f10cb3a6f0c2499ce1afff939aeb721361ca0251e452a38ebd44033ae23a1"
     },
     {
       "name": "pr34-reconstruction",
@@ -66,11 +72,11 @@
         "/workspace/scratch/ecaf33bad7ac/.venv/bin/python",
         "derivations/foundational_recovery.py",
         "--output",
-        "/workspace/scratch/ecaf33bad7ac/phase4_run_complete/pr34_verification.json"
+        "/workspace/scratch/ecaf33bad7ac/phase4_full_after_ci_fix/pr34_verification.json"
       ],
-      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_binding",
-      "started_at_utc": "2026-10-22T10:46:27.791253+00:00",
-      "seconds": 0.803,
+      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_phase4_complete",
+      "started_at_utc": "2026-10-22T16:26:21.961547+00:00",
+      "seconds": 0.86,
       "returncode": 0,
       "log": "pr34-reconstruction.log",
       "log_sha256": "f6b1890e51e862e1d298f29b6e5e46353392cacc769c5e0c3c5260f0c9493fe3"
@@ -81,24 +87,24 @@
         "/workspace/scratch/ecaf33bad7ac/.venv/bin/python",
         "derivations/foundational_closure.py",
         "--output",
-        "/workspace/scratch/ecaf33bad7ac/phase4_run_complete/pr33_verification.json"
+        "/workspace/scratch/ecaf33bad7ac/phase4_full_after_ci_fix/pr33_verification.json"
       ],
-      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_binding",
-      "started_at_utc": "2026-10-22T10:46:28.594312+00:00",
-      "seconds": 1.274,
+      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_phase4_complete",
+      "started_at_utc": "2026-10-22T16:26:22.822232+00:00",
+      "seconds": 1.096,
       "returncode": 0,
       "log": "pr33-reconstruction.log",
-      "log_sha256": "ba39f199ef9aacfc93f8c20fc4da2b53a635d33576af8857bb366587dd77e336"
+      "log_sha256": "a4ba3f3f7da7952fd792884c0d0a90f5b1ffed93c0dd48b8dc8b7de422a9cf46"
     },
     {
       "name": "cross-paper-replay",
       "command": [
         "/workspace/scratch/ecaf33bad7ac/.venv/bin/python",
-        "/workspace/scratch/ecaf33bad7ac/phase4_run_complete/cross_paper/verify.py"
+        "/workspace/scratch/ecaf33bad7ac/phase4_full_after_ci_fix/cross_paper/verify.py"
       ],
-      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_binding",
-      "started_at_utc": "2026-10-22T10:46:29.869486+00:00",
-      "seconds": 3.862,
+      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_phase4_complete",
+      "started_at_utc": "2026-10-22T16:26:23.918731+00:00",
+      "seconds": 3.592,
       "returncode": 0,
       "log": "cross-paper-replay.log",
       "log_sha256": "d41f1065e470d9df56fc1ac343f39d56a9826d9916f3f46fde22b23abdaf3bec"
@@ -109,9 +115,9 @@
         "/workspace/scratch/ecaf33bad7ac/.venv/bin/python",
         "audit/foundational/validate_records.py"
       ],
-      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_binding",
-      "started_at_utc": "2026-10-22T10:46:33.731905+00:00",
-      "seconds": 0.027,
+      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_phase4_complete",
+      "started_at_utc": "2026-10-22T16:26:27.511155+00:00",
+      "seconds": 0.029,
       "returncode": 0,
       "log": "pr33-integrity.log",
       "log_sha256": "6a146309353a90be677230496710b8102b7867df39d3c5d5bd226f7fe5f647dd"
@@ -122,9 +128,9 @@
         "/workspace/scratch/ecaf33bad7ac/.venv/bin/python",
         "audit/foundational_recovery/validate_records.py"
       ],
-      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_binding",
-      "started_at_utc": "2026-10-22T10:46:33.758910+00:00",
-      "seconds": 0.026,
+      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_phase4_complete",
+      "started_at_utc": "2026-10-22T16:26:27.540139+00:00",
+      "seconds": 0.027,
       "returncode": 0,
       "log": "pr34-integrity.log",
       "log_sha256": "6826cc06ff8ac5ae3f419a38cebde8fb3aacfc9c82221346e20a818896ca4cb5"
@@ -135,9 +141,9 @@
         "/workspace/scratch/ecaf33bad7ac/.venv/bin/python",
         "audit/d4_handoff/validate_claims.py"
       ],
-      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_binding",
-      "started_at_utc": "2026-10-22T10:46:33.785358+00:00",
-      "seconds": 0.024,
+      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_phase4_complete",
+      "started_at_utc": "2026-10-22T16:26:27.567026+00:00",
+      "seconds": 0.023,
       "returncode": 0,
       "log": "historical-d4-scope.log",
       "log_sha256": "01c6507233454073ec1515805938b8a701558afbf5fc8483d6ce77cf1857702f"
@@ -149,9 +155,9 @@
         "audit/prospective/freeze_gate.py",
         "--self-test"
       ],
-      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_binding",
-      "started_at_utc": "2026-10-22T10:46:33.809381+00:00",
-      "seconds": 0.03,
+      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_phase4_complete",
+      "started_at_utc": "2026-10-22T16:26:27.590851+00:00",
+      "seconds": 0.032,
       "returncode": 0,
       "log": "prospective-gate-self-test.log",
       "log_sha256": "e397f3d9b29290b35c954ec5b02d73b8051f862b2e80ea6b88c8c9205b926065"
@@ -169,12 +175,12 @@
         "-p",
         "test_*.py"
       ],
-      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_binding",
-      "started_at_utc": "2026-10-22T10:46:33.839501+00:00",
-      "seconds": 0.05,
+      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_phase4_complete",
+      "started_at_utc": "2026-10-22T16:26:27.623595+00:00",
+      "seconds": 0.058,
       "returncode": 0,
       "log": "prospective-regressions.log",
-      "log_sha256": "a0c00249f1bd6b5501e0162f61195499cbd5600040ce95204f61c0b34fc2f5b0"
+      "log_sha256": "fa5ba48df10657204c75759d822dad596603725beea8a73b032d7230fd01f1a0"
     },
     {
       "name": "prepare-pinned-d4-replay",
@@ -182,13 +188,13 @@
         "/workspace/scratch/ecaf33bad7ac/.venv/bin/python",
         "audit/strict_binding/prepare_d4_replay.py",
         "--destination",
-        "/workspace/scratch/ecaf33bad7ac/phase4_run_complete/d4_source",
+        "/workspace/scratch/ecaf33bad7ac/phase4_full_after_ci_fix/d4_source",
         "--from-root",
         "/workspace/scratch/ecaf33bad7ac/recovery_sources/wct-pde"
       ],
-      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_binding",
-      "started_at_utc": "2026-10-22T10:46:33.889724+00:00",
-      "seconds": 0.052,
+      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_phase4_complete",
+      "started_at_utc": "2026-10-22T16:26:27.681756+00:00",
+      "seconds": 0.031,
       "returncode": 0,
       "log": "prepare-pinned-d4-replay.log",
       "log_sha256": "171a7ad7597139f944e012cbded766fa46a91b4ec9c427a1ab72a15df60ea183"
@@ -197,13 +203,13 @@
       "name": "d4-rational-replay",
       "command": [
         "/workspace/scratch/ecaf33bad7ac/.venv/bin/python",
-        "/workspace/scratch/ecaf33bad7ac/phase4_run_complete/d4_source/tools/closure_d4_basin_rational_replay.py",
+        "/workspace/scratch/ecaf33bad7ac/phase4_full_after_ci_fix/d4_source/tools/closure_d4_basin_rational_replay.py",
         "--output",
-        "/workspace/scratch/ecaf33bad7ac/phase4_run_complete/d4_basin_replay.json"
+        "/workspace/scratch/ecaf33bad7ac/phase4_full_after_ci_fix/d4_basin_replay.json"
       ],
-      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_binding",
-      "started_at_utc": "2026-10-22T10:46:33.941753+00:00",
-      "seconds": 1.205,
+      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_phase4_complete",
+      "started_at_utc": "2026-10-22T16:26:27.712824+00:00",
+      "seconds": 1.225,
       "returncode": 0,
       "log": "d4-rational-replay.log",
       "log_sha256": "ca7ec462f54bca6947dc6ed665e7f389e626113b211b4bdfec8646c5f1a98527"
@@ -215,6 +221,9 @@
     "finite_dimensional_gaussian_trial_search": true,
     "PDE_propagation": false,
     "stationary_root_search": false,
+    "D4_private_inputs_hash_checked": true,
+    "D4_rational_replay_executed": true,
+    "recorded_D4_evidence_validated": false,
     "original_D4_interval_campaign_rerun": false,
     "physical_spectrum": false,
     "external_independent_review": false

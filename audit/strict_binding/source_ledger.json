@@ -364,5 +364,11 @@
   "new_theorem_origin": "Direct operator-specific Fourier estimate and uniform amplitude gap derived in Phase IV; no priority claim.",
   "normalization": "M is the squared L2 integral over R2; D4 mean mass is not substituted.",
   "no_equation_change": true,
-  "original_D4_interval_campaign_rerun": false
+  "original_D4_interval_campaign_rerun": false,
+  "d4_source_access": {
+    "repository_visibility": "private",
+    "full_replay": "Requires authorized local copies of all five pinned inputs; their SHA256 hashes are checked before execution.",
+    "public_ci": "Runs public checks and validates the recorded full-local replay evidence; it does not execute the private-source D4 replay.",
+    "private_source_blobs_vendored": false
+  }
 }

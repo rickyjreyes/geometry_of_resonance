@@ -5,6 +5,6 @@ test_outcome_roles_and_path_escape_are_rejected (test_freeze_gate.FreezeGateTest
 test_template_never_executes_holdout (test_freeze_gate.FreezeGateTests.test_template_never_executes_holdout) ... ok
 
 ----------------------------------------------------------------------
-Ran 5 tests in 0.003s
+Ran 5 tests in 0.004s
 
 OK

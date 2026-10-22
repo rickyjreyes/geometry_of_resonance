@@ -10,15 +10,28 @@ python -m pip install sympy==1.14.0 mpmath==1.3.0 numpy==2.3.5 scipy==1.16.2
 python audit/foundational/validate_records.py
 python audit/foundational_recovery/validate_records.py
 python audit/strict_binding/validate_records.py
-python audit/strict_binding/reproduce.py --output-dir /tmp/strict-binding-fresh
+python audit/strict_binding/reproduce.py --output-dir /tmp/strict-binding-fresh --d4-source-root /absolute/path/to/authorized/pinned/wct-pde/files
 ```
 
-Choose a fresh output directory. The runner downloads only five source/input
-blobs at the pinned wct-pde revision, checks their SHA256 hashes, and runs
-the existing exact-rational D4 verifier. It does not execute the original
-root/coercivity interval campaigns. For an offline replay, append
-`--d4-source-root /absolute/path/to/pinned/wct-pde/files`; the same hashes are
-required. The copied directory need not be a Git checkout.
+Choose a fresh output directory. The full runner requires authorized local
+copies of five source/input blobs at the pinned private wct-pde revision.
+It checks all five SHA256 hashes before running the existing exact-rational
+D4 verifier. The input directory need not be a Git checkout. Missing or
+altered inputs fail the full replay; there is no automatic fallback.
+It does not execute the original root/coercivity interval campaigns.
+
+Public CI runs a separately labeled scope, requiring no private inputs:
+
+```sh
+python audit/strict_binding/reproduce.py --public-ci --output-dir /tmp/strict-binding-public
+```
+
+This runs the eleven public mathematical/regression groups plus the recorded
+evidence validator. It checks the hashes, five recorded D4 gate results and
+full-local execution provenance, but **does not execute the private-source
+D4 replay**. Its receipt explicitly records `D4_rational_replay_executed=false`.
+The committed canonical execution must instead be a successful full-local
+13-group run with that field true; a public-CI receipt cannot replace it.
 
 `execution.json` records the successful local run's actual commands, times,
 return codes and output hashes. Its local temporary paths are execution
@@ -46,5 +59,12 @@ proofs are in the reports. Gaussian trial optimizations supply upper bounds,
 not continuum minimum values. No physical spectrum, new stationary root,
 PDE propagation, external peer review, or formal proof certificate is claimed.
 
-Hosted CI repeats these checks and uploads its fresh receipts. The draft PR
-records the exact published head and actual CI links.
+The [first hosted run](ci_attempt.json) passed the eleven public groups, then
+failed with HTTP 404 on an unauthenticated download from the private wct-pde
+repository. The correction makes the two scopes explicit and requires local
+input access for full replay. Private source blobs are not copied into this
+public repository. The complete local replay was rerun after this correction.
+
+Hosted CI repeats the public checks and validates the recorded full-local
+evidence, uploading fresh receipts for that scope. The draft PR records the
+exact published head and actual CI links.
