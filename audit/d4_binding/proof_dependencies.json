@@ -1,0 +1,210 @@
+{
+  "schema": "d4-binding-dependencies-v1",
+  "nodes": [
+    {
+      "id": "R0",
+      "status": "CERTIFIED",
+      "depends_on": []
+    },
+    {
+      "id": "R1",
+      "status": "PROVED",
+      "depends_on": [
+        "R0"
+      ]
+    },
+    {
+      "id": "R2",
+      "status": "PROVED",
+      "depends_on": [
+        "R0"
+      ]
+    },
+    {
+      "id": "P35",
+      "status": "PROVED",
+      "depends_on": [
+        "R1",
+        "R2"
+      ]
+    },
+    {
+      "id": "S0",
+      "status": "PROVED",
+      "depends_on": [
+        "R1"
+      ]
+    },
+    {
+      "id": "V1",
+      "status": "PROVED",
+      "depends_on": [
+        "R1",
+        "R2"
+      ]
+    },
+    {
+      "id": "V2",
+      "status": "PROVED",
+      "depends_on": [
+        "V1"
+      ]
+    },
+    {
+      "id": "V3",
+      "status": "PROVED",
+      "depends_on": [
+        "V2",
+        "R1",
+        "R2"
+      ]
+    },
+    {
+      "id": "V4",
+      "status": "CERTIFIED",
+      "depends_on": [
+        "R0"
+      ]
+    },
+    {
+      "id": "S2",
+      "status": "PROVED",
+      "depends_on": [
+        "V3",
+        "V4"
+      ]
+    },
+    {
+      "id": "E1",
+      "status": "PROVED",
+      "depends_on": [
+        "R1",
+        "V2"
+      ]
+    },
+    {
+      "id": "E2",
+      "status": "PROVED",
+      "depends_on": [
+        "R1",
+        "R2"
+      ]
+    },
+    {
+      "id": "E3",
+      "status": "PROVED",
+      "depends_on": [
+        "R1",
+        "V3",
+        "V4"
+      ]
+    },
+    {
+      "id": "F",
+      "status": "PROVED",
+      "depends_on": [
+        "R1",
+        "V3",
+        "V4"
+      ]
+    },
+    {
+      "id": "C1",
+      "status": "PROVED",
+      "depends_on": [
+        "R1"
+      ]
+    },
+    {
+      "id": "C2",
+      "status": "PROVED",
+      "depends_on": [
+        "C1",
+        "S2"
+      ]
+    },
+    {
+      "id": "C3",
+      "status": "PROVED",
+      "depends_on": [
+        "C2",
+        "R1"
+      ]
+    },
+    {
+      "id": "O1",
+      "status": "PROVED",
+      "depends_on": [
+        "C3",
+        "V2",
+        "V4"
+      ]
+    },
+    {
+      "id": "O2",
+      "status": "PROVED",
+      "depends_on": [
+        "R1",
+        "R0"
+      ]
+    },
+    {
+      "id": "O3",
+      "status": "PROVED",
+      "depends_on": [
+        "C3",
+        "O2"
+      ]
+    },
+    {
+      "id": "N1",
+      "status": "NUMERICALLY_SUPPORTED",
+      "depends_on": [
+        "R2"
+      ]
+    },
+    {
+      "id": "X1",
+      "status": "REFUTED",
+      "depends_on": [
+        "R2"
+      ]
+    },
+    {
+      "id": "X2",
+      "status": "REFUTED",
+      "depends_on": [
+        "S0"
+      ]
+    },
+    {
+      "id": "COND1",
+      "status": "CONDITIONAL",
+      "depends_on": [
+        "S0"
+      ]
+    },
+    {
+      "id": "OPEN1",
+      "status": "OPEN",
+      "depends_on": [
+        "S2"
+      ]
+    },
+    {
+      "id": "OPEN2",
+      "status": "OPEN",
+      "depends_on": [
+        "C3"
+      ]
+    },
+    {
+      "id": "COND2",
+      "status": "CONDITIONAL",
+      "depends_on": [
+        "O3",
+        "OPEN2"
+      ]
+    }
+  ]
+}
