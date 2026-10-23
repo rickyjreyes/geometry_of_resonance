@@ -1,0 +1,1185 @@
+{
+  "date": "2026-10-20",
+  "repositories": {
+    "geometry_of_resonance": {
+      "head": "5f786e270a3ea8a59703772ba61d615dffe001f4",
+      "branch": "main",
+      "issues": [
+        {
+          "number": 32,
+          "title": "Harden prospective prediction gate and record the exact mathematical obstruction",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/pull/32",
+          "updated_at": "2026-10-17T02:09:21Z",
+          "pull_request": true
+        },
+        {
+          "number": 31,
+          "title": "Advance nine foundational issues with scoped spectral theorem, ghost witness and v18 full Jacobian",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/pull/31",
+          "updated_at": "2026-10-15T00:58:42Z",
+          "pull_request": true
+        },
+        {
+          "number": 30,
+          "title": "Integrate scoped D4 evidence and foundational issue audits (#11–18, #27, #29)",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/pull/30",
+          "updated_at": "2026-10-15T00:45:27Z",
+          "pull_request": true
+        },
+        {
+          "number": 29,
+          "title": "[P1] Integrate validated D4 confinement evidence into canonical WCT papers and claim registry",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/issues/29",
+          "updated_at": "2026-10-15T00:45:42Z",
+          "pull_request": false
+        },
+        {
+          "number": 28,
+          "title": "Add cross-domain single-mechanism WCT audit",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/pull/28",
+          "updated_at": "2026-10-08T07:29:06Z",
+          "pull_request": true
+        },
+        {
+          "number": 27,
+          "title": "[P1] Audit whether SM v18 mass-fit structure follows from confinement eigenmodes",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/issues/27",
+          "updated_at": "2026-10-15T01:36:02Z",
+          "pull_request": false
+        },
+        {
+          "number": 26,
+          "title": "[External convergence audit] Boundary record: distinctive WCT equation chain not found in OpenAI Math",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/issues/26",
+          "updated_at": "2026-10-07T01:34:20Z",
+          "pull_request": false
+        },
+        {
+          "number": 25,
+          "title": "[External convergence audit] Negative control: Sobolev embedding appears, but not WCT n≤3 confinement criterion",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/issues/25",
+          "updated_at": "2026-10-07T01:34:19Z",
+          "pull_request": false
+        },
+        {
+          "number": 24,
+          "title": "[External convergence audit] Negative control: no OpenAI Math match yet for WCT physical mass–eigenvalue chain",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/issues/24",
+          "updated_at": "2026-10-07T01:34:19Z",
+          "pull_request": false
+        },
+        {
+          "number": 23,
+          "title": "[External convergence audit] OpenAI Math composite square-root geometric quantities in nonlinear PDEs",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/issues/23",
+          "updated_at": "2026-10-07T01:34:18Z",
+          "pull_request": false
+        },
+        {
+          "number": 22,
+          "title": "[WITHDRAWN] Created in error — no repository action intended",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/issues/22",
+          "updated_at": "2026-10-07T01:27:10Z",
+          "pull_request": false
+        },
+        {
+          "number": 21,
+          "title": "[External convergence audit] OpenAI Math SurfaceImmersion phase chart / curvature denominator / active locus",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/issues/21",
+          "updated_at": "2026-10-07T01:34:18Z",
+          "pull_request": false
+        },
+        {
+          "number": 20,
+          "title": "[WITHDRAWN] Created in error",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/issues/20",
+          "updated_at": "2026-10-07T01:28:00Z",
+          "pull_request": false
+        },
+        {
+          "number": 19,
+          "title": "[WITHDRAWN] Created in error — no repository action intended",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/issues/19",
+          "updated_at": "2026-10-07T01:27:05Z",
+          "pull_request": false
+        },
+        {
+          "number": 18,
+          "title": "Resolve the canonical finite-k selection mechanism in the corrected variational action",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/issues/18",
+          "updated_at": "2026-10-15T00:57:58Z",
+          "pull_request": false
+        },
+        {
+          "number": 17,
+          "title": "Freeze and execute a prospective held-out WCT prediction",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/issues/17",
+          "updated_at": "2026-10-16T17:20:12Z",
+          "pull_request": false
+        },
+        {
+          "number": 16,
+          "title": "Prove stability or construct a ghost-free higher-derivative completion",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/issues/16",
+          "updated_at": "2026-10-15T00:58:02Z",
+          "pull_request": false
+        },
+        {
+          "number": 15,
+          "title": "Construct and normalize the local U(1) gauge sector",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/issues/15",
+          "updated_at": "2026-10-15T00:58:04Z",
+          "pull_request": false
+        },
+        {
+          "number": 14,
+          "title": "Define a quantum completion that fixes the action scale",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/issues/14",
+          "updated_at": "2026-10-15T00:58:06Z",
+          "pull_request": false
+        },
+        {
+          "number": 13,
+          "title": "Derive vacuum-scale and confinement-length selection without calibration",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/issues/13",
+          "updated_at": "2026-10-15T00:58:08Z",
+          "pull_request": false
+        },
+        {
+          "number": 12,
+          "title": "Prove a spectrum theorem relating confined eigenvalues to curvature and torsion",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/issues/12",
+          "updated_at": "2026-10-15T00:58:10Z",
+          "pull_request": false
+        },
+        {
+          "number": 11,
+          "title": "Derive full tensor/tetrad emergence from WCT microdynamics",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/issues/11",
+          "updated_at": "2026-10-15T00:58:12Z",
+          "pull_request": false
+        },
+        {
+          "number": 10,
+          "title": "Sync canonical consumer to latest SymPy head",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/pull/10",
+          "updated_at": "2026-08-21T04:31:29Z",
+          "pull_request": true
+        },
+        {
+          "number": 9,
+          "title": "Synchronize remaining canonical docs to 68 PASS",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/pull/9",
+          "updated_at": "2026-08-20T06:03:00Z",
+          "pull_request": true
+        },
+        {
+          "number": 8,
+          "title": "Sync canonical registry to 68 PASS",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/pull/8",
+          "updated_at": "2026-08-20T05:54:30Z",
+          "pull_request": true
+        },
+        {
+          "number": 7,
+          "title": "Containerize the frozen reproducibility fixture",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/pull/7",
+          "updated_at": "2026-07-10T02:29:36Z",
+          "pull_request": true
+        },
+        {
+          "number": 6,
+          "title": "Add GR and fundamental-constants derivation closure",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/pull/6",
+          "updated_at": "2026-07-02T06:37:32Z",
+          "pull_request": true
+        },
+        {
+          "number": 5,
+          "title": "Add paper equation coverage map draft",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/pull/5",
+          "updated_at": "2026-06-29T00:37:53Z",
+          "pull_request": true
+        },
+        {
+          "number": 4,
+          "title": "Stabilize finite-band field hashes across Python versions",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/pull/4",
+          "updated_at": "2026-06-28T09:45:16Z",
+          "pull_request": true
+        },
+        {
+          "number": 3,
+          "title": "Add frozen simulation and figure reproducibility",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/pull/3",
+          "updated_at": "2026-06-28T09:29:19Z",
+          "pull_request": true
+        },
+        {
+          "number": 2,
+          "title": "Synchronize canonical equation statuses with effective registry",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/pull/2",
+          "updated_at": "2026-06-28T02:34:25Z",
+          "pull_request": true
+        },
+        {
+          "number": 1,
+          "title": "Add 22 GitHub Discussion drafts for the research corpus",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/geometry_of_resonance/pull/1",
+          "updated_at": "2026-06-26T22:11:51Z",
+          "pull_request": true
+        }
+      ]
+    },
+    "wct-pde": {
+      "head": "ecc2a446cc8fbf2f104bc49aa0a9fdf5a9739876",
+      "branch": "main",
+      "issues": [
+        {
+          "number": 28,
+          "title": "Certify an explicit orbital H² basin for the same periodic root",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-pde/pull/28",
+          "updated_at": "2026-10-17T02:09:04Z",
+          "pull_request": true
+        },
+        {
+          "number": 27,
+          "title": "D4: certify an explicit quantitative nonlinear orbital perturbation basin",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-pde/issues/27",
+          "updated_at": "2026-10-16T17:19:21Z",
+          "pull_request": false
+        },
+        {
+          "number": 26,
+          "title": "D4 closure: verified production evidence and scoped continuum stability",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-pde/pull/26",
+          "updated_at": "2026-10-17T02:09:06Z",
+          "pull_request": true
+        },
+        {
+          "number": 25,
+          "title": "D4: establish all-time and nonlinear stability under explicit hypotheses",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-pde/issues/25",
+          "updated_at": "2026-10-15T17:14:26Z",
+          "pull_request": false
+        },
+        {
+          "number": 24,
+          "title": "D4: establish continuum existence and connection to the computed stationary branch",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-pde/issues/24",
+          "updated_at": "2026-10-15T17:14:24Z",
+          "pull_request": false
+        },
+        {
+          "number": 23,
+          "title": "D4: obtain a certified enclosure for the leading quotient singular gain",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-pde/issues/23",
+          "updated_at": "2026-10-15T18:15:59Z",
+          "pull_request": false
+        },
+        {
+          "number": 22,
+          "title": "D4: complete the refined sampled time envelope and audit its temporal accuracy",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-pde/issues/22",
+          "updated_at": "2026-10-15T18:15:57Z",
+          "pull_request": false
+        },
+        {
+          "number": 21,
+          "title": "D4: diagnose and resolve the Padé versus split integrator discrepancy",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-pde/issues/21",
+          "updated_at": "2026-10-15T18:16:01Z",
+          "pull_request": false
+        },
+        {
+          "number": 20,
+          "title": "D4: archive the numerical evidence and link it to d4-pade-numerical-closure-v1",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-pde/issues/20",
+          "updated_at": "2026-10-14T16:57:55Z",
+          "pull_request": false
+        },
+        {
+          "number": 19,
+          "title": "D4: confirm the production raw-file audit and publish its scoped verdict",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-pde/issues/19",
+          "updated_at": "2026-10-14T16:57:53Z",
+          "pull_request": false
+        },
+        {
+          "number": 18,
+          "title": "Add strict mass-protocol preflight bridge",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-pde/pull/18",
+          "updated_at": "2026-09-18T22:07:52Z",
+          "pull_request": true
+        },
+        {
+          "number": 17,
+          "title": "Complete projection-free D4 transient-envelope closure audit",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-pde/pull/17",
+          "updated_at": "2026-09-21T08:19:18Z",
+          "pull_request": true
+        },
+        {
+          "number": 16,
+          "title": "Add zero-bias emergent world long-run experiment",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-pde/pull/16",
+          "updated_at": "2026-09-11T21:11:10Z",
+          "pull_request": true
+        },
+        {
+          "number": 15,
+          "title": "Preserve valuable legacy PDE and toroidal experiments",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-pde/pull/15",
+          "updated_at": "2026-09-11T20:46:44Z",
+          "pull_request": true
+        },
+        {
+          "number": 14,
+          "title": "Add strict closure workflow and projection-free parameter search",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-pde/pull/14",
+          "updated_at": "2026-08-26T08:11:43Z",
+          "pull_request": true
+        },
+        {
+          "number": 13,
+          "title": "Add experimental three-branch STAR junction rail",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-pde/pull/13",
+          "updated_at": "2026-08-14T18:35:28Z",
+          "pull_request": true
+        },
+        {
+          "number": 12,
+          "title": "Redesign the projection-free visualization suite around a real formation history",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-pde/pull/12",
+          "updated_at": "2026-07-28T19:27:08Z",
+          "pull_request": true
+        },
+        {
+          "number": 11,
+          "title": "Complete projection-free production continuation and scaling",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-pde/pull/11",
+          "updated_at": "2026-07-15T05:18:13Z",
+          "pull_request": true
+        },
+        {
+          "number": 10,
+          "title": "Add projection-free confinement validation rail",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-pde/pull/10",
+          "updated_at": "2026-07-14T17:04:51Z",
+          "pull_request": true
+        },
+        {
+          "number": 9,
+          "title": "Export WCT profiles for electromagnetic candidate validation",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-pde/pull/9",
+          "updated_at": "2026-07-14T15:53:57Z",
+          "pull_request": true
+        },
+        {
+          "number": 8,
+          "title": "Add Candidate B larger-box and late-time follow-up",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-pde/pull/8",
+          "updated_at": "2026-07-14T07:05:37Z",
+          "pull_request": true
+        },
+        {
+          "number": 7,
+          "title": "Fix Ruff failures in selector wrapper scripts",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-pde/pull/7",
+          "updated_at": "2026-07-14T02:58:46Z",
+          "pull_request": true
+        },
+        {
+          "number": 6,
+          "title": "Add focused selector candidate validation and continuation",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-pde/pull/6",
+          "updated_at": "2026-07-14T02:47:11Z",
+          "pull_request": true
+        },
+        {
+          "number": 5,
+          "title": "Add selector mechanism and wavelength diagnostics",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-pde/pull/5",
+          "updated_at": "2026-07-14T00:59:14Z",
+          "pull_request": true
+        },
+        {
+          "number": 4,
+          "title": "Add strict post-PASS selector validation suite",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-pde/pull/4",
+          "updated_at": "2026-07-13T19:21:43Z",
+          "pull_request": true
+        },
+        {
+          "number": 3,
+          "title": "Add experimental conserving selector and localization mechanisms",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-pde/pull/3",
+          "updated_at": "2026-07-13T17:53:43Z",
+          "pull_request": true
+        },
+        {
+          "number": 2,
+          "title": "Fix Dedalus distributed field slicing",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-pde/pull/2",
+          "updated_at": "2026-07-13T10:27:17Z",
+          "pull_request": true
+        },
+        {
+          "number": 1,
+          "title": "Add complete PDE validation suite",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-pde/pull/1",
+          "updated_at": "2026-07-13T10:08:47Z",
+          "pull_request": true
+        }
+      ]
+    },
+    "eigen": {
+      "head": "957cd8f382ba72f3764941c372222d7ebb58ed7e",
+      "branch": "main",
+      "issues": [
+        {
+          "number": 16,
+          "title": "Phase II: covariant confinement and variational closure audit",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/eigen/pull/16",
+          "updated_at": "2026-10-20T10:24:48Z",
+          "pull_request": true
+        },
+        {
+          "number": 15,
+          "title": "Scalar dilation obstruction, frozen negative baseline, and spectral scope",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/eigen/pull/15",
+          "updated_at": "2026-10-20T10:24:14Z",
+          "pull_request": true
+        },
+        {
+          "number": 14,
+          "title": "[P2] Search sign-changing and excited stationary branches after ground-state closure",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/eigen/issues/14",
+          "updated_at": "2026-10-04T07:27:34Z",
+          "pull_request": false
+        },
+        {
+          "number": 13,
+          "title": "[P1] Define and test the frozen WCT_EIGEN_SPECTRUM_V1 downstream handoff contract",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/eigen/issues/13",
+          "updated_at": "2026-10-04T07:27:19Z",
+          "pull_request": false
+        },
+        {
+          "number": 12,
+          "title": "[P1] Extend stability validation beyond the real-scalar sector",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/eigen/issues/12",
+          "updated_at": "2026-10-04T07:27:07Z",
+          "pull_request": false
+        },
+        {
+          "number": 11,
+          "title": "[P1] Add an end-to-end stationary-state → Hessian → validator regression to CI",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/eigen/issues/11",
+          "updated_at": "2026-10-04T07:26:53Z",
+          "pull_request": false
+        },
+        {
+          "number": 10,
+          "title": "[P1] Add a reproducibility manifest for every validation run",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/eigen/issues/10",
+          "updated_at": "2026-10-04T07:26:33Z",
+          "pull_request": false
+        },
+        {
+          "number": 9,
+          "title": "[P1] Audit radial origin and outer-boundary discretization for the fourth-order WCT operator",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/eigen/issues/9",
+          "updated_at": "2026-10-04T07:26:19Z",
+          "pull_request": false
+        },
+        {
+          "number": 8,
+          "title": "[P1] Establish angular-sector truncation sufficiency beyond ell=6",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/eigen/issues/8",
+          "updated_at": "2026-10-04T07:26:03Z",
+          "pull_request": false
+        },
+        {
+          "number": 7,
+          "title": "[P0] Close the dilation-obstruction question for the positive scalar WCT functional",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/eigen/issues/7",
+          "updated_at": "2026-10-04T07:25:44Z",
+          "pull_request": false
+        },
+        {
+          "number": 6,
+          "title": "[P0] Add spectral convergence and box-independence audit for Hessian eigenmodes",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/eigen/issues/6",
+          "updated_at": "2026-10-04T07:25:28Z",
+          "pull_request": false
+        },
+        {
+          "number": 5,
+          "title": "[P0] Independently verify the constrained Hessian with finite-difference second variations",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/eigen/issues/5",
+          "updated_at": "2026-10-04T07:25:13Z",
+          "pull_request": false
+        },
+        {
+          "number": 4,
+          "title": "[P0] Add spatial grid-refinement convergence gate for stationary states",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/eigen/issues/4",
+          "updated_at": "2026-10-04T07:25:00Z",
+          "pull_request": false
+        },
+        {
+          "number": 3,
+          "title": "[P0] Execute and freeze the default scalar WCT stationary-state search",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/eigen/issues/3",
+          "updated_at": "2026-10-04T07:24:46Z",
+          "pull_request": false
+        },
+        {
+          "number": 2,
+          "title": "Preserve valuable legacy toroidal spectrum experiments",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/eigen/pull/2",
+          "updated_at": "2026-09-11T20:46:49Z",
+          "pull_request": true
+        },
+        {
+          "number": 1,
+          "title": "Claude/nonlinear eigenvalue pde solver mvrm w",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/eigen/pull/1",
+          "updated_at": "2026-03-20T22:48:58Z",
+          "pull_request": true
+        }
+      ]
+    },
+    "dimension": {
+      "head": "f61d924f859d79e7ff733c3e30ba8baf4b5ceb81",
+      "branch": "main",
+      "issues": [
+        {
+          "number": 9,
+          "title": "Numerical audit v1: honest refinement order and independent linear benchmarks",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/dimension/pull/9",
+          "updated_at": "2026-10-14T22:52:15Z",
+          "pull_request": true
+        },
+        {
+          "number": 8,
+          "title": "P2 — Publish a frozen reproducible dimensional-lifetime evidence package",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/dimension/issues/8",
+          "updated_at": "2026-10-14T22:52:22Z",
+          "pull_request": false
+        },
+        {
+          "number": 7,
+          "title": "P2 — Develop a dimension-dependent dynamical lifetime criterion",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/dimension/issues/7",
+          "updated_at": "2026-10-14T22:46:26Z",
+          "pull_request": false
+        },
+        {
+          "number": 6,
+          "title": "P1 — Reproduce recovered historical DS-01 implementation independently",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/dimension/issues/6",
+          "updated_at": "2026-10-14T22:59:00Z",
+          "pull_request": false
+        },
+        {
+          "number": 5,
+          "title": "P1 — Find a long-lived 3D reference configuration and test 4D metastability",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/dimension/issues/5",
+          "updated_at": "2026-10-14T22:46:22Z",
+          "pull_request": false
+        },
+        {
+          "number": 4,
+          "title": "P1 — Audit CORE_DELOCALIZATION event definition and lifetime estimation",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/dimension/issues/4",
+          "updated_at": "2026-10-14T22:46:10Z",
+          "pull_request": false
+        },
+        {
+          "number": 3,
+          "title": "P0 — Establish matched 3D–4D confinement comparisons",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/dimension/issues/3",
+          "updated_at": "2026-10-14T22:52:20Z",
+          "pull_request": false
+        },
+        {
+          "number": 2,
+          "title": "P0 — Validate DS-01 solver against controlled reference solutions",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/dimension/issues/2",
+          "updated_at": "2026-10-14T22:46:06Z",
+          "pull_request": false
+        },
+        {
+          "number": 1,
+          "title": "P0 — Diagnose failed timestep refinement in 2D, 3D and 4D",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/dimension/issues/1",
+          "updated_at": "2026-10-14T22:46:04Z",
+          "pull_request": false
+        }
+      ]
+    },
+    "wct-sympy": {
+      "head": "9656863097da396fa2c8d0b8ea190afeabdd05d8",
+      "branch": "main",
+      "issues": [
+        {
+          "number": 26,
+          "title": "[P2] Implement reproducible 3D confinement / soliton search",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-sympy/issues/26",
+          "updated_at": "2026-10-04T07:01:22Z",
+          "pull_request": false
+        },
+        {
+          "number": 25,
+          "title": "[P2] Rewrite WCT_GAP_ANALYSIS.md to reflect the current repository state",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-sympy/issues/25",
+          "updated_at": "2026-10-04T07:01:08Z",
+          "pull_request": false
+        },
+        {
+          "number": 24,
+          "title": "[P1] Expand SymPy-to-Lean formal coverage beyond 80/142 canonical IDs",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-sympy/issues/24",
+          "updated_at": "2026-10-04T07:00:54Z",
+          "pull_request": false
+        },
+        {
+          "number": 23,
+          "title": "[P1] Replace generic CONDITIONAL statuses with explicit machine-readable assumption contracts",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-sympy/issues/23",
+          "updated_at": "2026-10-04T07:00:36Z",
+          "pull_request": false
+        },
+        {
+          "number": 22,
+          "title": "[P1] Close open topology and correction objects TOP4/TOP6/TOP8/TOP9/CORR5/CORR6",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-sympy/issues/22",
+          "updated_at": "2026-10-04T07:00:26Z",
+          "pull_request": false
+        },
+        {
+          "number": 21,
+          "title": "[P0] Close M8 and the remaining open CM cosmology registry objects",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-sympy/issues/21",
+          "updated_at": "2026-10-04T07:00:14Z",
+          "pull_request": false
+        },
+        {
+          "number": 20,
+          "title": "[P1] Close E46 plasma-cavity curvature-match claim with a reproducible test contract",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-sympy/issues/20",
+          "updated_at": "2026-10-04T07:00:00Z",
+          "pull_request": false
+        },
+        {
+          "number": 19,
+          "title": "[P0] Close curvature-bounded computation obligations M5, E74, E75, and related conditional claims",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-sympy/issues/19",
+          "updated_at": "2026-10-04T06:59:46Z",
+          "pull_request": false
+        },
+        {
+          "number": 18,
+          "title": "[P0] Close open entropy/information claims E34, E42, E43, E77, and E78",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-sympy/issues/18",
+          "updated_at": "2026-10-04T06:59:28Z",
+          "pull_request": false
+        },
+        {
+          "number": 17,
+          "title": "[P0] Close M6B nonlinear curvature-operator existence/uniqueness obligations",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-sympy/issues/17",
+          "updated_at": "2026-10-04T06:59:00Z",
+          "pull_request": false
+        },
+        {
+          "number": 16,
+          "title": "[P0] Synchronize coverage summaries with the effective 142-object registry",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-sympy/issues/16",
+          "updated_at": "2026-10-04T06:58:38Z",
+          "pull_request": false
+        },
+        {
+          "number": 15,
+          "title": "Add September formal-upgrade symbolic certificates",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-sympy/pull/15",
+          "updated_at": "2026-09-11T23:06:04Z",
+          "pull_request": true
+        },
+        {
+          "number": 14,
+          "title": "Add symbolic closure and DSI verification batch",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-sympy/pull/14",
+          "updated_at": "2026-08-21T04:24:44Z",
+          "pull_request": true
+        },
+        {
+          "number": 13,
+          "title": "Synchronize Lean bridge and README to 80 IDs",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-sympy/pull/13",
+          "updated_at": "2026-08-20T05:59:58Z",
+          "pull_request": true
+        },
+        {
+          "number": 12,
+          "title": "Expand exact derived audit coverage to 68 PASS",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-sympy/pull/12",
+          "updated_at": "2026-08-20T05:48:43Z",
+          "pull_request": true
+        },
+        {
+          "number": 11,
+          "title": "Add conditional three-phase charged-lepton spectrum derivation",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-sympy/pull/11",
+          "updated_at": "2026-07-30T09:00:16Z",
+          "pull_request": true
+        },
+        {
+          "number": 10,
+          "title": "Add containerized symbolic audit reproducibility",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-sympy/pull/10",
+          "updated_at": "2026-07-10T02:51:51Z",
+          "pull_request": true
+        },
+        {
+          "number": 9,
+          "title": "Add frozen SymPy and registry reproduction",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-sympy/pull/9",
+          "updated_at": "2026-06-28T09:31:04Z",
+          "pull_request": true
+        },
+        {
+          "number": 8,
+          "title": "Compile one provenance-preserving effective WCT registry",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-sympy/pull/8",
+          "updated_at": "2026-06-28T02:34:23Z",
+          "pull_request": true
+        },
+        {
+          "number": 7,
+          "title": "Update README for derived audit status",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-sympy/pull/7",
+          "updated_at": "2026-06-27T10:31:57Z",
+          "pull_request": true
+        },
+        {
+          "number": 6,
+          "title": "Derive first unresolved WCT equation batch",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-sympy/pull/6",
+          "updated_at": "2026-06-27T10:29:01Z",
+          "pull_request": true
+        },
+        {
+          "number": 5,
+          "title": "Resolve symbolic audit contradictions",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-sympy/pull/5",
+          "updated_at": "2026-06-27T08:02:09Z",
+          "pull_request": true
+        },
+        {
+          "number": 4,
+          "title": "Add explicit wct-sympy ↔ wct-lean boundary",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-sympy/pull/4",
+          "updated_at": "2026-06-27T07:15:59Z",
+          "pull_request": true
+        },
+        {
+          "number": 3,
+          "title": "Add full 142-equation SymPy audit coverage",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-sympy/pull/3",
+          "updated_at": "2026-06-27T07:09:21Z",
+          "pull_request": true
+        },
+        {
+          "number": 2,
+          "title": "Normalize mathematical notation to ASCII-compatible format",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-sympy/pull/2",
+          "updated_at": "2026-06-27T00:04:47Z",
+          "pull_request": true
+        },
+        {
+          "number": 1,
+          "title": "Add symbolic audit harness for WCT equations",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-sympy/pull/1",
+          "updated_at": "2026-05-25T09:18:39Z",
+          "pull_request": true
+        }
+      ]
+    },
+    "wct-lean": {
+      "head": "dea05da8a6e40361e79ee685a7939a4c6f9a8696",
+      "branch": "main",
+      "issues": [
+        {
+          "number": 32,
+          "title": "Repair Lean build and add E15/E31 equation-specific coverage",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-lean/pull/32",
+          "updated_at": "2026-10-17T02:09:10Z",
+          "pull_request": true
+        },
+        {
+          "number": 31,
+          "title": "Formalize local WCT variation, E50 integrability, E79/E82, and cosine counterexample",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-lean/pull/31",
+          "updated_at": "2026-10-17T02:09:11Z",
+          "pull_request": true
+        },
+        {
+          "number": 30,
+          "title": "Formalize curvature non-uniqueness, regulator limits, D4 radius and analytic contracts",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-lean/pull/30",
+          "updated_at": "2026-10-15T01:46:02Z",
+          "pull_request": true
+        },
+        {
+          "number": 29,
+          "title": "Formalize oscillatory counterexample to curvature-energy H² coercivity",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-lean/pull/29",
+          "updated_at": "2026-10-08T23:20:55Z",
+          "pull_request": true
+        },
+        {
+          "number": 28,
+          "title": "P2: Close remaining continuum-analysis obligations behind existing conditional theorems",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-lean/issues/28",
+          "updated_at": "2026-10-04T07:00:15Z",
+          "pull_request": false
+        },
+        {
+          "number": 27,
+          "title": "P2: Expand equation-specific Lean coverage beyond the current 80 / 142 IDs",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-lean/issues/27",
+          "updated_at": "2026-10-16T17:19:23Z",
+          "pull_request": false
+        },
+        {
+          "number": 26,
+          "title": "P1: Prove uniqueness or characterize non-uniqueness of the nonlinear curvature closure",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-lean/issues/26",
+          "updated_at": "2026-10-04T06:59:44Z",
+          "pull_request": false
+        },
+        {
+          "number": 25,
+          "title": "P1: Build theorem-level bridges from confined solutions to physical observables",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-lean/issues/25",
+          "updated_at": "2026-10-04T06:59:20Z",
+          "pull_request": false
+        },
+        {
+          "number": 24,
+          "title": "P1: Formalize curve-integral locking on manifolds",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-lean/issues/24",
+          "updated_at": "2026-10-04T06:59:02Z",
+          "pull_request": false
+        },
+        {
+          "number": 23,
+          "title": "P1: Complete E78 Fourier orthogonality and function-space spectral projection",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-lean/issues/23",
+          "updated_at": "2026-10-04T06:58:47Z",
+          "pull_request": false
+        },
+        {
+          "number": 22,
+          "title": "P1: Control the regularized curvature quotient in the ε → 0 limit",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-lean/issues/22",
+          "updated_at": "2026-10-04T06:58:28Z",
+          "pull_request": false
+        },
+        {
+          "number": 21,
+          "title": "P1: Formalize the linearized spectrum and orbital/Lyapunov stability of confined states",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-lean/issues/21",
+          "updated_at": "2026-10-13T09:31:34Z",
+          "pull_request": false
+        },
+        {
+          "number": 20,
+          "title": "P0: Prove free-space confined-state existence, localization, finite energy, and decay",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-lean/issues/20",
+          "updated_at": "2026-10-04T06:58:01Z",
+          "pull_request": false
+        },
+        {
+          "number": 19,
+          "title": "P0: Prove local and global well-posedness for the nonlinear WCT evolution",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-lean/issues/19",
+          "updated_at": "2026-10-04T06:57:47Z",
+          "pull_request": false
+        },
+        {
+          "number": 18,
+          "title": "P0: Define admissible function spaces and boundary conditions for WCT PDEs",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-lean/issues/18",
+          "updated_at": "2026-10-04T06:57:34Z",
+          "pull_request": false
+        },
+        {
+          "number": 17,
+          "title": "P0: Formalize the exact first variation of the full WCT action",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-lean/issues/17",
+          "updated_at": "2026-10-04T06:57:20Z",
+          "pull_request": false
+        },
+        {
+          "number": 16,
+          "title": "Formalize September WCT algebraic upgrades",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-lean/pull/16",
+          "updated_at": "2026-09-11T23:10:47Z",
+          "pull_request": true
+        },
+        {
+          "number": 15,
+          "title": "Formalize closure, DSI, and contraction identities",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-lean/pull/15",
+          "updated_at": "2026-08-21T04:24:39Z",
+          "pull_request": true
+        },
+        {
+          "number": 14,
+          "title": "Synchronize public README to 80-ID coverage",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-lean/pull/14",
+          "updated_at": "2026-08-20T06:03:11Z",
+          "pull_request": true
+        },
+        {
+          "number": 13,
+          "title": "Expand formal coverage from 62 to 80 canonical IDs",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-lean/pull/13",
+          "updated_at": "2026-08-20T05:48:56Z",
+          "pull_request": true
+        },
+        {
+          "number": 12,
+          "title": "Add pinned Lean Docker build and container CI",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-lean/pull/12",
+          "updated_at": "2026-07-10T02:41:44Z",
+          "pull_request": true
+        },
+        {
+          "number": 11,
+          "title": "Add non-shallow canonical mappings for 12 WCT IDs",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-lean/pull/11",
+          "updated_at": "2026-06-29T23:20:55Z",
+          "pull_request": true
+        },
+        {
+          "number": 10,
+          "title": "Complete canonical WCT Lean registry and formal support",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-lean/pull/10",
+          "updated_at": "2026-06-29T22:27:23Z",
+          "pull_request": true
+        },
+        {
+          "number": 9,
+          "title": "Add Lean paper equation coverage map draft",
+          "state": "open",
+          "url": "https://github.com/rickyjreyes/wct-lean/pull/9",
+          "updated_at": "2026-06-29T05:14:10Z",
+          "pull_request": true
+        },
+        {
+          "number": 8,
+          "title": "Use pinned Mathlib cache in clean reproduction",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-lean/pull/8",
+          "updated_at": "2026-06-28T09:55:04Z",
+          "pull_request": true
+        },
+        {
+          "number": 7,
+          "title": "Harden Lean reproducibility and source hashing",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-lean/pull/7",
+          "updated_at": "2026-06-28T09:29:52Z",
+          "pull_request": true
+        },
+        {
+          "number": 6,
+          "title": "Require positive loop length in E5 chain",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-lean/pull/6",
+          "updated_at": "2026-06-27T10:53:41Z",
+          "pull_request": true
+        },
+        {
+          "number": 5,
+          "title": "Document and validate Lean derivation batch 1",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-lean/pull/5",
+          "updated_at": "2026-06-27T10:49:30Z",
+          "pull_request": true
+        },
+        {
+          "number": 4,
+          "title": "Resolve first Lean audit obligations",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-lean/pull/4",
+          "updated_at": "2026-06-27T08:02:18Z",
+          "pull_request": true
+        },
+        {
+          "number": 3,
+          "title": "Fix typography: replace smart quotes and dashes with ASCII equivalents",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-lean/pull/3",
+          "updated_at": "2026-06-27T00:02:46Z",
+          "pull_request": true
+        },
+        {
+          "number": 2,
+          "title": "Add documentation and formalize WCTLean theorem inventory",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-lean/pull/2",
+          "updated_at": "2026-05-25T10:16:46Z",
+          "pull_request": true
+        },
+        {
+          "number": 1,
+          "title": "Add WCTLean: formal dimension algebra and WCT support lemmas",
+          "state": "closed",
+          "url": "https://github.com/rickyjreyes/wct-lean/pull/1",
+          "updated_at": "2026-05-25T09:37:44Z",
+          "pull_request": true
+        }
+      ]
+    }
+  }
+}

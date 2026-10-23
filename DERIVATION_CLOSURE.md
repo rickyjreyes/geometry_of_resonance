@@ -4,6 +4,8 @@
 **Document type:** mathematical closure / obstruction audit  
 **Status:** exact internal derivations where stated; conditional low-energy completion where assumptions are stated; no claim of empirical validation
 
+**Current physical-closure boundary (2026-10-20):** The [foundational audit](docs/foundational/FOUNDATIONAL_DECISION.md) distinguishes this scalar-tensor candidate from the preferred-foliation S004 action. Its separated-field mass identity does not select a WCT confining state, operator, length or normalization. The fixed-background S004 ghost/UV obstruction and its limited quadratic EFT must not be bypassed by importing a separate model's periodic stability theorem. Full metric-scalar constraints of this candidate require their own analysis.
+
 ## 1. Purpose
 
 This note closes as much of the Wave Confinement Theory (WCT) derivation chain as can be closed from one consistent action. It also records the precise points where the historical formulation cannot support a conclusion without an additional field, coupling, or physical scale.

@@ -1,0 +1,299 @@
+{
+  "schema": "wct-foundational-sources-v1",
+  "as_of": "2026-10-20",
+  "primary_baseline": "5f786e270a3ea8a59703772ba61d615dffe001f4",
+  "files": [
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "revision": "5f786e270a3ea8a59703772ba61d615dffe001f4",
+      "path": "DERIVATION_CLOSURE.md",
+      "git_blob_sha1": "ba825b478538d2affb1488e2547735d8778e2e36",
+      "sha256": "861b227d12c9b3fd620de65b875b0bb5e37b17cce11ad04329ba7f823deacd24",
+      "retrieval": "git object at pinned default head"
+    },
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "revision": "5f786e270a3ea8a59703772ba61d615dffe001f4",
+      "path": "WCT_CORRECTED_VARIATIONAL_CLOSURE_DRAFT.md",
+      "git_blob_sha1": "c98a6f40c2380e209ad2df29de7a49dd5d93a760",
+      "sha256": "7d6ae3c2f6858e6304a16da4811c6997328df56f02f46407d76debadb16405de",
+      "retrieval": "git object at pinned default head"
+    },
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "revision": "5f786e270a3ea8a59703772ba61d615dffe001f4",
+      "path": "WCT_FULL_EQUATION_LIST_CORRECTED.md",
+      "git_blob_sha1": "4e6d113d52422c9bef03f6a5dfc5e16d4a032d5d",
+      "sha256": "d30de68ec4b7a4896399a64c05e6b2a517bbabc18b366eba6f5c2d0183f4231e",
+      "retrieval": "git object at pinned default head"
+    },
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "revision": "5f786e270a3ea8a59703772ba61d615dffe001f4",
+      "path": "docs/cross_paper/QUADRATIC_ACTION_AND_DISPERSION.md",
+      "git_blob_sha1": "b3badd037d7d81f1934d3d5848b180553eea6967",
+      "sha256": "eef0a396c26cd5d5f3b8ff8a43b70a003fc7fb12ce166fa57f1dd5fef39734ff",
+      "retrieval": "git object at pinned default head"
+    },
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "revision": "5f786e270a3ea8a59703772ba61d615dffe001f4",
+      "path": "docs/cross_paper/FINITE_SCALE_SELECTION.md",
+      "git_blob_sha1": "e320bf63d02c0be2a64bddefa66c010b04cb1511",
+      "sha256": "c0f143c9785e9d375097c1423d102d8adba3d679d47c92f9552ad3ccd73c1fa0",
+      "retrieval": "git object at pinned default head"
+    },
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "revision": "5f786e270a3ea8a59703772ba61d615dffe001f4",
+      "path": "docs/cross_paper/CORRECTED_ACTION_TO_PFF_REDUCTION.md",
+      "git_blob_sha1": "406c66f38c744e9a086ee82ff607431588256172",
+      "sha256": "3b99707343c540c1a69d021514e7e43f7d499bcecb4f766d0e030f350dac6cf5",
+      "retrieval": "git object at pinned default head"
+    },
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "revision": "5f786e270a3ea8a59703772ba61d615dffe001f4",
+      "path": "docs/cross_paper/CORRECTED_ACTION_TO_EFT_KERNEL.md",
+      "git_blob_sha1": "3d93313e6a232d4490fd5f5ce4a1daa9ef4e0f28",
+      "sha256": "33c522bf86d4703ceff70dfc361b484f8d272702bf3a16cfa05c58aba88207a3",
+      "retrieval": "git object at pinned default head"
+    },
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "revision": "5f786e270a3ea8a59703772ba61d615dffe001f4",
+      "path": "docs/cross_paper/LOCALIZATION_AND_DOMAIN_SELECTION.md",
+      "git_blob_sha1": "b70df8f37acaac6420b9c2734699ad8b9f2c52a0",
+      "sha256": "35cbce6c14d1841da2b1fa2394d9c7140871cc8bb072055dd86208bdac3cd198",
+      "retrieval": "git object at pinned default head"
+    },
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "revision": "5f786e270a3ea8a59703772ba61d615dffe001f4",
+      "path": "docs/FOUNDATIONAL_STAGE2_2026-10-14.md",
+      "git_blob_sha1": "42270f9340c009e65c9f94c4273dcca1435caa22",
+      "sha256": "6a0cd3cb040e2e529b1dbb5d289c1df667e5f33f8290fb07241d9946d6ee8f9d",
+      "retrieval": "git object at pinned default head"
+    },
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "revision": "5f786e270a3ea8a59703772ba61d615dffe001f4",
+      "path": "docs/D4_CANONICAL_EVIDENCE_MAP.md",
+      "git_blob_sha1": "23f9e9c18c8d97006cc7cafd279ecee730280d8c",
+      "sha256": "7a510800dd2869582178202eaff6df001f7e70ee2b26d7fa0845086f02d09952",
+      "retrieval": "git object at pinned default head"
+    },
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "revision": "5f786e270a3ea8a59703772ba61d615dffe001f4",
+      "path": "docs/GEOMETRIC_SCALE_OPERATOR_AUDIT.md",
+      "git_blob_sha1": "7ef73af76c833bbb10c0687365a3b952f4490310",
+      "sha256": "70d5907d1654f4562261f39de1432738d7e53e30d227ec5b99257d38ac17f03a",
+      "retrieval": "git object at pinned default head"
+    },
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "revision": "5f786e270a3ea8a59703772ba61d615dffe001f4",
+      "path": "docs/SM_V18_SPECTRAL_BRIDGE_AUDIT.md",
+      "git_blob_sha1": "87076f6720fe79530f5ad35b2b5fa8a1a1735d12",
+      "sha256": "566e39fceb3ad0bfc7ebaeefd72a081e90637b6bc830e15300f05fa7f6365c75",
+      "retrieval": "git object at pinned default head"
+    },
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "revision": "5f786e270a3ea8a59703772ba61d615dffe001f4",
+      "path": "audit/cross_paper/SOURCE_LEDGER.json",
+      "git_blob_sha1": "db628a3b354f3b2e65ce541452f7dd19eee8c54c",
+      "sha256": "c4bc28cf35c81d9d8b05863da6119585d28589cff4019face7f7d6b09973d1a1",
+      "retrieval": "git object at pinned default head"
+    },
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "revision": "5f786e270a3ea8a59703772ba61d615dffe001f4",
+      "path": "audit/cross_paper/verify_derivations.py",
+      "git_blob_sha1": "b15506c5b780a05c006b36a805a6186099ede7c5",
+      "sha256": "ee1243ff35f729470cf3de1a451f9ce1ff6536433ea277c665eb89b665ac2919",
+      "retrieval": "git object at pinned default head"
+    },
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "revision": "5f786e270a3ea8a59703772ba61d615dffe001f4",
+      "path": "derivations/ostrogradsky_witness.py",
+      "git_blob_sha1": "597aa8e065f1654a5c48969995adb1d8e62293e1",
+      "sha256": "6454266a3851002fb76ee6d76f2cecc34e4d853f77ce00b923b5eef354508557",
+      "retrieval": "git object at pinned default head"
+    },
+    {
+      "repository": "rickyjreyes/eigen",
+      "revision": "957cd8f382ba72f3764941c372222d7ebb58ed7e",
+      "path": "docs/SCALAR_DILATION_THEOREM.md",
+      "git_blob_sha1": "8e487b47d5ea83af1d87ae3821fa8ae5979aa80c",
+      "sha256": "07354ff433a7256adf85d4ca0371d18af64e7fb6d8f1cf7770a9fd19e84de436"
+    },
+    {
+      "repository": "rickyjreyes/eigen",
+      "revision": "957cd8f382ba72f3764941c372222d7ebb58ed7e",
+      "path": "docs/phase_ii/COVARIANT_FUNCTIONAL_AUDIT.md",
+      "git_blob_sha1": "d72d06ceff75c1e7dfe26dbb91fafa69e5e76d41",
+      "sha256": "af36be0e3f70bd8a3bc8c788b0a96ff6048389030ae973413613905b10973952"
+    },
+    {
+      "repository": "rickyjreyes/eigen",
+      "revision": "957cd8f382ba72f3764941c372222d7ebb58ed7e",
+      "path": "docs/phase_ii/COVARIANT_DILATION_THEOREM.md",
+      "git_blob_sha1": "2c673dd6ff409a5365135173fe46f92eff470f5b",
+      "sha256": "59ac8efe9403823a55bd70e8d5893f29f82470b6530d52a18cb2c899fccb39bb"
+    },
+    {
+      "repository": "rickyjreyes/eigen",
+      "revision": "957cd8f382ba72f3764941c372222d7ebb58ed7e",
+      "path": "docs/phase_ii/EIGEN_PHASE_II_DECISION.md",
+      "git_blob_sha1": "7ce89461cf4662acdecbb2f964e123bde74bd92c",
+      "sha256": "fd2abc6ff7ebf45f791d009e8781b6157710989f1d509ce54a5e8e13cbdef41c"
+    },
+    {
+      "repository": "rickyjreyes/eigen",
+      "revision": "957cd8f382ba72f3764941c372222d7ebb58ed7e",
+      "path": "vacuum.py",
+      "git_blob_sha1": "137367c19c075a338defd81deb6f34dfc8f7a85a",
+      "sha256": "b274e9e6e8d38b75916f1bfc1dc247f5b04f68883e33361fcaa9c6a4ec4c626c"
+    },
+    {
+      "repository": "rickyjreyes/eigen",
+      "revision": "957cd8f382ba72f3764941c372222d7ebb58ed7e",
+      "path": "vacuum2.py",
+      "git_blob_sha1": "4eab4b863fe96358d973a7bf0623dc086256f27b",
+      "sha256": "2aeffd92afc3f717f7301a48f4b18e3eeae4bdd82b53e6adb3afee009a8ef66c"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "path": "docs/D4_INDEPENDENT_EXISTENCE_AUDIT.md",
+      "git_blob_sha1": "99e6988597d11dd7421ed7a7884c3e1b1a91782c",
+      "sha256": "f4468da8d7284945987dd87516ee640016882f89831cd66f650e9d7973ccab27"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "path": "docs/D4_INDEPENDENT_STABILITY_AUDIT.md",
+      "git_blob_sha1": "6d3d55cc0c234f8ff776614118a16b0cf0ed8672",
+      "sha256": "f973a7e02e4c53ae033ac17035429d5a3704fb1f7e3699b6da346c6114d2776d"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "path": "docs/D4_INDEPENDENT_CLOSURE_APPENDIX.tex",
+      "git_blob_sha1": "ee40dcb9a9d9a6946193c2f596d42a185f1864d1",
+      "sha256": "f4eed2020ecfc274784f7a11c721ba7b0eae631d73a9ef2d344aa5d8d117d5b3"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "path": "docs/D4_QUANTITATIVE_ORBITAL_BASIN.md",
+      "git_blob_sha1": "6b4b0b5c23e3780a301ad571d89fab0f75c87ae5",
+      "sha256": "e2a4b372b7aca009dae877be0ccf61edb9bb9bbcdd6aa7d918a58c5fa2c0f49b"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "path": "tools/closure_d4_basin_rational_replay.py",
+      "git_blob_sha1": "aa737ae2148bed6b041762eb7e2b298d70eca8e7",
+      "sha256": "7e3c715064ea6e04ce8c82741f9ba8fe01c18083f955ab685cda9213ee31a6f3"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "path": "docs/evidence/d4_production_recovery/existence/fourier_candidate.npz",
+      "git_blob_sha1": "ceecc2f954491dca05ca20a1dee2fba9e8e0614c",
+      "sha256": "9fcf8e3275db6dd646f6fa6fd0ee5f937819bca281bd5adffb93abc9b100bb6d"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "path": "docs/evidence/d4_independent_closure/d4_independent_existence_v2/certificate.json",
+      "git_blob_sha1": "1a73b0a431f11a8d45855d22c74111046d5c770b",
+      "sha256": "f8426d1975a84a686ec1215e1001f23e37a47d8fdd058eda8ddb3df36a72f27a"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "path": "docs/evidence/d4_independent_closure/d4_independent_coercivity_final192/certificate.json",
+      "git_blob_sha1": "97e506dac4e12261db9e7f0ba9f860dcd8839a01",
+      "sha256": "cdd8122229b8adac0c1ee5826dc2f4f0bbdbc385dd95e0e19bfc76370171a6ad"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "path": "docs/evidence/d4_quantitative_basin/receipt.json",
+      "git_blob_sha1": "a5eb0c7d072c41f04ab3b053ae96ae0cf9807b42",
+      "sha256": "5b3e15aa40913c7df448819235e96a46d409c7ee1d34e077c2a825c4474b7090"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "path": "docs/evidence/d4_quantitative_basin/rational.json",
+      "git_blob_sha1": "7627d61f23cf860e2614f46c2cf3c58e69f15f2f",
+      "sha256": "e48d4ff956ab8366d4bd24109025de849a7612db9716ebd0ccd090b794718eb9"
+    },
+    {
+      "repository": "rickyjreyes/dimension",
+      "revision": "f61d924f859d79e7ff733c3e30ba8baf4b5ceb81",
+      "path": "docs/MATH_AND_CLAIMS.md",
+      "sha256": "a5f7c5fd98370c35ccfee62d9e15085e590524894d94174dcf6c453696a7ff8e",
+      "retrieval": "GitHub connector fetch_file at pinned revision"
+    },
+    {
+      "repository": "rickyjreyes/wct-sympy",
+      "revision": "9656863097da396fa2c8d0b8ea190afeabdd05d8",
+      "path": "README.md",
+      "sha256": "d6a36ad3e8b1e829be7b41d75bcc60d3084862ca7749cf9d4ed67994e86c260d",
+      "retrieval": "GitHub connector fetch_file at pinned revision"
+    },
+    {
+      "repository": "rickyjreyes/wct-lean",
+      "revision": "dea05da8a6e40361e79ee685a7939a4c6f9a8696",
+      "path": "THEOREMS.md",
+      "sha256": "6a5c646bd03a907983f24a5e70ea1914b852c7507ae9073aabb48e64187fa25a",
+      "retrieval": "GitHub connector fetch_file at pinned revision"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "path": "docs/D4_COMPREHENSIVE_CLOSURE_REPORT.md",
+      "sha256": "7c71a19fe8785a655cec7a09c5f05255d2f3b96fb2fb90bb5d82f470afd65128",
+      "retrieval": "GitHub connector fetch_file at pinned revision"
+    },
+    {
+      "repository": "rickyjreyes/eigen",
+      "revision": "957cd8f382ba72f3764941c372222d7ebb58ed7e",
+      "path": "research/2026-10-19/baseline_verify.py",
+      "git_blob_sha1": "604ab9fe79d3a8329461d74144957a0b9256a238",
+      "sha256": "b647043e9fe400d48f156606c2069acfaa26505ac9119c432f89736e35257385"
+    },
+    {
+      "repository": "rickyjreyes/eigen",
+      "revision": "957cd8f382ba72f3764941c372222d7ebb58ed7e",
+      "path": "research/2026-10-19/baseline/verification.json",
+      "git_blob_sha1": "c23a792fc4cd8eb6525a9b7dde4c5f871a0f30d2",
+      "sha256": "257610b1cc1ff7440cca6703f6f82e9e212f2fa566677673d990acce0380cbaa"
+    },
+    {
+      "repository": "rickyjreyes/eigen",
+      "revision": "957cd8f382ba72f3764941c372222d7ebb58ed7e",
+      "path": "research/2026-10-19/hessian_discretization_results.json",
+      "git_blob_sha1": "54442baa209387e2bc18d0ff6d11c7fd7a51a283",
+      "sha256": "a5aac3dddf1e7dbb2c6289139eb786f8c794f5d87102a43e3d62f1cde41eeef9"
+    }
+  ],
+  "external_reference": {
+    "url": "https://arxiv.org/abs/1506.02210v2",
+    "author": "R. P. Woodard",
+    "title": "The Theorem of Ostrogradsky",
+    "role": "canonical construction background; S004-specific proofs supplied in this workstream"
+  },
+  "scope": {
+    "default_vs_pr": "wct-pde proof evidence is PR26 head, not default main",
+    "lean_open_prs": "PR descriptions inspected; no new kernel-proof claim",
+    "manuscript_history": "existing pinned cross-paper ledger retained; original manuscripts not edited"
+  }
+}

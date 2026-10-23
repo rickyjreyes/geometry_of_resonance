@@ -1,0 +1,32 @@
+{
+  "schema": "wct-foundational-manifest-v1",
+  "base_commit": "5f786e270a3ea8a59703772ba61d615dffe001f4",
+  "sha256": {
+    ".github/workflows/foundational-closure.yml": "4b91faf99996b0651eb4947309e49f46cec208605340d5e0b7fd8998cf32ea04",
+    "DERIVATION_CLOSURE.md": "f00d73cfc6a38589892ca20932ee3c6327f0210e6b39d37bc821d1e410fbaffa",
+    "README.md": "ee115767d8a57c539b3aca9d911e92150946fa128904ccb8808a63ab553163ed",
+    "WCT_CORRECTED_VARIATIONAL_CLOSURE_DRAFT.md": "bc5fea5af1d42a65162df4d1f715c9a7634c70c3230d2623cfdadb69892b637f",
+    "audit/foundational/claim_matrix.json": "53ce340a0c683d950c52da0a401d1abc59180ad83ce4e7a667b0ef5f6c99f950",
+    "audit/foundational/cross_paper_verification.json": "d41f1065e470d9df56fc1ac343f39d56a9826d9916f3f46fde22b23abdaf3bec",
+    "audit/foundational/d4_basin_replay.json": "e48d4ff956ab8366d4bd24109025de849a7612db9716ebd0ccd090b794718eb9",
+    "audit/foundational/eigen_baseline_verification.json": "26e4535f4a8a8c49f865db6602a4c51fb272d89cbbc1f604d58f00b83e7d6c29",
+    "audit/foundational/execution.json": "5c6c8ec552c63107429768aac4533829f196c28ed6a6a4e0c0058f085e9bdc4a",
+    "audit/foundational/pr_and_issue_evidence.json": "68f667f945fc9af91573e7d211bac421700d58688c72ae206c0ce39cd4dff8ae",
+    "audit/foundational/repository_snapshot.json": "77591a1ca2d5f2058d17659f5786d513cb66f424c7a072afc2da816cc1d74794",
+    "audit/foundational/source_ledger.json": "325d2145a8726073b351c94cba1f05192fd8e5870f014fc88ae1e09072fe35fa",
+    "audit/foundational/supporting_sources.json": "04d82795c8768e7882662941662bd995b84ce4b909e011df6ef2c6430c7876aa",
+    "audit/foundational/tests.log": "c3d0ba38e8f0522cc98a06bbed703fb02bf239f1dd71b7cd403bb8ca5814b27c",
+    "audit/foundational/validate_records.py": "b633a9112c4851900710e3d8277ed6a5814f658c7358e46698164c8664661906",
+    "audit/foundational/verification.json": "0417f9f53a4f30b941df4f72478a6780018332716f96099b5aa830304d2ad75a",
+    "derivations/foundational_closure.py": "f9560e02454676e248622855e1b6e774634295ec5efa8cf895044a06c71ce8a8",
+    "derivations/test_foundational_closure.py": "b7396eaafbdda31995253f5c9e0787763557dcc7cb4dd718b25b4ae2041ee4f5",
+    "docs/D4_CANONICAL_EVIDENCE_MAP.md": "6932bc4aeb81344cb15ae950779444349fd9182cdec594bee5ffe7fa26a442af",
+    "docs/FOUNDATIONAL_STAGE2_2026-10-14.md": "647558e71715b3a132d99c7e8a1475b68a0fd595d7fa3cbc6d6bf85930a78552",
+    "docs/foundational/CROSS_MODEL_DERIVATION.md": "0b91ff3d38f206f9da9f3f610d6d08190682d040c844b869ecdad3d499beb5e4",
+    "docs/foundational/FOUNDATIONAL_ACTION_AUDIT.md": "685aa36737be106047e30b066f0b9b44abd2714de7295ac5997e7b3601a9487c",
+    "docs/foundational/FOUNDATIONAL_DECISION.md": "86f959ede5f27354109a0fca6dd0c0e24b38f745372dcca443e83c3d45fb4412",
+    "docs/foundational/GEOMETRIC_MASS_CLOSURE.md": "e1126493ad7b817b0cc202fa92320b724c26df088d8748c9c4939351e19e2834",
+    "docs/foundational/GHOST_AND_CONSTRAINT_ANALYSIS.md": "9e0265685e5f6502f972c6dc818831fe9335cd5695357c35e20ad5d30b7ebe9d",
+    "docs/foundational/LOCALIZED_STATE_EXISTENCE.md": "c31e3cd0e4f1e83cd630faf8f546d533e2fadc2e1a3261bfe93e32aa7be30347"
+  }
+}
