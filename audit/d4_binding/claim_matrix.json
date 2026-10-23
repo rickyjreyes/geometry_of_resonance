@@ -1,0 +1,266 @@
+{
+  "schema": "d4-binding-claims-v1",
+  "primary": "D4_STRICT_BINDING_PROVED",
+  "claims": [
+    {
+      "id": "R0",
+      "status": "CERTIFIED",
+      "depends_on": [],
+      "proof": "docs/d4_binding/D4_ENERGY_PER_MASS_ANALYSIS.md",
+      "scope": "Exact frozen coefficients, squared integral norm and actual k=1 operator reconstructed from pinned sources"
+    },
+    {
+      "id": "R1",
+      "status": "PROVED",
+      "depends_on": [
+        "R0"
+      ],
+      "proof": "docs/d4_binding/D4_ENERGY_PER_MASS_ANALYSIS.md",
+      "scope": "Finite negative infimum at every positive mass; coercivity and infimum continuity"
+    },
+    {
+      "id": "R2",
+      "status": "PROVED",
+      "depends_on": [
+        "R0"
+      ],
+      "proof": "docs/d4_binding/D4_ENERGY_PER_MASS_ANALYSIS.md",
+      "scope": "Exact amplitude and spatial scaling identities"
+    },
+    {
+      "id": "P35",
+      "status": "PROVED",
+      "depends_on": [
+        "R1",
+        "R2"
+      ],
+      "proof": "docs/d4_binding/D4_ENERGY_PER_MASS_ANALYSIS.md",
+      "scope": "Inherited restricted theorem and exact central interval independently checked"
+    },
+    {
+      "id": "S0",
+      "status": "PROVED",
+      "depends_on": [
+        "R1"
+      ],
+      "proof": "docs/d4_binding/D4_SUBADDITIVITY_PROOF_OR_COUNTEREXAMPLE.md",
+      "scope": "Ordinary subadditivity by compact separated approximation"
+    },
+    {
+      "id": "V1",
+      "status": "PROVED",
+      "depends_on": [
+        "R1",
+        "R2"
+      ],
+      "proof": "docs/d4_binding/D4_ENERGY_PER_MASS_ANALYSIS.md",
+      "scope": "Exact dilation adjustment of every minimizing sequence, without attainment"
+    },
+    {
+      "id": "V2",
+      "status": "PROVED",
+      "depends_on": [
+        "V1"
+      ],
+      "proof": "docs/d4_binding/D4_ENERGY_PER_MASS_ANALYSIS.md",
+      "scope": "Virial square and Fourier estimate imply S/Q<=sigma*M/4"
+    },
+    {
+      "id": "V3",
+      "status": "PROVED",
+      "depends_on": [
+        "V2",
+        "R1",
+        "R2"
+      ],
+      "proof": "docs/d4_binding/D4_ENERGY_PER_MASS_ANALYSIS.md",
+      "scope": "Sequence-uniform strict e(b)<e(a) for 0<a<b and a+b<2m_B"
+    },
+    {
+      "id": "V4",
+      "status": "CERTIFIED",
+      "depends_on": [
+        "R0"
+      ],
+      "proof": "docs/d4_binding/D4_ENERGY_PER_MASS_ANALYSIS.md",
+      "scope": "Positive exact rational gate proves m_D4<m_B"
+    },
+    {
+      "id": "S2",
+      "status": "PROVED",
+      "depends_on": [
+        "V3",
+        "V4"
+      ],
+      "proof": "docs/d4_binding/D4_SUBADDITIVITY_PROOF_OR_COUNTEREXAMPLE.md",
+      "scope": "Every interior split at m_D4 binds; also all 0<m<=m_B"
+    },
+    {
+      "id": "E1",
+      "status": "PROVED",
+      "depends_on": [
+        "R1",
+        "V2"
+      ],
+      "proof": "docs/d4_binding/D4_ENDPOINT_BINDING_ANALYSIS.md",
+      "scope": "I(s)/s->0 at zero from a two-sided quadratic infimum bound"
+    },
+    {
+      "id": "E2",
+      "status": "PROVED",
+      "depends_on": [
+        "R1",
+        "R2"
+      ],
+      "proof": "docs/d4_binding/D4_ENDPOINT_BINDING_ANALYSIS.md",
+      "scope": "Local semiconcavity and finite one-sided derivatives at every positive mass"
+    },
+    {
+      "id": "E3",
+      "status": "PROVED",
+      "depends_on": [
+        "R1",
+        "V3",
+        "V4"
+      ],
+      "proof": "docs/d4_binding/D4_ENDPOINT_BINDING_ANALYSIS.md",
+      "scope": "Frozen left limsup energy slope strictly negative before compactness"
+    },
+    {
+      "id": "F",
+      "status": "PROVED",
+      "depends_on": [
+        "R1",
+        "V3",
+        "V4"
+      ],
+      "proof": "docs/d4_binding/D4_SUBADDITIVITY_PROOF_OR_COUNTEREXAMPLE.md",
+      "scope": "Explicit positive endpoint gap on all 0<mu<=m_D4/2, then symmetry"
+    },
+    {
+      "id": "C1",
+      "status": "PROVED",
+      "depends_on": [
+        "R1"
+      ],
+      "proof": "docs/d4_binding/D4_WHOLE_SPACE_COMPACTNESS.md",
+      "scope": "Bounded minimizing sequences do not vanish and have nonzero translated weak limits"
+    },
+    {
+      "id": "C2",
+      "status": "PROVED",
+      "depends_on": [
+        "C1",
+        "S2"
+      ],
+      "proof": "docs/d4_binding/D4_WHOLE_SPACE_COMPACTNESS.md",
+      "scope": "Separate quadratic and Brezis\u2013Lieb decoupling exclude all positive norm remainder"
+    },
+    {
+      "id": "C3",
+      "status": "PROVED",
+      "depends_on": [
+        "C2",
+        "R1"
+      ],
+      "proof": "docs/d4_binding/D4_WHOLE_SPACE_COMPACTNESS.md",
+      "scope": "Mass and squared-A energy recovery give strong H\u00b2 compactness and existence"
+    },
+    {
+      "id": "O1",
+      "status": "PROVED",
+      "depends_on": [
+        "C3",
+        "V2",
+        "V4"
+      ],
+      "proof": "docs/d4_binding/D4_ORBITAL_STABILITY_STATUS.md",
+      "scope": "Smooth Euler\u2013Lagrange minimizers with correctly normalized negative multiplier"
+    },
+    {
+      "id": "O2",
+      "status": "PROVED",
+      "depends_on": [
+        "R1",
+        "R0"
+      ],
+      "proof": "docs/d4_binding/D4_ORBITAL_STABILITY_STATUS.md",
+      "scope": "Global H\u00b2 flow with unchanged mass and Hamiltonian conservation"
+    },
+    {
+      "id": "O3",
+      "status": "PROVED",
+      "depends_on": [
+        "C3",
+        "O2"
+      ],
+      "proof": "docs/d4_binding/D4_ORBITAL_STABILITY_STATUS.md",
+      "scope": "Full minimizing-set orbital H\u00b2 stability including mass-changing perturbations"
+    },
+    {
+      "id": "N1",
+      "status": "NUMERICALLY_SUPPORTED",
+      "depends_on": [
+        "R2"
+      ],
+      "proof": "docs/d4_binding/D4_ADVERSARIAL_SPLITTING_TESTS.md",
+      "scope": "Finite Gaussian dilation and pair diagnostics, not true continuum infima"
+    },
+    {
+      "id": "X1",
+      "status": "REFUTED",
+      "depends_on": [
+        "R2"
+      ],
+      "proof": "docs/d4_binding/D4_ADVERSARIAL_SPLITTING_TESTS.md",
+      "scope": "Universal amplitude decrease on every nonzero profile fails even at the frozen norm"
+    },
+    {
+      "id": "X2",
+      "status": "REFUTED",
+      "depends_on": [
+        "S0"
+      ],
+      "proof": "docs/d4_binding/D4_SUBADDITIVITY_PROOF_OR_COUNTEREXAMPLE.md",
+      "scope": "Reversed ordinary subadditivity is impossible for this local translation-invariant H"
+    },
+    {
+      "id": "COND1",
+      "status": "CONDITIONAL",
+      "depends_on": [
+        "S0"
+      ],
+      "proof": "docs/d4_binding/D4_PROOF_DEPENDENCY_GRAPH.md",
+      "scope": "If an interior equality held, separated near-minimizers could yield a noncompact minimizing sequence; equality at D4 is excluded"
+    },
+    {
+      "id": "OPEN1",
+      "status": "OPEN",
+      "depends_on": [
+        "S2"
+      ],
+      "proof": "docs/d4_binding/D4_SUBADDITIVITY_PROOF_OR_COUNTEREXAMPLE.md",
+      "scope": "Universal all-positive-mass strict binding beyond the sufficient range"
+    },
+    {
+      "id": "OPEN2",
+      "status": "OPEN",
+      "depends_on": [
+        "C3"
+      ],
+      "proof": "docs/d4_binding/D4_WHOLE_SPACE_COMPACTNESS.md",
+      "scope": "Uniqueness and identification of whole-space minimizers with the periodic D4 root"
+    },
+    {
+      "id": "COND2",
+      "status": "CONDITIONAL",
+      "depends_on": [
+        "O3",
+        "OPEN2"
+      ],
+      "proof": "docs/d4_binding/D4_PROOF_DEPENDENCY_GRAPH.md",
+      "scope": "Stability of one isolated orbit requires identifying the full minimizing set with that orbit"
+    }
+  ],
+  "external_mathematical_review": false
+}
