@@ -60,6 +60,36 @@ def verify():
         4*bb*freq-((2*bb*q-aa)**2+4*bb*mu-aa**2))
     check("independent_rail_minimum",s.diff(freq,q).subs(q,aa/(2*bb)))
     check("independent_rail_convexity",s.diff(freq,q,2)-2*bb)
+    # Exact full real-pole trichotomy and conditional F2 extremum algebra.
+    A=2*K+G
+    N=G**2+B*(1-4*K*m)
+    check("full_real_pole_vertex",
+          B*disc-(N-(B*q-G)**2))
+    check("tangent_shift_identity",
+          disc-(1-4*K*m+2*G*q-B*q**2))
+    center=s.symbols("center", real=True)
+    qstar=(G-A*center)/B
+    candidate_residual=s.together(B*disc.subs(q,qstar)-B*center**2)
+    check("exact_F2_minimizer_square_condition",
+          s.rem(candidate_residual,center**2-N/(A**2+B),center))
+    zlo_exact=q+(1+G*q-s.sqrt(disc))/(2*K)
+    zhi_exact=q+(1+G*q+s.sqrt(disc))/(2*K)
+    check("lower_branch_strict_convexity_numerator",
+          2*K*disc**s.Rational(3,2)*s.diff(zlo_exact,q,2) -
+          (B*(1-4*K*m)+G**2))
+    check("upper_branch_strict_concavity_numerator",
+          2*K*disc**s.Rational(3,2)*s.diff(zhi_exact,q,2) +
+          (B*(1-4*K*m)+G**2))
+    delta=s.symbols("delta",real=True)
+    shifted=s.expand((s.sqrt(disc.subs(q,delta)) + A*(q-delta))**2 -
+                     disc-(A**2+B)*(q-delta)**2)
+    # Substitute stationarity multiplied by the displacement, then square root.
+    root_star=s.symbols("root_star",real=True)
+    tangent=s.expand(shifted.subs(s.sqrt(disc.subs(q,delta)),root_star))
+    condition=G-B*delta-A*root_star
+    check("tangent_square_supporting_identity",
+          s.factor(tangent-2*(q-delta)*(-condition)).subs(root_star**2,disc.subs(q,delta)))
+
     return checks
 
 
