@@ -81,14 +81,12 @@ def verify():
           2*K*disc**s.Rational(3,2)*s.diff(zhi_exact,q,2) +
           (B*(1-4*K*m)+G**2))
     delta=s.symbols("delta",real=True)
-    shifted=s.expand((s.sqrt(disc.subs(q,delta)) + A*(q-delta))**2 -
-                     disc-(A**2+B)*(q-delta)**2)
-    # Substitute stationarity multiplied by the displacement, then square root.
     root_star=s.symbols("root_star",real=True)
-    tangent=s.expand(shifted.subs(s.sqrt(disc.subs(q,delta)),root_star))
+    tangent=(root_star+A*(q-delta))**2-disc-(A**2+B)*(q-delta)**2
     condition=G-B*delta-A*root_star
     check("tangent_square_supporting_identity",
-          s.factor(tangent-2*(q-delta)*(-condition)).subs(root_star**2,disc.subs(q,delta)))
+          s.rem(s.together(tangent+2*(q-delta)*condition),
+                root_star**2-disc.subs(q,delta),root_star))
 
     return checks
 
