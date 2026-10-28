@@ -94,7 +94,7 @@ theorem finite_preferred_q (a b : ℝ)
   unfold competingQStar
   exact div_pos ha (by positivity)
 
-def competingModeHamiltonian (mu a b q x v : ℝ) : ℝ :=
+noncomputable def competingModeHamiltonian (mu a b q x v : ℝ) : ℝ :=
   (v^2 + competingFrequencySq mu a b q*x^2)/2
 
 theorem competing_mode_energy_nonneg (mu a b q x v : ℝ)
