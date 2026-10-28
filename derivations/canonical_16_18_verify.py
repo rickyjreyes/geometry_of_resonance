@@ -13,7 +13,7 @@ def verify():
     disc=(1+G*q)**2-4*K*(m+T*q**2)
     checks={}
     def check(name,expr):
-        remainder=s.factor(s.together(expr))
+        remainder=s.simplify(s.factor(s.together(expr)))
         assert remainder==0,(name,remainder)
         checks[name]=True
     check("Q6_completed_square",4*K*D-(disc-(2*K*(z-q)-(1+G*q))**2))
