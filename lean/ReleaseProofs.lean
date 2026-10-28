@@ -4,3 +4,10 @@ import ReleaseProofs.R07_PhaseFlux
 import ReleaseProofs.R25_ScaleWinding
 import ReleaseProofs.R18_FiniteScale
 import ReleaseProofs.R16_GhostObstruction
+import ReleaseProofs.R18_CanonicalObstruction
+import ReleaseProofs.R18_Classification
+import ReleaseProofs.R18_ExactMinimizer
+import ReleaseProofs.R18_Admissibility
+import ReleaseProofs.R18_F1ToF2
+import ReleaseProofs.R18_Boundaries
+import ReleaseProofs.R18_Onset
