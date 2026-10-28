@@ -119,9 +119,10 @@ theorem defocusing_mode_no_nonzero_stationary (mu a b q lambda x : ℝ)
     mul_pos hw hx2
   have hn : 0 ≤ lambda*(x^2)^2 :=
     mul_nonneg hlambda (sq_nonneg _)
+  have hmul := congrArg (fun t : ℝ => t * x) heq
   have hz : competingFrequencySq mu a b q*x^2 +
       lambda*(x^2)^2 = 0 := by
-    nlinarith [heq]
+    nlinarith [hmul]
   linarith
 
 end ReleaseProofs.R16Completion
