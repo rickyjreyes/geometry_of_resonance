@@ -88,7 +88,7 @@ the functional $\mathcal{E}_{\text{WCT}}$ acts as a **Lyapunov candidate**.
 
 ---
 
-## Master Equation 3 — Swift–Hohenberg Spectral Selector
+> **2026-10-27 canonical #18 correction:** Master Equation 3 below is a historical phenomenological rail, **not** a derived dispersion or dynamical reduction of corrected S004. In its displayed equation the historical `+b(Delta+k_*^2)^2 A` sign with `b>0` amplifies large wave numbers rather than suppressing them. A damping spectral selector has `-b(Delta+k_*^2)^2 A`, `b>0`. The [full #18 verdict](docs/foundational/CANONICAL_FINITE_K_VERDICT_2026_10_27.md) distinguishes this rail, the independently declared healthy competing-gradient action, and S004's ghostly conditional oscillatory-frequency minimum.\n\n## Master Equation 3 — Swift–Hohenberg Spectral Selector
 
 *Generates: cymatics, band-limited growth, spectral pruning, vortex lattices, ghost-mode modeling.*
 
