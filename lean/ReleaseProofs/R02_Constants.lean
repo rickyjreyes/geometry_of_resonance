@@ -4,7 +4,7 @@ import Mathlib
 Homogeneous ratios do not independently select an absolute physical scale. -/
 namespace ReleaseProofs.R02
 
-def dimensionlessRatio (numerator denominator : ℝ) : ℝ :=
+noncomputable def dimensionlessRatio (numerator denominator : ℝ) : ℝ :=
   numerator / denominator
 
 theorem simultaneous_scale_invariant (a b scale : ℝ)
