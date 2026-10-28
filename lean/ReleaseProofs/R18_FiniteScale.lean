@@ -22,11 +22,73 @@ theorem discriminant_expansion (K G T massSq q : ℝ) :
   unfold poleDiscriminant curvatureGap
   ring
 
+/-- The exact scalar Q6 inverse propagator, with y = z - q. -/
+def inversePropagator (K G T massSq z q : ℝ) : ℝ :=
+  (z - q) - massSq - K * (z - q) ^ 2 +
+    G * q * (z - q) - T * q ^ 2
+
+/-- Completion of the exact Q6 frequency polynomial, without approximations. -/
+theorem inverse_propagator_completion (K G T massSq z q : ℝ) :
+    4 * K * inversePropagator K G T massSq z q =
+      poleDiscriminant K G T massSq q -
+        (2 * K * (z - q) - (1 + G * q)) ^ 2 := by
+  unfold inversePropagator poleDiscriminant
+  ring
+
+/-- When the discriminant is negative, Q6 has no real squared-frequency zero. -/
+theorem no_real_frequency_root (K G T massSq q : ℝ)
+    (hd : poleDiscriminant K G T massSq q < 0) :
+    ¬ ∃ z : ℝ, inversePropagator K G T massSq z q = 0 := by
+  rintro ⟨z, hz⟩
+  have hcomp := inverse_propagator_completion K G T massSq z q
+  rw [hz] at hcomp
+  nlinarith [sq_nonneg (2 * K * (z - q) - (1 + G * q))]
+
 def lowerPole (K G T massSq q : ℝ) : ℝ :=
   q + (1 + G * q - Real.sqrt (poleDiscriminant K G T massSq q)) / (2 * K)
 
 def upperPole (K G T massSq q : ℝ) : ℝ :=
   q + (1 + G * q + Real.sqrt (poleDiscriminant K G T massSq q)) / (2 * K)
+
+/-- The lower Q7 candidate really is a root of the Q6 polynomial. -/
+theorem lower_pole_on_shell (K G T massSq q : ℝ)
+    (hK : K ≠ 0) (hd : 0 ≤ poleDiscriminant K G T massSq q) :
+    inversePropagator K G T massSq (lowerPole K G T massSq q) q = 0 := by
+  have hs : (Real.sqrt (poleDiscriminant K G T massSq q)) ^ 2 =
+      poleDiscriminant K G T massSq q := Real.sq_sqrt hd
+  have hlinear : 2 * K * (lowerPole K G T massSq q - q) - (1 + G * q) =
+      -Real.sqrt (poleDiscriminant K G T massSq q) := by
+    unfold lowerPole
+    field_simp [hK]
+    ring
+  have hcomp :=
+    inverse_propagator_completion K G T massSq (lowerPole K G T massSq q) q
+  rw [hlinear] at hcomp
+  have hz : 4 * K * inversePropagator K G T massSq
+      (lowerPole K G T massSq q) q = 0 := by
+    nlinarith [hs]
+  have hfour : (4 : ℝ) * K ≠ 0 := mul_ne_zero (by norm_num) hK
+  exact (mul_eq_zero.mp hz).resolve_left hfour
+
+/-- The upper Q7 candidate also solves Q6, but has the opposite slope. -/
+theorem upper_pole_on_shell (K G T massSq q : ℝ)
+    (hK : K ≠ 0) (hd : 0 ≤ poleDiscriminant K G T massSq q) :
+    inversePropagator K G T massSq (upperPole K G T massSq q) q = 0 := by
+  have hs : (Real.sqrt (poleDiscriminant K G T massSq q)) ^ 2 =
+      poleDiscriminant K G T massSq q := Real.sq_sqrt hd
+  have hlinear : 2 * K * (upperPole K G T massSq q - q) - (1 + G * q) =
+      Real.sqrt (poleDiscriminant K G T massSq q) := by
+    unfold upperPole
+    field_simp [hK]
+    ring
+  have hcomp :=
+    inverse_propagator_completion K G T massSq (upperPole K G T massSq q) q
+  rw [hlinear] at hcomp
+  have hz : 4 * K * inversePropagator K G T massSq
+      (upperPole K G T massSq q) q = 0 := by
+    nlinarith [hs]
+  have hfour : (4 : ℝ) * K ≠ 0 := mul_ne_zero (by norm_num) hK
+  exact (mul_eq_zero.mp hz).resolve_left hfour
 
 /-- This is the derivative in z of the Q6 inverse propagator. -/
 def poleSlope (K G z q : ℝ) : ℝ := 1 - 2 * K * (z - q) + G * q
