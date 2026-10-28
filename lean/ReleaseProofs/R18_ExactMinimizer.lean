@@ -65,7 +65,7 @@ theorem candidateQ_discriminant (K G T massSq : ℝ)
       (poleDiscriminant K G T massSq (candidateQ K G T massSq) -
         centerRoot K G T massSq ^ 2) = 0 := by
     nlinarith [hi, hc]
-  exact (mul_eq_zero.mp hz).resolve_left (ne_of_gt hB)
+  exact sub_eq_zero.mp ((mul_eq_zero.mp hz).resolve_left (ne_of_gt hB))
 
 theorem candidateQ_discriminant_nonneg (K G T massSq : ℝ)
     (hB : 0 < curvatureGap K G T)
