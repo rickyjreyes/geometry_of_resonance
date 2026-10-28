@@ -10,6 +10,7 @@ The physical action/energy/charge map, nonlinear error estimate, and
 UV/ghost control are separate open problems.
 -/
 
+noncomputable section
 namespace ReleaseProofs.R45NonlinearBridge
 
 /-- The potential's cubic amplitude-channel coefficient in E5.
