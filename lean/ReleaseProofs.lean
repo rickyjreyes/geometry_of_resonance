@@ -13,3 +13,4 @@ import ReleaseProofs.R18_Boundaries
 import ReleaseProofs.R18_Onset
 import ReleaseProofs.R16_CompletionClasses
 import ReleaseProofs.R16_EnergyAndConstraints
+import ReleaseProofs.R16_AuxiliaryEquivalence
