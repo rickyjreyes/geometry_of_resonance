@@ -108,12 +108,18 @@ theorem tangent_gap_identity (K G T massSq q qStar A : ℝ)
        A * (q - qStar)) ^ 2 -
        (Real.sqrt (poleDiscriminant K G T massSq q)) ^ 2 =
          (A ^ 2 + curvatureGap K G T) * (q - qStar) ^ 2 := by
+  have hshift :
+      poleDiscriminant K G T massSq q =
+        poleDiscriminant K G T massSq qStar +
+          2 * (G - curvatureGap K G T * qStar) * (q - qStar) -
+          curvatureGap K G T * (q - qStar) ^ 2 := by
+    unfold poleDiscriminant curvatureGap
+    ring
   have hsqStar := Real.sq_sqrt hdStar
   have hsqQ := Real.sq_sqrt hdq
-  have hstep := congrArg (fun x : ℝ => x * (q - qStar)) hstat
+  have hstep := congrArg (fun x : ℝ => 2 * x * (q - qStar)) hstat
   rw [hsqStar, hsqQ]
-  unfold poleDiscriminant curvatureGap at *
-  nlinarith [hstep]
+  nlinarith [hshift, hstep]
 
 /-- A stationary lower pole minimizes frequency on every real-pole window
     where its tangent is positive; an explicit *global domain* condition is
