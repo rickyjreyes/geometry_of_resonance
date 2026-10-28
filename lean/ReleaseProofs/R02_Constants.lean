@@ -13,6 +13,7 @@ theorem simultaneous_scale_invariant (a b scale : ℝ)
       dimensionlessRatio a b := by
   unfold dimensionlessRatio
   field_simp [hb, hs]
+  <;> ring
 
 theorem independent_scale_undetermined (a b : ℝ) (hb : b ≠ 0) :
     dimensionlessRatio (2 * a) (2 * b) = dimensionlessRatio a b := by
