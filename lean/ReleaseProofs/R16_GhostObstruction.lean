@@ -11,10 +11,10 @@ is for a separate spatial-only quadratic rail, not a repair of S004.
 
 namespace ReleaseProofs.R16
 
-def regularizedDenominator (u eps alpha : ℝ) : ℝ :=
+noncomputable def regularizedDenominator (u eps alpha : ℝ) : ℝ :=
   u + eps ^ 2 * Real.exp (-2 * alpha * u)
 
-def correctedWeight (u eps alpha : ℝ) : ℝ :=
+noncomputable def correctedWeight (u eps alpha : ℝ) : ℝ :=
   u / (regularizedDenominator u eps alpha) ^ 2
 
 theorem denominator_pos (u eps alpha : ℝ)
@@ -44,7 +44,7 @@ theorem acceleration_coefficient_pos (u eps alpha kappa : ℝ)
   positivity
 
 /-- Fixed nonzero higher-time coordinate q2 yields the Ostrogradsky affine term. -/
-def ostroHamiltonian (K massSq q1 q2 p1 p2 : ℝ) : ℝ :=
+noncomputable def ostroHamiltonian (K massSq q1 q2 p1 p2 : ℝ) : ℝ :=
   p1 * q2 - p2 ^ 2 / (2 * K) - q2 ^ 2 / 2 + massSq * q1 ^ 2 / 2
 
 theorem ostro_unbounded_below (K massSq q1 q2 p2 : ℝ)
@@ -95,7 +95,7 @@ theorem mixed_kinetic_unbounded_below (h c : ℝ)
   nlinarith [hy]
 
 /-- A distinct second-time-order spatial rail: no acceleration dependence. -/
-def spatialRailLagrangian
+noncomputable def spatialRailLagrangian
     (gap bending qStar q amplitude velocity acceleration : ℝ) : ℝ :=
   (velocity ^ 2 -
     R18.spatialRailFrequencySq gap bending qStar q * amplitude ^ 2) / 2
@@ -105,7 +105,7 @@ theorem spatial_rail_acceleration_independent
     spatialRailLagrangian gap bending qStar q amplitude velocity a1 =
       spatialRailLagrangian gap bending qStar q amplitude velocity a2 := rfl
 
-def spatialRailHamiltonian
+noncomputable def spatialRailHamiltonian
     (gap bending qStar q amplitude momentum : ℝ) : ℝ :=
   (momentum ^ 2 +
     R18.spatialRailFrequencySq gap bending qStar q * amplitude ^ 2) / 2
