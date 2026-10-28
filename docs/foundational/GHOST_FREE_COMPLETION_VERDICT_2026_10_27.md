@@ -1,5 +1,6 @@
 # #16 — Scoped obstruction and independently healthy competing-gradient alternative
 
+> **2026-10-28 extension:** [Canonical issue #16 auxiliary/ghost mathematical ledger](ISSUE16_AUXILIARY_GHOST_LEDGER_2026_10_28.md) derives the explicit first-order auxiliary action, its Euler–Lagrange jet elimination and canonical reduced Hamiltonian, and separately identifies kernel-checked algebra from unformalized continuum Dirac assumptions. Lean proves det(Hacc)=0 iff Fκ=0 in the actual two-real-component S004 principal block; a regular exact auxiliary rewrite leaves an affine Hamiltonian covering all real energy values. This is a **restricted obstruction, not a universal no-go**. The independent competing-gradient spatial model remains a different theory, with no proved nontrivial static localized equilibrium in its positive-energy defocusing regime. Do not close #16 as though a healthy S004 completion exists.\n\n
 **Status:** `S004_REGULAR_NONDEGENERATE_GHOST_UNAVOIDABLE` within the defined class; `SCALAR_TENSOR_A1_GHOST_REMAINS`; `SPATIAL_RAIL_LINEAR_HEALTH_AND_ENERGY_PROVED_AS_NEW_MODEL`; `WCT_FOUNDATIONAL_COMPLETION_OPEN`.
 
 **Never identify the new competing-gradient model with S004.** This document supplements, rather than revises, the frozen action, PR #33's H1–H4 analysis, PR #34's A1/A2 analysis, and PR #42's earlier Lean witnesses.
