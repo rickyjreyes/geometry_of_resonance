@@ -29,3 +29,13 @@ jobs:
       - uses: leanprover/lean-action@v1
         with:
           lake-package-directory: lean
+          auto-config: false
+          build: false
+          use-mathlib-cache: false
+      - name: Resolve dependencies and build
+        shell: bash
+        run: |
+          cd lean
+          lake update
+          lake exe cache get
+          lake build
