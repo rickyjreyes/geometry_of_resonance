@@ -100,3 +100,27 @@ The alternative can be viewed as a candidate physical pattern medium (competing 
 - **Remaining:** explicit physically motivated degeneracy constraints that preserve curvature interpretation, nonlinear ghost-free/UV-complete WCT parent, independently fixed physical length, and nontrivial localized spectrally/orbitally stable solution in a completion linked to S004.
 
 Do not close issue #16. This package satisfies the **scoped failure-class** mission but does not meet the issue's original positive health-and-localization acceptance gates.
+
+
+## Scoped Lean extension: two-real acceleration, constraint bracket and energy
+
+The dedicated module `lean/ReleaseProofs/R16_EnergyAndConstraints.lean` now records the **actual** fixed-flat two-Cartesian-field acceleration Hessian determinant, in contrast to merely naming the scalar coefficient:
+```text
+H_acc = diag(-2 F kappa, -2 F kappa)
+det H_acc = 4 (F kappa)^2 > 0,    F>0, kappa>0.
+```
+This is a faithful finite-dimensional Hessian consequence of the *source-derived* S004 Lagrangian. Lean checks its determinant and positivity, not the complete field-theoretic variation from scratch. The module also formalizes the absence of null vectors for the explicit two-component auxiliary constraint bracket `(x,y) -> (-y,x)`. Thus the **primary second-class matrix is invertible**, but obtaining the final field-theoretic Dirac degree count still uses the sourced canonical derivation and multiplier-preservation argument, not an axiom or a claim that one finite-matrix lemma formalizes the entire infinite-dimensional algorithm.
+
+For the independent competing-gradient model, Lean adds a **quantitative Fourier-mode H² bound** on an explicitly stronger, admissible parameter subdomain. For any chosen coercivity constant `c` with
+```text
+b>0, 2c<=b, 2bc <= 2b mu-a^2,
+```
+it proves the completed-square consequence
+```text
+c*(1+q^2) <= mu-aq+bq^2,     for every real q,
+```
+and a finite Fourier-mode sum inequality with velocity terms. Choosing `c>0` is possible under the sufficient stronger gap `2b mu>a^2`; this does **not** replace the weaker `4b mu>a²` condition for positive frequencies. The stronger bound is a convenience of an explicit proof, not a declaration that the broader positive-gap regime is noncoercive.
+
+Finally, `tested_static_energy_identity_forces_zero` is a kernel-checked **conditional statement**: once an appropriate Plancherel/weak-integration identity has yielded `linearForm+quarticForm=0`, a positive `L²` coercivity constant forces the L² norm to vanish. The continuum Fourier transform, integration-by-parts and nonlinearity identities have **not** been formalized in this repository. The result is therefore not advertised as a complete Lean proof of all weak PDE stationary solutions.
+
+These lemmas maintain the strict boundary between S004's genuine regular Hessian obstruction and the independent spatial action's positive-energy Fourier symbol. The remaining DHOST/dynamical-foliation/gauge and nonlinear physical-bridge questions are still open.
