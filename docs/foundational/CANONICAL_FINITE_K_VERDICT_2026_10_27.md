@@ -66,6 +66,17 @@ z_minus''(q)=(B*s^2+G^2)/(2*K*d^(3/2))>0.
 ```
 A unique positive interior minimum occurs **iff** `G*C0>s`, where `C0=(1-s)/(2*K)`. Its exact location and collision boundary are F2 in `docs/cross_paper/FINITE_SCALE_SELECTION.md`. This is a positive-frequency minimum, not an instability, a localized eigenmode or a physical length prediction. If `G*C0<=s`, strict convexity forbids an interior low-branch minimum. On the *phase* branch `m^2=0`, `z_minus'(0)=1`, and strict convexity on `d>0` rules out an interior positive-`q` minimum. For the upper pole `z_plus'` and `z_plus''` may have extrema, but these belong to the negative-residue branch and **cannot** furnish healthy selection. At `d=0`, derivative formulas are singular; treat the collision as a separate boundary. At `d<0`, roots are complex, not physical real oscillatory extrema.
 
+
+
+**Upper branch extremum (not a healthy selector).** On the same connected real-pole interval from `q=0`, the upper pole is *strictly concave*,
+```text
+z_plus'(q)=[a0+(G-B*q)/sqrt(d)]/(2*K)
+z_plus''(q)=-(B*s^2+G^2)/(2*K*d^(3/2)) < 0.
+```
+Because `z_plus'` tends to negative infinity at the collision, it has a unique interior **maximum** iff `a0+G/s>0`; otherwise there is no positive-`q` upper-branch stationary point. The upper branch has a negative residue in either case. For the lower branch the counterpart is a unique **minimum** iff `a0-G/s<0`, which is equivalent to F1's `G*C0>s`. No other stationary points exist on these connected real-pole intervals because the second derivatives have strict signs.
+
+**Disconnected real-pole islands.** The above derivative-at-zero classification assumes `d(0)=s²>0`. If `d0=1-4Km²<0`, a bounded positive-`q` real-pole island can occur only if `G>0` and `G²+B*d0>0`, in which case the real intervals are bounded by the two positive collisions `q_±=(G±sqrt(G²+B*d0))/B`. There is already a complex-frequency instability at `q=0` in this case, and the model is not a healthy background. The double-root cases `d0=0` or `G²+B*d0=0` require their own Jordan/collision analysis and are not called stable finite bands.
+
 **Zero background** `F(0)=0`: there is no linear fourth-spatial-order term. **Replacing** the weight with a positive `W(0)` adds it back but also restores an invertible higher-time Hessian `2*kappa*W(0)*I2` if `kappa>0`; it does not cure the ghost.
 
 ## Other models and physical selection
