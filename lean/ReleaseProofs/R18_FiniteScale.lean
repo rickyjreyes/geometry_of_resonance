@@ -44,10 +44,10 @@ theorem no_real_frequency_root (K G T massSq q : ℝ)
   rw [hz] at hcomp
   nlinarith [sq_nonneg (2 * K * (z - q) - (1 + G * q))]
 
-def lowerPole (K G T massSq q : ℝ) : ℝ :=
+noncomputable def lowerPole (K G T massSq q : ℝ) : ℝ :=
   q + (1 + G * q - Real.sqrt (poleDiscriminant K G T massSq q)) / (2 * K)
 
-def upperPole (K G T massSq q : ℝ) : ℝ :=
+noncomputable def upperPole (K G T massSq q : ℝ) : ℝ :=
   q + (1 + G * q + Real.sqrt (poleDiscriminant K G T massSq q)) / (2 * K)
 
 /-- The lower Q7 candidate really is a root of the Q6 polynomial. -/
