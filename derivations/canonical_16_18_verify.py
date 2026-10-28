@@ -88,6 +88,26 @@ def verify():
           s.rem(s.together(tangent+2*(q-delta)*condition),
                 root_star**2-disc.subs(q,delta),root_star))
 
+    # New admissibility witnesses: source S004 and independent spatial rail
+    # are not globally the same static quadratic polynomial.
+    static=lambda qq: m+qq+(K+G+T)*qq**2
+    rail=lambda qq: mu-aa*qq+bb*qq**2
+    check("parent_static_odd_coefficient",static(1)-static(-1)-2)
+    check("alternative_static_odd_coefficient",rail(1)-rail(-1)+2*aa)
+    check("parent_vs_spatial_odd_difference",
+          (static(1)-static(-1))-(rail(1)-rail(-1))-2*(1+aa))
+    check("phase_kernel_gapless",D.subs({m:0,z:0,q:0}))
+    check("amplitude_phase_kernel_mismatch",
+          D.subs({z:0,q:0})-D.subs({m:0,z:0,q:0})+m)
+    # V''' and V'''' are independent data: cubic perturbations preserve
+    # the full quadratic potential jet at the original background.
+    tt,j0,j1,j2,lam=s.symbols("tt j0 j1 j2 lam",real=True)
+    base=j0+j1*tt+j2*tt**2
+    altered=base+lam*tt**3
+    for order in [0,1,2]:
+        check(f"cubic_shift_preserves_jet_{order}",
+              s.diff(altered-base,tt,order).subs(tt,0))
+    check("cubic_shift_third_derivative",s.diff(altered-base,tt,3)-6*lam)
     return checks
 
 
