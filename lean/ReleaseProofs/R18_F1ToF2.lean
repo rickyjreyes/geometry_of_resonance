@@ -145,4 +145,34 @@ theorem f1_implies_exact_positive_global_minimum
       exact exact_minimum_unique_on_nonnegative_real_window
         K G T massSq q hK hB hN hA hzero hq hdq heq
 
+
+/-- The F1 amplitude regime with m²≥0 has a genuinely *positive*
+    oscillatory squared frequency at the exact minimizer. It is not an
+    exponentially growing finite-q mode; the upper pole is still a ghost. -/
+theorem f1_minimum_has_positive_oscillatory_frequency
+    (K G T massSq : ℝ)
+    (hK : 0 < K) (hT : 0 < T)
+    (hB : 0 < curvatureGap K G T)
+    (hm : 0 ≤ massSq)
+    (hd0 : 0 < 1 - 4 * K * massSq)
+    (hA : 0 ≤ linearQ K G)
+    (hF1 : linearQ K G * Real.sqrt (1 - 4 * K * massSq) < G) :
+    0 < candidateQ K G T massSq ∧
+      0 < lowerPole K G T massSq (candidateQ K G T massSq) ∧
+      0 < upperPole K G T massSq (candidateQ K G T massSq) := by
+  have hf := f1_implies_exact_positive_global_minimum
+    K G T massSq hK hB hd0 hA hF1
+  have hN : 0 ≤ discrVertex K G T massSq := by
+    have hBD : 0 < curvatureGap K G T * (1 - 4 * K * massSq) :=
+      mul_pos hB hd0
+    unfold discrVertex
+    nlinarith [sq_nonneg G]
+  have hdisc : 0 ≤ poleDiscriminant K G T massSq
+      (candidateQ K G T massSq) :=
+    candidateQ_discriminant_nonneg K G T massSq hB hN
+  have hpositive := ReleaseProofs.R18Admissibility.real_poles_non_tachyonic_all_G
+    K G T massSq (candidateQ K G T massSq)
+    hK hT hB hm hf.1 hdisc
+  exact ⟨hf.1, hpositive.1, hpositive.2⟩
+
 end ReleaseProofs.R18F1ToF2
