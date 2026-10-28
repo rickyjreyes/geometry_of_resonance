@@ -5,3 +5,4 @@ import ReleaseProofs.R25_ScaleWinding
 import ReleaseProofs.R18_FiniteScale
 import ReleaseProofs.R16_GhostObstruction
 import ReleaseProofs.R18_CanonicalObstruction
+import ReleaseProofs.R18_Classification
