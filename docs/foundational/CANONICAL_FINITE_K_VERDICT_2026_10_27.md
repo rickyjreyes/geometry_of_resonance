@@ -120,3 +120,13 @@ Consequently `z_minus(qStar)<=z_minus(q)`, with equality only for `q=qStar`. Thi
 The independent competing-gradient alternative is formalized only under a **different namespace and action** in `R16_CompletionClasses.lean`. No Lean axiom asserting equivalence to S004 has been added. Full covariant/rotating-background stability, dynamic foliation constraints, cutoff preparation and nonlinear S004-to-PFF derivation remain explicit open barriers.
 
 **Verification:** both `.github/workflows/release-lean.yml` and the independently retrying pinned `.github/workflows/geometry-scoped-lean.yml` run the entire `lean/ReleaseProofs.lean` library; the exact-symmetry and symbolic checks run in `.github/workflows/canonical-16-18.yml`. Do not describe new declarations as kernel-checked until the check for the *latest commit* succeeds.
+
+
+### Exact F2 candidate (additional Lean module)
+
+`lean/ReleaseProofs/R18_ExactMinimizer.lean` goes beyond a stationary-point assumption. With `A=2K+G`, `N=G²+B(1-4Km²)` and `B>0,N>=0`, define
+```text
+c=sqrt(N/(A²+B)),
+q_star=(G-A*c)/B.
+```
+It proves, directly from Q6/Q7 and without a truncated k⁴ polynomial, the exact identities `d(q_star)=c²` and `G-B*q_star=A*sqrt(d(q_star))`, and hence a conditional minimizing and uniqueness theorem on every real-pole point for which the stated positive-tangent hypothesis holds. The separate lemma `q_star>0` uses the exact explicit inequality `A*c<G`. The F1 parameter comparison and the tangent-positive domain are not imported as unjustified axioms: they are retained as physically/mathematically checkable hypotheses. This theorem certifies the **conditional F2 oscillatory minimum**, not an imaginary-frequency growth mechanism, UV completion or independent wavelength prediction. The phase/growing-pole sectors remain distinct.
