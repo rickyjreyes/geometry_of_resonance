@@ -86,7 +86,12 @@ theorem f1_implies_exact_positive_global_minimum
       (∀ q : ℝ, 0 ≤ q →
         0 ≤ poleDiscriminant K G T massSq q →
           lowerPole K G T massSq (candidateQ K G T massSq) ≤
-            lowerPole K G T massSq q) := by
+            lowerPole K G T massSq q) ∧
+      (∀ q : ℝ, 0 ≤ q →
+        0 ≤ poleDiscriminant K G T massSq q →
+          lowerPole K G T massSq q =
+            lowerPole K G T massSq (candidateQ K G T massSq) →
+          q = candidateQ K G T massSq) := by
   let A := linearQ K G
   let B := curvatureGap K G T
   let s := Real.sqrt (1 - 4 * K * massSq)
@@ -132,8 +137,12 @@ theorem f1_implies_exact_positive_global_minimum
     exact div_pos htangentSquare hB
   constructor
   · exact hqStar
-  · intro q hq hdq
-    exact exact_minimum_global_on_nonnegative_real_window
-      K G T massSq q hK hB hN hA hzero hq hdq
+  · constructor
+    · intro q hq hdq
+      exact exact_minimum_global_on_nonnegative_real_window
+        K G T massSq q hK hB hN hA hzero hq hdq
+    · intro q hq hdq heq
+      exact exact_minimum_unique_on_nonnegative_real_window
+        K G T massSq q hK hB hN hA hzero hq hdq heq
 
 end ReleaseProofs.R18F1ToF2
