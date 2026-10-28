@@ -22,12 +22,12 @@ open ReleaseProofs.R16Energy
 /-- One real component of the fixed-background acceleration principal part:
     the potential is represented by its value U and the ordinary-speed
     coefficient by k; h is a nonzero higher-time coefficient. -/
-def fourthOrderJetLagrangian (h k U velocity acceleration : ℝ) : ℝ :=
+noncomputable def fourthOrderJetLagrangian (h k U velocity acceleration : ℝ) : ℝ :=
   -(h * acceleration ^ 2) / 2 + k * velocity ^ 2 / 2 - U
 
 /-- Exact first-order auxiliary Lagrangian with Q intended to equal q-dot.
     The original higher-time term has become the Q kinetic term, NOT vanished. -/
-def auxiliaryJetLagrangian
+noncomputable def auxiliaryJetLagrangian
     (h k U velocity Q Qdot lagrangeMultiplier : ℝ) : ℝ :=
   -(h * Qdot ^ 2) / 2 + k * Q ^ 2 / 2 - U +
     lagrangeMultiplier * (velocity - Q)
@@ -62,9 +62,9 @@ theorem auxiliary_elimination_at_jet
   · rintro ⟨lambdaDot, heq, hforce⟩
     rw [heq] at hforce
     simpa [fourthOrderEulerJet, add_assoc] using hforce
-  · intro h
+  · intro hjet
     refine ⟨k * accel + h * fourth, rfl, ?_⟩
-    simpa [fourthOrderEulerJet, add_assoc] using h
+    simpa [fourthOrderEulerJet, add_assoc] using hjet
 
 /-- Exact momentum for the Q coordinate of the auxiliary Lagrangian. -/
 def auxiliaryQMomentum (h Qdot : ℝ) : ℝ := -h * Qdot
@@ -79,7 +79,6 @@ theorem auxiliary_Q_velocity_reconstructed
   unfold auxiliaryQMomentum at hp
   rw [hp]
   field_simp [hh]
-  ring
 
 /-- Partial Legendre transform of the Q kinetic sector. -/
 theorem auxiliary_kinetic_legendre_identity
