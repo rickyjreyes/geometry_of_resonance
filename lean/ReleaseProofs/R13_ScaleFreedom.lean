@@ -9,6 +9,7 @@ action can ever dynamically select an intrinsic scale; it records the
 precise scale freedom in the existing conditional spectral conversion.
 -/
 
+noncomputable section
 namespace ReleaseProofs.R13ScaleFreedom
 
 /-- Convert a dimensionless spatial eigenvalue using a freely chosen
@@ -27,7 +28,6 @@ theorem physicalEigenvalue_rescale
       physicalEigenvalue lambda L / scale ^ 2 := by
   unfold physicalEigenvalue
   field_simp
-  ring
 
 /-- The spectral wavenumber transforms with inverse length under
 positive reference-scale changes. -/
@@ -43,24 +43,24 @@ positive reference length when the dimensionless eigenvalue is
 positive. This proves length dependence, not an internal selection
 mechanism. -/
 theorem arbitrary_positive_wavenumber_from_free_length
-    (lambda target : ℝ) (hλ : 0 < lambda) (ht : 0 < target) :
+    (lambda target : ℝ) (hLambda : 0 < lambda) (ht : 0 < target) :
     ∃ L : ℝ, 0 < L ∧ spectralWavenumber lambda L = target := by
-  have hs : 0 < Real.sqrt lambda := Real.sqrt_pos.2 hλ
+  have hs : 0 < Real.sqrt lambda := Real.sqrt_pos.2 hLambda
   refine ⟨Real.sqrt lambda / target, div_pos hs ht, ?_⟩
   unfold spectralWavenumber
   field_simp [ne_of_gt ht, ne_of_gt hs]
-  ring
+  all_goals ring
 
 /-- Distinct positive lengths cannot give the same wavenumber for
 a strictly positive dimensionless eigenvalue. -/
 theorem spectralWavenumber_injective_on_positive_lengths
     (lambda L1 L2 : ℝ)
-    (hλ : 0 < lambda) (hL1 : 0 < L1) (hL2 : 0 < L2)
+    (hLambda : 0 < lambda) (hL1 : 0 < L1) (hL2 : 0 < L2)
     (heq : spectralWavenumber lambda L1 =
       spectralWavenumber lambda L2) :
     L1 = L2 := by
   have hs : Real.sqrt lambda ≠ 0 :=
-    ne_of_gt (Real.sqrt_pos.2 hλ)
+    ne_of_gt (Real.sqrt_pos.2 hLambda)
   dsimp [spectralWavenumber] at heq
   have hcross : Real.sqrt lambda * L2 =
       Real.sqrt lambda * L1 := by
