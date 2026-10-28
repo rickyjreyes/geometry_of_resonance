@@ -1,6 +1,6 @@
 # #18 — Canonical finite-wavelength verdict for corrected S004
 
-**Decision:** `PARAMETER_DEPENDENT_DISPERSION_MINIMUM_ONLY; PHYSICAL_SELECTOR_OBSTRUCTED_IN_LITERAL_STRICT_S004`.
+> **Canonical scoped closure note (2026-10-28):** Read the [manuscript-to-Lean claim map](ISSUE18_MANUSCRIPT_LEAN_CLAIM_MAP_2026_10_28.md) for exact proof names, parameter gates, analytic-only statements and missing physical bridge. The strict curvature domain permits **either sign of G**: when m²≥0, q>0 and d(q)≥0, both real squared-frequency poles are positive for any G, while the upper branch remains a ghost. The F1-to-F2 extension derives a positive exact conditional amplitude minimum from the original negative-initial-slope inequalities. It does not establish growing-mode selection, an independently fixed physical wavelength or a healthy complete action. Do not alter S004, close issue #18, or confuse this scoped mathematical result with foundational physical completion.\n\n**Decision:** `PARAMETER_DEPENDENT_DISPERSION_MINIMUM_ONLY; PHYSICAL_SELECTOR_OBSTRUCTED_IN_LITERAL_STRICT_S004`.
 
 The unchanged real S004 action is **not** a dynamically healthy first-principles finite-band pattern selector in the strict parameter region described here. This is a **scoped** obstruction, not a theorem that no healthy WCT-inspired action can exist. The two distinct surviving claims are (i) a conditional amplitude oscillation-frequency minimum in the untruncated parent and (ii) a *separately assumed* spatial-only effective selector.
 
