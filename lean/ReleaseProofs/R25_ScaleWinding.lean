@@ -14,6 +14,7 @@ theorem winding_produces_closure (omega : ℝ) (w : ℤ)
       2 * Real.pi * (w : ℝ) := by
   unfold logClosureCoordinate
   field_simp [h]
+  <;> ring
 
 theorem zero_winding_coordinate (omega : ℝ) :
     logClosureCoordinate omega 0 = 0 := by
