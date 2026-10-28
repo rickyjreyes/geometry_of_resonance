@@ -69,3 +69,18 @@ A genuine replacement for the conditional quadratic EFT must exhibit, simultaneo
 `R18_Boundaries.lean` adds an exact sign classification for the F2 candidate: `qStar>0` iff `A*c<G`, and `qStar<=0` iff `G<=A*c`, whenever `B>0`. It also treats the `B=0` discriminant as `d0+2Gq`, the `K=0` inverse propagator as a linear polynomial in the squared frequency, and the `K=G=T=0` zero-background propagator as `z-q-m²`. In the purely spatial boundary `K=G=0,T>=0`, `m²+q+Tq²` increases strictly on `q>=0`, hence it cannot select a nonzero q. **None of these boundary identities says that a singular degeneration is a healthy completion of finite positive-K S004.**
 
 `R18_Admissibility.lean` adds an exact static action-vs-spatial-rail polynomial inequivalence witness. For the original S004 static stiffness `m²+q+(K+G+T)q²`, the odd part between `q=±1` equals `2`. For the independent competing-gradient rail `mu-aq+bq²`, it equals `-2a`. If `a>0`, these cannot be the **same polynomial under identity of the field and fixed time normalization**. A restricted nonlocal frequency-dependent EFT normal form is not excluded by this argument; it must carry its sector, observables, energy, charge and controlled error terms. On the original static background the phase pole at `q=0` is exactly gapless, whereas an amplitude with `m²≠0` has a different inverse propagator there, preventing a naive two-identical-real-copy identification.
+
+
+## Strongest strict-S004 onset obstruction (all real amplitude masses)
+
+`R18_Onset.lean` closes an important case left conditional in the previous `m²>=0` no-onset theorem. For any `K>0`, `B=4KT-G²>0`, any `G` and **any real m²**, suppose a positive `q>0` is a zero-frequency root of the *unchanged* original static S004 inverse propagator:
+```text
+D(0,q)=-m²-q-(K+G+T)q²=0.
+```
+Strict curvature positivity gives `K+G+T=((2K+G)²+B)/(4K)>0`; therefore `m²=-q-(K+G+T)q²<0`. But `m²<0` implies at `q=0` that `d(0)=1-4Km²>1`, so
+```text
+z_minus(0)=(1-sqrt(1-4Km²))/(2K) < 0.
+```
+The homogeneous `q=0` squared frequency is **already tachyonic** when any `q>0` static zero-frequency crossing occurs. Thus no **primary finite-q static instability onset** exists in this strict static homogeneous sector, including the negative-mass cases. The no-static-crossing theorem for `m²>=0` and this new negative-mass implication together exhaust the static mass-sign cases. This does **not** classify every rotating-carrier, inhomogeneous, constrained, or alternative-action instability and is not a universal no-go theorem.
+
+Lean: `finite_q_zero_requires_negative_mass`, `negative_amplitude_mass_tachyonic_at_q_zero`, `no_primary_finite_q_static_onset`. The theorem is a mathematical static-sector ordering result; real-pole collisions, high-frequency ill-posedness and relative negative residues remain additional independent obstructions.
