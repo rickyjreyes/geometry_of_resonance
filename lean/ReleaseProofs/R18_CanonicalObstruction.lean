@@ -77,9 +77,12 @@ theorem lower_real_pole_positive (K G T massSq q : ℝ)
     exact mul_pos hh hmass
   have hs : (Real.sqrt d) ^ 2 = d := Real.sq_sqrt hd
   have hsnon : 0 ≤ Real.sqrt d := Real.sqrt_nonneg _
+  have hdiff : (Real.sqrt d) ^ 2 < (1 + G * q) ^ 2 := by
+    rw [hs]
+    dsimp [d, poleDiscriminant]
+    nlinarith [hterm]
   have hless : Real.sqrt d < 1 + G * q := by
-    dsimp [d, poleDiscriminant] at hs
-    nlinarith
+    nlinarith [hdiff]
   have hquot : 0 < (1 + G * q - Real.sqrt d) / (2 * K) :=
     div_pos (sub_pos.mpr hless) (by positivity)
   unfold lowerPole
