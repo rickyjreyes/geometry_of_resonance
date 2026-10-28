@@ -21,7 +21,7 @@ theorem discriminant_vertex_identity (K G T massSq q : ℝ) :
     curvatureGap K G T * poleDiscriminant K G T massSq q =
       discrVertex K G T massSq -
         (curvatureGap K G T * q - G) ^ 2 := by
-  unfold curvatureGap poleDiscriminant discrVertex
+  unfold discrVertex poleDiscriminant curvatureGap
   ring
 
 /-- On the strict curvature domain, a real pole is exactly a point inside
@@ -118,8 +118,8 @@ theorem tangent_gap_identity (K G T massSq q qStar A : ℝ)
   have hsqStar := Real.sq_sqrt hdStar
   have hsqQ := Real.sq_sqrt hdq
   have hstep := congrArg (fun x : ℝ => 2 * x * (q - qStar)) hstat
-  rw [hsqStar, hsqQ]
-  nlinarith [hshift, hstep]
+  dsimp at hstep
+  nlinarith [hshift, hstep, hsqStar, hsqQ]
 
 /-- A stationary lower pole minimizes frequency on every real-pole window
     where its tangent is positive; an explicit *global domain* condition is
