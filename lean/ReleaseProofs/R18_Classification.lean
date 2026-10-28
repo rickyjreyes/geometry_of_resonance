@@ -194,4 +194,66 @@ theorem lower_pole_unique_on_tangent_window
     exact (mul_eq_zero.mp hproduct).resolve_left (ne_of_gt hcoeff)
   nlinarith
 
+
+/-- Exact strict real-pole window: no positivity of the mass parameter is
+    assumed. This includes any disconnected positive-q islands when present. -/
+theorem distinct_real_pole_iff_strict_vertex (K G T massSq q : ℝ)
+    (hB : 0 < curvatureGap K G T) :
+    0 < poleDiscriminant K G T massSq q ↔
+      (curvatureGap K G T * q - G) ^ 2 <
+        discrVertex K G T massSq := by
+  have hi := discriminant_vertex_identity K G T massSq q
+  constructor
+  · intro hd
+    have hp : 0 < curvatureGap K G T *
+        poleDiscriminant K G T massSq q := mul_pos hB hd
+    linarith
+  · intro hd
+    by_contra hn
+    have hnon : poleDiscriminant K G T massSq q ≤ 0 := le_of_not_gt hn
+    have hp : curvatureGap K G T *
+        poleDiscriminant K G T massSq q ≤ 0 :=
+      mul_nonpos_of_nonneg_of_nonpos hB.le hnon
+    linarith
+
+/-- The precise pole-collision surface, including both endpoints of a
+    bounded real-pole interval when the vertex is positive. -/
+theorem collision_iff_vertex_boundary (K G T massSq q : ℝ)
+    (hB : 0 < curvatureGap K G T) :
+    poleDiscriminant K G T massSq q = 0 ↔
+      (curvatureGap K G T * q - G) ^ 2 =
+        discrVertex K G T massSq := by
+  have hi := discriminant_vertex_identity K G T massSq q
+  constructor
+  · intro hd
+    rw [hd] at hi
+    linarith
+  · intro heq
+    have hp : curvatureGap K G T *
+        poleDiscriminant K G T massSq q = 0 := by
+      linarith
+    exact (mul_eq_zero.mp hp).resolve_left (ne_of_gt hB)
+
+/-- The UV discriminant is strictly negative beyond the exact right
+    collision endpoint, irrespective of the sign of G. -/
+theorem uv_complex_beyond_upper_collision (K G T massSq q : ℝ)
+    (hB : 0 < curvatureGap K G T)
+    (hN : 0 ≤ discrVertex K G T massSq)
+    (hq : (G + Real.sqrt (discrVertex K G T massSq)) /
+        curvatureGap K G T < q) :
+    poleDiscriminant K G T massSq q < 0 := by
+  have hs : (Real.sqrt (discrVertex K G T massSq)) ^ 2 =
+      discrVertex K G T massSq := Real.sq_sqrt hN
+  have hr : 0 ≤ Real.sqrt (discrVertex K G T massSq) :=
+    Real.sqrt_nonneg _
+  have hmul := (div_lt_iff₀ hB).mp hq
+  have hdif : Real.sqrt (discrVertex K G T massSq) <
+      curvatureGap K G T * q - G := by
+    nlinarith
+  have hsq :
+      discrVertex K G T massSq <
+        (curvatureGap K G T * q - G) ^ 2 := by
+    nlinarith [hs]
+  exact uv_complex_beyond_vertex K G T massSq q hB hsq
+
 end ReleaseProofs.R18Classification
