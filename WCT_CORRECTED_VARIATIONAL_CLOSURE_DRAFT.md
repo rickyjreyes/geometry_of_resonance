@@ -5,7 +5,7 @@
 
 **Live scope correction (2026-10-20):** In §4 the final spatial operator is the formal adjoint \(\Delta_h^\dagger f=\nabla_\nu\nabla_\mu(h^{\mu\nu}f)\). Replacing it by \(\Delta_h\) requires extra self-adjointness conditions, satisfied by the fixed flat inertial specialization. The [foundational audit](docs/foundational/GHOST_AND_CONSTRAINT_ANALYSIS.md) independently reconstructs that specialization, counts its unconstrained extra modes and proves high-frequency Sobolev ill-posedness around its specified nonzero homogeneous backgrounds. The full untruncated action is not a healthy nonlinear EFT merely because a restricted quadratic branch can be isolated.
 
-## 1. Fields, geometry, and regularization
+**Canonical finite-wavelength decision (#18, 2026-10-27):** The [exact model classification](docs/foundational/CANONICAL_FINITE_K_VERDICT_2026_10_27.md) rules out a nonzero static finite-wave-number onset in the strict corrected action on a static homogeneous on-shell background with nonnegative amplitude mass. The older derived positive-residue amplitude frequency minimum remains valid, but does not provide an independently selected physical wavelength, a growing pattern instability or a ghost-free Hamiltonian. The curvature-positivity region retains the opposite-residue pole and ultraviolet complex poles. A competing-gradient, second-order-in-time spatial selector is an **independent proposed action**, not a reduction of S004. Both #16 and #18 retain their original physical closure requirements.\n\n## 1. Fields, geometry, and regularization
 
 Let \(\psi:M\to\mathbb C\) and treat \(\psi\) and \(\bar\psi\) as independent variables in the variational calculation. Define
 
