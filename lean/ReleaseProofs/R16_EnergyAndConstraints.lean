@@ -101,10 +101,10 @@ theorem finite_fourier_modes_coercive
     (q amp velocity : ι → ℝ) (mu a b c : ℝ)
     (hb : 0 < b) (hbc : 2 * c ≤ b)
     (hgap : 2 * b * c ≤ 2 * b * mu - a ^ 2) :
-    (∑ i ∈ modes, c * (1 + (q i) ^ 2) * (amp i) ^ 2 +
-      (velocity i) ^ 2) ≤
-      ∑ i ∈ modes,
-        2 * competingModeHamiltonian mu a b (q i) (amp i) (velocity i) := by
+    Finset.sum modes (fun i : ι =>
+      c * (1 + (q i) ^ 2) * (amp i) ^ 2 + (velocity i) ^ 2) ≤
+      Finset.sum modes (fun i : ι =>
+        2 * competingModeHamiltonian mu a b (q i) (amp i) (velocity i)) := by
   apply Finset.sum_le_sum
   intro i hi
   exact competing_mode_h2_coercivity mu a b c (q i) (amp i) (velocity i)
