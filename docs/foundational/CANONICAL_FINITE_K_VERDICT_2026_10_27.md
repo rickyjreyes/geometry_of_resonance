@@ -95,3 +95,28 @@ Because `z_plus'` tends to negative infinity at the collision, it has a unique i
 `derivations/canonical_16_18_verify.py`: symbolic reconstruction of static pole and the **full rotating carrier Q4/Q5** matrix, exact Hessian/constraint determinants, and competing-gradient alternative, without treating numerical roots as theorems.
 
 **Outstanding gates**: justified background and `V`, physical length, cutoff, nonlinear constrained/ghost-free parent, full global inhomogeneous background analysis, and nonlinear physical-sector reduction. Preserve #18 OPEN even if the mathematical scoped obstruction passes verification.
+
+
+## Lean completion supplement: exact pole trichotomy and tangent theorem
+
+The new `lean/ReleaseProofs/R18_Classification.lean` derives an exact completed-square invariant for **all** real `q`, without limiting the sign of `G` or `m²`. Put `B=4KT-G²>0`, `d0=1-4Km²` and `N=G²+B*d0`:
+
+```text
+B*d(q) = N - (B*q-G)^2.
+d(q)>0  iff (B*q-G)^2<N   (distinct real z-poles).
+d(q)=0  iff (B*q-G)^2=N   (collision).
+d(q)<0  iff (B*q-G)^2>N   (complex z-poles).
+```
+
+Thus `N<0` gives no real pole at any spatial wave number; `N=0` permits only the degenerate vertex `q=G/B`; `N>0` admits the single complete real-pole interval `(G-sqrt(N))/B < q < (G+sqrt(N))/B`, intersected with the physical `q>=0`. The right endpoint `(G+sqrt(N))/B` yields an exact UV-complex criterion for every larger `q`. A lower-frequency minimum found inside a real interval cannot continue through a collision as a real stable branch.
+
+The module also gives a **derivative-free finite-q minimum certificate**: if `qStar` is real with `d(qStar)>=0`, `A=2K+G` and `G-B*qStar=A*sqrt(d(qStar))`, then for any real-pole `q` satisfying `sqrt(d(qStar))+A*(q-qStar)>0`,
+```text
+[sqrt(d(qStar))+A*(q-qStar)]^2-sqrt(d(q))^2
+    =(A^2+B)*(q-qStar)^2.
+```
+Consequently `z_minus(qStar)<=z_minus(q)`, with equality only for `q=qStar`. This explicitly retains the positive-tangent domain hypothesis; neither the lemma nor its proof silently assumes an unrestricted action-level EFT reduction. The analytical F1/F2 source supplies the explicit parameter-dependent `qStar` and its collision-domain placement. The completed-square Lean proof is a stronger direct uniqueness check in the declared tangent-positive real-pole window, not a new experimental scale prediction.
+
+The independent competing-gradient alternative is formalized only under a **different namespace and action** in `R16_CompletionClasses.lean`. No Lean axiom asserting equivalence to S004 has been added. Full covariant/rotating-background stability, dynamic foliation constraints, cutoff preparation and nonlinear S004-to-PFF derivation remain explicit open barriers.
+
+**Verification:** both `.github/workflows/release-lean.yml` and the independently retrying pinned `.github/workflows/geometry-scoped-lean.yml` run the entire `lean/ReleaseProofs.lean` library; the exact-symmetry and symbolic checks run in `.github/workflows/canonical-16-18.yml`. Do not describe new declarations as kernel-checked until the check for the *latest commit* succeeds.
