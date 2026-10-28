@@ -8,3 +8,4 @@ import ReleaseProofs.R18_CanonicalObstruction
 import ReleaseProofs.R18_Classification
 import ReleaseProofs.R18_ExactMinimizer
 import ReleaseProofs.R18_Admissibility
+import ReleaseProofs.R18_F1ToF2
