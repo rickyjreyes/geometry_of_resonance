@@ -11,6 +11,7 @@ wave-length selector. Background on-shell conditions and stability
 classification remain separate obligations.
 -/
 
+noncomputable section
 namespace ReleaseProofs.R46RotatingQ5
 
 /-- On a homogeneous rotating carrier, the shifted kinetic argument. -/
@@ -18,10 +19,9 @@ def shifted (omega q z : ℝ) : ℝ := z - q + omega ^ 2
 
 /-- The phase-channel Q5 diagonal symbol, with unexpanded background inputs. -/
 def phaseB (F kappa theta gamma u Fprime omega q Vprime z : ℝ) : ℝ :=
-  let X := shifted omega q z
-  -X - Vprime +
-    F * (kappa * (X ^ 2 + 4 * omega ^ 2 * z)
-      + theta * q ^ 2 - gamma * q * X)
+  -(shifted omega q z) - Vprime +
+    F * (kappa * ((shifted omega q z) ^ 2 + 4 * omega ^ 2 * z)
+      + theta * q ^ 2 - gamma * q * (shifted omega q z))
     + u * kappa * omega ^ 4 * Fprime
 
 /-- The amplitude-channel Q5 diagonal symbol. -/
@@ -58,7 +58,7 @@ def bOne (F kappa gamma omega q : ℝ) : ℝ :=
 /-- The constant term of the phase polynomial. -/
 def bZero (F kappa theta gamma u Fprime omega q Vprime : ℝ) : ℝ :=
   -xZero omega q - Vprime +
-    F * (kappa * xZero omega q ^ 2 + theta * q ^ 2
+    F * (kappa * (xZero omega q) ^ 2 + theta * q ^ 2
       - gamma * q * xZero omega q)
     + u * kappa * omega ^ 4 * Fprime
 
