@@ -1,0 +1,65 @@
+name: Geometry scoped Lean verification (retry toolchain)
+
+on:
+  push:
+    paths:
+      - 'lean/**'
+      - '.github/workflows/geometry-scoped-lean.yml'
+  pull_request:
+    paths:
+      - 'lean/**'
+      - '.github/workflows/geometry-scoped-lean.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  prove:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject placeholders and local axioms
+        shell: bash
+        run: |
+          if grep -REn '(^|[[:space:]])(sorry|admit|axiom)([[:space:]]|$)' lean/ReleaseProofs; then
+            echo "Rejected unsupported placeholder or axiom"
+            exit 1
+          fi
+      - name: Install elan with bounded network retries
+        shell: bash
+        run: |
+          set -euo pipefail
+          ok=0
+          for i in 1 2 3 4 5; do
+            if curl --proto '=https' --tlsv1.2 -fLsS --retry 3 --retry-all-errors \
+              https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh \
+              -o /tmp/elan-init.sh && sh /tmp/elan-init.sh -y --default-toolchain none; then
+              ok=1; break
+            fi
+            sleep 4
+          done
+          test "$ok" -eq 1
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Install pinned Lean 4.23 with bounded network retries
+        shell: bash
+        run: |
+          set -euo pipefail
+          ok=0
+          for i in 1 2 3 4 5; do
+            if elan toolchain install leanprover/lean4:v4.23.0; then
+              ok=1; break
+            fi
+            sleep 5
+          done
+          test "$ok" -eq 1
+          cd lean
+          lean --version
+      - name: Resolve exact pinned Mathlib and prove all modules
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd lean
+          lake update
+          lake exe cache get
+          lake build
