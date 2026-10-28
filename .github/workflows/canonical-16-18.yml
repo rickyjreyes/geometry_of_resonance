@@ -5,6 +5,7 @@ on:
     paths:
       - "lean/**"
       - "derivations/canonical_16_18_verify.py"
+      - "derivations/ghost_16_auxiliary_verify.py"
       - "docs/foundational/CANONICAL_FINITE_K_VERDICT_2026_10_27.md"
       - "docs/foundational/GHOST_FREE_COMPLETION_VERDICT_2026_10_27.md"
       - ".github/workflows/canonical-16-18.yml"
@@ -12,6 +13,7 @@ on:
     paths:
       - "lean/**"
       - "derivations/canonical_16_18_verify.py"
+      - "derivations/ghost_16_auxiliary_verify.py"
       - ".github/workflows/canonical-16-18.yml"
   workflow_dispatch:
 
@@ -29,4 +31,6 @@ jobs:
       - name: Install pinned SymPy
         run: python -m pip install sympy==1.14.0
       - name: Verify exact static and rotating symbols
-        run: python derivations/canonical_16_18_verify.py
+        run: |
+          python derivations/canonical_16_18_verify.py
+          python derivations/ghost_16_auxiliary_verify.py
