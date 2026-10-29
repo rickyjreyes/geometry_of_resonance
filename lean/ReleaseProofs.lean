@@ -15,5 +15,6 @@ import ReleaseProofs.R16_CompletionClasses
 import ReleaseProofs.R16_EnergyAndConstraints
 import ReleaseProofs.R16_AuxiliaryEquivalence
 import ReleaseProofs.R16_TwoFieldAffineObstruction
+import ReleaseProofs.R16_FiniteComponentAffine
 import ReleaseProofs.R16_LinearConstraintObstruction
 import ReleaseProofs.R16_TwoConstraintClassification
