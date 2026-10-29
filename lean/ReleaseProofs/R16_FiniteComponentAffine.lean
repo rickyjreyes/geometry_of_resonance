@@ -81,4 +81,45 @@ theorem affineHamiltonian_constant_iff_zero_velocity
     unfold affineHamiltonian
     simp [hz]
 
+
+/-- Exact characterization of lower boundedness for a finite-dimensional
+AFFINE canonical Hamiltonian: such a bound exists precisely when all
+unconstrained auxiliary velocities vanish. This does not classify
+reduced constrained Hamiltonians. -/
+theorem affineHamiltonian_bounded_below_iff
+    (n : ℕ) (Q : Fin n → ℝ) (C : ℝ) :
+    (∃ lower : ℝ, ∀ p : Fin n → ℝ,
+        lower ≤ affineHamiltonian n Q p C) ↔
+      ∀ i : Fin n, Q i = 0 := by
+  constructor
+  · rintro ⟨lower, hbound⟩ i
+    by_contra hi
+    obtain ⟨p, hp⟩ :=
+      affineHamiltonian_unbounded_below n Q C lower ⟨i, hi⟩
+    exact (not_lt_of_ge (hbound p)) hp
+  · intro hz
+    refine ⟨C, ?_⟩
+    intro p
+    have heq := (affineHamiltonian_constant_iff_zero_velocity n Q C).2 hz p
+    rw [heq]
+
+/-- Exact upper-boundedness criterion for the same finite-component
+unconstrained affine model. -/
+theorem affineHamiltonian_bounded_above_iff
+    (n : ℕ) (Q : Fin n → ℝ) (C : ℝ) :
+    (∃ upper : ℝ, ∀ p : Fin n → ℝ,
+        affineHamiltonian n Q p C ≤ upper) ↔
+      ∀ i : Fin n, Q i = 0 := by
+  constructor
+  · rintro ⟨upper, hbound⟩ i
+    by_contra hi
+    obtain ⟨p, hp⟩ :=
+      affineHamiltonian_unbounded_above n Q C upper ⟨i, hi⟩
+    exact (not_lt_of_ge (hbound p)) hp
+  · intro hz
+    refine ⟨C, ?_⟩
+    intro p
+    have heq := (affineHamiltonian_constant_iff_zero_velocity n Q C).2 hz p
+    rw [heq]
+
 end ReleaseProofs.R16FiniteComponent
