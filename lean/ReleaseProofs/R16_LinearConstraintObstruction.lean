@@ -93,12 +93,8 @@ theorem parallel_of_zero_transverse
     Q0 = (Q0 / a) * a ∧ Q1 = (Q0 / a) * b := by
   constructor
   · field_simp
-  · apply (eq_div_iff ha).mpr
-    have heq : a * Q1 = b * Q0 := by linarith
-    calc
-      Q1 * a = a * Q1 := mul_comm _ _
-      _ = b * Q0 := heq
-      _ = Q0 * b := mul_comm _ _
+  · field_simp
+    nlinarith [htrans]
 
 /-- Exact characterization of the linear-constraint boundary case:
 zero determinant makes the constrained energy fixed on every allowed
