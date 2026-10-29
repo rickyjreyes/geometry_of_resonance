@@ -30,8 +30,16 @@ theorem independent_constraints_have_solution
           (a * f - e * c) / (a * d - b * c), ?_, ?_⟩
   · field_simp [hdet]
     ring
-  · field_simp [hdet]
-    ring
+  · calc
+      c * ((e * d - b * f) / (a * d - b * c)) +
+          d * ((a * f - e * c) / (a * d - b * c)) =
+        (c * (e * d - b * f) + d * (a * f - e * c)) /
+          (a * d - b * c) := by ring
+      _ = f := by
+        have hn : c * (e * d - b * f) +
+            d * (a * f - e * c) = f * (a * d - b * c) := by ring
+        rw [hn]
+        field_simp [hdet]
 
 /-- Invertibility of the constraint matrix excludes two different
 canonical-momentum pairs satisfying the same two equations. -/
