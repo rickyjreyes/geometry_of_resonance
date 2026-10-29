@@ -69,4 +69,71 @@ theorem affine_energy_unbounded_above_with_one_linear_constraint
   rw [he]
   linarith
 
+/-- If the auxiliary-velocity vector is parallel to the normal of
+the imposed linear momentum constraint, the entire constrained
+Hamiltonian is actually constant. This is the sharp exceptional
+case excluded by the transverse unboundedness theorem. -/
+theorem affine_energy_constant_of_parallel
+    (Q0 Q1 C a b d lam p0 p1 : ℝ)
+    (hQ0 : Q0 = lam * a) (hQ1 : Q1 = lam * b)
+    (hc : a * p0 + b * p1 = d) :
+    twoFieldAffineEnergy Q0 Q1 p0 p1 C = lam * d + C := by
+  unfold twoFieldAffineEnergy
+  rw [hQ0, hQ1]
+  calc
+    lam * a * p0 + lam * b * p1 + C =
+        lam * (a * p0 + b * p1) + C := by ring
+    _ = lam * d + C := by rw [hc]
+
+/-- Vanishing transverse determinant forces exact collinearity with
+the constraint normal when a is nonzero. -/
+theorem parallel_of_zero_transverse
+    (Q0 Q1 a b : ℝ) (ha : a ≠ 0)
+    (htrans : a * Q1 - b * Q0 = 0) :
+    Q0 = (Q0 / a) * a ∧ Q1 = (Q0 / a) * b := by
+  constructor
+  · field_simp
+  · apply (eq_div_iff ha).mpr
+    have heq : a * Q1 = b * Q0 := by linarith
+    calc
+      Q1 * a = a * Q1 := mul_comm _ _
+      _ = b * Q0 := heq
+      _ = Q0 * b := mul_comm _ _
+
+/-- Exact characterization of the linear-constraint boundary case:
+zero determinant makes the constrained energy fixed on every allowed
+momentum configuration. -/
+theorem affine_energy_fixed_of_zero_transverse
+    (Q0 Q1 C a b d p0 p1 : ℝ)
+    (ha : a ≠ 0) (htrans : a * Q1 - b * Q0 = 0)
+    (hc : a * p0 + b * p1 = d) :
+    twoFieldAffineEnergy Q0 Q1 p0 p1 C = (Q0 / a) * d + C := by
+  obtain ⟨hQ0, hQ1⟩ := parallel_of_zero_transverse Q0 Q1 a b ha htrans
+  exact affine_energy_constant_of_parallel
+    Q0 Q1 C a b d (Q0 / a) p0 p1 hQ0 hQ1 hc
+
+/-- Sharp finite-dimensional classification: a single nondegenerate
+linear momentum constraint bounds the two-component affine energy
+below if and only if its normal is aligned with the velocity pair.
+The result assumes unrestricted canonical momenta and does not
+establish that such a constraint is dynamically preserved. -/
+theorem constrained_energy_bounded_below_iff
+    (Q0 Q1 C a b d : ℝ) (ha : a ≠ 0) :
+    (∃ L : ℝ, ∀ p0 p1 : ℝ,
+        a * p0 + b * p1 = d →
+          L ≤ twoFieldAffineEnergy Q0 Q1 p0 p1 C) ↔
+      a * Q1 - b * Q0 = 0 := by
+  constructor
+  · rintro ⟨L, hL⟩
+    by_contra hnonzero
+    obtain ⟨p0, p1, hc, hlt⟩ :=
+      affine_energy_unbounded_below_with_one_linear_constraint
+        Q0 Q1 C a b d L ha hnonzero
+    exact (not_le_of_gt hlt) (hL p0 p1 hc)
+  · intro hzero
+    refine ⟨(Q0 / a) * d + C, ?_⟩
+    intro p0 p1 hc
+    rw [affine_energy_fixed_of_zero_transverse
+      Q0 Q1 C a b d p0 p1 ha hzero hc]
+
 end ReleaseProofs.R16LinearConstraint
