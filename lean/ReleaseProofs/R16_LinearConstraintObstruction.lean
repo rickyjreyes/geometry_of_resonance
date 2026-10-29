@@ -81,7 +81,7 @@ theorem affine_energy_constant_of_parallel
   unfold twoFieldAffineEnergy
   rw [hQ0, hQ1]
   calc
-    lam * a * p0 + lam * b * p1 + C =
+    p0 * (lam * a) + p1 * (lam * b) + C =
         lam * (a * p0 + b * p1) + C := by ring
     _ = lam * d + C := by rw [hc]
 
