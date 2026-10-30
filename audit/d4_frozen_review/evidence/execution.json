@@ -1,0 +1,152 @@
+{
+  "schema": "d4-frozen-review-execution-v1",
+  "reviewed_base": "7264a760bee05fea89a1e42249b49f39bd078b78",
+  "mode": "with-private-rational-replay",
+  "python": "3.12.14",
+  "dependencies": {
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "numpy": "2.3.5",
+    "scipy": "1.16.2"
+  },
+  "input_sha256": {
+    "audit/d4_frozen_review/certify_gap.py": "98321cd01527694584fd7b6013680409e2481f893f2a8d37834e3460c003803f",
+    "audit/d4_frozen_review/check_identities.py": "758d29346e058859d8ab350c2f050cc5a34572ff0998a454fac6a504844d8b01",
+    "audit/d4_frozen_review/run_review.py": "d0f5191441e2467a2a09f3dbad1ae10ab6e51eeaa56efb1964d9143801753a08",
+    "audit/d4_frozen_review/test_certify_gap.py": "5056741a70bdcfeb856c36e0dbce9ddf9245d768d8f541c7c5d3ecbbaf55fe2a",
+    "audit/d4_frozen_review/validate_records.py": "b0e731df25abe91301615f47d80f67bbf6b99697a7e2e270e37c311691e3abb8",
+    "audit/d4_frozen_review/certificate.json": "d8721537857608cd48785809dffe58eb20986dca5272b8419939ba474bc9c2a8",
+    "docs/d4_frozen_review/PROOF.md": "e06a9b87921512a010ae9c9ef4f50b97d1016c2a534b0e92e4423755aae221cb"
+  },
+  "commands": [
+    {
+      "name": "fresh-rational-certificate",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/d3370afaa629/geometry_of_resonance/audit/d4_frozen_review/certify_gap.py",
+        "--output",
+        "/workspace/scratch/d3370afaa629/d4-review-complete/certificate.json"
+      ],
+      "started_at_utc": "2026-10-30T02:08:44.065430+00:00",
+      "seconds": 0.034,
+      "returncode": 0,
+      "log": "fresh-rational-certificate.log",
+      "log_sha256": "ee2e6d361d8c28339665a9f015e2e065fe0d02abb1a88617a61d53b3a6ef9d35"
+    },
+    {
+      "name": "committed-certificate-check",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/d3370afaa629/geometry_of_resonance/audit/d4_frozen_review/certify_gap.py",
+        "--check",
+        "/workspace/scratch/d3370afaa629/geometry_of_resonance/audit/d4_frozen_review/certificate.json"
+      ],
+      "started_at_utc": "2026-10-30T02:08:44.099377+00:00",
+      "seconds": 0.051,
+      "returncode": 0,
+      "log": "committed-certificate-check.log",
+      "log_sha256": "ee2e6d361d8c28339665a9f015e2e065fe0d02abb1a88617a61d53b3a6ef9d35"
+    },
+    {
+      "name": "optimized-python-check",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "/workspace/scratch/d3370afaa629/geometry_of_resonance/audit/d4_frozen_review/certify_gap.py",
+        "--check",
+        "/workspace/scratch/d3370afaa629/geometry_of_resonance/audit/d4_frozen_review/certificate.json"
+      ],
+      "started_at_utc": "2026-10-30T02:08:44.151146+00:00",
+      "seconds": 0.13,
+      "returncode": 0,
+      "log": "optimized-python-check.log",
+      "log_sha256": "ee2e6d361d8c28339665a9f015e2e065fe0d02abb1a88617a61d53b3a6ef9d35"
+    },
+    {
+      "name": "independent-exact-tests",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-v",
+        "-s",
+        "/workspace/scratch/d3370afaa629/geometry_of_resonance/audit/d4_frozen_review",
+        "-p",
+        "test_*.py"
+      ],
+      "started_at_utc": "2026-10-30T02:08:44.281789+00:00",
+      "seconds": 0.061,
+      "returncode": 0,
+      "log": "independent-exact-tests.log",
+      "log_sha256": "d15ce505893d8557f358c0e8b271a444e1292db0befdc54ac172e3a52516ed4b"
+    },
+    {
+      "name": "independent-symbolic-identities",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/d3370afaa629/geometry_of_resonance/audit/d4_frozen_review/check_identities.py",
+        "--output",
+        "/workspace/scratch/d3370afaa629/d4-review-complete/identities.json"
+      ],
+      "started_at_utc": "2026-10-30T02:08:44.343569+00:00",
+      "seconds": 0.596,
+      "returncode": 0,
+      "log": "independent-symbolic-identities.log",
+      "log_sha256": "a91dc90387fbfc6e24d36c325e84541cd6354388397d5629f31a9b5becc84b35"
+    },
+    {
+      "name": "inherited-phase-v-public",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "audit/d4_binding/reproduce.py",
+        "--public-ci",
+        "--output-dir",
+        "/workspace/scratch/d3370afaa629/d4-review-complete/baseline"
+      ],
+      "started_at_utc": "2026-10-30T02:08:44.940022+00:00",
+      "seconds": 10.127,
+      "returncode": 0,
+      "log": "inherited-phase-v-public.log",
+      "log_sha256": "3f62a2a5a80204c85719491f7445aede6c9caa5015bf883fbdebaa7a6ad588e6"
+    },
+    {
+      "name": "fresh-pinned-source-conventions",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "audit/d4_binding/verify_sources.py",
+        "--source-root",
+        "/workspace/scratch/d3370afaa629/wct-pde-frozen",
+        "--output",
+        "/workspace/scratch/d3370afaa629/d4-review-complete/source_verification.json"
+      ],
+      "started_at_utc": "2026-10-30T02:08:55.067096+00:00",
+      "seconds": 0.326,
+      "returncode": 0,
+      "log": "fresh-pinned-source-conventions.log",
+      "log_sha256": "79ff81fdae78b0a35768ca536426b560a338c5215f2d65a64ef4594a73140813"
+    },
+    {
+      "name": "fresh-periodic-rational-replay",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/d3370afaa629/wct-pde-frozen/tools/closure_d4_basin_rational_replay.py",
+        "--output",
+        "/workspace/scratch/d3370afaa629/d4-review-complete/d4_basin_replay.json"
+      ],
+      "started_at_utc": "2026-10-30T02:08:55.393277+00:00",
+      "seconds": 1.101,
+      "returncode": 0,
+      "log": "fresh-periodic-rational-replay.log",
+      "log_sha256": "ca7ec462f54bca6947dc6ed665e7f389e626113b211b4bdfec8646c5f1a98527"
+    }
+  ],
+  "all_commands_passed": true,
+  "scope": {
+    "numerical_infimum_comparisons": false,
+    "original_interval_campaign_rerun": false,
+    "proof_assistant_formalization": false,
+    "external_peer_review": false,
+    "private_rational_replay_executed": true
+  }
+}

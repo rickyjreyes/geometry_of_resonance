@@ -1,0 +1,15 @@
+test_basis_transform_known_polynomials (test_certify_gap.ExactGapTests.test_basis_transform_known_polynomials) ... ok
+test_endpoint_extremely_small_component_no_underflow (test_certify_gap.ExactGapTests.test_endpoint_extremely_small_component_no_underflow) ... ok
+test_excessive_claim_rejected (test_certify_gap.ExactGapTests.test_excessive_claim_rejected) ... ok
+test_hex_decoding_against_integer_fixtures_and_binary64 (test_certify_gap.ExactGapTests.test_hex_decoding_against_integer_fixtures_and_binary64) ... ok
+test_independent_cubic_interpolation_recovers_bernstein (test_certify_gap.ExactGapTests.test_independent_cubic_interpolation_recovers_bernstein) ... ok
+test_machin_angle_tangent_exactly_one (test_certify_gap.ExactGapTests.test_machin_angle_tangent_exactly_one) ... ok
+test_overstated_proof_scope_rejected (test_certify_gap.ExactGapTests.test_overstated_proof_scope_rejected) ... ok
+test_polynomial_and_bernstein_evaluations_agree_exactly (test_certify_gap.ExactGapTests.test_polynomial_and_bernstein_evaluations_agree_exactly) ... ok
+test_tampered_scalar_certificate_rejected (test_certify_gap.ExactGapTests.test_tampered_scalar_certificate_rejected) ... ok
+test_upper_root_and_frozen_margin (test_certify_gap.ExactGapTests.test_upper_root_and_frozen_margin) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.005s
+
+OK

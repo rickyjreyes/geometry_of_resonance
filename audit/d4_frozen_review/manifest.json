@@ -1,0 +1,232 @@
+{
+  "schema": "d4-frozen-review-manifest-v1",
+  "reviewed_base": "7264a760bee05fea89a1e42249b49f39bd078b78",
+  "files": [
+    {
+      "path": ".github/workflows/d4-frozen-review.yml",
+      "sha256": "e88cbb6044b5627a094b3e82a7e7d6232fa9faa7c7b120fb5e72d6ad250aca73"
+    },
+    {
+      "path": "audit/d4_frozen_review/README.md",
+      "sha256": "9bf255e63dfdc4cb2531ddd6b01852f18015dbf209c4801c182ca652f29bdc20"
+    },
+    {
+      "path": "audit/d4_frozen_review/certificate.json",
+      "sha256": "d8721537857608cd48785809dffe58eb20986dca5272b8419939ba474bc9c2a8"
+    },
+    {
+      "path": "audit/d4_frozen_review/certify_gap.py",
+      "sha256": "98321cd01527694584fd7b6013680409e2481f893f2a8d37834e3460c003803f"
+    },
+    {
+      "path": "audit/d4_frozen_review/check_identities.py",
+      "sha256": "758d29346e058859d8ab350c2f050cc5a34572ff0998a454fac6a504844d8b01"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/baseline_execution.json",
+      "sha256": "9b64163499756c48a88b4607bbff78ed9ed423df2cb9c23239596986e0ae47b1"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/baseline_logs/all-derivation-regressions.log",
+      "sha256": "da7be2425bdccf356a53bf61dc724fafb9acbff0724b9745b67470a2046ffad9"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/baseline_logs/cross-paper-replay.log",
+      "sha256": "d41f1065e470d9df56fc1ac343f39d56a9826d9916f3f46fde22b23abdaf3bec"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/baseline_logs/historical-d4-scope.log",
+      "sha256": "01c6507233454073ec1515805938b8a701558afbf5fc8483d6ce77cf1857702f"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/baseline_logs/phase-v-adversarial.log",
+      "sha256": "ed8e1f78af582f9a2ea5ec15b6d2ef55a0e0eb5c7df0887bf02c811201ad5414"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/baseline_logs/phase-v-identities.log",
+      "sha256": "dbab6e9e081681450d2daa013d87ffa0c8d585b6f4885424d6aa789956fbc9ed"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/baseline_logs/phase-v-recorded-evidence.log",
+      "sha256": "9a7e388dd6325a823f507fa63c65c7576a72f5c2ad62fa65b11192c66eb0906d"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/baseline_logs/pr33-identities.log",
+      "sha256": "e510d16f99888876ed79c42d572db122ef216f29c38cd4a72a20b13337167d96"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/baseline_logs/pr33-integrity.log",
+      "sha256": "6a146309353a90be677230496710b8102b7867df39d3c5d5bd226f7fe5f647dd"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/baseline_logs/pr34-identities.log",
+      "sha256": "f6b1890e51e862e1d298f29b6e5e46353392cacc769c5e0c3c5260f0c9493fe3"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/baseline_logs/pr34-integrity.log",
+      "sha256": "6826cc06ff8ac5ae3f419a38cebde8fb3aacfc9c82221346e20a818896ca4cb5"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/baseline_logs/pr35-adversarial.log",
+      "sha256": "f0add20f3a188c6ca9add2cef21ade350c1c6b6a2b5ac58c36f09b9ce421ec79"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/baseline_logs/pr35-identities.log",
+      "sha256": "ae71b4b756e0d55283bc9111caedb99447e31ff385d16a348c4b3b9457925920"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/baseline_logs/pr35-integrity.log",
+      "sha256": "75bf13822e25202a0529202365e453e09c1bcad1e90c40d5f1e44d13be29b0f1"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/baseline_logs/prospective-gate-self-test.log",
+      "sha256": "e397f3d9b29290b35c954ec5b02d73b8051f862b2e80ea6b88c8c9205b926065"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/baseline_logs/prospective-regressions.log",
+      "sha256": "65b53d99e2759078c340e00cb3a51753800aba9a19d65fe0d7903bdc69ac02e4"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/committed-certificate-check.log",
+      "sha256": "ee2e6d361d8c28339665a9f015e2e065fe0d02abb1a88617a61d53b3a6ef9d35"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/d4_basin_replay.json",
+      "sha256": "e48d4ff956ab8366d4bd24109025de849a7612db9716ebd0ccd090b794718eb9"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/execution.json",
+      "sha256": "f1e35b2921592d3f9ae0fc73582906c134e061dad0f5ecd032996dfc0195ff70"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/fresh-periodic-rational-replay.log",
+      "sha256": "ca7ec462f54bca6947dc6ed665e7f389e626113b211b4bdfec8646c5f1a98527"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/fresh-pinned-source-conventions.log",
+      "sha256": "79ff81fdae78b0a35768ca536426b560a338c5215f2d65a64ef4594a73140813"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/fresh-rational-certificate.log",
+      "sha256": "ee2e6d361d8c28339665a9f015e2e065fe0d02abb1a88617a61d53b3a6ef9d35"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/identities.json",
+      "sha256": "2262232d8442a527b8208f51145d79dad6331139e492c39c2a8249aa0e2e0bf0"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/independent-exact-tests.log",
+      "sha256": "d15ce505893d8557f358c0e8b271a444e1292db0befdc54ac172e3a52516ed4b"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/independent-symbolic-identities.log",
+      "sha256": "a91dc90387fbfc6e24d36c325e84541cd6354388397d5629f31a9b5becc84b35"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/inherited-phase-v-public.log",
+      "sha256": "3f62a2a5a80204c85719491f7445aede6c9caa5015bf883fbdebaa7a6ad588e6"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/optimized-python-check.log",
+      "sha256": "ee2e6d361d8c28339665a9f015e2e065fe0d02abb1a88617a61d53b3a6ef9d35"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/source_extraction.json",
+      "sha256": "d8d8cbc12439bc266e30807df0ab9263377ed8535b67eee80aa7aba6ae3b4411"
+    },
+    {
+      "path": "audit/d4_frozen_review/evidence/source_verification.json",
+      "sha256": "5d9b6eacd1f71f6f3ce0282c9437a4669f4c0262089ac49a05fc443e8503549d"
+    },
+    {
+      "path": "audit/d4_frozen_review/run_review.py",
+      "sha256": "d0f5191441e2467a2a09f3dbad1ae10ab6e51eeaa56efb1964d9143801753a08"
+    },
+    {
+      "path": "audit/d4_frozen_review/test_certify_gap.py",
+      "sha256": "5056741a70bdcfeb856c36e0dbce9ddf9245d768d8f541c7c5d3ecbbaf55fe2a"
+    },
+    {
+      "path": "audit/d4_frozen_review/validate_records.py",
+      "sha256": "b0e731df25abe91301615f47d80f67bbf6b99697a7e2e270e37c311691e3abb8"
+    },
+    {
+      "path": "docs/d4_frozen_review/PROOF.md",
+      "sha256": "e06a9b87921512a010ae9c9ef4f50b97d1016c2a534b0e92e4423755aae221cb"
+    },
+    {
+      "path": "docs/d4_frozen_review/SCIENTIFIC_AUDIT.md",
+      "sha256": "6aecec5c387e1625d5da811d4c980a52293ab1f746b1ed30bb8ed83913a1a5a0"
+    }
+  ],
+  "inherited_pins": [
+    {
+      "path": "audit/d4_binding/execution.json",
+      "sha256": "603b9128bde5aa45b6d15bba2e3ad0de42dd2a413faa33d53237a2d993016365"
+    },
+    {
+      "path": "audit/d4_binding/manifest.json",
+      "sha256": "9e93da63b74cf4eefb7afd881a656bc2c7be5bdc83c0d6cc1971cee1eb9c6f6f"
+    },
+    {
+      "path": "audit/d4_binding/source_ledger.json",
+      "sha256": "ba0afb844a1e72d12d20555910edb098ac9f50b2032c30e9089af88d8402131c"
+    },
+    {
+      "path": "audit/d4_binding/verification.json",
+      "sha256": "8dce69f32fa90a0367bdec924d6f03bcc44afc1189b2e6b25aef9f8bda6f740b"
+    },
+    {
+      "path": "audit/foundational/manifest.json",
+      "sha256": "b34d0abe57d8b4a912797e559185064563d9edee02c986e1d0deee6ababc0da0"
+    },
+    {
+      "path": "audit/foundational_recovery/manifest.json",
+      "sha256": "f73c08db1f3541d9278283b4b8b501b330eea22ae7fb42e74aae516dffcf6794"
+    },
+    {
+      "path": "audit/strict_binding/manifest.json",
+      "sha256": "0ad9f599679c4420804859d4ecf021a14bec7df9c33724721f59e0d836a3383a"
+    },
+    {
+      "path": "derivations/d4_binding.py",
+      "sha256": "85b15774f01d37350ed860234137e90154b66d4c0aaacb41f3ec282db4490b05"
+    },
+    {
+      "path": "derivations/test_d4_binding.py",
+      "sha256": "f70bbaee9d269edcc2c11a6b5a3a1e00ed16081cf30d2448fe7e8343fb26a372"
+    },
+    {
+      "path": "docs/d4_binding/D4_ADVERSARIAL_SPLITTING_TESTS.md",
+      "sha256": "49cd17c99f14dad53d8380f337f9828bb30fc6045b692b56d8be64e73d15d35d"
+    },
+    {
+      "path": "docs/d4_binding/D4_ENDPOINT_BINDING_ANALYSIS.md",
+      "sha256": "89ff41245df092a31787b512f5db8d30c94a19d84b6a08045675866571c33952"
+    },
+    {
+      "path": "docs/d4_binding/D4_ENERGY_PER_MASS_ANALYSIS.md",
+      "sha256": "652903a9cfdf272e6aca34ed487d53eeb1aaa75f57821d3b434a63ab5d1c7bc6"
+    },
+    {
+      "path": "docs/d4_binding/D4_ORBITAL_STABILITY_STATUS.md",
+      "sha256": "c8eeb39e70d2d62224b4e310d0fe6a555c4347c82e325dc3b31c6c2b10ffb34f"
+    },
+    {
+      "path": "docs/d4_binding/D4_PROOF_DEPENDENCY_GRAPH.md",
+      "sha256": "816938c88ae13bb66662734c6e881432f73f5232f15a97c98d478b297d9fd23f"
+    },
+    {
+      "path": "docs/d4_binding/D4_STRICT_BINDING_DECISION.md",
+      "sha256": "b1c940f49539ea72f60140cb8580b50188e577a475da563338b41edfef38d9fc"
+    },
+    {
+      "path": "docs/d4_binding/D4_SUBADDITIVITY_PROOF_OR_COUNTEREXAMPLE.md",
+      "sha256": "9d9a8cbc1d20f5e244fb441e07dbb7b01dc75b6baa5996baa5dae4e4b8fc9d06"
+    },
+    {
+      "path": "docs/d4_binding/D4_WHOLE_SPACE_COMPACTNESS.md",
+      "sha256": "65ba9577aa9a2cf16ab694af82050ab8518a6f5fd07e968bcf15a6c0ddb46690"
+    }
+  ]
+}
