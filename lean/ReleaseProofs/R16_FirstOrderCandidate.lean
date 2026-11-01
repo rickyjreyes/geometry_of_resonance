@@ -56,13 +56,33 @@ theorem candidate_lagrangian_affine (w x y vx vy hx hy : ℝ) :
   unfold candidateLagrangian
   ring
 
-/-- The candidate's Euler–Lagrange equations are first order: `ẏ = 2 w x`, `ẋ = -2 w y` (the
-real form of `i ċ = 2 w c`). The function below is that first-order vector field, and the
-energy `w (x² + y²)` is conserved along it. -/
+/-- Partial derivatives of `candidateLagrangian`, computed exactly from its definition:
+`∂L/∂vx = -y/2`, `∂L/∂vy = x/2`, `∂L/∂x = vy/2 - 2wx`, `∂L/∂y = -vx/2 - 2wy`. -/
+theorem candidate_partials (w x y vx vy h : ℝ) :
+    candidateLagrangian w x y (vx + h) vy - candidateLagrangian w x y vx vy = (-y / 2) * h ∧
+    candidateLagrangian w x y vx (vy + h) - candidateLagrangian w x y vx vy = (x / 2) * h ∧
+    candidateLagrangian w (x + h) y vx vy - candidateLagrangian w x y vx vy =
+      (vy / 2 - 2 * w * x) * h - w * h ^ 2 ∧
+    candidateLagrangian w x (y + h) vx vy - candidateLagrangian w x y vx vy =
+      (-vx / 2 - 2 * w * y) * h - w * h ^ 2 := by
+  unfold candidateLagrangian
+  refine ⟨?_, ?_, ?_, ?_⟩ <;> ring
+
+/-- **First-order Euler–Lagrange system.** With the partials above, the Euler–Lagrange
+equations `d/dt(∂L/∂vx) = ∂L/∂x` and `d/dt(∂L/∂vy) = ∂L/∂y` read
+`-ẏ/2 = ẏ/2 - 2wx` and `ẋ/2 = -ẋ/2 - 2wy`, i.e. exactly `ẏ = 2wx`, `ẋ = -2wy`. These are first
+order: no acceleration and no extra initial data. -/
+theorem candidate_euler_lagrange_iff (w x y vx vy : ℝ) :
+    (-vy / 2 = vy / 2 - 2 * w * x ∧ vx / 2 = -vx / 2 - 2 * w * y) ↔
+      (vy = 2 * w * x ∧ vx = -2 * w * y) := by
+  constructor
+  · rintro ⟨h1, h2⟩; constructor <;> linarith
+  · rintro ⟨h1, h2⟩; constructor <;> linarith
+
+/-- The mode energy `w (x² + y²)` is conserved along the first-order flow:
+`d/dt [w (x² + y²)] = w (2x ẋ + 2y ẏ) = 0` when `ẋ = -2wy`, `ẏ = 2wx`. -/
 theorem candidate_energy_conserved (w x y : ℝ) :
-    (2 * w * x) * (-2 * w * y) + (2 * w * y) * (2 * w * x) = 0 ∧
-      w * (2 * x * (-2 * w * y) + 2 * y * (2 * w * x)) = 0 := by
-  constructor <;> ring
+    w * (2 * x * (-2 * w * y) + 2 * y * (2 * w * x)) = 0 := by ring
 
 /-- Linear Fourier symbol of `(Δ + k²)²`, with `q = |ξ|²`. -/
 def candidateSymbol (k q : ℝ) : ℝ := (k ^ 2 - q) ^ 2

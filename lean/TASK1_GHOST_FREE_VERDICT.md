@@ -56,7 +56,8 @@ These theorems cover Lagrangians `L = ½⟪a, W a⟫ + ⟪b(q,v), a⟫ + c(q,v)`
 | Theorem | Statement |
 |---|---|
 | `candidate_lagrangian_affine` | Mode Lagrangian is affine in velocity: zero velocity Hessian, no acceleration |
-| `candidate_energy_conserved` | First-order mode flow conserves mode energy |
+| `candidate_partials`, `candidate_euler_lagrange_iff` | Exact partials; the Euler–Lagrange system is the first-order flow `ẏ = 2wx`, `ẋ = -2wy` |
+| `candidate_energy_conserved` | That flow conserves the mode energy |
 | `candidate_symbol_nonneg/zero_iff/unique_min` | `ω(q) = (k²-q)² ≥ 0`, with a unique zero at `q = k²` |
 | `candidate_mode_energy_nonneg` | Every linear mode has energy `≥ 0` |
 | `candidate_density_lower`, `candidate_density_sharp` | `-(β/2)r² + (γ/3)r³ ≥ -(3β²/16γ) r`, and the bound is sharp |
