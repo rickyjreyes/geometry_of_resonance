@@ -14,3 +14,6 @@ import ReleaseProofs.R18_Onset
 import ReleaseProofs.R16_CompletionClasses
 import ReleaseProofs.R16_EnergyAndConstraints
 import ReleaseProofs.R16_AuxiliaryEquivalence
+import ReleaseProofs.R16_OstrogradskyClass
+import ReleaseProofs.R16_PaisUhlenbeck
+import ReleaseProofs.R16_FirstOrderCandidate
