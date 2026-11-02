@@ -22,4 +22,6 @@
 
 Grounding: `docs/cross_paper/QUADRATIC_ACTION_AND_DISPERSION.md` (Q6–Q7), `docs/cross_paper/FINITE_SCALE_SELECTION.md` (F1–F2), and `docs/foundational/GHOST_AND_CONSTRAINT_ANALYSIS.md` (H2/H4).
 
+Task 1 follow-up (class-wide Ostrogradsky obstruction, exact S004 Pais–Uhlenbeck ghost split, first-order candidate structure): see `TASK1_GHOST_FREE_VERDICT.md`.
+
 Do **not** close issues #16 or #18 based only on these Lean modules.
