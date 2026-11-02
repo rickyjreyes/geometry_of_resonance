@@ -1,0 +1,258 @@
+{
+  "schema": "d4-binding-execution-v1",
+  "frozen_base": "65499cabca7e177286b6541fa1a5a00d51a50ba5",
+  "date_local": "2026-10-23 America/Los_Angeles",
+  "mode": "public-ci",
+  "python": "3.12.14",
+  "dependencies": {
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "numpy": "2.3.5",
+    "scipy": "1.16.2"
+  },
+  "implementation_sha256": {
+    "audit/d4_binding/reproduce.py": "043012f8f67b045b0a2845f1d8db050b3fade6eec706ae523a7e85b0ccdb4e2c",
+    "audit/d4_binding/run_diagnostics.py": "1dd3f506b77d0686f64a78a752ce6ff1eb12d812a5c748f4f021bb63e9cd85fe",
+    "audit/d4_binding/verify_sources.py": "770006ff64a6784eb4a63d06c5ce6a5932451b759ac5592c5c81f31df6d2482c",
+    "audit/d4_binding/source_ledger.json": "ba0afb844a1e72d12d20555910edb098ac9f50b2032c30e9089af88d8402131c",
+    "derivations/d4_binding.py": "85b15774f01d37350ed860234137e90154b66d4c0aaacb41f3ec282db4490b05",
+    "derivations/test_d4_binding.py": "f70bbaee9d269edcc2c11a6b5a3a1e00ed16081cf30d2448fe7e8343fb26a372"
+  },
+  "commands": [
+    {
+      "name": "phase-v-identities",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "derivations/d4_binding.py",
+        "--output",
+        "/workspace/scratch/d3370afaa629/d4-review-complete/baseline/verification.json"
+      ],
+      "cwd": "/workspace/scratch/d3370afaa629/geometry_of_resonance",
+      "started_at_utc": "2026-10-30T02:08:44.998689+00:00",
+      "seconds": 0.698,
+      "returncode": 0,
+      "log": "phase-v-identities.log",
+      "log_sha256": "dbab6e9e081681450d2daa013d87ffa0c8d585b6f4885424d6aa789956fbc9ed"
+    },
+    {
+      "name": "phase-v-adversarial",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "audit/d4_binding/run_diagnostics.py",
+        "--output",
+        "/workspace/scratch/d3370afaa629/d4-review-complete/baseline/diagnostics.json"
+      ],
+      "cwd": "/workspace/scratch/d3370afaa629/geometry_of_resonance",
+      "started_at_utc": "2026-10-30T02:08:45.697287+00:00",
+      "seconds": 0.637,
+      "returncode": 0,
+      "log": "phase-v-adversarial.log",
+      "log_sha256": "ed8e1f78af582f9a2ea5ec15b6d2ef55a0e0eb5c7df0887bf02c811201ad5414"
+    },
+    {
+      "name": "all-derivation-regressions",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-v",
+        "-s",
+        "derivations",
+        "-p",
+        "test_*.py"
+      ],
+      "cwd": "/workspace/scratch/d3370afaa629/geometry_of_resonance",
+      "started_at_utc": "2026-10-30T02:08:46.334978+00:00",
+      "seconds": 2.036,
+      "returncode": 0,
+      "log": "all-derivation-regressions.log",
+      "log_sha256": "da7be2425bdccf356a53bf61dc724fafb9acbff0724b9745b67470a2046ffad9"
+    },
+    {
+      "name": "pr35-identities",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "derivations/strict_binding.py",
+        "--output",
+        "/workspace/scratch/d3370afaa629/d4-review-complete/baseline/pr35_verification.json"
+      ],
+      "cwd": "/workspace/scratch/d3370afaa629/geometry_of_resonance",
+      "started_at_utc": "2026-10-30T02:08:48.371136+00:00",
+      "seconds": 0.612,
+      "returncode": 0,
+      "log": "pr35-identities.log",
+      "log_sha256": "ae71b4b756e0d55283bc9111caedb99447e31ff385d16a348c4b3b9457925920"
+    },
+    {
+      "name": "pr35-adversarial",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "audit/strict_binding/run_diagnostics.py",
+        "--output",
+        "/workspace/scratch/d3370afaa629/d4-review-complete/baseline/pr35_diagnostics.json"
+      ],
+      "cwd": "/workspace/scratch/d3370afaa629/geometry_of_resonance",
+      "started_at_utc": "2026-10-30T02:08:48.983259+00:00",
+      "seconds": 0.804,
+      "returncode": 0,
+      "log": "pr35-adversarial.log",
+      "log_sha256": "f0add20f3a188c6ca9add2cef21ade350c1c6b6a2b5ac58c36f09b9ce421ec79"
+    },
+    {
+      "name": "pr34-identities",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "derivations/foundational_recovery.py",
+        "--output",
+        "/workspace/scratch/d3370afaa629/d4-review-complete/baseline/pr34_verification.json"
+      ],
+      "cwd": "/workspace/scratch/d3370afaa629/geometry_of_resonance",
+      "started_at_utc": "2026-10-30T02:08:49.787295+00:00",
+      "seconds": 0.862,
+      "returncode": 0,
+      "log": "pr34-identities.log",
+      "log_sha256": "f6b1890e51e862e1d298f29b6e5e46353392cacc769c5e0c3c5260f0c9493fe3"
+    },
+    {
+      "name": "pr33-identities",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "derivations/foundational_closure.py",
+        "--output",
+        "/workspace/scratch/d3370afaa629/d4-review-complete/baseline/pr33_verification.json"
+      ],
+      "cwd": "/workspace/scratch/d3370afaa629/geometry_of_resonance",
+      "started_at_utc": "2026-10-30T02:08:50.649650+00:00",
+      "seconds": 1.02,
+      "returncode": 0,
+      "log": "pr33-identities.log",
+      "log_sha256": "e510d16f99888876ed79c42d572db122ef216f29c38cd4a72a20b13337167d96"
+    },
+    {
+      "name": "cross-paper-replay",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/d3370afaa629/d4-review-complete/baseline/cross_paper/verify.py"
+      ],
+      "cwd": "/workspace/scratch/d3370afaa629/geometry_of_resonance",
+      "started_at_utc": "2026-10-30T02:08:51.670085+00:00",
+      "seconds": 3.156,
+      "returncode": 0,
+      "log": "cross-paper-replay.log",
+      "log_sha256": "d41f1065e470d9df56fc1ac343f39d56a9826d9916f3f46fde22b23abdaf3bec"
+    },
+    {
+      "name": "pr33-integrity",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "audit/foundational/validate_records.py"
+      ],
+      "cwd": "/workspace/scratch/d3370afaa629/geometry_of_resonance",
+      "started_at_utc": "2026-10-30T02:08:54.826376+00:00",
+      "seconds": 0.026,
+      "returncode": 0,
+      "log": "pr33-integrity.log",
+      "log_sha256": "6a146309353a90be677230496710b8102b7867df39d3c5d5bd226f7fe5f647dd"
+    },
+    {
+      "name": "pr34-integrity",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "audit/foundational_recovery/validate_records.py"
+      ],
+      "cwd": "/workspace/scratch/d3370afaa629/geometry_of_resonance",
+      "started_at_utc": "2026-10-30T02:08:54.853141+00:00",
+      "seconds": 0.029,
+      "returncode": 0,
+      "log": "pr34-integrity.log",
+      "log_sha256": "6826cc06ff8ac5ae3f419a38cebde8fb3aacfc9c82221346e20a818896ca4cb5"
+    },
+    {
+      "name": "pr35-integrity",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "audit/strict_binding/validate_records.py"
+      ],
+      "cwd": "/workspace/scratch/d3370afaa629/geometry_of_resonance",
+      "started_at_utc": "2026-10-30T02:08:54.882416+00:00",
+      "seconds": 0.034,
+      "returncode": 0,
+      "log": "pr35-integrity.log",
+      "log_sha256": "75bf13822e25202a0529202365e453e09c1bcad1e90c40d5f1e44d13be29b0f1"
+    },
+    {
+      "name": "historical-d4-scope",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "audit/d4_handoff/validate_claims.py"
+      ],
+      "cwd": "/workspace/scratch/d3370afaa629/geometry_of_resonance",
+      "started_at_utc": "2026-10-30T02:08:54.916520+00:00",
+      "seconds": 0.023,
+      "returncode": 0,
+      "log": "historical-d4-scope.log",
+      "log_sha256": "01c6507233454073ec1515805938b8a701558afbf5fc8483d6ce77cf1857702f"
+    },
+    {
+      "name": "prospective-gate-self-test",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "audit/prospective/freeze_gate.py",
+        "--self-test"
+      ],
+      "cwd": "/workspace/scratch/d3370afaa629/geometry_of_resonance",
+      "started_at_utc": "2026-10-30T02:08:54.939514+00:00",
+      "seconds": 0.034,
+      "returncode": 0,
+      "log": "prospective-gate-self-test.log",
+      "log_sha256": "e397f3d9b29290b35c954ec5b02d73b8051f862b2e80ea6b88c8c9205b926065"
+    },
+    {
+      "name": "prospective-regressions",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-v",
+        "-s",
+        "audit/prospective",
+        "-p",
+        "test_*.py"
+      ],
+      "cwd": "/workspace/scratch/d3370afaa629/geometry_of_resonance",
+      "started_at_utc": "2026-10-30T02:08:54.974326+00:00",
+      "seconds": 0.049,
+      "returncode": 0,
+      "log": "prospective-regressions.log",
+      "log_sha256": "65b53d99e2759078c340e00cb3a51753800aba9a19d65fe0d7903bdc69ac02e4"
+    },
+    {
+      "name": "phase-v-recorded-evidence",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "audit/d4_binding/validate_records.py"
+      ],
+      "cwd": "/workspace/scratch/d3370afaa629/geometry_of_resonance",
+      "started_at_utc": "2026-10-30T02:08:55.023374+00:00",
+      "seconds": 0.031,
+      "returncode": 0,
+      "log": "phase-v-recorded-evidence.log",
+      "log_sha256": "9a7e388dd6325a823f507fa63c65c7576a72f5c2ad62fa65b11192c66eb0906d"
+    }
+  ],
+  "all_commands_passed": true,
+  "scope": {
+    "D4_private_inputs_hash_checked": false,
+    "D4_rational_replay_executed": false,
+    "private_source_conventions_checked": false,
+    "recorded_evidence_validated": true,
+    "fresh_authenticated_source_extraction_receipt_included": false,
+    "original_D4_interval_campaign_rerun": false,
+    "PDE_propagation": false,
+    "stationary_root_search": false,
+    "external_mathematical_review": false,
+    "physical_spectrum": false
+  }
+}

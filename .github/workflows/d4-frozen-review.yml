@@ -1,0 +1,40 @@
+name: Frozen D4 rational split deficit
+
+on:
+  pull_request:
+    paths:
+      - "docs/d4_frozen_review/**"
+      - "audit/d4_frozen_review/**"
+      - ".github/workflows/d4-frozen-review.yml"
+  push:
+    branches: [main]
+    paths:
+      - "docs/d4_frozen_review/**"
+      - "audit/d4_frozen_review/**"
+      - ".github/workflows/d4-frozen-review.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  exact-gap-and-inherited-proof:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pinned dependencies for inherited and symbolic checks
+        run: python -m pip install sympy==1.14.0 mpmath==1.3.0 numpy==2.3.5 scipy==1.16.2
+      - name: Validate the additive review manifest
+        run: python audit/d4_frozen_review/validate_records.py
+      - name: Reproduce the continuous-interval certificate and historical baseline
+        run: python audit/d4_frozen_review/run_review.py --output-dir /tmp/d4-frozen-review
+      - name: Upload fresh public-scope receipts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: d4-frozen-rational-deficit
+          path: /tmp/d4-frozen-review
+          if-no-files-found: error

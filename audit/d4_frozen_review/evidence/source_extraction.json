@@ -1,0 +1,51 @@
+{
+  "revision": "051b6eca10c46b8e038993d60cabb20715194a20",
+  "retrieved_at_utc": "2026-10-30T02:00:21.238436+00:00",
+  "transport": "authenticated GitHub fetch_file base64",
+  "files": [
+    {
+      "path": "src/wct_pde/projection_free.py",
+      "sha256": "24a172c650b4e2d722855f3c3e0ed0b66ae8117ae81b70ab5dc3af3ae486ddc1",
+      "git_blob_sha1": "7af71d28ac1d22f91e61dd10b53436bb1d2ea0f3",
+      "bytes": 22978
+    },
+    {
+      "path": "tools/closure_d4_basin_rational_replay.py",
+      "sha256": "7e3c715064ea6e04ce8c82741f9ba8fe01c18083f955ab685cda9213ee31a6f3",
+      "git_blob_sha1": "aa737ae2148bed6b041762eb7e2b298d70eca8e7",
+      "bytes": 4653
+    },
+    {
+      "path": "docs/evidence/d4_independent_closure/d4_independent_existence_v2/certificate.json",
+      "sha256": "f8426d1975a84a686ec1215e1001f23e37a47d8fdd058eda8ddb3df36a72f27a",
+      "git_blob_sha1": "1a73b0a431f11a8d45855d22c74111046d5c770b",
+      "bytes": 2854
+    },
+    {
+      "path": "docs/evidence/d4_independent_closure/d4_independent_coercivity_final192/certificate.json",
+      "sha256": "cdd8122229b8adac0c1ee5826dc2f4f0bbdbc385dd95e0e19bfc76370171a6ad",
+      "git_blob_sha1": "97e506dac4e12261db9e7f0ba9f860dcd8839a01",
+      "bytes": 5556
+    },
+    {
+      "path": "docs/evidence/d4_production_recovery/existence/fourier_candidate.npz",
+      "sha256": "9fcf8e3275db6dd646f6fa6fd0ee5f937819bca281bd5adffb93abc9b100bb6d",
+      "git_blob_sha1": "ceecc2f954491dca05ca20a1dee2fba9e8e0614c",
+      "bytes": 70587
+    }
+  ],
+  "supporting_review_files": [
+    {
+      "path": "tools/closure_d4_independent_existence.py",
+      "sha256": "501fb2bee3c3086c8783285c7899aaee6fc151fb7506fd87b594dbc6c2eeb705",
+      "git_blob_sha1": "f0742534001d108205fcc273a553a698b0a7bcbb",
+      "bytes": 10432
+    },
+    {
+      "path": "docs/D4_INDEPENDENT_EXISTENCE_AUDIT.md",
+      "sha256": "f4468da8d7284945987dd87516ee640016882f89831cd66f650e9d7973ccab27",
+      "git_blob_sha1": "99e6988597d11dd7421ed7a7884c3e1b1a91782c",
+      "bytes": 9790
+    }
+  ]
+}

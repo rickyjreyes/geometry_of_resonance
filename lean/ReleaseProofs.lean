@@ -14,4 +14,12 @@ import ReleaseProofs.R18_Onset
 import ReleaseProofs.R16_CompletionClasses
 import ReleaseProofs.R16_EnergyAndConstraints
 import ReleaseProofs.R16_AuxiliaryEquivalence
+import ReleaseProofs.R16_TwoFieldAffineObstruction
+import ReleaseProofs.R16_FiniteComponentAffine
+import ReleaseProofs.R16_LinearConstraintObstruction
+import ReleaseProofs.R16_TwoConstraintClassification
+
+import ReleaseProofs.R16_OstrogradskyClass
+import ReleaseProofs.R16_PaisUhlenbeck
+import ReleaseProofs.R16_FirstOrderCandidate
 import ReleaseProofs.R13_ScaleFreedom
