@@ -1,0 +1,17 @@
+phase-v-identities: PASS
+phase-v-adversarial: PASS
+all-derivation-regressions: PASS
+pr35-identities: PASS
+pr35-adversarial: PASS
+pr34-identities: PASS
+pr33-identities: PASS
+cross-paper-replay: PASS
+pr33-integrity: PASS
+pr34-integrity: PASS
+pr35-integrity: PASS
+historical-d4-scope: PASS
+prospective-gate-self-test: PASS
+prospective-regressions: PASS
+phase-v-recorded-evidence: PASS
+All 15 command groups passed.
+Public CI validates recorded private-source D4 evidence; it does NOT execute the private-source replay.

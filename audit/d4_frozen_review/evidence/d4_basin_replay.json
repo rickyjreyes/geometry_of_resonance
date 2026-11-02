@@ -1,0 +1,28 @@
+{
+  "schema": "D4_BASIN_RATIONAL_REPLAY_V1",
+  "status": "PASS",
+  "arithmetic": "Fraction + integer isqrt; Machin pi interval; no FLINT/Arb",
+  "checks": {
+    "energy_upper": true,
+    "modulation_contraction": true,
+    "slice_inclusion": true,
+    "energy_barrier_with_factor_four": true,
+    "positive_delta": true
+  },
+  "pi_interval": [
+    "19634954084936207740391521145496893/6250000000000000000000000000000000",
+    "314159265358979323846264338327950289/100000000000000000000000000000000000"
+  ],
+  "modulation_factor_exact": "1783/34",
+  "derivative_bound_exact": "103569/115600000000",
+  "epsilon_mean": "1/10000000000",
+  "delta_mean": "1/10000000000000",
+  "epsilon_physical": "21/5000000000",
+  "delta_physical": "21/5000000000000",
+  "sources": {
+    "docs/evidence/d4_production_recovery/existence/fourier_candidate.npz": "9fcf8e3275db6dd646f6fa6fd0ee5f937819bca281bd5adffb93abc9b100bb6d",
+    "docs/evidence/d4_independent_closure/d4_independent_existence_v2/certificate.json": "f8426d1975a84a686ec1215e1001f23e37a47d8fdd058eda8ddb3df36a72f27a",
+    "docs/evidence/d4_independent_closure/d4_independent_coercivity_final192/certificate.json": "cdd8122229b8adac0c1ee5826dc2f4f0bbdbc385dd95e0e19bfc76370171a6ad",
+    "tools/closure_d4_basin_rational_replay.py": "7e3c715064ea6e04ce8c82741f9ba8fe01c18083f955ab685cda9213ee31a6f3"
+  }
+}

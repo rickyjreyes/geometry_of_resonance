@@ -1,0 +1,2 @@
+PASS: 47 new artifact hashes, 106 inherited pins, 27 scoped claims, acyclic dependencies, 17 successful execution groups
+Recorded full-local D4 evidence validated; this validator does not execute the private-source replay.
