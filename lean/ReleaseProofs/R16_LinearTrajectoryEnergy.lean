@@ -154,4 +154,49 @@ theorem unitCosineTrajectory_no_positive_amplitude_floor
     norm_num at hlow
     linarith
 
+/-! ## Explicit circularly-polarized nonvanishing complex linear mode -/
+
+/-- The quadrature (imaginary) partner of the cosine oscillator
+is also an exact fourth-order PU classical solution at z1=1,z2=2. -/
+noncomputable def unitSineTrajectory (t : ℝ) : Jet where
+  x := Real.sin t
+  v := Real.cos t
+  a := -Real.sin t
+  j := -Real.cos t
+
+theorem unitSineTrajectory_isTrajectory :
+    IsTrajectory 1 2 unitSineTrajectory := by
+  intro t
+  refine ⟨?_, ?_, ?_, ?_⟩
+  · simpa [unitSineTrajectory] using Real.hasDerivAt_sin t
+  · simpa [unitSineTrajectory] using Real.hasDerivAt_cos t
+  · simpa [unitSineTrajectory] using (Real.hasDerivAt_sin t).neg
+  · convert (Real.hasDerivAt_cos t).neg using 1 <;>
+      simp [unitSineTrajectory] <;>
+      ring
+
+/-- Circular polarization (cos t, sin t) provides a **concrete
+positive-amplitude invariant trajectory** of the independent pair
+of exact linear PU oscillators. Contrast with the real cosine
+trajectory, which crosses nodes. This does NOT assert preservation
+for arbitrary initial conditions or any nonlinear A2/S004 flow. -/
+theorem circularPolarization_density_invariant (t : ℝ) :
+    (unitCosineTrajectory t).x ^ 2 +
+      (unitSineTrajectory t).x ^ 2 = 1 := by
+  simp only [unitCosineTrajectory, unitSineTrajectory]
+  nlinarith [Real.sin_sq_add_cos_sq t]
+
+/-- Any density annulus containing the constant value one is
+automatically respected by this explicit complex linear mode.
+This is an existence example, not a proof of an open invariant
+nonvanishing-amplitude sector of the full covariant theory. -/
+theorem circularPolarization_preserves_annulus
+    (delta M : ℝ) (hd : delta ≤ 1) (hM : 1 ≤ M) (t : ℝ) :
+    delta ≤ (unitCosineTrajectory t).x ^ 2 +
+        (unitSineTrajectory t).x ^ 2 ∧
+      (unitCosineTrajectory t).x ^ 2 +
+        (unitSineTrajectory t).x ^ 2 ≤ M := by
+  rw [circularPolarization_density_invariant t]
+  exact ⟨hd, hM⟩
+
 end ReleaseProofs.R16LinearModes
