@@ -154,7 +154,6 @@ theorem squared_reconstruction_error (z1 z2 : ℝ)
     velocity_reconstruction_error z1 z2 hz]
   have hden : z2 - z1 ≠ 0 := sub_ne_zero.mpr hz
   field_simp [hden]
-  ring
 
 /-- The omitted z2-mode energy. -/
 def neglectedEnergy (z1 z2 : ℝ) (s : Jet) : ℝ :=
