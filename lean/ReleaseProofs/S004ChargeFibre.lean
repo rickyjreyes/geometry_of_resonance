@@ -102,4 +102,44 @@ theorem noether_charge_not_field_mass :
       (1 : ℝ) ^ 2 + (0 : ℝ) ^ 2 = 1 := by
   norm_num [phaseCharge]
 
+
+/-- Fixed actual Noether charge does not yield even a local canonical
+energy minimum: every positive radial-momentum perturbation radius
+contains a charge-preserving direction of strict descent whenever
+the field and velocity have a nonzero radial pairing.
+
+This is an exact canonical-jet statement. In particular it does not
+assume that all possible constrained submanifolds are invariant. -/
+theorem fixed_charge_arbitrarily_small_strict_descent
+    (sigma rest x1 x2 v1 v2 p01 p02 p11 p12 radius : ℝ)
+    (hrad : x1 * v1 + x2 * v2 ≠ 0) (hradius : 0 < radius) :
+    ∃ t : ℝ, 0 < |t| ∧ |t| < radius ∧
+      phaseCharge x1 x2 v1 v2
+        (p01 + t * x1) (p02 + t * x2) p11 p12 =
+        phaseCharge x1 x2 v1 v2 p01 p02 p11 p12 ∧
+      canonicalJetEnergy sigma rest v1 v2
+          (p01 + t * x1) (p02 + t * x2) <
+        canonicalJetEnergy sigma rest v1 v2 p01 p02 := by
+  rcases lt_or_gt_of_ne hrad with hneg | hpos
+  · refine ⟨radius / 2, ?_, ?_, ?_, ?_⟩
+    · rw [abs_of_pos (by linarith : 0 < radius / 2)]
+      linarith
+    · rw [abs_of_pos (by linarith : 0 < radius / 2)]
+      linarith
+    · exact phaseCharge_shift x1 x2 v1 v2 p01 p02 p11 p12 _
+    · rw [canonicalJetEnergy_shift]
+      have hmul : (radius / 2) * (x1 * v1 + x2 * v2) < 0 :=
+        mul_neg_of_pos_of_neg (by linarith) hneg
+      linarith
+  · refine ⟨-(radius / 2), ?_, ?_, ?_, ?_⟩
+    · rw [abs_of_neg (by linarith : -(radius / 2) < 0)]
+      linarith
+    · rw [abs_of_neg (by linarith : -(radius / 2) < 0)]
+      linarith
+    · exact phaseCharge_shift x1 x2 v1 v2 p01 p02 p11 p12 _
+    · rw [canonicalJetEnergy_shift]
+      have hmul : -(radius / 2) * (x1 * v1 + x2 * v2) < 0 :=
+        mul_neg_of_neg_of_pos (by linarith) hpos
+      linarith
+
 end ReleaseProofs.S004ChargeFibre
