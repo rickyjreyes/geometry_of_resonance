@@ -177,4 +177,66 @@ theorem neglectedEnergy_nonnegative
   unfold neglectedEnergy
   positivity
 
+/-! ## Explicit positive and negative single-mode Hamiltonian sectors -/
+
+/-- The z1-mode restriction of the LITERAL quadratic PU Hamiltonian.
+Its sign depends on K and on the spectral ordering z1 < z2. -/
+theorem first_mode_hamiltonian_exact
+    (K z1 z2 : ℝ) (u : ℝ × ℝ) :
+    R16PU.puHamiltonian K (K * (z1 + z2)) (K * (z1 * z2))
+      (embedMode z1 u).x (embedMode z1 u).v
+      (embedMode z1 u).a (embedMode z1 u).j =
+        K * (z2 - z1) / 2 * (u.2 ^ 2 + z1 * u.1 ^ 2) := by
+  rw [R16PU.pu_hamiltonian_eq]
+  simp only [embedMode]
+  ring
+
+/-- With positive K and two ordered positive frequencies, the z1
+single-mode plane carries nonnegative canonical energy. This is an
+invariant positive rail for the linear mode vector field, not a
+dynamically justified nonlinear ghost-elimination constraint. -/
+theorem first_mode_energy_nonnegative
+    (K z1 z2 : ℝ) (u : ℝ × ℝ)
+    (hK : 0 < K) (hz1 : 0 < z1) (hz2 : z1 < z2) :
+    0 ≤ R16PU.puHamiltonian K (K * (z1 + z2)) (K * (z1 * z2))
+      (embedMode z1 u).x (embedMode z1 u).v
+      (embedMode z1 u).a (embedMode z1 u).j := by
+  rw [first_mode_hamiltonian_exact]
+  have hgap : 0 < z2 - z1 := by linarith
+  have hs : 0 ≤ u.2 ^ 2 + z1 * u.1 ^ 2 := by positivity
+  positivity
+
+/-- The z2-mode restriction has the opposite Hamiltonian sign.
+This is why positivity of the selected linear sector does not extend
+to the whole Ostrogradsky phase space. -/
+theorem second_mode_hamiltonian_exact
+    (K z1 z2 : ℝ) (u : ℝ × ℝ) :
+    R16PU.puHamiltonian K (K * (z1 + z2)) (K * (z1 * z2))
+      (embedMode z2 u).x (embedMode z2 u).v
+      (embedMode z2 u).a (embedMode z2 u).j =
+        K * (z1 - z2) / 2 * (u.2 ^ 2 + z2 * u.1 ^ 2) := by
+  rw [R16PU.pu_hamiltonian_eq]
+  simp only [embedMode]
+  ring
+
+/-- Explicit gap-controlled position/velocity reconstruction bound
+when the neglected squared frequency is at least one. This bound
+is exact at the level of a single Fourier jet. -/
+theorem reduction_error_le_neglected_energy
+    (z1 z2 : ℝ) (s : Jet)
+    (hz : z2 ≠ z1) (hfreq : 1 ≤ z2) :
+    (s.x - (readout z1 z2 s).1) ^ 2 +
+      (s.v - (readout z1 z2 s).2) ^ 2 ≤
+        neglectedEnergy z1 z2 s / (z2 - z1) ^ 2 := by
+  rw [squared_reconstruction_error z1 z2 hz]
+  have hgap : 0 < (z2 - z1) ^ 2 :=
+    sq_pos_of_ne_zero (sub_ne_zero.mpr hz)
+  have hweight :
+      (otherMode z1 s).1 ^ 2 + (otherMode z1 s).2 ^ 2 ≤
+        neglectedEnergy z1 z2 s := by
+    unfold neglectedEnergy
+    nlinarith [mul_nonneg (sub_nonneg.mpr hfreq)
+      (sq_nonneg (otherMode z1 s).1)]
+  exact div_le_div_of_nonneg_right hweight hgap.le
+
 end ReleaseProofs.R16LinearModes
