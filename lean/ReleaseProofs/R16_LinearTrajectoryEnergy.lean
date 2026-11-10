@@ -104,4 +104,54 @@ theorem uniform_trajectory_error_bound
   rw [neglectedEnergy_conserved z1 z2 s hs t] at hbound
   exact hbound
 
+/-! ## Concrete global solution and amplitude-annulus non-invariance -/
+
+/-- An explicit smooth global solution of the exact PU four-jet
+equations at z1=1,z2=2, confined to the positive-energy
+z1 linear oscillator sector. -/
+noncomputable def unitCosineTrajectory (t : ℝ) : Jet where
+  x := Real.cos t
+  v := -Real.sin t
+  a := -Real.cos t
+  j := Real.sin t
+
+/-- The full fourth-order linear evolution has an explicit entire-time
+classical trajectory; the IsTrajectory predicate is nonvacuous. -/
+theorem unitCosineTrajectory_isTrajectory :
+    IsTrajectory 1 2 unitCosineTrajectory := by
+  intro t
+  refine ⟨?_, ?_, ?_, ?_⟩
+  · simpa [unitCosineTrajectory] using Real.hasDerivAt_cos t
+  · simpa [unitCosineTrajectory] using (Real.hasDerivAt_sin t).neg
+  · simpa [unitCosineTrajectory] using (Real.hasDerivAt_cos t).neg
+  · convert Real.hasDerivAt_sin t using 1 <;>
+      simp [unitCosineTrajectory] <;>
+      ring
+
+/-- The positive-energy invariant real oscillator passes through a
+zero-field node despite starting with strictly positive field density.
+A nonvanishing-amplitude restriction must therefore be justified by
+additional dynamics; it is not preserved by this real linear sector. -/
+theorem unitCosineTrajectory_crosses_node :
+    (unitCosineTrajectory 0).x = 1 ∧
+      (unitCosineTrajectory (Real.pi / 2)).x = 0 := by
+  constructor
+  · simp [unitCosineTrajectory]
+  · simp [unitCosineTrajectory, Real.cos_pi_div_two]
+
+/-- For every proposed strictly positive scalar squared-amplitude floor
+delta<=1, the explicit FULL PU solution violates that floor at some time. -/
+theorem unitCosineTrajectory_no_positive_amplitude_floor
+    (delta : ℝ) (hdelta : 0 < delta) (hd1 : delta ≤ 1) :
+    delta ≤ (unitCosineTrajectory 0).x ^ 2 ∧
+      ¬ ∀ t : ℝ, delta ≤ (unitCosineTrajectory t).x ^ 2 := by
+  constructor
+  · simpa [unitCosineTrajectory] using hd1
+  · intro hall
+    have hnode := (unitCosineTrajectory_crosses_node).2
+    have hlow := hall (Real.pi / 2)
+    rw [hnode] at hlow
+    norm_num at hlow
+    linarith
+
 end ReleaseProofs.R16LinearModes
