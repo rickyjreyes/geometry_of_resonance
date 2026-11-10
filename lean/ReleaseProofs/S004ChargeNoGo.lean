@@ -121,4 +121,45 @@ theorem unrestricted_regular_charge_fibre_no_go
     no_upper_bound_at_any_fixed_charge sigma rest x1 x2 v1 v2
     p11 p12 Q hx hrad⟩
 
+/-- **Combined corrected S004 regular-patch fixed-charge no-go.**
+At an actual nonzero two-component field, nonzero regulator epsilon and
+positive higher-derivative kappa, the corrected S004 acceleration
+Hessian has strictly positive determinant. At that same field and any
+prescribed literal canonical U(1) charge Q, if radial velocity is
+nonzero, the unrestricted Ostrogradsky canonical energy is
+simultaneously unbounded above and below.
+
+This theorem bridges the *actual corrected nonlinear S004 Hessian*
+to the exact fixed-Noether-charge obstruction, rather than treating
+regularity and energy pathology as unrelated surrogate claims.
+It remains a finite canonical-jet theorem, not a claim about any
+separately constrained nonlinear PDE sector. -/
+theorem regular_patch_at_every_charge_no_go
+    (eps alpha kappa sigma rest x1 x2 v1 v2 p11 p12 Q : ℝ)
+    (heps : eps ≠ 0) (hk : 0 < kappa)
+    (hx : 0 < x1 ^ 2 + x2 ^ 2)
+    (hrad : x1 * v1 + x2 * v2 ≠ 0) :
+    0 < ReleaseProofs.R16Energy.s004AccelDet
+      (ReleaseProofs.R16.correctedWeight
+        (x1 ^ 2 + x2 ^ 2) eps alpha) kappa ∧
+    (¬ BddBelow
+      {e : ℝ | ∃ p01 p02 : ℝ,
+        phaseCharge x1 x2 v1 v2 p01 p02 p11 p12 = Q ∧
+        canonicalJetEnergy sigma rest v1 v2 p01 p02 = e}) ∧
+    (¬ BddAbove
+      {e : ℝ | ∃ p01 p02 : ℝ,
+        phaseCharge x1 x2 v1 v2 p01 p02 p11 p12 = Q ∧
+        canonicalJetEnergy sigma rest v1 v2 p01 p02 = e}) := by
+  have hweight := ReleaseProofs.R16.corrected_weight_pos
+    (x1 ^ 2 + x2 ^ 2) eps alpha hx heps
+  have hhessian :=
+    ReleaseProofs.R16Energy.s004_acceleration_det_strictly_positive
+      (ReleaseProofs.R16.correctedWeight
+        (x1 ^ 2 + x2 ^ 2) eps alpha) kappa hweight hk
+  exact ⟨hhessian,
+    (unrestricted_regular_charge_fibre_no_go
+      sigma rest x1 x2 v1 v2 p11 p12 Q hx hrad).1,
+    (unrestricted_regular_charge_fibre_no_go
+      sigma rest x1 x2 v1 v2 p11 p12 Q hx hrad).2⟩
+
 end ReleaseProofs.S004ChargeNoGo
