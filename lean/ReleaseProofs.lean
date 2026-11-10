@@ -29,3 +29,4 @@ import ReleaseProofs.S004Regularity
 import ReleaseProofs.S004ChargeFibre
 
 import ReleaseProofs.R16_LinearModeReduction
+import ReleaseProofs.R16_LinearTrajectoryEnergy
