@@ -76,4 +76,30 @@ theorem phaseCharge_fibre_unbounded_above
     rw [div_mul_cancel₀ _ hr]
     linarith
 
+
+/-! ## Physical mass is not the canonical U(1) charge -/
+
+/-- The true Noether charge can be prescribed arbitrarily at a fixed
+nonzero field amplitude by changing the canonical momentum P0 alone.
+Consequently the Noether constraint is not pointwise equivalent to
+an L2 mass constraint on the field. -/
+theorem arbitrary_charge_at_fixed_field
+    (x1 x2 target : ℝ) (hx : 0 < x1 ^ 2 + x2 ^ 2) :
+    ∃ p01 p02 : ℝ,
+      phaseCharge x1 x2 0 0 p01 p02 0 0 = target := by
+  have hn : x1 ^ 2 + x2 ^ 2 ≠ 0 := ne_of_gt hx
+  refine ⟨-(target * x2) / (x1 ^ 2 + x2 ^ 2),
+    (target * x1) / (x1 ^ 2 + x2 ^ 2), ?_⟩
+  unfold phaseCharge
+  field_simp [hn]
+  ring
+
+/-- In particular, the same unit field has zero canonical phase charge
+when all momenta and velocities are zero. Thus squared field amplitude
+cannot be silently identified with the literal S004/A2 Noether charge. -/
+theorem noether_charge_not_field_mass :
+    phaseCharge 1 0 0 0 0 0 0 0 = 0 ∧
+      (1 : ℝ) ^ 2 + (0 : ℝ) ^ 2 = 1 := by
+  norm_num [phaseCharge]
+
 end ReleaseProofs.S004ChargeFibre
