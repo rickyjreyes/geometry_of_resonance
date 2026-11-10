@@ -27,7 +27,7 @@ error bound remain open.
 
 namespace ReleaseProofs.R16LinearModes
 
-structure Jet where
+@[ext] structure Jet where
   x : ℝ
   v : ℝ
   a : ℝ
@@ -152,6 +152,8 @@ theorem squared_reconstruction_error (z1 z2 : ℝ)
         (z2 - z1) ^ 2 := by
   rw [displacement_reconstruction_error z1 z2 hz,
     velocity_reconstruction_error z1 z2 hz]
+  have hden : z2 - z1 ≠ 0 := sub_ne_zero.mpr hz
+  field_simp [hden]
   ring
 
 /-- The omitted z2-mode energy. -/
