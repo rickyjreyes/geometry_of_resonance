@@ -49,10 +49,8 @@ theorem omittedMode_trajectory
   · have h := ha.add (hx.const_mul z1)
     simpa [otherMode] using h
   · have h := hj.add (hv.const_mul z1)
-    convert h using 1
-    · funext τ
-      simp [otherMode]
-    · simp [otherMode]
+    convert h using 1 <;>
+      simp [otherMode] <;>
       ring
 
 /-- Along every exact linear four-jet solution the omitted oscillator's
