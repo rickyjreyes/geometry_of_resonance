@@ -26,3 +26,4 @@ import ReleaseProofs.R13_ScaleFreedom
 import ReleaseProofs.R45_NonlinearBridgeObstructions
 import ReleaseProofs.R46_RotatingQ5
 import ReleaseProofs.S004Regularity
+import ReleaseProofs.S004ChargeFibre
