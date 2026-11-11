@@ -38,3 +38,10 @@ jobs:
           lake update
           lake exe cache get
           lake build
+      - name: Verify actual S004 constraint and charge no-go theorem axioms
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd lean
+          lake env lean S004RegularAxiomAudit.lean 2>&1 | tee s004-regular-axioms.log
+          python3 check_s004_regular_axioms.py s004-regular-axioms.log
