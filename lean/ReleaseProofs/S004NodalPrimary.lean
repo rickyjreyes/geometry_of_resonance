@@ -84,4 +84,60 @@ theorem node_acceleration_hessian_not_injective
   have hFalse := hinj hEq
   norm_num at hFalse
 
+/-! ## Exact constraint count and necessary nodal-flow conditions -/
+
+/-- The corrected original S004 two-real-component field has exactly
+TWO independent primary acceleration-momentum constraints at rho=0,
+equal to the full dimension of its Hessian kernel. This is a rank
+statement only; secondary constraints and their Poisson algebra
+remain to be determined. -/
+theorem nodal_primary_constraint_count_two
+    (eps alpha kappa : ℝ) :
+    Module.finrank ℝ
+      (LinearMap.ker
+        ((-2 * ReleaseProofs.R16.correctedWeight 0 eps alpha * kappa) •
+          LinearMap.id :
+          EuclideanSpace ℝ (Fin 2) →ₗ[ℝ]
+            EuclideanSpace ℝ (Fin 2))) = 2 := by
+  rw [node_accel_hessian_zero]
+  simp
+
+/-- An S004 field whose BOTH real components remain identically at a
+node must have zero first-time-derivative components wherever the
+standard kinematic relations q'=v hold. Thus the nodal constraint
+surface by itself cannot be declared invariant with arbitrary
+nonzero velocities. The theorem requires only actual derivatives,
+not a postulated evolution or a toy finite-state flow. -/
+theorem all_time_node_requires_zero_velocity
+    (x y vx vy : ℝ → ℝ) (t0 : ℝ)
+    (hx : ∀ t, x t = 0) (hy : ∀ t, y t = 0)
+    (hxd : HasDerivAt x (vx t0) t0)
+    (hyd : HasDerivAt y (vy t0) t0) :
+    vx t0 = 0 ∧ vy t0 = 0 := by
+  have hxzero : x = fun _ => (0 : ℝ) := funext hx
+  have hyzero : y = fun _ => (0 : ℝ) := funext hy
+  rw [hxzero] at hxd
+  rw [hyzero] at hyd
+  constructor
+  · simpa using hxd.deriv.symm
+  · simpa using hyd.deriv.symm
+
+/-- In particular a classical full-field path with nonzero velocity
+at a nodal time cannot remain in the nodal stratum for all times.
+This is a rigorous necessary kinematic obstruction to nodal
+invariance, not a proof of actual nonlinear S004 well-posedness. -/
+theorem nonzero_node_velocity_requires_exit
+    (x y vx vy : ℝ → ℝ) (t0 : ℝ)
+    (hxd : HasDerivAt x (vx t0) t0)
+    (hyd : HasDerivAt y (vy t0) t0)
+    (hv : vx t0 ≠ 0 ∨ vy t0 ≠ 0) :
+    ∃ t, x t ≠ 0 ∨ y t ≠ 0 := by
+  by_contra hn
+  push_neg at hn
+  have hzero := all_time_node_requires_zero_velocity
+    x y vx vy t0 (fun t => (hn t).1) (fun t => (hn t).2) hxd hyd
+  rcases hv with h | h
+  · exact h hzero.1
+  · exact h hzero.2
+
 end ReleaseProofs.S004NodalPrimary
