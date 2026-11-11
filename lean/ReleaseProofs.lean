@@ -36,3 +36,5 @@ import ReleaseProofs.S004ChargeNoGo
 import ReleaseProofs.S004RegularConstraints
 
 import ReleaseProofs.S004NodalPrimary
+
+import ReleaseProofs.S004NodalEnergyObstruction

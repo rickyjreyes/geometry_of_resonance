@@ -1,4 +1,5 @@
 import ReleaseProofs.S004NodalPrimary
+import ReleaseProofs.S004NodalEnergyObstruction
 import ReleaseProofs.S004RegularConstraints
 import ReleaseProofs.S004ChargeNoGo
 
@@ -22,3 +23,9 @@ Hamiltonian, with restricted patch hypotheses.
 #print axioms ReleaseProofs.S004NodalPrimary.nodal_primary_constraint_count_two
 #print axioms ReleaseProofs.S004NodalPrimary.all_time_node_requires_zero_velocity
 #print axioms ReleaseProofs.S004NodalPrimary.nonzero_node_velocity_requires_exit
+
+-- Exact nodal Legendre surface and canonical-energy obstruction.
+#print axioms ReleaseProofs.S004NodalEnergyObstruction.nodal_primary_surface_exact
+#print axioms ReleaseProofs.S004NodalEnergyObstruction.nodal_primary_surface_shift
+#print axioms ReleaseProofs.S004NodalEnergyObstruction.nodal_primary_surface_not_bddBelow
+#print axioms ReleaseProofs.S004NodalEnergyObstruction.nodal_primary_surface_not_bddAbove
