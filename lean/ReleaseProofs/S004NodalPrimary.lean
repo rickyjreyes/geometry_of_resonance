@@ -99,8 +99,8 @@ theorem nodal_primary_constraint_count_two
           LinearMap.id :
           EuclideanSpace ℝ (Fin 2) →ₗ[ℝ]
             EuclideanSpace ℝ (Fin 2))) = 2 := by
-  rw [node_accel_hessian_zero]
-  simp
+  rw [node_accel_hessian_zero, LinearMap.ker_zero, finrank_top]
+  exact finrank_euclideanSpace_fin
 
 /-- An S004 field whose BOTH real components remain identically at a
 node must have zero first-time-derivative components wherever the
