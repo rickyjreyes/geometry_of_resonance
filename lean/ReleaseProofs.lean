@@ -32,3 +32,5 @@ import ReleaseProofs.R16_LinearModeReduction
 import ReleaseProofs.R16_LinearTrajectoryEnergy
 
 import ReleaseProofs.S004ChargeNoGo
+
+import ReleaseProofs.S004RegularConstraints
