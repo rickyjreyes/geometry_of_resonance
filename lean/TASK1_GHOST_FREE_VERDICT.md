@@ -87,8 +87,13 @@ claim that this build re-checks it.
    For the S004 Fourier mode specifically, the two real poles carry energies of opposite sign
    (`s004_real_window_ghost`). This holds even where both squared frequencies are positive. A
    ghost-free sector of S004 would need secondary constraints involving `p₁`
-   (`bddBelow_forces_v_zero`). The fixed-flat S004 Hessian produces no primary constraints at
-   all, so no such sector exists in S004 itself.
+   (`bddBelow_forces_v_zero`). On the nonzero-field regular S004 patch, the acceleration Hessian has no
+   intrinsic primary acceleration-momentum constraints. At the singular nodal
+   locus, by contrast, there are two primary acceleration-momentum conditions.
+   These primary conditions alone do not bound the canonical Hamiltonian if
+   nonzero nodal velocities are admitted. Secondary constraints and their
+   dynamical preservation must still be established before classifying any
+   healthy exceptional sector.
 2. **Mathematically viable independent model.** The first-order fourth-order cubic–quintic
    Schrödinger flow meets P1–P5 as mathematics. P1–P3 are structural facts proved here. P4–P5
    rest on the math-repository chain, subject to the Task 2 audit. That chain is restricted to
@@ -110,3 +115,7 @@ claim that this build re-checks it.
   type). This is open, and is not inherited from the Schrödinger chain.
 * Importing or mirroring the math-repo chain here would need a cross-repository Lean dependency.
   It is not done, and is not claimed.
+
+## November 2026 exact nodal-primary addendum (issue #53)
+
+The Lean branch `proofs/s004-regular-nodal-dichotomy-20261109` now imports `ReleaseProofs.S004NodalEnergyObstruction`. Its kernel-verified declarations `nodal_primary_surface_exact`, `nodal_primary_surface_shift`, `nodal_primary_surface_not_bddBelow`, and `nodal_primary_surface_not_bddAbove` identify the corrected S004 nodal primary Legendre image at `q=0` and prove canonical energy unboundedness on that primary surface whenever it admits `v≠0`. These results do not establish secondary Dirac constraint propagation, consistent nodal evolution, or a nonlinear healthy-sector no-go. The corresponding strict original-model axiom audit covers 15 roots. Keep issue #53 open pending those additional obligations.

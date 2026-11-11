@@ -25,3 +25,16 @@ import ReleaseProofs.R16_FirstOrderCandidate
 import ReleaseProofs.R13_ScaleFreedom
 import ReleaseProofs.R45_NonlinearBridgeObstructions
 import ReleaseProofs.R46_RotatingQ5
+import ReleaseProofs.S004Regularity
+import ReleaseProofs.S004ChargeFibre
+
+import ReleaseProofs.R16_LinearModeReduction
+import ReleaseProofs.R16_LinearTrajectoryEnergy
+
+import ReleaseProofs.S004ChargeNoGo
+
+import ReleaseProofs.S004RegularConstraints
+
+import ReleaseProofs.S004NodalPrimary
+
+import ReleaseProofs.S004NodalEnergyObstruction

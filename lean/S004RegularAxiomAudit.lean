@@ -1,0 +1,31 @@
+import ReleaseProofs.S004NodalPrimary
+import ReleaseProofs.S004NodalEnergyObstruction
+import ReleaseProofs.S004RegularConstraints
+import ReleaseProofs.S004ChargeNoGo
+
+/-!
+Exact S004 regular-canonical theorem dependency and axiom audit.
+The selected theorems refer to the original corrected acceleration
+Hessian, original Noether U(1) charge and Ostrogradsky canonical
+Hamiltonian, with restricted patch hypotheses.
+-/
+
+#print axioms ReleaseProofs.S004RegularConstraints.regular_patch_all_accel_momenta_unique
+#print axioms ReleaseProofs.S004RegularConstraints.regular_patch_no_primary_constraint_and_ghost
+#print axioms ReleaseProofs.S004ChargeNoGo.unrestricted_regular_charge_fibre_no_go
+#print axioms ReleaseProofs.S004ChargeNoGo.regular_patch_at_every_charge_no_go
+
+-- Phase XX: actual corrected S004 nodal constraint stratum.
+#print axioms ReleaseProofs.S004NodalPrimary.node_accel_hessian_zero
+#print axioms ReleaseProofs.S004NodalPrimary.node_acceleration_momentum_fixed
+#print axioms ReleaseProofs.S004NodalPrimary.node_primary_momentum_iff
+#print axioms ReleaseProofs.S004NodalPrimary.node_acceleration_hessian_not_injective
+#print axioms ReleaseProofs.S004NodalPrimary.nodal_primary_constraint_count_two
+#print axioms ReleaseProofs.S004NodalPrimary.all_time_node_requires_zero_velocity
+#print axioms ReleaseProofs.S004NodalPrimary.nonzero_node_velocity_requires_exit
+
+-- Exact nodal Legendre surface and canonical-energy obstruction.
+#print axioms ReleaseProofs.S004NodalEnergyObstruction.nodal_primary_surface_exact
+#print axioms ReleaseProofs.S004NodalEnergyObstruction.nodal_primary_surface_shift
+#print axioms ReleaseProofs.S004NodalEnergyObstruction.nodal_primary_surface_not_bddBelow
+#print axioms ReleaseProofs.S004NodalEnergyObstruction.nodal_primary_surface_not_bddAbove
