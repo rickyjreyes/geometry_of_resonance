@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Require all fifteen exact S004 regular-patch theorem roots and no custom axioms."""
+"""Require all twenty exact S004 regular-patch theorem roots and no custom axioms."""
 from pathlib import Path
 import re
 import sys
@@ -9,10 +9,10 @@ if len(sys.argv) != 2:
 text = Path(sys.argv[1]).read_text(encoding="utf-8", errors="replace")
 blocks = re.findall(r"depends on axioms:\s*\[([^\]]*)\]", text, flags=re.S)
 free = re.findall(r"does not depend on any axioms", text)
-if len(blocks) + len(free) != 15:
-    raise SystemExit(f"Expected fifteen S004 canonical proof reports; found {len(blocks)+len(free)}")
+if len(blocks) + len(free) != 20:
+    raise SystemExit(f"Expected twenty S004 canonical proof reports; found {len(blocks)+len(free)}")
 allowed = {"propext", "Classical.choice", "Quot.sound"}
 extras = {n.strip() for b in blocks for n in b.split(",") if n.strip() and n.strip() not in allowed}
 if extras:
     raise SystemExit("Unreviewed axioms: " + repr(sorted(extras)))
-print("PASS: fifteen original S004 regular-canonical theorems use only standard logical axioms.")
+print("PASS: twenty original S004 regular-canonical theorems use only standard logical axioms.")
