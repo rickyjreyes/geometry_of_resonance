@@ -38,3 +38,5 @@ import ReleaseProofs.S004RegularConstraints
 import ReleaseProofs.S004NodalPrimary
 
 import ReleaseProofs.S004NodalEnergyObstruction
+
+import ReleaseProofs.S004NodalHolonomic

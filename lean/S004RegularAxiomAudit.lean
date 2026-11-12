@@ -1,5 +1,6 @@
 import ReleaseProofs.S004NodalPrimary
 import ReleaseProofs.S004NodalEnergyObstruction
+import ReleaseProofs.S004NodalHolonomic
 import ReleaseProofs.S004RegularConstraints
 import ReleaseProofs.S004ChargeNoGo
 
@@ -29,3 +30,10 @@ Hamiltonian, with restricted patch hypotheses.
 #print axioms ReleaseProofs.S004NodalEnergyObstruction.nodal_primary_surface_shift
 #print axioms ReleaseProofs.S004NodalEnergyObstruction.nodal_primary_surface_not_bddBelow
 #print axioms ReleaseProofs.S004NodalEnergyObstruction.nodal_primary_surface_not_bddAbove
+
+-- Phase XXII: genuine holonomic nodal path and exact canonical energy fibre.
+#print axioms ReleaseProofs.S004NodalHolonomic.nodal_holonomic_is_primary
+#print axioms ReleaseProofs.S004NodalHolonomic.nodal_holonomic_energy_exact
+#print axioms ReleaseProofs.S004NodalHolonomic.nodal_holonomic_energy_image
+#print axioms ReleaseProofs.S004NodalHolonomic.permanently_nodal_path_is_holonomic
+#print axioms ReleaseProofs.S004NodalHolonomic.permanently_nodal_path_energy_constant
