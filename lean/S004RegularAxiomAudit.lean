@@ -1,6 +1,7 @@
 import ReleaseProofs.S004NodalPrimary
 import ReleaseProofs.S004NodalEnergyObstruction
 import ReleaseProofs.S004NodalHolonomic
+import ReleaseProofs.S004NodalShiftClassification
 import ReleaseProofs.S004RegularConstraints
 import ReleaseProofs.S004ChargeNoGo
 
@@ -37,3 +38,9 @@ Hamiltonian, with restricted patch hypotheses.
 #print axioms ReleaseProofs.S004NodalHolonomic.nodal_holonomic_energy_image
 #print axioms ReleaseProofs.S004NodalHolonomic.permanently_nodal_path_is_holonomic
 #print axioms ReleaseProofs.S004NodalHolonomic.permanently_nodal_path_energy_constant
+
+-- Phase XXIII exact classification of all p1-shift invariant nodal sectors.
+#print axioms ReleaseProofs.S004NodalShiftClassification.nodal_shift_sector_bddBelow_iff_holonomic
+#print axioms ReleaseProofs.S004NodalShiftClassification.nodal_shift_sector_bddAbove_iff_holonomic
+#print axioms ReleaseProofs.S004NodalShiftClassification.nodal_shift_sector_two_sided_iff_holonomic
+#print axioms ReleaseProofs.S004NodalShiftClassification.lower_momentum_sector_bddBelow_iff_holonomic
