@@ -42,3 +42,5 @@ import ReleaseProofs.S004NodalEnergyObstruction
 import ReleaseProofs.S004NodalHolonomic
 
 import ReleaseProofs.S004NodalShiftClassification
+
+import ReleaseProofs.S004NodalAccelerationConsistency
