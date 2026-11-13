@@ -1,6 +1,7 @@
 import ReleaseProofs.S004NodalPrimary
 import ReleaseProofs.S004NodalEnergyObstruction
 import ReleaseProofs.S004NodalHolonomic
+import ReleaseProofs.S004NodalAccelerationConsistency
 import ReleaseProofs.S004NodalShiftClassification
 import ReleaseProofs.S004RegularConstraints
 import ReleaseProofs.S004ChargeNoGo
@@ -44,3 +45,8 @@ Hamiltonian, with restricted patch hypotheses.
 #print axioms ReleaseProofs.S004NodalShiftClassification.nodal_shift_sector_bddAbove_iff_holonomic
 #print axioms ReleaseProofs.S004NodalShiftClassification.nodal_shift_sector_two_sided_iff_holonomic
 #print axioms ReleaseProofs.S004NodalShiftClassification.lower_momentum_sector_bddBelow_iff_holonomic
+
+-- Phase XXIV second-order genuine nodal trajectory kinematics.
+#print axioms ReleaseProofs.S004NodalAccelerationConsistency.permanently_nodal_path_acceleration_zero
+#print axioms ReleaseProofs.S004NodalAccelerationConsistency.permanently_nodal_path_velocity_and_acceleration_zero
+#print axioms ReleaseProofs.S004NodalAccelerationConsistency.nonzero_acceleration_requires_nodal_exit
