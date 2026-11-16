@@ -1,3 +1,8 @@
+import ReleaseProofs.S004CharacteristicCone
+import ReleaseProofs.S004NodalDiracClosure
+import ReleaseProofs.S004CoefficientFamily
+import ReleaseProofs.S004HarmonicGhostForcing
+import ReleaseProofs.S004ScopedNoGo
 import ReleaseProofs.S004NodalPrimary
 import ReleaseProofs.S004NodalEnergyObstruction
 import ReleaseProofs.S004NodalHolonomic
@@ -50,3 +55,58 @@ Hamiltonian, with restricted patch hypotheses.
 #print axioms ReleaseProofs.S004NodalAccelerationConsistency.permanently_nodal_path_acceleration_zero
 #print axioms ReleaseProofs.S004NodalAccelerationConsistency.permanently_nodal_path_velocity_and_acceleration_zero
 #print axioms ReleaseProofs.S004NodalAccelerationConsistency.nonzero_acceleration_requires_nodal_exit
+
+-- Phase XXV: characteristic cone, spacetime ellipticity, exact Hadamard roots.
+#print axioms ReleaseProofs.S004CharacteristicCone.symbolForm_pos_definite_iff
+#print axioms ReleaseProofs.S004CharacteristicCone.admissible_symbol_elliptic
+#print axioms ReleaseProofs.S004CharacteristicCone.admissible_elliptic_covector
+#print axioms ReleaseProofs.S004CharacteristicCone.admissible_no_real_characteristic
+#print axioms ReleaseProofs.S004CharacteristicCone.real_characteristic_not_admissible
+#print axioms ReleaseProofs.S004CharacteristicCone.real_characteristic_iff
+#print axioms ReleaseProofs.S004CharacteristicCone.two_positive_roots_iff
+#print axioms ReleaseProofs.S004CharacteristicCone.admissible_not_strictly_hyperbolic
+#print axioms ReleaseProofs.S004CharacteristicCone.psd_with_real_characteristic_is_boundary
+#print axioms ReleaseProofs.S004CharacteristicCone.boundary_perfect_square
+#print axioms ReleaseProofs.S004CharacteristicCone.hadamardRatio_root
+#print axioms ReleaseProofs.S004CharacteristicCone.frozen_symbol_hadamard_root
+#print axioms ReleaseProofs.S004CharacteristicCone.hadamard_sqrt_re_ne_zero
+#print axioms ReleaseProofs.S004CharacteristicCone.admissible_hadamard_growth
+#print axioms ReleaseProofs.S004CharacteristicCone.hadamard_constant_unbounded_as_kappa_to_zero
+#print axioms ReleaseProofs.S004CharacteristicCone.exp_beats_every_polynomial_weight
+
+-- Phase XXVI: nodal secondary constraint p1 = 2v, second-class bracket, vacuum-only sector.
+#print axioms ReleaseProofs.S004NodalDiracClosure.nodal_weight_hasDerivAt_zero
+#print axioms ReleaseProofs.S004NodalDiracClosure.nodal_instant_momenta
+#print axioms ReleaseProofs.S004NodalDiracClosure.nodal_instant_lift_mem
+#print axioms ReleaseProofs.S004NodalDiracClosure.nodalDirac_not_shift_invariant
+#print axioms ReleaseProofs.S004NodalDiracClosure.nodalDirac_energy_eq
+#print axioms ReleaseProofs.S004NodalDiracClosure.nodalDirac_energy_bddBelow
+#print axioms ReleaseProofs.S004NodalDiracClosure.nodal_primary_energy_unbounded
+#print axioms ReleaseProofs.S004NodalDiracClosure.nodalBracketMatrix_eq
+#print axioms ReleaseProofs.S004NodalDiracClosure.nodalBracketMatrix_det
+#print axioms ReleaseProofs.S004NodalDiracClosure.transientBracket_det_zero
+#print axioms ReleaseProofs.S004NodalDiracClosure.nodal_invariant_constraint_set
+#print axioms ReleaseProofs.S004NodalDiracClosure.permanently_nodal_lift_is_origin
+#print axioms ReleaseProofs.S004NodalDiracClosure.holonomic_fibre_unattained
+#print axioms ReleaseProofs.S004NodalDiracClosure.correctedWeight_hasDerivAt_zero
+#print axioms ReleaseProofs.S004NodalDiracClosure.nodal_crossing_acceleration_zero
+
+-- Phase XXVII: S004 coefficient family has no admissible ghost-free or hyperbolic member.
+#print axioms ReleaseProofs.S004CoefficientFamily.accel_hessian_degenerate_iff
+#print axioms ReleaseProofs.S004CoefficientFamily.admissible_member_obstructed
+#print axioms ReleaseProofs.S004CoefficientFamily.ghostfree_psd_members
+#print axioms ReleaseProofs.S004CoefficientFamily.hyperbolic_region_curvature_indefinite
+#print axioms ReleaseProofs.S004CoefficientFamily.strictly_hyperbolic_curvature_indefinite
+#print axioms ReleaseProofs.S004CoefficientFamily.psd_hyperbolic_members_keep_ghost
+
+-- Phase XXVIII: nonlinear second-harmonic forcing of the ghost branch.
+#print axioms ReleaseProofs.S004HarmonicGhostForcing.linearSymbol_factor
+#print axioms ReleaseProofs.S004HarmonicGhostForcing.onShell_symbol_identity
+#print axioms ReleaseProofs.S004HarmonicGhostForcing.sigma2_factor
+#print axioms ReleaseProofs.S004HarmonicGhostForcing.sigma2_neg
+#print axioms ReleaseProofs.S004HarmonicGhostForcing.ghost_mode_forced
+#print axioms ReleaseProofs.S004HarmonicGhostForcing.resonant_secular_solution
+#print axioms ReleaseProofs.S004HarmonicGhostForcing.secular_amplitude_unbounded
+
+-- Phase XXIX: single scoped no-go interface theorem.
+#print axioms ReleaseProofs.S004ScopedNoGo.s004_scoped_no_go

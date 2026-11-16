@@ -44,3 +44,9 @@ import ReleaseProofs.S004NodalHolonomic
 import ReleaseProofs.S004NodalShiftClassification
 
 import ReleaseProofs.S004NodalAccelerationConsistency
+
+import ReleaseProofs.S004CharacteristicCone
+import ReleaseProofs.S004NodalDiracClosure
+import ReleaseProofs.S004CoefficientFamily
+import ReleaseProofs.S004HarmonicGhostForcing
+import ReleaseProofs.S004ScopedNoGo
