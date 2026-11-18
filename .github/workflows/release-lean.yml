@@ -64,7 +64,7 @@ jobs:
                     for line in s.splitlines() if 'depends on axioms: [' in line]
           allowed = {'propext', 'Classical.choice', 'Quot.sound'}
           assert len(blocks) == 3, f'expected 3 exact theorem roots, got {len(blocks)}'
-          extra = {a.strip() for block in blocks for a in block.split(',') if a.strip() not in allowed}
+          extra = {a.strip() for block in blocks for a in block.split(',') if a.strip() and a.strip() not in allowed}
           assert not extra and 'sorryAx' not in s, extra
           print('R54 interval axiom audit OK: 3 standard-only theorem roots')
           PY
