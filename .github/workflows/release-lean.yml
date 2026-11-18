@@ -51,6 +51,22 @@ jobs:
           bad = {a.strip() for b in blocks for a in b.split(',') if a.strip() not in allowed}
           assert len(blocks) == 5 and not bad and 'sorryAx' not in s, bad
           PY
+      - name: Audit spectral eigenvalue interval and geometric mass enclosure
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd lean
+          lake env lean R54IntervalAxiomAudit.lean | tee r54-interval-axioms.log
+          python3 - <<'PY'
+          import re
+          s = open('r54-interval-axioms.log').read()
+          roots = re.findall(r"'([^']+)' depends on axioms:\\s*\\[([^\\]]*)\\]", s)
+          allowed = {'propext', 'Classical.choice', 'Quot.sound'}
+          assert len(roots) == 3, f'expected 3 exact theorem roots, got {len(roots)}'
+          extra = {a.strip() for _, block in roots for a in block.split(',') if a.strip() not in allowed}
+          assert not extra and 'sorryAx' not in s, extra
+          print('R54 interval axiom audit OK: 3 standard-only theorem roots')
+          PY
       - name: Verify actual S004 constraint and charge no-go theorem axioms
         shell: bash
         run: |
