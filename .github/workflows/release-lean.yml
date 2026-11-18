@@ -48,7 +48,7 @@ jobs:
           s = open('r54-axioms.log').read()
           blocks = re.findall(r'depends on axioms:\s*\[([^\]]*)\]', s)
           allowed = {'propext', 'Classical.choice', 'Quot.sound'}
-          bad = {a.strip() for b in blocks for a in b.split(',') if a.strip() not in allowed}
+          bad = {a.strip() for b in blocks for a in b.split(',') if a.strip() and a.strip() not in allowed}
           assert len(blocks) == 5 and not bad and 'sorryAx' not in s, bad
           PY
       - name: Audit spectral eigenvalue interval and geometric mass enclosure
