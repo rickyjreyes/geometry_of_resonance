@@ -67,7 +67,9 @@ theorem weighted_constant_mismatch
         ∑ i, w i * (values i - k) := by
     calc
       (∑ i, w i * values i) - k =
-          (∑ i, w i * values i) - (∑ i, w i) * k := by rw [hsum]
+          (∑ i, w i * values i) - (∑ i, w i) * k := by
+        rw [hsum]
+        ring
       _ = ∑ i, (w i * values i - w i * k) := by
           rw [Finset.sum_sub_distrib, Finset.sum_mul]
       _ = ∑ i, w i * (values i - k) := by
