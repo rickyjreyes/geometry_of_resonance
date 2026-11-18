@@ -60,10 +60,11 @@ jobs:
           python3 - <<'PY'
           import re
           s = open('r54-interval-axioms.log').read()
-          roots = re.findall(r"'([^']+)' depends on axioms:\\s*\\[([^\\]]*)\\]", s)
+          blocks = [line.split('depends on axioms: [', 1)[1].split(']', 1)[0]
+                    for line in s.splitlines() if 'depends on axioms: [' in line]
           allowed = {'propext', 'Classical.choice', 'Quot.sound'}
-          assert len(roots) == 3, f'expected 3 exact theorem roots, got {len(roots)}'
-          extra = {a.strip() for _, block in roots for a in block.split(',') if a.strip() not in allowed}
+          assert len(blocks) == 3, f'expected 3 exact theorem roots, got {len(blocks)}'
+          extra = {a.strip() for block in blocks for a in block.split(',') if a.strip() not in allowed}
           assert not extra and 'sorryAx' not in s, extra
           print('R54 interval axiom audit OK: 3 standard-only theorem roots')
           PY
