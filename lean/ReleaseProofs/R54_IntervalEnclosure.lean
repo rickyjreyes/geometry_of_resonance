@@ -16,6 +16,8 @@ noncomputable section
 
 namespace ReleaseProofs.R54SpectralGeometric
 
+open ReleaseProofs.R13ScaleFreedom
+
 /-- The source-matched conversion sqrt(lambda)/L is monotone in a
 nonnegative confined spectral eigenvalue, provided L>0 and hbar/c>=0.
 This identifies exactly which input interval endpoints yield a
