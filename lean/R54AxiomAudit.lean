@@ -1,0 +1,7 @@
+import ReleaseProofs.R54_SpectralGeometricBridge
+
+#print axioms ReleaseProofs.R54SpectralGeometric.sigma_zero_torsion
+#print axioms ReleaseProofs.R54SpectralGeometric.constant_circle_mass_bridge
+#print axioms ReleaseProofs.R54SpectralGeometric.weighted_constant_mismatch
+#print axioms ReleaseProofs.R54SpectralGeometric.spectral_geometric_mass_error
+#print axioms ReleaseProofs.R54SpectralGeometric.unrestricted_spectral_curve_identity_false

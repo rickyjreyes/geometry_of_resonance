@@ -44,3 +44,6 @@ import ReleaseProofs.S004NodalHolonomic
 import ReleaseProofs.S004NodalShiftClassification
 
 import ReleaseProofs.S004NodalAccelerationConsistency
+
+import ReleaseProofs.R54_SpectralGeometricBridge
+import ReleaseProofs.R54_IntervalEnclosure

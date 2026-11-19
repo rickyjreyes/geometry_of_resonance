@@ -1,0 +1,5 @@
+import ReleaseProofs.R54_IntervalEnclosure
+
+#print axioms ReleaseProofs.R54SpectralGeometric.spectralMass_monotone
+#print axioms ReleaseProofs.R54SpectralGeometric.spectralMass_eigenvalue_interval
+#print axioms ReleaseProofs.R54SpectralGeometric.geometricMass_interval_from_eigenvalue_enclosure
