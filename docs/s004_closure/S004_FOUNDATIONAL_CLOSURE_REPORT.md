@@ -419,6 +419,18 @@ the corrected S004 equation is not well-posed in any pair of Sobolev spaces near
   or formalized here.
 * A self-contained proof — WKB construction with complex phase, or a formalization — would make
   the no-go unconditional for every localized state.
+* **How far the reduction goes.**
+  * The background enters the principal symbol only through the scalar factor `F(ρ₀) > 0`. So the
+    characteristic variety `p(τ,ξ) = 0` is the same at every regular point.
+  * Hence the eikonal equation is solved globally by linear phases `φ = ξ₀·x − τ̂ t` with
+    `p(τ̂, ξ₀) = 0` and `Im τ̂ > 0` (LEAN `admissible_hadamard_growth` gives these roots).
+  * The first transport operator is then the constant complex vector field `∇_ζ p(τ̂, ξ₀)·∇`,
+    which is locally solvable.
+  * The step not yet written out is **localization**. A spatial cutoff creates commutator terms
+    exactly where the WKB solution is already exponentially large. The Lax–Mizohata argument
+    controls this with a complex phase concentrated at the point.
+  * A self-contained version of that localization step, for the operator
+    `F(ρ₀)p(∂)·I₂ + (order ≤ 3)`, is the precise missing lemma.
 
 On the recovery side, the corresponding open structural question is **whether any completion
 outside the `(κ, θ, γ)` family can change the type of the principal symbol while keeping S004's
