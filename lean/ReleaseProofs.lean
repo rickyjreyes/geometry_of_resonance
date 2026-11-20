@@ -50,3 +50,6 @@ import ReleaseProofs.S004NodalDiracClosure
 import ReleaseProofs.S004CoefficientFamily
 import ReleaseProofs.S004HarmonicGhostForcing
 import ReleaseProofs.S004ScopedNoGo
+import ReleaseProofs.S004StratifiedConstraint
+import ReleaseProofs.S004ResonanceCertificate
+import ReleaseProofs.S004Issue53Interface

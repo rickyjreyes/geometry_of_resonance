@@ -161,4 +161,51 @@ theorem secular_amplitude_unbounded {c Ω : ℝ} (hc : 0 < c) (hΩ : 0 < Ω) (M 
   rw [mul_div_assoc', lt_div_iff₀ hΩ]
   nlinarith [Nat.cast_nonneg (α := ℝ) n]
 
+
+/-- `HasDerivAt` of `t ↦ cos(ω t)` and of its derivative. -/
+theorem cos_first_deriv (ω t : ℝ) :
+    HasDerivAt (fun s => Real.cos (ω * s)) (-Real.sin (ω * t) * ω) t := by
+  have := ((hasDerivAt_id t).const_mul ω).cos
+  simpa using this
+
+theorem cos_second_deriv (ω t : ℝ) :
+    HasDerivAt (fun s => -Real.sin (ω * s) * ω) (-(ω ^ 2) * Real.cos (ω * t)) t := by
+  have := (((hasDerivAt_id t).const_mul ω).sin.neg).mul_const ω
+  convert this using 1
+  simp
+  ring
+
+/-- **Bounded off-resonant excitation (exact).** For `z > 0`, `Ω² ≠ z`, the zero-data response
+`y(t) = c/(z − Ω²)·(cos Ωt − cos √z t)` of a normal mode `ÿ + z y = c cos Ωt` satisfies the equation
+and the time-uniform bound `|y(t)| ≤ 2|c|/|z − Ω²|`. -/
+theorem offresonant_forced_response (c z Ω : ℝ) (hz : 0 < z) (hres : z ≠ Ω ^ 2) (t : ℝ) :
+    HasDerivAt (fun s => c / (z - Ω ^ 2) * (Real.cos (Ω * s) - Real.cos (Real.sqrt z * s)))
+        (c / (z - Ω ^ 2) * (-Real.sin (Ω * t) * Ω - -Real.sin (Real.sqrt z * t) * Real.sqrt z)) t ∧
+      HasDerivAt
+        (fun s => c / (z - Ω ^ 2) * (-Real.sin (Ω * s) * Ω - -Real.sin (Real.sqrt z * s) * Real.sqrt z))
+        (c / (z - Ω ^ 2) * (-(Ω ^ 2) * Real.cos (Ω * t) - -(Real.sqrt z ^ 2) *
+          Real.cos (Real.sqrt z * t))) t ∧
+      c / (z - Ω ^ 2) * (-(Ω ^ 2) * Real.cos (Ω * t) - -(Real.sqrt z ^ 2) * Real.cos (Real.sqrt z * t)) +
+          z * (c / (z - Ω ^ 2) * (Real.cos (Ω * t) - Real.cos (Real.sqrt z * t))) =
+        c * Real.cos (Ω * t) ∧
+      |c / (z - Ω ^ 2) * (Real.cos (Ω * t) - Real.cos (Real.sqrt z * t))| ≤ 2 * |c| / |z - Ω ^ 2| := by
+  have hden : z - Ω ^ 2 ≠ 0 := sub_ne_zero.mpr hres
+  have hsq : Real.sqrt z ^ 2 = z := Real.sq_sqrt hz.le
+  refine ⟨((cos_first_deriv Ω t).sub (cos_first_deriv (Real.sqrt z) t)).const_mul _,
+    ((cos_second_deriv Ω t).sub (cos_second_deriv (Real.sqrt z) t)).const_mul _, ?_, ?_⟩
+  · rw [hsq]
+    field_simp
+    ring
+  · rw [abs_mul, abs_div]
+    have hcos : |Real.cos (Ω * t) - Real.cos (Real.sqrt z * t)| ≤ 2 := by
+      have h1 := Real.abs_cos_le_one (Ω * t)
+      have h2 := Real.abs_cos_le_one (Real.sqrt z * t)
+      calc |Real.cos (Ω * t) - Real.cos (Real.sqrt z * t)|
+          ≤ |Real.cos (Ω * t)| + |Real.cos (Real.sqrt z * t)| := abs_sub _ _
+        _ ≤ 2 := by linarith
+    have hpos : 0 < |z - Ω ^ 2| := abs_pos.mpr hden
+    calc |c| / |z - Ω ^ 2| * |Real.cos (Ω * t) - Real.cos (Real.sqrt z * t)|
+        ≤ |c| / |z - Ω ^ 2| * 2 := mul_le_mul_of_nonneg_left hcos (by positivity)
+      _ = 2 * |c| / |z - Ω ^ 2| := by ring
+
 end ReleaseProofs.S004HarmonicGhostForcing

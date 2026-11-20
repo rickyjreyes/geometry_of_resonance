@@ -1,3 +1,6 @@
+import ReleaseProofs.S004StratifiedConstraint
+import ReleaseProofs.S004ResonanceCertificate
+import ReleaseProofs.S004Issue53Interface
 import ReleaseProofs.S004CharacteristicCone
 import ReleaseProofs.S004NodalDiracClosure
 import ReleaseProofs.S004CoefficientFamily
@@ -110,3 +113,37 @@ Hamiltonian, with restricted patch hypotheses.
 
 -- Phase XXIX: single scoped no-go interface theorem.
 #print axioms ReleaseProofs.S004ScopedNoGo.s004_scoped_no_go
+
+-- Phase XXX: stratified (unified-formalism) constraint algorithm and static-sector classification.
+#print axioms ReleaseProofs.S004StratifiedConstraint.tangency_regular_unique_jerk
+#print axioms ReleaseProofs.S004StratifiedConstraint.tangency_nodal_iff
+#print axioms ReleaseProofs.S004StratifiedConstraint.tangency_jerk_independent_iff
+#print axioms ReleaseProofs.S004StratifiedConstraint.nodal_path_tangency_iff
+#print axioms ReleaseProofs.S004StratifiedConstraint.shift_invariant_bounded_sector_is_static
+#print axioms ReleaseProofs.S004StratifiedConstraint.nodal_instant_charge_vanishes
+
+-- Phase XXXI: exact second-harmonic ghost resonance classification and certificate.
+#print axioms ReleaseProofs.S004ResonanceCertificate.resonanceGap_formula
+#print axioms ReleaseProofs.S004ResonanceCertificate.resonance_exists_of_band
+#print axioms ReleaseProofs.S004ResonanceCertificate.resonance_band_of_resonance
+#print axioms ReleaseProofs.S004ResonanceCertificate.certified_weight_value
+#print axioms ReleaseProofs.S004ResonanceCertificate.certified_weight_slope
+#print axioms ReleaseProofs.S004ResonanceCertificate.certified_disc_k
+#print axioms ReleaseProofs.S004ResonanceCertificate.certified_disc_2k
+#print axioms ReleaseProofs.S004ResonanceCertificate.certified_resonance
+#print axioms ReleaseProofs.S004ResonanceCertificate.certified_window
+#print axioms ReleaseProofs.S004ResonanceCertificate.certified_resonant_branch
+#print axioms ReleaseProofs.S004ResonanceCertificate.certified_upper_mode_negative_energy
+#print axioms ReleaseProofs.S004ResonanceCertificate.linearSymbol_eq_inversePropagator
+#print axioms ReleaseProofs.S004ResonanceCertificate.certified_ordinary_offset
+#print axioms ReleaseProofs.S004ResonanceCertificate.certified_sigma2
+#print axioms ReleaseProofs.S004ResonanceCertificate.certified_sigma2_cancellation_iff
+#print axioms ReleaseProofs.S004ResonanceCertificate.certified_no_periodic_second_order
+#print axioms ReleaseProofs.S004ResonanceCertificate.certified_third_harmonic_elliptic
+#print axioms ReleaseProofs.S004ResonanceCertificate.original_candidate_no_resonance
+
+-- Phase XXVIII addendum: exact bounded off-resonant response.
+#print axioms ReleaseProofs.S004HarmonicGhostForcing.offresonant_forced_response
+
+-- Phase XXXII: consolidated issue #53 interface.
+#print axioms ReleaseProofs.S004Issue53Interface.s004_issue53_interface
