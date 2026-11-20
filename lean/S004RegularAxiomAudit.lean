@@ -147,3 +147,7 @@ Hamiltonian, with restricted patch hypotheses.
 
 -- Phase XXXII: consolidated issue #53 interface.
 #print axioms ReleaseProofs.S004Issue53Interface.s004_issue53_interface
+
+-- Phase XXVII addendum: the ghost-free spatial member has one positive, monotone branch.
+#print axioms ReleaseProofs.S004CoefficientFamily.spatial_member_single_branch
+#print axioms ReleaseProofs.S004CoefficientFamily.spatial_member_no_finite_k_minimum

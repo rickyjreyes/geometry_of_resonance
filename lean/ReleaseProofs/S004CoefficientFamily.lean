@@ -1,6 +1,7 @@
 import Mathlib
 import ReleaseProofs.R16_EnergyAndConstraints
 import ReleaseProofs.S004CharacteristicCone
+import ReleaseProofs.R18_FiniteScale
 
 /-!
 # S004 Phase XXVII: the S004 coefficient family `(κ, θ, γ)` — no admissible healthy member
@@ -150,5 +151,28 @@ theorem psd_hyperbolic_members_keep_ghost {F κ θ γ s : ℝ} (hF : 0 < F) (hk 
   rw [R16Energy.s004_acceleration_det_exact]
   have : F * κ ≠ 0 := mul_ne_zero hF.ne' hk
   positivity
+
+/-- **Spatial member (`κ = γ = 0`): one positive branch.** The amplitude-mode dispersion
+`R18.inversePropagator` with `K = G = 0` has exactly one root `z = q + m² + Tq²` (no ghost pole),
+positive when `q > 0` or `m² > 0`. -/
+theorem spatial_member_single_branch {T m2 q : ℝ} (hT : 0 ≤ T) (hm : 0 ≤ m2) (hq : 0 ≤ q)
+    (hpos : 0 < q ∨ 0 < m2) (z : ℝ) :
+    (R18.inversePropagator 0 0 T m2 z q = 0 ↔ z = q + m2 + T * q ^ 2) ∧
+      0 < q + m2 + T * q ^ 2 := by
+  constructor
+  · unfold R18.inversePropagator
+    constructor <;> intro h <;> linarith
+  · rcases hpos with h | h <;> nlinarith [mul_nonneg hT (sq_nonneg q)]
+
+/-- **The spatial member loses the finite-wavelength frequency minimum.** Its squared frequency
+`q ↦ q + m² + Tq²` is strictly increasing on `q ≥ 0`, so its minimum is at `q = 0`: the
+finite-`k` static frequency minimum of the two-branch S004 dispersion (#18) is abandoned. -/
+theorem spatial_member_no_finite_k_minimum {T m2 : ℝ} (hT : 0 ≤ T) :
+    StrictMonoOn (fun q : ℝ => q + m2 + T * q ^ 2) (Set.Ici 0) := by
+  intro a ha b hb hab
+  simp only [Set.mem_Ici] at ha hb
+  have : T * a ^ 2 ≤ T * b ^ 2 := mul_le_mul_of_nonneg_left (by nlinarith) hT
+  show a + m2 + T * a ^ 2 < b + m2 + T * b ^ 2
+  linarith
 
 end ReleaseProofs.S004CoefficientFamily
