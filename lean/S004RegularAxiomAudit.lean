@@ -1,3 +1,12 @@
+import ReleaseProofs.S004StratifiedConstraint
+import ReleaseProofs.S004ResonanceCertificate
+import ReleaseProofs.S004Issue53Interface
+import ReleaseProofs.S004LocalizedHadamard
+import ReleaseProofs.S004CharacteristicCone
+import ReleaseProofs.S004NodalDiracClosure
+import ReleaseProofs.S004CoefficientFamily
+import ReleaseProofs.S004HarmonicGhostForcing
+import ReleaseProofs.S004ScopedNoGo
 import ReleaseProofs.S004NodalPrimary
 import ReleaseProofs.S004NodalEnergyObstruction
 import ReleaseProofs.S004NodalHolonomic
@@ -50,3 +59,138 @@ Hamiltonian, with restricted patch hypotheses.
 #print axioms ReleaseProofs.S004NodalAccelerationConsistency.permanently_nodal_path_acceleration_zero
 #print axioms ReleaseProofs.S004NodalAccelerationConsistency.permanently_nodal_path_velocity_and_acceleration_zero
 #print axioms ReleaseProofs.S004NodalAccelerationConsistency.nonzero_acceleration_requires_nodal_exit
+
+-- Phase XXV: characteristic cone, spacetime ellipticity, exact Hadamard roots.
+#print axioms ReleaseProofs.S004CharacteristicCone.symbolForm_pos_definite_iff
+#print axioms ReleaseProofs.S004CharacteristicCone.admissible_symbol_elliptic
+#print axioms ReleaseProofs.S004CharacteristicCone.admissible_elliptic_covector
+#print axioms ReleaseProofs.S004CharacteristicCone.admissible_no_real_characteristic
+#print axioms ReleaseProofs.S004CharacteristicCone.real_characteristic_not_admissible
+#print axioms ReleaseProofs.S004CharacteristicCone.real_characteristic_iff
+#print axioms ReleaseProofs.S004CharacteristicCone.two_positive_roots_iff
+#print axioms ReleaseProofs.S004CharacteristicCone.admissible_not_strictly_hyperbolic
+#print axioms ReleaseProofs.S004CharacteristicCone.psd_with_real_characteristic_is_boundary
+#print axioms ReleaseProofs.S004CharacteristicCone.boundary_perfect_square
+#print axioms ReleaseProofs.S004CharacteristicCone.hadamardRatio_root
+#print axioms ReleaseProofs.S004CharacteristicCone.frozen_symbol_hadamard_root
+#print axioms ReleaseProofs.S004CharacteristicCone.hadamard_sqrt_re_ne_zero
+#print axioms ReleaseProofs.S004CharacteristicCone.admissible_hadamard_growth
+#print axioms ReleaseProofs.S004CharacteristicCone.hadamard_constant_unbounded_as_kappa_to_zero
+#print axioms ReleaseProofs.S004CharacteristicCone.exp_beats_every_polynomial_weight
+
+-- Phase XXVI: nodal secondary constraint p1 = 2v, second-class bracket, vacuum-only sector.
+#print axioms ReleaseProofs.S004NodalDiracClosure.nodal_weight_hasDerivAt_zero
+#print axioms ReleaseProofs.S004NodalDiracClosure.nodal_instant_momenta
+#print axioms ReleaseProofs.S004NodalDiracClosure.nodal_instant_lift_mem
+#print axioms ReleaseProofs.S004NodalDiracClosure.nodalDirac_not_shift_invariant
+#print axioms ReleaseProofs.S004NodalDiracClosure.nodalDirac_energy_eq
+#print axioms ReleaseProofs.S004NodalDiracClosure.nodalDirac_energy_bddBelow
+#print axioms ReleaseProofs.S004NodalDiracClosure.nodal_primary_energy_unbounded
+#print axioms ReleaseProofs.S004NodalDiracClosure.nodalBracketMatrix_eq
+#print axioms ReleaseProofs.S004NodalDiracClosure.nodalBracketMatrix_det
+#print axioms ReleaseProofs.S004NodalDiracClosure.transientBracket_det_zero
+#print axioms ReleaseProofs.S004NodalDiracClosure.nodal_invariant_constraint_set
+#print axioms ReleaseProofs.S004NodalDiracClosure.permanently_nodal_lift_is_origin
+#print axioms ReleaseProofs.S004NodalDiracClosure.holonomic_fibre_unattained
+#print axioms ReleaseProofs.S004NodalDiracClosure.correctedWeight_hasDerivAt_zero
+#print axioms ReleaseProofs.S004NodalDiracClosure.nodal_crossing_acceleration_zero
+
+-- Phase XXVII: S004 coefficient family has no admissible ghost-free or hyperbolic member.
+#print axioms ReleaseProofs.S004CoefficientFamily.accel_hessian_degenerate_iff
+#print axioms ReleaseProofs.S004CoefficientFamily.admissible_member_obstructed
+#print axioms ReleaseProofs.S004CoefficientFamily.ghostfree_psd_members
+#print axioms ReleaseProofs.S004CoefficientFamily.hyperbolic_region_curvature_indefinite
+#print axioms ReleaseProofs.S004CoefficientFamily.strictly_hyperbolic_curvature_indefinite
+#print axioms ReleaseProofs.S004CoefficientFamily.psd_hyperbolic_members_keep_ghost
+
+-- Phase XXVIII: nonlinear second-harmonic forcing of the ghost branch.
+#print axioms ReleaseProofs.S004HarmonicGhostForcing.linearSymbol_factor
+#print axioms ReleaseProofs.S004HarmonicGhostForcing.onShell_symbol_identity
+#print axioms ReleaseProofs.S004HarmonicGhostForcing.sigma2_factor
+#print axioms ReleaseProofs.S004HarmonicGhostForcing.sigma2_neg
+#print axioms ReleaseProofs.S004HarmonicGhostForcing.ghost_mode_forced
+#print axioms ReleaseProofs.S004HarmonicGhostForcing.resonant_secular_solution
+#print axioms ReleaseProofs.S004HarmonicGhostForcing.secular_amplitude_unbounded
+
+-- Phase XXIX: single scoped no-go interface theorem.
+#print axioms ReleaseProofs.S004ScopedNoGo.s004_scoped_no_go
+
+-- Phase XXX: stratified (unified-formalism) constraint algorithm and static-sector classification.
+#print axioms ReleaseProofs.S004StratifiedConstraint.tangency_regular_unique_jerk
+#print axioms ReleaseProofs.S004StratifiedConstraint.tangency_nodal_iff
+#print axioms ReleaseProofs.S004StratifiedConstraint.tangency_jerk_independent_iff
+#print axioms ReleaseProofs.S004StratifiedConstraint.nodal_path_tangency_iff
+#print axioms ReleaseProofs.S004StratifiedConstraint.shift_invariant_bounded_sector_is_static
+#print axioms ReleaseProofs.S004StratifiedConstraint.nodal_instant_charge_vanishes
+
+-- Phase XXXI: exact second-harmonic ghost resonance classification and certificate.
+#print axioms ReleaseProofs.S004ResonanceCertificate.resonanceGap_formula
+#print axioms ReleaseProofs.S004ResonanceCertificate.resonance_exists_of_band
+#print axioms ReleaseProofs.S004ResonanceCertificate.resonance_band_of_resonance
+#print axioms ReleaseProofs.S004ResonanceCertificate.certified_weight_value
+#print axioms ReleaseProofs.S004ResonanceCertificate.certified_weight_slope
+#print axioms ReleaseProofs.S004ResonanceCertificate.certified_disc_k
+#print axioms ReleaseProofs.S004ResonanceCertificate.certified_disc_2k
+#print axioms ReleaseProofs.S004ResonanceCertificate.certified_resonance
+#print axioms ReleaseProofs.S004ResonanceCertificate.certified_window
+#print axioms ReleaseProofs.S004ResonanceCertificate.certified_resonant_branch
+#print axioms ReleaseProofs.S004ResonanceCertificate.certified_upper_mode_negative_energy
+#print axioms ReleaseProofs.S004ResonanceCertificate.linearSymbol_eq_inversePropagator
+#print axioms ReleaseProofs.S004ResonanceCertificate.certified_ordinary_offset
+#print axioms ReleaseProofs.S004ResonanceCertificate.certified_sigma2
+#print axioms ReleaseProofs.S004ResonanceCertificate.certified_sigma2_cancellation_iff
+#print axioms ReleaseProofs.S004ResonanceCertificate.certified_no_periodic_second_order
+#print axioms ReleaseProofs.S004ResonanceCertificate.certified_third_harmonic_elliptic
+#print axioms ReleaseProofs.S004ResonanceCertificate.original_candidate_no_resonance
+
+-- Phase XXVIII addendum: exact bounded off-resonant response.
+#print axioms ReleaseProofs.S004HarmonicGhostForcing.offresonant_forced_response
+
+-- Phase XXXII: consolidated issue #53 interface.
+#print axioms ReleaseProofs.S004Issue53Interface.s004_issue53_interface
+
+-- Phase XXVII addendum: the ghost-free spatial member has one positive, monotone branch.
+#print axioms ReleaseProofs.S004CoefficientFamily.spatial_member_single_branch
+#print axioms ReleaseProofs.S004CoefficientFamily.spatial_member_no_finite_k_minimum
+
+-- Phase XXXIII: factorization and simplicity of the Hadamard root.
+#print axioms ReleaseProofs.S004CharacteristicCone.laplaceSymbol_real_frequency
+#print axioms ReleaseProofs.S004CharacteristicCone.hadamardRatioConj_eq_conj
+#print axioms ReleaseProofs.S004CharacteristicCone.hadamardRatio_add_conj
+#print axioms ReleaseProofs.S004CharacteristicCone.hadamardRatio_mul_conj
+#print axioms ReleaseProofs.S004CharacteristicCone.laplaceSymbol_factor
+#print axioms ReleaseProofs.S004CharacteristicCone.laplaceSymbol_hasDerivAt
+#print axioms ReleaseProofs.S004CharacteristicCone.laplaceSymbolDeriv_homogeneous
+#print axioms ReleaseProofs.S004CharacteristicCone.laplaceSymbolDeriv_at_hadamard_root
+#print axioms ReleaseProofs.S004CharacteristicCone.laplaceSymbol_at_hadamard_root
+#print axioms ReleaseProofs.S004CharacteristicCone.hadamard_root_simple
+#print axioms ReleaseProofs.S004CharacteristicCone.exists_growing_simple_root
+
+-- Phase XXXIII: kernel-checked ingredients of the localized Hadamard construction.
+#print axioms ReleaseProofs.S004LocalizedHadamard.beamPhase_hasDerivAt_t
+#print axioms ReleaseProofs.S004LocalizedHadamard.beamPhase_hasDerivAt_y
+#print axioms ReleaseProofs.S004LocalizedHadamard.beam_transport
+#print axioms ReleaseProofs.S004LocalizedHadamard.beam_eikonal
+#print axioms ReleaseProofs.S004LocalizedHadamard.beam_hasDerivAt_t
+#print axioms ReleaseProofs.S004LocalizedHadamard.beam_hasDerivAt_y
+#print axioms ReleaseProofs.S004LocalizedHadamard.beam_first_order_annihilated
+#print axioms ReleaseProofs.S004LocalizedHadamard.laplaceSymbol_first_order_factor
+#print axioms ReleaseProofs.S004LocalizedHadamard.beamPhase_re
+#print axioms ReleaseProofs.S004LocalizedHadamard.beam_norm_sq
+#print axioms ReleaseProofs.S004LocalizedHadamard.beam_sq_integrable
+#print axioms ReleaseProofs.S004LocalizedHadamard.beam_norm_sq_integral
+#print axioms ReleaseProofs.S004LocalizedHadamard.beam_growth_factor
+#print axioms ReleaseProofs.S004LocalizedHadamard.log_scale_exponential
+#print axioms ReleaseProofs.S004LocalizedHadamard.beam_growth_on_log_scale
+#print axioms ReleaseProofs.S004LocalizedHadamard.gaussian_completing_square
+#print axioms ReleaseProofs.S004LocalizedHadamard.annulus_phase_bound
+#print axioms ReleaseProofs.S004LocalizedHadamard.log_pow_mul_rpow_neg_tendsto_zero
+#print axioms ReleaseProofs.S004LocalizedHadamard.ratio_tendsto_atTop
+#print axioms ReleaseProofs.S004LocalizedHadamard.no_uniform_estimate_of_ratio
+#print axioms ReleaseProofs.S004LocalizedHadamard.localized_estimate_fails
+#print axioms ReleaseProofs.S004LocalizedHadamard.parameter_choice
+#print axioms ReleaseProofs.S004LocalizedHadamard.localized_hadamard_beam
+
+-- Phase XXXIII: localization at the scoped no-go point and in the #53 interface.
+#print axioms ReleaseProofs.S004ScopedNoGo.s004_scoped_no_go_localization
+#print axioms ReleaseProofs.S004Issue53Interface.s004_issue53_interface_with_localization
