@@ -4,6 +4,7 @@ import ReleaseProofs.S004ChargeNoGo
 import ReleaseProofs.S004CharacteristicCone
 import ReleaseProofs.S004NodalDiracClosure
 import ReleaseProofs.S004CoefficientFamily
+import ReleaseProofs.S004LocalizedHadamard
 
 /-!
 # S004 Phase XXIX: single kernel-checked interface for the scoped no-go (issues #16, #53)
@@ -26,9 +27,14 @@ foliation and the source admissibility condition `κ > 0, θ > 0, γ² < 4κθ`,
 6. **Family classification** (Phase XXVII): no ghost-free member of the S004 coefficient family
    with nonnegative curvature energy is admissible.
 
-What remains analytical (NOT kernel-checked): the Lax–Mizohata step from items 3–4 at one point to
-ill-posedness of the variable-coefficient/nonlinear Cauchy problem, and the infinite-dimensional
-Dirac count `H2`. See `docs/s004_closure/`.
+Phase XXXIII adds `s004_scoped_no_go_localization`: the kernel-checked ingredients (simple growing
+root, exact localized beam with closed-form `L²` growth, exponent bookkeeping) of the
+self-contained proof that the linearized variable-coefficient Cauchy problem is Sobolev ill-posed
+near every regular point (`docs/s004_closure/VARIABLE_COEFFICIENT_ILLPOSEDNESS.md`).
+
+What remains analytical (NOT kernel-checked): the Sobolev and transport-hierarchy estimates of that
+proof (written out in full there; no external theorem is cited), the nonlinear consequences, and
+the infinite-dimensional Dirac count `H2`. See `docs/s004_closure/`.
 -/
 
 namespace ReleaseProofs.S004ScopedNoGo
@@ -90,5 +96,45 @@ theorem s004_scoped_no_go
     exact admissible_elliptic_covector hF hadm τ ξ hne
   · intro κ' θ' γ' hpsd hdeg
     exact (S004CoefficientFamily.ghostfree_psd_members hF hpsd hdeg).2.2.2
+
+/-- **Phase XXXIII: localization ingredient at the same regular point.** With the source
+hypotheses only (`ε ≠ 0`, admissibility, one regular point): the weight is positive, the
+linearized principal symbol is elliptic, there is a simple growing Hadamard root `w`, the complex
+Gaussian-beam phase solves the frozen eikonal equation exactly, the beam's squared `L²` norm has
+a closed form and grows by at least `N^{2K Re w}` on the time scale `K log N / N`, and for every
+Sobolev pair the construction parameters have positive exponent gaps.
+
+The PDE passage from these ingredients to failure of every Sobolev estimate for the linearized
+variable-coefficient Cauchy problem is the paper proof in
+`docs/s004_closure/VARIABLE_COEFFICIENT_ILLPOSEDNESS.md`; its final contradiction step is
+`S004LocalizedHadamard.localized_estimate_fails`. -/
+theorem s004_scoped_no_go_localization
+    (eps alpha kappa theta gamma : ℝ) (heps : eps ≠ 0)
+    (hadm : Admissible kappa theta gamma) (x1 x2 : ℝ) (hx : 0 < x1 ^ 2 + x2 ^ 2) :
+    0 < R16.correctedWeight (x1 ^ 2 + x2 ^ 2) eps alpha ∧
+    (∀ (τ : ℝ) (ξ : EuclideanSpace ℝ (Fin 3)), (τ ≠ 0 ∨ ξ ≠ 0) →
+      0 < principalSymbol (R16.correctedWeight (x1 ^ 2 + x2 ^ 2) eps alpha)
+        kappa theta gamma τ (‖ξ‖ ^ 2)) ∧
+    (∃ w : ℂ, w ^ 2 = hadamardRatio kappa theta gamma ∧ 0 < w.re ∧
+      laplaceSymbol kappa theta gamma w (-1) = 0 ∧
+      laplaceSymbolDeriv kappa theta gamma w (-1) ≠ 0 ∧
+      (∀ t y : ℝ, S004LocalizedHadamard.beamPhaseT w t y +
+          Complex.I * w * S004LocalizedHadamard.beamPhaseY w t y = 0 ∧
+        laplaceSymbol kappa theta gamma (S004LocalizedHadamard.beamPhaseT w t y)
+          (S004LocalizedHadamard.beamPhaseY w t y ^ 2) = 0) ∧
+      (∀ N : ℝ, 0 < N → ∀ t : ℝ,
+        MeasureTheory.Integrable (fun y : ℝ => ‖S004LocalizedHadamard.beam N w t y‖ ^ 2) ∧
+        ∫ y : ℝ, ‖S004LocalizedHadamard.beam N w t y‖ ^ 2 =
+          Real.sqrt (Real.pi / N) * Real.exp (2 * N * t * w.re + N * t ^ 2 * w.re ^ 2)) ∧
+      (∀ N : ℝ, 0 < N → ∀ K : ℝ,
+        N ^ (2 * K * w.re) * ∫ y : ℝ, ‖S004LocalizedHadamard.beam N w 0 y‖ ^ 2 ≤
+          ∫ y : ℝ, ‖S004LocalizedHadamard.beam N w (K * Real.log N / N) y‖ ^ 2)) ∧
+    (∀ s σ c : ℝ, 0 ≤ s → 0 ≤ σ → 0 < c →
+      ∃ K : ℝ, ∃ Kp J : ℕ, 0 < K ∧ 3 + s + σ < K * c ∧ 4 + s + σ < Kp ∧ 2 + s + σ < J) := by
+  have hF : 0 < R16.correctedWeight (x1 ^ 2 + x2 ^ 2) eps alpha :=
+    R16.corrected_weight_pos _ eps alpha hx heps
+  exact ⟨hF, fun τ ξ hne => admissible_elliptic_covector hF hadm τ ξ hne,
+    S004LocalizedHadamard.localized_hadamard_beam hadm,
+    fun _ _ _ hs hσ hc => S004LocalizedHadamard.parameter_choice hs hσ hc⟩
 
 end ReleaseProofs.S004ScopedNoGo

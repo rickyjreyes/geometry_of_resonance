@@ -42,11 +42,14 @@ This module proves the exact real and complex algebra of that symbol:
   reason no finite loss of Sobolev derivatives can absorb Hadamard growth.
 
 **Scope.** These are exact finite-dimensional algebraic statements about the principal symbol
-and about explicit frozen-coefficient plane-wave roots. The passage from a non-real
-characteristic root at one point to failure of Sobolev well-posedness of the
-variable-coefficient and nonlinear Cauchy problem is the classical Lax–Mizohata theorem; it is
-NOT formalized here and is recorded as an analytical (cited) step in
-`docs/s004_closure/CHARACTERISTIC_CONE_THEOREM.md`.
+and about explicit frozen-coefficient plane-wave roots. Phase XXXIII adds the factorization
+`κ(λ² + μZ)(λ² + μ̄Z)` and the simplicity of the growing root (`hadamard_root_simple`). The passage
+from a simple non-real characteristic root at one regular point to failure of Sobolev
+well-posedness of the variable-coefficient linearized Cauchy problem is proved on paper, by a
+self-contained localized (Gaussian-beam) construction, in
+`docs/s004_closure/VARIABLE_COEFFICIENT_ILLPOSEDNESS.md`; its finite-dimensional and
+one-dimensional-integral ingredients are kernel-checked in `S004LocalizedHadamard`. Sobolev
+spaces and the variable-coefficient transport hierarchy are not formalized.
 -/
 
 namespace ReleaseProofs.S004CharacteristicCone
@@ -463,5 +466,166 @@ theorem exp_beats_every_polynomial_weight {b : ℝ} (hb : 0 < b) (N : ℕ) :
     field_simp
   rw [hrw]
   exact div_le_div_of_nonneg_left he.le hpos1 h1x
+
+/-! ## Phase XXXIII: factorization and simplicity of the Hadamard root
+
+These statements are used by the localized construction in `S004LocalizedHadamard` and by the
+paper proof in `docs/s004_closure/VARIABLE_COEFFICIENT_ILLPOSEDNESS.md`: the transport equation
+of the Gaussian-beam construction is solvable because the growing root is simple. -/
+
+section HadamardRootSimplicity
+
+open Complex
+
+/-- Frozen principal symbol with `∂ₜ ↦ λ`, `∂ₓ ↦ ζ'` and `Z = ζ'·ζ'` (`Z = −|ξ|²` when
+`ζ' = iξ`): `κ(Z − λ²)² + γ(Z − λ²)Z + θZ²` (from `□ ↦ Z − λ²`, `Δ ↦ Z`). -/
+def laplaceSymbol (κ θ γ : ℝ) (lam Z : ℂ) : ℂ :=
+  (κ : ℂ) * (Z - lam ^ 2) ^ 2 + (γ : ℂ) * (Z - lam ^ 2) * Z + (θ : ℂ) * Z ^ 2
+
+/-- At a real spatial frequency (`Z = −Y`, `Y = |ξ|²`) this is the frozen symbol of
+`S004CharacteristicCone`. -/
+theorem laplaceSymbol_real_frequency (κ θ γ : ℝ) (lam : ℂ) (Y : ℝ) :
+    laplaceSymbol κ θ γ lam (-(Y : ℂ)) = frozenSymbolLambda κ θ γ lam Y := by
+  unfold laplaceSymbol frozenSymbolLambda
+  ring
+
+/-- The complex-conjugate characteristic ratio `μ̄`. -/
+noncomputable def hadamardRatioConj (κ θ γ : ℝ) : ℂ :=
+  ⟨-(2 * κ + γ) / (2 * κ), -(Real.sqrt (4 * κ * θ - γ ^ 2) / (2 * κ))⟩
+
+theorem hadamardRatioConj_eq_conj (κ θ γ : ℝ) :
+    hadamardRatioConj κ θ γ = (starRingEnd ℂ) (hadamardRatio κ θ γ) := by
+  apply Complex.ext <;> simp [hadamardRatioConj, hadamardRatio]
+
+theorem hadamardRatio_add_conj {κ θ γ : ℝ} (hk : κ ≠ 0) :
+    hadamardRatio κ θ γ + hadamardRatioConj κ θ γ = ((-(2 * κ + γ) / κ : ℝ) : ℂ) := by
+  apply Complex.ext
+  · simp only [hadamardRatio, hadamardRatioConj, Complex.add_re, Complex.ofReal_re]
+    field_simp
+    ring
+  · simp [hadamardRatio, hadamardRatioConj]
+
+theorem hadamardRatio_mul_conj {κ θ γ : ℝ} (hk : κ ≠ 0) (hD : 0 ≤ 4 * κ * θ - γ ^ 2) :
+    hadamardRatio κ θ γ * hadamardRatioConj κ θ γ = (((κ + γ + θ) / κ : ℝ) : ℂ) := by
+  have hs : Real.sqrt (4 * κ * θ - γ ^ 2) ^ 2 = 4 * κ * θ - γ ^ 2 := Real.sq_sqrt hD
+  apply Complex.ext
+  · simp only [hadamardRatio, hadamardRatioConj, Complex.mul_re, Complex.ofReal_re]
+    generalize Real.sqrt (4 * κ * θ - γ ^ 2) = r at hs ⊢
+    field_simp
+    linear_combination hs
+  · simp only [hadamardRatio, hadamardRatioConj, Complex.mul_im, Complex.ofReal_im]
+    ring
+
+/-- **Exact factorization** `P(λ, Z) = κ(λ² + μZ)(λ² + μ̄Z)`. -/
+theorem laplaceSymbol_factor {κ θ γ : ℝ} (hk : κ ≠ 0) (hD : 0 ≤ 4 * κ * θ - γ ^ 2)
+    (lam Z : ℂ) :
+    laplaceSymbol κ θ γ lam Z =
+      (κ : ℂ) * (lam ^ 2 + hadamardRatio κ θ γ * Z) *
+        (lam ^ 2 + hadamardRatioConj κ θ γ * Z) := by
+  have hsum := hadamardRatio_add_conj (θ := θ) (γ := γ) hk
+  have hprod := hadamardRatio_mul_conj hk hD
+  have hkC : (κ : ℂ) ≠ 0 := Complex.ofReal_ne_zero.mpr hk
+  have expand : (κ : ℂ) * (lam ^ 2 + hadamardRatio κ θ γ * Z) *
+      (lam ^ 2 + hadamardRatioConj κ θ γ * Z) =
+      (κ : ℂ) * (lam ^ 4 + (hadamardRatio κ θ γ + hadamardRatioConj κ θ γ) * lam ^ 2 * Z +
+        (hadamardRatio κ θ γ * hadamardRatioConj κ θ γ) * Z ^ 2) := by ring
+  rw [expand, hsum, hprod]
+  unfold laplaceSymbol
+  push_cast
+  field_simp
+  ring
+
+/-- The `λ`-derivative of the Laplace symbol. -/
+def laplaceSymbolDeriv (κ _θ γ : ℝ) (lam Z : ℂ) : ℂ :=
+  -2 * lam * (2 * (κ : ℂ) * (Z - lam ^ 2) + (γ : ℂ) * Z)
+
+theorem laplaceSymbol_hasDerivAt (κ θ γ : ℝ) (lam Z : ℂ) :
+    HasDerivAt (fun l => laplaceSymbol κ θ γ l Z) (laplaceSymbolDeriv κ θ γ lam Z) lam := by
+  have h1 : HasDerivAt (fun l : ℂ => Z - l ^ 2) (-(2 * lam)) lam := by
+    have := (hasDerivAt_pow 2 lam).const_sub Z
+    convert this using 1
+    simp
+  have h2 := (h1.pow 2).const_mul (κ : ℂ)
+  have h3 := (h1.mul_const Z).const_mul (γ : ℂ)
+  have h4 := (h2.add h3).add_const ((θ : ℂ) * Z ^ 2)
+  unfold laplaceSymbol laplaceSymbolDeriv
+  convert h4 using 1
+  · funext l
+    simp only [Pi.add_apply, Pi.pow_apply]
+    ring
+  · push_cast
+    ring
+
+/-- Homogeneity: at `λ = n w`, `Z = −n²` the derivative scales by `n³`. -/
+theorem laplaceSymbolDeriv_homogeneous (κ θ γ : ℝ) (w : ℂ) (n : ℝ) :
+    laplaceSymbolDeriv κ θ γ ((n : ℂ) * w) (-((n : ℂ) ^ 2)) =
+      (n : ℂ) ^ 3 * laplaceSymbolDeriv κ θ γ w (-1) := by
+  unfold laplaceSymbolDeriv
+  ring
+
+/-- **Value of the derivative at the Hadamard root**: `∂_λ P(w, −1) = 2 w √(4κθ − γ²) i`. -/
+theorem laplaceSymbolDeriv_at_hadamard_root {κ θ γ : ℝ} (hk : κ ≠ 0) {w : ℂ}
+    (hw : w ^ 2 = hadamardRatio κ θ γ) :
+    laplaceSymbolDeriv κ θ γ w (-1) = 2 * w * (Real.sqrt (4 * κ * θ - γ ^ 2) : ℂ) * I := by
+  have hmu : hadamardRatio κ θ γ =
+      ((-(2 * κ + γ) / (2 * κ) : ℝ) : ℂ) +
+        ((Real.sqrt (4 * κ * θ - γ ^ 2) / (2 * κ) : ℝ) : ℂ) * I := by
+    apply Complex.ext
+    · simp only [hadamardRatio, Complex.add_re, Complex.ofReal_re, Complex.mul_re,
+        Complex.ofReal_im, Complex.I_re, Complex.I_im]
+      ring
+    · simp only [hadamardRatio, Complex.add_im, Complex.ofReal_re, Complex.ofReal_im,
+        Complex.mul_im, Complex.I_re, Complex.I_im]
+      ring
+  have hkC : (κ : ℂ) ≠ 0 := Complex.ofReal_ne_zero.mpr hk
+  unfold laplaceSymbolDeriv
+  rw [hw, hmu]
+  push_cast
+  field_simp
+  ring
+
+/-- The Hadamard root `w` (with `w² = μ`, `Z = −1`) is an exact root of the Laplace symbol. -/
+theorem laplaceSymbol_at_hadamard_root {κ θ γ : ℝ} (hk : κ ≠ 0) (hD : 0 ≤ 4 * κ * θ - γ ^ 2)
+    {w : ℂ} (hw : w ^ 2 = hadamardRatio κ θ γ) :
+    laplaceSymbol κ θ γ w (-1) = 0 := by
+  have h := laplaceSymbol_real_frequency κ θ γ w 1
+  push_cast at h
+  rw [h]
+  apply frozen_symbol_hadamard_root hk hD
+  push_cast
+  rw [hw]
+  ring
+
+/-- **Simplicity of the Hadamard root** under admissibility. -/
+theorem hadamard_root_simple {κ θ γ : ℝ} (h : Admissible κ θ γ) {w : ℂ}
+    (hw : w ^ 2 = hadamardRatio κ θ γ) :
+    laplaceSymbolDeriv κ θ γ w (-1) ≠ 0 := by
+  have hk : κ ≠ 0 := h.1.ne'
+  have hDpos : 0 < 4 * κ * θ - γ ^ 2 := by linarith [h.2.2]
+  rw [laplaceSymbolDeriv_at_hadamard_root hk hw]
+  have hw0 : w ≠ 0 := by
+    intro h0
+    have him := hadamardRatio_im_ne_zero h
+    rw [← hw, h0] at him
+    simp at him
+  have hr : (Real.sqrt (4 * κ * θ - γ ^ 2) : ℂ) ≠ 0 :=
+    Complex.ofReal_ne_zero.mpr (Real.sqrt_pos.mpr hDpos).ne'
+  exact mul_ne_zero (mul_ne_zero (mul_ne_zero two_ne_zero hw0) hr) I_ne_zero
+
+/-- Under admissibility there is a Hadamard root with positive real part; it is simple. -/
+theorem exists_growing_simple_root {κ θ γ : ℝ} (h : Admissible κ θ γ) :
+    ∃ w : ℂ, w ^ 2 = hadamardRatio κ θ γ ∧ 0 < w.re ∧
+      laplaceSymbol κ θ γ w (-1) = 0 ∧ laplaceSymbolDeriv κ θ γ w (-1) ≠ 0 := by
+  have hk : κ ≠ 0 := h.1.ne'
+  have hD : 0 ≤ 4 * κ * θ - γ ^ 2 := by linarith [h.2.2]
+  obtain ⟨w, hw⟩ := IsAlgClosed.exists_pow_nat_eq (hadamardRatio κ θ γ) two_pos
+  have hre := hadamard_sqrt_re_ne_zero hw (hadamardRatio_im_ne_zero h)
+  obtain ⟨w', hw', hpos⟩ : ∃ w' : ℂ, w' ^ 2 = hadamardRatio κ θ γ ∧ 0 < w'.re := by
+    rcases lt_or_gt_of_ne hre with hneg | hposw
+    · exact ⟨-w, by rw [neg_sq]; exact hw, by simp; linarith⟩
+    · exact ⟨w, hw, hposw⟩
+  exact ⟨w', hw', hpos, laplaceSymbol_at_hadamard_root hk hD hw', hadamard_root_simple h hw'⟩
+
+end HadamardRootSimplicity
 
 end ReleaseProofs.S004CharacteristicCone

@@ -15,8 +15,9 @@ health requirements, using only kernel-checked algebra:
   two-component S004 Hessian `(−2Fκ)·I₂` this happens iff `κ = 0`
   (`accel_hessian_degenerate_iff`);
 * **positive curvature energy** is the source admissibility condition (`Admissible`);
-* **hyperbolicity** (necessary for Sobolev well-posedness by the Lax–Mizohata theorem) needs
-  real characteristics (`S004CharacteristicCone.real_characteristic_iff`).
+* **hyperbolicity** (necessary for Sobolev well-posedness; for admissible S004 members the
+  ill-posedness is proved directly in `docs/s004_closure/VARIABLE_COEFFICIENT_ILLPOSEDNESS.md`)
+  needs real characteristics (`S004CharacteristicCone.real_characteristic_iff`).
 
 Results:
 

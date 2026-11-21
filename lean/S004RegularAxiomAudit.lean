@@ -1,6 +1,7 @@
 import ReleaseProofs.S004StratifiedConstraint
 import ReleaseProofs.S004ResonanceCertificate
 import ReleaseProofs.S004Issue53Interface
+import ReleaseProofs.S004LocalizedHadamard
 import ReleaseProofs.S004CharacteristicCone
 import ReleaseProofs.S004NodalDiracClosure
 import ReleaseProofs.S004CoefficientFamily
@@ -151,3 +152,45 @@ Hamiltonian, with restricted patch hypotheses.
 -- Phase XXVII addendum: the ghost-free spatial member has one positive, monotone branch.
 #print axioms ReleaseProofs.S004CoefficientFamily.spatial_member_single_branch
 #print axioms ReleaseProofs.S004CoefficientFamily.spatial_member_no_finite_k_minimum
+
+-- Phase XXXIII: factorization and simplicity of the Hadamard root.
+#print axioms ReleaseProofs.S004CharacteristicCone.laplaceSymbol_real_frequency
+#print axioms ReleaseProofs.S004CharacteristicCone.hadamardRatioConj_eq_conj
+#print axioms ReleaseProofs.S004CharacteristicCone.hadamardRatio_add_conj
+#print axioms ReleaseProofs.S004CharacteristicCone.hadamardRatio_mul_conj
+#print axioms ReleaseProofs.S004CharacteristicCone.laplaceSymbol_factor
+#print axioms ReleaseProofs.S004CharacteristicCone.laplaceSymbol_hasDerivAt
+#print axioms ReleaseProofs.S004CharacteristicCone.laplaceSymbolDeriv_homogeneous
+#print axioms ReleaseProofs.S004CharacteristicCone.laplaceSymbolDeriv_at_hadamard_root
+#print axioms ReleaseProofs.S004CharacteristicCone.laplaceSymbol_at_hadamard_root
+#print axioms ReleaseProofs.S004CharacteristicCone.hadamard_root_simple
+#print axioms ReleaseProofs.S004CharacteristicCone.exists_growing_simple_root
+
+-- Phase XXXIII: kernel-checked ingredients of the localized Hadamard construction.
+#print axioms ReleaseProofs.S004LocalizedHadamard.beamPhase_hasDerivAt_t
+#print axioms ReleaseProofs.S004LocalizedHadamard.beamPhase_hasDerivAt_y
+#print axioms ReleaseProofs.S004LocalizedHadamard.beam_transport
+#print axioms ReleaseProofs.S004LocalizedHadamard.beam_eikonal
+#print axioms ReleaseProofs.S004LocalizedHadamard.beam_hasDerivAt_t
+#print axioms ReleaseProofs.S004LocalizedHadamard.beam_hasDerivAt_y
+#print axioms ReleaseProofs.S004LocalizedHadamard.beam_first_order_annihilated
+#print axioms ReleaseProofs.S004LocalizedHadamard.laplaceSymbol_first_order_factor
+#print axioms ReleaseProofs.S004LocalizedHadamard.beamPhase_re
+#print axioms ReleaseProofs.S004LocalizedHadamard.beam_norm_sq
+#print axioms ReleaseProofs.S004LocalizedHadamard.beam_sq_integrable
+#print axioms ReleaseProofs.S004LocalizedHadamard.beam_norm_sq_integral
+#print axioms ReleaseProofs.S004LocalizedHadamard.beam_growth_factor
+#print axioms ReleaseProofs.S004LocalizedHadamard.log_scale_exponential
+#print axioms ReleaseProofs.S004LocalizedHadamard.beam_growth_on_log_scale
+#print axioms ReleaseProofs.S004LocalizedHadamard.gaussian_completing_square
+#print axioms ReleaseProofs.S004LocalizedHadamard.annulus_phase_bound
+#print axioms ReleaseProofs.S004LocalizedHadamard.log_pow_mul_rpow_neg_tendsto_zero
+#print axioms ReleaseProofs.S004LocalizedHadamard.ratio_tendsto_atTop
+#print axioms ReleaseProofs.S004LocalizedHadamard.no_uniform_estimate_of_ratio
+#print axioms ReleaseProofs.S004LocalizedHadamard.localized_estimate_fails
+#print axioms ReleaseProofs.S004LocalizedHadamard.parameter_choice
+#print axioms ReleaseProofs.S004LocalizedHadamard.localized_hadamard_beam
+
+-- Phase XXXIII: localization at the scoped no-go point and in the #53 interface.
+#print axioms ReleaseProofs.S004ScopedNoGo.s004_scoped_no_go_localization
+#print axioms ReleaseProofs.S004Issue53Interface.s004_issue53_interface_with_localization
