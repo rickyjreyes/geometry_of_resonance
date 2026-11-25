@@ -1,0 +1,10 @@
+test_byte_mutation_and_manifest_disagreement (test_freeze_gate.FreezeGateTests.test_byte_mutation_and_manifest_disagreement) ... ok
+test_malformed_shapes_fail_closed (test_freeze_gate.FreezeGateTests.test_malformed_shapes_fail_closed) ... ok
+test_nonfinite_reversed_and_boolean_targets (test_freeze_gate.FreezeGateTests.test_nonfinite_reversed_and_boolean_targets) ... ok
+test_outcome_roles_and_path_escape_are_rejected (test_freeze_gate.FreezeGateTests.test_outcome_roles_and_path_escape_are_rejected) ... ok
+test_template_never_executes_holdout (test_freeze_gate.FreezeGateTests.test_template_never_executes_holdout) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+OK

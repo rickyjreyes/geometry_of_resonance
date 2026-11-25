@@ -1,0 +1,249 @@
+{
+  "classification": "EMPIRICAL_FIT_ONLY",
+  "no_holdout": true,
+  "source": "SM_Spectrum/_terms_perfection_v18.py",
+  "source_sha256": "77f586ad1b164548bbe973b281e3ef4b06708d624898c945afc2523c8e293987",
+  "versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.16.2"
+  },
+  "stored_coefficients": 29,
+  "live_optimized_coefficients": 2,
+  "optimizer": {
+    "method": "L-BFGS-B",
+    "bounds": [
+      [
+        0.0,
+        50.0
+      ],
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "x": [
+      5.172432255343732,
+      5.0
+    ],
+    "success": true,
+    "status": 0,
+    "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "nit": 4,
+    "nfev": 36,
+    "fun": 0.01853311089001481,
+    "at_bounds": [
+      false,
+      true
+    ]
+  },
+  "objective_includes_zero_target": true,
+  "zero_target_denominator": 1e-06,
+  "all_target_mean_loss": 0.01853311089001481,
+  "nonzero_mean_abs_relative_error": 0.020238283012817052,
+  "nonzero_target_count": 11,
+  "nominal_total_coefficient_to_nonzero_target_ratio": 2.8181818181818183,
+  "clipping": {
+    "light_exponential": "np.clip(lambda_l*n,-50,50)",
+    "heavy_powers": "np.clip(n/50 or n/100,1e-6,1e6); selected exponents clipped [-10,10]",
+    "mass_floor": "max(prediction,1e-12)"
+  },
+  "two_free_parameter_jacobian": {
+    "indices": [
+      1,
+      2,
+      3,
+      12,
+      19,
+      53,
+      73,
+      91,
+      95,
+      96,
+      123
+    ],
+    "columns": [
+      "alpha_decay",
+      "epsilon_cutoff"
+    ],
+    "finite_difference_scheme": [
+      "central",
+      "backward"
+    ],
+    "matrix": [
+      [
+        2.1153003785360975e-09,
+        2.737809978725636e-09
+      ],
+      [
+        1.2033021964590204e-06,
+        2.0749446605350386e-06
+      ],
+      [
+        6.285287204435166e-09,
+        1.625721313212175e-08
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "singular_values": [
+      2.398674570215647e-06,
+      2.7565195428877507e-09
+    ],
+    "numerical_rank": 2,
+    "condition_number": 870.1823197316342,
+    "warning": "NOT the rank/identifiability of the 29 stored historical coefficients"
+  },
+  "per_target": [
+    {
+      "index": 0,
+      "target_mev": 0.0,
+      "fitted_mev": 1e-12,
+      "residual_mev": 1e-12,
+      "target_relative_loss": 1e-06,
+      "absolute_relative_error_nonzero": null,
+      "at_mass_floor": true,
+      "index_branch": "light"
+    },
+    {
+      "index": 1,
+      "target_mev": 0.511,
+      "fitted_mev": 0.5116009690479564,
+      "residual_mev": 0.0006009690479563679,
+      "target_relative_loss": 0.001176062371612517,
+      "absolute_relative_error_nonzero": 0.001176064673104438,
+      "at_mass_floor": false,
+      "index_branch": "light"
+    },
+    {
+      "index": 2,
+      "target_mev": 2.2,
+      "fitted_mev": 2.1995366745989355,
+      "residual_mev": -0.0004633254010646404,
+      "target_relative_loss": 0.0002106023593010368,
+      "absolute_relative_error_nonzero": 0.00021060245502938196,
+      "at_mass_floor": false,
+      "index_branch": "light"
+    },
+    {
+      "index": 3,
+      "target_mev": 0.0001,
+      "fitted_mev": 9.772972371739845e-05,
+      "residual_mev": -2.2702762826015503e-06,
+      "target_relative_loss": 0.022477982996054954,
+      "absolute_relative_error_nonzero": 0.022702762826015504,
+      "at_mass_floor": false,
+      "index_branch": "light"
+    },
+    {
+      "index": 12,
+      "target_mev": 105.7,
+      "fitted_mev": 106.38060740408207,
+      "residual_mev": 0.6806074040820675,
+      "target_relative_loss": 0.006439048227464705,
+      "absolute_relative_error_nonzero": 0.0064390482883828525,
+      "at_mass_floor": false,
+      "index_branch": "middle"
+    },
+    {
+      "index": 19,
+      "target_mev": 96.0,
+      "fitted_mev": 94.81444703768025,
+      "residual_mev": -1.185552962319747,
+      "target_relative_loss": 0.012349509895523303,
+      "absolute_relative_error_nonzero": 0.012349510024164031,
+      "at_mass_floor": false,
+      "index_branch": "middle"
+    },
+    {
+      "index": 53,
+      "target_mev": 1275.0,
+      "fitted_mev": 1278.3630952362346,
+      "residual_mev": 3.363095236234585,
+      "target_relative_loss": 0.002637721751840677,
+      "absolute_relative_error_nonzero": 0.0026377217539094787,
+      "at_mass_floor": false,
+      "index_branch": "middle"
+    },
+    {
+      "index": 73,
+      "target_mev": 4180.0,
+      "fitted_mev": 3468.547440703093,
+      "residual_mev": -711.4525592969071,
+      "target_relative_loss": 0.17020396151356534,
+      "absolute_relative_error_nonzero": 0.170203961554284,
+      "at_mass_floor": false,
+      "index_branch": "middle"
+    },
+    {
+      "index": 91,
+      "target_mev": 1777.0,
+      "fitted_mev": 1773.0789543861993,
+      "residual_mev": -3.921045613800743,
+      "target_relative_loss": 0.0022065535236883453,
+      "absolute_relative_error_nonzero": 0.0022065535249300747,
+      "at_mass_floor": false,
+      "index_branch": "middle"
+    },
+    {
+      "index": 95,
+      "target_mev": 80379.0,
+      "fitted_mev": 80437.63783530354,
+      "residual_mev": 58.63783530353976,
+      "target_relative_loss": 0.0007295168551836954,
+      "absolute_relative_error_nonzero": 0.0007295168551927712,
+      "at_mass_floor": false,
+      "index_branch": "heavy"
+    },
+    {
+      "index": 96,
+      "target_mev": 91188.0,
+      "fitted_mev": 91194.30175422669,
+      "residual_mev": 6.301754226689809,
+      "target_relative_loss": 6.910727537198647e-05,
+      "absolute_relative_error_nonzero": 6.910727537274432e-05,
+      "at_mass_floor": false,
+      "index_branch": "heavy"
+    },
+    {
+      "index": 123,
+      "target_mev": 125100.0,
+      "fitted_mev": 124612.57738478365,
+      "residual_mev": -487.42261521634646,
+      "target_relative_loss": 0.003896263910571145,
+      "absolute_relative_error_nonzero": 0.00389626391060229,
+      "at_mass_floor": false,
+      "index_branch": "heavy"
+    }
+  ],
+  "original_program_stdout": "\ud83d\udd27 Running photon suppression optimization (no anchor)...\n\u2705 Optimized decay: alpha = 5.172432, epsilon = 5.000000\n\n\ud83d\udcca Final results (with smooth suppression):\nn=0, SM=0.000000 MeV, Predicted=0.000000 MeV, Deviation=0.0001%\nn=1, SM=0.511000 MeV, Predicted=0.511601 MeV, Deviation=0.1176%\nn=2, SM=2.200000 MeV, Predicted=2.199537 MeV, Deviation=0.0211%\nn=3, SM=0.000100 MeV, Predicted=0.000098 MeV, Deviation=2.2478%\nn=12, SM=105.700000 MeV, Predicted=106.380607 MeV, Deviation=0.6439%\nn=19, SM=96.000000 MeV, Predicted=94.814447 MeV, Deviation=1.2350%\nn=53, SM=1275.000000 MeV, Predicted=1278.363095 MeV, Deviation=0.2638%\nn=73, SM=4180.000000 MeV, Predicted=3468.547441 MeV, Deviation=17.0204%\nn=91, SM=1777.000000 MeV, Predicted=1773.078954 MeV, Deviation=0.2207%\nn=95, SM=80379.000000 MeV, Predicted=80437.637835 MeV, Deviation=0.0730%\nn=96, SM=91188.000000 MeV, Predicted=91194.301754 MeV, Deviation=0.0069%\nn=123, SM=125100.000000 MeV, Predicted=124612.577385 MeV, Deviation=0.3896%\n"
+}

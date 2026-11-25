@@ -1,0 +1,18 @@
+test_symbolic_audits (derivations.test_gr_constants_closure.DerivationClosureTests.test_symbolic_audits) ... ok
+test_all_scoped_checks (derivations.test_foundational_stage2.FoundationalStage2Tests.test_all_scoped_checks) ... ok
+test_finite_minimum_opposite_residue (derivations.test_foundational_stage2.FoundationalStage2Tests.test_finite_minimum_opposite_residue) ... ok
+test_periodic_circle_and_holonomy (derivations.test_foundational_stage2.FoundationalStage2Tests.test_periodic_circle_and_holonomy) ... ok
+test_pole_collision_and_complex (derivations.test_foundational_stage2.FoundationalStage2Tests.test_pole_collision_and_complex) ... ok
+test_invalid (derivations.test_spectral_circle_numeric.SpectralCircleNumericalTests.test_invalid) ... ok
+test_two_lengths_nonconstant_potential_and_connection (derivations.test_spectral_circle_numeric.SpectralCircleNumericalTests.test_two_lengths_nonconstant_potential_and_connection) ... ok
+test_unbounded_momentum (derivations.test_ostrogradsky_witness.HigherTimeWitness.test_unbounded_momentum) ... ok
+test_linear_EFT_remainder_has_explicit_error_bound (derivations.test_foundational_closure.FoundationalCounterexamples.test_linear_EFT_remainder_has_explicit_error_bound) ... ok
+test_negative_mixed_coefficient_is_not_silently_excluded (derivations.test_foundational_closure.FoundationalCounterexamples.test_negative_mixed_coefficient_is_not_silently_excluded) ... ok
+test_nonconstant_locked_curve_is_not_mean_spectral_identity (derivations.test_foundational_closure.FoundationalCounterexamples.test_nonconstant_locked_curve_is_not_mean_spectral_identity) ... ok
+test_reject_parameters_outside_theorem (derivations.test_foundational_closure.FoundationalCounterexamples.test_reject_parameters_outside_theorem) ... ok
+test_uv_growing_modes_against_companion_matrix (derivations.test_foundational_closure.FoundationalCounterexamples.test_uv_growing_modes_against_companion_matrix) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.192s
+
+OK

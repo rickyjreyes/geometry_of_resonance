@@ -1,0 +1,197 @@
+{
+  "schema": "wct-foundational-claims-v1",
+  "as_of": "2026-10-20",
+  "primary_classification": "FOUNDATIONAL_OBSTRUCTION_CONFIRMED",
+  "scope": "Literal untruncated S004 on fixed flat background, stated nonzero sector; not all WCT models",
+  "claims": [
+    {
+      "id": "S004_EL",
+      "model": "S004_FIXED_BACKGROUND",
+      "status": "EXACT_DERIVATION",
+      "scope": "Flat fixed metric/foliation; full complex variation",
+      "evidence": "GHOST_AND_CONSTRAINT_ANALYSIS.md H1; verification.json",
+      "limitations": "General h requires its formal adjoint; no well-posedness implied",
+      "new_in_this_workstream": false
+    },
+    {
+      "id": "S004_constraints",
+      "model": "S004_FIXED_BACKGROUND",
+      "status": "PROVED_ANALYTICALLY",
+      "scope": "Nonzero regular F>0,kappa>0 sector: four real configuration DOF",
+      "evidence": "GHOST_AND_CONSTRAINT_ANALYSIS.md H2",
+      "limitations": "No conclusion about an unspecified dynamical metric/gauge/foliation completion",
+      "new_in_this_workstream": true
+    },
+    {
+      "id": "S004_fixed_charge",
+      "model": "S004_FIXED_BACKGROUND",
+      "status": "PROVED_ANALYTICALLY",
+      "scope": "No local canonical H minimum at fixed actual phase Q, arbitrary d",
+      "evidence": "Merged eigen 957cd8f C13-C14; independently reconstructed verification.json",
+      "limitations": "Energetic obstruction; not universal stationary nonexistence or dynamical instability",
+      "new_in_this_workstream": false
+    },
+    {
+      "id": "S004_UV",
+      "model": "S004_FIXED_BACKGROUND",
+      "status": "PROVED_ANALYTICALLY",
+      "scope": "Nonzero static homogeneous on-shell background; K,T>0,4KT-G^2>0; no continuous fixed-Sobolev linear flow",
+      "evidence": "GHOST_AND_CONSTRAINT_ANALYSIS.md H4; independent companion-polynomial checks",
+      "limitations": "Not a nonlinear norm-inflation theorem or proof for all localized backgrounds; B=0 and F=0 excluded",
+      "new_in_this_workstream": true
+    },
+    {
+      "id": "quadratic_EFT",
+      "model": "S004_SINGLE_REAL_AMPLITUDE",
+      "status": "CONTROLLED_ASYMPTOTIC_REDUCTION",
+      "scope": "Prepared real-pole spectral window; explicit quadratic spatial Taylor remainder",
+      "evidence": "CORRECTED_ACTION_TO_EFT_KERNEL.md E1-E4; verification.json",
+      "limitations": "No nonlinear or quantum EFT completion, selected cutoff or invariant nonlinear band",
+      "new_in_this_workstream": false
+    },
+    {
+      "id": "S004_to_PFF",
+      "model": "S004_TO_DISSIPATIVE_PFF",
+      "status": "CONDITIONAL_MODEL_CONNECTION",
+      "scope": "One linear sector after independently supplied damping",
+      "evidence": "CROSS_MODEL_DERIVATION.md",
+      "limitations": "Full autonomous dissipative reduction is not derived",
+      "new_in_this_workstream": false
+    },
+    {
+      "id": "S004_to_CQ",
+      "model": "S004_TO_CQ_HAMILTONIAN",
+      "status": "OPEN",
+      "scope": "Nonlinear coefficients, phase, conserved charge, clock and domain mapping",
+      "evidence": "CROSS_MODEL_DERIVATION.md",
+      "limitations": "Quartic symbol resemblance is not equivalence",
+      "new_in_this_workstream": false
+    },
+    {
+      "id": "positive_spatial_dilation",
+      "model": "CORRECTED_M2_WHOLE_SPACE",
+      "status": "DILATION_OR_COMPACTNESS_OBSTRUCTION",
+      "scope": "Complex H2 local minima excluded for d=1..4 at N>0; regular admissible-dilation critical points excluded",
+      "evidence": "Merged eigen 957cd8f Theorem 1; LOCALIZED_STATE_EXISTENCE.md",
+      "limitations": "Does not apply to arbitrary full S004 potential or fixed periodic domains",
+      "new_in_this_workstream": false
+    },
+    {
+      "id": "scalar_eigen_baseline",
+      "model": "EIGEN_ADDITIVE_REAL",
+      "status": "DILATION_OR_COMPACTNESS_OBSTRUCTION",
+      "scope": "Regular positive-denominator branch, d=1..4; nine frozen attempts negative",
+      "evidence": "Merged eigen PR15; baseline read-only verification",
+      "limitations": "No new stationary search or repair of radial discretization",
+      "new_in_this_workstream": false
+    },
+    {
+      "id": "D4_root",
+      "model": "CQ_HAMILTONIAN_2D_TORUS",
+      "status": "PASS",
+      "scope": "Exact dyadic parameters, length42 2D torus; nearby real-D4 Wiener/frequency root",
+      "evidence": "wct-pde e9a2b589 #24, present in PR26 head051b6eca",
+      "limitations": "Local uniqueness within gauge-fixed ball; full interval campaign not rerun",
+      "new_in_this_workstream": false
+    },
+    {
+      "id": "D4_orbital",
+      "model": "CQ_HAMILTONIAN_2D_TORUS",
+      "status": "PASS",
+      "scope": "Arbitrary complex small H2 perturbations, including mass changes; all-time orbital stability",
+      "evidence": "wct-pde e9a2b589 #25; proof appendix read and pinned",
+      "limitations": "No attraction, large-data or whole-space transfer",
+      "new_in_this_workstream": false
+    },
+    {
+      "id": "D4_basin",
+      "model": "CQ_HAMILTONIAN_2D_TORUS",
+      "status": "PASS",
+      "scope": "Physical H2 delta4.2e-12 to epsilon4.2e-9, same exact root",
+      "evidence": "wct-pde 1bda6eac #27; d4_basin_replay.json",
+      "limitations": "Conditional on accepted root/coercivity/continuation premises; not external peer review",
+      "new_in_this_workstream": false
+    },
+    {
+      "id": "mass_variance_identity",
+      "model": "DECLARED_PERIODIC_LAPLACIAN",
+      "status": "PROVED_ANALYTICALLY",
+      "scope": "Nonvanishing smooth eigenmode with density weight and pointwise nonnegative phase-curvature lock",
+      "evidence": "GEOMETRIC_MASS_CLOSURE.md M1; explicit chi=cos(s)+i*a*sin(s) locked-curve counterexample; exact identities plus numerical quadrature",
+      "limitations": "Operator and lock are hypotheses; no physical geometry/scale selection",
+      "new_in_this_workstream": true
+    },
+    {
+      "id": "physical_mass",
+      "model": "S004_PHYSICAL_CHAIN",
+      "status": "MASS_BRIDGE_OBSTRUCTED",
+      "scope": "Healthy parent-to-confined-state-to-inertial-energy chain not established",
+      "evidence": "GEOMETRIC_MASS_CLOSURE.md",
+      "limitations": "Conditional separated-field KG effective mass remains valid",
+      "new_in_this_workstream": false
+    },
+    {
+      "id": "dimensional_selection",
+      "model": "UNIFIED_MODEL_REQUIRED",
+      "status": "OPEN",
+      "scope": "No derived common healthy model for matched d=2,3,4 lifetimes",
+      "evidence": "LOCALIZED_STATE_EXISTENCE.md dimensional specification",
+      "limitations": "H2 embedding threshold is not universal lifetime or impossibility theorem",
+      "new_in_this_workstream": false
+    }
+  ],
+  "scorecard": [
+    {
+      "metric": "Axiomatic consistency",
+      "baseline": 55,
+      "carried_forward": 55,
+      "weight_percent": 6
+    },
+    {
+      "metric": "Symmetry & physical health",
+      "baseline": 35,
+      "carried_forward": 35,
+      "weight_percent": 7
+    },
+    {
+      "metric": "Mathematical closure",
+      "baseline": 45,
+      "carried_forward": 45,
+      "weight_percent": 8
+    },
+    {
+      "metric": "Confinement & stability",
+      "baseline": 55,
+      "carried_forward": 55,
+      "weight_percent": 10
+    },
+    {
+      "metric": "Dimensional selection",
+      "baseline": 35,
+      "carried_forward": 35,
+      "weight_percent": 4
+    },
+    {
+      "metric": "Cross-model derivation",
+      "baseline": 30,
+      "carried_forward": 30,
+      "weight_percent": 8
+    },
+    {
+      "metric": "Geometric mass & inertia",
+      "baseline": 40,
+      "carried_forward": 40,
+      "weight_percent": 8
+    }
+  ],
+  "score_policy": "Provisional maturity assessments retained: no anchored numerical re-rating rubric supplied; evidence and unmet gates updated separately",
+  "wct_pde_issues": {
+    "21": "OPEN",
+    "22": "OPEN",
+    "23": "OPEN",
+    "24": "CLOSED",
+    "25": "CLOSED",
+    "27": "CLOSED"
+  },
+  "changes_to_issue_states": []
+}

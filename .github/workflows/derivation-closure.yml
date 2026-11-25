@@ -1,0 +1,41 @@
+name: WCT GR and constants derivation closure
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "DERIVATION_CLOSURE.md"
+      - "derivations/**"
+      - ".github/workflows/derivation-closure.yml"
+  pull_request:
+    paths:
+      - "DERIVATION_CLOSURE.md"
+      - "derivations/**"
+      - ".github/workflows/derivation-closure.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  symbolic-audit:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13.5"
+          cache: pip
+          cache-dependency-path: derivations/requirements.lock
+      - name: Install symbolic dependency
+        run: python -m pip install --requirement derivations/requirements.lock
+      - name: Run symbolic unit test
+        run: python -m unittest -v derivations/test_gr_constants_closure.py
+      - name: Generate machine-readable report
+        run: python -m derivations.gr_constants_closure > derivations/gr_constants_closure_report.json
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: gr-constants-closure-${{ github.sha }}
+          path: derivations/gr_constants_closure_report.json
+          if-no-files-found: error

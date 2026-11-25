@@ -1,0 +1,186 @@
+{
+  "schema": "WCT_PHYSICAL_DOMAIN_RESULT_ORIGINS_V1",
+  "prior": [
+    {
+      "id": "PR01",
+      "statement": "Legacy denominator pole and phase-covariance correction",
+      "sources": [
+        "P04",
+        "S003"
+      ]
+    },
+    {
+      "id": "PR02",
+      "statement": "Corrected real-action formal variation and zero-background finite-band limitation",
+      "sources": [
+        "S004"
+      ]
+    },
+    {
+      "id": "PR03",
+      "statement": "Fixed-geometry and fixed-sector phase-locking minimizer",
+      "sources": [
+        "P04",
+        "P08"
+      ]
+    },
+    {
+      "id": "PR04",
+      "statement": "Fixed-domain scale–winding algebraic bijection",
+      "sources": [
+        "P03"
+      ]
+    },
+    {
+      "id": "PR05",
+      "statement": "2–3–6, A2 weight geometry, lift singular value and open physical interpretation",
+      "sources": [
+        "P05"
+      ]
+    },
+    {
+      "id": "PR06",
+      "statement": "Conditional thin-shell Willmore shape reduction, distinguished from direct angular cost",
+      "sources": [
+        "P06"
+      ]
+    },
+    {
+      "id": "PR07",
+      "statement": "M4 conservation/coercivity/well-posedness argument and periodic stationary evidence",
+      "sources": [
+        "S044"
+      ]
+    },
+    {
+      "id": "PR08",
+      "statement": "Positive legacy scalar energy spreading obstruction",
+      "sources": [
+        "S037"
+      ]
+    },
+    {
+      "id": "PR09",
+      "statement": "Finite-band coefficient non-identifiability",
+      "sources": [
+        "S036"
+      ]
+    }
+  ],
+  "audit_results": [
+    {
+      "id": "N1",
+      "origin": "NEW_EXPLICIT_VARIATIONAL_CALCULATION",
+      "statement": "Natural fourth-order boundary conditions on a supplied domain do not select its location",
+      "status": "PROVED_WITH_STATED_PREMISES",
+      "sources": [
+        "P04",
+        "S004",
+        "S011"
+      ],
+      "report": "docs/PHYSICAL_ACTIVE_DOMAIN_DERIVATION.md"
+    },
+    {
+      "id": "D1",
+      "origin": "NEW_DEDUCTION_FROM_PUBLISHED_LOCKING",
+      "statement": "Continuous circular-radius degeneracy at perfect n=1 lock",
+      "status": "PROVED_WITH_STATED_PREMISES",
+      "sources": [
+        "P04",
+        "P08"
+      ],
+      "report": "docs/PHYSICAL_ACTIVE_DOMAIN_DERIVATION.md"
+    },
+    {
+      "id": "D2",
+      "origin": "NEW_EXPLICIT_COUNTEREXAMPLE",
+      "statement": "Exact M4 plane waves for every prescribed circumference and integer",
+      "status": "PROVED_WITH_STATED_PREMISES",
+      "sources": [
+        "S011"
+      ],
+      "report": "docs/PHYSICAL_ACTIVE_DOMAIN_DERIVATION.md"
+    },
+    {
+      "id": "D3",
+      "origin": "NEW_EXTENSION_OF_EXISTING_OBSTRUCTION",
+      "statement": "Fixed-mass spreading for companion and complex-safe positive spatial energies",
+      "status": "PROVED_WITH_STATED_PREMISES",
+      "sources": [
+        "P04",
+        "S003",
+        "S037"
+      ],
+      "report": "docs/PHYSICAL_ACTIVE_DOMAIN_DERIVATION.md"
+    },
+    {
+      "id": "D4",
+      "origin": "AUDIT_CONSEQUENCE_OF_ESTABLISHED_IDENTITY",
+      "statement": "Willmore ratio selection leaves absolute size free",
+      "status": "PROVED_WITH_STATED_PREMISES",
+      "sources": [
+        "P06"
+      ],
+      "report": "docs/PHYSICAL_ACTIVE_DOMAIN_DERIVATION.md"
+    },
+    {
+      "id": "W1",
+      "origin": "NEW_CONDITIONAL_COROLLARY",
+      "statement": "Nearest-integer sector minimizers under complete-energy and accessibility premises",
+      "status": "CONDITIONAL_NOT_PHYSICAL_SELECTION",
+      "sources": [
+        "P04",
+        "P08"
+      ],
+      "report": "docs/WINDING_SELECTION_ANALYSIS.md"
+    },
+    {
+      "id": "W2",
+      "origin": "NEW_APPLICATION_OF_STANDARD_TOPOLOGY",
+      "statement": "Smooth positive-amplitude phase-only relaxation preserves its initial winding",
+      "status": "PROVED_WITH_STATED_PREMISES",
+      "sources": [
+        "P04"
+      ],
+      "report": "docs/WINDING_SELECTION_ANALYSIS.md"
+    },
+    {
+      "id": "O1",
+      "origin": "NEW_EXPLICIT_NONIDENTIFIABILITY_ARGUMENT",
+      "statement": "One field admits distinct intensity/interferometric/nonlinear measurement responses",
+      "status": "PROVED_WITH_STATED_PREMISES",
+      "sources": [],
+      "report": "docs/SPECTRAL_OBSERVABLE_MAPPING.md"
+    },
+    {
+      "id": "O2",
+      "origin": "NEW_EXACT_COUNTEREXAMPLE",
+      "statement": "Exact endpoint closure with a nonzero local fitted-frequency shift",
+      "status": "PROVED_WITH_STATED_PREMISES",
+      "sources": [],
+      "report": "docs/SPECTRAL_OBSERVABLE_MAPPING.md"
+    },
+    {
+      "id": "C1",
+      "origin": "NEW_COMPATIBILITY_CHECK",
+      "statement": "Simultaneous PFF physical continuity and same-clock gradient rail fail for homogeneous non-equilibrium data",
+      "status": "PROVED_WITH_STATED_PREMISES",
+      "sources": [
+        "P02"
+      ],
+      "report": "docs/DYNAMICS_AND_SOURCE_INVENTORY.md"
+    },
+    {
+      "id": "T1_T5",
+      "origin": "VERIFIED_CONDITIONAL_LEMMAS",
+      "statement": "Translation, width, winding, coordinate power and uncertainty transforms",
+      "status": "CONDITIONAL",
+      "sources": [
+        "P03",
+        "P05"
+      ],
+      "report": "docs/SPECTRAL_OBSERVABLE_MAPPING.md"
+    }
+  ],
+  "novelty_scope": "New means an explicit deduction/check recorded in this audit, not a claim of priority over all mathematical literature."
+}

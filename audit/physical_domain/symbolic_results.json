@@ -1,0 +1,207 @@
+{
+  "checks": [
+    {
+      "id": "V01_POLAR_LAPLACIAN",
+      "passed": true,
+      "residual": "0",
+      "scope": "Exact in one dimension; componentwise sum gives the flat multidimensional identity, A>0."
+    },
+    {
+      "id": "V02_CORRECTED_WEIGHT_DERIVATIVE",
+      "passed": true,
+      "residual": "0",
+      "scope": "Corrected complex-safe action, not the legacy additive quotient."
+    },
+    {
+      "id": "V03_NO_QUADRATIC_CURVATURE_AT_ZERO",
+      "passed": true,
+      "residual": "0",
+      "scope": "Curvature energy F(|psi|^2)|D2 psi|^2 begins at fourth amplitude order at the zero background."
+    },
+    {
+      "id": "V04_CORRECTED_QUARTIC_LEADING_TERM",
+      "passed": true,
+      "residual": "0",
+      "scope": "Amplitude expansion only; no nonlinear well-posedness conclusion."
+    },
+    {
+      "id": "V05_LEGACY_ROOT_MONOTONICITY",
+      "passed": true,
+      "residual": "0",
+      "scope": "Positive derivative plus endpoint limits proves a unique negative-real denominator zero."
+    },
+    {
+      "id": "V06_PFF_PHYSICAL_CLOCK_OBSTRUCTION",
+      "passed": true,
+      "scope": "If u=|A|^2 and the gradient rail uses the same closed-system physical time, PFF continuity fails for this datum.",
+      "witness": "uniform rho=1, r=2, beta=1: rho_t=2, div(S)=0"
+    },
+    {
+      "id": "V07_COMPLEX_GRADIENT_ENERGY_FACTOR",
+      "passed": true,
+      "residual": "0",
+      "scope": "Standard Wirtinger convention gives dE/dt=-2||A_t||^2; the sign survives an energy/time normalization."
+    },
+    {
+      "id": "V08_FINITE_BAND_MAXIMUM",
+      "passed": true,
+      "residual": "0",
+      "scope": "A spatial wavenumber selected by independently supplied dimensional coefficients, not a log-observable domain."
+    },
+    {
+      "id": "V09_FINITE_BAND_CURVATURE",
+      "passed": true,
+      "residual": "0",
+      "scope": "The selected shell has negative symbol curvature when a>0."
+    },
+    {
+      "id": "V10_HAMILTONIAN_PLANE_WAVE_FAMILY",
+      "passed": true,
+      "residual": "0",
+      "scope": "Exact finite-periodic-domain solutions for q=2pi*n/L; does not assert localization or stability."
+    },
+    {
+      "id": "V11_PLANE_WAVE_WINDING",
+      "passed": true,
+      "residual": "0",
+      "scope": "Every supplied integer sector exists in this exact family; no integer is selected by existence alone."
+    },
+    {
+      "id": "V12_LOCKING_CLOSURE",
+      "passed": true,
+      "residual": "0",
+      "scope": "Iw=integral 1/w >0; loop geometry and winding supplied."
+    },
+    {
+      "id": "V13_LOCKING_MINIMUM_COST",
+      "passed": true,
+      "residual": "0",
+      "scope": "Cauchy-Schwarz supplies the minimization proof; this check verifies its exact value."
+    },
+    {
+      "id": "V14_ADJACENT_SECTOR_COST",
+      "passed": true,
+      "residual": "0",
+      "scope": "With Iw>0, minimizers are nearest integers to zeta; dynamical crossing of sectors is an extra premise."
+    },
+    {
+      "id": "V15_CIRCLE_LOCK_ALL_RADII",
+      "passed": true,
+      "residual": "0",
+      "scope": "Planar circle, sigma=1/R, n=1: perfect locking for every R>0. Radius not selected."
+    },
+    {
+      "id": "V16_CIRCLE_COST",
+      "passed": true,
+      "residual": "0",
+      "scope": "Uniform unit weight; sector minimization selects n=1 but leaves radius continuously free."
+    },
+    {
+      "id": "V17_WINDING_WIDTH_TRANSFER",
+      "passed": true,
+      "residual": "0",
+      "scope": "L1,L2>0 and n1 !=0; zero source winding must use the direct phase-increment formula."
+    },
+    {
+      "id": "V18_COORDINATE_PRODUCT",
+      "passed": true,
+      "residual": "0",
+      "scope": "Oriented widths for p!=0; ordinary positive width requires p>0 or endpoint reordering."
+    },
+    {
+      "id": "V19_TRANSLATION_WIDTH",
+      "passed": true,
+      "residual": "0",
+      "scope": "Common endpoint translation; sliding a crop on a fixed nonlinear phase is a different operation."
+    },
+    {
+      "id": "V20_ROOT_MASS_VS_MASS",
+      "passed": true,
+      "residual": "0",
+      "scope": "A hypothetical root-mass dilation sqrt(6) implies mass dilation 6, not sqrt(6)."
+    },
+    {
+      "id": "V21_FIT_BIAS_COEFFICIENT",
+      "passed": true,
+      "residual": "0",
+      "scope": "First derivative of local nonlinear least-squares frequency at epsilon=0 with free amplitude and phase, known zero background."
+    },
+    {
+      "id": "V22_EXACT_MEAN_PHASE_CLOSURE",
+      "passed": true,
+      "residual": "0",
+      "scope": "phi=2pi*x+epsilon*h(x) has mean phase gradient exactly 2pi for every epsilon."
+    },
+    {
+      "decimal": "0.16004472954495541",
+      "exact": "(-225 + 60*pi**2 + 16*pi**4)/(-360*pi**2 + 160*pi**4)",
+      "id": "V23_NONZERO_FIT_BIAS",
+      "passed": true,
+      "scope": "Therefore k_fit=2pi+0.1600447295...*epsilon+O(epsilon^2), despite exact unchanged winding."
+    },
+    {
+      "id": "V24_Z3_ZERO_SUM",
+      "passed": true,
+      "residual": "0",
+      "scope": "Exact normalized finite-dimensional geometry."
+    },
+    {
+      "id": "V25_Z3_NORM",
+      "passed": true,
+      "residual": "0",
+      "scope": "Cosine-vector norm sqrt(3/2), not a physical dilation eigenvalue."
+    },
+    {
+      "id": "V26_RECTANGULAR_LIFT_GAIN",
+      "passed": true,
+      "residual": "0",
+      "scope": "T:R->R^3 has singular value sqrt(6); it is not a square physical evolution operator."
+    },
+    {
+      "eigenvalues": [
+        1,
+        3
+      ],
+      "id": "V27_A2_CARTAN_EIGENVALUES",
+      "passed": true,
+      "scope": "Exact matrix eigenvalues do not establish observable scaling dynamics."
+    },
+    {
+      "id": "V28_WILLMORE_MINIMUM",
+      "passed": true,
+      "residual": "0",
+      "scope": "Exact stationary shape ratio in the torus-of-revolution Willmore problem."
+    },
+    {
+      "id": "V29_WILLMORE_VALUE",
+      "passed": true,
+      "residual": "0",
+      "scope": "The positive divergent endpoints make this stationary point the unique ratio minimum."
+    },
+    {
+      "id": "V30_WILLMORE_SCALE_DEGENERACY",
+      "passed": true,
+      "residual": "0",
+      "scope": "Homothety leaves eta and Willmore energy unchanged; size not selected."
+    }
+  ],
+  "checks_passed": 30,
+  "checks_run": 30,
+  "collider_evaluations": 0,
+  "empirical_frequency_inputs": [],
+  "fit_counterexample": {
+    "domain": [
+      0,
+      1
+    ],
+    "fit_bias_decimal": "0.16004472954495541",
+    "fit_bias_exact": "(-225 + 60*pi**2 + 16*pi**4)/(-360*pi**2 + 160*pi**4)",
+    "mean_phase_gradient": "2*pi",
+    "phase": "2*pi*x+epsilon*x*(1-x)*(x-1/2)"
+  },
+  "new_PDE_simulations": 0,
+  "proof_scope": "Symbolic checks support the written proofs and explicit counterexamples; not full PDE existence/stability or a Lean kernel proof.",
+  "python": "3.12.14",
+  "schema": "WCT_PHYSICAL_DOMAIN_SYMBOLIC_CHECKS_V1",
+  "sympy": "1.14.0"
+}

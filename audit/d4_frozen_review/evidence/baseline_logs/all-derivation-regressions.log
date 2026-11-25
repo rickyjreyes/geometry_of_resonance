@@ -1,0 +1,53 @@
+test_chirped_dilation_independent_reintegration (test_d4_binding.FrozenD4Tests.test_chirped_dilation_independent_reintegration) ... ok
+test_endpoint_full_span_and_junction (test_d4_binding.FrozenD4Tests.test_endpoint_full_span_and_junction) ... ok
+test_endpoint_slope_and_asymptotic (test_d4_binding.FrozenD4Tests.test_endpoint_slope_and_asymptotic) ... ok
+test_exact_threshold_and_adversarial_mass (test_d4_binding.FrozenD4Tests.test_exact_threshold_and_adversarial_mass) ... ok
+test_fourier_constant_quadrature (test_d4_binding.FrozenD4Tests.test_fourier_constant_quadrature) ... ok
+test_gaussian_bound_direct_energy (test_d4_binding.FrozenD4Tests.test_gaussian_bound_direct_energy) ... ok
+test_outward_interval_and_zero_rejection (test_d4_binding.FrozenD4Tests.test_outward_interval_and_zero_rejection) ... ok
+test_pi_independent_machin (test_d4_binding.FrozenD4Tests.test_pi_independent_machin) ... ok
+test_symbolic_independent_reconstruction (test_d4_binding.FrozenD4Tests.test_symbolic_independent_reconstruction) ... ok
+test_two_profile_formula_independent_quadrature (test_d4_binding.FrozenD4Tests.test_two_profile_formula_independent_quadrature) ... ok
+test_unadjusted_profile_shortcut_false (test_d4_binding.FrozenD4Tests.test_unadjusted_profile_shortcut_false) ... ok
+test_uniform_ratio_and_virial (test_d4_binding.FrozenD4Tests.test_uniform_ratio_and_virial) ... ok
+test_linear_EFT_remainder_has_explicit_error_bound (test_foundational_closure.FoundationalCounterexamples.test_linear_EFT_remainder_has_explicit_error_bound) ... ok
+test_negative_mixed_coefficient_is_not_silently_excluded (test_foundational_closure.FoundationalCounterexamples.test_negative_mixed_coefficient_is_not_silently_excluded) ... ok
+test_nonconstant_locked_curve_is_not_mean_spectral_identity (test_foundational_closure.FoundationalCounterexamples.test_nonconstant_locked_curve_is_not_mean_spectral_identity) ... ok
+test_reject_parameters_outside_theorem (test_foundational_closure.FoundationalCounterexamples.test_reject_parameters_outside_theorem) ... ok
+test_uv_growing_modes_against_companion_matrix (test_foundational_closure.FoundationalCounterexamples.test_uv_growing_modes_against_companion_matrix) ... ok
+test_B0_does_not_mean_uniformly_stable (test_foundational_recovery.RecoveryTests.test_B0_does_not_mean_uniformly_stable) ... ok
+test_Hamiltonian_second_class_constraints (test_foundational_recovery.RecoveryTests.test_Hamiltonian_second_class_constraints) ... ok
+test_M1_curve_and_separate_nonnegative_terms (test_foundational_recovery.RecoveryTests.test_M1_curve_and_separate_nonnegative_terms) ... ok
+test_all_mass_2D_trial_choice (test_foundational_recovery.RecoveryTests.test_all_mass_2D_trial_choice) ... ok
+test_auxiliary_scalar_metric_never_loses_rank (test_foundational_recovery.RecoveryTests.test_auxiliary_scalar_metric_never_loses_rank) ... ok
+test_exact_negative_trial_and_independent_Gauss_Hermite_integral (test_foundational_recovery.RecoveryTests.test_exact_negative_trial_and_independent_Gauss_Hermite_integral) ... ok
+test_fixed_mass_lower_bound_near_saturation (test_foundational_recovery.RecoveryTests.test_fixed_mass_lower_bound_near_saturation) ... ok
+test_generated_mode_by_direct_complex_FFT (test_foundational_recovery.RecoveryTests.test_generated_mode_by_direct_complex_FFT) ... ok
+test_independent_symbolic_reconstruction (test_foundational_recovery.RecoveryTests.test_independent_symbolic_reconstruction) ... ok
+test_pi_enclosure_is_strict_and_refines (test_foundational_recovery.RecoveryTests.test_pi_enclosure_is_strict_and_refines) ... ok
+test_uv_companion_roots_with_tachyonic_and_massless_controls (test_foundational_recovery.RecoveryTests.test_uv_companion_roots_with_tachyonic_and_massless_controls) ... ok
+test_all_scoped_checks (test_foundational_stage2.FoundationalStage2Tests.test_all_scoped_checks) ... ok
+test_finite_minimum_opposite_residue (test_foundational_stage2.FoundationalStage2Tests.test_finite_minimum_opposite_residue) ... ok
+test_periodic_circle_and_holonomy (test_foundational_stage2.FoundationalStage2Tests.test_periodic_circle_and_holonomy) ... ok
+test_pole_collision_and_complex (test_foundational_stage2.FoundationalStage2Tests.test_pole_collision_and_complex) ... ok
+test_symbolic_audits (test_gr_constants_closure.DerivationClosureTests.test_symbolic_audits) ... ok
+test_unbounded_momentum (test_ostrogradsky_witness.HigherTimeWitness.test_unbounded_momentum) ... ok
+test_invalid (test_spectral_circle_numeric.SpectralCircleNumericalTests.test_invalid) ... ok
+test_two_lengths_nonconstant_potential_and_connection (test_spectral_circle_numeric.SpectralCircleNumericalTests.test_two_lengths_nonconstant_potential_and_connection) ... ok
+test_D4_partial_splits_and_uncovered_small_splits (test_strict_binding.BindingChecks.test_D4_partial_splits_and_uncovered_small_splits) ... ok
+test_all_split_endpoints_inside_range (test_strict_binding.BindingChecks.test_all_split_endpoints_inside_range) ... ok
+test_density_dilation_can_raise_energy_per_mass (test_strict_binding.BindingChecks.test_density_dilation_can_raise_energy_per_mass) ... ok
+test_exact_frozen_mass_outside_sufficient_range (test_strict_binding.BindingChecks.test_exact_frozen_mass_outside_sufficient_range) ... ok
+test_far_separation_and_cancellation (test_strict_binding.BindingChecks.test_far_separation_and_cancellation) ... ok
+test_gaussian_moments_independent_integrals (test_strict_binding.BindingChecks.test_gaussian_moments_independent_integrals) ... ok
+test_invalid_hypotheses_rejected (test_strict_binding.BindingChecks.test_invalid_hypotheses_rejected) ... ok
+test_negative_energy_does_not_force_amplitude_monotonicity (test_strict_binding.BindingChecks.test_negative_energy_does_not_force_amplitude_monotonicity) ... ok
+test_negative_trial_across_scales (test_strict_binding.BindingChecks.test_negative_trial_across_scales) ... ok
+test_resolvent_integral_independent_quadrature (test_strict_binding.BindingChecks.test_resolvent_integral_independent_quadrature) ... ok
+test_two_profiles_independent_quadrature (test_strict_binding.BindingChecks.test_two_profiles_independent_quadrature) ... ok
+test_uncovered_does_not_mean_refuted (test_strict_binding.BindingChecks.test_uncovered_does_not_mean_refuted) ... ok
+
+----------------------------------------------------------------------
+Ran 48 tests in 1.188s
+
+OK

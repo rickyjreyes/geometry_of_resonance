@@ -1,0 +1,2616 @@
+{
+  "checks_passed": 652,
+  "checks_failed": 0,
+  "source_files_verified": 62,
+  "baseline_blobs_verified_against_supplied_tree": 167,
+  "checks": [
+    {
+      "name": "all requested reports exist",
+      "passed": true
+    },
+    {
+      "name": "exact permitted verdict and protected scope",
+      "passed": true
+    },
+    {
+      "name": "all model classes and four-domain missing predictions disclosed",
+      "passed": true
+    },
+    {
+      "name": "transformation categories explicit",
+      "passed": true
+    },
+    {
+      "name": "primary preserves slope a instead of a fabricated fourth frequency",
+      "passed": true
+    },
+    {
+      "name": "imported CMS frequency excluded from independent reference panel",
+      "passed": true
+    },
+    {
+      "name": "source decimal tokens preserved",
+      "passed": true
+    },
+    {
+      "name": "all required U0-U4 primary folds explicit",
+      "passed": true
+    },
+    {
+      "name": "no invented primary physical predictions",
+      "passed": true
+    },
+    {
+      "name": "all source-choice fits retained",
+      "passed": true
+    },
+    {
+      "name": "LOO 0:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 0:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 0:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 0:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 0:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 0:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 0:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 0:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 1:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 1:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 1:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 1:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 1:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 1:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 1:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 1:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 2:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 2:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 2:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 2:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 2:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 2:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 2:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 2:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 3:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 3:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 3:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 3:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 3:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 3:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 3:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 3:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 4:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 4:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 4:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 4:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 4:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 4:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 4:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 4:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 5:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 5:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 5:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 5:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 5:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 5:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 5:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 5:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 6:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 6:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 6:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 6:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 6:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 6:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 6:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 6:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 7:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 7:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 7:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 7:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 7:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 7:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 7:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 7:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 8:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 8:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 8:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 8:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 8:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 8:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 8:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 8:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 9:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 9:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 9:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 9:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 9:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 9:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 9:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 9:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 10:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 10:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 10:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 10:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 10:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 10:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 10:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 10:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 11:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 11:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 11:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 11:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 11:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 11:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 11:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 11:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 12:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 12:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 12:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 12:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 12:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 12:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 12:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 12:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 13:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 13:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 13:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 13:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 13:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 13:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 13:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 13:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 14:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 14:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 14:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 14:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 14:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 14:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 14:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 14:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 15:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 15:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 15:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 15:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 15:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 15:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 15:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 15:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 16:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 16:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 16:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 16:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 16:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 16:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 16:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 16:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 17:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 17:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 17:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 17:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 17:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 17:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 17:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 17:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 18:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 18:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 18:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 18:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 18:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 18:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 18:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 18:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 19:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 19:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 19:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 19:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 19:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 19:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 19:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 19:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 20:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 20:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 20:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 20:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 20:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 20:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 20:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 20:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 21:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 21:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 21:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 21:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 21:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 21:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 21:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 21:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 22:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 22:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 22:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 22:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 22:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 22:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 22:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 22:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 23:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 23:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 23:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 23:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 23:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 23:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 23:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 23:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 24:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 24:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 24:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 24:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 24:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 24:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 24:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 24:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 25:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 25:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 25:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 25:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 25:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 25:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 25:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 25:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 26:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 26:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 26:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 26:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 26:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 26:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 26:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 26:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 27:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 27:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 27:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 27:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 27:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 27:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 27:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 27:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 28:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 28:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 28:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 28:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 28:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 28:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 28:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 28:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 29:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 29:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 29:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 29:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 29:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 29:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 29:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 29:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 30:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 30:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 30:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 30:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 30:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 30:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 30:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 30:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 31:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 31:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 31:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 31:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 31:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 31:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 31:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 31:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 32:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 32:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 32:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 32:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 32:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 32:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 32:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 32:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 33:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 33:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 33:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 33:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 33:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 33:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 33:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 33:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 34:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 34:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 34:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 34:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 34:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 34:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 34:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 34:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 35:0 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 35:0 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 35:1 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 35:1 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 35:2 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 35:2 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "LOO 35:3 uses exactly three other domains",
+      "passed": true
+    },
+    {
+      "name": "LOO 35:3 error and no invented sigma",
+      "passed": true
+    },
+    {
+      "name": "held-out target perturbation leaves its prediction identical",
+      "passed": true
+    },
+    {
+      "name": "mass-squared conversion follows phase chain rule",
+      "passed": true
+    },
+    {
+      "name": "power map preserves frequency times log width",
+      "passed": true
+    },
+    {
+      "name": "global sweep equals exhaustive cap=2, menu=[1], direction=1",
+      "passed": true
+    },
+    {
+      "name": "global sweep equals exhaustive cap=2, menu=[1], direction=-1",
+      "passed": true
+    },
+    {
+      "name": "global sweep equals exhaustive cap=2, menu=[0.5, 1, 2], direction=1",
+      "passed": true
+    },
+    {
+      "name": "global sweep equals exhaustive cap=2, menu=[0.5, 1, 2], direction=-1",
+      "passed": true
+    },
+    {
+      "name": "global sweep equals exhaustive cap=3, menu=[1], direction=1",
+      "passed": true
+    },
+    {
+      "name": "global sweep equals exhaustive cap=3, menu=[1], direction=-1",
+      "passed": true
+    },
+    {
+      "name": "global sweep equals exhaustive cap=3, menu=[0.5, 1, 2], direction=1",
+      "passed": true
+    },
+    {
+      "name": "global sweep equals exhaustive cap=3, menu=[0.5, 1, 2], direction=-1",
+      "passed": true
+    },
+    {
+      "name": "perfect synthetic harmonic quartet recovered",
+      "passed": true
+    },
+    {
+      "name": "null all families retained [1, 100]",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [1, 100]:native:1:1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [1, 100]:native:1:-1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [1, 100]:native:6:1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [1, 100]:native:6:-1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [1, 100]:native:12:1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [1, 100]:native:12:-1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [1, 100]:native:24:1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [1, 100]:native:24:-1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [1, 100]:mass_energy:1:1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [1, 100]:mass_energy:1:-1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [1, 100]:mass_energy:6:1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [1, 100]:mass_energy:6:-1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [1, 100]:mass_energy:12:1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [1, 100]:mass_energy:12:-1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [1, 100]:mass_energy:24:1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [1, 100]:mass_energy:24:-1",
+      "passed": true
+    },
+    {
+      "name": "omnibus includes entire selection [1, 100]",
+      "passed": true
+    },
+    {
+      "name": "null all families retained [5, 50]",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [5, 50]:native:1:1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [5, 50]:native:1:-1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [5, 50]:native:6:1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [5, 50]:native:6:-1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [5, 50]:native:12:1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [5, 50]:native:12:-1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [5, 50]:native:24:1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [5, 50]:native:24:-1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [5, 50]:mass_energy:1:1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [5, 50]:mass_energy:1:-1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [5, 50]:mass_energy:6:1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [5, 50]:mass_energy:6:-1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [5, 50]:mass_energy:12:1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [5, 50]:mass_energy:12:-1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [5, 50]:mass_energy:24:1",
+      "passed": true
+    },
+    {
+      "name": "menu nesting and reciprocal magnitude duplication [5, 50]:mass_energy:24:-1",
+      "passed": true
+    },
+    {
+      "name": "omnibus includes entire selection [5, 50]",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E001",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E001",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E002",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E002",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E003",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E003",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E004",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E004",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E005",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E005",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E006",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E006",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E007",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E007",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E008",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E008",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E009",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E009",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E010",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E010",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E011",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E011",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E012",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E012",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E013",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E013",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E014",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E014",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E015",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E015",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E016",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E016",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E017",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E017",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E018",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E018",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E019",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E019",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E020",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E020",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E021",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E021",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E022",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E022",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E023",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E023",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E024",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E024",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E025",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E025",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E026",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E026",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E027",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E027",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E028",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E028",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E029",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E029",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E030",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E030",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E031",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E031",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E032",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E032",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E033",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E033",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E034",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E034",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E035",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E035",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E036",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E036",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E037",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E037",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E038",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E038",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E039",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E039",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E040",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E040",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E041",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E041",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E042",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E042",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E043",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E043",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E044",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E044",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E045",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E045",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E046",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E046",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E047",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E047",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E048",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E048",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E049",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E049",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E050",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E050",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E051",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E051",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E052",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E052",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E053",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E053",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E054",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E054",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E055",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E055",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E056",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E056",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E057",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E057",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E058",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E058",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E059",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E059",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E060",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E060",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E061",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E061",
+      "passed": true
+    },
+    {
+      "name": "source SHA256 E062",
+      "passed": true
+    },
+    {
+      "name": "source Git blob SHA1 E062",
+      "passed": true
+    },
+    {
+      "name": "exact target source extraction GWTC_V1",
+      "passed": true
+    },
+    {
+      "name": "exact target source extraction GWTC_V3",
+      "passed": true
+    },
+    {
+      "name": "exact target source extraction GWTC_V4",
+      "passed": true
+    },
+    {
+      "name": "exact target source extraction CMS",
+      "passed": true
+    },
+    {
+      "name": "exact target source extraction NIST_FE160",
+      "passed": true
+    },
+    {
+      "name": "exact target source extraction NIST_FE120",
+      "passed": true
+    },
+    {
+      "name": "exact target source extraction NIST_FE200",
+      "passed": true
+    },
+    {
+      "name": "exact target source extraction NIST_CO120",
+      "passed": true
+    },
+    {
+      "name": "exact target source extraction NIST_CO160",
+      "passed": true
+    },
+    {
+      "name": "exact target source extraction NIST_CO200",
+      "passed": true
+    },
+    {
+      "name": "exact target source extraction LHCB_A",
+      "passed": true
+    },
+    {
+      "name": "exact target source extraction LHCB_K1",
+      "passed": true
+    },
+    {
+      "name": "exact target source extraction LHCB_K2REF",
+      "passed": true
+    },
+    {
+      "name": "exact target source extraction LHCB_K2BEST",
+      "passed": true
+    },
+    {
+      "name": "exact target source literal LHCB_CMS_IMPORTED",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved .dockerignore",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved .github/DISCUSSION_TEMPLATE/ideas.yml",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved .github/DISCUSSION_TEMPLATE/q-a.yml",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved .github/DISCUSSION_TEMPLATE/show-and-tell.yml",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved .github/workflows/container-ci.yml",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved .github/workflows/derivation-closure.yml",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved .github/workflows/reproducibility.yml",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved .github/workflows/sync-effective-statuses-v2.yml",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Archive/birefringence.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Archive/blackhole_merger.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Archive/blackhole_merger_tail.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Archive/casimir.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Archive/cmb.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Archive/coherence_growth.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Archive/cold_atom.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Archive/cold_atom_feedback.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Archive/eigen_modified_lagrangian.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Archive/eigenvalue_loop2.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Archive/ensemble_anlysis.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Archive/entropy.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Archive/entropy_enduced_decay.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Archive/entropy_enduced_decay_2.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Archive/entropy_proof.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Archive/full_blackhole_merger.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Archive/full_eigen_modified_lagrangian.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Archive/michelson.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Archive/michelson_psd.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Archive/precision_constants_64.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Archive/spacetime_emergence.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Archive/spacetime_emergence3d.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Archive/sweep.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Archive/wct_gpu_diagonal_enhanced.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Core/entropy_enduced_decay_lagrangian.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Core/mass_propagation_final_refined.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Core/spacetime_emergence.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Core/spacetime_emergence3d.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Core/spacetime_full_alembertian.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Core/spacetime_full_alembertian_3d.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Core/wave_confinement_full_mass_analysis.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Core/wct_full_lagrangian.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Core/wct_simulation_scaled.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Core/wct_spacetime_3d.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved DERIVATION_CLOSURE.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved DISCUSSIONS.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved EQUATIONS.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Examples/hydrogen_full_resonance.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Examples/mass_emergence.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Examples/mass_propagation_covariant_enhanced.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Examples/maxwell_mass.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Examples/maxwell_mass_3d.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Examples/stable_mass_longrun_simulation.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Examples/vacuum.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved MASTER_EQUATIONS.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Makefile",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/Reyes - 2025 - Discrete Wave-Constrained Computation and Classical Complexity Turing Equivalence for  and .pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/Reyes - 2025 - Emergence of Effective Mass Solenoidal Topology of Vibrational Energy.pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/Reyes - 2025 - Hard Upper Bound on Spatial Dimensionality in Wave Confinement Theory.pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/Reyes - 2025 - JUNO Energy Resolution and Detectability of WCT Ghost-Mode Neutrinos.pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/Reyes - 2025 - Observation of Long-Lived Photon Resonance Confinement in Water Cavities.pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/Reyes - 2025 - P vs NP in Curvature-Bounded Wave Computation A Model-Relative P_WCC ≠ NP_WCC Separation.pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/Reyes - 2025 - Phase-Flux Field (PFF) Axiomatic Substrate for Wave Confinement Theory Zero-Wave Invariance, Finite.pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/Reyes - 2025 - Prediction & Protocol Ledger Long-Lived Harmonic State Induction in Photodiodes.pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/Reyes - 2025 - Resonance-Confinement Architecture A Physically Bounded Substrate for Safe Superintelligence.pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/Reyes - 2025 - Rest Energy from Density-Weighted Loop Curvature A Covariant Locking Principle.pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/Reyes - 2025 - Self-Emergent Fourier Cymatics Entropic Eigenmodes out of Chaos.pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/Reyes - 2025 - Structure and Derivation of Physical Constants through Wave Confinement.pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/Reyes - 2025 - The Classical P vs NP Problem is Mathematically and Physically Ill-Posed.pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/Reyes - 2025 - The Geometry of Resonance Wave Confinement Theory and the Emergence of Mass, Force, and Spacetime.pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/Reyes - 2025 - Wave Confinement Theory Predicts the Koide Mass Relation A Curvature–Harmonic Origin of Fermion Mas.pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/Reyes - 2025 - WaveLock A Curvature-Locked One-Way Function Based on Nonlinear PDE Evolution.pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/Reyes - 2026 - A Curvature-Induced Log-Periodic Deformation of C9(q 2) Wave Confinement Theory and the LHCb B 0 →.pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/Reyes - 2026 - Bin-Stable Log-Periodic Structure in Public NIST Atomic Line List.pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/Reyes - 2026 - Log-Spectral Structure and Koide-Like Winding Geometry in Open-Data B⁰ → K⁰ μ⁺μ⁻ Candidate Spectra.pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/Reyes - 2026 - Logarithmic Curvature Flow, Filament Localization, and the Geometric Origin of the Lepton Mass Spect.pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/Reyes - 2026 - Nuclear Fusion Tokamak with Self Sustaining Resonance.pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/Reyes - 2026 - Recursive AI Drift A 2025 Prediction Timeline External Validation Audit and Technical Note.pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/archive/Emergence of Effective Mass Solenoidal Topology of Vibrational Energy.pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/archive/Phase Flux.pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/archive/Resonant Cavity of Vector Fields.pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/archive/Rest Energy from Density.pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/archive/Self-Emergent Fourier Cymatics Entropic Eigenmodes out of Chaos.pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/archive/Structure and Derivation of Physical Constants through Wave Confinement.pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Papers/archive/The_Geometry_Of_Resonance.pdf",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved READING_ORDER.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved README.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved SCOPE.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved SM_Spectrum/SM_final.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved SM_Spectrum/_map.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved SM_Spectrum/_terms_perfection_v18.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved SM_Spectrum/calculate_masses.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved SM_Spectrum/resonance_map.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved SOURCE_OF_TRUTH_COMPILER_SPEC.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved WCT_CORRECTED_VARIATIONAL_CLOSURE_DRAFT.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved WCT_FULL_EQUATION_LIST_CORRECTED.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved WCT_MASTER_EQUATIONS_UPDATED.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved WELCOME_DISCUSSION.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Wavefield_Folding/analyze_logs.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Wavefield_Folding/cone_helmholtz_spectrum.csv",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Wavefield_Folding/cone_helmholtz_spectrum.png",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Wavefield_Folding/entropy.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Wavefield_Folding/gravity_emerging.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Wavefield_Folding/mass_propagation_covariant_enhanced.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Wavefield_Folding/mass_propagation_final_refined.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Wavefield_Folding/mass_propagation_multi_mass_tuned.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Wavefield_Folding/mass_propagation_stabilized_final.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Wavefield_Folding/mass_propagation_tracking.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Wavefield_Folding/mass_stable_none.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Wavefield_Folding/schine_simulation_wct.png",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Wavefield_Folding/schine_wct_data.csv",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Wavefield_Folding/stable_mass_longrun_simulation.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved Wavefield_Folding/topological_cone.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved audit/cross_paper/BASELINE_MANIFEST.json",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved audit/cross_paper/DERIVATION_GRAPH.json",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved audit/cross_paper/FREE_PARAMETER_LEDGER.json",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved audit/cross_paper/SOURCE_LEDGER.json",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved audit/cross_paper/candidate_predictions.json",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved audit/cross_paper/prior_vs_new_derivation.json",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved audit/cross_paper/record_verification.json",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved audit/cross_paper/requirements.txt",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved audit/cross_paper/symbolic_verification.json",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved audit/cross_paper/validate_records.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved audit/cross_paper/verify_derivations.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved audit/physical_domain/ARTIFACT_SHA256.json",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved audit/physical_domain/BASELINE_BLOBS.json",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved audit/physical_domain/REPRODUCE.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved audit/physical_domain/RUN_PROVENANCE.json",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved audit/physical_domain/SOURCE_LEDGER.json",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved audit/physical_domain/VALIDATION.json",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved audit/physical_domain/assumptions.json",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved audit/physical_domain/decision.json",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved audit/physical_domain/dependency_graph.json",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved audit/physical_domain/derivation_status.json",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved audit/physical_domain/prediction.json",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved audit/physical_domain/prior_vs_new.json",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved audit/physical_domain/requirements.txt",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved audit/physical_domain/symbolic_results.json",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved audit/physical_domain/validate_records.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved audit/physical_domain/verify_symbolic.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved derivations/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved derivations/gr_constants_closure.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved derivations/requirements.lock",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved derivations/test_gr_constants_closure.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved docs/DYNAMICS_AND_SOURCE_INVENTORY.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved docs/FOUNDATIONAL_CLOSURE_VERDICT.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved docs/GEOMETRIC_SCALE_OPERATOR_AUDIT.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved docs/PHYSICAL_ACTIVE_DOMAIN_DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved docs/SPECTRAL_OBSERVABLE_MAPPING.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved docs/WINDING_SELECTION_ANALYSIS.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved docs/cross_domain/ANALYSIS_PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved docs/cross_paper/ACTIVE_LOG_DOMAIN_MAP.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved docs/cross_paper/CORRECTED_ACTION_TO_EFT_KERNEL.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved docs/cross_paper/CORRECTED_ACTION_TO_PFF_REDUCTION.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved docs/cross_paper/CROSS_PAPER_DERIVATION_LEDGER.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved docs/cross_paper/DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved docs/cross_paper/FINITE_SCALE_SELECTION.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved docs/cross_paper/LOCALIZATION_AND_DOMAIN_SELECTION.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved docs/cross_paper/OBSERVABLE_FORWARD_MAP.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved docs/cross_paper/QUADRATIC_ACTION_AND_DISPERSION.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved docs/cross_paper/RADIAL_OPERATOR_AND_SHELL_SPECTRUM.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved docs/cross_paper/SECTOR_ENERGY_AND_WINDING.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved reproducibility/Dockerfile",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved reproducibility/EXPECTED_HASHES.json",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved reproducibility/README.md",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved reproducibility/finite_band_reference.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved reproducibility/requirements.lock",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved reproducibility/verify_hashes.py",
+      "passed": true
+    },
+    {
+      "name": "baseline preserved scripts/sync_effective_statuses_v2.py",
+      "passed": true
+    }
+  ]
+}

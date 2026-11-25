@@ -1,0 +1,36 @@
+{
+  "schema": "WCT_PHYSICAL_DOMAIN_RUN_PROVENANCE_V1",
+  "audit_date_utc": "2026-10-07",
+  "repository": "rickyjreyes/geometry_of_resonance",
+  "base_commit": "a0048ef751a8876a9494f6de24b952ebc1db7213",
+  "base_tree": "e76c0254c3ab7defa015c8ac1f7d957ca42790ee",
+  "branch": "agent/wct-physical-domain-winding-derivation",
+  "commit_locator": "The Git commit containing this file; exact post-publication verification is a separate delivery record.",
+  "authoring_mode": "Partial local authoring snapshot; GitHub Git-data API builds on the immutable complete base tree.",
+  "source_git_blob_verifications": 48,
+  "manuscript_text_read_windows": 16,
+  "user_instruction": {
+    "name": "Pasted text(20261007-023937).txt",
+    "sha256": "70da14d8f1a4737ba8109670784dfa3ab833320457270beb16b6a2f9a4b3cbdc",
+    "content_read_from": "User-uploaded scratch file as explicitly requested"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0"
+  },
+  "commands": [
+    "python -m pip install -r audit/physical_domain/requirements.txt",
+    "python audit/physical_domain/verify_symbolic.py",
+    "python audit/physical_domain/validate_records.py"
+  ],
+  "run_scope": "Exact symbolic algebra and record validation, without PDE time integration or empirical spectrum analysis.",
+  "original_PDE_solvers_run": false,
+  "Lean_build_run": false,
+  "empirical_frequency_inputs": [],
+  "new_PDE_simulations": 0,
+  "new_collider_analyses": 0,
+  "holdout_accessed": false,
+  "mutation_scope": "Additions only in docs/ and audit/physical_domain/ on the isolated foundational branch.",
+  "source_limitations": "See SOURCE_LEDGER.json; no claim to have inspected unavailable original solver arrays."
+}

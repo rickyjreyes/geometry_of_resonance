@@ -1,5 +1,7 @@
 # Wave Confinement Theory — Audited Master Equation Architecture
 
+> **Later evidence cross-reference (2026-10-14):** The [D4 handoff](docs/D4_CANONICAL_EVIDENCE_MAP.md) and its [claim-status JSON](audit/d4_handoff/claims.json) classify a separate projection-free periodic Hamiltonian experiment. Its archive PASS, finite-protocol numerical PASS, conditional continuum applications and pending FEM/Lean work must not be merged into this 142-object effective-status count. [Foundational issue ledger](docs/FOUNDATIONAL_ISSUES_IMPLEMENTATION_2026-10-14.md) preserves outstanding #11–#18/#27 mathematical obligations.
+
 **Richard J. Reyes**  
 **Canonical master reference aligned with the 142-object WCT equation registry**
 
@@ -31,7 +33,7 @@ $$9+83+10+20+5+9+6=142.$$
 
 Current corpus totals are
 
-$$59\ \mathrm{PASS} + 27\ \mathrm{CONDITIONAL} + 26\ \mathrm{DEFINITION} + 30\ \mathrm{OPEN} + 0\ \mathrm{FAIL} = 142,$$
+$$68\ \mathrm{PASS} + 18\ \mathrm{CONDITIONAL} + 26\ \mathrm{DEFINITION} + 30\ \mathrm{OPEN} + 0\ \mathrm{FAIL} = 142,$$
 
 with no contradiction remaining in the current encoded specification. The historical baseline assignments come from `wct-sympy/equations/full_registry.yaml`; effective promotions and reclassifications come from `wct-sympy/equations/derived_overrides.yaml`; and the current public result is compiled in `compiled-registry.json`. A SymPy `PASS` is not automatically a Lean proof or empirical validation.
 

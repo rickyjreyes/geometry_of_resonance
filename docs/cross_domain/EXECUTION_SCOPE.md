@@ -1,0 +1,15 @@
+# Numerical execution scope
+
+This implements the already published `ANALYSIS_PROTOCOL.md` at commit b75989b60eeb9874aae1f4d2562cf35447e3862f. It does not add a physical transformation or a new empirical search. All comparisons are retrospective.
+
+The historical primary panel is GWTC training-frozen log frequency, CMS frozen mass-log frequency, Fe II canonical wavenumber-log frequency, and LHCb interregional triplet-regression slope a. The fourth is not a DSI period; this panel is ineligible for frequency equality, a four-frequency null, or a numeric four-domain LOO prediction without a new physical bridge.
+
+A separate reference-frequency stress panel uses the LHCb source-existing dominant low-frequency reference k1=7.61054. This is fixed input to the later two-mode fit, independently documented in the May 2026 paper and repository; it is not a newly measured optimum, a CMS-imported frequency, or a replacement for a. U0 compares native log-frequency magnitudes. U1 expresses all four in mass/energy-log coordinates: (nu_GWTC, nu_CMS, nu_NIST, 2 k_LHCb). Equality across these different physical observables is a hypothesis, not a coordinate theorem.
+
+Report the primary stress panel first. As source-choice sensitivity, report every combination of the three documented GWTC variants, Fe II versus Co II (160 bins), and LHCb k1, historical k2 reference, or later scanned k2 optimum. The latter are different modes/pipelines, not independent replications; none may be selected to improve the conclusion. The primary reference remains k1. Each U0/U1 variant gets all four LOO folds.
+
+For the separate manufacture-of-agreement diagnostic, optimize RMS log residual after fitting one shared scale. On each observed or synthetic quartet, enumerate harmonic and subharmonic direction as separate whole-model choices; integer caps are 6, 12, 24, and coordinate exponent menus are exactly those in the protocol. A common multiplicative frequency normalization is absorbed by the fitted scale and creates no additional fit. Native and source-required mass/energy maps are retained as separate panels and also included in the omnibus selection. Reciprocal exponents change orientation but duplicate a magnitude fit; retain their nominal choice count.
+
+The selected global score takes the minimum over these nested caps, menus, directions, and the two panels, and the identical minimization is applied to all 10000 null quartets on each prespecified support. Report nominal choice counts as upper bounds, not independent trials. Fitted integers/exponents are negative-control outputs only; they cannot label held-out sectors. These Monte Carlo fractions are conditional algorithm diagnostics, never scientific p-values, and do not calibrate the historical selection of experiments, pipelines or modes.
+
+Additional computations only re-express source quantities: DSI periods, source-window cycle counts, and the already published 2–3–6 numerical analogies. They do not promote analysis-window endpoints to physical boundaries. No empirical events, ROOT files, atomic line-list searches, or ATLAS holdout are opened or rerun.

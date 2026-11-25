@@ -1,0 +1,272 @@
+{
+  "schema": "WCT_PRIOR_VS_NEW_V1",
+  "baseline_commit": "a84a4f0745d8e440961797ab8da809ae8598a836",
+  "previous_audit_decision": "WCT_ACTIVE_DOMAIN_UNDERDETERMINED",
+  "new_decision": "FINITE_SCALE_DERIVED_BUT_CLOSURE_INCOMPLETE",
+  "preserved_labels": [
+    "PHYSICAL_ACTIVE_DOMAIN_NOT_DERIVED",
+    "NOT_IDENTIFIABLE",
+    "SPECTRAL_MEASUREMENT_MAP_NOT_DERIVED",
+    "WCT_ACTIVE_DOMAIN_UNDERDETERMINED"
+  ],
+  "preserved_label_scope": "Original physical domain/winding/measurement shortcut; not used as a stopping rule for the new branch",
+  "results": [
+    {
+      "bridge_id": "B01",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "DERIVED_BY_CROSS_PAPER_COMPOSITION",
+      "resolved_in_stated_scope": true
+    },
+    {
+      "bridge_id": "B02",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "DERIVED_BY_CROSS_PAPER_COMPOSITION",
+      "resolved_in_stated_scope": true
+    },
+    {
+      "bridge_id": "B03",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "DERIVED_BY_CROSS_PAPER_COMPOSITION",
+      "resolved_in_stated_scope": true
+    },
+    {
+      "bridge_id": "B04",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "CONTROLLED_EFFECTIVE_REDUCTION",
+      "resolved_in_stated_scope": true
+    },
+    {
+      "bridge_id": "B05",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "PARAMETER_DEPENDENT",
+      "resolved_in_stated_scope": true
+    },
+    {
+      "bridge_id": "B06",
+      "prior_or_new": "EXISTING_HEALTH_ISSUE_WITH_NEW_S004_POLE_CALCULATION",
+      "status": "OBSTRUCTED",
+      "resolved_in_stated_scope": false
+    },
+    {
+      "bridge_id": "B07",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "CONDITIONAL",
+      "resolved_in_stated_scope": false
+    },
+    {
+      "bridge_id": "B08",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "CONTROLLED_EFFECTIVE_REDUCTION",
+      "resolved_in_stated_scope": true
+    },
+    {
+      "bridge_id": "B09",
+      "prior_or_new": "EXISTING_PAPER",
+      "status": "DERIVED_IN_EXISTING_PAPER",
+      "resolved_in_stated_scope": true
+    },
+    {
+      "bridge_id": "B10",
+      "prior_or_new": "EXISTING_ROUTE_WITH_NEW_SCOPED_COEFFICIENT_CHECK",
+      "status": "PERTURBATIVE",
+      "resolved_in_stated_scope": true
+    },
+    {
+      "bridge_id": "B11",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "OBSTRUCTED",
+      "resolved_in_stated_scope": false
+    },
+    {
+      "bridge_id": "B12",
+      "prior_or_new": "EXISTING_PAPER",
+      "status": "DERIVED_IN_EXISTING_PAPER",
+      "resolved_in_stated_scope": true
+    },
+    {
+      "bridge_id": "B13",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "PERTURBATIVE",
+      "resolved_in_stated_scope": true
+    },
+    {
+      "bridge_id": "B14",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "NOT_DERIVED",
+      "resolved_in_stated_scope": false
+    },
+    {
+      "bridge_id": "B15",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "NOT_DERIVED",
+      "resolved_in_stated_scope": false
+    },
+    {
+      "bridge_id": "B16",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "CONDITIONAL",
+      "resolved_in_stated_scope": true
+    },
+    {
+      "bridge_id": "B17",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "CONDITIONAL",
+      "resolved_in_stated_scope": false
+    },
+    {
+      "bridge_id": "B18",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "DERIVED_BY_CROSS_PAPER_COMPOSITION",
+      "resolved_in_stated_scope": true
+    },
+    {
+      "bridge_id": "B19",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "CONDITIONAL",
+      "resolved_in_stated_scope": false
+    },
+    {
+      "bridge_id": "B20",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "NOT_DERIVED",
+      "resolved_in_stated_scope": false
+    },
+    {
+      "bridge_id": "B21",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "CONDITIONAL",
+      "resolved_in_stated_scope": true
+    },
+    {
+      "bridge_id": "B22",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "NOT_DERIVED",
+      "resolved_in_stated_scope": false
+    },
+    {
+      "bridge_id": "B23",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "DERIVED_BY_CROSS_PAPER_COMPOSITION",
+      "resolved_in_stated_scope": true
+    },
+    {
+      "bridge_id": "B24",
+      "prior_or_new": "EXISTING_PAPER",
+      "status": "DERIVED_IN_EXISTING_PAPER",
+      "resolved_in_stated_scope": true
+    },
+    {
+      "bridge_id": "B25",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "NOT_DERIVED",
+      "resolved_in_stated_scope": false
+    },
+    {
+      "bridge_id": "B26",
+      "prior_or_new": "EXISTING_PAPER",
+      "status": "DERIVED_IN_EXISTING_PAPER",
+      "resolved_in_stated_scope": true
+    },
+    {
+      "bridge_id": "B27",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "NOT_DERIVED",
+      "resolved_in_stated_scope": false
+    },
+    {
+      "bridge_id": "B28",
+      "prior_or_new": "EXISTING_PAPER",
+      "status": "DERIVED_IN_EXISTING_PAPER",
+      "resolved_in_stated_scope": true
+    },
+    {
+      "bridge_id": "B29",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "CONDITIONAL",
+      "resolved_in_stated_scope": true
+    },
+    {
+      "bridge_id": "B30",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "CONDITIONAL",
+      "resolved_in_stated_scope": true
+    },
+    {
+      "bridge_id": "B31",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "CONDITIONAL",
+      "resolved_in_stated_scope": false
+    },
+    {
+      "bridge_id": "B32",
+      "prior_or_new": "EXISTING_PAPER",
+      "status": "DERIVED_IN_EXISTING_PAPER",
+      "resolved_in_stated_scope": true
+    },
+    {
+      "bridge_id": "B33",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "NOT_DERIVED",
+      "resolved_in_stated_scope": false
+    },
+    {
+      "bridge_id": "B34",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "OBSTRUCTED",
+      "resolved_in_stated_scope": false
+    },
+    {
+      "bridge_id": "B35",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "DERIVED_BY_CROSS_PAPER_COMPOSITION",
+      "resolved_in_stated_scope": true
+    },
+    {
+      "bridge_id": "B36",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "DERIVED_BY_CROSS_PAPER_COMPOSITION",
+      "resolved_in_stated_scope": true
+    },
+    {
+      "bridge_id": "B37",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "DERIVED_BY_CROSS_PAPER_COMPOSITION",
+      "resolved_in_stated_scope": true
+    },
+    {
+      "bridge_id": "B38",
+      "prior_or_new": "NEW_DEDUCTION_FROM_EXISTING_INGREDIENTS",
+      "status": "OBSTRUCTED",
+      "resolved_in_stated_scope": false
+    }
+  ],
+  "recovered_existing": [
+    "PFF finite band and Lyapunov rail",
+    "Geometry spatial EFT kernel",
+    "P09 fixed-mass coercivity, orbit radius, exact closure variation/flow",
+    "P10 corrected full Hessian and scoped spectral criterion",
+    "P14 distinction between fixed points and continuum binding",
+    "PFF zero-amplitude unwinding",
+    "P03 conditional scale-winding theorem",
+    "P22 locking/measurement identities"
+  ],
+  "new_results": [
+    "Complete S004 plane-background Hessian and pole branches",
+    "Controlled one-real-amplitude Geometry EFT coefficient map",
+    "Exact finite-q positive-residue minimum and separated hierarchy",
+    "Conditional overdamped PFF coefficient map",
+    "Exact cubic/quartic vertices exposing unfixed saturation",
+    "S004 radial fourth-order Hessian and square-factorization conditions",
+    "Explicit controlled closure orbit radius and dilute binding threshold",
+    "Static sector functional and conditional response susceptibility"
+  ],
+  "retracted_previous_baseline_results": [],
+  "not_claimed": [
+    "Healthy complete higher-time theory",
+    "Full complex EFT equivalence",
+    "Autonomous PFF dissipation or unstable growth",
+    "Global self-bound state",
+    "Selected winding/domain/log frequency",
+    "Physical 2-3-6 dilation"
+  ]
+}

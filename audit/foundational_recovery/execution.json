@@ -1,0 +1,154 @@
+{
+  "schema": "wct-recovery-execution-v1",
+  "as_of_local": "2026-10-20 America/Los_Angeles",
+  "commands": [
+    {
+      "name": "independent-reconstruction",
+      "command": [
+        "/workspace/scratch/ecaf33bad7ac/.venv/bin/python",
+        "derivations/foundational_recovery.py",
+        "--output",
+        "/workspace/scratch/ecaf33bad7ac/geometry_recovery/audit/foundational_recovery/verification.json"
+      ],
+      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_recovery",
+      "started_at_utc": "2026-10-21T06:40:23.525711+00:00",
+      "returncode": 0,
+      "seconds": 1.433,
+      "log": "audit/foundational_recovery/independent-reconstruction.log",
+      "log_sha256": "f6b1890e51e862e1d298f29b6e5e46353392cacc769c5e0c3c5260f0c9493fe3"
+    },
+    {
+      "name": "all-derivation-regressions",
+      "command": [
+        "/workspace/scratch/ecaf33bad7ac/.venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-v",
+        "-s",
+        "derivations",
+        "-p",
+        "test_*.py"
+      ],
+      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_recovery",
+      "started_at_utc": "2026-10-21T06:40:24.958521+00:00",
+      "returncode": 0,
+      "seconds": 2.789,
+      "log": "audit/foundational_recovery/all-derivation-regressions.log",
+      "log_sha256": "257027289a547a605cc24aeda3cf7642cefd931435bca1e9bf15a97ff74a45ac"
+    },
+    {
+      "name": "pr33-reconstruction",
+      "command": [
+        "/workspace/scratch/ecaf33bad7ac/.venv/bin/python",
+        "derivations/foundational_closure.py",
+        "--output",
+        "/workspace/scratch/ecaf33bad7ac/geometry_recovery/audit/foundational_recovery/pr33_verification.json"
+      ],
+      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_recovery",
+      "started_at_utc": "2026-10-21T06:40:27.747505+00:00",
+      "returncode": 0,
+      "seconds": 1.875,
+      "log": "audit/foundational_recovery/pr33-reconstruction.log",
+      "log_sha256": "03e81457e4884d11952963290dfbca8a3203df5d1f7011ee6dfdbf411d7b1558"
+    },
+    {
+      "name": "cross-paper-replay",
+      "command": [
+        "/workspace/scratch/ecaf33bad7ac/.venv/bin/python",
+        "/workspace/scratch/ecaf33bad7ac/recovery_sources/cross_replay/verify.py"
+      ],
+      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_recovery",
+      "started_at_utc": "2026-10-21T06:40:29.622805+00:00",
+      "returncode": 0,
+      "seconds": 5.204,
+      "log": "audit/foundational_recovery/cross-paper-replay.log",
+      "log_sha256": "d41f1065e470d9df56fc1ac343f39d56a9826d9916f3f46fde22b23abdaf3bec"
+    },
+    {
+      "name": "pr33-integrity",
+      "command": [
+        "/workspace/scratch/ecaf33bad7ac/.venv/bin/python",
+        "audit/foundational/validate_records.py"
+      ],
+      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_recovery",
+      "started_at_utc": "2026-10-21T06:40:34.826850+00:00",
+      "returncode": 0,
+      "seconds": 0.039,
+      "log": "audit/foundational_recovery/pr33-integrity.log",
+      "log_sha256": "6a146309353a90be677230496710b8102b7867df39d3c5d5bd226f7fe5f647dd"
+    },
+    {
+      "name": "historical-d4-scope",
+      "command": [
+        "/workspace/scratch/ecaf33bad7ac/.venv/bin/python",
+        "audit/d4_handoff/validate_claims.py"
+      ],
+      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_recovery",
+      "started_at_utc": "2026-10-21T06:40:34.865707+00:00",
+      "returncode": 0,
+      "seconds": 0.033,
+      "log": "audit/foundational_recovery/historical-d4-scope.log",
+      "log_sha256": "01c6507233454073ec1515805938b8a701558afbf5fc8483d6ce77cf1857702f"
+    },
+    {
+      "name": "prospective-gate-self-test",
+      "command": [
+        "/workspace/scratch/ecaf33bad7ac/.venv/bin/python",
+        "audit/prospective/freeze_gate.py",
+        "--self-test"
+      ],
+      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_recovery",
+      "started_at_utc": "2026-10-21T06:40:34.899341+00:00",
+      "returncode": 0,
+      "seconds": 0.04,
+      "log": "audit/foundational_recovery/prospective-gate-self-test.log",
+      "log_sha256": "e397f3d9b29290b35c954ec5b02d73b8051f862b2e80ea6b88c8c9205b926065"
+    },
+    {
+      "name": "prospective-regressions",
+      "command": [
+        "/workspace/scratch/ecaf33bad7ac/.venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-v",
+        "-s",
+        "audit/prospective",
+        "-p",
+        "test_*.py"
+      ],
+      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_recovery",
+      "started_at_utc": "2026-10-21T06:40:34.939887+00:00",
+      "returncode": 0,
+      "seconds": 0.064,
+      "log": "audit/foundational_recovery/prospective-regressions.log",
+      "log_sha256": "65b53d99e2759078c340e00cb3a51753800aba9a19d65fe0d7903bdc69ac02e4"
+    },
+    {
+      "name": "d4-rational-replay",
+      "command": [
+        "/workspace/scratch/ecaf33bad7ac/.venv/bin/python",
+        "/workspace/scratch/ecaf33bad7ac/recovery_sources/wct-pde/tools/closure_d4_basin_rational_replay.py",
+        "--output",
+        "/workspace/scratch/ecaf33bad7ac/geometry_recovery/audit/foundational_recovery/d4_basin_replay.json"
+      ],
+      "cwd": "/workspace/scratch/ecaf33bad7ac/geometry_recovery",
+      "started_at_utc": "2026-10-21T06:40:35.004795+00:00",
+      "returncode": 0,
+      "seconds": 2.063,
+      "log": "audit/foundational_recovery/d4-rational-replay.log",
+      "log_sha256": "ca7ec462f54bca6947dc6ed665e7f389e626113b211b4bdfec8646c5f1a98527"
+    }
+  ],
+  "all_commands_passed": true,
+  "scope": {
+    "PDE_propagation": false,
+    "new_stationary_search": false,
+    "root_coercivity_interval_campaign": false,
+    "mass_fit": false,
+    "dimensional_scan": false,
+    "external_review": false
+  },
+  "initial_development_checks": "38 identities and 11 focused tests passed before the inherited derivation replay; no initial mathematical check failed. One GitHub metadata request was corrected from repo_full_name to repository_full_name before retrieval."
+}

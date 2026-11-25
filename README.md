@@ -5,6 +5,10 @@
 **Initial release:** April 22, 2025  
 **Repository:** <https://github.com/rickyjreyes/geometry_of_resonance>
 
+**Living evidence updates (2026-10-14):** [scoped D4 handoff](docs/D4_CANONICAL_EVIDENCE_MAP.md) · [foundational issue and obstruction ledger](docs/FOUNDATIONAL_ISSUES_IMPLEMENTATION_2026-10-14.md) · [SM v18 empirical-fit audit](docs/SM_V18_SPECTRAL_BRIDGE_AUDIT.md) · [prospective-prediction freeze gate](docs/PROSPECTIVE_PREDICTION_GATE.md). These later updates do not retroactively change original Zenodo manuscripts or establish physical/theorem claims beyond each source's stated model and protocol.
+
+**Foundational audit (2026-10-20):** [decision and source matrix](docs/foundational/FOUNDATIONAL_DECISION.md) · [S004 constraint/ghost and high-frequency Cauchy obstruction](docs/foundational/GHOST_AND_CONSTRAINT_ANALYSIS.md) · [cross-model derivations](docs/foundational/CROSS_MODEL_DERIVATION.md). The untruncated fixed-background corrected action is obstructed in the stated nonzero sector. The separate 2D periodic existence, orbital stability and explicit basin results remain valid within their pinned hypotheses; a healthy parent-to-physical-mass chain is not established.
+
 > Unified wave-confinement field theory, simulations, experiments, spectral tests, computation, and applied resonance-control architecture.
 
 ---
@@ -76,7 +80,7 @@ E_{\mathrm{rest}} = mc^2 = \hbar c\,k_{\mathrm{eff}},
 m=\frac{\hbar}{c}\langle \sigma\rangle_w
 ```
 
-This is the mass-law spine used by the loop-curvature, solenoidal-mass, electron, and lepton-spectrum papers.
+This is the historical mass-law spine used by the loop-curvature, solenoidal-mass, electron, and lepton-spectrum papers. Its general density-weighted form is **conditional**; the rigorous separated-domain identity is \(m_n=(\hbar/c)\sqrt{\lambda_n}\), with the curvature reduction exact in the declared constant-curvature locked-loop case. See [DERIVATION_CLOSURE §8–9](DERIVATION_CLOSURE.md).
 
 ### Finite-band spectral rail
 
@@ -106,6 +110,8 @@ This selects a finite spectral shell instead of allowing unrestricted IR or UV g
 A covariant wavefield framework in which mass, force, and effective metric structure arise from nonlinear confinement of \(\psi\), rather than being primitive assumptions.
 
 ### 2. Phase–Flux Field substrate
+
+The historical PFF four-node D4-to-continuum assertion is **not** verified by the distinct D4 *dihedral square-symmetry* periodic Hamiltonian experiment; see the [canonical evidence map](docs/D4_CANONICAL_EVIDENCE_MAP.md).
 
 A pre-WCT layer defined only by observable energy density \(u(x,t)\), flux \(S(x,t)\), and phase \(\theta(x,t)\), with conservation, causal flow, finite-k band-pass selection, shell quantization, and D4-to-continuum construction.
 

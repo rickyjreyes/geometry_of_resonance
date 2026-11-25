@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "identities": {
+    "coercivity_square": "0",
+    "dilation_minimum": "0",
+    "virial": "0",
+    "virial_square": "0",
+    "amplitude_defect": "0",
+    "uniform_sequence_defect": "0",
+    "fourier_integral": "0",
+    "optimized_fourier_constant": "0",
+    "two_mass_bracket": "0",
+    "trial_reduction": "0"
+  },
+  "scope": "scalar identities only; analytic arguments are in PROOF.md"
+}

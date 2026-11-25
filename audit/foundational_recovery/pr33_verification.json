@@ -1,0 +1,173 @@
+{
+  "schema": "wct-foundational-verification-v1",
+  "status": "PASS",
+  "symbolic": {
+    "count": 31,
+    "checks": [
+      "direct_real_EL_component_0",
+      "direct_real_EL_component_1",
+      "Legendre_inverse_0",
+      "Legendre_inverse_1",
+      "full_Hamiltonian_Legendre_transform",
+      "acceleration_Hessian_00",
+      "ordinary_velocity_Hessian_00",
+      "acceleration_Hessian_01",
+      "ordinary_velocity_Hessian_01",
+      "acceleration_Hessian_10",
+      "ordinary_velocity_Hessian_10",
+      "acceleration_Hessian_11",
+      "ordinary_velocity_Hessian_11",
+      "exact_charge_preserving_curve",
+      "fixed_charge_negative_quadratic",
+      "variable_projector_adjoint_correction",
+      "direct_quadratic_symbol_0",
+      "direct_quadratic_symbol_1",
+      "pole_factorization",
+      "low_residue",
+      "high_residue",
+      "UV_discriminant",
+      "principal_symbol",
+      "principal_complex_speed_pair",
+      "cubic_generates_third_harmonic",
+      "polar_mode_Dirichlet_energy",
+      "locked_ellipse_mode_eigenvalue",
+      "locked_ellipse_phase_flux",
+      "locked_ellipse_tangent_antisymmetry",
+      "locked_ellipse_mean_gap",
+      "action_term_dimensions"
+    ],
+    "action_dimensions": {
+      "ordinary": [
+        2,
+        -2
+      ],
+      "potential": [
+        2,
+        -2
+      ],
+      "F_kappa_Q_squared": [
+        2,
+        -2
+      ],
+      "F_theta_P_squared": [
+        2,
+        -2
+      ]
+    }
+  },
+  "linear_mode_checks": {
+    "witness": {
+      "K": 1.0,
+      "G": 0.0,
+      "T": 1.0,
+      "m2": 0.0
+    },
+    "growth_coefficient_limit": 0.45508986056222733,
+    "rows": [
+      {
+        "k": 1,
+        "growth_over_k": 0.3406250193166065,
+        "companion_vs_pole_error": 1.6653345369377348e-16,
+        "asymptotic_error": 0.11446484124562084,
+        "log10_amplification_at_tau_1": 0.14793156628739074
+      },
+      {
+        "k": 2,
+        "growth_over_k": 0.4330127018922186,
+        "companion_vs_pole_error": 7.771561172376096e-16,
+        "asymptotic_error": 0.022077158670008756,
+        "log10_amplification_at_tau_1": 0.37611005405161657
+      },
+      {
+        "k": 4,
+        "growth_over_k": 0.44993925236330873,
+        "companion_vs_pole_error": 3.885780586188048e-16,
+        "asymptotic_error": 0.005150608198918605,
+        "log10_amplification_at_tau_1": 0.7816245379722385
+      },
+      {
+        "k": 8,
+        "growth_over_k": 0.4538251791439459,
+        "companion_vs_pole_error": 3.885780586188048e-16,
+        "asymptotic_error": 0.0012646814182814548,
+        "log10_amplification_at_tau_1": 1.5767501684077632
+      },
+      {
+        "k": 16,
+        "growth_over_k": 0.454775126635827,
+        "companion_vs_pole_error": 3.885780586188048e-16,
+        "asymptotic_error": 0.0003147339264003568,
+        "log10_amplification_at_tau_1": 3.1601012480766753
+      },
+      {
+        "k": 32,
+        "growth_over_k": 0.4550112668767305,
+        "companion_vs_pole_error": 5.551115123125783e-17,
+        "asymptotic_error": 7.859368549684165e-05,
+        "log10_amplification_at_tau_1": 6.323484237067901
+      },
+      {
+        "k": 64,
+        "growth_over_k": 0.4550702177534408,
+        "companion_vs_pole_error": 5.551115123125783e-17,
+        "asymptotic_error": 1.9642808786524135e-05,
+        "log10_amplification_at_tau_1": 12.648607004725156
+      },
+      {
+        "k": 128,
+        "growth_over_k": 0.4550849502108223,
+        "companion_vs_pole_error": 4.440892098500626e-16,
+        "asymptotic_error": 4.910351405040814e-06,
+        "log10_amplification_at_tau_1": 25.298032982243353
+      }
+    ],
+    "asymptotic_orders": [
+      2.374278117165886,
+      2.0997398041048942,
+      2.025968793871233,
+      2.0065694002743757,
+      2.00164738988264,
+      2.0004121658926683,
+      2.0001030613024504
+    ],
+    "lorentzian_boundary_control": "PASS",
+    "interpretation": "exact linear-mode diagnostic, not PDE simulation or nonlinear lifetime"
+  },
+  "EFT_remainder": {
+    "scope": "one real linear amplitude branch only",
+    "dmin": "0.996",
+    "rows": [
+      {
+        "q": "0.0000625",
+        "error": "0.0000000009842389444582783650810881707183166362762617972145713913221059641349034",
+        "bound": "0.0000000009844241030053009847714277430194255936256165920315467371155968338537571"
+      },
+      {
+        "q": "0.000125",
+        "error": "0.000000007872430906343312818804236457706765167898473044011826300506414862616851",
+        "bound": "0.000000007875392824042407878171421944155404749004932736252373896924774670830057"
+      },
+      {
+        "q": "0.00025",
+        "error": "0.00000006295577170545394115978117004167031253210001604184197994164550558667055",
+        "bound": "0.00000006300314259233926302537137555324323799203946189001899117539819736664046"
+      },
+      {
+        "q": "0.0005",
+        "error": "0.0000005032678391736974324134844916612951717400189020992629744350863677907407",
+        "bound": "0.0000005040251407387141042029710044259459039363156951201519294031855789331236"
+      }
+    ]
+  },
+  "versions": {
+    "python": "3.12.14",
+    "sympy": "1.14.0",
+    "numpy": "2.3.5",
+    "mpmath": "1.3.0"
+  },
+  "script_sha256": "f9560e02454676e248622855e1b6e774634295ec5efa8cf895044a06c71ce8a8",
+  "PDE_propagations": 0,
+  "empirical_fit_inputs": [],
+  "physical_mass_predictions": [],
+  "nonlinear_EFT_closure": "NOT_ESTABLISHED"
+}

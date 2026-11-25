@@ -1,0 +1,28 @@
+{
+  "schema": "WCT_PHYSICAL_DOMAIN_VALIDATION_V1",
+  "status": "PASS",
+  "checks_passed": 17,
+  "checks": [
+    "decision_consistency",
+    "physical_classifications_unresolved",
+    "prediction_gate_and_nulls",
+    "no_empirical_frequency_inputs",
+    "no_simulations_or_holdout",
+    "frozen_ATLAS_and_scores_preserved",
+    "exactly_one_next_task",
+    "symbolic_checks_complete",
+    "source_counts_and_pins",
+    "manuscript_read_coverage_explicit",
+    "graph_integrity",
+    "required_dependency_chain_present",
+    "assumption_source_integrity",
+    "prior_and_new_separated",
+    "no_baseline_path_replaced",
+    "report_links_resolve",
+    "required_reports_present"
+  ],
+  "symbolic_checks_passed": 30,
+  "source_git_blob_hashes_verified_during_inventory": 48,
+  "scientific_prediction_derived": false,
+  "scope": "Publication consistency, provenance references, report links and reference symbolic output. Not physical closure or independent rerun of preserved solvers."
+}

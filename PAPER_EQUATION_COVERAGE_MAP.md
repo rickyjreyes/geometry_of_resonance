@@ -38,13 +38,13 @@ TOP1-TOP9
 CORR1-CORR6
 ```
 
-Current symbolic audit totals:
+Historical symbolic audit totals recorded on June 28, 2026:
 
 ```text
 59 PASS + 27 CONDITIONAL + 26 DEFINITION + 30 OPEN + 0 FAIL = 142
 ```
 
-Important caveat:
+The November 25 registry reports 68 PASS, 18 CONDITIONAL, 26 DEFINITION, 30 OPEN and 0 FAIL. The canonical registry tracks subsequent effective-status changes. The paper-to-ID associations below remain first-pass candidates.
 
 A SymPy `PASS` is not a Lean proof and not empirical validation. It only means the assigned symbolic, dimensional, logical, limit, or consistency check passes under declared assumptions.
 
@@ -809,7 +809,7 @@ Then generate these reports:
 
 ---
 
-# Current audit conclusion
+# June 2026 coverage assessment
 
 ```text
 Core WCT mathematical spine: strongly represented

@@ -1,0 +1,203 @@
+{
+  "schema": "wct-strict-binding-artifacts-v1",
+  "frozen_base": "dff2463e4dae6c1ee4fe0c4ebc6125bf90c9f49e",
+  "self_excluded": true,
+  "files": [
+    {
+      "path": ".github/workflows/strict-binding.yml",
+      "sha256": "9130ff8c6b16b11fe38838c719bd50442ddfc29e8fb06f8cf88fe3d9400f224a"
+    },
+    {
+      "path": "audit/strict_binding/README.md",
+      "sha256": "8a2b70f0531642a76ef31d6cbe66949c87435b7f87c3468a83da3710f6c17a49"
+    },
+    {
+      "path": "audit/strict_binding/adversarial-diagnostics.log",
+      "sha256": "f0add20f3a188c6ca9add2cef21ade350c1c6b6a2b5ac58c36f09b9ce421ec79"
+    },
+    {
+      "path": "audit/strict_binding/all-derivation-regressions.log",
+      "sha256": "5e8f10cb3a6f0c2499ce1afff939aeb721361ca0251e452a38ebd44033ae23a1"
+    },
+    {
+      "path": "audit/strict_binding/ci_attempt.json",
+      "sha256": "428116e9fca33e2a2edb4bbaf34bcee1b09ee8e77070f6a645e485b3eae193d2"
+    },
+    {
+      "path": "audit/strict_binding/claim_matrix.json",
+      "sha256": "6a88b45c4cae174e35bb3cd060302eaaafb109e4c4e5eeaf15a204031d62c907"
+    },
+    {
+      "path": "audit/strict_binding/cross-paper-replay.log",
+      "sha256": "d41f1065e470d9df56fc1ac343f39d56a9826d9916f3f46fde22b23abdaf3bec"
+    },
+    {
+      "path": "audit/strict_binding/cross_paper_verification.json",
+      "sha256": "d41f1065e470d9df56fc1ac343f39d56a9826d9916f3f46fde22b23abdaf3bec"
+    },
+    {
+      "path": "audit/strict_binding/d4-rational-replay.log",
+      "sha256": "ca7ec462f54bca6947dc6ed665e7f389e626113b211b4bdfec8646c5f1a98527"
+    },
+    {
+      "path": "audit/strict_binding/d4_basin_replay.json",
+      "sha256": "e48d4ff956ab8366d4bd24109025de849a7612db9716ebd0ccd090b794718eb9"
+    },
+    {
+      "path": "audit/strict_binding/development_attempt/README.md",
+      "sha256": "3714d6ac6925d33792c300dc3353872e2aff9654826612b905ca23e1b2e8aced"
+    },
+    {
+      "path": "audit/strict_binding/development_attempt/adversarial-diagnostics.log",
+      "sha256": "f0add20f3a188c6ca9add2cef21ade350c1c6b6a2b5ac58c36f09b9ce421ec79"
+    },
+    {
+      "path": "audit/strict_binding/development_attempt/all-derivation-regressions.log",
+      "sha256": "970a030a67927444b4e9a2d517eb53e7df51899dc41093099d44eca30f696199"
+    },
+    {
+      "path": "audit/strict_binding/development_attempt/cross-paper-replay.log",
+      "sha256": "d41f1065e470d9df56fc1ac343f39d56a9826d9916f3f46fde22b23abdaf3bec"
+    },
+    {
+      "path": "audit/strict_binding/development_attempt/execution.json",
+      "sha256": "09ecf8c9ae8e7564c0c51b651ce6275ae45adb163643c4c8876fa8ba64c25359"
+    },
+    {
+      "path": "audit/strict_binding/development_attempt/historical-d4-scope.log",
+      "sha256": "01c6507233454073ec1515805938b8a701558afbf5fc8483d6ce77cf1857702f"
+    },
+    {
+      "path": "audit/strict_binding/development_attempt/independent-binding-identities.log",
+      "sha256": "ae71b4b756e0d55283bc9111caedb99447e31ff385d16a348c4b3b9457925920"
+    },
+    {
+      "path": "audit/strict_binding/development_attempt/pr33-integrity.log",
+      "sha256": "6a146309353a90be677230496710b8102b7867df39d3c5d5bd226f7fe5f647dd"
+    },
+    {
+      "path": "audit/strict_binding/development_attempt/pr33-reconstruction.log",
+      "sha256": "953e06cd7b54b78322f842ce29682f512fd9498f967cda44a00d21bd69ad7e6f"
+    },
+    {
+      "path": "audit/strict_binding/development_attempt/pr34-integrity.log",
+      "sha256": "6826cc06ff8ac5ae3f419a38cebde8fb3aacfc9c82221346e20a818896ca4cb5"
+    },
+    {
+      "path": "audit/strict_binding/development_attempt/pr34-reconstruction.log",
+      "sha256": "f6b1890e51e862e1d298f29b6e5e46353392cacc769c5e0c3c5260f0c9493fe3"
+    },
+    {
+      "path": "audit/strict_binding/development_attempt/prepare-pinned-d4-replay.log",
+      "sha256": "f95bb61a282dbc6826e022ea158516fe13c9405345485aa0acd04b0d28159f39"
+    },
+    {
+      "path": "audit/strict_binding/development_attempt/prospective-gate-self-test.log",
+      "sha256": "e397f3d9b29290b35c954ec5b02d73b8051f862b2e80ea6b88c8c9205b926065"
+    },
+    {
+      "path": "audit/strict_binding/development_attempt/prospective-regressions.log",
+      "sha256": "65b53d99e2759078c340e00cb3a51753800aba9a19d65fe0d7903bdc69ac02e4"
+    },
+    {
+      "path": "audit/strict_binding/diagnostics.json",
+      "sha256": "7503603fbf26cedaae0b1d34a5623c4b576bc7f3bbd517f186a09107d516768e"
+    },
+    {
+      "path": "audit/strict_binding/execution.json",
+      "sha256": "0c510292abacffb124b0e23b05c687de5e5cc052a33a0b8124da60c0b4a2fafc"
+    },
+    {
+      "path": "audit/strict_binding/historical-d4-scope.log",
+      "sha256": "01c6507233454073ec1515805938b8a701558afbf5fc8483d6ce77cf1857702f"
+    },
+    {
+      "path": "audit/strict_binding/independent-binding-identities.log",
+      "sha256": "ae71b4b756e0d55283bc9111caedb99447e31ff385d16a348c4b3b9457925920"
+    },
+    {
+      "path": "audit/strict_binding/pr33-integrity.log",
+      "sha256": "6a146309353a90be677230496710b8102b7867df39d3c5d5bd226f7fe5f647dd"
+    },
+    {
+      "path": "audit/strict_binding/pr33-reconstruction.log",
+      "sha256": "a4ba3f3f7da7952fd792884c0d0a90f5b1ffed93c0dd48b8dc8b7de422a9cf46"
+    },
+    {
+      "path": "audit/strict_binding/pr33_verification.json",
+      "sha256": "0417f9f53a4f30b941df4f72478a6780018332716f96099b5aa830304d2ad75a"
+    },
+    {
+      "path": "audit/strict_binding/pr34-integrity.log",
+      "sha256": "6826cc06ff8ac5ae3f419a38cebde8fb3aacfc9c82221346e20a818896ca4cb5"
+    },
+    {
+      "path": "audit/strict_binding/pr34-reconstruction.log",
+      "sha256": "f6b1890e51e862e1d298f29b6e5e46353392cacc769c5e0c3c5260f0c9493fe3"
+    },
+    {
+      "path": "audit/strict_binding/pr34_verification.json",
+      "sha256": "a835c6448dfc597aaf218921bae390cee69f8152e54a96021778ccb47f6d0220"
+    },
+    {
+      "path": "audit/strict_binding/prepare-pinned-d4-replay.log",
+      "sha256": "171a7ad7597139f944e012cbded766fa46a91b4ec9c427a1ab72a15df60ea183"
+    },
+    {
+      "path": "audit/strict_binding/prepare_d4_replay.py",
+      "sha256": "388e09fe25400f10420bc7a508323caed9b11c503091509820a81c092133bcb4"
+    },
+    {
+      "path": "audit/strict_binding/prospective-gate-self-test.log",
+      "sha256": "e397f3d9b29290b35c954ec5b02d73b8051f862b2e80ea6b88c8c9205b926065"
+    },
+    {
+      "path": "audit/strict_binding/prospective-regressions.log",
+      "sha256": "fa5ba48df10657204c75759d822dad596603725beea8a73b032d7230fd01f1a0"
+    },
+    {
+      "path": "audit/strict_binding/reproduce.py",
+      "sha256": "d9e14807768c44282c0db9468637650fcdd3f114fea641578212604cebcc87fb"
+    },
+    {
+      "path": "audit/strict_binding/run_diagnostics.py",
+      "sha256": "9b8769dfeea71a2d4c89d3699e37373384dbc37e312eceeac2b37c2a4f71e624"
+    },
+    {
+      "path": "audit/strict_binding/source_ledger.json",
+      "sha256": "1df14eb3015b7361e745ddee3b47662c815a06a2df148d788cfc9eb419016c82"
+    },
+    {
+      "path": "audit/strict_binding/validate_records.py",
+      "sha256": "8ecf3325e20c1bbcb9e216755db60d97673ff1d65ebc12399d0b3f54ad63c954"
+    },
+    {
+      "path": "audit/strict_binding/verification.json",
+      "sha256": "35b9b8164157a0aefa470a3f967810a7f16566794104d6f892db52e55361f843"
+    },
+    {
+      "path": "derivations/strict_binding.py",
+      "sha256": "cbbcc8689fb81bf77d2f91fd8a73aacecea5aa5de436f185d661a739e0987e8a"
+    },
+    {
+      "path": "derivations/test_strict_binding.py",
+      "sha256": "a250f4758335663f05c24c7fafb30593925434346c2a35a023d2ee460264c83c"
+    },
+    {
+      "path": "docs/strict_binding/ADVERSARIAL_SPLITTING_TESTS.md",
+      "sha256": "19fdf73d6919273e28f21a0dc7637ef0b987ea3bca4ec1088b415d066be4fff0"
+    },
+    {
+      "path": "docs/strict_binding/STRICT_BINDING_DECISION.md",
+      "sha256": "bdc56f933bebb4759f342b172d93d2c6153323f6cb835b0a3dd48537a5ed513b"
+    },
+    {
+      "path": "docs/strict_binding/SUBADDITIVITY_PROOF_OR_COUNTEREXAMPLE.md",
+      "sha256": "8724706751755c70f3c33db1db66ededddf9a7bac13cc0b315b4bc7d0b42a9d8"
+    },
+    {
+      "path": "docs/strict_binding/WHOLE_SPACE_COMPACTNESS.md",
+      "sha256": "89508ae2f26e14840af61cb1812a1d0e1dfcfaed226a8a5229cba66ed6b9600e"
+    }
+  ]
+}

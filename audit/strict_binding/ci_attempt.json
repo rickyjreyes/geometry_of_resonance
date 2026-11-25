@@ -1,0 +1,15 @@
+{
+  "schema": "wct-binding-hosted-attempt-v1",
+  "head": "0ab5281d1ff4aeb12e8573567f40305d5c646c48",
+  "run_url": "https://github.com/rickyjreyes/geometry_of_resonance/actions/runs/39766200250",
+  "job_id": 119782149069,
+  "conclusion": "failure",
+  "public_command_groups_passed": 11,
+  "failed_group": "prepare-pinned-d4-replay",
+  "observed_error": "urllib.error.HTTPError: HTTP Error 404: Not Found",
+  "cause": "The wct-pde input repository is private; unauthenticated raw download cannot retrieve its pinned blobs.",
+  "D4_rational_replay_executed_in_this_hosted_attempt": false,
+  "mathematical_assertion_failure": false,
+  "correction": "Full-local mode requires authorized local inputs and remains fail-closed on missing or mismatched files. Public CI explicitly executes public checks and validates recorded full-local D4 evidence without claiming a fresh D4 replay.",
+  "private_input_blobs_published": false
+}

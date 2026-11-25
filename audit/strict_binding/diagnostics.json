@@ -1,0 +1,1184 @@
+{
+  "schema": "wct-binding-adversarial-diagnostics-v1",
+  "status": "PASS",
+  "interpretation": "Finite-dimensional diagnostics; no numerical infimum, stationary root, or binding certificate",
+  "resolvent_quadrature": {
+    "value": 0.18749999999999975,
+    "target": 0.1875,
+    "reported_integral_error": 1.9667184181870116e-10
+  },
+  "gaussian_upper_bounds": [
+    {
+      "mass": 0.01,
+      "analytic_negative_trial": {
+        "a": 1229.1187877635944,
+        "b": 1.0,
+        "R_squared": 1131208.065616212,
+        "coefficient_R_minus_2": -1.3260165901663607e-08,
+        "coefficient_R_minus_4": 0.007500003309685472,
+        "energy_upper_bound": -5.861064071550926e-15
+      },
+      "best_gaussian_upper_bound": {
+        "energy": -8.791623283658802e-15,
+        "a": 1066510.6081801667,
+        "b": 868.4105589855841,
+        "q_squared": 0.9999993369890862,
+        "optimizer_success": true,
+        "evaluations": 153,
+        "message": "Optimization terminated successfully."
+      },
+      "attempts": [
+        {
+          "energy": -8.791623283658802e-15,
+          "a": 1066510.6081801667,
+          "b": 868.4105589855841,
+          "q_squared": 0.9999993369890862,
+          "optimizer_success": true,
+          "evaluations": 153,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "energy": -9.590031501706685e-21,
+          "a": 72004899337.38586,
+          "b": 35360.969211056785,
+          "q_squared": 0.9999999996001274,
+          "optimizer_success": true,
+          "evaluations": 168,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "energy": -9.590031501706685e-21,
+          "a": 72004899337.38586,
+          "b": 35360.96920190634,
+          "q_squared": 0.9999999996001274,
+          "optimizer_success": true,
+          "evaluations": 173,
+          "message": "Optimization terminated successfully."
+        }
+      ]
+    },
+    {
+      "mass": 0.05,
+      "analytic_negative_trial": {
+        "a": 246.62375755271887,
+        "b": 1.0,
+        "R_squared": 45249.512736269906,
+        "coefficient_R_minus_2": -1.6574945834330955e-06,
+        "coefficient_R_minus_4": 0.03750041113167712,
+        "energy_upper_bound": -1.8315054496758424e-11
+      },
+      "best_gaussian_upper_bound": {
+        "energy": -2.7474697061800716e-11,
+        "a": 42659.066015618526,
+        "b": 173.67934542563512,
+        "q_squared": 0.9999834234078289,
+        "optimizer_success": true,
+        "evaluations": 148,
+        "message": "Optimization terminated successfully."
+      },
+      "attempts": [
+        {
+          "energy": -2.7474697061800716e-11,
+          "a": 42659.066015618526,
+          "b": 173.67934542563512,
+          "q_squared": 0.9999834234078289,
+          "optimizer_success": true,
+          "evaluations": 148,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "energy": -4.1011369818859423e-19,
+          "a": 72004899337.38586,
+          "b": 20679.219522369665,
+          "q_squared": 0.9999999988307653,
+          "optimizer_success": true,
+          "evaluations": 156,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "energy": -4.101136981885943e-19,
+          "a": 72004899337.38586,
+          "b": 20679.21954934008,
+          "q_squared": 0.9999999988307653,
+          "optimizer_success": true,
+          "evaluations": 170,
+          "message": "Optimization terminated successfully."
+        }
+      ]
+    },
+    {
+      "mass": 0.1,
+      "analytic_negative_trial": {
+        "a": 123.81187877635944,
+        "b": 1.0,
+        "R_squared": 11313.298647821031,
+        "coefficient_R_minus_2": -1.3259309662025576e-05,
+        "coefficient_R_minus_4": 0.07500326503521715,
+        "energy_upper_bound": -5.860054646652217e-10
+      },
+      "best_gaussian_upper_bound": {
+        "energy": -8.792777219464359e-10,
+        "a": 10663.706094847714,
+        "b": 86.835355571774,
+        "q_squared": 0.9999336771446096,
+        "optimizer_success": true,
+        "evaluations": 154,
+        "message": "Optimization terminated successfully."
+      },
+      "attempts": [
+        {
+          "energy": -8.792777219464359e-10,
+          "a": 10663.706094847714,
+          "b": 86.835355571774,
+          "q_squared": 0.9999336771446096,
+          "optimizer_success": true,
+          "evaluations": 154,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "energy": -2.0669021526965074e-18,
+          "a": 72004899337.38586,
+          "b": 16413.10749565357,
+          "q_squared": 0.9999999981439556,
+          "optimizer_success": true,
+          "evaluations": 159,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "energy": -2.0669021526965074e-18,
+          "a": 72004899337.38586,
+          "b": 16413.107460101688,
+          "q_squared": 0.9999999981439556,
+          "optimizer_success": true,
+          "evaluations": 162,
+          "message": "Optimization terminated successfully."
+        }
+      ]
+    },
+    {
+      "mass": 0.25,
+      "analytic_negative_trial": {
+        "a": 50.124751510543774,
+        "b": 1.0,
+        "R_squared": 1811.1350622407983,
+        "coefficient_R_minus_2": -0.00020710776528133211,
+        "coefficient_R_minus_4": 0.18755006768167903,
+        "energy_upper_bound": -5.7176234285114913e-08
+      },
+      "best_gaussian_upper_bound": {
+        "energy": -8.592666357655981e-08,
+        "a": 1705.0068735573257,
+        "b": 34.72207148749775,
+        "q_squared": 0.9995847604119705,
+        "optimizer_success": true,
+        "evaluations": 203,
+        "message": "Optimization terminated successfully."
+      },
+      "attempts": [
+        {
+          "energy": -8.59266635765598e-08,
+          "a": 1705.0068774932206,
+          "b": 34.722071383767044,
+          "q_squared": 0.999584760409495,
+          "optimizer_success": true,
+          "evaluations": 150,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "energy": -8.592666357655981e-08,
+          "a": 1705.0068735573257,
+          "b": 34.72207148749775,
+          "q_squared": 0.9995847604119705,
+          "optimizer_success": true,
+          "evaluations": 203,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "energy": -1.753284207409683e-17,
+          "a": 72004899337.38586,
+          "b": 12093.280851233714,
+          "q_squared": 0.9999999965811368,
+          "optimizer_success": true,
+          "evaluations": 170,
+          "message": "Optimization terminated successfully."
+        }
+      ]
+    },
+    {
+      "mass": 0.5,
+      "analytic_negative_trial": {
+        "a": 25.562375755271887,
+        "b": 1.0,
+        "R_squared": 453.6503223175409,
+        "coefficient_R_minus_2": -0.0016549852065963619,
+        "coefficient_R_minus_4": 0.37539228620160076,
+        "energy_upper_bound": -1.8240758632569917e-06
+      },
+      "best_gaussian_upper_bound": {
+        "energy": -2.7564488625049595e-06,
+        "a": 425.1981144243445,
+        "b": 17.33959957256816,
+        "q_squared": 0.9983287046664121,
+        "optimizer_success": true,
+        "evaluations": 188,
+        "message": "Optimization terminated successfully."
+      },
+      "attempts": [
+        {
+          "energy": -2.7564488625049587e-06,
+          "a": 425.19811430050646,
+          "b": 17.339599825526392,
+          "q_squared": 0.9983287047149285,
+          "optimizer_success": true,
+          "evaluations": 154,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "energy": -2.7564488625049595e-06,
+          "a": 425.1981144243445,
+          "b": 17.33959957256816,
+          "q_squared": 0.9983287046664121,
+          "optimizer_success": true,
+          "evaluations": 188,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "energy": -8.836028031406959e-17,
+          "a": 72004899337.38586,
+          "b": 9598.443416982514,
+          "q_squared": 0.999999994572893,
+          "optimizer_success": true,
+          "evaluations": 171,
+          "message": "Optimization terminated successfully."
+        }
+      ]
+    },
+    {
+      "mass": 1.0,
+      "analytic_negative_trial": {
+        "a": 13.281187877635944,
+        "b": 1.0,
+        "R_squared": 114.23890723238382,
+        "coefficient_R_minus_2": -0.013184999338369963,
+        "coefficient_R_minus_4": 0.7531199581375442,
+        "energy_upper_bound": -5.7708007095818715e-05
+      },
+      "best_gaussian_upper_bound": {
+        "energy": -8.906199636239173e-05,
+        "a": 105.26732459550146,
+        "b": 8.627877902669065,
+        "q_squared": 0.9931478418053842,
+        "optimizer_success": true,
+        "evaluations": 196,
+        "message": "Optimization terminated successfully."
+      },
+      "attempts": [
+        {
+          "energy": -8.906199636239171e-05,
+          "a": 105.2673247815363,
+          "b": 8.627877966049056,
+          "q_squared": 0.9931478419045451,
+          "optimizer_success": true,
+          "evaluations": 150,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "energy": -8.906199636239173e-05,
+          "a": 105.26732459550146,
+          "b": 8.627877902669065,
+          "q_squared": 0.9931478418053842,
+          "optimizer_success": true,
+          "evaluations": 196,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "energy": -4.453084948482732e-16,
+          "a": 72004899337.38586,
+          "b": 7618.289574833959,
+          "q_squared": 0.9999999913850046,
+          "optimizer_success": true,
+          "evaluations": 175,
+          "message": "Optimization terminated successfully."
+        }
+      ]
+    },
+    {
+      "mass": 2.0,
+      "analytic_negative_trial": {
+        "a": 7.140593938817972,
+        "b": 1.0,
+        "R_squared": 29.373190794941223,
+        "coefficient_R_minus_2": -0.10400088383551274,
+        "coefficient_R_minus_4": 1.5274189018715172,
+        "energy_upper_bound": -0.001770336844940663
+      },
+      "best_gaussian_upper_bound": {
+        "energy": -0.0029508042476089806,
+        "a": 25.374115552864293,
+        "b": 4.238295205524681,
+        "q_squared": 0.9698354818662765,
+        "optimizer_success": true,
+        "evaluations": 176,
+        "message": "Optimization terminated successfully."
+      },
+      "attempts": [
+        {
+          "energy": -0.00295080424760898,
+          "a": 25.374115887315835,
+          "b": 4.238295198792937,
+          "q_squared": 0.9698354818392718,
+          "optimizer_success": true,
+          "evaluations": 153,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "energy": -0.0029508042476089806,
+          "a": 25.374115552864293,
+          "b": 4.238295205524681,
+          "q_squared": 0.9698354818662765,
+          "optimizer_success": true,
+          "evaluations": 176,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "energy": 0.39081013405689013,
+          "a": 1.2836133006665282,
+          "b": 1.2836133077479543,
+          "q_squared": 0.0,
+          "optimizer_success": true,
+          "evaluations": 199,
+          "message": "Optimization terminated successfully."
+        }
+      ]
+    },
+    {
+      "mass": 2.2631912293727647,
+      "analytic_negative_trial": {
+        "a": 6.426491459601331,
+        "b": 1.0,
+        "R_squared": 23.184194559741552,
+        "coefficient_R_minus_2": -0.14999194600875032,
+        "coefficient_R_minus_4": 1.738721229330559,
+        "energy_upper_bound": -0.003234788804550611
+      },
+      "best_gaussian_upper_bound": {
+        "energy": -0.005537097390694168,
+        "a": 19.570643612635322,
+        "b": 3.7236692736665558,
+        "q_squared": 0.9600234814266585,
+        "optimizer_success": true,
+        "evaluations": 187,
+        "message": "Optimization terminated successfully."
+      },
+      "attempts": [
+        {
+          "energy": -0.0055370973906941675,
+          "a": 19.57064369755588,
+          "b": 3.7236692894583965,
+          "q_squared": 0.9600234817665037,
+          "optimizer_success": true,
+          "evaluations": 154,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "energy": -0.005537097390694168,
+          "a": 19.570643612635322,
+          "b": 3.7236692736665558,
+          "q_squared": 0.9600234814266585,
+          "optimizer_success": true,
+          "evaluations": 187,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "energy": 0.36746025718510245,
+          "a": 1.2782168949653254,
+          "b": 1.278216895167443,
+          "q_squared": 0.0,
+          "optimizer_success": true,
+          "evaluations": 219,
+          "message": "Optimization terminated successfully."
+        }
+      ]
+    },
+    {
+      "mass": 2.54469689485712,
+      "analytic_negative_trial": {
+        "a": 5.826188888136914,
+        "b": 1.0,
+        "R_squared": 18.579411985431996,
+        "coefficient_R_minus_2": -0.2120659393150252,
+        "coefficient_R_minus_4": 1.9700302273057368,
+        "energy_upper_bound": -0.005707014287677802
+      },
+      "best_gaussian_upper_bound": {
+        "energy": -0.010072503886233633,
+        "a": 15.264869944722102,
+        "b": 3.2907147686614193,
+        "q_squared": 0.9473895287162605,
+        "optimizer_success": true,
+        "evaluations": 185,
+        "message": "Optimization terminated successfully."
+      },
+      "attempts": [
+        {
+          "energy": -0.010072503886233628,
+          "a": 15.26487014458104,
+          "b": 3.2907147520115507,
+          "q_squared": 0.9473895284175846,
+          "optimizer_success": true,
+          "evaluations": 151,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "energy": -0.010072503886233633,
+          "a": 15.264869944722102,
+          "b": 3.2907147686614193,
+          "q_squared": 0.9473895287162605,
+          "optimizer_success": true,
+          "evaluations": 185,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "energy": 0.3297488490990595,
+          "a": 1.2747448084005193,
+          "b": 1.274744809980057,
+          "q_squared": 0.0,
+          "optimizer_success": true,
+          "evaluations": 204,
+          "message": "Optimization terminated successfully."
+        }
+      ]
+    },
+    {
+      "mass": 4.0,
+      "analytic_negative_trial": {
+        "a": 4.070296969408986,
+        "b": 1.0,
+        "R_squared": 8.300818658661196,
+        "coefficient_R_minus_2": -0.7974267622490279,
+        "coefficient_R_minus_4": 3.3096474734962578,
+        "energy_upper_bound": -0.048033019093663795
+      },
+      "best_gaussian_upper_bound": {
+        "energy": -0.09996990360135975,
+        "a": 5.829807522148904,
+        "b": 2.053385385222556,
+        "q_squared": 0.8372802184870322,
+        "optimizer_success": true,
+        "evaluations": 174,
+        "message": "Optimization terminated successfully."
+      },
+      "attempts": [
+        {
+          "energy": -0.09996990360135971,
+          "a": 5.8298075478683,
+          "b": 2.0533853900937427,
+          "q_squared": 0.8372802194390838,
+          "optimizer_success": true,
+          "evaluations": 155,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "energy": -0.09996990360135975,
+          "a": 5.829807522148904,
+          "b": 2.053385385222556,
+          "q_squared": 0.8372802184870322,
+          "optimizer_success": true,
+          "evaluations": 174,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "energy": 0.014768149609941661,
+          "a": 1.2874480267914945,
+          "b": 1.287448021476198,
+          "q_squared": 0.0,
+          "optimizer_success": true,
+          "evaluations": 195,
+          "message": "Optimization terminated successfully."
+        }
+      ]
+    },
+    {
+      "mass": 8.0,
+      "analytic_negative_trial": {
+        "a": 2.535148484704493,
+        "b": 1.0,
+        "R_squared": 3.6415916526993937,
+        "coefficient_R_minus_2": -5.73284832701147,
+        "coefficient_R_minus_4": 10.438346306918326,
+        "energy_upper_bound": -0.7871349774708947
+      },
+      "best_gaussian_upper_bound": {
+        "energy": -1.4450503805566208,
+        "a": 2.8861034706121385,
+        "b": 1.5012592240260059,
+        "q_squared": 0.5980695896740565,
+        "optimizer_success": true,
+        "evaluations": 160,
+        "message": "Optimization terminated successfully."
+      },
+      "attempts": [
+        {
+          "energy": -1.44505038055662,
+          "a": 2.8861034996541135,
+          "b": 1.5012592299445469,
+          "q_squared": 0.5980695950474856,
+          "optimizer_success": true,
+          "evaluations": 155,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "energy": -1.44505038055662,
+          "a": 2.886103456537468,
+          "b": 1.501259220021646,
+          "q_squared": 0.5980695867341612,
+          "optimizer_success": true,
+          "evaluations": 164,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "energy": -1.4450503805566208,
+          "a": 2.8861034706121385,
+          "b": 1.5012592240260059,
+          "q_squared": 0.5980695896740565,
+          "optimizer_success": true,
+          "evaluations": 160,
+          "message": "Optimization terminated successfully."
+        }
+      ]
+    },
+    {
+      "mass": 16.0,
+      "analytic_negative_trial": {
+        "a": 1.7675742423522465,
+        "b": 1.0,
+        "R_squared": 4.126647346923998,
+        "coefficient_R_minus_2": -36.92950931587463,
+        "coefficient_R_minus_4": 76.19753082077956,
+        "energy_upper_bound": -4.474517230482741
+      },
+      "best_gaussian_upper_bound": {
+        "energy": -5.736405574985645,
+        "a": 3.632155981894037,
+        "b": 1.651694095411222,
+        "q_squared": 0.7030213419576287,
+        "optimizer_success": true,
+        "evaluations": 165,
+        "message": "Optimization terminated successfully."
+      },
+      "attempts": [
+        {
+          "energy": -5.736405574985644,
+          "a": 3.6321559624741724,
+          "b": 1.6516940951611934,
+          "q_squared": 0.7030213406863072,
+          "optimizer_success": true,
+          "evaluations": 142,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "energy": -5.736405574985644,
+          "a": 3.6321559964053334,
+          "b": 1.651694103884278,
+          "q_squared": 0.7030213447465519,
+          "optimizer_success": true,
+          "evaluations": 159,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "energy": -5.736405574985645,
+          "a": 3.632155981894037,
+          "b": 1.651694095411222,
+          "q_squared": 0.7030213419576287,
+          "optimizer_success": true,
+          "evaluations": 165,
+          "message": "Optimization terminated successfully."
+        }
+      ]
+    },
+    {
+      "mass": 64.0,
+      "analytic_negative_trial": {
+        "a": 1.1918935605880616,
+        "b": 1.0,
+        "R_squared": 16.70624071276306,
+        "coefficient_R_minus_2": -1029.1865033763104,
+        "coefficient_R_minus_4": 8596.918731865786,
+        "energy_upper_bound": -30.8024564314473
+      },
+      "best_gaussian_upper_bound": {
+        "energy": -33.95071264269953,
+        "a": 7.983806564348883,
+        "b": 2.3901935608501503,
+        "q_squared": 0.8889480227267775,
+        "optimizer_success": true,
+        "evaluations": 165,
+        "message": "Optimization terminated successfully."
+      },
+      "attempts": [
+        {
+          "energy": -33.95071264269953,
+          "a": 7.983806564348883,
+          "b": 2.3901935608501503,
+          "q_squared": 0.8889480227267775,
+          "optimizer_success": true,
+          "evaluations": 165,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "energy": -33.95071264269952,
+          "a": 7.983806329926486,
+          "b": 2.390193601321226,
+          "q_squared": 0.8889480243086109,
+          "optimizer_success": true,
+          "evaluations": 153,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "energy": -33.95071264269952,
+          "a": 7.983806608705438,
+          "b": 2.3901935553930063,
+          "q_squared": 0.8889480225886265,
+          "optimizer_success": true,
+          "evaluations": 164,
+          "message": "Optimization terminated successfully."
+        }
+      ]
+    },
+    {
+      "mass": 256.0,
+      "analytic_negative_trial": {
+        "a": 1.0479733901470154,
+        "b": 1.0,
+        "R_squared": 70.78345338467975,
+        "coefficient_R_minus_2": -19901.845473641202,
+        "coefficient_R_minus_4": 704360.6756762908,
+        "energy_upper_bound": -140.58261162734345
+      },
+      "best_gaussian_upper_bound": {
+        "energy": -145.3877792175884,
+        "a": 19.60619213164513,
+        "b": 3.727036050728229,
+        "q_squared": 0.9601027899135981,
+        "optimizer_success": true,
+        "evaluations": 183,
+        "message": "Optimization terminated successfully."
+      },
+      "attempts": [
+        {
+          "energy": -145.38777921758836,
+          "a": 19.606192139423523,
+          "b": 3.7270359919634095,
+          "q_squared": 0.9601027887816139,
+          "optimizer_success": true,
+          "evaluations": 160,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "energy": -145.38777921758836,
+          "a": 19.60619138408567,
+          "b": 3.7270361616313585,
+          "q_squared": 0.9601027917581948,
+          "optimizer_success": true,
+          "evaluations": 157,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "energy": -145.3877792175884,
+          "a": 19.60619213164513,
+          "b": 3.727036050728229,
+          "q_squared": 0.9601027899135981,
+          "optimizer_success": true,
+          "evaluations": 183,
+          "message": "Optimization terminated successfully."
+        }
+      ]
+    }
+  ],
+  "D4_trial_split_comparisons": [
+    {
+      "fraction": 0.01,
+      "sum_of_trial_upper_bounds": -0.009568428352704045,
+      "total_trial_upper_bound": -0.010072503886233633,
+      "trial_gap": 0.0005040755335295882,
+      "certifies_infimum_comparison": false
+    },
+    {
+      "fraction": 0.05,
+      "sum_of_trial_upper_bounds": -0.007751362045475967,
+      "total_trial_upper_bound": -0.010072503886233633,
+      "trial_gap": 0.0023211418407576663,
+      "certifies_infimum_comparison": false
+    },
+    {
+      "fraction": 0.1,
+      "sum_of_trial_upper_bounds": -0.005882803286606912,
+      "total_trial_upper_bound": -0.010072503886233633,
+      "trial_gap": 0.004189700599626722,
+      "certifies_infimum_comparison": false
+    },
+    {
+      "fraction": 0.2,
+      "sum_of_trial_upper_bounds": -0.003232054105534225,
+      "total_trial_upper_bound": -0.010072503886233633,
+      "trial_gap": 0.006840449780699408,
+      "certifies_infimum_comparison": false
+    },
+    {
+      "fraction": 0.25,
+      "sum_of_trial_upper_bounds": -0.002335310949869035,
+      "total_trial_upper_bound": -0.010072503886233633,
+      "trial_gap": 0.007737192936364598,
+      "certifies_infimum_comparison": false
+    },
+    {
+      "fraction": 0.4,
+      "sum_of_trial_upper_bounds": -0.0008484159144868993,
+      "total_trial_upper_bound": -0.010072503886233633,
+      "trial_gap": 0.009224087971746734,
+      "certifies_infimum_comparison": false
+    },
+    {
+      "fraction": 0.5,
+      "sum_of_trial_upper_bounds": -0.00059853960764194,
+      "total_trial_upper_bound": -0.010072503886233633,
+      "trial_gap": 0.009473964278591693,
+      "certifies_infimum_comparison": false
+    }
+  ],
+  "two_profile_interactions": [
+    {
+      "separation": 0.0,
+      "relative_phase": 0.0,
+      "moments": {
+        "M": 2.54469689485712,
+        "T": 0.3379675563482111,
+        "Q": 0.06441281342697461,
+        "S": 0.0021739383012378765
+      },
+      "raw_mass": 5.08939378971424,
+      "normalization_squared": 0.5,
+      "energy": 0.20911634899005624,
+      "sum_of_single_trial_energies": 0.2728004794865097,
+      "interaction_difference": -0.06368413049645347
+    },
+    {
+      "separation": 0.0,
+      "relative_phase": 1.5707963267948966,
+      "moments": {
+        "M": 2.54469689485712,
+        "T": 0.33796755634821124,
+        "Q": 0.06441281342697461,
+        "S": 0.0021739383012378765
+      },
+      "raw_mass": 2.54469689485712,
+      "normalization_squared": 1.0,
+      "energy": 0.2091163489900564,
+      "sum_of_single_trial_energies": 0.2728004794865097,
+      "interaction_difference": -0.0636841304964533
+    },
+    {
+      "separation": 0.0,
+      "relative_phase": 4.71238898038469,
+      "moments": {
+        "M": 2.54469689485712,
+        "T": 0.33796755634821124,
+        "Q": 0.06441281342697461,
+        "S": 0.002173938301237876
+      },
+      "raw_mass": 2.5446968948571196,
+      "normalization_squared": 1.0000000000000002,
+      "energy": 0.2091163489900564,
+      "sum_of_single_trial_energies": 0.2728004794865097,
+      "interaction_difference": -0.0636841304964533
+    },
+    {
+      "separation": 2.0,
+      "relative_phase": 0.0,
+      "moments": {
+        "M": 2.54469689485712,
+        "T": 0.31752327016082976,
+        "Q": 0.06241677077945956,
+        "S": 0.002040944583148878
+      },
+      "raw_mass": 4.935218398786788,
+      "normalization_squared": 0.5156199157230157,
+      "energy": 0.19257540608547402,
+      "sum_of_single_trial_energies": 0.2728004794865097,
+      "interaction_difference": -0.08022507340103568
+    },
+    {
+      "separation": 2.0,
+      "relative_phase": 1.5707963267948966,
+      "moments": {
+        "M": 2.54469689485712,
+        "T": 0.410336859689832,
+        "Q": 0.06062846088151957,
+        "S": 0.001923633857587676
+      },
+      "raw_mass": 2.54469689485712,
+      "normalization_squared": 1.0,
+      "energy": 0.2888886220559347,
+      "sum_of_single_trial_energies": 0.2728004794865097,
+      "interaction_difference": 0.01608814256942498
+    },
+    {
+      "separation": 2.0,
+      "relative_phase": 3.141592653589793,
+      "moments": {
+        "M": 2.54469689485712,
+        "T": 0.9923976617954914,
+        "Q": 0.047810356720228764,
+        "S": 0.001182897016720154
+      },
+      "raw_mass": 0.1541753909274517,
+      "normalization_squared": 16.50520799428065,
+      "energy": 0.8961703501112019,
+      "sum_of_single_trial_energies": 0.2728004794865097,
+      "interaction_difference": 0.6233698706246922
+    },
+    {
+      "separation": 2.0,
+      "relative_phase": 4.71238898038469,
+      "moments": {
+        "M": 2.54469689485712,
+        "T": 0.26559825300659046,
+        "Q": 0.06062846088151957,
+        "S": 0.001923633857587676
+      },
+      "raw_mass": 2.5446968948571196,
+      "normalization_squared": 1.0000000000000002,
+      "energy": 0.14415001537269312,
+      "sum_of_single_trial_energies": 0.2728004794865097,
+      "interaction_difference": -0.1286504641138166
+    },
+    {
+      "separation": 4.0,
+      "relative_phase": 0.0,
+      "moments": {
+        "M": 2.54469689485712,
+        "T": 0.2642544912248307,
+        "Q": 0.05668201750575048,
+        "S": 0.0016782791801973746
+      },
+      "raw_mass": 4.526508829251218,
+      "normalization_squared": 0.5621765008857981,
+      "energy": 0.15054768577215744,
+      "sum_of_single_trial_energies": 0.2728004794865097,
+      "interaction_difference": -0.12225279371435227
+    },
+    {
+      "separation": 4.0,
+      "relative_phase": 1.5707963267948966,
+      "moments": {
+        "M": 2.54469689485712,
+        "T": 0.4463478965103884,
+        "Q": 0.05174057982439215,
+        "S": 0.0013805874299915874
+      },
+      "raw_mass": 2.54469689485712,
+      "normalization_squared": 1.0,
+      "energy": 0.34234731838538734,
+      "sum_of_single_trial_energies": 0.2728004794865097,
+      "interaction_difference": 0.06954683889887764
+    },
+    {
+      "separation": 4.0,
+      "relative_phase": 3.141592653589793,
+      "moments": {
+        "M": 2.54469689485712,
+        "T": 0.9307402604504578,
+        "Q": 0.046362066215655126,
+        "S": 0.0011121432344064406
+      },
+      "raw_mass": 0.5628849604630226,
+      "normalization_squared": 4.520811664187798,
+      "energy": 0.8373802625655407,
+      "sum_of_single_trial_energies": 0.2728004794865097,
+      "interaction_difference": 0.5645797830790309
+    },
+    {
+      "separation": 4.0,
+      "relative_phase": 4.71238898038469,
+      "moments": {
+        "M": 2.54469689485712,
+        "T": 0.22958721618603412,
+        "Q": 0.05174057982439215,
+        "S": 0.001380587429991587
+      },
+      "raw_mass": 2.5446968948571196,
+      "normalization_squared": 1.0000000000000002,
+      "energy": 0.12558663806103304,
+      "sum_of_single_trial_energies": 0.2728004794865097,
+      "interaction_difference": -0.14721384142547667
+    },
+    {
+      "separation": 8.0,
+      "relative_phase": 0.0,
+      "moments": {
+        "M": 2.54469689485712,
+        "T": 0.15885394388519553,
+        "Q": 0.03956363092261253,
+        "S": 0.0007800261247087171
+      },
+      "raw_mass": 3.480838566487862,
+      "normalization_squared": 0.7310585786300049,
+      "energy": 0.07895344528026743,
+      "sum_of_single_trial_energies": 0.2728004794865097,
+      "interaction_difference": -0.19384703420624227
+    },
+    {
+      "separation": 8.0,
+      "relative_phase": 1.5707963267948966,
+      "moments": {
+        "M": 2.54469689485712,
+        "T": 0.3964764108251326,
+        "Q": 0.03656506988809065,
+        "S": 0.0006567741272460506
+      },
+      "raw_mass": 2.54469689485712,
+      "normalization_squared": 1.0,
+      "energy": 0.32254414202262144,
+      "sum_of_single_trial_energies": 0.2728004794865097,
+      "interaction_difference": 0.04974366253611173
+    },
+    {
+      "separation": 8.0,
+      "relative_phase": 3.141592653589793,
+      "moments": {
+        "M": 2.54469689485712,
+        "T": 0.7255610694846163,
+        "Q": 0.041387613105189715,
+        "S": 0.0008846346984602112
+      },
+      "raw_mass": 1.6085552232263782,
+      "normalization_squared": 1.5819767068693265,
+      "energy": 0.6420706136895923,
+      "sum_of_single_trial_energies": 0.2728004794865097,
+      "interaction_difference": 0.3692701342030826
+    },
+    {
+      "separation": 8.0,
+      "relative_phase": 4.71238898038469,
+      "moments": {
+        "M": 2.54469689485712,
+        "T": 0.2794587018712899,
+        "Q": 0.03656506988809065,
+        "S": 0.0006567741272460504
+      },
+      "raw_mass": 2.54469689485712,
+      "normalization_squared": 1.0,
+      "energy": 0.20552643306877874,
+      "sum_of_single_trial_energies": 0.2728004794865097,
+      "interaction_difference": -0.06727404641773096
+    },
+    {
+      "separation": 16.0,
+      "relative_phase": 0.0,
+      "moments": {
+        "M": 2.54469689485712,
+        "T": 0.2921981037074287,
+        "Q": 0.031397483048712364,
+        "S": 0.0005188247824273541
+      },
+      "raw_mass": 2.591304644264606,
+      "normalization_squared": 0.9820137900379085,
+      "energy": 0.22865279914849748,
+      "sum_of_single_trial_energies": 0.2728004794865097,
+      "interaction_difference": -0.044147680338012224
+    },
+    {
+      "separation": 16.0,
+      "relative_phase": 1.5707963267948966,
+      "moments": {
+        "M": 2.54469689485712,
+        "T": 0.3263156189963397,
+        "Q": 0.03221721075931871,
+        "S": 0.0005435225797202755
+      },
+      "raw_mass": 2.54469689485712,
+      "normalization_squared": 1.0,
+      "energy": 0.2611264841284593,
+      "sum_of_single_trial_energies": 0.2728004794865097,
+      "interaction_difference": -0.011673995358050415
+    },
+    {
+      "separation": 16.0,
+      "relative_phase": 3.141592653589793,
+      "moments": {
+        "M": 2.54469689485712,
+        "T": 0.38544488333213733,
+        "Q": 0.03312167006202298,
+        "S": 0.0005702546020092117
+      },
+      "raw_mass": 2.498089145449634,
+      "normalization_squared": 1.018657360363774,
+      "energy": 0.3184412951315398,
+      "sum_of_single_trial_energies": 0.2728004794865097,
+      "interaction_difference": 0.045640815645030086
+    },
+    {
+      "separation": 16.0,
+      "relative_phase": 4.71238898038469,
+      "moments": {
+        "M": 2.54469689485712,
+        "T": 0.3496194937000828,
+        "Q": 0.03221721075931871,
+        "S": 0.0005435225797202755
+      },
+      "raw_mass": 2.54469689485712,
+      "normalization_squared": 1.0,
+      "energy": 0.28443035883220236,
+      "sum_of_single_trial_energies": 0.2728004794865097,
+      "interaction_difference": 0.01162987934569265
+    },
+    {
+      "separation": 32.0,
+      "relative_phase": 0.0,
+      "moments": {
+        "M": 2.54469689485712,
+        "T": 0.33796662565260954,
+        "Q": 0.03220639946964588,
+        "S": 0.000543484391834669
+      },
+      "raw_mass": 2.54469718122503,
+      "normalization_squared": 0.9999998874648379,
+      "energy": 0.27279956336469713,
+      "sum_of_single_trial_energies": 0.2728004794865097,
+      "interaction_difference": -9.161218125774973e-07
+    },
+    {
+      "separation": 32.0,
+      "relative_phase": 1.5707963267948966,
+      "moments": {
+        "M": 2.54469689485712,
+        "T": 0.3379665540605274,
+        "Q": 0.03220640671348771,
+        "S": 0.000543484575309469
+      },
+      "raw_mass": 2.54469689485712,
+      "normalization_squared": 1.0,
+      "energy": 0.272799477198825,
+      "sum_of_single_trial_energies": 0.2728004794865097,
+      "interaction_difference": -1.0022876846815798e-06
+    },
+    {
+      "separation": 32.0,
+      "relative_phase": 3.141592653589793,
+      "moments": {
+        "M": 2.54469689485712,
+        "T": 0.33796848704402244,
+        "Q": 0.03220641395733363,
+        "S": 0.0005434847587843515
+      },
+      "raw_mass": 2.54469660848921,
+      "normalization_squared": 1.0000001125351874,
+      "energy": 0.27280139560852185,
+      "sum_of_single_trial_energies": 0.2728004794865097,
+      "interaction_difference": 9.161220121400859e-07
+    },
+    {
+      "separation": 32.0,
+      "relative_phase": 4.71238898038469,
+      "moments": {
+        "M": 2.54469689485712,
+        "T": 0.3379685586358951,
+        "Q": 0.03220640671348771,
+        "S": 0.000543484575309469
+      },
+      "raw_mass": 2.54469689485712,
+      "normalization_squared": 1.0,
+      "energy": 0.2728014817741927,
+      "sum_of_single_trial_energies": 0.2728004794865097,
+      "interaction_difference": 1.0022876830162453e-06
+    },
+    {
+      "separation": 64.0,
+      "relative_phase": 0.0,
+      "moments": {
+        "M": 2.54469689485712,
+        "T": 0.33796755634821124,
+        "Q": 0.032206406713487304,
+        "S": 0.000543484575309469
+      },
+      "raw_mass": 2.54469689485712,
+      "normalization_squared": 1.0,
+      "energy": 0.2728004794865097,
+      "sum_of_single_trial_energies": 0.2728004794865097,
+      "interaction_difference": 0.0
+    },
+    {
+      "separation": 64.0,
+      "relative_phase": 1.5707963267948966,
+      "moments": {
+        "M": 2.54469689485712,
+        "T": 0.33796755634821124,
+        "Q": 0.032206406713487304,
+        "S": 0.000543484575309469
+      },
+      "raw_mass": 2.54469689485712,
+      "normalization_squared": 1.0,
+      "energy": 0.2728004794865097,
+      "sum_of_single_trial_energies": 0.2728004794865097,
+      "interaction_difference": 0.0
+    },
+    {
+      "separation": 64.0,
+      "relative_phase": 3.141592653589793,
+      "moments": {
+        "M": 2.54469689485712,
+        "T": 0.33796755634821124,
+        "Q": 0.032206406713487304,
+        "S": 0.000543484575309469
+      },
+      "raw_mass": 2.54469689485712,
+      "normalization_squared": 1.0,
+      "energy": 0.2728004794865097,
+      "sum_of_single_trial_energies": 0.2728004794865097,
+      "interaction_difference": 0.0
+    },
+    {
+      "separation": 64.0,
+      "relative_phase": 4.71238898038469,
+      "moments": {
+        "M": 2.54469689485712,
+        "T": 0.33796755634821124,
+        "Q": 0.032206406713487304,
+        "S": 0.000543484575309469
+      },
+      "raw_mass": 2.54469689485712,
+      "normalization_squared": 1.0,
+      "energy": 0.2728004794865097,
+      "sum_of_single_trial_energies": 0.2728004794865097,
+      "interaction_difference": 0.0
+    }
+  ],
+  "amplitude_scaling_counterexample": {
+    "mass": 471.23889803846896,
+    "energy": -231.571766927861,
+    "derivative_of_H_sqrt_theta_over_theta": 241.09079266823824,
+    "moments": {
+      "M": 471.23889803846896,
+      "K": 475.9512870188536,
+      "D": 490.18270173961554,
+      "T": 9.519025740377073,
+      "Q": 353.42917352885166,
+      "S": 353.4291735288517
+    }
+  },
+  "density_dilation_counterexample": {
+    "mass": 235.61944901923448,
+    "energy": -103.4158623904207,
+    "derivative_of_H_u_x_over_sqrt_theta_over_theta": 78.83826764183578,
+    "moments": {
+      "M": 235.61944901923448,
+      "K": 179.07078125461817,
+      "D": 139.65164743370028,
+      "T": 17.12953394369836,
+      "Q": 88.35729338221292,
+      "S": 44.178646691106465
+    }
+  },
+  "full_functional_counterexample_found": false,
+  "negative_unattained_infimum_example_for_frozen_coefficients": "UNRESOLVED"
+}

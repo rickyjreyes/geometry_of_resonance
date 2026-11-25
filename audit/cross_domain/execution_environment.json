@@ -1,0 +1,9 @@
+{
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "mpmath": "1.3.0",
+  "precision_digits": 80,
+  "summary_only": true,
+  "empirical_peak_searches_run": 0,
+  "ATLAS_holdout_access": false
+}

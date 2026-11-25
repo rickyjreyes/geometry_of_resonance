@@ -1,0 +1,40 @@
+{
+  "schema": "WCT_PHYSICAL_DOMAIN_PREDICTION_V1",
+  "status": "NO_INDEPENDENT_PHYSICAL_PREDICTION",
+  "quantitative_prediction_issued": false,
+  "x": null,
+  "x0": null,
+  "W": null,
+  "L_W": null,
+  "n_W": null,
+  "mean_k_W": null,
+  "observable_mapping": null,
+  "physical_system": null,
+  "allowed_physical_branches": null,
+  "uncertainty": null,
+  "physical_constants_used": [],
+  "empirical_frequency_inputs": [],
+  "reason_codes": [
+    "PHYSICAL_ACTIVE_DOMAIN_NOT_DERIVED",
+    "WINDING_NOT_IDENTIFIABLE",
+    "SPECTRAL_MEASUREMENT_MAP_NOT_DERIVED"
+  ],
+  "missing_nuisance_specification": [
+    "Physical background/couplings and units",
+    "Preparation, domain, topology and endpoint/holonomy data",
+    "Source-to-x measurement/response and background model",
+    "Estimator weighting, conditioning and discrete branch uncertainty"
+  ],
+  "conditional_uncertainty": {
+    "formula": "Var(k1*L1/L2) ~= g^T Sigma g",
+    "gradient": [
+      "L1/L2",
+      "k1/L2",
+      "-k1*L1/L2^2"
+    ],
+    "additional_requirements": "Source/target covariance and discrete branch treatment; applies only to independently identified quantities.",
+    "numerical_instantiation": null
+  },
+  "prospective_ATLAS_application": null,
+  "new_ATLAS_run_authorized": false
+}

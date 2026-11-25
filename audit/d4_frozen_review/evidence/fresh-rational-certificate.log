@@ -1,0 +1,2 @@
+PASS: exact frozen mass, pi and square-root gates; four positive Bernstein coefficients
+Certified reduction: split deficit > min(mu,m-mu)/400000, for every interior split

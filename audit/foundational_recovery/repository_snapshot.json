@@ -1,0 +1,210 @@
+{
+  "as_of": "2026-10-20 America/Los_Angeles",
+  "baseline": "0385386e3daff64b44e5c5062f8d578ea68d146d",
+  "default_heads": [
+    {
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "sha": "5f786e270a3ea8a59703772ba61d615dffe001f4"
+    },
+    {
+      "repository": "rickyjreyes/eigen",
+      "sha": "957cd8f382ba72f3764941c372222d7ebb58ed7e"
+    },
+    {
+      "repository": "rickyjreyes/wct-pde",
+      "sha": "ecc2a446cc8fbf2f104bc49aa0a9fdf5a9739876"
+    },
+    {
+      "repository": "rickyjreyes/dimension",
+      "sha": "f61d924f859d79e7ff733c3e30ba8baf4b5ceb81"
+    },
+    {
+      "repository": "rickyjreyes/wct-sympy",
+      "sha": "9656863097da396fa2c8d0b8ea190afeabdd05d8"
+    },
+    {
+      "repository": "rickyjreyes/wct-lean",
+      "sha": "dea05da8a6e40361e79ee685a7939a4c6f9a8696"
+    }
+  ],
+  "prs": [
+    {
+      "number": 33,
+      "repository": "rickyjreyes/geometry_of_resonance",
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head": "agent/foundational-closure-2026-10-20",
+      "head_sha": "0385386e3daff64b44e5c5062f8d578ea68d146d",
+      "base": "main",
+      "base_sha": "5f786e270a3ea8a59703772ba61d615dffe001f4"
+    },
+    {
+      "number": 26,
+      "repository": "rickyjreyes/wct-pde",
+      "state": "open",
+      "draft": false,
+      "merged": false,
+      "head": "agent/d4-comprehensive-closure",
+      "head_sha": "051b6eca10c46b8e038993d60cabb20715194a20",
+      "base": "agent/projection-free-closure-current",
+      "base_sha": "d5335dc0fab77e14b66feb7e1a943c2c31eeaa19"
+    }
+  ],
+  "other_open_prs": [
+    {
+      "url": "https://github.com/rickyjreyes/geometry_of_resonance/pull/33",
+      "title": "Foundational closure: S004 constraint and UV obstruction, scoped mass bridge"
+    },
+    {
+      "url": "https://github.com/rickyjreyes/wct-lean/pull/31",
+      "title": "Formalize local WCT variation, E50 integrability, E79/E82, and cosine counterexample"
+    },
+    {
+      "url": "https://github.com/rickyjreyes/wct-lean/pull/30",
+      "title": "Formalize curvature non-uniqueness, regulator limits, D4 radius and analytic contracts"
+    },
+    {
+      "url": "https://github.com/rickyjreyes/dimension/pull/9",
+      "title": "Numerical audit v1: honest refinement order and independent linear benchmarks"
+    },
+    {
+      "url": "https://github.com/rickyjreyes/wct-pde/pull/26",
+      "title": "D4 closure: verified production evidence and scoped continuum stability"
+    },
+    {
+      "url": "https://github.com/rickyjreyes/wct-lean/pull/29",
+      "title": "Formalize oscillatory counterexample to curvature-energy H² coercivity"
+    },
+    {
+      "url": "https://github.com/rickyjreyes/wct-pde/pull/17",
+      "title": "Complete projection-free D4 transient-envelope closure audit"
+    },
+    {
+      "url": "https://github.com/rickyjreyes/wct-pde/pull/16",
+      "title": "Add zero-bias emergent world long-run experiment"
+    },
+    {
+      "url": "https://github.com/rickyjreyes/wct-pde/pull/14",
+      "title": "Add strict closure workflow and projection-free parameter search"
+    },
+    {
+      "url": "https://github.com/rickyjreyes/wct-lean/pull/9",
+      "title": "Add Lean paper equation coverage map draft"
+    },
+    {
+      "url": "https://github.com/rickyjreyes/geometry_of_resonance/pull/5",
+      "title": "Add paper equation coverage map draft"
+    }
+  ],
+  "issues": [
+    {
+      "repo": "geometry_of_resonance",
+      "number": 12,
+      "title": "Prove a spectrum theorem relating confined eigenvalues to curvature and torsion",
+      "state": "open",
+      "body": "## Problem\n\nThe exact effective-mass statement is spectral: `m_n = (ħ/c) sqrt(lambda_n)`. For constant-curvature circular confinement, this reduces to the familiar curvature relation, but the general replacement of `sqrt(lambda_n)` by an averaged `sqrt(kappa^2 + tau^2)` requires an additional theorem or controlled approximation.\n\n## Goal\n\nEstablish rigorous bounds or asymptotics for confined eigenvalues in terms of curvature, torsion, topology, boundary conditions, and admissible WCT geometry.\n\n## Required work\n\n- Define the admissible class of confinement geometries and operators.\n- Prove lower/upper bounds for `lambda_n` using curvature/torsion invariants.\n- Identify conditions under which the curvature-average mass law is exact, asymptotic, or only approximate.\n- Quantify corrections away from constant-curvature locked loops.\n- Test the theorem numerically on nontrivial geometries.\n\n## Completion criteria\n\n- [ ] A precise theorem statement is written with hypotheses.\n- [ ] Bounds/asymptotics connect `lambda_n` to geometric invariants.\n- [ ] Equality cases are characterized.\n- [ ] Numerical examples verify the predicted scaling and correction terms.\n- [ ] The status of the general curvature-average mass law is updated accordingly.\n\nSource: `DERIVATION_CLOSURE.md`, Remaining work item 2.",
+      "url": "https://github.com/rickyjreyes/geometry_of_resonance/issues/12",
+      "updated_at": "2026-10-20T22:53:08Z"
+    },
+    {
+      "repo": "geometry_of_resonance",
+      "number": 16,
+      "title": "Prove stability or construct a ghost-free higher-derivative completion",
+      "state": "open",
+      "body": "## Problem\n\nThe corrected curvature action is generically fourth order in derivatives, including time derivatives when the covariant `Box psi` term is retained. The current derivation does not yet establish absence of Ostrogradsky-type extra modes, positivity of the Lorentzian Hamiltonian, or spectral/orbital stability of localized solutions.\n\n## Goal\n\nDemonstrate that the physical WCT sector is dynamically acceptable, or replace the higher-derivative formulation with a mathematically equivalent degenerate/auxiliary-field completion that removes pathological branches.\n\n## Required work\n\n- Derive the canonical structure of the corrected higher-derivative action.\n- Identify all propagating branches and constraints.\n- Determine whether the Hessian is degenerate in the required sense.\n- Analyze Hamiltonian boundedness in the physical sector.\n- If needed, construct an auxiliary-field or constrained completion.\n- Test linear and nonlinear stability around relevant vacua and localized states.\n\n## Completion criteria\n\n- [ ] Propagating degrees of freedom are counted explicitly.\n- [ ] Ghost/extra-mode conditions are derived.\n- [ ] A bounded physical Hamiltonian or equivalent constrained formulation is demonstrated.\n- [ ] Linear dispersion is stable in the intended parameter region.\n- [ ] At least one localized solution passes spectral/orbital stability tests.\n- [ ] The stable parameter domain is documented reproducibly.\n\nSources: `DERIVATION_CLOSURE.md`, Remaining work item 6; `WCT_CORRECTED_VARIATIONAL_CLOSURE_DRAFT.md`, canonical-status limitations.",
+      "url": "https://github.com/rickyjreyes/geometry_of_resonance/issues/16",
+      "updated_at": "2026-10-20T22:53:06Z"
+    },
+    {
+      "repo": "geometry_of_resonance",
+      "number": 18,
+      "title": "Resolve the canonical finite-k selection mechanism in the corrected variational action",
+      "state": "open",
+      "body": "## Problem\n\nThe corrected real curvature action has no linear fourth-order contribution about the zero vacuum because the nonlinear weight satisfies `F(u) = O(u)` near `u = 0`. Therefore it does not by itself produce the claimed Swift–Hohenberg-type finite-band dispersion around the zero vacuum.\n\nThe current draft identifies three distinct possibilities: finite-k selection around a nonzero background, a separate effective Swift–Hohenberg rail, or a revised higher-derivative weight with `G(0) > 0`. These are not equivalent and the canonical theory must choose or derive one.\n\n## Goal\n\nDetermine which mechanism actually generates finite-k selection in the corrected WCT formulation and derive its dispersion relation from first principles.\n\n## Required work\n\n- Choose a constant nonzero background `psi0 = A0 exp(-i omega0 t)` and expand `psi = psi0 + eta`.\n- Derive the full quadratic action in `eta` and `eta*`.\n- Derive the exact Fourier-space dispersion matrix.\n- Determine whether a real finite unstable band exists while satisfying `gamma^2 < 4 kappa theta`.\n- Compare the resulting band with the effective Swift–Hohenberg rail.\n- If the nonzero-background route fails, explicitly evaluate the `G(0) > 0` alternative and/or retain the rail as an independent effective model.\n- Update the canonical equation set so the repository no longer presents non-equivalent mechanisms as interchangeable.\n\n## Completion criteria\n\n- [ ] Quadratic perturbation theory around the selected background is derived explicitly.\n- [ ] The dispersion eigenvalues are obtained analytically or symbolically.\n- [ ] Finite-k instability conditions are stated as inequalities in model parameters.\n- [ ] The preferred canonical mechanism is selected and justified.\n- [ ] The relationship to the Swift–Hohenberg rail is classified as derived, asymptotic, phenomenological, or rejected.\n- [ ] Documentation and source-of-truth equations are updated consistently.\n\nSource: `WCT_CORRECTED_VARIATIONAL_CLOSURE_DRAFT.md`, sections 6, 8, and 9.",
+      "url": "https://github.com/rickyjreyes/geometry_of_resonance/issues/18",
+      "updated_at": "2026-10-20T22:53:06Z"
+    },
+    {
+      "repo": "eigen",
+      "number": 7,
+      "title": "[P0] Close the dilation-obstruction question for the positive scalar WCT functional",
+      "state": "open",
+      "body": "## Goal\nTurn the currently documented fixed-norm dilation obstruction into a reproducible analytic/numerical closure result for the positive scalar WCT energy used by `vacuum.py`.\n\n## Why this matters\nIf the declared free-space functional cannot possess an energetically self-bound finite-radius minimizer under fixed norm, that result constrains the entire eigen pipeline more strongly than additional solver tuning. Conversely, any stationary localized state must be shown not to be a finite-box or saddle artifact hidden by the scaling direction.\n\n## Scope\n- Derive the fixed-norm dilation/scaling behavior of each energy term for an explicit normalized family.\n- Numerically evaluate the energy along increasing dilation scales and verify the asymptotic trend.\n- Compare the dilation direction against the constrained Hessian when a stationary candidate exists.\n- State clearly whether the analysis rules out a stable free-space minimizer for the current positive scalar functional, only rules out a global minimizer, or remains inconclusive.\n- Do not introduce new confining terms or retune coefficients in this issue.\n\n## Acceptance criteria\n- [ ] The scaling derivation is documented in-repo with assumptions and dimensional conventions.\n- [ ] A deterministic numerical dilation experiment reproduces the predicted trend.\n- [ ] The result is connected explicitly to the stationary-state/Hessian gate.\n- [ ] The repository records one of: `DILATION_OBSTRUCTION_CONFIRMED`, `DILATION_OBSTRUCTION_NOT_DECISIVE`, or a comparably precise frozen classification.\n- [ ] If the obstruction is decisive, the README explains that failure to find a self-bound state is an expected structural result rather than a solver failure.",
+      "url": "https://github.com/rickyjreyes/eigen/issues/7",
+      "updated_at": "2026-10-04T07:25:44Z"
+    },
+    {
+      "repo": "eigen",
+      "number": 12,
+      "title": "[P1] Extend stability validation beyond the real-scalar sector",
+      "state": "open",
+      "body": "## Goal\nDetermine whether a real-scalar Hessian pass is sufficient for the canonical WCT field, and if not, add the missing phase/complex-sector stability analysis.\n\n## Current gap\nThe current pipeline explicitly validates the exact **real-sector** constrained second variation of the scalar WCT energy. If the canonical physical field is complex or carries additional perturbation sectors, a nonnegative real-sector Hessian does not by itself establish full linear stability.\n\n## Scope\n- State explicitly whether the canonical field for this repository is real-only or complex-valued.\n- If complex-valued, derive the second variation for independent amplitude and phase/imaginary perturbations, including any coupling terms.\n- Identify gauge/phase zero modes and separate them from physical instabilities.\n- Extend the stability artifact to record which perturbation sectors were audited.\n- Prevent the validator from labeling a state fully stable when required sectors are unevaluated.\n\n## Acceptance criteria\n- [ ] The field-content assumption is documented unambiguously.\n- [ ] Required perturbation sectors are derived and implemented, or a mathematical argument shows the real sector is complete for the declared model.\n- [ ] Expected zero modes are identified and treated separately from negative modes.\n- [ ] Tests cover at least one stable and one unstable synthetic sector.\n- [ ] `WCT_CONFINED_STATE_V1` or its successor records stability-sector completeness.",
+      "url": "https://github.com/rickyjreyes/eigen/issues/12",
+      "updated_at": "2026-10-04T07:27:07Z"
+    },
+    {
+      "repo": "wct-pde",
+      "number": 21,
+      "title": "D4: diagnose and resolve the Padé versus split integrator discrepancy",
+      "state": "open",
+      "body": "At N140, t=100, refined Padé gives G=1.3690254532. Split gains are 5.49824131851, 3.84271902031 and 2.39023365101 at dt=.025, .0125 and .00625. The decreasing split values do not yet establish agreement or validate the historical large amplification.\n\nAcceptance criteria:\n- [x] Compare the implemented generators, composition order, forward/adjoint maps and endpoint quotient, using deterministic small tests first.\n- [x] Investigate stiffness, splitting error and possible implementation defects from measurements.\n- [x] Predeclare a focused follow-up protocol before additional expensive solves; consider dt=.003125 and .0015625 only if they can distinguish the explanations.\n- [x] Preserve the frozen state, equations, grids, quotient and existing acceptance criteria; place any changed implementation or follow-up results in separate provenance-tracked outputs.\n- [ ] Report whether agreement reaches the existing integrator comparison threshold, or retain a precise unresolved finding with the measured discrepancy.\n\nThe accepted Padé refinement checks retain their separate numerical status. Do not infer physical instability from a large discrete split gain or declare a splitting artifact without evidence. No repeat Padé campaign is required solely to investigate split.\n\nReference: [D4 scoped numerical status](https://github.com/rickyjreyes/wct-pde/blob/agent/projection-free-closure-current/docs/PROJECTION_FREE_D4_NUMERICAL_STATUS.md); related PR #17.\n\n## 2026-10-14 verified progress and remaining gate\n\n**2026-10-14 progress — OPEN.** Eight provenance-tracked directional cross-tests on both recovered optimizing vectors passed the unchanged 1e-3 fine split/Padé comparison gate. On the historical split optimizer, gain fell from 2.3902336510107576 (dt=.00625) to 1.0000039150347957 (dt=.0015625), versus Padé 0.9999996472181292. This diagnoses timestep-dependent amplification in that direction, but does **not** establish independently optimized fine-split gain equivalence. **Next:** independently optimize both endpoints at matching fine timesteps, quotient, tolerances and error controls; report the original threshold without changing it.\n\nEvidence: [comprehensive report](https://github.com/rickyjreyes/wct-pde/blob/26296d5c40857c37adca6a1aae47930b3598c4ff/docs/D4_COMPREHENSIVE_CLOSURE_REPORT.md) · [PR #26](https://github.com/rickyjreyes/wct-pde/pull/26). Original acceptance criteria and issue state preserved.\n\n## 2026-10-15 next execution gate (after independent audit)\n\n**Status: OPEN — priority 1; difficulty 4/5.** The deterministic full-matrix generator/adjoint/quotient, Yoshida/Padé and checkpoint tests PASS; all eight previously recovered-direction cross-responses meet the original `1e-3` same-vector gate. The historical split optimizer's gain at `dt=.00625` was `2.3902336510107576`, falling to `1.0000039150347957` at `dt=.0015625` (matching-direction Padé `0.9999996472181292`). These are *directional* results, **not** independently optimized norm equality.\n\n**Single decisive next action:** Predeclare a separate source-compatible budget/restore protocol for the interrupted fine-split optimizer, preserving its checkpoints and prior log. Independently optimize the `N=140,t=100` full endpoint quotient at `dt=.003125`, and `dt=.0015625` when authorized; compare with an independently accepted matched Padé gain on the same state, projector, real L² norm, tolerances and original `1e-3` threshold. Recompute final normal residuals and retain optimizing vectors plus cross-responses; intermediate Ritz values are **not** accepted. If the budget or precision is insufficient, report **OPEN/BLOCKED** rather than claiming agreement or physical instability. Do not rerun completed Padé convergence merely to investigate split.\n\nEvidence: [integrator audit](https://github.com/rickyjreyes/wct-pde/blob/e9a2b589243cfc8fa1492b67a02949c9ba660e93/docs/D4_INTEGRATOR_INDEPENDENT_AUDIT.md) · [predeclared previous optimization protocol](https://github.com/rickyjreyes/wct-pde/blob/e9a2b589243cfc8fa1492b67a02949c9ba660e93/docs/D4_OPTIMIZED_SPLIT_PROTOCOL.md) · [report](https://github.com/rickyjreyes/wct-pde/blob/e9a2b589243cfc8fa1492b67a02949c9ba660e93/docs/D4_COMPREHENSIVE_CLOSURE_REPORT.md) · [PR #26](https://github.com/rickyjreyes/wct-pde/pull/26). Archived/frozen outputs and original acceptance threshold remain unchanged.\n",
+      "url": "https://github.com/rickyjreyes/wct-pde/issues/21",
+      "updated_at": "2026-10-15T18:16:01Z"
+    },
+    {
+      "repo": "wct-pde",
+      "number": 22,
+      "title": "D4: complete the refined sampled time envelope and audit its temporal accuracy",
+      "state": "open",
+      "body": "The completed through-coverage campaign establishes refinement of G(100). The refined time envelope was not run, and convergence at t=100 does not establish accuracy at every other sample.\n\nAcceptance criteria:\n- [x] Review the existing predeclared envelope protocol and estimate its cost before execution.\n- [x] Reuse validated completed results, including the t=100 calculation, with checkpoint/resume protection.\n- [ ] Evaluate the declared times 5, 10, 20, 40, 60, 80 and 100 and the predeclared local refinement around the sampled maximum.\n- [x] Predeclare any additional timestep-accuracy checks needed to support claims at the sampled times or peak; retain separate provenance for protocol extensions.\n- [ ] Extend the report-only auditor to validate the envelope's warm-start chain and saved records before publishing those classifications. The current auditor intentionally refuses a nonempty envelope.\n- [ ] Publish gain/residual tables, uncertainty diagnostics and the largest sampled refined gain with its time.\n\nUse source-compatible execution/recovery. A sampled maximum does not certify a continuous-time supremum. Keep this issue separate from the completed G(100) checks and the split investigation.\n\nReference: [D4 scoped numerical status](https://github.com/rickyjreyes/wct-pde/blob/agent/projection-free-closure-current/docs/PROJECTION_FREE_D4_NUMERICAL_STATUS.md); related PR #17.\n\n## 2026-10-14 verified progress and remaining gate\n\n**2026-10-14 progress — OPEN.** Accepted N140 t=5 base sample: G=1.5136573217842118, final normal residual 1.816591138012199e-11; 39 normal actions, with 34 exact cached actions reused on resume. Its separate timestep accuracy remains unverified. Reuse historical t=100; complete remaining base times 10,20,40,60,80, local peak refinement, separate timestep/spatial checks, and complete audited warm-start chain. Do not call a sampled maximum a continuous-time supremum.\n\nEvidence: [comprehensive report](https://github.com/rickyjreyes/wct-pde/blob/26296d5c40857c37adca6a1aae47930b3598c4ff/docs/D4_COMPREHENSIVE_CLOSURE_REPORT.md) · [PR #26](https://github.com/rickyjreyes/wct-pde/pull/26). Original acceptance criteria and issue state preserved.\n\n## 2026-10-15 next execution gate (after interrupted t10 resume)\n\n**Status: OPEN — priority 3; difficulty 4/5.** The accepted `N=140,dt=.00625` base results are `t=5: G=1.5136573217842118` (normal residual `1.816591138012199e-11`, separate timestep-accuracy extension **OPEN**) and reused historical `t=100: G=1.3690254532021537`. The t10 continuation and separately budgeted resume were interrupted; their intermediate values are **not** accepted and prior receipts/checkpoints remain preserved.\n\n**Next authorized research step:** First reconcile the exact t5 parent, archived-source runtime/protocol and preserved t10 checkpoint hashes. The old resume protocol authorized a bounded follow-up, **not unlimited retries**: predeclare a new, independently versioned budget and recovery authorization before any further production attempt. Complete and audit `t=10,20,40,60,80` in the original warm-start order, reusing the audited t100; then perform the originally specified one-pass local refinement around the measured base peak, per-time timestep-accuracy extensions and peak N112/N168 checks. Run the report-only auditor on the complete source-compatible chain; publish all gains, residuals, error diagnostics and provenance. No complete refined sampled maximum is presently established. Even one would **not** be a continuous-time supremum.\n\nThe `t=5` base gain is numerically larger than `t=100`, but without all base samples and accuracy gates this does not identify the refined peak.\n\nEvidence: [continuation protocol](https://github.com/rickyjreyes/wct-pde/blob/e9a2b589243cfc8fa1492b67a02949c9ba660e93/docs/D4_ENVELOPE_CONTINUATION_PROTOCOL.md) · [bounded t10 resume](https://github.com/rickyjreyes/wct-pde/blob/e9a2b589243cfc8fa1492b67a02949c9ba660e93/docs/D4_ENVELOPE_T10_RESUME_PROTOCOL.md) · [report](https://github.com/rickyjreyes/wct-pde/blob/e9a2b589243cfc8fa1492b67a02949c9ba660e93/docs/D4_COMPREHENSIVE_CLOSURE_REPORT.md) · [PR #26](https://github.com/rickyjreyes/wct-pde/pull/26). Preserve original thresholds, all previous failed/interrupted launch records, frozen tag and production archive.\n",
+      "url": "https://github.com/rickyjreyes/wct-pde/issues/22",
+      "updated_at": "2026-10-15T18:15:57Z"
+    },
+    {
+      "repo": "wct-pde",
+      "number": 23,
+      "title": "D4: obtain a certified enclosure for the leading quotient singular gain",
+      "state": "open",
+      "body": "Five starts and Krylov dimensions 20/30 reproduce G(100) to about 1e-12 relative spread. The recorded residuals and overlaps provide strong numerical coverage, but do not exclude an unobserved larger singular value.\n\nAcceptance criteria:\n- [x] State the exact finite-grid endpoint-quotient operator, norm and target times to be certified.\n- [ ] Develop a defensible upper/lower enclosure or another exhaustive leading-spectrum verification method.\n- [ ] Include propagation/inverse error and floating-point effects in any claimed certificate, rather than using only the Ritz residual.\n- [x] Validate the certification procedure against deterministic small problems with independently available full spectra.\n- [ ] Report whether the existing gain is enclosed as the global leading singular gain and identify the achieved enclosure width and scope.\n\nRetain the existing five-start result as numerical evidence. Additional random starts alone do not close this certification issue. Do not expand a finite-grid certificate into a continuum or all-time theorem.\n\nReference: [D4 scoped numerical status](https://github.com/rickyjreyes/wct-pde/blob/agent/projection-free-closure-current/docs/PROJECTION_FREE_D4_NUMERICAL_STATUS.md).\n\n## 2026-10-14 verified progress and remaining gate\n\n**2026-10-14 progress — OPEN.** A block-complement lemma reduces the exhaustive target T=P exp(100 A_140) P to validated trial-block upper/lower bounds, coupling b and a **full complementary** bound gamma. The latter is the decisive missing step; propagation, adjoint, inverse, FFT and rounding errors must be enclosed. Current numerical gain 1.3690254532021537 is not globally certified; preserved broad bound [0,1.6494305049768293e22]. **Next:** predeclare sharp width and validate complementary enclosure on deterministic full-spectrum fixtures before production.\n\nEvidence: [comprehensive report](https://github.com/rickyjreyes/wct-pde/blob/26296d5c40857c37adca6a1aae47930b3598c4ff/docs/D4_COMPREHENSIVE_CLOSURE_REPORT.md) · [PR #26](https://github.com/rickyjreyes/wct-pde/pull/26). Original acceptance criteria and issue state preserved.\n\n## 2026-10-15 exact production certification blockers\n\n**Status: OPEN — priority 4; difficulty 5/5.** The exact-rational block-enclosure checker and adversarial finite-matrix fixtures PASS. They do **not** establish a sharp enclosure for the frozen production real L² target `T=P exp(100 A_140) P`, where `P` removes **only** phase and x/y translations. The numerical result `1.3690254532021537` is not globally certified; the retained production bound is `[0,1.6494305049768293e22]`.\n\n**Next proof obligations:**\n- [ ] Validate an exact trial isometry, full quotient projector, normalized stored vectors and outward lower action bound, including their numerical errors.\n- [ ] Enclose *global* forward/adjoint action errors, including assembly/FFT/rounding, inverse conditioning and cumulative solve error, and Padé-to-exponential error; an error on one Ritz vector is insufficient.\n- [ ] Derive a sharp upper bound over the **entire trial orthogonal complement** and its coupling (not sampled starts); apply the validated 2×2 PSD/block test to a production upper gain.\n- [ ] State the resulting full-space interval and width, with exact source/input/precision/receipt hashes. If it cannot be made sharp, retain OPEN and the actual broad bound.\n\nThe separately **predeclared additional usefulness target** is an absolute gain-interval width `<=0.001` (it does not alter original issue gates). For a positive lower endpoint and a global map error `epsilon`, it requires `(u-l)+2*epsilon<=0.001`, hence `epsilon<0.0005` for nonzero remaining margin. An arbitrarily small Ritz residual, more random starts, or the distinct continuum H² coercivity theorem in #25 cannot substitute for the finite-grid full-complement L² premise.\n\nEvidence: [exact block procedure and obstacles](https://github.com/rickyjreyes/wct-pde/blob/e9a2b589243cfc8fa1492b67a02949c9ba660e93/docs/D4_GAIN_CERTIFICATION_FOLLOWUP.md) · [report](https://github.com/rickyjreyes/wct-pde/blob/e9a2b589243cfc8fa1492b67a02949c9ba660e93/docs/D4_COMPREHENSIVE_CLOSURE_REPORT.md) · [PR #26](https://github.com/rickyjreyes/wct-pde/pull/26). No production propagation or new narrow gain certificate is claimed.\n",
+      "url": "https://github.com/rickyjreyes/wct-pde/issues/23",
+      "updated_at": "2026-10-15T18:15:59Z"
+    },
+    {
+      "repo": "wct-pde",
+      "number": 24,
+      "title": "D4: establish continuum existence and connection to the computed stationary branch",
+      "state": "closed",
+      "body": "The accepted stationary roots and three-grid agreement establish a discrete numerical branch on the tested periodic domain. A rigorous continuum branch-existence result and a controlled connection from the computed states to that branch remain separate mathematical obligations.\n\nAcceptance criteria:\n- [x] Specify the frozen PDE, periodic domain, function spaces, stationary equation, symmetry treatment and hypotheses precisely.\n- [x] Inventory applicable existing repository proofs and identify the remaining lemmas without assuming that proofs for another model or domain transfer.\n- [x] Establish an analytic proof or validated a posteriori existence argument, including discretization/tail control where numerical input is used.\n- [x] Provide a checkable theorem and explicit hypotheses linking the computed branch to a continuum solution, or document the exact remaining obstruction.\n\nDo not treat small discrete residuals or grid agreement alone as a rigorous existence proof. Distinguish stationary branch existence from global-in-time nonlinear evolution, and periodic-domain results from whole-space claims. This research issue does not revoke the tested Padé numerical closure.\n\nReference: [D4 scoped numerical status](https://github.com/rickyjreyes/wct-pde/blob/agent/projection-free-closure-current/docs/PROJECTION_FREE_D4_NUMERICAL_STATUS.md).\n\n## 2026-10-14 verified progress and remaining gate\n\n**2026-10-14 progress — CONDITIONAL; issue OPEN.** Proposed 128-bit Arb Fourier-Wiener contraction application to the exact frozen length-42 periodic PDE, including nonaliasing Fourier residual, verified bordered inverse, infinite high-mode tails and independent saved-array DFT link. Reported Y0<=2.398622e-13, Z0<=0.903773844573, radius 1e-8, L<=1401.108126; contraction inequalities pass outward arithmetic. **Next:** independent mathematical and implementation review of all norms, orbit multiplicities, interval rounding, inverse/tail estimates and root linkage. No mass-interval continuation, whole-space theorem or unreviewed PROVED status.\n\nEvidence: [comprehensive report](https://github.com/rickyjreyes/wct-pde/blob/26296d5c40857c37adca6a1aae47930b3598c4ff/docs/D4_COMPREHENSIVE_CLOSURE_REPORT.md) · [PR #26](https://github.com/rickyjreyes/wct-pde/pull/26). Original acceptance criteria and issue state preserved.\n\n## 2026-10-15 independently verified closure\n\n**PASS — completed within the scoped periodic theorem.** The previous CONDITIONAL entry above is historical and superseded by the acceptance-by-acceptance closure comment. Evidence commit: e9a2b589243cfc8fa1492b67a02949c9ba660e93. See [the updated report](https://github.com/rickyjreyes/wct-pde/blob/e9a2b589243cfc8fa1492b67a02949c9ba660e93/docs/D4_COMPREHENSIVE_CLOSURE_REPORT.md) and [passing independent CI](https://github.com/rickyjreyes/wct-pde/actions/runs/38775402440). Original criterion wording and historical evidence are preserved. No comprehensive D4 numerical closure, whole-space theorem or numerical arbitrary-data basin is claimed.",
+      "url": "https://github.com/rickyjreyes/wct-pde/issues/24",
+      "updated_at": "2026-10-15T17:14:24Z"
+    },
+    {
+      "repo": "wct-pde",
+      "number": 25,
+      "title": "D4: establish all-time and nonlinear stability under explicit hypotheses",
+      "state": "closed",
+      "body": "The finite-time quotient-gain calculations do not establish all-time stability or global nonlinear PDE closure. Existing conditional energy/coercivity arguments need their hypotheses validated at the level of the claimed theorem.\n\nAcceptance criteria:\n- [x] Separate finite-grid linear boundedness, continuum linear/orbital stability and nonlinear/global-in-time statements.\n- [x] Audit coercivity on the entire required constrained spectrum, symmetry/kernel relations and exact conservation/invariance assumptions.\n- [x] Treat unrestricted mass-normal data explicitly; do not apply a mass-tangent bound to all quotient initial data.\n- [x] Control nonlinear remainders and establish the required solution existence/regularity and perturbation class for any nonlinear stability theorem.\n- [x] Supply a complete proof or validated certificate for each claimed result, or retain explicit unresolved hypotheses and lemmas.\n\nDependency: continuum branch/existence work for continuum claims. The numerical Padé result remains a separate established finite-protocol result once its raw audit is confirmed. Longer simulations alone do not close an all-time theorem.\n\nReference: [D4 scoped numerical status](https://github.com/rickyjreyes/wct-pde/blob/agent/projection-free-closure-current/docs/PROJECTION_FREE_D4_NUMERICAL_STATUS.md).\n\n## 2026-10-14 verified progress and remaining gate\n\n**2026-10-14 progress — CONDITIONAL; issue OPEN.** Proposed six outward parity-block checks for full complex constrained H2 coercivity, including symmetry-breaking and mass-normal directions, exact-root transfer, kernel identities and nonlinear modulation/energy argument. Proposed H2 lower bound 0.0008267789943812908. **Next:** independent review of #24 prerequisite, exact-root projector transfer, all reflection sectors, infinite Schur tails, spectral index/kernel count, mass penalty and nonlinear theorem; compute explicit basin if a quantitative claim is desired. No arbitrary-amplitude or whole-space stability claim.\n\nEvidence: [comprehensive report](https://github.com/rickyjreyes/wct-pde/blob/26296d5c40857c37adca6a1aae47930b3598c4ff/docs/D4_COMPREHENSIVE_CLOSURE_REPORT.md) · [PR #26](https://github.com/rickyjreyes/wct-pde/pull/26). Original acceptance criteria and issue state preserved.\n\n## 2026-10-15 independently verified closure\n\n**PASS — completed within the scoped periodic theorem.** The previous CONDITIONAL entry above is historical and superseded by the acceptance-by-acceptance closure comment. Evidence commit: e9a2b589243cfc8fa1492b67a02949c9ba660e93. See [the updated report](https://github.com/rickyjreyes/wct-pde/blob/e9a2b589243cfc8fa1492b67a02949c9ba660e93/docs/D4_COMPREHENSIVE_CLOSURE_REPORT.md) and [passing independent CI](https://github.com/rickyjreyes/wct-pde/actions/runs/38775402440). Original criterion wording and historical evidence are preserved. No comprehensive D4 numerical closure, whole-space theorem or numerical arbitrary-data basin is claimed.",
+      "url": "https://github.com/rickyjreyes/wct-pde/issues/25",
+      "updated_at": "2026-10-15T17:14:26Z"
+    },
+    {
+      "repo": "wct-pde",
+      "number": 27,
+      "title": "D4: certify an explicit quantitative nonlinear orbital perturbation basin",
+      "state": "closed",
+      "body": "## Objective\n\nTurn the validated **qualitative local all-time orbital H² stability** result from #25 into a fully explicit, reproducible initial-data stability radius for the **same frozen periodic model and nearby exact continuum root** established in #24. This is a quantitative follow-up, **not** a reopening of either completed theorem or a substitute for #21–#23.\n\n## Existing certified inputs (2026-10-15)\n\n- [PR #26 at e9a2b589](https://github.com/rickyjreyes/wct-pde/pull/26) validates a smooth nearby real-D4 root on the length-42 **two-dimensional** torus (D4 is square symmetry, not four spatial dimensions).\n- The [independent theorem appendix](https://github.com/rickyjreyes/wct-pde/blob/e9a2b589243cfc8fa1492b67a02949c9ba660e93/docs/D4_INDEPENDENT_CLOSURE_APPENDIX.tex) proves qualitative local all-time orbital stability for sufficiently small arbitrary complex H² perturbations, including mass-changing and symmetry-breaking data.\n- On the **exact modulated symmetry slice**, it gives a radius `rho=1e-8` and `W(phi+z)-W(phi) >= 0.00082085097379 ||z||_(H²,m)^2`. This is a **slice energy inequality only**, **not** an arbitrary-data orbital basin.\n- The existing independent root/coercivity checks share the FLINT/Arb arithmetic backend and strategy. They are not external peer review or proof-assistant verification.\n\n## Acceptance criteria\n\n- [ ] Pin exact root/certificate receipt, binary input parameters, domain, H² mean/physical norm normalization, phase/translation orbit and conserved functional; do not silently transfer a discrete or whole-space bound.\n- [ ] Derive **quantitative phase/translation modulation** with explicit invertibility/conditioning and a certified neighborhood for arbitrary initial data, including mass-normal and non-D4 perturbations. Bound the relation between orbital distance and exact-slice H² size.\n- [ ] Produce outward and reproducible upper Taylor/energy constants relating the initial orbital distance to `|W(u0)-W(phi)|`; combine with the existing lower slice estimate and first-exit argument.\n- [ ] State and certify a numerical pair `(epsilon_*, delta_*)` (or a nontrivial explicit function `delta(epsilon)` on a specified range), with `delta_*>0`, such that `dist_H²(u0,O_phi)<delta_*` implies `sup_(t in R) dist_H²(u(t),O_phi)<epsilon_*`. Explicitly handle both time directions via the already proved global H² continuation.\n- [ ] Independently replay every new quantitative constant with outward arithmetic and deterministic/adversarial fixtures, including near-singular modulation Gram data and mass-changing/symmetry-breaking inputs; preserve exact source, receipt hashes, scripts and CI checks.\n- [ ] Publish a checkable theorem and numeric constants, or retain an exact **OPEN/BLOCKED** obstruction without converting `rho=1e-8` or qualitative `forall epsilon exists delta` into an unsupported numeric basin.\n\n## Boundaries and relationship to existing issues\n\n#24 and #25 **remain CLOSED** for their original scoped criteria. A quantitative orbital basin is optional strengthening, not an unfulfilled premise of the published qualitative theorem. This issue does **not** certify attraction, large-data/global orbital stability, an L²-only basin, finite-grid quotient-gain optimality, whole-space confinement, four-spatial-dimensional lifetime/persistence, or all of comprehensive D4 closure.\n\n**Priority:** P2 (after #21; may run in parallel with #22). **Difficulty:** 3/5.\n\nEvidence: [comprehensive report](https://github.com/rickyjreyes/wct-pde/blob/e9a2b589243cfc8fa1492b67a02949c9ba660e93/docs/D4_COMPREHENSIVE_CLOSURE_REPORT.md) · [independent stability audit](https://github.com/rickyjreyes/wct-pde/blob/e9a2b589243cfc8fa1492b67a02949c9ba660e93/docs/D4_INDEPENDENT_STABILITY_AUDIT.md) · [passing independent CI](https://github.com/rickyjreyes/wct-pde/actions/runs/38775402440).",
+      "url": "https://github.com/rickyjreyes/wct-pde/issues/27",
+      "updated_at": "2026-10-16T17:19:21Z"
+    },
+    {
+      "repo": "wct-pde",
+      "number": 28,
+      "title": "Certify an explicit orbital H² basin for the same periodic root",
+      "state": "closed",
+      "body": "The existing exact-slice radius does not give an initial-data basin. This change derives quantitative phase/translation modulation, an arbitrary-complex energy upper bound, and a first-exit argument for the same certified length-42 two-dimensional torus root.\n\nThe physical H² constants are epsilon = 4.2e-9 and delta = 4.2e-12. All exact root/coercivity inputs are SHA-256 pinned. Arb and an independent Fraction/isqrt/Machin-pi implementation replay the new constants. The proof uses the accepted #24/#25 root, coercivity, and global-continuation premises; no external peer review or proof-assistant verification is claimed.\n\nLocal verification: 13 tests passed, including near-singular Gram rejection, failed energy/slice gates, hash corruption, and mass-changing/complex symmetry-breaking fixtures. CI repeats the checks and exports receipts. See docs/D4_QUANTITATIVE_ORBITAL_BASIN.md and docs/evidence/d4_quantitative_basin/receipt.json for commands, source hashes, and scope.\n\nStacked on PR #26 at e9a2b589. Addresses #27. Issues #21–#23 remain separate. No prior certificate or theorem was overwritten.",
+      "url": "https://github.com/rickyjreyes/wct-pde/pull/28",
+      "updated_at": "2026-10-17T02:09:04Z"
+    }
+  ]
+}

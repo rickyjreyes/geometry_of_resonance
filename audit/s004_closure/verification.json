@@ -1,0 +1,322 @@
+{
+  "C10_dominant_balance": "x=tau^p: (x^2 x'')'' + x x''^2 = p(p-1)^2(10p-6) tau^(3p-4); singular exponent p = 3/5",
+  "C11_nodal_brackets": {
+    "det": 1,
+    "invariant_set_bracket": "[[0, 0, 0, 1], [0, 0, 1, 0], [0, -1, 0, 2], [-1, 0, -2, 0]]",
+    "transient_rank": 2,
+    "transient_size": 3
+  },
+  "C12_failed_original_candidate": {
+    "D((2k)^2) at k=1": "-65/81",
+    "V''(rho0)": "-1/2",
+    "d": "7/9",
+    "label": "REFUTED (preserved failed certificate)",
+    "min_resonance_function_numeric": 0.4156502658565784,
+    "reason_bracket": "k = 1 puts 2k outside the real window",
+    "reason_global": "d = 7/9 > 3/5: resonance function strictly positive on the whole window"
+  },
+  "C12_harmonic_forcing": {
+    "sigma0": "A*(2*A**2*v3 - 9*f1*gamma*k**4 + 5*f1*gamma*k**2*omega**2 - 9*f1*k**4*kappa - 9*f1*k**4*theta + 10*f1*k**2*kappa*omega**2 - f1*kappa*omega**4 + 3*v2)/2",
+    "sigma2": "A*(2*A**2*v3 - 9*f1*gamma*k**4 + 9*f1*gamma*k**2*omega**2 - 9*f1*k**4*kappa - 9*f1*k**4*theta + 18*f1*k**2*kappa*omega**2 - 9*f1*kappa*omega**4 + 3*v2)/2",
+    "sigma2_factor": "A/2 (3 v2 + 2 A^2 v3 - 9 f1 symbolForm(w^2-k^2, k^2))",
+    "traveling_wave_second_harmonic": "= 2 sigma2 (no standing/traveling cancellation)"
+  },
+  "C12_resonance_band_classification": {
+    "band": "9/25 <= d <= 3/5 (d = 1 - 4 K m^2)",
+    "closed_form": "B q*^2 = d - ((3+5d)/8)^2, sqrt D(q*) = (3+5d)/8, sqrt D(4q*) = (3-5d)/2",
+    "in_band_with_root": 110,
+    "out_of_band_with_root": 0,
+    "random_samples": 400
+  },
+  "C12_resonance_certificate": {
+    "B": "8/81",
+    "D(4k*^2)": "(11/40)^2",
+    "D(k*^2)": "(109/160)^2",
+    "cancellation_surface": "sigma2 = 0 iff V'''(rho0) = 4131/800",
+    "delta^2": "49/100",
+    "k*": "0.715594755047108784226680993290",
+    "k*^4": "53703/204800",
+    "omega*^2 - k*^2": "459/320",
+    "parameters": {
+      "F'(rho0)": "4/27",
+      "F(rho0)": "2/9",
+      "K": "1/9",
+      "T": "2/9",
+      "V'''(rho0)": 0,
+      "V''(rho0)": "-459/400",
+      "V'(rho0)": 0,
+      "alpha": 0,
+      "eps": 1,
+      "gamma": 0,
+      "kappa": "1/2",
+      "m^2": "459/400",
+      "rho0": "1/2",
+      "theta": 1
+    },
+    "resonance": "z_+(4k*^2) = 4 z_-(k*^2) exactly; resonant 2k* frequency is the upper (ghost) pole",
+    "s*=B k*^4": "663/25600",
+    "sigma0(V'''=0)": "-1.24071316664438",
+    "sigma2(V'''=0)": "-4131 sqrt(1/2)/1600",
+    "symbolForm": "4131/3200",
+    "third_harmonic": {
+      "D(9k*^2)": "-41159/25600",
+      "Im omega(3k*)": "0.905427198295",
+      "status": "outside real window: complex frequencies (Hadamard band)"
+    }
+  },
+  "C13_collision_indicial": {
+    "exponents": {
+      "amplitude_scaling": 0,
+      "nontrivial": [
+        "3/5",
+        "8/5"
+      ],
+      "time_translation": -1
+    },
+    "indicial_polynomial": "mu (mu+1) (5 mu - 8) (5 mu - 3) / 25",
+    "neglected_ordinary_terms_relative_size": "25*tau**(4/5)/(6*C**2)",
+    "status": "FORMAL: 4-parameter (open) family of self-similar collisions at leading order"
+  },
+  "C13_node_collision_diagnostic": {
+    "label": "NUMERICALLY SUPPORTED (diagnostic)",
+    "predicted_exponent": 0.6,
+    "trials": [
+      {
+        "fitted_exponent": 0.6021880079673767,
+        "relative_energy_drift_near_collision": 6.307273069568005e-05,
+        "t_star": 1.4721241189318317,
+        "trial": 0
+      },
+      {
+        "fitted_exponent": 0.5953548735193381,
+        "relative_energy_drift_near_collision": 1.3140750750872954e-06,
+        "t_star": 1.155977421415726,
+        "trial": 1
+      },
+      {
+        "fitted_exponent": 0.5965077445568284,
+        "relative_energy_drift_near_collision": 2.0530050936495847e-06,
+        "t_star": 1.1759992775011363,
+        "trial": 2
+      },
+      {
+        "fitted_exponent": 0.6031347387141458,
+        "relative_energy_drift_near_collision": 3.8322775608223836e-05,
+        "t_star": 1.5546216886558413,
+        "trial": 3
+      },
+      {
+        "fitted_exponent": 0.6037425990187892,
+        "relative_energy_drift_near_collision": 3.440276243293905e-05,
+        "t_star": 1.2952329715431627,
+        "trial": 4
+      }
+    ]
+  },
+  "C14_spatial_member": [
+    "spatial_member_purely_oscillatory_frozen_symbol"
+  ],
+  "C15_unified_tangency": {
+    "jerk_coefficient": "2 kappa F(rho) I2 (vanishes exactly on the nodal stratum)",
+    "nodal_value": "p1 = 2 v for every a, jerk, b, bdot"
+  },
+  "C1_principal_symbol": [
+    {
+      "result": "fourth-order part of linearization = 2F(rho0)(k box^2 + g box lap + t lap^2) I2",
+      "spatial_dims": 1
+    },
+    {
+      "result": "fourth-order part of linearization = 2F(rho0)(k box^2 + g box lap + t lap^2) I2",
+      "spatial_dims": 2
+    }
+  ],
+  "C2_symbol_algebra": [
+    "symbolForm=curvatureDensity(X,-Y)",
+    "completed_square",
+    "homogeneous_factorization",
+    "reduced_quadratic",
+    "reduced_discriminant",
+    "reduced_completed_square",
+    "boundary_perfect_square",
+    "pd_witness",
+    "hyperbolic_indefinite_witness"
+  ],
+  "C3_ellipticity_adversarial": {
+    "counterexamples": 0,
+    "exact_rational_samples": 4000,
+    "min_symbol_over_|(tau,xi)|^4": 0.000940215945525818
+  },
+  "C4_hyperbolicity_classification": {
+    "agreement": 3000,
+    "class_counts": {
+      "elliptic": 709,
+      "other": 1162,
+      "strictly_hyperbolic": 1129
+    },
+    "samples": 3000
+  },
+  "C5_hadamard_exact": [
+    "hadamardRatio_root",
+    "frozen_symbol_factorization"
+  ],
+  "C5_hadamard_lower_order_adversarial": {
+    "trials": [
+      {
+        "F": 1.1852159703255172,
+        "c_uv": 0.40671168123826024,
+        "gamma": 0.5107951336596093,
+        "kappa": 0.35416850085852386,
+        "maxRe/k@k=10": 1.0256486863508811,
+        "maxRe/k@k=100": 0.4748958031814574,
+        "maxRe/k@k=1000": 0.4133988574851744,
+        "rel_err@1000": 0.016442056020015527,
+        "theta": 0.6262589118729796
+      },
+      {
+        "F": 1.7070482580589998,
+        "c_uv": 0.5220000424229836,
+        "gamma": -2.3908405523633163,
+        "kappa": 1.565669830078854,
+        "maxRe/k@k=10": 0.5944486774039144,
+        "maxRe/k@k=100": 0.5270980412531909,
+        "maxRe/k@k=1000": 0.5224887970820626,
+        "rel_err@1000": 0.0009363115313370125,
+        "theta": 1.781264332399257
+      },
+      {
+        "F": 1.3547986174845748,
+        "c_uv": 0.45816770887219743,
+        "gamma": 0.6367608757082192,
+        "kappa": 0.862907303250346,
+        "maxRe/k@k=10": 0.6143993014653082,
+        "maxRe/k@k=100": 0.46772993105708033,
+        "maxRe/k@k=1000": 0.4590386641452322,
+        "rel_err@1000": 0.0019009529833053222,
+        "theta": 1.261460516202575
+      },
+      {
+        "F": 0.37946843629699456,
+        "c_uv": 0.6349230526818361,
+        "gamma": -1.70824498133536,
+        "kappa": 0.9017387731643955,
+        "maxRe/k@k=10": 0.817069817194491,
+        "maxRe/k@k=100": 0.652299422493598,
+        "maxRe/k@k=1000": 0.6366041236965632,
+        "rel_err@1000": 0.0026476767659110757,
+        "theta": 1.4719743399806922
+      },
+      {
+        "F": 1.7518918721342995,
+        "c_uv": 0.32115381498261103,
+        "gamma": -0.15046220889029685,
+        "kappa": 1.1293409561062362,
+        "maxRe/k@k=10": 0.4165781555403889,
+        "maxRe/k@k=100": 0.33079948733747294,
+        "maxRe/k@k=1000": 0.3221198999266662,
+        "rel_err@1000": 0.0030081689800491845,
+        "theta": 0.4879489970359965
+      },
+      {
+        "F": 0.8966502189877424,
+        "c_uv": 0.14353132013732092,
+        "gamma": 0.6454062837799717,
+        "kappa": 1.497389905198339,
+        "maxRe/k@k=10": 0.23737752624328565,
+        "maxRe/k@k=100": 0.15554528740127352,
+        "maxRe/k@k=1000": 0.14477477441768427,
+        "rel_err@1000": 0.008663295782228554,
+        "theta": 0.22207262198760674
+      }
+    ]
+  },
+  "C6_H4_replay": {
+    "c_uv(K=T=1,G=0)": 0.4550898605622274,
+    "table": [
+      {
+        "growth/k": 0.4499392523633091,
+        "k": 4.0
+      },
+      {
+        "growth/k": 0.45477512663582725,
+        "k": 16.0
+      },
+      {
+        "growth/k": 0.4550702177534408,
+        "k": 64.0
+      },
+      {
+        "growth/k": 0.4550886329963007,
+        "k": 256.0
+      }
+    ]
+  },
+  "C7_kappa_to_zero": {
+    "fixed_angle_rays": [
+      {
+        "phi": 0.3,
+        "values": [
+          0.45053118755169336,
+          1.486963366141745,
+          4.723287572652068
+        ]
+      },
+      {
+        "phi": 1.0,
+        "values": [
+          1.4440939642811226,
+          4.770408420596392,
+          15.153190262832302
+        ]
+      },
+      {
+        "phi": 2.0,
+        "values": [
+          2.5286716944345446,
+          8.37265454072213,
+          26.59634470461614
+        ]
+      }
+    ],
+    "gamma=0 ray": [
+      {
+        "c_uv(kappa,theta=1,gamma=0)": 0.4550898605622274,
+        "kappa": 1.0
+      },
+      {
+        "c_uv(kappa,theta=1,gamma=0)": 1.0762492254016724,
+        "kappa": 0.1
+      },
+      {
+        "c_uv(kappa,theta=1,gamma=0)": 2.1271901209248893,
+        "kappa": 0.01
+      },
+      {
+        "c_uv(kappa,theta=1,gamma=0)": 7.03580130031421,
+        "kappa": 0.0001
+      },
+      {
+        "c_uv(kappa,theta=1,gamma=0)": 22.34950223159204,
+        "kappa": 1e-06
+      }
+    ]
+  },
+  "C8_nodal_jets": [
+    "EL_at_node=(1+2kF'(0)|v|^2)a",
+    "dEL_at_node=(1+6kF'(0)|v|^2)j-V'(0)v",
+    "p2_at_node=0",
+    "p1_at_node=2v",
+    "F'(0)=1/eps^4"
+  ],
+  "C9_crossing_series": {
+    "a2": "0",
+    "a3 (d1 = V'(0), c1 = F'(0))": "d1*v0/(6*(6*c1*kappa*v0**2 + 1))",
+    "leading_coefficient_a_n": "n(n-1)(1 + kappa v0^2 n(n-1) c1) != 0 for kappa >= 0, c1 > 0",
+    "order": 6
+  },
+  "source_sha256": "bc5fea5af1d42a65162df4d1f715c9a7634c70c3230d2623cfdadb69892b637f",
+  "versions": {
+    "numpy": "2.3.5",
+    "python": "3.13.18",
+    "sympy": "1.14.0"
+  }
+}

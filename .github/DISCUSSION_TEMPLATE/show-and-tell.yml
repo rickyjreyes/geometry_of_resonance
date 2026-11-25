@@ -1,0 +1,71 @@
+title: "[Derivation, Reproduction, or Test] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share a derivation, proof attempt, simulation, reproduction, counterexample, or empirical test. Favor complete artifacts and narrow conclusions over broad claims.
+  - type: dropdown
+    id: contribution_type
+    attributes:
+      label: Contribution type
+      options:
+        - Analytic derivation
+        - Formal proof or proof attempt
+        - Numerical reproduction
+        - Independent solver or implementation
+        - Convergence or artifact audit
+        - Counterexample or failed test
+        - Empirical or observational test
+        - Visualization or research tool
+    validations:
+      required: true
+  - type: input
+    id: target
+    attributes:
+      label: Claim or result tested
+      description: Give the exact equation, claim identifier, section, test, or artifact.
+    validations:
+      required: true
+  - type: textarea
+    id: method
+    attributes:
+      label: Method and assumptions
+      description: Describe the derivation, numerical method, dataset, controls, approximations, and boundary conditions.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction information
+      description: Include commit SHA, environment, exact commands, seeds, precision, grid, timestep, domain, and parameter file as applicable.
+      render: shell
+    validations:
+      required: false
+  - type: textarea
+    id: result
+    attributes:
+      label: Result
+      description: Report the quantitative outcome, residuals, convergence behavior, uncertainty, and PASS, FAIL, or INCOMPLETE verdict.
+    validations:
+      required: true
+  - type: textarea
+    id: artifacts
+    attributes:
+      label: Auditable artifacts
+      description: Link code, proof files, logs, datasets, manifests, machine-readable results, figures, or archived releases.
+    validations:
+      required: true
+  - type: textarea
+    id: interpretation
+    attributes:
+      label: Narrow interpretation
+      description: State exactly what the result establishes and what it does not establish.
+    validations:
+      required: true
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Limitations, null results, and unresolved issues
+      description: Include unfavorable findings and known threats to validity.
+    validations:
+      required: true

@@ -1,0 +1,11 @@
+{
+  "baseline": "31d346e7b62c5a61042a57fdab9c5bec3e825e95",
+  "classification": "BLOCKED_MATHEMATICAL",
+  "sha256": {
+    "audit/prospective/freeze_gate.py": "9381c2e26266a867858aace299f2a786dbf4e8fadeb2a92107ac01bdb958f7e1",
+    "audit/prospective/test_freeze_gate.py": "b4d9c47becf7ac8f347b20637394bbc7e1254c7656e0b1fe697f9f6cf3ba0b15",
+    "audit/prospective/execution_2026-10-15.json": "fee7f61bd571a2ecaf868ef9c9ee25add7f3eb6af9cd647b849cda2183d8737c",
+    "docs/PROSPECTIVE_EXECUTION_2026-10-15.md": "ecda8b9d545eeedc2173187d1e41d6c77dc42cc096e78b4b8d2bb5b9ab34be51",
+    "audit/physical_domain/derivation_status.json": "685d49930908974e9754bf573dcab068baca9ec1786dc019c51038f45fb55205"
+  }
+}

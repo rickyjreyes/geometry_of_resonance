@@ -1,0 +1,1225 @@
+{
+  "schema": "WCT_CROSS_DOMAIN_TARGETS_V1",
+  "audit_date_utc": "2026-10-07",
+  "precision_policy": "Exact source decimal tokens retained as strings; algebraic calculations use 80-digit arithmetic; Monte Carlo uses float64 without pre-rounding. Printed report decimals are presentation only.",
+  "primary_target_ids": [
+    "GWTC_V1",
+    "CMS",
+    "NIST_FE160",
+    "LHCB_A"
+  ],
+  "supplementary_reference_ids": [
+    "GWTC_V1",
+    "CMS",
+    "NIST_FE160",
+    "LHCB_K1"
+  ],
+  "records": [
+    {
+      "id": "GWTC_V1",
+      "domain": "GWTC",
+      "value_decimal": "9.602325620315224",
+      "quantity_type": "log_angular_frequency",
+      "dimension": "1",
+      "coordinate": "ell=ln(M_chirp / M_sun)",
+      "coordinate_is_log": true,
+      "observable": "Distribution of positive source-frame chirp masses M_chirp (solar-mass units), 173 training and 104 retained holdout events",
+      "role": "primary",
+      "empirical_status": "TRAINING_SELECTED_THEN_DECLARED_FROZEN",
+      "fixed_before_holdout": "claimed_by_manifest_not_independently_timestamp_proved",
+      "uncertainty": null,
+      "uncertainty_reason": "No calibrated uncertainty for this frequency estimand supplied in the cited freeze/result; scan grids and p-values are not error bars.",
+      "source": {
+        "id": "E008",
+        "repository": "rickyjreyes/GWTC",
+        "revision": "bf95826c93ba11001f3461b653e3f279b4799573",
+        "path": "tables/gwtc_frozen_mode.json",
+        "git_blob_sha1": "d788fa7d3343dad1f428dae7559b97ff91a95263",
+        "sha256": "0ffb240a3eafeb16ade3e737b8aa72395e6a4c35e5af4c2e3b4b6daea928fce5",
+        "url": "https://github.com/rickyjreyes/GWTC/blob/bf95826c93ba11001f3461b653e3f279b4799573/tables/gwtc_frozen_mode.json",
+        "json_pointer_or_locator": "/k_star"
+      },
+      "source_window": {
+        "ell_min": "0.17058630057553367",
+        "ell_max": "4.61512051684126",
+        "width": "4.444534216265726",
+        "meaning": "training data support; not derived physical closure"
+      },
+      "phase_convention": "a cos(k ell)+b sin(k ell)",
+      "reported_winding": "6.792393139583111",
+      "protocol": "GWTC_STRICT_FROZEN_MODE_V1",
+      "chronology_caveat": "Training code committed 2026-08-26 21:06:07Z; result 21:19:01Z; freeze JSON 21:19:39Z (after result). Git history alone does not establish before-result artifact immutability.",
+      "result_source": {
+        "id": "E007",
+        "repository": "rickyjreyes/GWTC",
+        "revision": "bf95826c93ba11001f3461b653e3f279b4799573",
+        "path": "tables/gwtc_frozen_holdout_result.csv",
+        "git_blob_sha1": "9af91e6af42d4a8a3b7ef2c6dcd1792fc6641c48",
+        "sha256": "18609b7eb9f5daf4cdd491d308a1a86b69ea9c9cd131b9ff6f9aa0b22eef003a",
+        "url": "https://github.com/rickyjreyes/GWTC/blob/bf95826c93ba11001f3461b653e3f279b4799573/tables/gwtc_frozen_holdout_result.csv",
+        "json_pointer_or_locator": "single result row"
+      }
+    },
+    {
+      "id": "GWTC_V3",
+      "domain": "GWTC",
+      "value_decimal": "9.794117647058822",
+      "quantity_type": "log_angular_frequency",
+      "dimension": "1",
+      "coordinate": "ell=ln(M_chirp / M_sun)",
+      "coordinate_is_log": true,
+      "observable": "Distribution of positive source-frame chirp masses M_chirp (solar-mass units), 173 training and 104 retained holdout events",
+      "role": "sensitivity",
+      "empirical_status": "ROBUSTNESS_TEST_NOT_INDEPENDENT_REPLICATION",
+      "fixed_before_holdout": false,
+      "uncertainty": null,
+      "uncertainty_reason": "No calibrated uncertainty for this frequency estimand supplied in the cited freeze/result; scan grids and p-values are not error bars.",
+      "source": {
+        "id": "E009",
+        "repository": "rickyjreyes/GWTC",
+        "revision": "bf95826c93ba11001f3461b653e3f279b4799573",
+        "path": "tables/gwtc_v3_frozen_unbinned_kde_mode.json",
+        "git_blob_sha1": "f8e612baffd66b0c188f1531997e9db1a72ab306",
+        "sha256": "2aef8999c51fe30917c78e0543a0a125a50cf0404298699758b589f9338087ff",
+        "url": "https://github.com/rickyjreyes/GWTC/blob/bf95826c93ba11001f3461b653e3f279b4799573/tables/gwtc_v3_frozen_unbinned_kde_mode.json",
+        "json_pointer_or_locator": "/k_star"
+      },
+      "source_window": {
+        "width": "4.444534216265726",
+        "meaning": "same training support"
+      },
+      "baseline": "Gaussian KDE with training LOO bandwidth choice",
+      "selected_bandwidth": "0.19675997038948742",
+      "source_status": "ROBUSTNESS_TEST_NOT_INDEPENDENT_REPLICATION"
+    },
+    {
+      "id": "GWTC_V4",
+      "domain": "GWTC",
+      "value_decimal": "9.7",
+      "quantity_type": "log_angular_frequency",
+      "dimension": "1",
+      "coordinate": "ell=ln(M_chirp / M_sun)",
+      "coordinate_is_log": true,
+      "observable": "Distribution of positive source-frame chirp masses M_chirp (solar-mass units), 173 training and 104 retained holdout events",
+      "role": "sensitivity",
+      "empirical_status": "EXTERNALLY_PUBLISHED_FIXED_TARGET_ROBUSTNESS",
+      "fixed_before_holdout": false,
+      "uncertainty": null,
+      "uncertainty_reason": "No calibrated uncertainty for this frequency estimand supplied in the cited freeze/result; scan grids and p-values are not error bars.",
+      "source": {
+        "id": "E011",
+        "repository": "rickyjreyes/GWTC",
+        "revision": "bf95826c93ba11001f3461b653e3f279b4799573",
+        "path": "tables/gwtc_v4_frozen_structured_null.json",
+        "git_blob_sha1": "83ef8554005a3dbad32076069da8fdef0169ba13",
+        "sha256": "99b8dea69d46383cbed8fd3b458c1197b035d918346b871541467f9868a01b28",
+        "url": "https://github.com/rickyjreyes/GWTC/blob/bf95826c93ba11001f3461b653e3f279b4799573/tables/gwtc_v4_frozen_structured_null.json",
+        "json_pointer_or_locator": "/k_pred"
+      },
+      "source_window": {
+        "width": "4.444534216265726",
+        "meaning": "same training support"
+      },
+      "future_acceptance_band": [
+        "9.5",
+        "10.0"
+      ],
+      "future_band_is_uncertainty": false,
+      "source_status": "ROBUSTNESS_CHALLENGE_NOT_INDEPENDENT_REPLICATION",
+      "note": "9.7 is an exact imposed V4/future-test value, not a rounded replacement for V1/V3; V4 reused previously inspected data."
+    },
+    {
+      "id": "CMS",
+      "domain": "CMS",
+      "value_decimal": "7.025825825825827",
+      "quantity_type": "log_angular_frequency",
+      "dimension": "1",
+      "coordinate": "ell=ln(m_mumu / 1 GeV)",
+      "coordinate_is_log": true,
+      "observable": "Inclusive opposite-sign dimuon residual against degree-7 robust Chebyshev background, 2–120 GeV, resonance masks",
+      "role": "primary",
+      "empirical_status": "EXPLORATORY_DISCOVERY_WITH_FROZEN_FILE_REPLICATION",
+      "fixed_before_holdout": true,
+      "uncertainty": null,
+      "uncertainty_reason": "No calibrated uncertainty for this frequency estimand supplied in the cited freeze/result; scan grids and p-values are not error bars.",
+      "source": {
+        "id": "E061",
+        "repository": "rickyjreyes/wct-cms",
+        "revision": "82a007c4f81691b522cad7611c0b711a0ff94163",
+        "path": "docs/CMS_RUN2016G_FILE2_PHASE_LOCK_RESULT_2026-08-31.json",
+        "git_blob_sha1": "6c3e90c12a3a4ddabffa769d0edaaa2f9375471a",
+        "sha256": "5ba08e6a2d22af9a6ef42a07afb44c37a560bdf58f6e88e67b279a39c8740a4a",
+        "url": "https://github.com/rickyjreyes/wct-cms/blob/82a007c4f81691b522cad7611c0b711a0ff94163/docs/CMS_RUN2016G_FILE2_PHASE_LOCK_RESULT_2026-08-31.json",
+        "json_pointer_or_locator": "/omega"
+      },
+      "freeze_source": {
+        "id": "E057",
+        "repository": "rickyjreyes/wct-cms",
+        "revision": "82a007c4f81691b522cad7611c0b711a0ff94163",
+        "path": "docs/CMS_CANDIDATE_FREEZE_2026-08-28.md",
+        "git_blob_sha1": "779bb9015797edbc47e91adf49cdba42af72c9fb",
+        "sha256": "de417e51a62284b6336a9e0d1afb15e3fdd13fd0ccbd9131120504c6f3f92344",
+        "url": "https://github.com/rickyjreyes/wct-cms/blob/82a007c4f81691b522cad7611c0b711a0ff94163/docs/CMS_CANDIDATE_FREEZE_2026-08-28.md",
+        "json_pointer_or_locator": "Frozen candidate"
+      },
+      "phase_source_discovery": "-0.18895382226307825",
+      "phase_G2": "-0.2313916852932179",
+      "phase_convention": "A cos(omega ell - phi)",
+      "holdout_level": "G2 is an independent file within Run2016G, not an independent detector or run period",
+      "full_crop": {
+        "min": "2",
+        "max": "120"
+      },
+      "mask_intervals": [
+        [
+          "2.9",
+          "3.3"
+        ],
+        [
+          "3.55",
+          "3.85"
+        ],
+        [
+          "8.5",
+          "11.5"
+        ],
+        [
+          "80",
+          "100"
+        ]
+      ],
+      "physical_domain_width": null,
+      "reported_discovery_bin_center_span_cycles": "4.565194460725239"
+    },
+    {
+      "id": "NIST_FE160",
+      "domain": "NIST",
+      "value_decimal": "31.3265306122449",
+      "quantity_type": "log_angular_frequency",
+      "dimension": "1",
+      "coordinate": "ell=ln(wavenumber / 1 cm^-1)",
+      "coordinate_is_log": true,
+      "observable": "Line-count density of unique atomic transitions, not calibrated spectral flux",
+      "role": "primary",
+      "empirical_status": "EXPLORATORY_CANONICAL_SCAN",
+      "fixed_before_holdout": false,
+      "uncertainty": null,
+      "uncertainty_reason": "No calibrated uncertainty for this frequency estimand supplied in the cited freeze/result; scan grids and p-values are not error bars.",
+      "source": {
+        "id": "E040",
+        "repository": "rickyjreyes/NIST",
+        "revision": "4ddc3948c1e119f463e5d3d49bda1814ed195a84",
+        "path": "outputs/fe_ion2_160/nist_summary.json",
+        "git_blob_sha1": "6fc35b3669f8d33290f8f7a181696c518217e7b7",
+        "sha256": "6f3d57b87f3cbef82b134f5ba895b00638b5e21f4c8000ce4d63f08e74f60fe4",
+        "url": "https://github.com/rickyjreyes/NIST/blob/4ddc3948c1e119f463e5d3d49bda1814ed195a84/outputs/fe_ion2_160/nist_summary.json",
+        "json_pointer_or_locator": "/best/k_best"
+      },
+      "source_window": {
+        "ell_min": "8.658759675005578",
+        "ell_max": "10.812819095459146",
+        "width": "2.1540594204535672",
+        "meaning": "histogram first-to-last bin-center span, not a physical confinement interval"
+      },
+      "physical_wavenumber_min_cm_inverse": "5721.4978",
+      "physical_wavenumber_max_cm_inverse": "49990.73",
+      "n_unique_lines": 9447,
+      "reported_branch": {
+        "n_obs": "10.739649568878214",
+        "nearest": [
+          {
+            "branch": "integer_1_to_40",
+            "n": "11.0",
+            "k_target": "32.08594791894009",
+            "k_error": "-0.7594173066951946",
+            "abs_k_error": "0.7594173066951946",
+            "n_error": "-0.26035043112178613",
+            "abs_n_error": "0.26035043112178613"
+          },
+          {
+            "branch": "koide_10_15_20",
+            "n": "10.0",
+            "k_target": "29.169043562672815",
+            "k_error": "2.157487049572083",
+            "abs_k_error": "2.157487049572083",
+            "n_error": "0.7396495688782139",
+            "abs_n_error": "0.7396495688782139"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "10.0",
+            "k_target": "29.169043562672815",
+            "k_error": "2.157487049572083",
+            "abs_k_error": "2.157487049572083",
+            "n_error": "0.7396495688782139",
+            "abs_n_error": "0.7396495688782139"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "12.0",
+            "k_target": "35.00285227520738",
+            "k_error": "-3.676321662962483",
+            "abs_k_error": "3.676321662962483",
+            "n_error": "-1.2603504311217861",
+            "abs_n_error": "1.2603504311217861"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "9.0",
+            "k_target": "26.252139206405534",
+            "k_error": "5.074391405839364",
+            "abs_k_error": "5.074391405839364",
+            "n_error": "1.7396495688782139",
+            "abs_n_error": "1.7396495688782139"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "13.0",
+            "k_target": "37.91975663147466",
+            "k_error": "-6.593226019229764",
+            "abs_k_error": "6.593226019229764",
+            "n_error": "-2.260350431121786",
+            "abs_n_error": "2.260350431121786"
+          },
+          {
+            "branch": "folded_4over9",
+            "n": "13.333333333333334",
+            "k_target": "38.892058083563754",
+            "k_error": "-7.565527471318855",
+            "abs_k_error": "7.565527471318855",
+            "n_error": "-2.59368376445512",
+            "abs_n_error": "2.59368376445512"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "8.0",
+            "k_target": "23.335234850138253",
+            "k_error": "7.991295762106645",
+            "abs_k_error": "7.991295762106645",
+            "n_error": "2.739649568878214",
+            "abs_n_error": "2.739649568878214"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "14.0",
+            "k_target": "40.83666098774194",
+            "k_error": "-9.510130375497045",
+            "abs_k_error": "9.510130375497045",
+            "n_error": "-3.260350431121786",
+            "abs_n_error": "3.260350431121786"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "7.0",
+            "k_target": "20.41833049387097",
+            "k_error": "10.908200118373927",
+            "abs_k_error": "10.908200118373927",
+            "n_error": "3.739649568878214",
+            "abs_n_error": "3.739649568878214"
+          }
+        ]
+      },
+      "null_p": "0.0001999600079984003",
+      "null_n": 5000
+    },
+    {
+      "id": "NIST_FE120",
+      "domain": "NIST",
+      "value_decimal": "31.3265306122449",
+      "quantity_type": "log_angular_frequency",
+      "dimension": "1",
+      "coordinate": "ell=ln(wavenumber / 1 cm^-1)",
+      "coordinate_is_log": true,
+      "observable": "Line-count density of unique atomic transitions, not calibrated spectral flux",
+      "role": "bin_sensitivity_same_lines",
+      "empirical_status": "EXPLORATORY_CANONICAL_SCAN",
+      "fixed_before_holdout": false,
+      "uncertainty": null,
+      "uncertainty_reason": "No calibrated uncertainty for this frequency estimand supplied in the cited freeze/result; scan grids and p-values are not error bars.",
+      "source": {
+        "id": "E039",
+        "repository": "rickyjreyes/NIST",
+        "revision": "4ddc3948c1e119f463e5d3d49bda1814ed195a84",
+        "path": "outputs/fe_ion2_120/nist_summary.json",
+        "git_blob_sha1": "1ae172a78f868ab48bf46bfbd4adeb31cd320383",
+        "sha256": "353191b1d889406582abcae08d3babc89a3aa0da4a43cf9397b1958b5e5db0a6",
+        "url": "https://github.com/rickyjreyes/NIST/blob/4ddc3948c1e119f463e5d3d49bda1814ed195a84/outputs/fe_ion2_120/nist_summary.json",
+        "json_pointer_or_locator": "/best/k_best"
+      },
+      "source_window": {
+        "ell_min": "8.661017598926389",
+        "ell_max": "10.810561171538335",
+        "width": "2.1495435726119467",
+        "meaning": "histogram first-to-last bin-center span, not a physical confinement interval"
+      },
+      "physical_wavenumber_min_cm_inverse": "5721.4978",
+      "physical_wavenumber_max_cm_inverse": "49990.73",
+      "n_unique_lines": 9447,
+      "reported_branch": {
+        "n_obs": "10.717134580264222",
+        "nearest": [
+          {
+            "branch": "integer_1_to_40",
+            "n": "11.0",
+            "k_target": "32.153355372551296",
+            "k_error": "-0.8268247603063976",
+            "abs_k_error": "0.8268247603063976",
+            "n_error": "-0.28286541973577783",
+            "abs_n_error": "0.28286541973577783"
+          },
+          {
+            "branch": "koide_10_15_20",
+            "n": "10.0",
+            "k_target": "29.230323065955726",
+            "k_error": "2.096207546289172",
+            "abs_k_error": "2.096207546289172",
+            "n_error": "0.7171345802642222",
+            "abs_n_error": "0.7171345802642222"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "10.0",
+            "k_target": "29.230323065955726",
+            "k_error": "2.096207546289172",
+            "abs_k_error": "2.096207546289172",
+            "n_error": "0.7171345802642222",
+            "abs_n_error": "0.7171345802642222"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "12.0",
+            "k_target": "35.07638767914687",
+            "k_error": "-3.7498570669019706",
+            "abs_k_error": "3.7498570669019706",
+            "n_error": "-1.2828654197357778",
+            "abs_n_error": "1.2828654197357778"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "9.0",
+            "k_target": "26.307290759360153",
+            "k_error": "5.019239852884745",
+            "abs_k_error": "5.019239852884745",
+            "n_error": "1.7171345802642222",
+            "abs_n_error": "1.7171345802642222"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "13.0",
+            "k_target": "37.99941998574245",
+            "k_error": "-6.672889373497551",
+            "abs_k_error": "6.672889373497551",
+            "n_error": "-2.282865419735778",
+            "abs_n_error": "2.282865419735778"
+          },
+          {
+            "branch": "folded_4over9",
+            "n": "13.333333333333334",
+            "k_target": "38.97376408794097",
+            "k_error": "-7.647233475696073",
+            "abs_k_error": "7.647233475696073",
+            "n_error": "-2.6161987530691118",
+            "abs_n_error": "2.6161987530691118"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "8.0",
+            "k_target": "23.38425845276458",
+            "k_error": "7.942272159480318",
+            "abs_k_error": "7.942272159480318",
+            "n_error": "2.717134580264222",
+            "abs_n_error": "2.717134580264222"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "14.0",
+            "k_target": "40.922452292338015",
+            "k_error": "-9.595921680093117",
+            "abs_k_error": "9.595921680093117",
+            "n_error": "-3.282865419735778",
+            "abs_n_error": "3.282865419735778"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "7.0",
+            "k_target": "20.461226146169007",
+            "k_error": "10.86530446607589",
+            "abs_k_error": "10.86530446607589",
+            "n_error": "3.717134580264222",
+            "abs_n_error": "3.717134580264222"
+          }
+        ]
+      },
+      "null_p": "0.0001999600079984003",
+      "null_n": 5000
+    },
+    {
+      "id": "NIST_FE200",
+      "domain": "NIST",
+      "value_decimal": "31.3265306122449",
+      "quantity_type": "log_angular_frequency",
+      "dimension": "1",
+      "coordinate": "ell=ln(wavenumber / 1 cm^-1)",
+      "coordinate_is_log": true,
+      "observable": "Line-count density of unique atomic transitions, not calibrated spectral flux",
+      "role": "bin_sensitivity_same_lines",
+      "empirical_status": "EXPLORATORY_CANONICAL_SCAN",
+      "fixed_before_holdout": false,
+      "uncertainty": null,
+      "uncertainty_reason": "No calibrated uncertainty for this frequency estimand supplied in the cited freeze/result; scan grids and p-values are not error bars.",
+      "source": {
+        "id": "E041",
+        "repository": "rickyjreyes/NIST",
+        "revision": "4ddc3948c1e119f463e5d3d49bda1814ed195a84",
+        "path": "outputs/fe_ion2_200/nist_summary.json",
+        "git_blob_sha1": "1d61b691a464066e57ea924f597f8519435867cb",
+        "sha256": "c7491ea121186b7439b9be536276a55c1c3886b46f0934a9b88d9586122a79d0",
+        "url": "https://github.com/rickyjreyes/NIST/blob/4ddc3948c1e119f463e5d3d49bda1814ed195a84/outputs/fe_ion2_200/nist_summary.json",
+        "json_pointer_or_locator": "/best/k_best"
+      },
+      "source_window": {
+        "ell_min": "8.657404920653093",
+        "ell_max": "10.814173849811631",
+        "width": "2.156768929158538",
+        "meaning": "histogram first-to-last bin-center span, not a physical confinement interval"
+      },
+      "physical_wavenumber_min_cm_inverse": "5721.4978",
+      "physical_wavenumber_max_cm_inverse": "49990.73",
+      "n_unique_lines": 9447,
+      "reported_branch": {
+        "n_obs": "10.753158562046606",
+        "nearest": [
+          {
+            "branch": "integer_1_to_40",
+            "n": "11.0",
+            "k_target": "32.045638939142464",
+            "k_error": "-0.7191083268975653",
+            "abs_k_error": "0.7191083268975653",
+            "n_error": "-0.2468414379533943",
+            "abs_n_error": "0.2468414379533943"
+          },
+          {
+            "branch": "koide_10_15_20",
+            "n": "10.0",
+            "k_target": "29.13239903558406",
+            "k_error": "2.194131576660837",
+            "abs_k_error": "2.194131576660837",
+            "n_error": "0.7531585620466057",
+            "abs_n_error": "0.7531585620466057"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "10.0",
+            "k_target": "29.13239903558406",
+            "k_error": "2.194131576660837",
+            "abs_k_error": "2.194131576660837",
+            "n_error": "0.7531585620466057",
+            "abs_n_error": "0.7531585620466057"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "12.0",
+            "k_target": "34.95887884270087",
+            "k_error": "-3.632348230455971",
+            "abs_k_error": "3.632348230455971",
+            "n_error": "-1.2468414379533943",
+            "abs_n_error": "1.2468414379533943"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "9.0",
+            "k_target": "26.219159132025656",
+            "k_error": "5.107371480219243",
+            "abs_k_error": "5.107371480219243",
+            "n_error": "1.7531585620466057",
+            "abs_n_error": "1.7531585620466057"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "13.0",
+            "k_target": "37.87211874625928",
+            "k_error": "-6.545588134014384",
+            "abs_k_error": "6.545588134014384",
+            "n_error": "-2.2468414379533943",
+            "abs_n_error": "2.2468414379533943"
+          },
+          {
+            "branch": "folded_4over9",
+            "n": "13.333333333333334",
+            "k_target": "38.843198714112084",
+            "k_error": "-7.516668101867186",
+            "abs_k_error": "7.516668101867186",
+            "n_error": "-2.5801747712867282",
+            "abs_n_error": "2.5801747712867282"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "8.0",
+            "k_target": "23.30591922846725",
+            "k_error": "8.020611383777648",
+            "abs_k_error": "8.020611383777648",
+            "n_error": "2.7531585620466057",
+            "abs_n_error": "2.7531585620466057"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "14.0",
+            "k_target": "40.78535864981768",
+            "k_error": "-9.458828037572783",
+            "abs_k_error": "9.458828037572783",
+            "n_error": "-3.2468414379533943",
+            "abs_n_error": "3.2468414379533943"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "7.0",
+            "k_target": "20.39267932490884",
+            "k_error": "10.933851287336058",
+            "abs_k_error": "10.933851287336058",
+            "n_error": "3.7531585620466057",
+            "abs_n_error": "3.7531585620466057"
+          }
+        ]
+      },
+      "null_p": "0.0001999600079984003",
+      "null_n": 5000
+    },
+    {
+      "id": "NIST_CO120",
+      "domain": "NIST",
+      "value_decimal": "30.24489795918367",
+      "quantity_type": "log_angular_frequency",
+      "dimension": "1",
+      "coordinate": "ell=ln(wavenumber / 1 cm^-1)",
+      "coordinate_is_log": true,
+      "observable": "Line-count density of unique atomic transitions, not calibrated spectral flux",
+      "role": "within_domain_control",
+      "empirical_status": "EXPLORATORY_NEIGHBOR_CONTROL",
+      "fixed_before_holdout": false,
+      "uncertainty": null,
+      "uncertainty_reason": "No calibrated uncertainty for this frequency estimand supplied in the cited freeze/result; scan grids and p-values are not error bars.",
+      "source": {
+        "id": "E036",
+        "repository": "rickyjreyes/NIST",
+        "revision": "4ddc3948c1e119f463e5d3d49bda1814ed195a84",
+        "path": "outputs/batch_neighbors/co_ion2_120_full_bin120/nist_summary.json",
+        "git_blob_sha1": "4b8636ed236211ffdeff0102b416a65573f19ee9",
+        "sha256": "131bdd0f531654c2d198889ae4470540298b85427d6f39fb5f09d52ef6b49030",
+        "url": "https://github.com/rickyjreyes/NIST/blob/4ddc3948c1e119f463e5d3d49bda1814ed195a84/outputs/batch_neighbors/co_ion2_120_full_bin120/nist_summary.json",
+        "json_pointer_or_locator": "/best/k_best"
+      },
+      "source_window": {
+        "ell_min": "8.534681919215165",
+        "ell_max": "10.809499926204085",
+        "width": "2.2748180069889194",
+        "meaning": "histogram first-to-last bin-center span, not a physical confinement interval"
+      },
+      "physical_wavenumber_min_cm_inverse": "5039.811",
+      "physical_wavenumber_max_cm_inverse": "49963.998",
+      "n_unique_lines": 2450,
+      "reported_branch": {
+        "n_obs": "10.950120859634062",
+        "nearest": [
+          {
+            "branch": "integer_1_to_40",
+            "n": "11.0",
+            "k_target": "30.38266717013556",
+            "k_error": "-0.13776921095188754",
+            "abs_k_error": "0.13776921095188754",
+            "n_error": "-0.04987914036593821",
+            "abs_n_error": "0.04987914036593821"
+          },
+          {
+            "branch": "koide_10_15_20",
+            "n": "10.0",
+            "k_target": "27.620606518305056",
+            "k_error": "2.624291440878615",
+            "abs_k_error": "2.624291440878615",
+            "n_error": "0.9501208596340618",
+            "abs_n_error": "0.9501208596340618"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "10.0",
+            "k_target": "27.620606518305056",
+            "k_error": "2.624291440878615",
+            "abs_k_error": "2.624291440878615",
+            "n_error": "0.9501208596340618",
+            "abs_n_error": "0.9501208596340618"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "12.0",
+            "k_target": "33.144727821966065",
+            "k_error": "-2.8998298627823935",
+            "abs_k_error": "2.8998298627823935",
+            "n_error": "-1.0498791403659382",
+            "abs_n_error": "1.0498791403659382"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "9.0",
+            "k_target": "24.85854586647455",
+            "k_error": "5.386352092709121",
+            "abs_k_error": "5.386352092709121",
+            "n_error": "1.9501208596340618",
+            "abs_n_error": "1.9501208596340618"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "13.0",
+            "k_target": "35.906788473796574",
+            "k_error": "-5.661890514612903",
+            "abs_k_error": "5.661890514612903",
+            "n_error": "-2.049879140365938",
+            "abs_n_error": "2.049879140365938"
+          },
+          {
+            "branch": "folded_4over9",
+            "n": "13.333333333333334",
+            "k_target": "36.82747535774008",
+            "k_error": "-6.582577398556406",
+            "abs_k_error": "6.582577398556406",
+            "n_error": "-2.383212473699272",
+            "abs_n_error": "2.383212473699272"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "8.0",
+            "k_target": "22.096485214644044",
+            "k_error": "8.148412744539627",
+            "abs_k_error": "8.148412744539627",
+            "n_error": "2.950120859634062",
+            "abs_n_error": "2.950120859634062"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "14.0",
+            "k_target": "38.66884912562708",
+            "k_error": "-8.423951166443405",
+            "abs_k_error": "8.423951166443405",
+            "n_error": "-3.049879140365938",
+            "abs_n_error": "3.049879140365938"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "7.0",
+            "k_target": "19.33442456281354",
+            "k_error": "10.910473396370133",
+            "abs_k_error": "10.910473396370133",
+            "n_error": "3.950120859634062",
+            "abs_n_error": "3.950120859634062"
+          }
+        ]
+      },
+      "null_p": "0.0001999600079984003",
+      "null_n": 5000
+    },
+    {
+      "id": "NIST_CO160",
+      "domain": "NIST",
+      "value_decimal": "30.24489795918367",
+      "quantity_type": "log_angular_frequency",
+      "dimension": "1",
+      "coordinate": "ell=ln(wavenumber / 1 cm^-1)",
+      "coordinate_is_log": true,
+      "observable": "Line-count density of unique atomic transitions, not calibrated spectral flux",
+      "role": "within_domain_control",
+      "empirical_status": "EXPLORATORY_NEIGHBOR_CONTROL",
+      "fixed_before_holdout": false,
+      "uncertainty": null,
+      "uncertainty_reason": "No calibrated uncertainty for this frequency estimand supplied in the cited freeze/result; scan grids and p-values are not error bars.",
+      "source": {
+        "id": "E037",
+        "repository": "rickyjreyes/NIST",
+        "revision": "4ddc3948c1e119f463e5d3d49bda1814ed195a84",
+        "path": "outputs/batch_neighbors/co_ion2_160_full/nist_summary.json",
+        "git_blob_sha1": "f2e8d9aede5e823ff4af4ac424c937b0fe82fb57",
+        "sha256": "b7d87d8b2c893be269bc66c94fd36c754325e6c099b6dfb631246d30aa5937a3",
+        "url": "https://github.com/rickyjreyes/NIST/blob/4ddc3948c1e119f463e5d3d49bda1814ed195a84/outputs/batch_neighbors/co_ion2_160_full/nist_summary.json",
+        "json_pointer_or_locator": "/best/k_best"
+      },
+      "source_window": {
+        "ell_min": "8.532292404501941",
+        "ell_max": "10.811889440917309",
+        "width": "2.2795970364153675",
+        "meaning": "histogram first-to-last bin-center span, not a physical confinement interval"
+      },
+      "physical_wavenumber_min_cm_inverse": "5039.811",
+      "physical_wavenumber_max_cm_inverse": "49963.998",
+      "n_unique_lines": 2450,
+      "reported_branch": {
+        "n_obs": "10.973125315221532",
+        "nearest": [
+          {
+            "branch": "integer_1_to_40",
+            "n": "11.0",
+            "k_target": "30.318971851120587",
+            "k_error": "-0.07407389193691571",
+            "abs_k_error": "0.07407389193691571",
+            "n_error": "-0.026874684778467994",
+            "abs_n_error": "0.026874684778467994"
+          },
+          {
+            "branch": "koide_10_15_20",
+            "n": "10.0",
+            "k_target": "27.562701682836902",
+            "k_error": "2.682196276346769",
+            "abs_k_error": "2.682196276346769",
+            "n_error": "0.973125315221532",
+            "abs_n_error": "0.973125315221532"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "10.0",
+            "k_target": "27.562701682836902",
+            "k_error": "2.682196276346769",
+            "abs_k_error": "2.682196276346769",
+            "n_error": "0.973125315221532",
+            "abs_n_error": "0.973125315221532"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "12.0",
+            "k_target": "33.07524201940428",
+            "k_error": "-2.8303440602206074",
+            "abs_k_error": "2.8303440602206074",
+            "n_error": "-1.026874684778468",
+            "abs_n_error": "1.026874684778468"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "9.0",
+            "k_target": "24.80643151455321",
+            "k_error": "5.4384664446304605",
+            "abs_k_error": "5.4384664446304605",
+            "n_error": "1.973125315221532",
+            "abs_n_error": "1.973125315221532"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "13.0",
+            "k_target": "35.83151218768798",
+            "k_error": "-5.586614228504306",
+            "abs_k_error": "5.586614228504306",
+            "n_error": "-2.026874684778468",
+            "abs_n_error": "2.026874684778468"
+          },
+          {
+            "branch": "folded_4over9",
+            "n": "13.333333333333334",
+            "k_target": "36.7502689104492",
+            "k_error": "-6.5053709512655296",
+            "abs_k_error": "6.5053709512655296",
+            "n_error": "-2.360208018111802",
+            "abs_n_error": "2.360208018111802"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "8.0",
+            "k_target": "22.050161346269523",
+            "k_error": "8.194736612914149",
+            "abs_k_error": "8.194736612914149",
+            "n_error": "2.973125315221532",
+            "abs_n_error": "2.973125315221532"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "14.0",
+            "k_target": "38.58778235597166",
+            "k_error": "-8.34288439678799",
+            "abs_k_error": "8.34288439678799",
+            "n_error": "-3.026874684778468",
+            "abs_n_error": "3.026874684778468"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "7.0",
+            "k_target": "19.29389117798583",
+            "k_error": "10.95100678119784",
+            "abs_k_error": "10.95100678119784",
+            "n_error": "3.973125315221532",
+            "abs_n_error": "3.973125315221532"
+          }
+        ]
+      },
+      "null_p": "0.0001999600079984003",
+      "null_n": 5000
+    },
+    {
+      "id": "NIST_CO200",
+      "domain": "NIST",
+      "value_decimal": "30.213085234093636",
+      "quantity_type": "log_angular_frequency",
+      "dimension": "1",
+      "coordinate": "ell=ln(wavenumber / 1 cm^-1)",
+      "coordinate_is_log": true,
+      "observable": "Line-count density of unique atomic transitions, not calibrated spectral flux",
+      "role": "within_domain_control",
+      "empirical_status": "EXPLORATORY_NEIGHBOR_CONTROL",
+      "fixed_before_holdout": false,
+      "uncertainty": null,
+      "uncertainty_reason": "No calibrated uncertainty for this frequency estimand supplied in the cited freeze/result; scan grids and p-values are not error bars.",
+      "source": {
+        "id": "E038",
+        "repository": "rickyjreyes/NIST",
+        "revision": "4ddc3948c1e119f463e5d3d49bda1814ed195a84",
+        "path": "outputs/batch_neighbors/co_ion2_200_full_bin200/nist_summary.json",
+        "git_blob_sha1": "db91c2e7bf4974d87c6bb9aa4d47b725a996ebb1",
+        "sha256": "fa14ecaff6f1fb0c08699e9daba9ca761b8626a5b0a08159f8a8af377cf7e9d3",
+        "url": "https://github.com/rickyjreyes/NIST/blob/4ddc3948c1e119f463e5d3d49bda1814ed195a84/outputs/batch_neighbors/co_ion2_200_full_bin200/nist_summary.json",
+        "json_pointer_or_locator": "/best/k_best"
+      },
+      "source_window": {
+        "ell_min": "8.530858695674008",
+        "ell_max": "10.813323149745242",
+        "width": "2.282464454071235",
+        "meaning": "histogram first-to-last bin-center span, not a physical confinement interval"
+      },
+      "physical_wavenumber_min_cm_inverse": "5039.811",
+      "physical_wavenumber_max_cm_inverse": "49963.998",
+      "n_unique_lines": 2450,
+      "reported_branch": {
+        "n_obs": "10.975371523078365",
+        "nearest": [
+          {
+            "branch": "integer_1_to_40",
+            "n": "11.0",
+            "k_target": "30.280882690503617",
+            "k_error": "-0.06779745640998058",
+            "abs_k_error": "0.06779745640998058",
+            "n_error": "-0.0246284769216345",
+            "abs_n_error": "0.0246284769216345"
+          },
+          {
+            "branch": "koide_10_15_20",
+            "n": "10.0",
+            "k_target": "27.52807517318511",
+            "k_error": "2.685010060908528",
+            "abs_k_error": "2.685010060908528",
+            "n_error": "0.9753715230783655",
+            "abs_n_error": "0.9753715230783655"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "10.0",
+            "k_target": "27.52807517318511",
+            "k_error": "2.685010060908528",
+            "abs_k_error": "2.685010060908528",
+            "n_error": "0.9753715230783655",
+            "abs_n_error": "0.9753715230783655"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "12.0",
+            "k_target": "33.03369020782213",
+            "k_error": "-2.8206049737284964",
+            "abs_k_error": "2.8206049737284964",
+            "n_error": "-1.0246284769216345",
+            "abs_n_error": "1.0246284769216345"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "9.0",
+            "k_target": "24.775267655866596",
+            "k_error": "5.43781757822704",
+            "abs_k_error": "5.43781757822704",
+            "n_error": "1.9753715230783655",
+            "abs_n_error": "1.9753715230783655"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "13.0",
+            "k_target": "35.78649772514064",
+            "k_error": "-5.573412491047005",
+            "abs_k_error": "5.573412491047005",
+            "n_error": "-2.0246284769216345",
+            "abs_n_error": "2.0246284769216345"
+          },
+          {
+            "branch": "folded_4over9",
+            "n": "13.333333333333334",
+            "k_target": "36.70410023091348",
+            "k_error": "-6.491014996819846",
+            "abs_k_error": "6.491014996819846",
+            "n_error": "-2.3579618102549684",
+            "abs_n_error": "2.3579618102549684"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "8.0",
+            "k_target": "22.022460138548087",
+            "k_error": "8.190625095545549",
+            "abs_k_error": "8.190625095545549",
+            "n_error": "2.9753715230783655",
+            "abs_n_error": "2.9753715230783655"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "14.0",
+            "k_target": "38.53930524245915",
+            "k_error": "-8.326220008365514",
+            "abs_k_error": "8.326220008365514",
+            "n_error": "-3.0246284769216345",
+            "abs_n_error": "3.0246284769216345"
+          },
+          {
+            "branch": "integer_1_to_40",
+            "n": "7.0",
+            "k_target": "19.269652621229575",
+            "k_error": "10.943432612864061",
+            "abs_k_error": "10.943432612864061",
+            "n_error": "3.9753715230783655",
+            "abs_n_error": "3.9753715230783655"
+          }
+        ]
+      },
+      "null_p": "0.0001999600079984003",
+      "null_n": 5000
+    },
+    {
+      "id": "LHCB_A",
+      "domain": "LHCb",
+      "value_decimal": "1.2282873602374818",
+      "quantity_type": "interregional_triplet_regression_slope",
+      "dimension": "1",
+      "coordinate": "n_j=k_j Delta_ell_A/(2 pi); regress n_B on n_A with zero intercept",
+      "coordinate_is_log": false,
+      "observable": "Pure least-squares dilation of selected B-low and signal-region winding triplets",
+      "role": "primary",
+      "empirical_status": "EXPLORATORY_POST_SELECTION_TRIPLET_REGRESSION",
+      "fixed_before_holdout": false,
+      "uncertainty": {
+        "kind": "conditional well-resampling bootstrap distribution reported approximately in original paper",
+        "bootstrap_n": 2000,
+        "standard_deviation_approx": "0.36",
+        "one_sigma_band_approx": [
+          "0.82",
+          "1.45"
+        ],
+        "median_approx": "1.228",
+        "distribution": "heavy_tailed",
+        "paper_id": "P_LHCB_MAY13",
+        "normal_significance_valid": false,
+        "calibrates_full_experimental_pipeline": false
+      },
+      "uncertainty_reason": "Paper section 15.2 reports conditional resampling of top wells, reselecting best-Koide triplets; not a frequency CI and not a Gaussian measurement error.",
+      "source": {
+        "id": "E022",
+        "repository": "rickyjreyes/LHC",
+        "revision": "5fc36d638e0ba1b03e236d6a11547b29966bbe8b",
+        "path": "lhcb_wct_analysis_kit/outputs_wct_cross_region_scaling/cross_region_scaling_summary.json",
+        "git_blob_sha1": "3264411221a9de00938b959cdf7c73ecb8e794c7",
+        "sha256": "54d098fa65e6d2b4dfbf0d681e68f3726b82c99296ea9fb1846bc81b35ff5ff8",
+        "url": "https://github.com/rickyjreyes/LHC/blob/5fc36d638e0ba1b03e236d6a11547b29966bbe8b/lhcb_wct_analysis_kit/outputs_wct_cross_region_scaling/cross_region_scaling_summary.json",
+        "json_pointer_or_locator": "/observed_map/scale_a"
+      },
+      "definition": "a=(n_A dot n_B)/(n_A dot n_A)",
+      "input_triplets": {
+        "A": [
+          "9.814120755431825",
+          "14.56141637666396",
+          "19.01961386711593"
+        ],
+        "B": [
+          "12.142121492766814",
+          "17.634985977589896",
+          "23.508242739755296"
+        ],
+        "k_A": [
+          "12.9",
+          "19.14",
+          "25.0"
+        ],
+        "k_B": [
+          "15.96",
+          "23.18",
+          "30.9"
+        ]
+      },
+      "selection": {
+        "pair_mode": "koide",
+        "top_wells_A": 12,
+        "top_wells_B": 11
+      },
+      "fit_rmse": "0.17511381200126633",
+      "fit_rmse_is_sigma_a": false,
+      "DSI_period": false,
+      "source_p_values": {
+        "p_scale_rmse": "0.00585997656009376",
+        "p_affine_rmse": "0.1421554313782745",
+        "p_phase_coherence": "0.45298618805524776",
+        "p_affine_and_phase": "0.06791572833708664",
+        "null_scale_rmse_mean": "2.5255583326557063",
+        "null_scale_rmse_05": "0.5644019532720019",
+        "null_scale_rmse_01": "0.23604548548448734",
+        "null_affine_rmse_mean": "0.9732156334703886",
+        "null_affine_rmse_05": "0.05761459052066619",
+        "null_affine_rmse_01": "0.012402804640741796",
+        "null_phase_C_mean": "0.5323908053919301",
+        "null_phase_C_95": "0.9924629746670254",
+        "null_phase_C_99": "0.999846410665116"
+      }
+    },
+    {
+      "id": "LHCB_K1",
+      "domain": "LHCb",
+      "value_decimal": "7.61054",
+      "quantity_type": "log_angular_frequency",
+      "dimension": "1",
+      "coordinate": "ell=ln(q2 / 1 GeV^2)",
+      "coordinate_is_log": true,
+      "observable": "Exclusive B0 -> K*0 mu+ mu- candidate log-yield residual",
+      "role": "supplementary_reference",
+      "empirical_status": "HISTORICAL_DOMINANT_LOW_FREQUENCY_FIXED_IN_LATER_MODEL",
+      "fixed_before_holdout": false,
+      "uncertainty": null,
+      "uncertainty_reason": "No calibrated uncertainty for this frequency estimand supplied in the cited freeze/result; scan grids and p-values are not error bars.",
+      "source": {
+        "id": "E021",
+        "repository": "rickyjreyes/LHC",
+        "revision": "5fc36d638e0ba1b03e236d6a11547b29966bbe8b",
+        "path": "lhcb_wct_analysis_kit/outputs_logcos_poisson_twomode_kde_polar/two_mode_summary.json",
+        "git_blob_sha1": "ef6d37b135dd5699b77b911bda88eb263b2b1435",
+        "sha256": "7593c938affa9b7f6522c2e14cf74b44336b329cf111ccf9d14359195ccd9739",
+        "url": "https://github.com/rickyjreyes/LHC/blob/5fc36d638e0ba1b03e236d6a11547b29966bbe8b/lhcb_wct_analysis_kit/outputs_logcos_poisson_twomode_kde_polar/two_mode_summary.json",
+        "json_pointer_or_locator": "/k1_fixed"
+      },
+      "source_window": {
+        "width": "4.780150335923678",
+        "meaning": "sum of retained widths of disconnected analysis intervals; no physical boundary gluing"
+      },
+      "historical_paper_id": "P_LHCB_MAY13",
+      "note": "Reference is retained as published; no precision beyond source literal and no independent interval for its original estimation is recovered."
+    },
+    {
+      "id": "LHCB_K2REF",
+      "domain": "LHCb",
+      "value_decimal": "19.5296",
+      "quantity_type": "log_angular_frequency",
+      "dimension": "1",
+      "coordinate": "ell=ln(q2 / 1 GeV^2)",
+      "coordinate_is_log": true,
+      "observable": "Exclusive B0 -> K*0 mu+ mu- candidate log-yield residual",
+      "role": "sensitivity_reference",
+      "empirical_status": "HISTORICAL_HIGH_FREQUENCY_REFERENCE_FIXED_IN_LATER_MODEL",
+      "fixed_before_holdout": false,
+      "uncertainty": null,
+      "uncertainty_reason": "No calibrated uncertainty for this frequency estimand supplied in the cited freeze/result; scan grids and p-values are not error bars.",
+      "source": {
+        "id": "E021",
+        "repository": "rickyjreyes/LHC",
+        "revision": "5fc36d638e0ba1b03e236d6a11547b29966bbe8b",
+        "path": "lhcb_wct_analysis_kit/outputs_logcos_poisson_twomode_kde_polar/two_mode_summary.json",
+        "git_blob_sha1": "ef6d37b135dd5699b77b911bda88eb263b2b1435",
+        "sha256": "7593c938affa9b7f6522c2e14cf74b44336b329cf111ccf9d14359195ccd9739",
+        "url": "https://github.com/rickyjreyes/LHC/blob/5fc36d638e0ba1b03e236d6a11547b29966bbe8b/lhcb_wct_analysis_kit/outputs_logcos_poisson_twomode_kde_polar/two_mode_summary.json",
+        "json_pointer_or_locator": "/reference_k2"
+      },
+      "source_window": {
+        "width": "4.780150335923678",
+        "meaning": "sum of retained widths of disconnected analysis intervals; no physical boundary gluing"
+      },
+      "historical_paper_id": "P_LHCB_MAY13",
+      "note": "Reference is retained as published; no precision beyond source literal and no independent interval for its original estimation is recovered."
+    },
+    {
+      "id": "LHCB_K2BEST",
+      "domain": "LHCb",
+      "value_decimal": "23.08",
+      "quantity_type": "log_angular_frequency",
+      "dimension": "1",
+      "coordinate": "ell=ln(q2 / 1 GeV^2)",
+      "coordinate_is_log": true,
+      "observable": "High-frequency second mode conditional on fixed k1=7.61054 and bounded KDE-Poisson fit",
+      "role": "sensitivity_scanned_optimum",
+      "empirical_status": "EXPLORATORY_LOCAL_SECOND_MODE_SCAN",
+      "fixed_before_holdout": false,
+      "uncertainty": null,
+      "uncertainty_reason": "No calibrated uncertainty for this frequency estimand supplied in the cited freeze/result; scan grids and p-values are not error bars.",
+      "source": {
+        "id": "E021",
+        "repository": "rickyjreyes/LHC",
+        "revision": "5fc36d638e0ba1b03e236d6a11547b29966bbe8b",
+        "path": "lhcb_wct_analysis_kit/outputs_logcos_poisson_twomode_kde_polar/two_mode_summary.json",
+        "git_blob_sha1": "ef6d37b135dd5699b77b911bda88eb263b2b1435",
+        "sha256": "7593c938affa9b7f6522c2e14cf74b44336b329cf111ccf9d14359195ccd9739",
+        "url": "https://github.com/rickyjreyes/LHC/blob/5fc36d638e0ba1b03e236d6a11547b29966bbe8b/lhcb_wct_analysis_kit/outputs_logcos_poisson_twomode_kde_polar/two_mode_summary.json",
+        "json_pointer_or_locator": "/best_two/k2"
+      },
+      "source_window": {
+        "width": "4.780150335923678",
+        "meaning": "disconnected analysis support"
+      },
+      "scan": [
+        "18.0",
+        "24.0"
+      ],
+      "amplitude_bound_active": true
+    },
+    {
+      "id": "LHCB_CMS_IMPORTED",
+      "domain": "LHCb",
+      "value_decimal": "3.5129129129129133",
+      "quantity_type": "log_angular_frequency",
+      "dimension": "1",
+      "coordinate": "ell=ln(q2 / 1 GeV^2)",
+      "coordinate_is_log": true,
+      "observable": "Fixed imported CMS frequency tested in LHCb exclusive candidate yield",
+      "role": "cross_experiment_test_input",
+      "empirical_status": "RETROSPECTIVE_IMPORTED_TEMPLATE_NOT_INDEPENDENT_FREQUENCY_MEASUREMENT",
+      "fixed_before_holdout": true,
+      "uncertainty": null,
+      "uncertainty_reason": "No calibrated uncertainty for this frequency estimand supplied in the cited freeze/result; scan grids and p-values are not error bars.",
+      "source": {
+        "id": "E015",
+        "repository": "rickyjreyes/LHC",
+        "revision": "5fc36d638e0ba1b03e236d6a11547b29966bbe8b",
+        "path": "lhcb_wct_analysis_kit/CMS_LOCKED_LHCB_FREEZE_2026-08-31.md",
+        "git_blob_sha1": "384544d55e38d4056e866e983ca095d30d6012ea",
+        "sha256": "e66b6d314fd990e9262e4deab3e946d14847c9d7b980b5404736dd043f8a3d63",
+        "url": "https://github.com/rickyjreyes/LHC/blob/5fc36d638e0ba1b03e236d6a11547b29966bbe8b/lhcb_wct_analysis_kit/CMS_LOCKED_LHCB_FREEZE_2026-08-31.md",
+        "json_pointer_or_locator": "Exact variable mapping"
+      },
+      "independent_of_CMS": false,
+      "source_frequency_id": "CMS",
+      "exact_decimal_half": "3.5129129129129135",
+      "phase": "0.1889538223",
+      "phase_convention": "A cos(k ell + phi)",
+      "sign": "A>=0",
+      "result": "FAIL_LOCKED_PHASE_AND_SIGN",
+      "A_hat": "0",
+      "q_locked": "0",
+      "null_p": "1",
+      "null_n": 10000,
+      "free_phase_followup": {
+        "status": "EXPLORATORY_POST_UNBLINDING",
+        "q_score": "398.52848531",
+        "phase": "-1.9757308469",
+        "phase_difference_from_locked": "-2.1646846692",
+        "boundary_limited": true,
+        "null_exceedances": 0,
+        "null_n": 10000
+      }
+    }
+  ],
+  "source_discrepancies": [
+    {
+      "source": "P05 October 6 table",
+      "quantity": "LHCb a",
+      "paper_literal": "1.228287431",
+      "authoritative_repository_literal": "1.2282873602374818",
+      "resolution": "Use pinned primary result; discrepancy is not an uncertainty."
+    },
+    {
+      "quantity": "CMS/2",
+      "exact_decimal_arithmetic": "3.5129129129129135",
+      "LHCb_runtime_literal": "3.5129129129129133",
+      "resolution": "Preserve both; tiny floating-point representation difference, not physical disagreement."
+    },
+    {
+      "quantity": "NIST phase",
+      "issue": "Paper equations 14–15 pair a minus-phase cosine with atan2(-b,a), which is inconsistent algebraically; frequency estimates unaffected. No phase transfer claimed."
+    }
+  ]
+}

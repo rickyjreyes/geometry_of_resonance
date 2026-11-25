@@ -1,0 +1,628 @@
+{
+  "I1_linearization_structure": [
+    {
+      "coefficient_of_d^alpha_has_total_background_derivative_order_at_most_4-|alpha|": true,
+      "max_F_derivative": 3,
+      "max_V_derivative": 2,
+      "max_background_derivative": 4,
+      "operator_order": 4,
+      "real_coefficients": true,
+      "spatial_dims": 1
+    },
+    {
+      "coefficient_of_d^alpha_has_total_background_derivative_order_at_most_4-|alpha|": true,
+      "max_F_derivative": 3,
+      "max_V_derivative": 2,
+      "max_background_derivative": 4,
+      "operator_order": 4,
+      "real_coefficients": true,
+      "spatial_dims": 2
+    }
+  ],
+  "I2_hadamard_root": {
+    "dP/dlam at lam=w|xi|": "2 i w |xi|^3 sqrt(4 kappa theta - gamma^2) != 0 (simple root)",
+    "factorization": "P = kappa (lam^2 + mu Z)(lam^2 + conj(mu) Z)",
+    "samples": [
+      {
+        "gamma": "0",
+        "kappa": "1",
+        "theta": "1",
+        "w": [
+          0.45508986056222733,
+          1.09868411346781
+        ],
+        "|p(mu)|": 0.0
+      },
+      {
+        "gamma": "0",
+        "kappa": "1",
+        "theta": "4",
+        "w": [
+          0.7861513777574233,
+          1.272019649514069
+        ],
+        "|p(mu)|": 0.0
+      },
+      {
+        "gamma": "-1",
+        "kappa": "1/3",
+        "theta": "2",
+        "w": [
+          1.118033988749895,
+          0.8660254037844386
+        ],
+        "|p(mu)|": 0.0
+      },
+      {
+        "gamma": "5/2",
+        "kappa": "2",
+        "theta": "1",
+        "w": [
+          0.12905889194026873,
+          1.2812713208328868
+        ],
+        "|p(mu)|": 0.0
+      }
+    ]
+  },
+  "I3_exact_beam_1d": {
+    "L2_norm_squared": "sqrt(pi/N) exp(2 N t Re w + N t^2 (Re w)^2)",
+    "exact_solution": "P(d) e^{N phi} = 0 identically when kappa(mu+1)^2+gamma(mu+1)+theta = 0",
+    "phase": "phi = i y + w t - (y - i w t)^2/2, phi_t = -i w phi_y"
+  },
+  "I4_exact_beam_phase": {
+    "bound used": "|S(x) - 1| <= (9/4)|x|, hence |Re phi(t,x) - Re phi(t,0) + |x|^2/2| <= (9/4)|w| t |x|",
+    "d=1": "grad.grad = -(S+wt)^2; phi_t = w(S+wt) = H(grad phi); P(grad phi) = 0 exactly",
+    "d=2": "grad.grad = -(S+wt)^2; phi_t = w(S+wt) = H(grad phi); P(grad phi) = 0 exactly",
+    "d=3": "grad.grad = -(S+wt)^2; phi_t = w(S+wt) = H(grad phi); P(grad phi) = 0 exactly",
+    "sup |S(x)-1|/|x| on |x|<=1/4 (sampled)": 1.0000000000000002
+  },
+  "I5_conjugation": {
+    "1+1": "N^4: P(grad phi) a; N^3: sum_j P^(j)(grad phi) d_j a + (1/2) sum_jk P^(jk)(grad phi) phi_jk a",
+    "1+2": "N^4: P(grad phi) a; N^3: sum_j P^(j)(grad phi) d_j a + (1/2) sum_jk P^(jk)(grad phi) phi_jk a"
+  },
+  "I6_class_A_corotating": {
+    "background": "psi0 = sqrt(0.8) exp(i 0.7 t) (not on-shell for the chosen V)",
+    "co-rotating coefficients constant": true,
+    "table": [
+      {
+        "Re w": 0.557148406345639,
+        "k": 10.0,
+        "max Re lam / k": 0.5547066844004555,
+        "|lam/k - w| (nearest root)": 0.06667288684316965
+      },
+      {
+        "Re w": 0.557148406345639,
+        "k": 100.0,
+        "max Re lam / k": 0.5571242507277135,
+        "|lam/k - w| (nearest root)": 0.006966167292104733
+      },
+      {
+        "Re w": 0.557148406345639,
+        "k": 1000.0,
+        "max Re lam / k": 0.5571481648038118,
+        "|lam/k - w| (nearest root)": 0.0006996612694061723
+      },
+      {
+        "Re w": 0.557148406345639,
+        "k": 10000.0,
+        "max Re lam / k": 0.5571484039321435,
+        "|lam/k - w| (nearest root)": 6.999661643311888e-05
+      }
+    ],
+    "w": [
+      0.557148406345639,
+      1.2491654600946527
+    ]
+  },
+  "I7_end_to_end_wkb": {
+    "B1 class C: cos y + 0.3 i cos y sin(y+t) (nodes at y = +-pi/2)": {
+      "coefficient_jet_error": 1.7610121137401138e-15,
+      "eikonal_N4_coefficient": 1.1374233532693354e-14,
+      "hierarchy_max_coefficients": {
+        "N^-1": 2.086162567138672e-07,
+        "N^0": 1.2841617905663026e-08,
+        "N^1": 1.200322516516671e-10,
+        "N^2": 1.1836964637373762e-12,
+        "N^3": 1.0274712562705541e-14
+      },
+      "parameters": {
+        "J": 4,
+        "K'": 12,
+        "T_N": "10.0 log N / N",
+        "grid": 4001,
+        "jet degree Dy": 64,
+        "w": [
+          0.45508986056222733,
+          1.09868411346781
+        ],
+        "window": 0.4
+      },
+      "principal part": "exact symbolic check passed: 2F(rho0)(kappa, -(2kappa+gamma), kappa+theta+gamma) I2",
+      "rho0(0,0)": 1.0,
+      "rows": [
+        {
+          "N": 400,
+          "T_N": 0.14978661367769955,
+          "edge/peak": 1.5331073465241106e-05,
+          "ratio |u(T_N)|/(data+residual)": 146.45728264082996,
+          "residual/|u(T_N)|": 0.006766175801447743,
+          "rounding N^4 term / |u(T_N)| (excluded: analytically zero)": 1.2929035395529426e-05,
+          "rounding floor of retained terms (estimate)": 1.850275885662366e-07,
+          "sum_j |d_t^j u(0)|_L2": 32410566.95543785,
+          "sup_t |L u|_L2": 3551133200.7376046,
+          "|u(T_N)|/Gaussian_prediction": 1.0021593910970006,
+          "|u(T_N)|_L2": 524836082440.80457
+        },
+        {
+          "N": 800,
+          "T_N": 0.08355764659584908,
+          "edge/peak": 3.1578878454457975e-17,
+          "ratio |u(T_N)|/(data+residual)": 363.127919878242,
+          "residual/|u(T_N)|": 0.002724038665188384,
+          "rounding N^4 term / |u(T_N)| (excluded: analytically zero)": 0.00015518820048911463,
+          "rounding floor of retained terms (estimate)": 1.2543081734904102e-06,
+          "sum_j |d_t^j u(0)|_L2": 216792348.6227255,
+          "sup_t |L u|_L2": 19809278652.774963,
+          "|u(T_N)|/Gaussian_prediction": 1.0006385512954217,
+          "|u(T_N)|_L2": 7272025506071.525
+        },
+        {
+          "N": 1600,
+          "T_N": 0.046110993176424205,
+          "edge/peak": 3.979693510188104e-43,
+          "ratio |u(T_N)|/(data+residual)": 1164.1184977214027,
+          "residual/|u(T_N)|": 0.0008462936122076953,
+          "rounding N^4 term / |u(T_N)| (excluded: analytically zero)": 0.002017356593894835,
+          "rounding floor of retained terms (estimate)": 9.074125777410525e-06,
+          "sum_j |d_t^j u(0)|_L2": 1454235047.3911457,
+          "sup_t |L u|_L2": 96712351017.24947,
+          "|u(T_N)|/Gaussian_prediction": 1.00019142551585,
+          "|u(T_N)|_L2": 114277538696008.22
+        },
+        {
+          "N": 3200,
+          "T_N": 0.025221581527461935,
+          "edge/peak": 4.91195786531531e-97,
+          "ratio |u(T_N)|/(data+residual)": 3773.5919504980684,
+          "residual/|u(T_N)|": 0.0002600027119899704,
+          "rounding N^4 term / |u(T_N)| (excluded: analytically zero)": 0.028138942815512363,
+          "rounding floor of retained terms (estimate)": 6.833325563560613e-05,
+          "sum_j |d_t^j u(0)|_L2": 9768887511.494347,
+          "sup_t |L u|_L2": 508313452270.78296,
+          "|u(T_N)|/Gaussian_prediction": 1.0000570754209486,
+          "|u(T_N)|_L2": 1955031347097606.8
+        }
+      ],
+      "slope(data) vs log N": 2.7452633350248363,
+      "slope(residual/|u|) vs log N": -1.5791743255732542,
+      "transport_consistency": 4.7664655742347644e-14,
+      "verdict": {
+        "N4_term_is_rounding_scale": true,
+        "eikonal_exact_ok": true,
+        "growth_matches_gaussian_within_T_N": true,
+        "hierarchy_ok": true,
+        "jet_error_ok": true,
+        "ratio_exceeds_100_at_largest_N": true,
+        "ratio_increasing": true,
+        "residual_decays": true,
+        "transport_consistency_ok": true
+      }
+    },
+    "B2 class B (nodeless): 1 + 0.4 sin(y - 0.7t) + 0.5 i cos(2y + t)": {
+      "coefficient_jet_error": 2.0188160948249642e-15,
+      "eikonal_N4_coefficient": 4.263256414560601e-14,
+      "hierarchy_max_coefficients": {
+        "N^-1": 6.185112844025063e-06,
+        "N^0": 3.206401745371928e-07,
+        "N^1": 1.1100431383643501e-08,
+        "N^2": 3.8829352893302957e-10,
+        "N^3": 1.8541500709747007e-11
+      },
+      "parameters": {
+        "J": 4,
+        "K'": 12,
+        "T_N": "10.0 log N / N",
+        "grid": 4001,
+        "jet degree Dy": 64,
+        "w": [
+          0.8660254037844386,
+          1.118033988749895
+        ],
+        "window": 0.4
+      },
+      "principal part": "exact symbolic check passed: 2F(rho0)(kappa, -(2kappa+gamma), kappa+theta+gamma) I2",
+      "rho0(0,0)": 1.25,
+      "rows": [
+        {
+          "N": 400,
+          "T_N": 0.14978661367769955,
+          "edge/peak": 2.0108609527395304e-05,
+          "ratio |u(T_N)|/(data+residual)": 0.0037681178089679075,
+          "residual/|u(T_N)|": 265.38448389805023,
+          "rounding N^4 term / |u(T_N)| (excluded: analytically zero)": 2.8113341386182405e-05,
+          "rounding floor of retained terms (estimate)": 3.7408198446915516e-07,
+          "sum_j |d_t^j u(0)|_L2": 54472554.00952505,
+          "sup_t |L u|_L2": 7.567936318267553e+25,
+          "|u(T_N)|/Gaussian_prediction": 0.9666123604673539,
+          "|u(T_N)|_L2": 2.8516875617998987e+23
+        },
+        {
+          "N": 800,
+          "T_N": 0.08355764659584908,
+          "edge/peak": 4.6997017335335776e-17,
+          "ratio |u(T_N)|/(data+residual)": 1.1715746528174509,
+          "residual/|u(T_N)|": 0.853552095545221,
+          "rounding N^4 term / |u(T_N)| (excluded: analytically zero)": 0.000454176791361135,
+          "rounding floor of retained terms (estimate)": 2.644249559624662e-06,
+          "sum_j |d_t^j u(0)|_L2": 364482151.7191559,
+          "sup_t |L u|_L2": 2.35658018600414e+25,
+          "|u(T_N)|/Gaussian_prediction": 0.9803537367383934,
+          "|u(T_N)|_L2": 2.760909613254284e+25
+        },
+        {
+          "N": 1600,
+          "T_N": 0.046110993176424205,
+          "edge/peak": 6.5487743233090136e-43,
+          "ratio |u(T_N)|/(data+residual)": 385.8686692119763,
+          "residual/|u(T_N)|": 0.0025915553134754545,
+          "rounding N^4 term / |u(T_N)| (excluded: analytically zero)": 0.007302009911239456,
+          "rounding floor of retained terms (estimate)": 2.006613728176168e-05,
+          "sum_j |d_t^j u(0)|_L2": 2445328124.5258174,
+          "sup_t |L u|_L2": 1.0826872772318185e+25,
+          "|u(T_N)|/Gaussian_prediction": 0.988889420380281,
+          "|u(T_N)|_L2": 4.1777509883817996e+27
+        },
+        {
+          "N": 3200,
+          "T_N": 0.025221581527461935,
+          "edge/peak": 8.781849048245074e-97,
+          "ratio |u(T_N)|/(data+residual)": 2738.396796677481,
+          "residual/|u(T_N)|": 0.00036517717272139237,
+          "rounding N^4 term / |u(T_N)| (excluded: analytically zero)": 0.11686229700570523,
+          "rounding floor of retained terms (estimate)": 0.00015626480624597225,
+          "sum_j |d_t^j u(0)|_L2": 16427922961.430685,
+          "sup_t |L u|_L2": 3.124886736494141e+26,
+          "|u(T_N)|/Gaussian_prediction": 0.9938505557492828,
+          "|u(T_N)|_L2": 8.557179829195502e+29
+        }
+      ],
+      "slope(data) vs log N": 2.7455322572058947,
+      "slope(residual/|u|) vs log N": -6.677668523666814,
+      "transport_consistency": 1.1718571004216928e-13,
+      "verdict": {
+        "N4_term_is_rounding_scale": true,
+        "eikonal_exact_ok": true,
+        "growth_matches_gaussian_within_T_N": true,
+        "hierarchy_ok": true,
+        "jet_error_ok": true,
+        "ratio_exceeds_100_at_largest_N": true,
+        "ratio_increasing": true,
+        "residual_decays": true,
+        "transport_consistency_ok": true
+      }
+    },
+    "B3 sampled (seed 20261120): kappa=13/8, theta=8/5, gamma=-48/25": {
+      "coefficient_jet_error": 1.2209651059352939e-15,
+      "eikonal_N4_coefficient": 5.0937342108501144e-15,
+      "hierarchy_max_coefficients": {
+        "N^-1": 4.0487581995706336e-07,
+        "N^0": 6.093761105231196e-09,
+        "N^1": 1.1756076588103697e-10,
+        "N^2": 2.390128888876988e-12,
+        "N^3": 1.1152225166739398e-13
+      },
+      "parameters": {
+        "J": 4,
+        "K'": 12,
+        "T_N": "10.0 log N / N",
+        "grid": 4001,
+        "jet degree Dy": 64,
+        "w": [
+          0.4934140367561725,
+          0.8078911937252384
+        ],
+        "window": 0.4
+      },
+      "principal part": "exact symbolic check passed: 2F(rho0)(kappa, -(2kappa+gamma), kappa+theta+gamma) I2",
+      "rho0(0,0)": 0.9902841263383532,
+      "rows": [
+        {
+          "N": 400,
+          "T_N": 0.14978661367769955,
+          "edge/peak": 1.7352563989560402e-07,
+          "ratio |u(T_N)|/(data+residual)": 25.475253435883193,
+          "residual/|u(T_N)|": 0.03925112566655646,
+          "rounding N^4 term / |u(T_N)| (excluded: analytically zero)": 8.928881303876253e-06,
+          "rounding floor of retained terms (estimate)": 4.2139174495523465e-07,
+          "sum_j |d_t^j u(0)|_L2": 16357844.149516728,
+          "sup_t |L u|_L2": 241870548998.62164,
+          "|u(T_N)|/Gaussian_prediction": 1.00597447255016,
+          "|u(T_N)|_L2": 6162130254641.464
+        },
+        {
+          "N": 800,
+          "T_N": 0.08355764659584908,
+          "edge/peak": 6.238033097020386e-20,
+          "ratio |u(T_N)|/(data+residual)": 459.75527347709414,
+          "residual/|u(T_N)|": 0.0021740238411428335,
+          "rounding N^4 term / |u(T_N)| (excluded: analytically zero)": 0.00011892650814692996,
+          "rounding floor of retained terms (estimate)": 3.1590993644045317e-06,
+          "sum_j |d_t^j u(0)|_L2": 109385916.35187204,
+          "sup_t |L u|_L2": 227269005558.86896,
+          "|u(T_N)|/Gaussian_prediction": 1.00282138629999,
+          "|u(T_N)|_L2": 104538414555471.92
+        },
+        {
+          "N": 1600,
+          "T_N": 0.046110993176424205,
+          "edge/peak": 1.9163329603739892e-46,
+          "ratio |u(T_N)|/(data+residual)": 1687.7199237775749,
+          "residual/|u(T_N)|": 0.0005921587573680447,
+          "rounding N^4 term / |u(T_N)| (excluded: analytically zero)": 0.001708221877197662,
+          "rounding floor of retained terms (estimate)": 2.4354811352150817e-05,
+          "sum_j |d_t^j u(0)|_L2": 733653563.7200882,
+          "sup_t |L u|_L2": 1218228974671.9412,
+          "|u(T_N)|/Gaussian_prediction": 1.0013992968742655,
+          "|u(T_N)|_L2": 2057267514013602.2
+        },
+        {
+          "N": 3200,
+          "T_N": 0.025221581527461935,
+          "edge/peak": 7.231465868891661e-101,
+          "ratio |u(T_N)|/(data+residual)": 38720.9703181405,
+          "residual/|u(T_N)|": 2.571568510471111e-05,
+          "rounding N^4 term / |u(T_N)| (excluded: analytically zero)": 0.02555281094723081,
+          "rounding floor of retained terms (estimate)": 0.00019073415869775762,
+          "sum_j |d_t^j u(0)|_L2": 4928003478.10116,
+          "sup_t |L u|_L2": 1150870940581.109,
+          "|u(T_N)|/Gaussian_prediction": 1.000718130892804,
+          "|u(T_N)|_L2": 4.47536566066548e+16
+        }
+      ],
+      "slope(data) vs log N": 2.745030249429847,
+      "slope(residual/|u|) vs log N": -3.3603921014952,
+      "transport_consistency": 3.1776437161565096e-14,
+      "verdict": {
+        "N4_term_is_rounding_scale": true,
+        "eikonal_exact_ok": true,
+        "growth_matches_gaussian_within_T_N": true,
+        "hierarchy_ok": true,
+        "jet_error_ok": true,
+        "ratio_exceeds_100_at_largest_N": true,
+        "ratio_increasing": true,
+        "residual_decays": true,
+        "transport_consistency_ok": true
+      }
+    },
+    "label": "NUMERICAL (exact operator, Taylor-jet amplitudes, true residual with exact coefficients)",
+    "negative controls (B1 lower-order terms)": {
+      "C1 wrong root 1.05 w (P(grad phi) != 0)": {
+        "contradiction_produced": false,
+        "ratios": [
+          9.687941713417266e-11,
+          6.8333651879726885e-12,
+          4.580453698021783e-13,
+          2.97828248778723e-14
+        ],
+        "slope(residual/|u|)": 3.8901515431380833,
+        "|u(T_N)|/|u(0)|-scale": [
+          2214252468951.81,
+          34928294647108.555,
+          630963622606196.2,
+          1.2491313611272864e+16
+        ]
+      },
+      "C2 decaying root -conj(w)": {
+        "contradiction_produced": false,
+        "ratios": [
+          3.357625924570999e-20,
+          1.2656281610354336e-22,
+          5.396154182428741e-25,
+          2.501189528554856e-27
+        ],
+        "slope(residual/|u|)": 2.9478931619072974,
+        "|u(T_N)|/|u(0)|-scale": [
+          1.0882255985641425e-12,
+          2.7437850151527826e-14,
+          7.847276533215404e-16,
+          2.4433839149380095e-17
+        ]
+      },
+      "C3 transport hierarchy not solved": {
+        "contradiction_produced": false,
+        "ratios": [
+          8.546856287558347e-08,
+          2.3239496777125882e-08,
+          5.6510905374684465e-09,
+          1.3005790771024716e-09
+        ],
+        "slope(residual/|u|)": 2.0154481138500775,
+        "|u(T_N)|/|u(0)|-scale": [
+          523705198095.00793,
+          7267384908023.79,
+          114255667245960.08,
+          1954919769228747.8
+        ]
+      },
+      "C4 strictly hyperbolic principal part (kappa,theta,gamma)=(1,1,3)": {
+        "contradiction_produced": false,
+        "ratios": [
+          9.51696496313189e-09,
+          1.1956590630957662e-09,
+          1.4985831783010893e-10,
+          1.875815497738725e-11
+        ],
+        "slope(residual/|u|)": -2.72498852419584,
+        "|u(T_N)|/|u(0)|-scale": [
+          0.2979639178971652,
+          0.25039679012490396,
+          0.2105190031443019,
+          0.17701497616290265
+        ]
+      }
+    },
+    "refinement (B1)": {
+      "J=2: slope(residual/|u|)": 0.09279492849562358,
+      "J=3: slope(residual/|u|)": -0.798888782681539,
+      "J=4 (main run): slope(residual/|u|)": -1.5791743255732542,
+      "grid 4001 -> 8001: rel change of residual": 5.344032843024316e-06,
+      "grid 4001 -> 8001: rel change of |u(T_N)|": 0.0,
+      "jet degree 64 -> 48: rel change of residual": 0.0,
+      "predicted slopes": "2 - J (the truncated WKB orders), approached from above as N grows"
+    }
+  },
+  "I8_bookkeeping": {
+    "rule": "K > (3+s+sigma)/Re w, K' > 4+s+sigma, J > 2+s+sigma",
+    "table": [
+      {
+        "J": 3,
+        "K": 7,
+        "K'": 5,
+        "gaps": [
+          "37/200",
+          "1",
+          "1"
+        ],
+        "s": "0",
+        "sigma": "0"
+      },
+      {
+        "J": 4,
+        "K": 9,
+        "K'": 6,
+        "gaps": [
+          "19/200",
+          "1",
+          "1"
+        ],
+        "s": "0",
+        "sigma": "1"
+      },
+      {
+        "J": 5,
+        "K": 13,
+        "K'": 7,
+        "gaps": [
+          "83/200",
+          "1/2",
+          "1/2"
+        ],
+        "s": "0",
+        "sigma": "5/2"
+      },
+      {
+        "J": 3,
+        "K": 8,
+        "K'": 5,
+        "gaps": [
+          "7/50",
+          "1/2",
+          "1/2"
+        ],
+        "s": "1/2",
+        "sigma": "0"
+      },
+      {
+        "J": 4,
+        "K": 10,
+        "K'": 6,
+        "gaps": [
+          "1/20",
+          "1/2",
+          "1/2"
+        ],
+        "s": "1/2",
+        "sigma": "1"
+      },
+      {
+        "J": 6,
+        "K": 14,
+        "K'": 8,
+        "gaps": [
+          "37/100",
+          "1",
+          "1"
+        ],
+        "s": "1/2",
+        "sigma": "5/2"
+      },
+      {
+        "J": 6,
+        "K": 14,
+        "K'": 8,
+        "gaps": [
+          "37/100",
+          "1",
+          "1"
+        ],
+        "s": "3",
+        "sigma": "0"
+      },
+      {
+        "J": 7,
+        "K": 16,
+        "K'": 9,
+        "gaps": [
+          "7/25",
+          "1",
+          "1"
+        ],
+        "s": "3",
+        "sigma": "1"
+      },
+      {
+        "J": 8,
+        "K": 19,
+        "K'": 10,
+        "gaps": [
+          "29/200",
+          "1/2",
+          "1/2"
+        ],
+        "s": "3",
+        "sigma": "5/2"
+      },
+      {
+        "J": 11,
+        "K": 26,
+        "K'": 13,
+        "gaps": [
+          "33/100",
+          "1/2",
+          "1/2"
+        ],
+        "s": "17/2",
+        "sigma": "0"
+      },
+      {
+        "J": 12,
+        "K": 28,
+        "K'": 14,
+        "gaps": [
+          "6/25",
+          "1/2",
+          "1/2"
+        ],
+        "s": "17/2",
+        "sigma": "1"
+      },
+      {
+        "J": 14,
+        "K": 31,
+        "K'": 16,
+        "gaps": [
+          "21/200",
+          "1",
+          "1"
+        ],
+        "s": "17/2",
+        "sigma": "5/2"
+      }
+    ]
+  },
+  "numpy": "2.3.5",
+  "python": "3.13.18",
+  "source_sha256": "bc5fea5af1d42a65162df4d1f715c9a7634c70c3230d2623cfdadb69892b637f",
+  "sympy": "1.14.0"
+}

@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/ecaf33bad7ac/geometry_binding/audit/strict_binding/prepare_d4_replay.py", line 35, in <module>
+    if __name__=="__main__":main()
+                            ^^^^^^
+  File "/workspace/scratch/ecaf33bad7ac/geometry_binding/audit/strict_binding/prepare_d4_replay.py", line 17, in main
+    ledger=json.loads((HERE/"source_ledger.json").read_text())
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/ecaf33bad7ac/geometry_binding/audit/strict_binding/source_ledger.json'

@@ -1,0 +1,242 @@
+import Mathlib
+import ReleaseProofs.R16_PaisUhlenbeck
+
+/-!
+# Exact invariant single-mode rails in the LINEAR S004/Pais-Uhlenbeck Fourier system
+
+This is an explicit four-jet vector-field conjugacy, not a ghost-free
+reduction of the full nonlinear covariant A2 action.
+
+For the distinct squared frequencies z1,z2 the exact normalized modal ODE is
+  x' = v, v' = a, a' = j,
+  j' = -(z1+z2)*a-z1*z2*x.
+Its Euler expression agrees with the original PU mode with
+  A=K(z1+z2), B=K z1 z2, K nonzero.
+
+Each two-dimensional single-mode plane is invariant at the VECTOR FIELD level.
+For the z1-mode, the neglected z2 amplitude is measured by
+  y2 = a+z1*x, w2 = j+z1*v.
+The exact initial-state reconstruction error is y2/(z2-z1),
+w2/(z2-z1). The neglected mode's quadratic oscillator energy has
+identically zero derivative along the full four-dimensional ODE.
+
+These are necessary ingredients for a controlled reduction. Nonlinear A2
+invariance, a functional-analytic PDE reduction and a uniform physical
+error bound remain open.
+-/
+
+namespace ReleaseProofs.R16LinearModes
+
+@[ext] structure Jet where
+  x : ℝ
+  v : ℝ
+  a : ℝ
+  j : ℝ
+
+/-- First-order vector field equivalent to the actual fourth-order
+Pais-Uhlenbeck Euler equation at the two stated roots. -/
+def vectorField (z1 z2 : ℝ) (s : Jet) : Jet where
+  x := s.v
+  v := s.a
+  a := s.j
+  j := -(z1 + z2) * s.a - (z1 * z2) * s.x
+
+/-- The z-mode invariant plane: x'' = -z x and x''' = -z x'. -/
+def InMode (z : ℝ) (s : Jet) : Prop :=
+  s.a + z * s.x = 0 ∧ s.j + z * s.v = 0
+
+/-- The ordinary two-dimensional oscillator vector field. -/
+def oscillator (z : ℝ) (u : ℝ × ℝ) : ℝ × ℝ :=
+  (u.2, -z * u.1)
+
+/-- Embed one oscillator into the full fourth-order canonical jet. -/
+def embedMode (z : ℝ) (u : ℝ × ℝ) : Jet where
+  x := u.1
+  v := u.2
+  a := -z * u.1
+  j := -z * u.2
+
+theorem embedMode_invariant_constraint (z : ℝ) (u : ℝ × ℝ) :
+    InMode z (embedMode z u) := by
+  constructor <;> simp [InMode, embedMode]
+
+/-- Exact equality of vector fields on the z1-mode. Thus the linear
+single-mode reduction does NOT alter the fourth-order mode equations. -/
+theorem vectorField_conjugate_first (z1 z2 : ℝ) (u : ℝ × ℝ) :
+    vectorField z1 z2 (embedMode z1 u) =
+      embedMode z1 (oscillator z1 u) := by
+  cases u with
+  | mk x v =>
+    ext <;> simp [vectorField, embedMode, oscillator] <;> ring
+
+theorem vectorField_conjugate_second (z1 z2 : ℝ) (u : ℝ × ℝ) :
+    vectorField z1 z2 (embedMode z2 u) =
+      embedMode z2 (oscillator z2 u) := by
+  cases u with
+  | mk x v =>
+    ext <;> simp [vectorField, embedMode, oscillator] <;> ring
+
+/-- The z1-mode plane is tangent to the full fourth-order vector field. -/
+theorem first_mode_tangent (z1 z2 : ℝ) (s : Jet)
+    (hs : InMode z1 s) :
+    InMode z1 (vectorField z1 z2 s) := by
+  obtain ⟨ha, hj⟩ := hs
+  constructor
+  · exact hj
+  · change (-(z1 + z2) * s.a - z1 * z2 * s.x) + z1 * s.a = 0
+    linear_combination (-z2) * ha
+
+/-- The second single-mode plane is likewise tangent. -/
+theorem second_mode_tangent (z1 z2 : ℝ) (s : Jet)
+    (hs : InMode z2 s) :
+    InMode z2 (vectorField z1 z2 s) := by
+  obtain ⟨ha, hj⟩ := hs
+  constructor
+  · exact hj
+  · change (-(z1 + z2) * s.a - z1 * z2 * s.x) + z2 * s.a = 0
+    linear_combination (-z1) * ha
+
+/-- The vector field solves the exact original PU fourth-order
+Euler expression, not an unrelated second-order oscillator. -/
+theorem exact_pu_euler (K z1 z2 : ℝ) (s : Jet) :
+    R16PU.puEuler K (K * (z1 + z2)) (K * (z1 * z2))
+      s.x s.a (vectorField z1 z2 s).j = 0 := by
+  simp [R16PU.puEuler, vectorField]
+  ring
+
+/-- Defect from the z1-mode, following the z2 oscillator equation. -/
+def otherMode (z1 : ℝ) (s : Jet) : ℝ × ℝ :=
+  (s.a + z1 * s.x, s.j + z1 * s.v)
+
+/-- The omitted mode evolves by the exact z2 oscillator vector field. -/
+theorem otherMode_intertwines (z1 z2 : ℝ) (s : Jet) :
+    otherMode z1 (vectorField z1 z2 s) =
+      oscillator z2 (otherMode z1 s) := by
+  apply Prod.ext
+  · simp [otherMode, vectorField, oscillator]
+  · simp [otherMode, vectorField, oscillator]
+    ring
+
+/-- The z1 readout reconstructed from the fourth-order jet. -/
+noncomputable def readout (z1 z2 : ℝ) (s : Jet) : ℝ × ℝ :=
+  ((s.a + z2 * s.x) / (z2 - z1),
+   (s.j + z2 * s.v) / (z2 - z1))
+
+/-- Exact reconstruction error in displacement. -/
+theorem displacement_reconstruction_error
+    (z1 z2 : ℝ) (hz : z2 ≠ z1) (s : Jet) :
+    s.x - (readout z1 z2 s).1 =
+      -(otherMode z1 s).1 / (z2 - z1) := by
+  have hden : z2 - z1 ≠ 0 := sub_ne_zero.mpr hz
+  simp only [readout, otherMode, Prod.fst]
+  field_simp
+  ring
+
+/-- Exact reconstruction error in velocity. -/
+theorem velocity_reconstruction_error
+    (z1 z2 : ℝ) (hz : z2 ≠ z1) (s : Jet) :
+    s.v - (readout z1 z2 s).2 =
+      -(otherMode z1 s).2 / (z2 - z1) := by
+  have hden : z2 - z1 ≠ 0 := sub_ne_zero.mpr hz
+  simp only [readout, otherMode, Prod.snd]
+  field_simp
+  ring
+
+/-- Squared reconstruction error, with no big-O suppression and with
+the mode separation appearing in the denominator. -/
+theorem squared_reconstruction_error (z1 z2 : ℝ)
+    (hz : z2 ≠ z1) (s : Jet) :
+    (s.x - (readout z1 z2 s).1) ^ 2 +
+        (s.v - (readout z1 z2 s).2) ^ 2 =
+      ((otherMode z1 s).1 ^ 2 + (otherMode z1 s).2 ^ 2) /
+        (z2 - z1) ^ 2 := by
+  rw [displacement_reconstruction_error z1 z2 hz,
+    velocity_reconstruction_error z1 z2 hz]
+  have hden : z2 - z1 ≠ 0 := sub_ne_zero.mpr hz
+  field_simp [hden]
+
+/-- The omitted z2-mode energy. -/
+def neglectedEnergy (z1 z2 : ℝ) (s : Jet) : ℝ :=
+  (otherMode z1 s).2 ^ 2 + z2 * (otherMode z1 s).1 ^ 2
+
+/-- Exact energy derivative along the linear PU vector field, without
+assuming positivity or stability of the chosen frequencies. -/
+theorem neglectedEnergy_directional_zero (z1 z2 : ℝ) (s : Jet) :
+    2 * (otherMode z1 s).2 * (otherMode z1 (vectorField z1 z2 s)).2 +
+      2 * z2 * (otherMode z1 s).1 *
+        (otherMode z1 (vectorField z1 z2 s)).1 = 0 := by
+  rw [otherMode_intertwines]
+  simp only [otherMode, oscillator, Prod.fst, Prod.snd]
+  ring
+
+/-- The omitted-mode energy is nonnegative when its squared frequency
+is nonnegative, and is zero only for a zero omitted mode if z2 > 0. -/
+theorem neglectedEnergy_nonnegative
+    (z1 z2 : ℝ) (s : Jet) (hz : 0 ≤ z2) :
+    0 ≤ neglectedEnergy z1 z2 s := by
+  unfold neglectedEnergy
+  positivity
+
+/-! ## Explicit positive and negative single-mode Hamiltonian sectors -/
+
+/-- The z1-mode restriction of the LITERAL quadratic PU Hamiltonian.
+Its sign depends on K and on the spectral ordering z1 < z2. -/
+theorem first_mode_hamiltonian_exact
+    (K z1 z2 : ℝ) (u : ℝ × ℝ) :
+    R16PU.puHamiltonian K (K * (z1 + z2)) (K * (z1 * z2))
+      (embedMode z1 u).x (embedMode z1 u).v
+      (embedMode z1 u).a (embedMode z1 u).j =
+        K * (z2 - z1) / 2 * (u.2 ^ 2 + z1 * u.1 ^ 2) := by
+  rw [R16PU.pu_hamiltonian_eq]
+  simp only [embedMode]
+  ring
+
+/-- With positive K and two ordered positive frequencies, the z1
+single-mode plane carries nonnegative canonical energy. This is an
+invariant positive rail for the linear mode vector field, not a
+dynamically justified nonlinear ghost-elimination constraint. -/
+theorem first_mode_energy_nonnegative
+    (K z1 z2 : ℝ) (u : ℝ × ℝ)
+    (hK : 0 < K) (hz1 : 0 < z1) (hz2 : z1 < z2) :
+    0 ≤ R16PU.puHamiltonian K (K * (z1 + z2)) (K * (z1 * z2))
+      (embedMode z1 u).x (embedMode z1 u).v
+      (embedMode z1 u).a (embedMode z1 u).j := by
+  rw [first_mode_hamiltonian_exact]
+  have hgap : 0 < z2 - z1 := by linarith
+  have hs : 0 ≤ u.2 ^ 2 + z1 * u.1 ^ 2 := by positivity
+  positivity
+
+/-- The z2-mode restriction has the opposite Hamiltonian sign.
+This is why positivity of the selected linear sector does not extend
+to the whole Ostrogradsky phase space. -/
+theorem second_mode_hamiltonian_exact
+    (K z1 z2 : ℝ) (u : ℝ × ℝ) :
+    R16PU.puHamiltonian K (K * (z1 + z2)) (K * (z1 * z2))
+      (embedMode z2 u).x (embedMode z2 u).v
+      (embedMode z2 u).a (embedMode z2 u).j =
+        K * (z1 - z2) / 2 * (u.2 ^ 2 + z2 * u.1 ^ 2) := by
+  rw [R16PU.pu_hamiltonian_eq]
+  simp only [embedMode]
+  ring
+
+/-- Explicit gap-controlled position/velocity reconstruction bound
+when the neglected squared frequency is at least one. This bound
+is exact at the level of a single Fourier jet. -/
+theorem reduction_error_le_neglected_energy
+    (z1 z2 : ℝ) (s : Jet)
+    (hz : z2 ≠ z1) (hfreq : 1 ≤ z2) :
+    (s.x - (readout z1 z2 s).1) ^ 2 +
+      (s.v - (readout z1 z2 s).2) ^ 2 ≤
+        neglectedEnergy z1 z2 s / (z2 - z1) ^ 2 := by
+  rw [squared_reconstruction_error z1 z2 hz]
+  have hgap : 0 < (z2 - z1) ^ 2 :=
+    sq_pos_of_ne_zero (sub_ne_zero.mpr hz)
+  have hweight :
+      (otherMode z1 s).1 ^ 2 + (otherMode z1 s).2 ^ 2 ≤
+        neglectedEnergy z1 z2 s := by
+    unfold neglectedEnergy
+    nlinarith [mul_nonneg (sub_nonneg.mpr hfreq)
+      (sq_nonneg (otherMode z1 s).1)]
+  exact div_le_div_of_nonneg_right hweight hgap.le
+
+end ReleaseProofs.R16LinearModes

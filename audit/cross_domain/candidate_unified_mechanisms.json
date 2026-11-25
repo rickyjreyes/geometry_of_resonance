@@ -1,0 +1,289 @@
+{
+  "schema": "WCT_CANDIDATE_MECHANISMS_V1",
+  "all_comparisons_retrospective": true,
+  "candidates": [
+    {
+      "id": "U0",
+      "name": "Universal native log-frequency equality",
+      "relation": "nu_i=theta",
+      "category": "NEW_CANDIDATE",
+      "transformation": "HYPOTHESIS",
+      "chronology": "Frozen retrospective stress hypothesis; not a historical S004 prediction",
+      "shared": [
+        "theta"
+      ],
+      "system_inputs": [
+        "typed log-frequency estimand in every domain"
+      ],
+      "primary_status": "INELIGIBLE_LHCB_A_NOT_FREQUENCY",
+      "supplementary_status": "NUMERICALLY_DISAGREES_WITH_FROZEN_REFERENCES",
+      "loo": "all four folds computed for all source-choice panels",
+      "physical_predictions_by_domain": {
+        "GWTC": null,
+        "CMS": null,
+        "NIST": null,
+        "LHCb": null
+      },
+      "four_domain_action_prediction_available": false
+    },
+    {
+      "id": "U1",
+      "name": "One mass/energy-log frequency with fixed coordinate maps",
+      "relation": "(nu_GWTC,nu_CMS,nu_NIST,2*k_LHCB)=theta",
+      "category": "NEW_CANDIDATE",
+      "transformation": "HYPOTHESIS",
+      "chronology": "q2=m2 map pre-existed the direct transfer; equality across distinct systems is this retrospective test",
+      "shared": [
+        "theta"
+      ],
+      "system_inputs": [
+        "known observable coordinate definitions"
+      ],
+      "primary_status": "INELIGIBLE_NO_MAP_FROM_LHCB_A",
+      "supplementary_status": "NUMERICALLY_DISAGREES_WITH_FROZEN_REFERENCES",
+      "loo": "all four folds computed for all source-choice panels",
+      "physical_predictions_by_domain": {
+        "GWTC": null,
+        "CMS": null,
+        "NIST": null,
+        "LHCb": null
+      },
+      "four_domain_action_prediction_available": false,
+      "transformation_detail": "HYPOTHESIS_WITH_DERIVED_COORDINATE_MAPS"
+    },
+    {
+      "id": "U2",
+      "name": "Common physical log width and independent winding sectors",
+      "relation": "nu_i=2*pi*n_i/L_star",
+      "category": "PROPOSED",
+      "transformation": "HYPOTHESIS",
+      "chronology": "Scale-winding and October 6 window-covariance sources explicitly retain physical-premise burden",
+      "shared": [
+        "L_star"
+      ],
+      "system_inputs": [
+        "four independently assigned n_i",
+        "proof the physical log width is shared"
+      ],
+      "primary_status": "NOT_IDENTIFIABLE",
+      "supplementary_status": "NOT_IDENTIFIABLE",
+      "loo": "blocked in every fold; no independent sector assignments",
+      "physical_predictions_by_domain": {
+        "GWTC": null,
+        "CMS": null,
+        "NIST": null,
+        "LHCb": null
+      },
+      "four_domain_action_prediction_available": false,
+      "transformation_detail": "HYPOTHESIS_USING_CONDITIONAL_DERIVED_IDENTITY"
+    },
+    {
+      "id": "U2_DOMAIN",
+      "name": "System-derived physical log widths and winding sectors",
+      "relation": "nu_i=2*pi*n_i/L_i",
+      "category": "PROPOSED",
+      "transformation": "HYPOTHESIS",
+      "shared": [],
+      "system_inputs": [
+        "four independently derived physical L_i",
+        "four independent integer n_i"
+      ],
+      "primary_status": "NOT_IDENTIFIABLE",
+      "supplementary_status": "NOT_IDENTIFIABLE",
+      "loo": "blocked; existing analysis cuts and fitted cycle counts do not supply the inputs",
+      "physical_predictions_by_domain": {
+        "GWTC": null,
+        "CMS": null,
+        "NIST": null,
+        "LHCb": null
+      },
+      "four_domain_action_prediction_available": false,
+      "transformation_detail": "HYPOTHESIS_USING_CONDITIONAL_DERIVED_IDENTITY"
+    },
+    {
+      "id": "U3",
+      "name": "Shared S004 action, independently specified physical systems",
+      "relation": "S004 -> C0_i,C2_i,C4_i -> kstar_i -> nu_i via physical observable map",
+      "category": "NEW_CANDIDATE",
+      "transformation": "HYPOTHESIS",
+      "chronology": "Controlled S004 finite-scale reduction completed October 7 after all empirical targets",
+      "shared": [
+        "kappa",
+        "gamma",
+        "theta_S004",
+        "epsilon",
+        "alpha",
+        "specified potential V and its finite coefficients"
+      ],
+      "system_inputs": [
+        "on-shell background/state in each domain",
+        "physical length or phase-coordinate response",
+        "observable coupling and selection response",
+        "sector and physical boundaries"
+      ],
+      "primary_status": "NOT_IDENTIFIABLE",
+      "supplementary_status": "NOT_IDENTIFIABLE",
+      "loo": "blocked; no numerical observable map from spatial branch",
+      "physical_predictions_by_domain": {
+        "GWTC": null,
+        "CMS": null,
+        "NIST": null,
+        "LHCb": null
+      },
+      "four_domain_action_prediction_available": false,
+      "transformation_detail": "HYPOTHESIS_WITH_DERIVED_SPATIAL_BRANCH"
+    },
+    {
+      "id": "U4",
+      "name": "Full action-to-domain-to-sector-to-observable chain",
+      "relation": "S004 -> localized physical branch/domain -> n -> coordinate -> observable",
+      "category": "PROPOSED",
+      "transformation": "HYPOTHESIS",
+      "shared": [
+        "all independently fixed action parameters"
+      ],
+      "system_inputs": [
+        "independently prepared physical system states and measured response inputs only"
+      ],
+      "primary_status": "CHAIN_INCOMPLETE",
+      "supplementary_status": "CHAIN_INCOMPLETE",
+      "loo": "blocked; no complete candidate meeting premises survives",
+      "physical_predictions_by_domain": {
+        "GWTC": null,
+        "CMS": null,
+        "NIST": null,
+        "LHCb": null
+      },
+      "four_domain_action_prediction_available": false
+    },
+    {
+      "id": "G236",
+      "name": "Published 2-3-6 scale analogies",
+      "relation": "lambda_CMS≈sqrt(6); lambda_Fe≈sqrt(3/2); a_LHCb≈sqrt(3/2)",
+      "category": "NUMERICAL_ANALOGY",
+      "transformation": "HYPOTHESIS",
+      "chronology": "October 6 comparison table explicitly retrospective; LHCb May 13 paper says region-to-Koide dilation derivation remains open",
+      "shared": [],
+      "system_inputs": [
+        "physical operators linking geometric norms to each measured estimand",
+        "a GWTC assignment, currently absent"
+      ],
+      "primary_status": "NOT_A_FOUR_DOMAIN_MECHANISM",
+      "supplementary_status": "PARTIAL_NUMERICAL_COMPARATORS_ONLY",
+      "loo": "not eligible; three partial comparator residuals reported, no missing fourth value invented",
+      "physical_predictions_by_domain": {
+        "GWTC": null,
+        "CMS": null,
+        "NIST": null,
+        "LHCb": null
+      },
+      "four_domain_action_prediction_available": false,
+      "partial_numeric_comparators": {
+        "CMS": {
+          "predicted": "7.0134249770551798964763866322662415200141219025372571673507420782342353275136737",
+          "fractional_error": "-0.0017650378870856064212828849396774932098176590191458019462721026936190267334392644",
+          "physical_assignment_derived": false
+        },
+        "NIST_FE160": {
+          "predicted": "30.992483355699475244901915872237624762970414544335973271655284297272439965166314",
+          "fractional_error": "-0.01066339776594515435404973659012439818206907382091041790357243475088511488573755",
+          "physical_assignment_derived": false
+        },
+        "LHCB_A": {
+          "predicted": "1.2247448713915890490986420373529456959829737403283350642163462836254801887286575",
+          "fractional_error": "-0.0028840880078810161246696902848033228663597530722620659195722659624382476104809323",
+          "physical_assignment_derived": false
+        }
+      }
+    },
+    {
+      "id": "CMS_LHCB_LOCKED",
+      "name": "Source-frozen direct frequency/phase/sign transfer",
+      "relation": "k_LHCB=omega_CMS/2; phi_LHCB=-phi_CMS; A>=0",
+      "category": "PROPOSED",
+      "transformation": "HYPOTHESIS",
+      "chronology": "Freeze August 31; data already previously studied; no new LHCb frequency or phase selection in stage31",
+      "shared": [
+        "one waveform frequency and phase imported from CMS"
+      ],
+      "system_inputs": [
+        "common physical residual waveform across inclusive and exclusive observables, not established"
+      ],
+      "primary_status": "FAILED_FIXED_TEMPLATE_IN_TESTED_PIPELINE",
+      "supplementary_status": "POST_UNBLINDING_FREE_PHASE_RESPONSE_REMAINS_POSITIVE",
+      "loo": "two-domain test already executed in source; not a four-domain LOO model",
+      "physical_predictions_by_domain": {
+        "GWTC": null,
+        "CMS": null,
+        "NIST": null,
+        "LHCb": null
+      },
+      "four_domain_action_prediction_available": false,
+      "transformation_detail": "DERIVED_COORDINATE_MAP_PLUS_PHYSICAL_TRANSFER_HYPOTHESIS",
+      "source_test_prediction": {
+        "LHCb": {
+          "k_q2_runtime": "3.5129129129129133",
+          "phase": "0.1889538223",
+          "positive_amplitude": true
+        },
+        "GWTC": null,
+        "NIST": null
+      }
+    },
+    {
+      "id": "NC_HARMONIC",
+      "name": "Manufacture-of-agreement negative control",
+      "relation": "nu_i/(abs(p_i)*n_i^d)=theta, d=+1 or -1",
+      "category": "NEW_CANDIDATE",
+      "transformation": "POST_HOC_NOT_ALLOWED",
+      "label": "POST_HOC_CANDIDATE_NEGATIVE_CONTROL_ONLY",
+      "shared": [
+        "theta"
+      ],
+      "system_inputs": [
+        "target-selected integers and exponent choices; disallowed for physical confirmation"
+      ],
+      "primary_status": "INELIGIBLE_TYPE_MISMATCH",
+      "supplementary_status": "SELECTION_AWARE_MONTE_CARLO_DIAGNOSTIC",
+      "loo": "not eligible; held-out labels cannot be chosen by inspecting the held-out target",
+      "physical_predictions_by_domain": {
+        "GWTC": null,
+        "CMS": null,
+        "NIST": null,
+        "LHCb": null
+      },
+      "four_domain_action_prediction_available": false
+    },
+    {
+      "id": "NC_MULTIPLIERS",
+      "name": "Arbitrary dataset multiplier control",
+      "relation": "nu_i=c_i*theta",
+      "category": "NUMERICAL_ANALOGY",
+      "transformation": "POST_HOC_NOT_ALLOWED",
+      "shared": [
+        "theta"
+      ],
+      "system_inputs": [
+        "four free c_i"
+      ],
+      "primary_status": "DISALLOWED",
+      "supplementary_status": "SATURATED_ANALYTICALLY_FOR_EVERY_POSITIVE_QUARTET",
+      "loo": "unidentified held-out multiplier; no fit performed",
+      "physical_predictions_by_domain": {
+        "GWTC": null,
+        "CMS": null,
+        "NIST": null,
+        "LHCb": null
+      },
+      "four_domain_action_prediction_available": false
+    }
+  ],
+  "ranking_if_completed": [
+    "U4",
+    "U3",
+    "U2",
+    "U1",
+    "U0"
+  ],
+  "currently_supported_result": "Action-level finite spatial scale only; no supported four-domain physical mechanism."
+}

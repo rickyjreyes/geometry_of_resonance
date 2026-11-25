@@ -1,0 +1,5 @@
+# Corrected S004 nodal holonomic classification, Phase XXII
+
+The original corrected two-real-component S004 nodal Legendre map yields `q=0` and `p₂=b(q,v)`; these primary conditions alone allow arbitrary velocities and do not remove the Ostrogradsky energy obstruction. The new `ReleaseProofs.S004NodalHolonomic` module proves that an actual differentiable path remaining within that nodal primary surface and satisfying the kinematic identity `q̇=v` must additionally have `v=0`. This forces `p₂=b(0,0)`, and every canonical phase point on the resulting holonomic fibre has energy exactly `G(0,0,b(0,0))`, regardless of unrestricted `p₁`.
+
+This is a genuinely narrower and stronger **necessary kinematic statement** than primary momentum constraints alone. It does not show that an S004 solution can remain on the nodal subset; it does not compute the secondary Dirac algorithm or the Poisson matrix; it does not prove global positive energy or physical stability. Geometry issue #53 remains OPEN. Five theorem roots are added to the strict audit (15 → 20).
