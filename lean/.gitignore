@@ -1,0 +1,4 @@
+# Lake build products and the Mathlib cache (several GB); CI regenerates the
+# manifest with `lake update`, as on main.
+/.lake/
+/lake-manifest.json
