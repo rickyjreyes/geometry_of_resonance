@@ -45,6 +45,8 @@ import ReleaseProofs.S004NodalShiftClassification
 
 import ReleaseProofs.S004NodalAccelerationConsistency
 
+import ReleaseProofs.R54_SpectralGeometricBridge
+import ReleaseProofs.R54_IntervalEnclosure
 import ReleaseProofs.S004CharacteristicCone
 import ReleaseProofs.S004NodalDiracClosure
 import ReleaseProofs.S004CoefficientFamily
